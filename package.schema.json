@@ -1,0 +1,516 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/package.schema.json",
+  "title": "Agent Package Metadata",
+  "description": "Records information only. Installation is redirected to the target repository. No detection is performed here.",
+  "type": "object",
+  "required": ["schemaVersion", "name", "version", "description", "license", "target"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Metadata schema version. Increment on breaking changes."
+    },
+    "name": { "$ref": "#/$defs/packageName" },
+    "version": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "license": { "$ref": "#/$defs/stringOrArray" },
+    "homepage": { "$ref": "#/$defs/url" },
+    "repository": { "$ref": "#/$defs/url", "description": "Source repository URL." },
+    "documentation": { "$ref": "#/$defs/url" },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "maintainers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/maintainer" },
+      "minItems": 1
+    },
+
+    "arch": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "os": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "libc": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+
+    "target": { "$ref": "#/$defs/target" },
+
+    "supportedAgents": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/supportedAgent" },
+      "uniqueItems": true
+    },
+
+    "conflicts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/conflict" }
+    },
+    "depends": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency" }
+    },
+    "optionalDepends": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency" }
+    },
+    "makedepends": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency" }
+    },
+    "provides": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency" }
+    },
+    "replaces": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency" }
+    },
+
+    "lifecycle": { "$ref": "#/$defs/lifecycle" },
+
+    "security": { "$ref": "#/$defs/security" },
+    "securityRefs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/securityRef" }
+    },
+    "securityPolicyHints": { "$ref": "#/$defs/policyHints" },
+
+    "publishedAt": { "$ref": "#/$defs/timestamp" },
+    "updatedAt": { "$ref": "#/$defs/timestamp" }
+  },
+
+  "$defs": {
+    "packageName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 214,
+      "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "stringOrArray": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
+    },
+
+    "versionRangeType": {
+      "type": "string",
+      "enum": [
+        "semver",
+        "npm",
+        "pep440",
+        "pacman-vercmp",
+        "dpkg",
+        "rpm",
+        "calver",
+        "custom"
+      ]
+    },
+    "versionConstraint": {
+      "type": "object",
+      "required": ["range"],
+      "additionalProperties": false,
+      "properties": {
+        "range": { "type": "string", "minLength": 1 },
+        "rangeType": { "$ref": "#/$defs/versionRangeType" }
+      }
+    },
+
+    "maintainer": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "email": { "type": "string", "format": "email" },
+        "url": { "$ref": "#/$defs/url" },
+        "role": {
+          "type": "string",
+          "enum": ["author", "maintainer", "contributor", "security"]
+        }
+      }
+    },
+
+    "checksum": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+        "sha512": { "type": "string", "pattern": "^[a-fA-F0-9]{128}$" },
+        "blake2b": { "type": "string", "minLength": 1 }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "required": ["url"],
+      "additionalProperties": false,
+      "properties": {
+        "url": { "$ref": "#/$defs/url" },
+        "type": {
+          "type": "string",
+          "enum": ["gpg", "pgp", "minisign", "sigstore", "cosign"]
+        },
+        "keyId": { "type": "string" },
+        "keyUrl": { "$ref": "#/$defs/url" }
+      }
+    },
+    "mirror": {
+      "type": "object",
+      "required": ["url"],
+      "additionalProperties": false,
+      "properties": {
+        "url": { "$ref": "#/$defs/url" },
+        "priority": { "type": "integer", "minimum": 0 },
+        "region": { "type": "string" }
+      }
+    },
+    "repoConfig": {
+      "type": "object",
+      "description": "Keyed by package manager name, value is a config snippet.",
+      "additionalProperties": { "type": "string" }
+    },
+
+    "agentInstall": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["command", "url", "api", "script"]
+        },
+        "command": { "type": "string" },
+        "url": { "$ref": "#/$defs/url" },
+        "requires": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "env": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "notes": { "type": "string" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "command" } } },
+          "then": { "required": ["command"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "url" } } },
+          "then": { "required": ["url"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "api" } } },
+          "then": { "required": ["url"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "script" } } },
+          "then": { "required": ["url"] }
+        }
+      ]
+    },
+    "install": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "human": { "$ref": "#/$defs/url" },
+        "agent": { "$ref": "#/$defs/agentInstall" },
+        "steps": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+
+    "target": {
+      "type": "object",
+      "required": ["type", "repository"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "pacman",
+            "apt",
+            "rpm",
+            "npm",
+            "pypi",
+            "cargo",
+            "go",
+            "gem",
+            "composer",
+            "nuget",
+            "generic"
+          ]
+        },
+        "repository": { "type": "string", "minLength": 1 },
+        "package": { "$ref": "#/$defs/packageName" },
+        "version": { "type": "string", "minLength": 1 },
+        "url": { "$ref": "#/$defs/url" },
+        "checksum": { "$ref": "#/$defs/checksum" },
+        "signature": { "$ref": "#/$defs/signature" },
+        "mirrors": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/mirror" }
+        },
+        "config": { "$ref": "#/$defs/repoConfig" },
+        "install": { "$ref": "#/$defs/install" },
+        "verified": {
+          "type": "boolean",
+          "description": "Whether this redirect has been verified against the target repository."
+        },
+        "verifiedAt": { "$ref": "#/$defs/timestamp" }
+      }
+    },
+
+    "supportedAgent": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "versionRange": { "type": "string", "minLength": 1 },
+        "rangeType": { "$ref": "#/$defs/versionRangeType" },
+        "conflicts": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/conflict" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+
+    "dependency": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "object",
+          "required": ["name"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "$ref": "#/$defs/packageName" },
+            "versionRange": { "type": "string" },
+            "rangeType": { "$ref": "#/$defs/versionRangeType" },
+            "repository": { "type": "string" },
+            "optional": { "type": "boolean" },
+            "reason": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "conflict": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "object",
+          "required": ["name"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "$ref": "#/$defs/packageName" },
+            "versionRange": { "type": "string" },
+            "rangeType": { "$ref": "#/$defs/versionRangeType" },
+            "repository": { "type": "string" },
+            "reason": { "type": "string" }
+          }
+        }
+      ]
+    },
+
+    "deprecated": {
+      "type": "object",
+      "required": ["is"],
+      "additionalProperties": false,
+      "properties": {
+        "is": { "type": "boolean" },
+        "reason": { "type": "string" },
+        "replacement": { "$ref": "#/$defs/packageName" },
+        "repository": { "type": "string" },
+        "since": { "$ref": "#/$defs/timestamp" }
+      }
+    },
+    "yanked": {
+      "type": "object",
+      "required": ["is"],
+      "additionalProperties": false,
+      "properties": {
+        "is": { "type": "boolean" },
+        "reason": { "type": "string" },
+        "at": { "$ref": "#/$defs/timestamp" }
+      }
+    },
+    "rename": {
+      "type": "object",
+      "required": ["to"],
+      "additionalProperties": false,
+      "properties": {
+        "to": { "$ref": "#/$defs/packageName" },
+        "repository": { "type": "string" },
+        "version": { "type": "string" },
+        "since": { "$ref": "#/$defs/timestamp" }
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "deprecated": { "$ref": "#/$defs/deprecated" },
+        "archived": { "type": "boolean" },
+        "prerelease": { "type": "boolean" },
+        "yanked": { "$ref": "#/$defs/yanked" },
+        "rename": { "$ref": "#/$defs/rename" }
+      }
+    },
+
+    "severity": {
+      "type": "string",
+      "enum": ["none", "low", "medium", "high", "critical", "unknown"]
+    },
+    "advisory": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "severity": { "$ref": "#/$defs/severity" },
+        "cvss": {
+          "type": "object",
+          "required": ["score"],
+          "additionalProperties": false,
+          "properties": {
+            "version": { "type": "string" },
+            "score": { "type": "number", "minimum": 0, "maximum": 10 },
+            "vector": { "type": "string" }
+          }
+        },
+        "cwe": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "summary": { "type": "string" },
+        "impact": { "type": "string" },
+        "affected": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range": { "type": "string" },
+            "rangeType": { "$ref": "#/$defs/versionRangeType" },
+            "introduced": { "type": "string" },
+            "fixed": { "type": "string" },
+            "lastAffected": { "type": "string" }
+          }
+        },
+        "fixedIn": { "type": "string" },
+        "references": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/url" }
+        },
+        "publishedAt": { "$ref": "#/$defs/timestamp" },
+        "updatedAt": { "$ref": "#/$defs/timestamp" },
+        "status": {
+          "type": "string",
+          "enum": ["confirmed", "unconfirmed", "disputed", "rejected", "fixed"]
+        },
+        "source": { "type": "string" },
+        "sourceUrl": { "$ref": "#/$defs/url" }
+      }
+    },
+    "securitySummary": {
+      "type": "object",
+      "required": ["count", "asOf"],
+      "additionalProperties": false,
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "highestSeverity": { "$ref": "#/$defs/severity" },
+        "asOf": { "$ref": "#/$defs/timestamp" },
+        "source": { "type": "string" }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string" },
+        "sourceUrl": { "$ref": "#/$defs/url" },
+        "asOf": { "$ref": "#/$defs/timestamp" },
+        "ttl": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Seconds after asOf before this snapshot should be refreshed."
+        },
+        "disclaimer": {
+          "type": "string",
+          "description": "Must state that this is third-party data, not a detection result, and not guaranteed."
+        },
+        "summary": { "$ref": "#/$defs/securitySummary" },
+        "advisories": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/advisory" }
+        }
+      }
+    },
+    "securityRef": {
+      "type": "object",
+      "required": ["id", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+        "path": { "type": "string", "minLength": 1 },
+        "url": { "$ref": "#/$defs/url" },
+        "checksum": { "$ref": "#/$defs/checksum" }
+      }
+    },
+    "policyHints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "blockOnSeverity": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/severity" },
+          "uniqueItems": true
+        },
+        "warnOnSeverity": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/severity" },
+          "uniqueItems": true
+        },
+        "requiresUserConfirmation": { "type": "boolean" },
+        "minAgeDays": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

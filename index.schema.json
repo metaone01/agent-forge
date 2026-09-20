@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/index.schema.json",
+  "title": "Package Index",
+  "type": "object",
+  "required": ["schemaVersion", "updatedAt", "packages"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "updatedAt": { "$ref": "package.schema.json#/$defs/timestamp" },
+    "signature": { "$ref": "package.schema.json#/$defs/signature" },
+    "packages": {
+      "type": "object",
+      "description": "Keyed by package name.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["latest", "versions"],
+        "additionalProperties": false,
+        "properties": {
+          "latest": { "type": "string", "minLength": 1 },
+          "versions": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true,
+            "minItems": 1
+          },
+          "path": { "type": "string" },
+          "checksum": { "$ref": "package.schema.json#/$defs/checksum" }
+        }
+      }
+    }
+  }
+}

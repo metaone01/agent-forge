@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/advisory.schema.json",
+  "title": "Security Advisory Record",
+  "type": "object",
+  "required": ["schemaVersion", "id", "source", "asOf", "disclaimer"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "id": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "source": { "type": "string" },
+    "sourceUrl": { "$ref": "package.schema.json#/$defs/url" },
+    "asOf": { "$ref": "package.schema.json#/$defs/timestamp" },
+    "ttl": { "type": "integer", "minimum": 0 },
+    "disclaimer": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Third-party data. Not a detection result. No guarantee of accuracy, completeness, or timeliness."
+    },
+    "affectedPackages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "$ref": "package.schema.json#/$defs/packageName" },
+          "range": { "type": "string" },
+          "rangeType": { "$ref": "package.schema.json#/$defs/versionRangeType" },
+          "introduced": { "type": "string" },
+          "fixed": { "type": "string" },
+          "lastAffected": { "type": "string" }
+        }
+      }
+    },
+    "advisories": {
+      "type": "array",
+      "items": { "$ref": "package.schema.json#/$defs/advisory" }
+    },
+    "signature": { "$ref": "package.schema.json#/$defs/signature" }
+  }
+}
