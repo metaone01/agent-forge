@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "playground",
+  "version": "1.0.0",
+  "versionKind": "semver",
+  "description": "Claude Code plugin for creating interactive HTML playgrounds.",
+  "license": "MIT",
+  "homepage": "https://github.com/anthropics/claude-plugins-official",
+  "repository": "https://github.com/anthropics/claude-plugins-official",
+  "target": {
+    "type": "agent-plugin",
+    "repository": "git",
+    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground",
+    "typeRef": {
+      "pluginManifestPath": ".claude-plugin/plugin.json",
+      "sourceType": "git",
+      "requires": [
+        { "name": "claude-code" }
+      ]
+    },
+    "verified": true,
+    "verifiedAt": "2026-09-20T00:00:00Z",
+    "linkCheck": {
+      "lastCheckedAt": "2026-09-20T00:00:00Z",
+      "lastStatus": "ok"
+    }
+  }
+}

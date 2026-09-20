@@ -1,5 +1,5 @@
 # /// script
-# dependencies = ["jsonschema>=4.23"]
+# dependencies = ["jsonschema>=4.23", "referencing>=0.36"]
 # ///
 
 """Validate Agent Forge schemas, examples, and independent sources."""
@@ -12,7 +12,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from jsonschema import Draft202012Validator, FormatChecker, RefResolver
+from jsonschema import Draft202012Validator, FormatChecker
+from referencing import Registry, Resource
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_FILES = (
@@ -47,14 +48,15 @@ def serialized_meta_size(instance: dict[str, Any]) -> int:
     )
 
 
-def schema_store() -> dict[str, Any]:
-    store: dict[str, Any] = {}
+def schema_registry() -> Registry:
+    resources: list[tuple[str, Resource[Any]]] = []
     for filename in SCHEMA_FILES:
         path = ROOT / filename
         schema = load_json(path)
-        store[schema["$id"]] = schema
-        store[path.resolve().as_uri()] = schema
-    return store
+        resource = Resource.from_contents(schema)
+        resources.append((schema["$id"], resource))
+        resources.append((path.resolve().as_uri(), resource))
+    return Registry().with_resources(resources)
 
 
 def build_validator(schema_name: str) -> Draft202012Validator:
@@ -62,7 +64,7 @@ def build_validator(schema_name: str) -> Draft202012Validator:
     Draft202012Validator.check_schema(schema)
     return Draft202012Validator(
         schema,
-        resolver=RefResolver.from_schema(schema, store=schema_store()),
+        registry=schema_registry(),
         format_checker=FormatChecker(),
     )
 
@@ -104,6 +106,85 @@ def validate_source_package(path: Path, source_category: str) -> tuple[list[str]
     return errors, warnings
 
 
+def validate_source_directory(source_dir: Path) -> tuple[list[str], list[str]]:
+    errors: list[str] = []
+    warnings: list[str] = []
+    source_path = source_dir / "source.json"
+    index_path = source_dir / "index.json"
+
+    errors.extend(validate_instance(source_path, "source.schema.json"))
+    errors.extend(validate_instance(index_path, "index.schema.json"))
+    if errors:
+        return errors, warnings
+
+    source = load_json(source_path)
+    index = load_json(index_path)
+    directory_category = source_dir.name
+    if source["category"] != directory_category:
+        errors.append(
+            f"{source_path}: source category '{source['category']}' does not match "
+            f"directory '{directory_category}'"
+        )
+    if index["source"] != source["name"]:
+        errors.append(
+            f"{index_path}: index source '{index['source']}' does not match "
+            f"manifest name '{source['name']}'"
+        )
+    if index["category"] != source["category"]:
+        errors.append(
+            f"{index_path}: index category '{index['category']}' does not match "
+            f"manifest category '{source['category']}'"
+        )
+
+    indexed_paths: set[Path] = set()
+    for package_name, entry in index["packages"].items():
+        if entry["latest"] not in entry["versions"]:
+            errors.append(
+                f"{index_path}: package '{package_name}' latest version "
+                "is not present in versions"
+            )
+        relative_path = entry.get("path")
+        if relative_path is None:
+            continue
+        package_path = source_dir / relative_path
+        indexed_paths.add(package_path.resolve())
+        if not package_path.is_file():
+            errors.append(
+                f"{index_path}: indexed package path '{relative_path}' does not exist"
+            )
+            continue
+        package_errors, package_warnings = validate_source_package(
+            package_path, source["category"]
+        )
+        errors.extend(package_errors)
+        warnings.extend(package_warnings)
+        if not package_errors:
+            package = load_json(package_path)
+            if package["name"] != package_name:
+                errors.append(
+                    f"{package_path}: package name '{package['name']}' does not match "
+                    f"index key '{package_name}'"
+                )
+            if package["version"] not in entry["versions"]:
+                errors.append(
+                    f"{package_path}: package version '{package['version']}' is not "
+                    f"listed for '{package_name}'"
+                )
+
+    records_dir = source_dir / "packages"
+    if records_dir.exists():
+        for package_path in sorted(records_dir.rglob("*.json")):
+            if package_path.resolve() in indexed_paths:
+                continue
+            package_errors, package_warnings = validate_source_package(
+                package_path, source["category"]
+            )
+            errors.extend(package_errors)
+            warnings.extend(package_warnings)
+            warnings.append(f"{package_path}: package record is not listed in index.json")
+    return errors, warnings
+
+
 def validate_all() -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -111,7 +192,7 @@ def validate_all() -> tuple[list[str], list[str]]:
     try:
         for schema_name in SCHEMA_FILES:
             Draft202012Validator.check_schema(load_json(ROOT / schema_name))
-        schema_store()
+        schema_registry()
     except Exception as error:
         errors.append(f"schema validation failed: {error}")
         return errors, warnings
@@ -119,17 +200,9 @@ def validate_all() -> tuple[list[str], list[str]]:
     for source_dir in sorted((ROOT / "sources").iterdir()):
         if not source_dir.is_dir():
             continue
-        category = source_dir.name
-        errors.extend(validate_instance(source_dir / "source.json", "source.schema.json"))
-        errors.extend(validate_instance(source_dir / "index.json", "index.schema.json"))
-        records_dir = source_dir / "packages"
-        if records_dir.exists():
-            for package_path in sorted(records_dir.rglob("*.json")):
-                package_errors, package_warnings = validate_source_package(
-                    package_path, category
-                )
-                errors.extend(package_errors)
-                warnings.extend(package_warnings)
+        source_errors, source_warnings = validate_source_directory(source_dir)
+        errors.extend(source_errors)
+        warnings.extend(source_warnings)
 
     examples = ROOT / "examples"
     if examples.exists():

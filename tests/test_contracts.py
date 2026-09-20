@@ -2,7 +2,8 @@ import json
 import unittest
 from pathlib import Path
 
-from jsonschema import Draft202012Validator, FormatChecker, RefResolver
+from jsonschema import Draft202012Validator, FormatChecker
+from referencing import Registry, Resource
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -14,7 +15,7 @@ def load_json(relative_path: str):
 
 def validator(schema_name: str):
     schema = load_json(schema_name)
-    store = {}
+    resources = []
     for name in (
         "package.schema.json",
         "index.schema.json",
@@ -24,11 +25,12 @@ def validator(schema_name: str):
         path = ROOT / name
         if path.exists():
             document = load_json(name)
-            store[document["$id"]] = document
-            store[path.resolve().as_uri()] = document
+            resource = Resource.from_contents(document)
+            resources.append((document["$id"], resource))
+            resources.append((path.resolve().as_uri(), resource))
     return Draft202012Validator(
         schema,
-        resolver=RefResolver.from_schema(schema, store=store),
+        registry=Registry().with_resources(resources),
         format_checker=FormatChecker(),
     )
 
