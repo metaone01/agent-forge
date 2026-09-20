@@ -112,7 +112,7 @@
     },
     "extensionMeta": {
       "type": "object",
-      "description": "Namespaced extension data for private consumer metadata, experimental fields, or a structured description of an uncategorized tool. Consumers must preserve unknown values without interpreting them.",
+      "description": "Namespaced extension data for private consumer metadata, experimental fields, or a structured description of an uncategorized agent tool. Consumers must preserve unknown values without interpreting them.",
       "propertyNames": {
         "pattern": "^[a-z][a-z0-9]*(\\.[a-z0-9-]+)+(/[a-z0-9-]+)?$"
       },
@@ -145,9 +145,6 @@
         "semver",
         "npm",
         "pep440",
-        "pacman-vercmp",
-        "dpkg",
-        "rpm",
         "calver",
         "custom"
       ]
@@ -211,12 +208,6 @@
         "region": { "type": "string" }
       }
     },
-    "repoConfig": {
-      "type": "object",
-      "description": "Keyed by package manager name, value is a config snippet.",
-      "additionalProperties": { "type": "string" }
-    },
-
     "agentInstall": {
       "type": "object",
       "description": "An installation instruction record, not authorization to execute it. Consumers must obtain confirmation before execution.",
@@ -359,6 +350,25 @@
         }
       }
     },
+    "genericRef": {
+      "type": "object",
+      "description": "Identity and scope evidence for an agent-related tool that does not fit the MCP, plugin, or skill categories.",
+      "required": ["kind", "agentUse"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Concise tool kind, such as prompt-library, agent-ui, or evaluation-harness."
+        },
+        "agentUse": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000,
+          "description": "How the tool is directly used to build, operate, evaluate, or extend an AI agent workflow."
+        }
+      }
+    },
     "linkCheck": {
       "type": "object",
       "required": ["lastCheckedAt", "lastStatus"],
@@ -380,16 +390,6 @@
         "type": {
           "type": "string",
           "enum": [
-            "pacman",
-            "apt",
-            "rpm",
-            "npm",
-            "pypi",
-            "cargo",
-            "go",
-            "gem",
-            "composer",
-            "nuget",
             "agent-plugin",
             "mcp",
             "skill",
@@ -406,7 +406,6 @@
           "type": "array",
           "items": { "$ref": "#/$defs/mirror" }
         },
-        "config": { "$ref": "#/$defs/repoConfig" },
         "install": { "$ref": "#/$defs/install" },
         "typeRef": {
           "type": "object",
@@ -434,6 +433,10 @@
         {
           "if": { "properties": { "type": { "const": "skill" } }, "required": ["type"] },
           "then": { "properties": { "typeRef": { "$ref": "#/$defs/skillRef" } }, "required": ["typeRef"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "generic" } }, "required": ["type"] },
+          "then": { "properties": { "typeRef": { "$ref": "#/$defs/genericRef" } }, "required": ["typeRef"] }
         }
       ]
     },

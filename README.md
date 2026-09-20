@@ -11,7 +11,7 @@ Each category is a separate source with its own manifest, index, URL, and update
 | `agent-forge[mcp]` | MCP servers | `https://metaone01.github.io/agent-forge/sources/mcp/` |
 | `agent-forge[plugin]` | Agent plugins | `https://metaone01.github.io/agent-forge/sources/plugin/` |
 | `agent-forge[skill]` | Agent skills | `https://metaone01.github.io/agent-forge/sources/skill/` |
-| `agent-forge[other]` | Uncategorized and traditional tools | `https://metaone01.github.io/agent-forge/sources/other/` |
+| `agent-forge[other]` | Other agent-related tools | `https://metaone01.github.io/agent-forge/sources/other/` |
 
 A source directory contains `source.json`, `index.json`, and optionally `packages/**/*.json`. Paths in an index are relative to that source directory. A package record must be stored in the source matching `target.type`; validation rejects cross-category placement and manifest/index mismatches. Adding or removing a first-class category requires a schema change.
 
@@ -28,7 +28,7 @@ The stable schema namespace is:
 
 `schemaVersion` starts at `1` and increments only for breaking contract changes. A schema `$id` remains stable for compatible additions.
 
-Known package target types are `mcp`, `agent-plugin`, and `skill`. `generic` and traditional package-manager types belong to `agent-forge[other]`. Category-specific identity data lives in `target.typeRef`. New first-class categories are added by changing the schemas and source layout, not by silently overloading `_meta`.
+Known package target types are `mcp`, `agent-plugin`, `skill`, and `generic`. The `generic` type belongs to `agent-forge[other]` and is only for tools directly used in agent workflows that do not fit the first three categories; its `typeRef` must state both the tool kind and its direct Agent use. Ordinary system or language packages are out of scope. Registries such as npm, PyPI, Cargo, and OCI may identify how an Agent tool is distributed inside a category-specific `typeRef`; they are not metadata categories of their own. New first-class categories are added by changing the schemas and source layout, not by silently overloading `_meta`.
 
 ## Link availability
 
@@ -57,7 +57,7 @@ For `mcpRef.registryBaseUrl`, maintainers currently accept the canonical public 
 5. Record availability evidence in `verifiedAt` and `linkCheck` without implying a security review.
 6. Run `uv run tools/validate.py --all`.
 
-Examples for each category, a traditional package, an index, and an advisory are in `examples/`.
+Examples for each category, an index, and an advisory are in `examples/`.
 
 ## Validation
 

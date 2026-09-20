@@ -103,11 +103,54 @@ class PackageContractTests(unittest.TestCase):
             "version": "2026.09",
             "description": "An uncategorized agent tool",
             "license": "unknown",
-            "target": {"type": "generic", "repository": "upstream"},
+            "target": {
+                "type": "generic",
+                "repository": "upstream",
+                "typeRef": {
+                    "kind": "prompt-library",
+                    "agentUse": "Provides reusable prompts to agent workflows.",
+                },
+            },
             "_meta": {"org.example/tool": {"kind": "prompt-library"}},
         }
         self.assert_valid(record)
         record["_meta"] = {"freeform": True}
+        self.assert_invalid(record)
+
+    def test_traditional_package_targets_are_out_of_scope(self):
+        for target_type in ("pacman", "apt", "rpm", "npm", "pypi", "cargo"):
+            with self.subTest(target_type=target_type):
+                record = {
+                    "schemaVersion": 1,
+                    "name": "ordinary-package",
+                    "version": "1.0.0",
+                    "description": "A non-agent package-manager record",
+                    "license": "MIT",
+                    "target": {
+                        "type": target_type,
+                        "repository": "upstream",
+                    },
+                }
+                self.assert_invalid(record)
+
+    def test_generic_requires_agent_scope_evidence(self):
+        record = {
+            "schemaVersion": 1,
+            "name": "generic-tool",
+            "version": "1.0.0",
+            "description": "An agent-related tool outside the primary categories",
+            "license": "MIT",
+            "target": {
+                "type": "generic",
+                "repository": "upstream",
+                "typeRef": {
+                    "kind": "agent-ui",
+                    "agentUse": "Visualizes and controls agent workflow execution.",
+                },
+            },
+        }
+        self.assert_valid(record)
+        del record["target"]["typeRef"]["agentUse"]
         self.assert_invalid(record)
 
 

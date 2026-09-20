@@ -26,6 +26,7 @@ CATEGORY_TYPES = {
     "mcp": "mcp",
     "agent-plugin": "plugin",
     "skill": "skill",
+    "generic": "other",
 }
 
 
@@ -35,7 +36,7 @@ def load_json(path: Path) -> Any:
 
 
 def category_for_target(target_type: str) -> str:
-    return CATEGORY_TYPES.get(target_type, "other")
+    return CATEGORY_TYPES[target_type]
 
 
 def serialized_meta_size(instance: dict[str, Any]) -> int:

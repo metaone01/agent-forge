@@ -17,7 +17,8 @@ class ValidationToolTests(unittest.TestCase):
         self.assertEqual("plugin", category_for_target("agent-plugin"))
         self.assertEqual("skill", category_for_target("skill"))
         self.assertEqual("other", category_for_target("generic"))
-        self.assertEqual("other", category_for_target("pacman"))
+        with self.assertRaises(KeyError):
+            category_for_target("pacman")
 
     def test_meta_size_is_utf8_serialized_bytes(self):
         instance = {"_meta": {"org.example/data": "汉" * 1400}}
