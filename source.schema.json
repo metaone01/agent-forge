@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metaone01.github.io/agent-forge/source.schema.json",
+  "title": "Agent Forge Metadata Source",
+  "description": "Describes one independently consumable metadata source.",
+  "type": "object",
+  "required": ["schemaVersion", "name", "category", "baseUrl", "index"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "name": {
+      "type": "string",
+      "pattern": "^agent-forge\\[(mcp|plugin|skill|other)\\]$"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["mcp", "plugin", "skill", "other"]
+    },
+    "baseUrl": { "$ref": "package.schema.json#/$defs/url" },
+    "index": {
+      "type": "string",
+      "const": "index.json",
+      "description": "Index path relative to baseUrl."
+    },
+    "description": { "type": "string", "minLength": 1 },
+    "mirrors": {
+      "type": "array",
+      "items": { "$ref": "package.schema.json#/$defs/mirror" },
+      "uniqueItems": true
+    },
+    "_meta": { "$ref": "package.schema.json#/$defs/extensionMeta" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "category": { "const": "mcp" } }, "required": ["category"] },
+      "then": { "properties": { "name": { "const": "agent-forge[mcp]" } } }
+    },
+    {
+      "if": { "properties": { "category": { "const": "plugin" } }, "required": ["category"] },
+      "then": { "properties": { "name": { "const": "agent-forge[plugin]" } } }
+    },
+    {
+      "if": { "properties": { "category": { "const": "skill" } }, "required": ["category"] },
+      "then": { "properties": { "name": { "const": "agent-forge[skill]" } } }
+    },
+    {
+      "if": { "properties": { "category": { "const": "other" } }, "required": ["category"] },
+      "then": { "properties": { "name": { "const": "agent-forge[other]" } } }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/schemas/package.schema.json",
+  "$id": "https://metaone01.github.io/agent-forge/package.schema.json",
   "title": "Agent Package Metadata",
   "description": "Records information only. Installation is redirected to the target repository. No detection is performed here.",
   "type": "object",
@@ -13,7 +13,16 @@
       "description": "Metadata schema version. Increment on breaking changes."
     },
     "name": { "$ref": "#/$defs/packageName" },
-    "version": { "type": "string", "minLength": 1 },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The publisher's original version string. Consumers interpret it in the target repository's versioning context."
+    },
+    "versionKind": {
+      "type": "string",
+      "enum": ["semver", "pep440", "calver", "other"],
+      "description": "Optional hint for indexing and comparison; it does not rewrite the original version."
+    },
     "description": { "type": "string", "minLength": 1, "maxLength": 2000 },
     "license": { "$ref": "#/$defs/stringOrArray" },
     "homepage": { "$ref": "#/$defs/url" },
@@ -89,7 +98,8 @@
     "securityPolicyHints": { "$ref": "#/$defs/policyHints" },
 
     "publishedAt": { "$ref": "#/$defs/timestamp" },
-    "updatedAt": { "$ref": "#/$defs/timestamp" }
+    "updatedAt": { "$ref": "#/$defs/timestamp" },
+    "_meta": { "$ref": "#/$defs/extensionMeta" }
   },
 
   "$defs": {
@@ -97,7 +107,16 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 214,
-      "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$"
+      "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$",
+      "description": "A source-local record name. Names are not globally unique; source category and source name form part of the identity."
+    },
+    "extensionMeta": {
+      "type": "object",
+      "description": "Namespaced extension data for private consumer metadata, experimental fields, or a structured description of an uncategorized tool. Consumers must preserve unknown values without interpreting them.",
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9]*(\\.[a-z0-9-]+)+(/[a-z0-9-]+)?$"
+      },
+      "additionalProperties": true
     },
     "url": {
       "type": "string",
@@ -200,6 +219,7 @@
 
     "agentInstall": {
       "type": "object",
+      "description": "An installation instruction record, not authorization to execute it. Consumers must obtain confirmation before execution.",
       "required": ["type"],
       "additionalProperties": false,
       "properties": {
@@ -209,6 +229,11 @@
         },
         "command": { "type": "string" },
         "url": { "$ref": "#/$defs/url" },
+        "scriptIntegrity": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Integrity material for a script URL, preferably an SRI value such as sha256-<base64>."
+        },
         "requires": {
           "type": "array",
           "items": { "type": "string" }
@@ -234,7 +259,7 @@
         },
         {
           "if": { "properties": { "type": { "const": "script" } } },
-          "then": { "required": ["url"] }
+          "then": { "required": ["url", "scriptIntegrity"] }
         }
       ]
     },
@@ -248,7 +273,102 @@
           "type": "array",
           "items": { "type": "string" }
         },
-        "notes": { "type": "string" }
+        "notes": {
+          "type": "string",
+          "description": "Human-readable installation notes. Script URLs must be traceable to target.url or target.mirrors; this schema records instructions and never executes them."
+        }
+      }
+    },
+
+    "mcpRef": {
+      "type": "object",
+      "required": ["registryType", "identifier"],
+      "additionalProperties": false,
+      "properties": {
+        "registryType": {
+          "type": "string",
+          "enum": ["npm", "pypi", "nuget", "cargo", "oci", "mcpb"]
+        },
+        "registryBaseUrl": {
+          "$ref": "#/$defs/url",
+          "description": "Registry base URL. See README.md for the maintained allowlist; the schema deliberately does not freeze that mutable list."
+        },
+        "identifier": { "type": "string", "minLength": 1 },
+        "environmentVariables": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "transport": {
+          "type": "string",
+          "enum": ["stdio", "streamable-http", "sse"]
+        },
+        "remotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["url", "type"],
+            "additionalProperties": false,
+            "properties": {
+              "url": { "$ref": "#/$defs/url" },
+              "type": { "type": "string", "enum": ["streamable-http", "sse"] }
+            }
+          }
+        }
+      }
+    },
+    "agentPluginRef": {
+      "type": "object",
+      "required": ["pluginManifestPath", "sourceType"],
+      "additionalProperties": false,
+      "properties": {
+        "pluginManifestPath": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Path to the plugin manifest, commonly .claude-plugin/plugin.json."
+        },
+        "sourceType": { "type": "string", "enum": ["git", "local", "registry"] },
+        "requires": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/supportedAgent" },
+          "uniqueItems": true
+        },
+        "marketplaceUrl": { "$ref": "#/$defs/url" }
+      }
+    },
+    "skillRef": {
+      "type": "object",
+      "required": ["skillMarkdownPath"],
+      "additionalProperties": false,
+      "properties": {
+        "skillMarkdownPath": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Path to the skill definition, normally SKILL.md."
+        },
+        "license": { "type": "string", "minLength": 1 },
+        "compatibility": { "type": "string", "maxLength": 500 },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "allowedTools": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "linkCheck": {
+      "type": "object",
+      "required": ["lastCheckedAt", "lastStatus"],
+      "additionalProperties": false,
+      "properties": {
+        "lastCheckedAt": { "$ref": "#/$defs/timestamp" },
+        "lastStatus": { "type": "string", "enum": ["ok", "redirect", "broken"] },
+        "finalUrl": { "$ref": "#/$defs/url" },
+        "okSince": { "$ref": "#/$defs/timestamp" },
+        "brokenSince": { "$ref": "#/$defs/timestamp" }
       }
     },
 
@@ -270,6 +390,9 @@
             "gem",
             "composer",
             "nuget",
+            "agent-plugin",
+            "mcp",
+            "skill",
             "generic"
           ]
         },
@@ -285,12 +408,34 @@
         },
         "config": { "$ref": "#/$defs/repoConfig" },
         "install": { "$ref": "#/$defs/install" },
+        "typeRef": {
+          "type": "object",
+          "description": "Category-specific identity and discovery metadata. Its shape is selected by target.type."
+        },
         "verified": {
           "type": "boolean",
-          "description": "Whether this redirect has been verified against the target repository."
+          "description": "Whether publication-time checks passed: the URL was reachable, supplied checksums matched, or the registry contained the identifier. This is not a security guarantee."
         },
-        "verifiedAt": { "$ref": "#/$defs/timestamp" }
-      }
+        "verifiedAt": {
+          "$ref": "#/$defs/timestamp",
+          "description": "Time of the publication-time verification represented by verified."
+        },
+        "linkCheck": { "$ref": "#/$defs/linkCheck" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "mcp" } }, "required": ["type"] },
+          "then": { "properties": { "typeRef": { "$ref": "#/$defs/mcpRef" } }, "required": ["typeRef"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "agent-plugin" } }, "required": ["type"] },
+          "then": { "properties": { "typeRef": { "$ref": "#/$defs/agentPluginRef" } }, "required": ["typeRef"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "skill" } }, "required": ["type"] },
+          "then": { "properties": { "typeRef": { "$ref": "#/$defs/skillRef" } }, "required": ["typeRef"] }
+        }
+      ]
     },
 
     "supportedAgent": {
@@ -386,7 +531,11 @@
         "archived": { "type": "boolean" },
         "prerelease": { "type": "boolean" },
         "yanked": { "$ref": "#/$defs/yanked" },
-        "rename": { "$ref": "#/$defs/rename" }
+        "rename": { "$ref": "#/$defs/rename" },
+        "linkStatusNote": {
+          "type": "string",
+          "description": "Operator note for link degradation or a pending replacement."
+        }
       }
     },
 
@@ -473,7 +622,7 @@
         },
         "disclaimer": {
           "type": "string",
-          "description": "Must state that this is third-party data, not a detection result, and not guaranteed."
+          "description": "Must state: Third-party data. Not a detection result. No guarantee of accuracy, completeness, timeliness, or safety."
         },
         "summary": { "$ref": "#/$defs/securitySummary" },
         "advisories": {

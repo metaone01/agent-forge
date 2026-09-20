@@ -1,18 +1,39 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/schemas/index.schema.json",
+  "$id": "https://metaone01.github.io/agent-forge/index.schema.json",
   "title": "Package Index",
   "type": "object",
-  "required": ["schemaVersion", "updatedAt", "packages"],
+  "required": ["schemaVersion", "source", "category", "updatedAt", "packages"],
   "additionalProperties": false,
   "properties": {
     "schemaVersion": { "type": "integer", "minimum": 1 },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Independent metadata source name, for example agent-forge[mcp]."
+    },
+    "category": {
+      "type": "string",
+      "enum": ["mcp", "plugin", "skill", "other"]
+    },
     "updatedAt": { "$ref": "package.schema.json#/$defs/timestamp" },
     "signature": { "$ref": "package.schema.json#/$defs/signature" },
+    "ttl": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Seconds after updatedAt before consumers should refresh this index."
+    },
+    "mirrors": {
+      "type": "array",
+      "items": { "$ref": "package.schema.json#/$defs/mirror" },
+      "uniqueItems": true
+    },
     "packages": {
       "type": "object",
-      "description": "Keyed by package name.",
-      "additionalProperties": {
+      "description": "Keyed by package name within this independent source.",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$": {
         "type": "object",
         "required": ["latest", "versions"],
         "additionalProperties": false,
@@ -24,8 +45,16 @@
             "uniqueItems": true,
             "minItems": 1
           },
-          "path": { "type": "string" },
-          "checksum": { "$ref": "package.schema.json#/$defs/checksum" }
+          "path": {
+            "type": "string",
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$",
+            "description": "POSIX path relative to the repository root."
+          },
+          "checksum": {
+            "$ref": "package.schema.json#/$defs/checksum",
+            "description": "Digest of the bytes at path."
+          }
+        }
         }
       }
     }

@@ -1,13 +1,17 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/schemas/advisory.schema.json",
+  "$id": "https://metaone01.github.io/agent-forge/advisory.schema.json",
   "title": "Security Advisory Record",
   "type": "object",
   "required": ["schemaVersion", "id", "source", "asOf", "disclaimer"],
   "additionalProperties": false,
   "properties": {
     "schemaVersion": { "type": "integer", "minimum": 1 },
-    "id": { "type": "string", "minLength": 1 },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Prefer a globally recognizable identifier such as GHSA-, CVE-, OSV-, or a source-defined stable identifier."
+    },
     "aliases": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 },
@@ -16,6 +20,12 @@
     "source": { "type": "string" },
     "sourceUrl": { "$ref": "package.schema.json#/$defs/url" },
     "asOf": { "$ref": "package.schema.json#/$defs/timestamp" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "published", "withdrawn", "superseded"]
+    },
+    "publishedAt": { "$ref": "package.schema.json#/$defs/timestamp" },
+    "withdrawnAt": { "$ref": "package.schema.json#/$defs/timestamp" },
     "ttl": { "type": "integer", "minimum": 0 },
     "disclaimer": {
       "type": "string",
@@ -31,6 +41,15 @@
         "additionalProperties": false,
         "properties": {
           "name": { "$ref": "package.schema.json#/$defs/packageName" },
+          "type": {
+            "type": "string",
+            "enum": ["agent-plugin", "mcp", "skill", "generic"]
+          },
+          "typeRef": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Source-local type-specific identifier, such as an MCP registry identifier."
+          },
           "range": { "type": "string" },
           "rangeType": { "$ref": "package.schema.json#/$defs/versionRangeType" },
           "introduced": { "type": "string" },
