@@ -1,0 +1,39 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.AperionAI/shield",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "Local guardrail proxy that blocks destructive MCP tool calls, rug pulls, and tool poisoning",
+ "license": "unknown",
+ "repository": "https://github.com/AperionAI/shield",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "shield",
+  "url": "https://hub.docker.com/r/aperionai/shield",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/aperionai/shield:shield-v1.0.1",
+   "transport": "stdio"
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.AperionAI/shield",
+   "publishedAt": "2026-06-11T16:32:58.805674Z",
+   "updatedAt": "2026-06-11T16:32:58.805674Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://docs.aperion.ai/aperion-shield.html",
+ "keywords": [
+  "Aperion Shield"
+ ]
+}

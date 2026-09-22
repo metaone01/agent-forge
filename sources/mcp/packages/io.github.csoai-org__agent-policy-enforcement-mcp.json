@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.CSOAI-ORG/agent-policy-enforcement-mcp",
+ "version": "1.0.11",
+ "versionKind": "semver",
+ "description": "Per-agent-pair IAM for A2A. Define policies ('orchestrator may call billing only when amount<100...",
+ "license": "MIT License",
+ "repository": "https://github.com/CSOAI-ORG/agent-policy-enforcement-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "agent-policy-enforcement-mcp",
+  "url": "https://pypi.org/project/agent-policy-enforcement-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "agent-policy-enforcement-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://api.meok.ai/v1/a2a/policy-enforcement",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.CSOAI-ORG/agent-policy-enforcement-mcp",
+   "publishedAt": "2026-06-30T03:52:17.053784Z",
+   "updatedAt": "2026-06-30T03:52:17.053784Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

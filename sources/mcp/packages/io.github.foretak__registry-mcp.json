@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.foretak/registry-mcp",
+ "version": "0.4.2",
+ "versionKind": "semver",
+ "description": "The company registry MCP: brreg orgnr, Companies House, Bolagsverket organisationsnummer.",
+ "license": "MIT",
+ "repository": "https://github.com/foretak/registry-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "registry-mcp",
+  "url": "https://pypi.org/project/registry-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "registry-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BOLAGSVERKET_CLIENT_ID",
+    "BOLAGSVERKET_CLIENT_SECRET",
+    "BOLAGSVERKET_ENVIRONMENT",
+    "COMPANIES_HOUSE_API_KEY",
+    "REGISTRY_MCP_CACHE_PATH",
+    "REGISTRY_MCP_CONTACT_EMAIL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.foretak.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.foretak/registry-mcp",
+   "publishedAt": "2026-09-10T07:42:54.694094Z",
+   "updatedAt": "2026-09-10T07:42:54.694094Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://api.foretak.dev",
+ "keywords": [
+  "registry-mcp — national company registries"
+ ]
+}

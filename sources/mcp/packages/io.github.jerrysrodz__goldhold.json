@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jerrysrodz/goldhold",
+ "version": "1.5.1",
+ "versionKind": "semver",
+ "description": "Persistent memory for AI agents. Search, store, and recall across sessions.",
+ "license": "Proprietary",
+ "repository": "https://github.com/jerrysrodz/goldhold-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@goldhold/mcp-server",
+  "url": "https://www.npmjs.com/package/@goldhold/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@goldhold/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GOLDHOLD_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.goldhold.ai/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://relay.goldhold.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jerrysrodz/goldhold",
+   "publishedAt": "2026-03-14T16:22:14.955765Z",
+   "updatedAt": "2026-03-14T16:22:14.955765Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://goldhold.ai"
+}

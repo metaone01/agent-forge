@@ -1,0 +1,38 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ibeal/tidal-mcp",
+ "version": "0.6.0",
+ "versionKind": "semver",
+ "description": "MCP server for TIDAL - search tracks, manage playlists, and get personalized recommendations",
+ "license": "unknown",
+ "repository": "https://github.com/ibeal/tidal-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "tidal-mcp",
+  "url": "https://hub.docker.com/r/ibeal/tidal-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/ibeal/tidal-mcp:latest",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TIDAL_MCP_PORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ibeal/tidal-mcp",
+   "publishedAt": "2026-06-25T04:44:28.936162Z",
+   "updatedAt": "2026-06-25T04:44:28.936162Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

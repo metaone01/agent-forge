@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "today.naia/platform",
+ "version": "1.0.2",
+ "versionKind": "semver",
+ "description": "Autopilot MCP server for GEO analyses, reports, content, audits, memories and agents.",
+ "license": "UNLICENSED",
+ "repository": "https://github.com/arielvdl/naia-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "naia-mcp-server",
+  "url": "https://www.npmjs.com/package/naia-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "naia-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "NAIA_API_KEY",
+    "NAIA_MCP_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://naia.today/api/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "today.naia/platform",
+   "publishedAt": "2026-05-23T03:29:44.991942Z",
+   "updatedAt": "2026-05-23T03:29:44.991942Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "naia GEO Autopilot"
+ ]
+}

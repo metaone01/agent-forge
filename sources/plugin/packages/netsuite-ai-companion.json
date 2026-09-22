@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "netsuite-ai-companion",
+ "version": "ai-plugins-dist",
+ "versionKind": "other",
+ "description": "Guides AI assistants that use the NetSuite AI Connector: tool-selection order, output formatting, NetSuite domain knowledge, multi-subsidiary and currency handling, and SuiteQL safety guardrails. Requires the NetSuite AI Connector Service.",
+ "license": "UPL-1.0",
+ "repository": "https://github.com/oracle/netsuite-suitecloud-sdk",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-ai-companion",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "Oracle NetSuite",
+   "ref": "ai-plugins-dist",
+   "sha": "23793a10a9bb557c684c5cb8a97f926eb3463f12",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-ai-companion"
+}

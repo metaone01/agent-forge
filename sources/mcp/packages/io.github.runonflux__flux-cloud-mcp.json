@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.RunOnFlux/flux-cloud-mcp",
+ "version": "0.2.7",
+ "versionKind": "semver",
+ "description": "Deploy, pay for and manage apps on Flux Cloud, the decentralized cloud. Prices in USD.",
+ "license": "MIT",
+ "repository": "https://github.com/RunOnFlux/flux-cloud-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@runonflux/flux-cloud-mcp",
+  "url": "https://www.npmjs.com/package/@runonflux/flux-cloud-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@runonflux/flux-cloud-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FLUX_ID_PRIVATE_KEY",
+    "FLUX_PAYMENT_PRIVATE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.runonflux.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.RunOnFlux/flux-cloud-mcp",
+   "publishedAt": "2026-09-13T07:13:51.606089Z",
+   "updatedAt": "2026-09-13T07:13:51.606089Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://runonflux.com",
+ "keywords": [
+  "Flux Cloud"
+ ]
+}

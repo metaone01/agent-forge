@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openaq-mcp-server",
+ "version": "0.1.9",
+ "versionKind": "semver",
+ "description": "Find air-quality stations and read pollutant observations from government monitors via OpenAQ v3.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openaq-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openaq-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openaq-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openaq-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CANVAS_PROVIDER_TYPE",
+    "MCP_LOG_LEVEL",
+    "OPENAQ_API_BASE_URL",
+    "OPENAQ_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://openaq.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openaq-mcp-server",
+   "publishedAt": "2026-09-20T14:30:00.413652Z",
+   "updatedAt": "2026-09-20T14:30:00.413652Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

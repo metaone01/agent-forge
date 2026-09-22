@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.EricSpencer00/instxnt",
+ "version": "0.2.5",
+ "versionKind": "semver",
+ "description": "Create instxnt.xyz storefronts through Claude: add products, connect Stripe, go live.",
+ "license": "MIT",
+ "repository": "https://github.com/EricSpencer00/instxnt-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@instxntdotxyz/mcp-server",
+  "url": "https://www.npmjs.com/package/@instxntdotxyz/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@instxntdotxyz/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "INSTXNT_API_KEY",
+    "INSTXNT_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.instxnt.xyz/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.EricSpencer00/instxnt",
+   "publishedAt": "2026-05-06T05:02:51.840076Z",
+   "updatedAt": "2026-05-06T05:02:51.840076Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

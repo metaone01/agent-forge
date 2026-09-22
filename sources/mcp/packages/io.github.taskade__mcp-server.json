@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.taskade/mcp-server",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Hosted OAuth MCP at https://www.taskade.com/mcp, or local @taskade/mcp-server.",
+ "license": "MIT",
+ "repository": "https://github.com/taskade/mcp.git",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@taskade/mcp-server",
+  "url": "https://www.npmjs.com/package/@taskade/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@taskade/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TASKADE_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://www.taskade.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.taskade/mcp-server",
+   "publishedAt": "2026-09-11T08:53:55.653052Z",
+   "updatedAt": "2026-09-11T08:53:55.653052Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Taskade MCP"
+ ]
+}

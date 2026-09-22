@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.inhuman/mcp-exec",
+ "version": "0.5.4",
+ "versionKind": "semver",
+ "description": "Single exec tool running caller Python in a network-isolated locked-down sandbox.",
+ "license": "unknown",
+ "repository": "https://github.com/inhuman/mcp-exec",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-exec",
+  "url": "https://hub.docker.com/r/idconstruct/mcp-exec",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/idconstruct/mcp-exec:v0.5.4",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_EXEC_AUTH_TOKEN",
+    "MCP_EXEC_DEFAULT_TIMEOUT_S",
+    "MCP_EXEC_MAX_OUTPUT_BYTES",
+    "MCP_EXEC_MAX_STDIN_BYTES",
+    "MCP_EXEC_MAX_TIMEOUT_S",
+    "MCP_EXEC_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.inhuman/mcp-exec",
+   "publishedAt": "2026-07-20T09:45:26.647237Z",
+   "updatedAt": "2026-07-20T09:45:26.647237Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Exec Sandbox"
+ ]
+}

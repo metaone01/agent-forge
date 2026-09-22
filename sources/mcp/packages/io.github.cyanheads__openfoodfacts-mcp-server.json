@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openfoodfacts-mcp-server",
+ "version": "0.3.4",
+ "versionKind": "semver",
+ "description": "Barcode lookup, nutrition search, and product comparison for 3M+ crowd-sourced food products.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openfoodfacts-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openfoodfacts-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openfoodfacts-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openfoodfacts-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "OFF_BASE_URL",
+    "OFF_RATE_LIMIT_PRODUCT",
+    "OFF_RATE_LIMIT_SEARCH",
+    "OFF_RATE_LIMIT_TAXONOMY"
+   ],
+   "remotes": [
+    {
+     "url": "https://openfoodfacts.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openfoodfacts-mcp-server",
+   "publishedAt": "2026-09-17T18:35:38.416925Z",
+   "updatedAt": "2026-09-17T18:35:38.416925Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

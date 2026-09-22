@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.deciduus/calendar-mcp",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "Google Calendar for LLM agents: find, create, update, move, delete events; free/busy; scheduling.",
+ "license": "unknown",
+ "repository": "https://github.com/deciduus/calendar-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "calendar-mcp-server",
+  "url": "https://pypi.org/project/calendar-mcp-server/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "calendar-mcp-server",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
+    "TOKEN_FILE_PATH"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.deciduus/calendar-mcp",
+   "publishedAt": "2026-09-05T11:09:22.812912Z",
+   "updatedAt": "2026-09-05T11:09:22.812912Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

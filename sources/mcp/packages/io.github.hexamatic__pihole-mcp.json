@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hexamatic/pihole-mcp",
+ "version": "0.9.0",
+ "versionKind": "semver",
+ "description": "Manage Pi-hole v6: DNS blocking, domains, clients, query analysis, DHCP, and multi-instance sync.",
+ "license": "unknown",
+ "repository": "https://github.com/hexamatic/pihole-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "pihole-mcp",
+  "url": "https://hub.docker.com/r/hexamatic/pihole-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/hexamatic/pihole-mcp:0.9.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PIHOLE_MAX_RETRIES",
+    "PIHOLE_PASSWORD",
+    "PIHOLE_READ_ONLY",
+    "PIHOLE_REQUEST_TIMEOUT",
+    "PIHOLE_RETRY_MAX_DELAY",
+    "PIHOLE_TLS_SKIP_VERIFY",
+    "PIHOLE_URL",
+    "TZ"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hexamatic/pihole-mcp",
+   "publishedAt": "2026-09-11T04:51:05.017914Z",
+   "updatedAt": "2026-09-11T04:51:05.017914Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/hexamatic/pihole-mcp",
+ "keywords": [
+  "Pi-hole MCP Server"
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.fetchsandbox/mcp",
+ "version": "0.5.7",
+ "versionKind": "semver",
+ "description": "A deterministic verification engine for agents. Proves a fix: fails on the old code, passes on new.",
+ "license": "MIT",
+ "repository": "https://github.com/fetchsandbox/mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "fetchsandbox-mcp",
+  "url": "https://www.npmjs.com/package/fetchsandbox-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "fetchsandbox-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FETCHSANDBOX_API_KEY",
+    "FETCHSANDBOX_BASE_URL",
+    "FETCHSANDBOX_TELEMETRY"
+   ],
+   "remotes": [
+    {
+     "url": "https://fetchsandbox.com/mcp/v1",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.fetchsandbox/mcp",
+   "publishedAt": "2026-09-21T06:19:09.780905Z",
+   "updatedAt": "2026-09-21T06:19:09.780905Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://fetchsandbox.com",
+ "keywords": [
+  "FetchSandbox"
+ ]
+}

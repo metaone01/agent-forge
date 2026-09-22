@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.clusteragent/cluster-mcp",
+ "version": "1.0.12",
+ "versionKind": "semver",
+ "description": "Self-hostable index of AI financial agents — tokenized stocks + crypto, memory, LLM gateway.",
+ "license": "MIT",
+ "repository": "https://github.com/clusteragent/cluster",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@clusteragent/cluster-mcp",
+  "url": "https://www.npmjs.com/package/@clusteragent/cluster-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@clusteragent/cluster-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CLUSTER_API_KEY",
+    "CLUSTER_API_URL",
+    "CLUSTER_WALLET"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.clusteragent.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.clusteragent/cluster-mcp",
+   "publishedAt": "2026-09-21T14:25:57.683954Z",
+   "updatedAt": "2026-09-21T14:25:57.683954Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

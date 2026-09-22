@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "bid.scope/legal",
+ "version": "1.0.9",
+ "versionKind": "semver",
+ "description": "Dispatch litigation work to legal-services vendors from any MCP-compatible AI workflow.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/scope-bid/scope-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@scope-bid/scope-mcp",
+  "url": "https://www.npmjs.com/package/@scope-bid/scope-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@scope-bid/scope-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SCOPE_API_BASE",
+    "SCOPE_API_TOKEN",
+    "SCOPE_ORG_SLUG"
+   ],
+   "remotes": [
+    {
+     "url": "https://scope.bid/api/mcp/legal",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "bid.scope/legal",
+   "publishedAt": "2026-07-30T23:03:58.661276Z",
+   "updatedAt": "2026-07-30T23:03:58.661276Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://scope.bid/mcp/legal",
+ "keywords": [
+  "Scope (Legal)"
+ ]
+}

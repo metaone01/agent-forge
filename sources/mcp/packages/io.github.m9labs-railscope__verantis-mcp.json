@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.m9labs-railscope/verantis-mcp",
+ "version": "0.2.1",
+ "versionKind": "semver",
+ "description": "Verified directory for machine payments (x402 & MPP): check services and wallets before agents pay.",
+ "license": "MIT License",
+ "repository": "https://github.com/m9labs-railscope/verantis-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "verantis-mcp",
+  "url": "https://pypi.org/project/verantis-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "verantis-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "VERANTIS_API_BASE"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.verantis.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.m9labs-railscope/verantis-mcp",
+   "publishedAt": "2026-08-18T04:57:10.770912Z",
+   "updatedAt": "2026-08-18T04:57:10.770912Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

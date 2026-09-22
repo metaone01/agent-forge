@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "aws-transform",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Migrate, modernize, and upgrade codebases to AWS. Transforms .NET Framework to .NET 8/10, mainframe COBOL to Java, VMware VMs to EC2, SQL Server to Aurora, and upgrades Java/Python/Node.js versions and AWS SDKs. AWS Transform - continuous modernization analyzes codebases for tech debt, security issues, and upgrade opportunities, then remediates them.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/awslabs/agent-plugins",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/awslabs/agent-plugins/tree/main/plugins/aws-transform",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "migration",
+   "author": "Amazon Web Services",
+   "ref": "main",
+   "sha": "adc01133bbd01433dcb2c0f98641f2b85694f92f",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/awslabs/agent-plugins"
+}

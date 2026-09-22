@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.bea-technology/roxyon",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Build LumenJS apps, use the Roxyon BaaS, and deploy apps and web projects to Roxyon infrastructure.",
+ "license": "MIT",
+ "repository": "https://github.com/bea-technology/roxyon-devtools",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@roxyon/mcp",
+  "url": "https://www.npmjs.com/package/@roxyon/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@roxyon/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ROXYON_API_URL",
+    "ROXYON_CONSOLE_URL",
+    "ROXYON_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.roxyon.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.bea-technology/roxyon",
+   "publishedAt": "2026-09-04T12:04:14.348844Z",
+   "updatedAt": "2026-09-04T12:04:14.348844Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

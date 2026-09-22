@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.dtkmn/mcp-zap-server",
+ "version": "0.11.0",
+ "versionKind": "semver",
+ "description": "Safe, self-hosted OWASP ZAP operator for guided AI security scans and reports.",
+ "license": "unknown",
+ "repository": "https://github.com/dtkmn/mcp-zap-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-zap-server",
+  "url": "https://hub.docker.com/r/dtkmn/mcp-zap-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/dtkmn/mcp-zap-server:v0.11.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "MCP_API_KEY",
+    "MCP_SECURITY_ALLOW_PLACEHOLDER_API_KEY",
+    "MCP_SECURITY_ENABLED",
+    "MCP_SECURITY_MODE",
+    "MCP_SERVER_TOOLS_SURFACE",
+    "ZAP_API_KEY",
+    "ZAP_API_PORT",
+    "ZAP_API_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.dtkmn/mcp-zap-server",
+   "publishedAt": "2026-07-27T11:37:11.695449Z",
+   "updatedAt": "2026-07-27T11:37:11.695449Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://danieltse.org/mcp-zap-server/",
+ "keywords": [
+  "MCP ZAP Server"
+ ]
+}

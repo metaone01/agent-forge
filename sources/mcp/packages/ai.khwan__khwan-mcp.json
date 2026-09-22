@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.khwan/khwan-mcp",
+ "version": "0.3.12",
+ "versionKind": "semver",
+ "description": "Durable AI memory: recall distilled facts in a later session or subagent, and remember new ones.",
+ "license": "MIT",
+ "repository": "https://github.com/khwanlabs/khwan-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "khwan-mcp",
+  "url": "https://pypi.org/project/khwan-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "khwan-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "KHWAN_API_KEY",
+    "KHWAN_BASE_URL",
+    "KHWAN_CORE",
+    "KHWAN_USER"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.khwan.ai/mcp/{core}/{user}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.khwan/khwan-mcp",
+   "publishedAt": "2026-08-27T15:24:55.085651Z",
+   "updatedAt": "2026-08-27T15:24:55.085651Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://khwan.ai",
+ "keywords": [
+  "Khwan"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "com.schedulala/schedulala",
+ "version": "0.10.1",
+ "versionKind": "semver",
+ "description": "Schedule and publish social posts to 12 platforms with first comments, analytics, and listening.",
+ "license": "MIT",
+ "repository": "https://github.com/schedulala/schedulala-agent",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@schedulala/mcp-server",
+  "url": "https://www.npmjs.com/package/@schedulala/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@schedulala/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SCHEDULALA_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://schedulala.com/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.schedulala/schedulala",
+   "publishedAt": "2026-08-01T21:26:17.568706Z",
+   "updatedAt": "2026-08-01T21:26:17.568706Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

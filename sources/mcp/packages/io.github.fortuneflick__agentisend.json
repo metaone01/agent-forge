@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.fortuneflick/agentisend",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Transactional email API for AI agents: verified domains, a per-sender budget, and a kill switch.",
+ "license": "MIT",
+ "repository": "https://github.com/fortuneflick/agentisend-claude-plugin",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@agentisend/mcp-server",
+  "url": "https://www.npmjs.com/package/@agentisend/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@agentisend/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AGENTISEND_API_KEY",
+    "AGENTISEND_MCP_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.agentisend.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.fortuneflick/agentisend",
+   "publishedAt": "2026-09-20T08:46:41.642957Z",
+   "updatedAt": "2026-09-20T08:46:41.642957Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://agentisend.com/docs/guides/mcp",
+ "keywords": [
+  "AgentiSend"
+ ]
+}

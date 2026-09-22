@@ -1,0 +1,57 @@
+{
+ "schemaVersion": 1,
+ "name": "app.selis.mcp/pmo",
+ "version": "0.2.2",
+ "versionKind": "semver",
+ "description": "MCP server for Selis TMiS — manage PMO entities from any MCP client",
+ "license": "SSPL-1.0",
+ "repository": "https://github.com/calx-sa/selis-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@calx/selis-mcp",
+  "url": "https://www.npmjs.com/package/@calx/selis-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@calx/selis-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://mcp.selis.app/tmis/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.selis.app/tmis/sse",
+     "type": "sse"
+    },
+    {
+     "url": "https://mcp.selis.dev/tmis/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.selis.dev/tmis/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "app.selis.mcp/pmo",
+   "publishedAt": "2026-04-27T13:27:44.913104Z",
+   "updatedAt": "2026-04-27T13:27:44.913104Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Selis MCP"
+ ]
+}

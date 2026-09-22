@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/bitdefender-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "MCP server for Bitdefender GravityZone's JSON-RPC API.",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/bitdefender-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "bitdefender-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/bitdefender-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/bitdefender-mcp:v1.0.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "BITDEFENDER_ACCESS_URL",
+    "BITDEFENDER_API_KEY",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/bitdefender-mcp",
+   "publishedAt": "2026-09-20T19:35:57.092358Z",
+   "updatedAt": "2026-09-20T19:35:57.092358Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/bitdefender-mcp",
+ "keywords": [
+  "Bitdefender GravityZone"
+ ]
+}

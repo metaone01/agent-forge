@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WCAG-Compliance/mcp",
+ "version": "0.7.3",
+ "versionKind": "semver",
+ "description": "Deterministic axe-core accessibility scans (WCAG 2.1 AA, EN 301 549, PDF/UA) via your account.",
+ "license": "MIT",
+ "repository": "https://github.com/WCAG-Compliance/wcagc-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@wcagc/mcp",
+  "url": "https://www.npmjs.com/package/@wcagc/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@wcagc/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "WCAGC_API_BASE_URL",
+    "WCAGC_MCP_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.wcagc.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WCAG-Compliance/mcp",
+   "publishedAt": "2026-09-07T17:55:14.290576Z",
+   "updatedAt": "2026-09-07T17:55:14.290576Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://wcagc.com/integrations/mcp",
+ "keywords": [
+  "wcagc — accessibility scanning"
+ ]
+}

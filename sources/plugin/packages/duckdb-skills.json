@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "duckdb-skills",
+ "version": "7feda8e01e22bc0886c86123f3884947e36d8c69",
+ "versionKind": "other",
+ "description": "DuckDB-powered skills for Claude Code: read any data file, attach and query DuckDB databases, search DuckDB/DuckLake docs, search past session logs, and install/update DuckDB extensions.",
+ "license": "MIT",
+ "repository": "https://github.com/duckdb/duckdb-skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/duckdb/duckdb-skills.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "database",
+   "author": "DuckDB Foundation",
+   "ref": null,
+   "sha": "7feda8e01e22bc0886c86123f3884947e36d8c69",
+   "strict": null
+  }
+ },
+ "homepage": "https://duckdb.org"
+}

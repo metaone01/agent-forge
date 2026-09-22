@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/faostat-mcp-server",
+ "version": "0.2.4",
+ "versionKind": "semver",
+ "description": "UN FAOSTAT global food & agriculture statistics over a local SQLite mirror, via MCP.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/faostat-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/faostat-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/faostat-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/faostat-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CANVAS_PROVIDER_TYPE",
+    "FAOSTAT_BULK_BASE_URL",
+    "FAOSTAT_DOMAINS",
+    "FAOSTAT_MIRROR_PATH",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://faostat.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/faostat-mcp-server",
+   "publishedAt": "2026-09-19T18:04:13.72498Z",
+   "updatedAt": "2026-09-19T18:04:13.72498Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

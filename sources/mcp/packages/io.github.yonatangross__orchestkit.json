@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.yonatangross/orchestkit",
+ "version": "10.0.0-beta.76",
+ "versionKind": "semver",
+ "description": "Read-only MCP server for the OrchestKit docs: full-text search + Markdown fetch. No auth.",
+ "license": "unknown",
+ "repository": "https://github.com/yonatangross/orchestkit",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "orchestkit",
+  "url": "https://hub.docker.com/r/yonatangross/orchestkit-docs-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/yonatangross/orchestkit-docs-mcp:10.0.0-beta.76",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://orchestkit.yonyon.ai/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.yonatangross/orchestkit",
+   "publishedAt": "2026-09-22T09:20:55.674447Z",
+   "updatedAt": "2026-09-22T09:20:55.674447Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://orchestkit.yonyon.ai",
+ "keywords": [
+  "OrchestKit Docs MCP"
+ ]
+}

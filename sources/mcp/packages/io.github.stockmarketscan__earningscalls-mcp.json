@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.stockmarketscan/earningscalls-mcp",
+ "version": "0.2.1",
+ "versionKind": "semver",
+ "description": "177,000+ earnings call transcripts for AI - speaker segments & full-text search.",
+ "license": "MIT",
+ "repository": "https://github.com/stockmarketscan/earningscalls-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@earningscalls/mcp-server",
+  "url": "https://www.npmjs.com/package/@earningscalls/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@earningscalls/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EARNINGSCALLS_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.earningscalls.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.stockmarketscan/earningscalls-mcp",
+   "publishedAt": "2026-07-02T08:55:03.795305Z",
+   "updatedAt": "2026-07-02T08:55:03.795305Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://earningscalls.dev/mcp",
+ "keywords": [
+  "EarningsCalls.dev"
+ ]
+}

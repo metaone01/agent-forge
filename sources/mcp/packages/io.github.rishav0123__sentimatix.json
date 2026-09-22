@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Rishav0123/sentimatix",
+ "version": "1.0.2",
+ "versionKind": "semver",
+ "description": "Real-time NSE/BSE stock sentiment, news NLP, technical analysis & RAG search via MCP.",
+ "license": "unknown",
+ "repository": "https://github.com/Rishav0123/sentimatix",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "sentimatix-mcp",
+  "url": "https://pypi.org/project/sentimatix-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "sentimatix-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BACKEND_API_URL",
+    "SENTIMATIX_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://sentimatix-mcp.up.railway.app/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://sentimatix-mcp.up.railway.app/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Rishav0123/sentimatix",
+   "publishedAt": "2026-05-15T21:44:03.93234Z",
+   "updatedAt": "2026-05-15T21:44:03.93234Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://sentimatix-production.up.railway.app",
+ "keywords": [
+  "Sentimatix"
+ ]
+}

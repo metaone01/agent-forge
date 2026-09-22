@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ECD5A/tkach-security",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Fail-closed MCP adapter for untrusted model output over a local Tkach runtime.",
+ "license": "unknown",
+ "repository": "https://github.com/ECD5A/Tkach-Security",
+ "target": {
+  "type": "mcp",
+  "repository": "cargo",
+  "package": "tkach-mcp",
+  "url": "https://crates.io/crates/tkach-mcp",
+  "typeRef": {
+   "registryType": "cargo",
+   "identifier": "tkach-mcp",
+   "registryBaseUrl": "https://crates.io/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TKACH_BEARER_TOKEN",
+    "TKACH_HTTP_ADDR"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ECD5A/tkach-security",
+   "publishedAt": "2026-09-19T08:43:50.180693Z",
+   "updatedAt": "2026-09-19T08:43:50.180693Z",
+   "identityEvidence": "crates-json"
+  }
+ },
+ "keywords": [
+  "Tkach Security"
+ ]
+}

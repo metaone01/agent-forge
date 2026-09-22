@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ENTERPILOT/gomodel",
+ "version": "0.1.95",
+ "versionKind": "semver",
+ "description": "Self-hosted gateway aggregating upstream MCP servers behind one authenticated HTTP endpoint.",
+ "license": "unknown",
+ "repository": "https://github.com/ENTERPILOT/GoModel",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "gomodel",
+  "url": "https://hub.docker.com/r/enterpilot/gomodel",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/enterpilot/gomodel:0.1.95",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "GOMODEL_MASTER_KEY",
+    "MCP_SERVERS"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ENTERPILOT/gomodel",
+   "publishedAt": "2026-09-20T18:58:30.738076Z",
+   "updatedAt": "2026-09-20T18:58:30.738076Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "GoModel"
+ ]
+}

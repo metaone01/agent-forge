@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openfec-mcp-server",
+ "version": "0.8.1",
+ "versionKind": "semver",
+ "description": "Access FEC campaign finance data. Query data about candidates, money trails, and election filings.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openfec-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openfec-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openfec-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openfec-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FEC_API_KEY",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://openfec.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openfec-mcp-server",
+   "publishedAt": "2026-09-19T21:09:13.403344Z",
+   "updatedAt": "2026-09-19T21:09:13.403344Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

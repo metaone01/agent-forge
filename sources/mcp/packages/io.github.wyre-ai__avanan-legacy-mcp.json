@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/avanan-legacy-mcp",
+ "version": "2.3.0",
+ "versionKind": "semver",
+ "description": "MCP server for the legacy Avanan SmartAPI: MSP tenant management plus per-tenant security tools.",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/avanan-legacy-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "avanan-legacy-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/avanan-legacy-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/avanan-legacy-mcp:v2.3.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AVANAN_CLIENT_ID",
+    "AVANAN_CLIENT_SECRET",
+    "AVANAN_REGION",
+    "CONDUIT_S2S_SECRET",
+    "LOG_LEVEL",
+    "MCP_HTTP_PORT",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/avanan-legacy-mcp",
+   "publishedAt": "2026-09-09T20:33:55.268477Z",
+   "updatedAt": "2026-09-09T20:33:55.268477Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/avanan-legacy-mcp",
+ "keywords": [
+  "Avanan MSP (Legacy SmartAPI)"
+ ]
+}

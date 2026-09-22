@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.typestoofast/finddoc",
+ "version": "0.4.1",
+ "versionKind": "semver",
+ "description": "GTA doctor, specialist, clinic, language, availability, and freshness data through REST and MCP.",
+ "license": "MIT",
+ "repository": "https://github.com/typestoofast/finddoc",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@find-doc/finddoc-mcp",
+  "url": "https://www.npmjs.com/package/@find-doc/finddoc-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@find-doc/finddoc-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FINDDOC_API_BASE_URL",
+    "FINDDOC_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://www.finddoc.ca/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.typestoofast/finddoc",
+   "publishedAt": "2026-08-16T22:13:40.49938Z",
+   "updatedAt": "2026-08-16T22:13:40.49938Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.finddoc.ca/developers/mcp",
+ "keywords": [
+  "Find doctors and specialists in the Greater Toronto Area"
+ ]
+}

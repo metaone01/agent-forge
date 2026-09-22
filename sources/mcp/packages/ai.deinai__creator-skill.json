@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.deinai/creator-skill",
+ "version": "1.0.2",
+ "versionKind": "semver",
+ "description": "AI influencer search on TikTok, Instagram, YouTube. Deinai MCP token required; credits per result.",
+ "license": "unknown",
+ "repository": "https://github.com/deinai/deinai_backend",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "deinai-mcp",
+  "url": "https://pypi.org/project/deinai-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "deinai-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DEINAI_MCP_TOKEN",
+    "DEINAI_MCP_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://deinai.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.deinai/creator-skill",
+   "publishedAt": "2026-06-05T10:16:43.633426Z",
+   "updatedAt": "2026-06-05T10:16:43.633426Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://deinai.ai",
+ "keywords": [
+  "Creator SKILL — Influencer Discovery"
+ ]
+}

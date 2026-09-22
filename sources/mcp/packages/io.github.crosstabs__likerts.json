@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.crosstabs/likerts",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Manage open-source in-product surveys, collections, responses and exports with scoped access.",
+ "license": "MIT",
+ "repository": "https://github.com/crosstabs/likerts",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@likerts/mcp",
+  "url": "https://www.npmjs.com/package/@likerts/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@likerts/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LIKERTS_API_URL",
+    "LIKERTS_COLLECTION_TOKEN",
+    "LIKERTS_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://likerts-mcp.onrender.com/mcp/{workspaceId}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.crosstabs/likerts",
+   "publishedAt": "2026-09-13T00:52:17.55606Z",
+   "updatedAt": "2026-09-13T00:52:17.55606Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://likerts.com/docs#agents",
+ "keywords": [
+  "Likerts"
+ ]
+}

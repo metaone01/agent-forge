@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "amd-skills",
+ "version": "main",
+ "versionKind": "other",
+ "description": "AMD's verified Agent Skills in one plugin: route image/audio through local AI on Ryzen AI, serve LLMs on AMD Instinct GPUs with vLLM, and analyze GPU kernel and PyTorch trace performance.",
+ "license": "MIT",
+ "repository": "https://github.com/amd/skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/amd/skills/tree/main/skills",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "AMD",
+   "ref": "main",
+   "sha": "6916fb371d1cba40757b223cf16b4cd4912b202f",
+   "strict": false
+  }
+ },
+ "homepage": "https://developer.amd.com/"
+}

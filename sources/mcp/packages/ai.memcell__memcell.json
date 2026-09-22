@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.memcell/memcell",
+ "version": "0.8.0",
+ "versionKind": "semver",
+ "description": "Living memory for AI coding agents: recall before acting, report outcomes so confidence is earned.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/memcell-ai/cli",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "memcell",
+  "url": "https://www.npmjs.com/package/memcell",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "memcell",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://memcell.ai/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://memcell.ai/mcp/public/{memory}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.memcell/memcell",
+   "publishedAt": "2026-09-08T05:32:35.33401Z",
+   "updatedAt": "2026-09-08T05:32:35.33401Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://memcell.ai",
+ "keywords": [
+  "MemCell"
+ ]
+}

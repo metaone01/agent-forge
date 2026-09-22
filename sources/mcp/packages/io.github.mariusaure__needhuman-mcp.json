@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.MariusAure/needhuman-mcp",
+ "version": "0.3.2",
+ "versionKind": "semver",
+ "description": "Human-as-a-Service for AI agents. Delegate tasks that need a real human, get results via API.",
+ "license": "MIT",
+ "repository": "https://github.com/MariusAure/needhuman-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@needhuman/mcp-server",
+  "url": "https://www.npmjs.com/package/@needhuman/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@needhuman/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "NEEDHUMAN_API_KEY",
+    "NEEDHUMAN_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://needhuman.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.MariusAure/needhuman-mcp",
+   "publishedAt": "2026-03-09T08:40:49.49066Z",
+   "updatedAt": "2026-03-09T08:40:49.49066Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://needhuman.ai",
+ "keywords": [
+  "NeedHuman"
+ ]
+}

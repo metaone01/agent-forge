@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "snowflake-cortex-code",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Automatically route Snowflake prompts from Claude Code to Cortex Code for execution. Provides slash commands for code review and task delegation, plus skills for routing, run, and setup.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/Snowflake-Labs/snowflake-ai-kit",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/Snowflake-Labs/snowflake-ai-kit/tree/main/plugins/cortex-code",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Snowflake",
+   "ref": "main",
+   "sha": "0c54225ea50b44c2ae07e1f378bf401e88b33c33",
+   "strict": null
+  }
+ },
+ "homepage": "https://docs.snowflake.com/en/user-guide/cortex-code"
+}

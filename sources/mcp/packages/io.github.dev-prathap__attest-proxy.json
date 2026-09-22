@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.dev-prathap/attest-proxy",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Zero-code proxy: policy, human gate, read-back and a hash-chained ledger for any MCP server.",
+ "license": "MIT",
+ "repository": "https://github.com/dev-prathap/ATTEST",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "attestlayer",
+  "url": "https://pypi.org/project/attestlayer/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "attestlayer",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ATTEST_INBOX_URL",
+    "ATTEST_LEDGER",
+    "ATTEST_POLICY",
+    "ATTEST_SLACK_CHANNEL",
+    "SLACK_BOT_TOKEN"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.dev-prathap/attest-proxy",
+   "publishedAt": "2026-09-19T07:41:53.258053Z",
+   "updatedAt": "2026-09-19T07:41:53.258053Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://dev-prathap.github.io/ATTEST/entry/mcp/",
+ "keywords": [
+  "Attest proxy"
+ ]
+}

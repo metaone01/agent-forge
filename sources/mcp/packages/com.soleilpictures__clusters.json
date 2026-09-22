@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.soleilpictures/clusters",
+ "version": "2.1.1",
+ "versionKind": "semver",
+ "description": "Read and build visual moodboards, shot lists and lookbooks from an AI assistant.",
+ "license": "MIT",
+ "repository": "https://github.com/arconkli/soleilpictures",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "soleil-clusters-mcp",
+  "url": "https://www.npmjs.com/package/soleil-clusters-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "soleil-clusters-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SOLEIL_API_BASE",
+    "SOLEIL_API_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://clusters.soleilpictures.com/api/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.soleilpictures/clusters",
+   "publishedAt": "2026-08-11T04:37:56.732238Z",
+   "updatedAt": "2026-08-11T04:37:56.732238Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://clusters.soleilpictures.com/docs/mcp",
+ "keywords": [
+  "Soleil Clusters"
+ ]
+}

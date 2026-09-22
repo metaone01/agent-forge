@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "desktop-commander",
+ "version": "main",
+ "versionKind": "other",
+ "description": "MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images, and structured data.",
+ "license": "MIT",
+ "repository": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP/tree/main/plugins/claude",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "Desktop Commander",
+   "ref": "main",
+   "sha": "1eccc8b09cc09805202a1737fd20d605356c3671",
+   "strict": null
+  }
+ },
+ "homepage": "https://desktopcommander.app"
+}

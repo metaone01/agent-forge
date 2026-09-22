@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.itmplatform/mcp-server",
+ "version": "1.0.3",
+ "versionKind": "semver",
+ "description": "Connect AI assistants to ITM Platform projects, tasks, budgets, risks, and team workload.",
+ "license": "MIT",
+ "repository": "https://github.com/itmplatform/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@itm-platform/mcp-server",
+  "url": "https://www.npmjs.com/package/@itm-platform/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@itm-platform/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ITM_API_KEY",
+    "ITM_API_URL",
+    "ITM_COMPANY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.itmplatform.com/v2/_/mcp/",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.itmplatform/mcp-server",
+   "publishedAt": "2026-06-12T10:22:46.161294Z",
+   "updatedAt": "2026-06-12T10:22:46.161294Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://developers.itmplatform.com/mcp/",
+ "keywords": [
+  "ITM Platform"
+ ]
+}

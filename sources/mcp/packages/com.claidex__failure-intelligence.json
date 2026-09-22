@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.claidex/failure-intelligence",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "Biomedical failure intelligence platform for terminated trials and translational analysis.",
+ "license": "MIT",
+ "repository": "https://github.com/ssatanis/claidex-sentinel",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@claidex-mcp/claidex-mcp",
+  "url": "https://www.npmjs.com/package/@claidex-mcp/claidex-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@claidex-mcp/claidex-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CLAIDEX_MCP_API_KEY",
+    "CLAIDEX_MCP_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://app.claidex.com/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.claidex/failure-intelligence",
+   "publishedAt": "2026-05-24T20:01:49.13518Z",
+   "updatedAt": "2026-05-24T20:01:49.13518Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://claidex.com",
+ "keywords": [
+  "Claidex MCP"
+ ]
+}

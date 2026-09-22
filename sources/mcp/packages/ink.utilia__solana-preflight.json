@@ -1,0 +1,53 @@
+{
+ "schemaVersion": 1,
+ "name": "ink.utilia/solana-preflight",
+ "version": "0.5.8",
+ "versionKind": "semver",
+ "description": "Solana transaction diagnosis, simulation, token-risk evidence, and priority fees via x402 USDC.",
+ "license": "MIT",
+ "repository": "https://github.com/mohamedkuch/utilia-solana-agent",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "utilia-solana-agent",
+  "url": "https://www.npmjs.com/package/utilia-solana-agent",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "utilia-solana-agent",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SOLANA_KEYPAIR_PATH"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.utilia.ink/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://api.utilia.ink/base/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ink.utilia/solana-preflight",
+   "publishedAt": "2026-07-28T18:07:37.846001Z",
+   "updatedAt": "2026-07-28T18:07:37.846001Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://utilia.ink/solana-transaction-support",
+ "keywords": [
+  "Utilia Solana Transaction Evidence"
+ ]
+}

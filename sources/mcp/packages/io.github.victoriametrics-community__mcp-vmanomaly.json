@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.VictoriaMetrics-Community/mcp-vmanomaly",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "MCP Server for vmanomaly - VictoriaMetrics anomaly detection",
+ "license": "unknown",
+ "repository": "https://github.com/VictoriaMetrics-Community/mcp-vmanomaly",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-vmanomaly",
+  "url": "https://hub.docker.com/r/victoriametrics-community/mcp-vmanomaly",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/victoriametrics-community/mcp-vmanomaly:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_DISABLED_TOOLS",
+    "MCP_DISABLE_RESOURCES",
+    "MCP_HEARTBEAT_INTERVAL",
+    "MCP_LISTEN_ADDR",
+    "MCP_LOG_FILE",
+    "MCP_LOG_LEVEL",
+    "MCP_SERVER_MODE",
+    "VMANOMALY_BEARER_TOKEN",
+    "VMANOMALY_ENDPOINT",
+    "VMANOMALY_HEADERS"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.VictoriaMetrics-Community/mcp-vmanomaly",
+   "publishedAt": "2025-12-17T14:56:44.848823Z",
+   "updatedAt": "2025-12-17T14:56:44.848823Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

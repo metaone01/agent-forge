@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/imf-mcp-server",
+ "version": "0.4.2",
+ "versionKind": "semver",
+ "description": "Query IMF SDMX 3.0 macroeconomic dataflows — WEO, BOP, CPI, exchange rates, 190 countries.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/imf-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/imf-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/imf-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/imf-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "IMF_ENABLE_DATAFRAME_DROP",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://imf.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/imf-mcp-server",
+   "publishedAt": "2026-09-19T21:07:55.021934Z",
+   "updatedAt": "2026-09-19T21:07:55.021934Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/arxiv-mcp-server",
+ "version": "1.5.3",
+ "versionKind": "semver",
+ "description": "Search arXiv, fetch paper metadata, and read full-text content.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/arxiv-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/arxiv-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/arxiv-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/arxiv-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ARXIV_API_BASE_URL",
+    "ARXIV_API_TIMEOUT_MS",
+    "ARXIV_CONTENT_TIMEOUT_MS",
+    "ARXIV_REQUEST_DELAY_MS",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://arxiv.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/arxiv-mcp-server",
+   "publishedAt": "2026-09-19T15:47:24.50108Z",
+   "updatedAt": "2026-09-19T15:47:24.50108Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

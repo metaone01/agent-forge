@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/clinicaltrialsgov-mcp-server",
+ "version": "2.9.8",
+ "versionKind": "semver",
+ "description": "Search ClinicalTrials.gov — find studies, retrieve results, match patients to eligible trials.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/clinicaltrialsgov-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "clinicaltrialsgov-mcp-server",
+  "url": "https://www.npmjs.com/package/clinicaltrialsgov-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "clinicaltrialsgov-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CT_API_BASE_URL",
+    "CT_MAX_PAGE_SIZE",
+    "CT_REQUEST_TIMEOUT_MS",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://clinicaltrials.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/clinicaltrialsgov-mcp-server",
+   "publishedAt": "2026-09-18T11:35:24.993998Z",
+   "updatedAt": "2026-09-18T11:35:24.993998Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

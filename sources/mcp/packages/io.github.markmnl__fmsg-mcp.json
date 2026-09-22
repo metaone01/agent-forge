@@ -1,0 +1,56 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.markmnl/fmsg-mcp",
+ "version": "0.2.1",
+ "versionKind": "semver",
+ "description": "Federated messaging with your fmsg hosting provider. Connect with OAuth or an API key.",
+ "license": "MIT",
+ "repository": "https://github.com/markmnl/fmsg-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@markmnl/fmsg-mcp",
+  "url": "https://www.npmjs.com/package/@markmnl/fmsg-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@markmnl/fmsg-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FMSG_API_KEY",
+    "FMSG_API_URL",
+    "FMSG_DEFAULT_DOMAIN",
+    "FMSG_MCP_DOWNLOAD_DIR"
+   ],
+   "remotes": [
+    {
+     "url": "https://{oauth_mcp_endpoint}",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://{api_key_mcp_endpoint}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.markmnl/fmsg-mcp",
+   "publishedAt": "2026-09-22T06:27:41.822344Z",
+   "updatedAt": "2026-09-22T06:27:41.822344Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://github.com/markmnl/fmsg-mcp#readme",
+ "keywords": [
+  "fmsg"
+ ]
+}

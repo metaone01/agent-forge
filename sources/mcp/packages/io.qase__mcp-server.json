@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.qase/mcp-server",
+ "version": "2.6.0",
+ "versionKind": "semver",
+ "description": "Official MCP server for Qase — manage test cases, runs, suites, defects via AI tools.",
+ "license": "MIT",
+ "repository": "https://github.com/qase-tms/qase-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@qase/mcp-server",
+  "url": "https://www.npmjs.com/package/@qase/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@qase/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "QASE_API_DOMAIN",
+    "QASE_API_PROTOCOL",
+    "QASE_API_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.qase.io/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.qase/mcp-server",
+   "publishedAt": "2026-09-21T08:21:09.39819Z",
+   "updatedAt": "2026-09-21T08:21:09.39819Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://qase.io",
+ "keywords": [
+  "Qase Test Management"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.zcag/tela",
+ "version": "0.7.4",
+ "versionKind": "semver",
+ "description": "Self-hostable team wiki; agents read & write it via MCP; Atlas turns your repo into a cited wiki.",
+ "license": "AGPL-3.0-only",
+ "repository": "https://github.com/zcag/tela",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "tela-mcp",
+  "url": "https://www.npmjs.com/package/tela-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "tela-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TELA_API_KEY",
+    "TELA_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://telawiki.com/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.zcag/tela",
+   "publishedAt": "2026-06-30T14:54:17.934399Z",
+   "updatedAt": "2026-06-30T14:54:17.934399Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://telawiki.com"
+}

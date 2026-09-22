@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "databricks",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration.",
+ "license": "NOASSERTION",
+ "repository": "https://github.com/databricks/databricks-agent-skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/databricks/databricks-agent-skills/tree/main/plugins/databricks/claude",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "database",
+   "author": "Databricks",
+   "ref": "main",
+   "sha": "0fbf9ba4cdb2fd5a0efd952e8225acc1d5099809",
+   "strict": null
+  }
+ },
+ "homepage": "https://developers.databricks.com/"
+}

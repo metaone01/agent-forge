@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hxckya/pkgtruth",
+ "version": "0.2.2",
+ "versionKind": "semver",
+ "description": "Catches hallucinated and slopsquatted npm and PyPI packages before an agent installs them.",
+ "license": "MIT",
+ "repository": "https://github.com/hxckya/pkgtruth",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "pkgtruth",
+  "url": "https://www.npmjs.com/package/pkgtruth",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "pkgtruth",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PKGTRUTH_CACHE_DIR",
+    "PKGTRUTH_DOWNLOADS_API",
+    "PKGTRUTH_REGISTRY",
+    "PKGTRUTH_TIMEOUT_MS"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hxckya/pkgtruth",
+   "publishedAt": "2026-09-10T06:24:23.807095Z",
+   "updatedAt": "2026-09-10T06:24:23.807095Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

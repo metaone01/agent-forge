@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "app.qwady/borough",
+ "version": "1.1.0",
+ "versionKind": "semver",
+ "description": "Search NYC rentals and sales, property details, building data, and market analytics",
+ "license": "MIT",
+ "repository": "https://github.com/jdmay2/borough",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@borough/mcp",
+  "url": "https://www.npmjs.com/package/@borough/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@borough/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BOROUGH_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://borough.qwady.app/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "app.qwady/borough",
+   "publishedAt": "2026-02-20T16:40:27.384696Z",
+   "updatedAt": "2026-02-20T16:40:27.384696Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://docs.qwady.app",
+ "keywords": [
+  "Borough NYC Real Estate API"
+ ]
+}

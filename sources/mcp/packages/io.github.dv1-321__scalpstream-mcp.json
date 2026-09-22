@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.DV1-321/scalpstream-mcp",
+ "version": "0.1.6",
+ "versionKind": "semver",
+ "description": "Pay-per-call data over x402: air quality, border waits, fuel prices, market research.",
+ "license": "unknown",
+ "repository": "https://github.com/DV1-321/scalpstream-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "scalpstream-mcp",
+  "url": "https://hub.docker.com/r/dv1-321/scalpstream-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/dv1-321/scalpstream-mcp:v0.1.6",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EVM_BASE_PRIVATE_KEY",
+    "SCALPMCP_BUDGET_USD",
+    "SCALPMCP_MAX_PRICE_USD"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.DV1-321/scalpstream-mcp",
+   "publishedAt": "2026-09-08T19:01:47.557605Z",
+   "updatedAt": "2026-09-08T19:01:47.557605Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://scalpstream.com",
+ "keywords": [
+  "ScalpStream"
+ ]
+}

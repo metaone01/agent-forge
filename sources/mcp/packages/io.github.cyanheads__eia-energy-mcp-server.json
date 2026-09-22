@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/eia-energy-mcp-server",
+ "version": "0.4.2",
+ "versionKind": "semver",
+ "description": "Browse and query the EIA API v2 — electricity, petroleum, natural gas, coal, forecasts via MCP.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/eia-energy-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/eia-energy-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/eia-energy-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/eia-energy-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CANVAS_PROVIDER_TYPE",
+    "EIA_API_KEY",
+    "EIA_CANVAS_MAX_ROWS",
+    "EIA_DATAFRAME_DROP_ENABLED",
+    "EIA_DATASET_TTL_SECONDS",
+    "EIA_FACET_VALUE_CAP",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://eia-energy.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/eia-energy-mcp-server",
+   "publishedAt": "2026-09-19T19:11:48.551036Z",
+   "updatedAt": "2026-09-19T19:11:48.551036Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

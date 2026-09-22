@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wyre-technology/avanan-legacy-mcp",
+ "version": "1.1.0",
+ "versionKind": "semver",
+ "description": "MCP server for the Avanan MSP SmartAPI — manage child MSPs, users, tenants, licenses, and usage.",
+ "license": "unknown",
+ "repository": "https://github.com/wyre-technology/avanan-legacy-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "avanan-legacy-mcp",
+  "url": "https://hub.docker.com/r/wyre-technology/avanan-legacy-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-technology/avanan-legacy-mcp:v1.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AVANAN_APP_ID",
+    "AVANAN_REGION",
+    "AVANAN_SECRET",
+    "AVANAN_TOKEN",
+    "LOG_LEVEL",
+    "MCP_HTTP_PORT",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wyre-technology/avanan-legacy-mcp",
+   "publishedAt": "2026-07-17T23:19:42.658465Z",
+   "updatedAt": "2026-07-17T23:19:42.658465Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/wyre-technology/avanan-legacy-mcp",
+ "keywords": [
+  "Avanan MSP (Legacy SmartAPI)"
+ ]
+}

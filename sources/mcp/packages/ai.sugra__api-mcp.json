@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.sugra/api-mcp",
+ "version": "0.12.0",
+ "versionKind": "semver",
+ "description": "Gateway between LLM agents and world data through eight tools and a bundled endpoint catalog.",
+ "license": "MIT",
+ "repository": "https://github.com/Sugra-Systems/sugra-api-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "sugra-api-mcp",
+  "url": "https://pypi.org/project/sugra-api-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "sugra-api-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SUGRA_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://app.sugra.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.sugra/api-mcp",
+   "publishedAt": "2026-09-12T08:30:56.990294Z",
+   "updatedAt": "2026-09-12T08:30:56.990294Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Sugra API"
+ ]
+}

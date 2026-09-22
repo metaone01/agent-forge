@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/tvmaze-mcp-server",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Search TVmaze shows, next episodes in your timezone, episode guides, daily TV schedules, and cast.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/tvmaze-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/tvmaze-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/tvmaze-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/tvmaze-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "TVMAZE_BASE_URL",
+    "TVMAZE_CACHE_TTL_S",
+    "TVMAZE_DEFAULT_COUNTRY",
+    "TVMAZE_DEFAULT_TIMEZONE",
+    "TVMAZE_MAX_CONCURRENCY",
+    "TVMAZE_REQUEST_TIMEOUT_MS",
+    "TVMAZE_USER_AGENT"
+   ],
+   "remotes": [
+    {
+     "url": "https://tvmaze.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/tvmaze-mcp-server",
+   "publishedAt": "2026-09-20T14:04:15.074105Z",
+   "updatedAt": "2026-09-20T14:04:15.074105Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

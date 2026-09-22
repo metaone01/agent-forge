@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.AceDataCloud/mcp-fish",
+ "version": "2026.9.6.1",
+ "versionKind": "semver",
+ "description": "MCP server exposing the AceDataCloud Fish Audio API (text-to-speech with voice conditioning)",
+ "license": "MIT",
+ "repository": "https://github.com/AceDataCloud/FishMCP",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "mcp-fish",
+  "url": "https://pypi.org/project/mcp-fish/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "mcp-fish",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ACEDATACLOUD_API_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://fish.mcp.acedata.cloud/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.AceDataCloud/mcp-fish",
+   "publishedAt": "2026-09-06T06:37:33.906465Z",
+   "updatedAt": "2026-09-06T06:37:33.906465Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://fish.mcp.acedata.cloud"
+}

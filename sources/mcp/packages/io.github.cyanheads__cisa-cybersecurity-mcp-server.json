@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/cisa-cybersecurity-mcp-server",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "CISA KEV with BOD 26-04 deadlines, SSVC prioritization, and the ICS advisory corpus (CSAF). Keyless.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/cisa-cybersecurity-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/cisa-cybersecurity-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/cisa-cybersecurity-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/cisa-cybersecurity-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CISA_CSAF_MIRROR_AUTO_INIT",
+    "CISA_CSAF_MIRROR_PATH",
+    "CISA_CSAF_REFRESH_CRON",
+    "CISA_FEED_CACHE_TTL_SECONDS",
+    "CISA_HTTP_TIMEOUT_MS",
+    "CISA_KEV_REFRESH_CRON",
+    "CISA_VULNRICHMENT_CACHE_TTL_SECONDS",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://cisa-cybersecurity.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/cisa-cybersecurity-mcp-server",
+   "publishedAt": "2026-09-20T14:21:22.719915Z",
+   "updatedAt": "2026-09-20T14:21:22.719915Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

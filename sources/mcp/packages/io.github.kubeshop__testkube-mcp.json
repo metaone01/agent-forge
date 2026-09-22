@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.kubeshop/testkube-mcp",
+ "version": "2.9.1",
+ "versionKind": "semver",
+ "description": "MCP server for Testkube - Manage test workflows, executions, and artifacts via AI assistants",
+ "license": "unknown",
+ "repository": "https://github.com/kubeshop/testkube",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "testkube-mcp",
+  "url": "https://hub.docker.com/r/kubeshop/mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/kubeshop/mcp-server:2.9.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TK_ACCESS_TOKEN",
+    "TK_CONTROL_PLANE_URL",
+    "TK_DASHBOARD_URL",
+    "TK_DEBUG",
+    "TK_ENV_ID",
+    "TK_MCP_SHTTP_HOST",
+    "TK_MCP_SHTTP_PORT",
+    "TK_MCP_TRANSPORT",
+    "TK_ORG_ID"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.kubeshop/testkube-mcp",
+   "publishedAt": "2026-04-24T08:35:31.489242Z",
+   "updatedAt": "2026-04-24T08:35:31.489242Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

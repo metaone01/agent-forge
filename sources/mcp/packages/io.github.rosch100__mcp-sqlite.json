@@ -1,0 +1,39 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.rosch100/mcp-sqlite",
+ "version": "0.2.4",
+ "versionKind": "semver",
+ "description": "MCP server for SQLCipher 4 encrypted SQLite databases with full CRUD operations and query support",
+ "license": "unknown",
+ "repository": "https://github.com/rosch100/mcp-sqlite",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-sqlite",
+  "url": "https://hub.docker.com/r/rosch100/mcp-sqlite",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/rosch100/mcp-sqlite:0.2.4",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DB_PASSPHRASE",
+    "DB_PATH"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.rosch100/mcp-sqlite",
+   "publishedAt": "2025-11-18T07:18:50.55139Z",
+   "updatedAt": "2025-11-18T07:18:50.55139Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

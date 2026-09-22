@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.astrocal/mcp-server",
+ "version": "0.1.6",
+ "versionKind": "semver",
+ "description": "AI-native scheduling: check availability, book meetings, cancel and reschedule via MCP",
+ "license": "MIT",
+ "repository": "https://github.com/astrocal-dev/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@astrocal/mcp-server",
+  "url": "https://www.npmjs.com/package/@astrocal/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@astrocal/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ASTROCAL_API_KEY",
+    "ASTROCAL_API_URL",
+    "ASTROCAL_DEFAULT_EVENT_TYPE_ID"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.astrocal.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.astrocal/mcp-server",
+   "publishedAt": "2026-06-24T21:31:29.698149Z",
+   "updatedAt": "2026-06-24T21:31:29.698149Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://astrocal.dev",
+ "keywords": [
+  "Astrocal"
+ ]
+}

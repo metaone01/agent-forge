@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.gblinproject/gblin-treasury-risk-regime",
+ "version": "0.4.0",
+ "versionKind": "semver",
+ "description": "Risk regime + treasury for AI agents on Base: free regime reads, signed attestations, idle USDC.",
+ "license": "MIT",
+ "repository": "https://github.com/gblinproject/gblin-treasury-risk-regime",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@gblin-protocol/mcp-server",
+  "url": "https://www.npmjs.com/package/@gblin-protocol/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@gblin-protocol/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GBLIN_RPC_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://gblin-mcp.gblin-mcp-worker.workers.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.gblinproject/gblin-treasury-risk-regime",
+   "publishedAt": "2026-09-22T06:06:04.443853Z",
+   "updatedAt": "2026-09-22T06:06:04.443853Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

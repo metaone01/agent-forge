@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Africa-Data-Bank/africadb",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "Trusted African data, provenance, citations, and catalog search for AI agents.",
+ "license": "unknown",
+ "repository": "https://github.com/Africa-Data-Bank/afridb-platform",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "africadb",
+  "url": "https://hub.docker.com/r/jmatrixjnr/afridb-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/jmatrixjnr/afridb-mcp-server:1.0.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AFRICADB_API_TOKEN",
+    "AFRICADB_API_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Africa-Data-Bank/africadb",
+   "publishedAt": "2026-08-02T20:19:55.348004Z",
+   "updatedAt": "2026-08-02T20:19:55.348004Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://africadb.com",
+ "keywords": [
+  "Africa Data Bank"
+ ]
+}

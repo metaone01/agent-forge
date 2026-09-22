@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ionos-cloud/ionoscloud-mcp",
+ "version": "1.1.1",
+ "versionKind": "semver",
+ "description": "Inspect and manage IONOS CLOUD infrastructure via MCP. Writes are opt-in and off by default.",
+ "license": "unknown",
+ "repository": "https://github.com/ionos-cloud/ionoscloud-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "ionoscloud-mcp",
+  "url": "https://hub.docker.com/r/ionos-cloud/ionoscloud-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/ionos-cloud/ionoscloud-mcp:1.1.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "IONOS_MCP_LOAD_MODE",
+    "IONOS_MCP_TOOL_SCOPE",
+    "IONOS_S3_ACCESS_KEY",
+    "IONOS_S3_SECRET_KEY",
+    "IONOS_TOKEN"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ionos-cloud/ionoscloud-mcp",
+   "publishedAt": "2026-09-17T07:09:57.312846Z",
+   "updatedAt": "2026-09-17T07:09:57.312846Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "IONOS CLOUD MCP Server"
+ ]
+}

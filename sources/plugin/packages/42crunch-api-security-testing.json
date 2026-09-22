@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "42crunch-api-security-testing",
+ "version": "v1.5.5",
+ "versionKind": "other",
+ "description": "Automate API security directly in Claude Code with 42Crunch - automatically audit OpenAPI specs, detect vulnerabilities aligned with OWASP API Security risks (including BOLA/BFLA), and apply AI-powered fixes. Designed for AI-assisted development workflows, it provides continuous guardrails through an audit->scan->remediate->validate loop, ensuring APIs meet enterprise security standards before deployment.",
+ "license": "unknown",
+ "repository": "https://github.com/42Crunch-AI/claude-plugins",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/42Crunch-AI/claude-plugins/tree/v1.5.5/plugins/api-security-testing",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "security",
+   "author": "42Crunch",
+   "ref": "v1.5.5",
+   "sha": "30287f5e3f122a646d1ac5ca3ab96e130c52a3ad",
+   "strict": null
+  }
+ },
+ "homepage": "https://42crunch.com"
+}

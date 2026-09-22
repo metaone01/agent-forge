@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jmrplens/libgen-mcp",
+ "version": "1.7.3",
+ "versionKind": "semver",
+ "description": "Federated search of books and papers, BibTeX/RIS citations, open-access retrieval and reading.",
+ "license": "unknown",
+ "repository": "https://github.com/jmrplens/libgen-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "mcpb",
+  "package": "libgen-mcp",
+  "url": "https://github.com/jmrplens/libgen-mcp/releases/download/v1.7.3/libgen-mcp.mcpb",
+  "typeRef": {
+   "registryType": "mcpb",
+   "identifier": "https://github.com/jmrplens/libgen-mcp/releases/download/v1.7.3/libgen-mcp.mcpb",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LIBGEN_MCP_DOWNLOAD_DIR",
+    "LIBGEN_MCP_TIMEOUT",
+    "LIBGEN_MIRROR"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.jmrp.io/libgen",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jmrplens/libgen-mcp",
+   "publishedAt": "2026-09-19T12:51:23.900623Z",
+   "updatedAt": "2026-09-19T12:51:23.900623Z",
+   "identityEvidence": "mcpb-bundle-url"
+  }
+ },
+ "homepage": "https://jmrp.io/docs/libgen-mcp",
+ "keywords": [
+  "Books & Papers MCP Server"
+ ]
+}

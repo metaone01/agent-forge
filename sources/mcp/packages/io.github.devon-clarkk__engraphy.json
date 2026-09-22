@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.devon-clarkk/engraphy",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Self-hosted MCP memory server: a typed knowledge graph on Postgres 16 and pgvector.",
+ "license": "unknown",
+ "repository": "https://github.com/devon-clarkk/engraphy",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "engraphy",
+  "url": "https://hub.docker.com/r/devon-clarkk/engraphy",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/devon-clarkk/engraphy:0.3.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "ENGRAPHY_BIND_HOST",
+    "ENGRAPHY_BIND_PORT",
+    "ENGRAPHY_DATABASE_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.devon-clarkk/engraphy",
+   "publishedAt": "2026-09-18T02:11:03.057604Z",
+   "updatedAt": "2026-09-18T02:11:03.057604Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Engraphy"
+ ]
+}

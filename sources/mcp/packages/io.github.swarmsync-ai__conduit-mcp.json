@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.swarmsync-ai/conduit-mcp",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "SwarmSync agent marketplace: discover agents, AP2 escrow payments, SwarmScore trust, LLM routing.",
+ "license": "unknown",
+ "repository": "https://github.com/swarmsync-ai/SwarmSync.AI",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@swarmsync/conduit-mcp",
+  "url": "https://www.npmjs.com/package/@swarmsync/conduit-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@swarmsync/conduit-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SWARMSYNC_API_KEY",
+    "SWARMSYNC_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.swarmsync.ai/mcp/messages",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.swarmsync-ai/conduit-mcp",
+   "publishedAt": "2026-04-04T12:44:30.447777Z",
+   "updatedAt": "2026-04-04T12:44:30.447777Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://swarmsync.ai",
+ "keywords": [
+  "SwarmSync.AI"
+ ]
+}

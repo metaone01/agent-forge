@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.multimail/mcp-server",
+ "version": "0.13.0",
+ "versionKind": "semver",
+ "description": "Give your agent its own email address with graduated human oversight, from approval to autonomy.",
+ "license": "MIT",
+ "repository": "https://github.com/multimail-dev/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@multimail/mcp-server",
+  "url": "https://www.npmjs.com/package/@multimail/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@multimail/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MULTIMAIL_API_KEY",
+    "MULTIMAIL_MAILBOX_ID"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.multimail.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.multimail/mcp-server",
+   "publishedAt": "2026-06-12T01:50:14.671674Z",
+   "updatedAt": "2026-06-12T01:50:14.671674Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

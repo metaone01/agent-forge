@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.nagarjunr/sparkplug-b",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "MCP server for Sparkplug B: node/device discovery, metrics, commands, host state over MQTT.",
+ "license": "MIT License",
+ "repository": "https://github.com/nagarjunr/iot-mcp-servers",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "sparkplug-b-mcp-server",
+  "url": "https://pypi.org/project/sparkplug-b-mcp-server/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "sparkplug-b-mcp-server",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SPARKPLUG_GROUP_ID",
+    "SPARKPLUG_HOST_ID",
+    "SPARKPLUG_MQTT_HOST",
+    "SPARKPLUG_MQTT_PASSWORD",
+    "SPARKPLUG_MQTT_PORT",
+    "SPARKPLUG_MQTT_USERNAME",
+    "SPARKPLUG_MQTT_USE_TLS"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.nagarjunr/sparkplug-b",
+   "publishedAt": "2026-08-04T18:09:09.359051Z",
+   "updatedAt": "2026-08-04T18:09:09.359051Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Sparkplug B"
+ ]
+}

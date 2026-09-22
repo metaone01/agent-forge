@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jitbit/jitbit-helpdesk",
+ "version": "2.0.0",
+ "versionKind": "semver",
+ "description": "MCP server for Jitbit Helpdesk: search, list, read, and reply to support tickets from AI assistants.",
+ "license": "MIT",
+ "repository": "https://github.com/jitbit/jitbit-helpdesk-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "jitbit-helpdesk-mcp",
+  "url": "https://www.npmjs.com/package/jitbit-helpdesk-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "jitbit-helpdesk-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "JITBIT_TOKEN",
+    "JITBIT_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://{helpdesk_host}/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jitbit/jitbit-helpdesk",
+   "publishedAt": "2026-06-05T21:27:24.772186Z",
+   "updatedAt": "2026-06-05T21:27:24.772186Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Jitbit Helpdesk"
+ ]
+}

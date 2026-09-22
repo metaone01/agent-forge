@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Edison-Watch/sealgate-mcp",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Sealgate gateway proxy: list governed MCP servers and review agent session and audit status.",
+ "license": "MIT",
+ "repository": "https://github.com/Edison-Watch/sealgate-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@sealgate/mcp",
+  "url": "https://www.npmjs.com/package/@sealgate/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@sealgate/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SEALGATE_API_KEY",
+    "SEALGATE_GATEWAY_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.sealgate.ai/mcp/{api_key}/?client={label}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Edison-Watch/sealgate-mcp",
+   "publishedAt": "2026-08-19T19:20:17.699121Z",
+   "updatedAt": "2026-08-19T19:20:17.699121Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://sealgate.ai",
+ "keywords": [
+  "Sealgate"
+ ]
+}

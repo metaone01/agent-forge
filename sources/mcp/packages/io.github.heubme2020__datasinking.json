@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.heubme2020/datasinking",
+ "version": "0.2.10",
+ "versionKind": "semver",
+ "description": "Full-text Asian financial reports (China, Korea, Japan, Taiwan) as clean Markdown for RAG agents.",
+ "license": "MIT",
+ "repository": "https://github.com/heubme2020/datasinking",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "datasinking",
+  "url": "https://pypi.org/project/datasinking/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "datasinking",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DATASINK_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.datasink.ing/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.heubme2020/datasinking",
+   "publishedAt": "2026-09-22T06:23:20.93061Z",
+   "updatedAt": "2026-09-22T06:23:20.93061Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://datasink.ing",
+ "keywords": [
+  "DataSinking"
+ ]
+}

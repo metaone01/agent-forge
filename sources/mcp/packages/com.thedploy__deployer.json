@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "com.thedploy/deployer",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "Check if a repo will deploy, plan a deploy to your own cloud, and see status, logs and redeploys.",
+ "license": "MIT",
+ "repository": "https://github.com/Avinash147-1193/thedeployer-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "thedeployer-mcp",
+  "url": "https://www.npmjs.com/package/thedeployer-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "thedeployer-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "THEDEPLOYER_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://app.thedploy.com/api/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.thedploy/deployer",
+   "publishedAt": "2026-09-14T14:20:45.032178Z",
+   "updatedAt": "2026-09-14T14:20:45.032178Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://thedploy.com",
+ "keywords": [
+  "The Deployer"
+ ]
+}

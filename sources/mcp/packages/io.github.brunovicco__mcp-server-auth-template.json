@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.brunovicco/mcp-server-auth-template",
+ "version": "0.6.2",
+ "versionKind": "semver",
+ "description": "OAuth 2.1/OIDC resource-server reference for secure MCP authorization",
+ "license": "unknown",
+ "repository": "https://github.com/brunovicco/mcp-server-auth-template",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-server-auth-template",
+  "url": "https://hub.docker.com/r/brunovicco/mcp-server-auth-template",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/brunovicco/mcp-server-auth-template:v0.6.2",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "MCP_SERVER_AUTH_PROVIDER",
+    "MCP_SERVER_ENTRA_APPLICATION_ID_URI",
+    "MCP_SERVER_ENTRA_AUDIENCE",
+    "MCP_SERVER_ENTRA_TENANT_ID",
+    "MCP_SERVER_GENERIC_AUDIENCE",
+    "MCP_SERVER_GENERIC_ISSUER_URL",
+    "MCP_SERVER_GENERIC_JWKS_ALLOWED_ORIGINS",
+    "MCP_SERVER_REQUIRED_SCOPES",
+    "MCP_SERVER_RESOURCE_SERVER_URL",
+    "MCP_SERVER_TRANSPORT_ALLOWED_HOSTS"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.brunovicco/mcp-server-auth-template",
+   "publishedAt": "2026-08-11T13:19:10.300987Z",
+   "updatedAt": "2026-08-11T13:19:10.300987Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/brunovicco/mcp-server-auth-template",
+ "keywords": [
+  "MCP Server Auth Template"
+ ]
+}

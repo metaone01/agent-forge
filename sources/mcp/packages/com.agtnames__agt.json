@@ -1,0 +1,56 @@
+{
+ "schemaVersion": 1,
+ "name": "com.agtnames/agt",
+ "version": "1.5.1",
+ "versionKind": "semver",
+ "description": "Resolve, verify and discover .agt agent names: owner, records, signed manifest, endpoints.",
+ "license": "MIT",
+ "repository": "https://github.com/agtnames/agt",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@agtnames/mcp",
+  "url": "https://www.npmjs.com/package/@agtnames/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@agtnames/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AGT_CHAIN",
+    "AGT_IPFS_GATEWAY",
+    "AGT_RATE_PER_MIN",
+    "AGT_REGISTRY",
+    "AGT_RPC_URL",
+    "AGT_SESSION_DIR",
+    "AGT_SESSION_PASSPHRASE",
+    "AGT_TIMEOUT_MS"
+   ],
+   "remotes": [
+    {
+     "url": "https://agtnames.com/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.agtnames/agt",
+   "publishedAt": "2026-09-21T21:50:42.279193Z",
+   "updatedAt": "2026-09-21T21:50:42.279193Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://agtnames.com/docs/claude-code",
+ "keywords": [
+  "AGT agent names"
+ ]
+}

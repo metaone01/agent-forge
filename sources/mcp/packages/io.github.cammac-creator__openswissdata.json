@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cammac-creator/openswissdata",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "Swiss customs (TARES), FINMA registry & NOGA/NACE/ISIC classifications. 9 MCP tools, free tier.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cammac-creator/openswissdata",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@openswissdata/mcp",
+  "url": "https://www.npmjs.com/package/@openswissdata/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@openswissdata/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "OPENSWISSDATA_API_KEY",
+    "OPENSWISSDATA_BASE_URL",
+    "OPENSWISSDATA_TIMEOUT_MS"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.openswissdata.com/jsonrpc",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cammac-creator/openswissdata",
+   "publishedAt": "2026-06-19T08:44:37.557016Z",
+   "updatedAt": "2026-06-19T08:44:37.557016Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.openswissdata.com"
+}

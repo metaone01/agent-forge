@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.IDNSIDNS/tenderapi-mcp",
+ "version": "0.8.0",
+ "versionKind": "semver",
+ "description": "MCP server for French (BOAMP) + EU (TED) public procurement data via TenderAPI.",
+ "license": "MIT",
+ "repository": "https://github.com/IDNSIDNS/tenderapi-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "tenderapi-mcp",
+  "url": "https://pypi.org/project/tenderapi-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "tenderapi-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TENDERAPI_BASE_URL",
+    "TENDERAPI_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://tenderapi.fr/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.IDNSIDNS/tenderapi-mcp",
+   "publishedAt": "2026-08-12T16:05:12.321262Z",
+   "updatedAt": "2026-08-12T16:05:12.321262Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

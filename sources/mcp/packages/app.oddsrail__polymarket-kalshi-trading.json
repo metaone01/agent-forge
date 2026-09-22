@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "app.oddsrail/polymarket-kalshi-trading",
+ "version": "0.18.0",
+ "versionKind": "semver",
+ "description": "Cross-venue prediction markets for AI agents: Polymarket + Kalshi, costed and attributed",
+ "license": "MIT License",
+ "repository": "https://github.com/hmesutozsoy/oddsrail",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "oddsrail",
+  "url": "https://pypi.org/project/oddsrail/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "oddsrail",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ODDSRAIL_BUILDER_CODE",
+    "ODDSRAIL_DRY_RUN",
+    "POLYMARKET_PRIVATE_KEY",
+    "POLYMARKET_WALLET_ADDRESS"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.oddsrail.app/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "app.oddsrail/polymarket-kalshi-trading",
+   "publishedAt": "2026-09-11T17:27:53.495217Z",
+   "updatedAt": "2026-09-11T17:27:53.495217Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

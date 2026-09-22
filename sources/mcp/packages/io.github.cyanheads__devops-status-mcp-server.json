@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/devops-status-mcp-server",
+ "version": "0.8.2",
+ "versionKind": "semver",
+ "description": "Vendor status pages, TLS cert inspection, DNS propagation checks, and incident-response playbooks.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/devops-status-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/devops-status-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/devops-status-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/devops-status-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DEVOPS_STATUS_ALLOW_PRIVATE_TARGETS",
+    "DEVOPS_STATUS_DISABLE_ACTIVE_PROBES",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://devops-status.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/devops-status-mcp-server",
+   "publishedAt": "2026-09-20T14:16:23.488661Z",
+   "updatedAt": "2026-09-20T14:16:23.488661Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

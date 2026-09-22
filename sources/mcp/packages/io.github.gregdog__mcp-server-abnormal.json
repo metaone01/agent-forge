@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.GregDog/mcp-server-abnormal",
+ "version": "1.1.0",
+ "versionKind": "semver",
+ "description": "Abnormal Security MCP: threats, search, remediation, ATO cases, vendor/BEC, and evidence download.",
+ "license": "unknown",
+ "repository": "https://github.com/GregDog/mcp-server-abnormal",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-server-abnormal",
+  "url": "https://hub.docker.com/r/gregdog/mcp-server-abnormal",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/gregdog/mcp-server-abnormal:v1.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ABNORMAL_ALLOW_EVIDENCE_DOWNLOAD",
+    "ABNORMAL_ALLOW_RESPONSE",
+    "ABNORMAL_API_TOKEN",
+    "ABNORMAL_BASE_URL",
+    "ABNORMAL_MAX_EVIDENCE_BYTES"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.GregDog/mcp-server-abnormal",
+   "publishedAt": "2026-09-17T14:04:46.267065Z",
+   "updatedAt": "2026-09-17T14:04:46.267065Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/GregDog/mcp-server-abnormal",
+ "keywords": [
+  "Abnormal MCP Server"
+ ]
+}

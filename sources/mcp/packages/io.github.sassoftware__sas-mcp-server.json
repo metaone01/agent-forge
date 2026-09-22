@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.sassoftware/sas-mcp-server",
+ "version": "1.15.0",
+ "versionKind": "semver",
+ "description": "Execute SAS code and query Compute, CAS, and model APIs on SAS Viya via OAuth 2.0.",
+ "license": "unknown",
+ "repository": "https://github.com/sassoftware/sas-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "sas-mcp-server",
+  "url": "https://hub.docker.com/r/sassoftware/sas-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/sassoftware/sas-mcp-server:1.15.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CLIENT_ID",
+    "COMPUTE_CONTEXT_NAME",
+    "MCP_APPS",
+    "MCP_READ_ONLY",
+    "MCP_TIERS",
+    "SSL_VERIFY",
+    "VIYA_ENDPOINT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.sassoftware/sas-mcp-server",
+   "publishedAt": "2026-09-15T10:59:52.535668Z",
+   "updatedAt": "2026-09-15T10:59:52.535668Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "SAS Viya"
+ ]
+}

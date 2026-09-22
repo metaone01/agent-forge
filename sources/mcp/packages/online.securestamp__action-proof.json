@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "online.securestamp/action-proof",
+ "version": "0.3.0-beta.2",
+ "versionKind": "semver",
+ "description": "UNVERIFIED: cross-cloud beta; sandbox by default; production opt-in via customer Guardian.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/sergioortizlatorre2/securestamp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@securestamp/execution-guardian-mcp",
+  "url": "https://www.npmjs.com/package/@securestamp/execution-guardian-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@securestamp/execution-guardian-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GUARDIAN_SOCKET_PATH",
+    "SECURESTAMP_RELEASE_PROFILE"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.securestamp.online/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "online.securestamp/action-proof",
+   "publishedAt": "2026-08-21T17:42:25.678196Z",
+   "updatedAt": "2026-08-21T17:42:25.678196Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "SecureStamp Action Proof — Cross-Cloud Public Beta (Unverified)"
+ ]
+}

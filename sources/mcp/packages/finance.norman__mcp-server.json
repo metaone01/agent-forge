@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "finance.norman/mcp-server",
+ "version": "0.1.7",
+ "versionKind": "semver",
+ "description": "AI-powered bookkeeping and tax filing for entrepreneurs at the heart of the European economy.",
+ "license": "MIT",
+ "repository": "https://github.com/norman-finance/norman-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "norman-mcp-server",
+  "url": "https://pypi.org/project/norman-mcp-server/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "norman-mcp-server",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "NORMAN_EMAIL",
+    "NORMAN_ENVIRONMENT",
+    "NORMAN_PASSWORD"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.norman.finance/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "finance.norman/mcp-server",
+   "publishedAt": "2026-02-19T14:20:46.349672Z",
+   "updatedAt": "2026-02-19T14:20:46.349672Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Norman MCP Server"
+ ]
+}

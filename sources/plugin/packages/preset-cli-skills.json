@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "preset-cli-skills",
+ "version": "master",
+ "versionKind": "other",
+ "description": "Preset CLI skills for explicit shell, scripting, and CI/CD workflows driven by the `sup` CLI (PyPI package `superset-sup`). Use only for CLI workflows; do not use for MCP-only work or as a substitute for direct API calls when the user wants HTTP/SDK code.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/preset-io/agent-skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/preset-io/agent-skills/tree/master/plugins/preset-cli-skills",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Preset",
+   "ref": "master",
+   "sha": "8387ac0f0538271c79a2e227c7ddec084e8a5da3",
+   "strict": null
+  }
+ },
+ "homepage": "https://www.preset.io"
+}

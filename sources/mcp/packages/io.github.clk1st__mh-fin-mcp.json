@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.clk1st/mh-fin-mcp",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "China A-Share quantitative data: 5000+ stocks, 13 factors, daily market & limit-up analysis.",
+ "license": "unknown",
+ "repository": "https://github.com/clk1st/mh-fin-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "mh-fin-mcp",
+  "url": "https://pypi.org/project/mh-fin-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "mh-fin-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MH_FIN_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.quant.metrichub.app/mcp/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.clk1st/mh-fin-mcp",
+   "publishedAt": "2026-03-21T16:22:28.444421Z",
+   "updatedAt": "2026-03-21T16:22:28.444421Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "MetricHub Quant - A股量化数据"
+ ]
+}

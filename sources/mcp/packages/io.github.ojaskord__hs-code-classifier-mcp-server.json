@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.OjasKord/hs-code-classifier-mcp-server",
+ "version": "1.0.26",
+ "versionKind": "semver",
+ "description": "Classify products to official HS codes and validate supplier codes before customs submissions",
+ "license": "MIT",
+ "repository": "https://github.com/OjasKord/hs-code-classifier-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "hs-code-classifier-mcp",
+  "url": "https://www.npmjs.com/package/hs-code-classifier-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "hs-code-classifier-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ANTHROPIC_API_KEY",
+    "HSPING_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://hs-code-classifier-mcp-server-production.up.railway.app",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.OjasKord/hs-code-classifier-mcp-server",
+   "publishedAt": "2026-06-25T05:15:08.717412Z",
+   "updatedAt": "2026-06-25T05:15:08.717412Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://kordagencies.com",
+ "keywords": [
+  "HS Code Classifier"
+ ]
+}

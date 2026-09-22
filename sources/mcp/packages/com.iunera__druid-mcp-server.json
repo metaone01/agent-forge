@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "com.iunera/druid-mcp-server",
+ "version": "2.0.1",
+ "versionKind": "semver",
+ "description": "AI-powered MCP server for Apache Druid cluster management and analytic",
+ "license": "unknown",
+ "repository": "https://github.com/iunera/druid-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "druid-mcp-server",
+  "url": "https://hub.docker.com/r/iunera/druid-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/iunera/druid-mcp-server:2.0.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DRUID_AUTH_PASSWORD",
+    "DRUID_AUTH_USERNAME",
+    "DRUID_COORDINATOR_URL",
+    "DRUID_ROUTER_URL",
+    "DRUID_SSL_ENABLED",
+    "DRUID_SSL_SKIP_VERIFICATION"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.iunera/druid-mcp-server",
+   "publishedAt": "2026-08-31T15:33:35.645283Z",
+   "updatedAt": "2026-08-31T15:33:35.645283Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

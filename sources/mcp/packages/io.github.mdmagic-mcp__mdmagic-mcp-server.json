@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.MDMagic-MCP/mdmagic-mcp-server",
+ "version": "1.7.14",
+ "versionKind": "semver",
+ "description": "Use your own Word templates to convert Markdown → DOCX/PDF/HTML from any MCP-compatible AI.",
+ "license": "MIT",
+ "repository": "https://github.com/MDMagic-MCP/mdmagic-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@mdmagic/mcp-server",
+  "url": "https://www.npmjs.com/package/@mdmagic/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@mdmagic/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_HTTP_HOST",
+    "MCP_HTTP_PORT",
+    "MCP_TRANSPORT",
+    "MDMAGIC_API_KEY",
+    "MDMAGIC_BASE_URL",
+    "REQUEST_TIMEOUT"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.mdmagic.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.MDMagic-MCP/mdmagic-mcp-server",
+   "publishedAt": "2026-05-14T23:29:30.640595Z",
+   "updatedAt": "2026-05-14T23:29:30.640595Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://mdmagic.ai/mcp"
+}

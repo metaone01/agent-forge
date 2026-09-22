@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/cisco-umbrella-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "MCP server for Cisco Umbrella's deployment, admin, policy, reporting, and investigate APIs.",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/cisco-umbrella-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "cisco-umbrella-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/cisco-umbrella-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/cisco-umbrella-mcp:v1.0.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "CISCOUMBRELLA_API_KEY",
+    "CISCOUMBRELLA_API_SECRET",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/cisco-umbrella-mcp",
+   "publishedAt": "2026-09-20T11:32:15.20949Z",
+   "updatedAt": "2026-09-20T11:32:15.20949Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/cisco-umbrella-mcp",
+ "keywords": [
+  "Cisco Umbrella"
+ ]
+}

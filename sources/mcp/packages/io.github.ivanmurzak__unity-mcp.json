@@ -1,0 +1,40 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.IvanMurzak/Unity-MCP",
+ "version": "0.17.1",
+ "versionKind": "semver",
+ "description": "Make 3D games in Unity Engine with AI. MCP Server + Plugin for Unity Editor and Unity games.",
+ "license": "unknown",
+ "repository": "https://github.com/IvanMurzak/Unity-MCP",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "Unity-MCP",
+  "url": "https://hub.docker.com/r/ivanmurzakdev/unity-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/ivanmurzakdev/unity-mcp-server:0.17.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "UNITY_MCP_CLIENT_TRANSPORT",
+    "UNITY_MCP_PLUGIN_TIMEOUT",
+    "UNITY_MCP_PORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.IvanMurzak/Unity-MCP",
+   "publishedAt": "2025-09-12T11:41:26.282067Z",
+   "updatedAt": "2025-09-12T11:41:26.282067Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

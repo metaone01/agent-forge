@@ -1,0 +1,40 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cdrn/sigil",
+ "version": "0.0.6",
+ "versionKind": "semver",
+ "description": "Local keystore + MCP server. Claude can sign EVM transactions but never sees the private key.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cdrn/sigil",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "sigild",
+  "url": "https://www.npmjs.com/package/sigild",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "sigild",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SIGIL_CONTROL_SOCK",
+    "SIGIL_HOME"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cdrn/sigil",
+   "publishedAt": "2026-05-20T21:51:23.963426Z",
+   "updatedAt": "2026-05-20T21:51:23.963426Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

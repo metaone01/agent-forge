@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.mangoappstudio/mdedit",
+ "version": "0.3.4",
+ "versionKind": "semver",
+ "description": "Create, edit, review, and explicitly publish Live or Snapshot Markdown Documents in mdedit.ai.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/mangoappstudio/mdedit",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@mdedit/mcp-server",
+  "url": "https://www.npmjs.com/package/@mdedit/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@mdedit/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MDEDIT_API_KEY",
+    "MDEDIT_PROFILE"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.mdedit.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.mangoappstudio/mdedit",
+   "publishedAt": "2026-08-30T04:37:37.90586Z",
+   "updatedAt": "2026-08-30T04:37:37.90586Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Markdown by mdedit.ai"
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "schemaVersion": 1,
+ "name": "com.postman/postman-mcp-server",
+ "version": "2.13.0",
+ "versionKind": "semver",
+ "description": "Give your AI agents trusted access to the full Postman platform.",
+ "license": "unknown",
+ "repository": "https://github.com/postmanlabs/postman-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@postman/postman-mcp-server",
+  "url": "https://www.npmjs.com/package/@postman/postman-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@postman/postman-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "POSTMAN_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.postman.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.postman.com/minimal",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.eu.postman.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.eu.postman.com/minimal",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.postman/postman-mcp-server",
+   "publishedAt": "2026-09-21T14:13:14.480364Z",
+   "updatedAt": "2026-09-21T14:13:14.480364Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.postman.com/product/mcp-server/",
+ "keywords": [
+  "Postman MCP Server"
+ ]
+}

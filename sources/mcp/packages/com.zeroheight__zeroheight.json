@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "com.zeroheight/zeroheight",
+ "version": "2.10.2",
+ "versionKind": "semver",
+ "description": "Connect AI assistants to zeroheight styleguides using the Model Context Protocol",
+ "license": "ISC",
+ "repository": "https://www.npmjs.com/package/@zeroheight/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@zeroheight/mcp-server",
+  "url": "https://www.npmjs.com/package/@zeroheight/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@zeroheight/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ZEROHEIGHT_ACCESS_TOKEN",
+    "ZEROHEIGHT_CLIENT_ID"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.zeroheight.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.zeroheight.com/mcp/{token}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.zeroheight/zeroheight",
+   "publishedAt": "2026-06-17T15:44:35.927949Z",
+   "updatedAt": "2026-06-17T15:44:35.927949Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://help.zeroheight.com/hc/en-us/articles/48004395674011-zeroheight-MCP-overview"
+}

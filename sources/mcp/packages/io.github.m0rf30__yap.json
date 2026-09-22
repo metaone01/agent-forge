@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.M0Rf30/yap",
+ "version": "2.6.2",
+ "versionKind": "semver",
+ "description": "Build native Linux packages (.deb/.rpm/.apk/.pkg.tar.zst) from a single PKGBUILD via MCP.",
+ "license": "unknown",
+ "repository": "https://github.com/M0Rf30/yap",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "yap",
+  "url": "https://hub.docker.com/r/m0rf30/yap-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/m0rf30/yap-mcp:2.6.2",
+   "transport": "stdio",
+   "environmentVariables": [
+    "YAP_VERBOSE"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.M0Rf30/yap",
+   "publishedAt": "2026-09-16T13:52:38.411035Z",
+   "updatedAt": "2026-09-16T13:52:38.411035Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/M0Rf30/yap",
+ "keywords": [
+  "YAP — Yet Another Packager"
+ ]
+}

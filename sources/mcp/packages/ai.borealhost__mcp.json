@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.borealhost/mcp",
+ "version": "0.4.2",
+ "versionKind": "semver",
+ "description": "Agent-native web hosting — deploy sites, manage DNS, register domains, scale infrastructure",
+ "license": "unknown",
+ "repository": "https://github.com/alainsvrd/borealhost-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "borealhost-mcp",
+  "url": "https://pypi.org/project/borealhost-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "borealhost-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BOREALHOST_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://borealhost.ai/mcp/",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.borealhost/mcp",
+   "publishedAt": "2026-09-06T20:32:29.563773Z",
+   "updatedAt": "2026-09-06T20:32:29.563773Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://borealhost.ai",
+ "keywords": [
+  "BorealHost"
+ ]
+}

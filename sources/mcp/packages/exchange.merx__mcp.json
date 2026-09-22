@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "exchange.merx/mcp",
+ "version": "1.0.5",
+ "versionKind": "semver",
+ "description": "TRON energy exchange for AI agents. 54 tools, 30 prompts, 21 resources. A2A + ACP.",
+ "license": "MIT",
+ "repository": "https://github.com/Hovsteder/merx-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "merx-mcp",
+  "url": "https://www.npmjs.com/package/merx-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "merx-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MERX_API_KEY",
+    "TRON_PRIVATE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://merx.exchange/mcp/sse",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "exchange.merx/mcp",
+   "publishedAt": "2026-04-02T18:54:13.569576Z",
+   "updatedAt": "2026-04-02T18:54:13.569576Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "MERX - TRON Resource Exchange"
+ ]
+}

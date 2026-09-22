@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.thyn-ai/algenta",
+ "version": "1.0.14",
+ "versionKind": "semver",
+ "description": "Governed data discovery, exact queries, decisions, simulations, and runtime utilities over MCP.",
+ "license": "unknown",
+ "repository": "https://github.com/thyn-ai/algenta-sdk",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "algenta-mcp",
+  "url": "https://pypi.org/project/algenta-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "algenta-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ALGENTA_API_KEY",
+    "ALGENTA_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.algenta.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.thyn-ai/algenta",
+   "publishedAt": "2026-09-19T05:22:41.46105Z",
+   "updatedAt": "2026-09-19T05:22:41.46105Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://algenta.ai",
+ "keywords": [
+  "Algenta MCP Server"
+ ]
+}

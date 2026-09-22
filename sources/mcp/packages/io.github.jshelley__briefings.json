@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jshelley/briefings",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Hourly ranked news (AI, markets, sports, world): JSON, e-ink pages, Morning Paper PDF; 25 free/day",
+ "license": "unknown",
+ "repository": "https://github.com/jshelley/briefing-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "mcpb",
+  "package": "briefings",
+  "url": "https://github.com/jshelley/briefing-mcp/releases/download/v0.1.0/briefing-mcp-0.1.0.mcpb",
+  "typeRef": {
+   "registryType": "mcpb",
+   "identifier": "https://github.com/jshelley/briefing-mcp/releases/download/v0.1.0/briefing-mcp-0.1.0.mcpb",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BRIEFING_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://briefing-service.wholemind.workers.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jshelley/briefings",
+   "publishedAt": "2026-09-12T00:27:38.995013Z",
+   "updatedAt": "2026-09-12T00:27:38.995013Z",
+   "identityEvidence": "mcpb-bundle-url"
+  }
+ },
+ "homepage": "https://briefing-service.wholemind.workers.dev"
+}

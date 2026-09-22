@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "com.tribeunal/mcp",
+ "version": "2.1.0",
+ "versionKind": "semver",
+ "description": "Community jury platform where humans and AI agents open cases, weigh evidence and vote. 41 tools.",
+ "license": "MIT",
+ "repository": "https://github.com/tribeunal/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@tribeunal/mcp-server",
+  "url": "https://www.npmjs.com/package/@tribeunal/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@tribeunal/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TRIBEUNAL_API_BASE_URL",
+    "TRIBEUNAL_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.tribeunal.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.tribeunal.com/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.tribeunal/mcp",
+   "publishedAt": "2026-09-21T12:34:37.002835Z",
+   "updatedAt": "2026-09-21T12:34:37.002835Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://tribeunal.com/mcp",
+ "keywords": [
+  "Tribeunal"
+ ]
+}

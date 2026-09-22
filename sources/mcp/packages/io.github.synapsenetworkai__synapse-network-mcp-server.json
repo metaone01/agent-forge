@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.SynapseNetworkAI/synapse-network-mcp-server",
+ "version": "0.1.5",
+ "versionKind": "semver",
+ "description": "Synapse Network MCP paid API calls via discover_services; not Synapse.org/Sage Bionetworks Synapse.",
+ "license": "MIT",
+ "repository": "https://github.com/SynapseNetworkAI/Synapse-Network-MCP-Server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@synapse-network-ai/mcp-server",
+  "url": "https://www.npmjs.com/package/@synapse-network-ai/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@synapse-network-ai/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SYNAPSE_AGENT_KEY",
+    "SYNAPSE_ENV",
+    "SYNAPSE_GATEWAY_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.synapse-network.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.SynapseNetworkAI/synapse-network-mcp-server",
+   "publishedAt": "2026-06-10T21:57:13.358832Z",
+   "updatedAt": "2026-06-10T21:57:13.358832Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://docs.synapse-network.ai/mcp/brand-disambiguation",
+ "keywords": [
+  "Synapse Network MCP Server for paid API calls"
+ ]
+}

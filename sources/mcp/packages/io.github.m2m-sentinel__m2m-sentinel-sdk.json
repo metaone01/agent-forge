@@ -1,0 +1,53 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.M2M-Sentinel/m2m-sentinel-sdk",
+ "version": "1.2.5",
+ "versionKind": "semver",
+ "description": "Base bytecode capability observations, proxy resolution, gas, DEX, and transfer telemetry.",
+ "license": "MIT",
+ "repository": "https://github.com/M2M-Sentinel/m2m-sentinel-sdk",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@m2msentinel/sdk",
+  "url": "https://www.npmjs.com/package/@m2msentinel/sdk",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@m2msentinel/sdk",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "M2M_SENTINEL_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.m2msentinel.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://api.m2msentinel.com/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.M2M-Sentinel/m2m-sentinel-sdk",
+   "publishedAt": "2026-09-06T12:32:25.929995Z",
+   "updatedAt": "2026-09-06T12:32:25.929995Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://m2msentinel.com",
+ "keywords": [
+  "M2M Sentinel"
+ ]
+}

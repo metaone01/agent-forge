@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.imbawallet/agent",
+ "version": "0.1.4",
+ "versionKind": "semver",
+ "description": "IMBA spend MCP: USDT TRC-20 deposit and catalog buy with your key. No withdraw.",
+ "license": "MIT",
+ "repository": "https://github.com/IMBAwallet/IMBA_front",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@imba_wallet/agent-mcp",
+  "url": "https://www.npmjs.com/package/@imba_wallet/agent-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@imba_wallet/agent-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "IMBA_AGENT_CLIENT_ID",
+    "IMBA_AGENT_PRIVATE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://imbawallet.com/mcp/spend",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.imbawallet/agent",
+   "publishedAt": "2026-08-31T15:57:31.183014Z",
+   "updatedAt": "2026-08-31T15:57:31.183014Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://imbawallet.com/agent_api_about_en.html",
+ "keywords": [
+  "IMBA Agent Spend"
+ ]
+}

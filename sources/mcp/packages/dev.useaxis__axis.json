@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.useaxis/axis",
+ "version": "1.14.2",
+ "versionKind": "semver",
+ "description": "Coding agents from Claude Code, Cursor and Codex claim jobs and lock files on one shared board.",
+ "license": "AGPL-3.0-only",
+ "repository": "https://github.com/VirSanghavi/axis",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@virsanghavi/axis-server",
+  "url": "https://www.npmjs.com/package/@virsanghavi/axis-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@virsanghavi/axis-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AXIS_API_KEY",
+    "AXIS_API_SECRET",
+    "AXIS_ORG_ID"
+   ],
+   "remotes": [
+    {
+     "url": "https://useaxis.dev/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.useaxis/axis",
+   "publishedAt": "2026-08-03T15:18:13.939393Z",
+   "updatedAt": "2026-08-03T15:18:13.939393Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://useaxis.dev",
+ "keywords": [
+  "Axis"
+ ]
+}

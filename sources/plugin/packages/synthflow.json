@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "synthflow",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector.",
+ "license": "MIT",
+ "repository": "https://github.com/SynthFlowAI/AnthropicPlugin",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/SynthFlowAI/AnthropicPlugin/tree/main/plugins/synthflow",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "automation",
+   "author": "Synthflow",
+   "ref": "main",
+   "sha": "205871ee83508502d2c982ee1bb7e65a2a29190b",
+   "strict": null
+  }
+ },
+ "homepage": "https://synthflow.ai"
+}

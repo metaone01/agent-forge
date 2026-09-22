@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.awpthorp/posterly",
+ "version": "0.27.1",
+ "versionKind": "semver",
+ "description": "Validate, schedule, publish, and analyze social content across 18 platforms with posterly.",
+ "license": "MIT",
+ "repository": "https://github.com/awpthorp/posterly",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "posterly-mcp-server",
+  "url": "https://www.npmjs.com/package/posterly-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "posterly-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "POSTERLY_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://www.poster.ly/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.awpthorp/posterly",
+   "publishedAt": "2026-07-30T07:09:37.081337Z",
+   "updatedAt": "2026-07-30T07:09:37.081337Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.poster.ly/mcp",
+ "keywords": [
+  "posterly"
+ ]
+}

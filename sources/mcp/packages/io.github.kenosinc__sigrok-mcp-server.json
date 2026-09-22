@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.KenosInc/sigrok-mcp-server",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Wraps sigrok-cli for signal analysis: capture data, decode protocols, and query instruments.",
+ "license": "unknown",
+ "repository": "https://github.com/KenosInc/sigrok-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "sigrok-mcp-server",
+  "url": "https://hub.docker.com/r/kenosinc/sigrok-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/kenosinc/sigrok-mcp-server:0.2.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SIGROK_CLI_PATH",
+    "SIGROK_TIMEOUT_SECONDS",
+    "SIGROK_WORKING_DIR"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.KenosInc/sigrok-mcp-server",
+   "publishedAt": "2026-02-25T03:03:22.603553Z",
+   "updatedAt": "2026-02-25T03:03:22.603553Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "sigrok MCP Server"
+ ]
+}

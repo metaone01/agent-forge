@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "com.kymaapi/kyma",
+ "version": "1.0.3",
+ "versionKind": "semver",
+ "description": "Live model catalog with prices and measured uptime, rankings, credits and spend, spend-capped chat.",
+ "license": "MIT",
+ "repository": "https://github.com/kyma-api/kyma-mcp-plugin",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@kyma-api/mcp-server",
+  "url": "https://www.npmjs.com/package/@kyma-api/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@kyma-api/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "KYMA_MCP_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.kymaapi.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.kymaapi/kyma",
+   "publishedAt": "2026-09-05T21:49:14.585204Z",
+   "updatedAt": "2026-09-05T21:49:14.585204Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://kymaapi.com",
+ "keywords": [
+  "Kyma API"
+ ]
+}

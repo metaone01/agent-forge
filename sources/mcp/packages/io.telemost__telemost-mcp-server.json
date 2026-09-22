@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.telemost/telemost-mcp-server",
+ "version": "0.2.2",
+ "versionKind": "semver",
+ "description": "Telegram channel analytics and statistics for AI agents, pay-per-call in USDC via x402.",
+ "license": "MIT",
+ "repository": "https://github.com/slava01011910-ops/telemost-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "telemost-mcp-server",
+  "url": "https://www.npmjs.com/package/telemost-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "telemost-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EVM_PRIVATE_KEY",
+    "MAX_PAYMENT_USDC",
+    "SESSION_MAX_USDC",
+    "SVM_PRIVATE_KEY",
+    "TELEMOST_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.telemost.io/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.telemost/telemost-mcp-server",
+   "publishedAt": "2026-07-13T05:14:01.315794Z",
+   "updatedAt": "2026-07-13T05:14:01.315794Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://api.telemost.io"
+}

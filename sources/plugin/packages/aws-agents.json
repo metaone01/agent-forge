@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "aws-agents",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Build, deploy, and operate AI agents on AWS. Skills for scaffolding agents with Amazon Bedrock AgentCore, connecting tools, memory, policies, evaluation, debugging, and production hardening.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/aws/agent-toolkit-for-aws",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/aws/agent-toolkit-for-aws/tree/main/plugins/aws-agents",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Amazon Web Services",
+   "ref": "main",
+   "sha": "57ce9edb2126292efaf5298801e226e1ef661a4a",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/aws/agent-toolkit-for-aws"
+}

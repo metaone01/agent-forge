@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "mlflow",
+ "version": "85ab69be2df4f92db82ddbf4be9ce63ab3722249",
+ "versionKind": "other",
+ "description": "Skills for tracing, evaluating, and improving AI agents with MLflow. Supports the full agent improvement loop: instrument → trace → evaluate → iterate → validate.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/mlflow/skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/mlflow/skills.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "monitoring",
+   "author": "MLflow Team",
+   "ref": null,
+   "sha": "85ab69be2df4f92db82ddbf4be9ce63ab3722249",
+   "strict": null
+  }
+ },
+ "homepage": "https://mlflow.org/"
+}

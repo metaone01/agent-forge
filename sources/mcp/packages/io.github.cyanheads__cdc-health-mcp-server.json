@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/cdc-health-mcp-server",
+ "version": "0.9.0",
+ "versionKind": "semver",
+ "description": "Search and query CDC public health data — mortality, vaccinations, surveillance, behavioral risk.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/cdc-health-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/cdc-health-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/cdc-health-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/cdc-health-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CDC_APP_TOKEN",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://cdc.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/cdc-health-mcp-server",
+   "publishedAt": "2026-09-20T23:39:31.319746Z",
+   "updatedAt": "2026-09-20T23:39:31.319746Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

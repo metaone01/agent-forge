@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "airwallex-agentos",
+ "version": "master",
+ "versionKind": "other",
+ "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/airwallex/airwallex-marketplace",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/airwallex/airwallex-marketplace/tree/master/plugins/airwallex-agentos",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "Airwallex",
+   "ref": "master",
+   "sha": "d323dd68c85874f6311a1bd20184f803a96e09a9",
+   "strict": null,
+   "displayName": "Airwallex"
+  }
+ },
+ "homepage": "https://www.airwallex.com/docs"
+}

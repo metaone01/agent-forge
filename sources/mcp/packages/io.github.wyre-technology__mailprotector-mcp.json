@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wyre-technology/mailprotector-mcp",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "MCP server for Mailprotector — customers, domains, users, quarantine, allow/block rules for MSPs.",
+ "license": "unknown",
+ "repository": "https://github.com/wyre-technology/mailprotector-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mailprotector-mcp",
+  "url": "https://hub.docker.com/r/wyre-technology/mailprotector-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-technology/mailprotector-mcp:v1.0.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "LOG_LEVEL",
+    "MAILPROTECTOR_API_KEY",
+    "MAILPROTECTOR_BASE_URL",
+    "MAILPROTECTOR_RESELLER_ID",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wyre-technology/mailprotector-mcp",
+   "publishedAt": "2026-08-20T12:15:11.978797Z",
+   "updatedAt": "2026-08-20T12:15:11.978797Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/wyre-technology/mailprotector-mcp",
+ "keywords": [
+  "Mailprotector"
+ ]
+}

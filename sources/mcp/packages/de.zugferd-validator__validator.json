@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "de.zugferd-validator/validator",
+ "version": "1.1.1",
+ "versionKind": "semver",
+ "description": "Validiert E-Rechnungen (ZUGFeRD/Factur-X, XRechnung) gegen EN 16931 mit Korrekturvorschlägen.",
+ "license": "MIT",
+ "repository": "https://github.com/tzatti1/zugferd-validator",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "zugferd-mcp-client",
+  "url": "https://www.npmjs.com/package/zugferd-mcp-client",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "zugferd-mcp-client",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ZUGFERD_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.zugferd-validator.de/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "de.zugferd-validator/validator",
+   "publishedAt": "2026-07-23T12:25:23.536019Z",
+   "updatedAt": "2026-07-23T12:25:23.536019Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://zugferd-validator.de",
+ "keywords": [
+  "ZUGFeRD Validator"
+ ]
+}

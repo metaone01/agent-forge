@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.leshchenko1979/fast-mcp-telegram",
+ "version": "0.35.0",
+ "versionKind": "semver",
+ "description": "Multi-tenant Telegram gateway for AI agents — HTTP+stdio, 8 tools, MTProto User API",
+ "license": "unknown",
+ "repository": "https://github.com/leshchenko1979/fast-mcp-telegram",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "fast-mcp-telegram",
+  "url": "https://pypi.org/project/fast-mcp-telegram/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "fast-mcp-telegram",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "API_HASH",
+    "API_ID",
+    "SERVER_MODE",
+    "SESSION_DIR"
+   ],
+   "remotes": [
+    {
+     "url": "https://tg-mcp.l1979.ru/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.leshchenko1979/fast-mcp-telegram",
+   "publishedAt": "2026-06-18T13:25:36.730649Z",
+   "updatedAt": "2026-06-18T13:25:36.730649Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://github.com/leshchenko1979/fast-mcp-telegram"
+}

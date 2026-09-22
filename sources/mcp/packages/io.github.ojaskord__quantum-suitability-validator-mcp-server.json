@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.OjasKord/quantum-suitability-validator-mcp-server",
+ "version": "1.0.20",
+ "versionKind": "semver",
+ "description": "AI triage for quantum computing POC proposals. Screens before budget is allocated.",
+ "license": "MIT",
+ "repository": "https://github.com/OjasKord/quantum-suitability-validator-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "quantum-suitability-validator-mcp",
+  "url": "https://www.npmjs.com/package/quantum-suitability-validator-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "quantum-suitability-validator-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ANTHROPIC_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://quantum-suitability-validator-mcp-production.up.railway.app",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.OjasKord/quantum-suitability-validator-mcp-server",
+   "publishedAt": "2026-06-25T05:15:19.470572Z",
+   "updatedAt": "2026-06-25T05:15:19.470572Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://kordagencies.com",
+ "keywords": [
+  "Quantum Suitability Validator"
+ ]
+}

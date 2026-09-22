@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.rackspace-spot/spot-mcp",
+ "version": "0.3.2",
+ "versionKind": "semver",
+ "description": "Manage Rackspace Spot Kubernetes Cloudspaces, node pools, and VMs from your AI assistant.",
+ "license": "unknown",
+ "repository": "https://github.com/rackspace-spot/spot-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "spot-mcp",
+  "url": "https://hub.docker.com/r/rackspacengpc/spot-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/rackspacengpc/spot-mcp:latest",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SPOT_ORG",
+    "SPOT_REFRESH_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.spot.rackspace.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.rackspace-spot/spot-mcp",
+   "publishedAt": "2026-07-16T05:56:58.037165Z",
+   "updatedAt": "2026-07-16T05:56:58.037165Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Rackspace Spot"
+ ]
+}

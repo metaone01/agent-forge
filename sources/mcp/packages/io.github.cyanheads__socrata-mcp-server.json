@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/socrata-mcp-server",
+ "version": "0.1.16",
+ "versionKind": "semver",
+ "description": "Search and query government open-data portals (Socrata SODA API).",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/socrata-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/socrata-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/socrata-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/socrata-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "SOCRATA_APP_TOKEN",
+    "SOCRATA_DEFAULT_DOMAIN"
+   ],
+   "remotes": [
+    {
+     "url": "https://socrata.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/socrata-mcp-server",
+   "publishedAt": "2026-09-20T14:34:35.393103Z",
+   "updatedAt": "2026-09-20T14:34:35.393103Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

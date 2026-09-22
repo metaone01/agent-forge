@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "com.ai-rete-rag/ai-rete-rag-mcp",
+ "version": "0.7.0",
+ "versionKind": "semver",
+ "description": "Author rules from policy docs, then decide: a Rete engine gives the verdict, an LLM explains why.",
+ "license": "MIT",
+ "repository": "https://github.com/zaharajabeen13-create/ai-rete-rag-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "ai-rete-rag-mcp",
+  "url": "https://pypi.org/project/ai-rete-rag-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "ai-rete-rag-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AI_RETE_RAG_API_KEY",
+    "AI_RETE_RAG_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://ai-rete-rag.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://ai-rete-rag.com/mcp/auth",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.ai-rete-rag/ai-rete-rag-mcp",
+   "publishedAt": "2026-08-23T18:17:09.695913Z",
+   "updatedAt": "2026-08-23T18:17:09.695913Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://ai-rete-rag.com",
+ "keywords": [
+  "ai·rete·rag"
+ ]
+}

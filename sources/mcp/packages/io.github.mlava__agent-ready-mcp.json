@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.mlava/agent-ready-mcp",
+ "version": "0.7.7",
+ "versionKind": "semver",
+ "description": "Scan any URL for AI agent readability — Vercel Spec, llmstxt.org, and agent-protocol manifests.",
+ "license": "MIT",
+ "repository": "https://github.com/mlava/agent-ready-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "agent-ready-mcp",
+  "url": "https://www.npmjs.com/package/agent-ready-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "agent-ready-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AGENT_READY_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://agent-ready.dev/api/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.mlava/agent-ready-mcp",
+   "publishedAt": "2026-09-07T06:48:53.877309Z",
+   "updatedAt": "2026-09-07T06:48:53.877309Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://agent-ready.dev",
+ "keywords": [
+  "Agent Ready"
+ ]
+}

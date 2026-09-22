@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "netsuite-finance-analyst",
+ "version": "ai-plugins-dist",
+ "versionKind": "other",
+ "description": "Director-level finance analysis on live NetSuite data: financial reporting, period close, variance, aging and reconciliation reviews, cash reporting, and board-ready narratives with next actions. Requires the NetSuite AI Connector Service.",
+ "license": "UPL-1.0",
+ "repository": "https://github.com/oracle/netsuite-suitecloud-sdk",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-finance-analyst",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "Oracle NetSuite",
+   "ref": "ai-plugins-dist",
+   "sha": "23793a10a9bb557c684c5cb8a97f926eb3463f12",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-finance-analyst"
+}

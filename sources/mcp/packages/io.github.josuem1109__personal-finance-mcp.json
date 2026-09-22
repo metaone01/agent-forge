@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.JosueM1109/personal-finance-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "Self-hosted, read-only MCP server that connects your banks and investments via Plaid.",
+ "license": "unknown",
+ "repository": "https://github.com/JosueM1109/personal-finance-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "personal-finance-mcp",
+  "url": "https://hub.docker.com/r/josuem1109/personal-finance-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/josuem1109/personal-finance-mcp:1.0.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "PLAID_CLIENT_ID",
+    "PLAID_ENV",
+    "PLAID_SECRET",
+    "PORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.JosueM1109/personal-finance-mcp",
+   "publishedAt": "2026-04-20T20:27:05.043651Z",
+   "updatedAt": "2026-04-20T20:27:05.043651Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/keeper-mcp",
+ "version": "1.0.3",
+ "versionKind": "semver",
+ "description": "Read-only multitenant Streamable HTTP bridge over Keeper Secrets Manager's MCP server.",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/keeper-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "keeper-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/keeper-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/keeper-mcp:v1.0.3",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CHILD_HOME",
+    "IDLE_EVICT_MS",
+    "KSM_MCP_BIN",
+    "PORT",
+    "SPAWN_TIMEOUT_MS"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/keeper-mcp",
+   "publishedAt": "2026-09-21T20:42:08.876431Z",
+   "updatedAt": "2026-09-21T20:42:08.876431Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/keeper-mcp",
+ "keywords": [
+  "Keeper Secrets Manager"
+ ]
+}

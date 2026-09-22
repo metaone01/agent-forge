@@ -1,0 +1,65 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.aliasunder/vault-cortex",
+ "version": "0.54.1",
+ "versionKind": "semver",
+ "description": "Standalone MCP server for Obsidian vaults — hybrid search, notes & files, memory, tasks, OAuth 2.1",
+ "license": "unknown",
+ "repository": "https://github.com/aliasunder/vault-cortex",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "vault-cortex",
+  "url": "https://hub.docker.com/r/aliasunder/vault-cortex",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/aliasunder/vault-cortex:0.54.1",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "DAILY_NOTES_FOLDER",
+    "DAILY_NOTES_FORMAT",
+    "DISABLED_TOOLS",
+    "EMBEDDING_ENABLED",
+    "FILE_TOOLS_ENABLED",
+    "LOG_DIR",
+    "LOG_LEVEL",
+    "LOG_RETENTION_DAYS",
+    "MAX_FILE_BYTES",
+    "MAX_IMAGE_OUTPUT_BYTES",
+    "MAX_PDF_RENDER_PAGES",
+    "MCP_AUTH_TOKEN",
+    "MEMORY_DIR",
+    "MEMORY_ENABLED",
+    "ORPHAN_EXCLUDE_FOLDERS",
+    "PROTECTED_PATHS",
+    "PUBLIC_URL",
+    "READONLY_MODE",
+    "RERANK_MODE",
+    "SERVICE_DOCUMENTATION_URL",
+    "TRUST_FORWARDED_HOPS",
+    "TRUST_PROXY_HOPS",
+    "TZ",
+    "WINDOWS_MODE"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.aliasunder/vault-cortex",
+   "publishedAt": "2026-09-21T20:10:06.697848Z",
+   "updatedAt": "2026-09-21T20:10:06.697848Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/aliasunder/vault-cortex",
+ "keywords": [
+  "Vault Cortex"
+ ]
+}

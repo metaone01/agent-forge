@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.bdentech/chieflab",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Open execution contract for agents doing business work. 6 operators, one MIT-licensed spec.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/bdentech/chiefmo-agent",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@chieflab/mcp-server",
+  "url": "https://www.npmjs.com/package/@chieflab/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@chieflab/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CHIEFLAB_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.chieflab.io/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.bdentech/chieflab",
+   "publishedAt": "2026-05-12T12:56:43.576464Z",
+   "updatedAt": "2026-05-12T12:56:43.576464Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://chieflab.io",
+ "keywords": [
+  "ChiefLab"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "xyz.crossgrain/epitaxy",
+ "version": "0.1.4",
+ "versionKind": "semver",
+ "description": "Federal drug shortages and recalls joined to the federal contracts that buy those drugs.",
+ "license": "MIT",
+ "repository": "https://github.com/vor-bot/epitaxy-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "epitaxy-mcp",
+  "url": "https://pypi.org/project/epitaxy-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "epitaxy-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EPITAXY_API_KEY",
+    "EPITAXY_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://drugs.crossgrain.xyz/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "xyz.crossgrain/epitaxy",
+   "publishedAt": "2026-09-08T18:45:57.978575Z",
+   "updatedAt": "2026-09-08T18:45:57.978575Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://drugs.crossgrain.xyz/docs"
+}

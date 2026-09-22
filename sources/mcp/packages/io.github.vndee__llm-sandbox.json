@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.vndee/llm-sandbox",
+ "version": "0.3.43",
+ "versionKind": "semver",
+ "description": "Securely run LLM-generated code in isolated containers across 7 languages and 3 container backends.",
+ "license": "unknown",
+ "repository": "https://github.com/vndee/llm-sandbox",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "llm-sandbox",
+  "url": "https://pypi.org/project/llm-sandbox/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "llm-sandbox",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BACKEND",
+    "COMMIT_CONTAINER",
+    "DOCKER_HOST",
+    "KEEP_TEMPLATE",
+    "KUBECONFIG",
+    "NAMESPACE",
+    "SANDBOX_CAP_DROP",
+    "SANDBOX_CPUS",
+    "SANDBOX_MEMORY",
+    "SANDBOX_NETWORK_MODE",
+    "SANDBOX_READ_ONLY",
+    "SANDBOX_SECURITY_OPT"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.vndee/llm-sandbox",
+   "publishedAt": "2026-08-03T04:22:49.745057Z",
+   "updatedAt": "2026-08-03T04:22:49.745057Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://vndee.github.io/llm-sandbox/",
+ "keywords": [
+  "LLM Sandbox"
+ ]
+}

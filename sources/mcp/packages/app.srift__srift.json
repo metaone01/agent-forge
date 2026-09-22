@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "app.srift/srift",
+ "version": "3.0.0",
+ "versionKind": "semver",
+ "description": "Secure P2P file transfer and encrypted chat for AI agents. No accounts, no API keys.",
+ "license": "MIT",
+ "repository": "https://github.com/srivardhan113/SRIFT-Open_Source",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "srift-transfer",
+  "url": "https://www.npmjs.com/package/srift-transfer",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "srift-transfer",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SRIFT_DAEMON_PORT"
+   ],
+   "remotes": [
+    {
+     "url": "https://srift.app/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "app.srift/srift",
+   "publishedAt": "2026-09-11T11:52:40.951197Z",
+   "updatedAt": "2026-09-11T11:52:40.951197Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://srift.app",
+ "keywords": [
+  "SRIFT"
+ ]
+}

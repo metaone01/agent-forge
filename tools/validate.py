@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -60,7 +61,13 @@ def schema_registry() -> Registry:
     return Registry().with_resources(resources)
 
 
+@lru_cache(maxsize=None)
 def build_validator(schema_name: str) -> Draft202012Validator:
+    """Return a compiled validator for a schema.
+
+    Cached: building the validator and its reference registry costs ~0.75 s, which
+    dominates runtime once a source holds thousands of records.
+    """
     schema = load_json(ROOT / schema_name)
     Draft202012Validator.check_schema(schema)
     return Draft202012Validator(

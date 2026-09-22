@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.alienbase-xyz/epsilon",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Non-custodial limit, stop-loss and DCA trading on Epsilon (Robinhood Chain) for AI agents",
+ "license": "MIT",
+ "repository": "https://github.com/alienbase-xyz/EpsilonRobinhood",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@epsilon-exchange/mcp",
+  "url": "https://www.npmjs.com/package/@epsilon-exchange/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@epsilon-exchange/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EPSILON_API_KEY",
+    "EPSILON_REFERRER",
+    "EPSILON_WALLET_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.epsilon.exchange/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.alienbase-xyz/epsilon",
+   "publishedAt": "2026-09-17T16:58:36.726123Z",
+   "updatedAt": "2026-09-17T16:58:36.726123Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://developers.epsilon.exchange",
+ "keywords": [
+  "Epsilon"
+ ]
+}

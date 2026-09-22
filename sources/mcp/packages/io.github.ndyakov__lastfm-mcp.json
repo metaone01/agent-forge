@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ndyakov/lastfm-mcp",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Last.fm MCP server: scrobbles, charts, artist/album/track info and more",
+ "license": "unknown",
+ "repository": "https://github.com/ndyakov/lastfm-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "lastfm-mcp",
+  "url": "https://hub.docker.com/r/ndyakov/lastfm-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/ndyakov/lastfm-mcp:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LASTFM_API_KEY",
+    "LASTFM_API_SECRET",
+    "LASTFM_ENABLE_WRITES"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ndyakov/lastfm-mcp",
+   "publishedAt": "2026-08-01T12:27:59.296993Z",
+   "updatedAt": "2026-08-01T12:27:59.296993Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Last.fm"
+ ]
+}

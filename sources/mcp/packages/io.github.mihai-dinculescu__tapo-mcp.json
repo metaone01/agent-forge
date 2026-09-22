@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.mihai-dinculescu/tapo-mcp",
+ "version": "0.5.0",
+ "versionKind": "semver",
+ "description": "MCP server for discovering and controlling TP-Link Tapo smart home devices via AI Agents",
+ "license": "unknown",
+ "repository": "https://github.com/mihai-dinculescu/tapo",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "tapo-mcp",
+  "url": "https://hub.docker.com/r/mihai-dinculescu/tapo-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/mihai-dinculescu/tapo-mcp:0.5.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "OTEL_EXPORTER_OTLP_ENDPOINT",
+    "TAPO_MCP_API_KEY",
+    "TAPO_MCP_DISCOVERY_TARGET",
+    "TAPO_MCP_DISCOVERY_TIMEOUT",
+    "TAPO_MCP_PASSWORD",
+    "TAPO_MCP_USERNAME"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.mihai-dinculescu/tapo-mcp",
+   "publishedAt": "2026-07-11T12:25:40.961295Z",
+   "updatedAt": "2026-07-11T12:25:40.961295Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Tapo MCP"
+ ]
+}

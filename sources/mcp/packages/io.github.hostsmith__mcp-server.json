@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hostsmith/mcp-server",
+ "version": "1.5.2",
+ "versionKind": "semver",
+ "description": "Deploy static sites on Hostsmith - give it a file, get a live HTTPS URL. EU/US residency.",
+ "license": "MIT",
+ "repository": "https://github.com/hostsmith/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@hostsmith/mcp-server",
+  "url": "https://www.npmjs.com/package/@hostsmith/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@hostsmith/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HOSTSMITH_API_DOMAIN",
+    "HOSTSMITH_BASE_URL",
+    "HOSTSMITH_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.hostsmith.net/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hostsmith/mcp-server",
+   "publishedAt": "2026-05-16T13:35:01.656541Z",
+   "updatedAt": "2026-05-16T13:35:01.656541Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://hostsmith.net/docs/mcp/quick-start/"
+}

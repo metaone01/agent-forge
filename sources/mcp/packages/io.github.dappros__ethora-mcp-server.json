@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.dappros/ethora-mcp-server",
+ "version": "26.9.3",
+ "versionKind": "semver",
+ "description": "Ethora chat platform MCP: apps, users, rooms, AI agents, chat widgets. Hosted or stdio.",
+ "license": "MIT",
+ "repository": "https://github.com/dappros/ethora-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@ethora/mcp-server",
+  "url": "https://www.npmjs.com/package/@ethora/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@ethora/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ETHORA_API_URL",
+    "ETHORA_APP_JWT",
+    "ETHORA_B2B_TOKEN",
+    "ETHORA_BASE_URL",
+    "ETHORA_MCP_ENABLE_DANGEROUS_TOOLS"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.chat.ethora.com/mcp/oauth",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.chat.ethora.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.dappros/ethora-mcp-server",
+   "publishedAt": "2026-09-17T22:38:04.627026Z",
+   "updatedAt": "2026-09-17T22:38:04.627026Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://ethora.com/ai-sdk/mcp-server/"
+}

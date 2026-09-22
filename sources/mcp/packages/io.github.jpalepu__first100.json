@@ -1,0 +1,58 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jpalepu/first100",
+ "version": "2.2.0",
+ "versionKind": "semver",
+ "description": "Go-to-market tools for AI agents: publish and schedule posts, find customers, SEO, outreach.",
+ "license": "MIT",
+ "repository": "https://github.com/jpalepu/first100",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "first100-mcp",
+  "url": "https://www.npmjs.com/package/first100-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "first100-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FIRST100_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://firsthundred.app/api/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://firsthundred.app/api/mcp/core",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://firsthundred.app/api/mcp/seo",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://firsthundred.app/api/mcp/outreach",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jpalepu/first100",
+   "publishedAt": "2026-09-15T15:41:38.355232Z",
+   "updatedAt": "2026-09-15T15:41:38.355232Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://firsthundred.app"
+}

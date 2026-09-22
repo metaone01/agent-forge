@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "dash0",
+ "version": "72a84179e6c64871ad5b6fceb09e00f502de415a",
+ "versionKind": "other",
+ "description": "OpenTelemetry observability for Claude Code sessions. Captures tool calls, LLM invocations, token usage, and errors as OTel traces. Send telemetry to Dash0 or any OpenTelemetry-compatible backend.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/dash0hq/dash0-agent-plugin",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/dash0hq/dash0-agent-plugin.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "monitoring",
+   "author": "Dash0",
+   "ref": null,
+   "sha": "72a84179e6c64871ad5b6fceb09e00f502de415a",
+   "strict": null
+  }
+ },
+ "homepage": "https://dash0.com/"
+}

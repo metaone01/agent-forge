@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.xoomar/xoomar-mcp",
+ "version": "0.1.7",
+ "versionKind": "semver",
+ "description": "Free US market data as tools: SEC filings, insiders, short interest, 13F, COT, ETF flows, liquidity.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/xoomar-dev-cloud/xoomar-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "xoomar-mcp",
+  "url": "https://www.npmjs.com/package/xoomar-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "xoomar-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "XOOMAR_API_KEY",
+    "XOOMAR_MAX_ROWS"
+   ],
+   "remotes": [
+    {
+     "url": "https://xoomar.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.xoomar/xoomar-mcp",
+   "publishedAt": "2026-09-18T14:53:15.154888Z",
+   "updatedAt": "2026-09-18T14:53:15.154888Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://xoomar.com/markets/api",
+ "keywords": [
+  "XOOMAR market data"
+ ]
+}

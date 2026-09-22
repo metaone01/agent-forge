@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ljcl/gaggiuino-mcp",
+ "version": "4.0.0",
+ "versionKind": "semver",
+ "description": "Remote MCP server for your Gaggiuino espresso machine's shots and profiles",
+ "license": "unknown",
+ "repository": "https://github.com/ljcl/gaggiuino-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "gaggiuino-mcp",
+  "url": "https://hub.docker.com/r/ljcl/gaggiuino-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/ljcl/gaggiuino-mcp:4.0.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "GAGGIUINO_URL",
+    "HOST",
+    "LOG_LEVEL",
+    "MCP_ALLOWED_HOSTS",
+    "MCP_ALLOWED_ORIGINS",
+    "MCP_OAUTH_ISSUER",
+    "MCP_OAUTH_PASSPHRASE_HASH",
+    "MCP_OAUTH_SECRET",
+    "MCP_PUBLIC_URL",
+    "PORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ljcl/gaggiuino-mcp",
+   "publishedAt": "2026-08-23T05:29:26.495761Z",
+   "updatedAt": "2026-08-23T05:29:26.495761Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/ljcl/gaggiuino-mcp#readme"
+}

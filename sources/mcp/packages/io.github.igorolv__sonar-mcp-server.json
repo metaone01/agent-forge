@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.igorolv/sonar-mcp-server",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Read-only SonarQube Community Build access for AI agents: issues, hotspots, rules, code snippets",
+ "license": "unknown",
+ "repository": "https://github.com/igorolv/sonar-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "sonar-mcp-server",
+  "url": "https://hub.docker.com/r/igorolv/sonar-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/igorolv/sonar-mcp-server:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SONAR_DEFAULT_PROJECT_KEY",
+    "SONAR_TOKEN",
+    "SONAR_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.igorolv/sonar-mcp-server",
+   "publishedAt": "2026-09-17T21:23:38.685702Z",
+   "updatedAt": "2026-09-17T21:23:38.685702Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/igorolv/sonar-mcp-server#readme",
+ "keywords": [
+  "Sonar MCP Server"
+ ]
+}

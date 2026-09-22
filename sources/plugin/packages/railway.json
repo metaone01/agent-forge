@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "railway",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Deploy and manage apps, databases, and infrastructure on Railway. Covers project setup, deploys, environment configuration, networking, troubleshooting, and monitoring.",
+ "license": "MIT",
+ "repository": "https://github.com/railwayapp/railway-skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/railwayapp/railway-skills/tree/main/plugins/railway",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "deployment",
+   "author": null,
+   "ref": "main",
+   "sha": "950acebcef3445f3915ea0709876c3ba9c237a7f",
+   "strict": null
+  }
+ },
+ "homepage": "https://docs.railway.com/ai/claude-code-plugin"
+}

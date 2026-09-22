@@ -1,0 +1,53 @@
+{
+ "schemaVersion": 1,
+ "name": "com.crixin/voice",
+ "version": "0.7.2",
+ "versionKind": "semver",
+ "description": "Give your AI a real phone: place calls, send SMS, fetch recordings and transcripts. Local or hosted.",
+ "license": "MIT",
+ "repository": "https://github.com/THELAZIZAGROUP/crixin",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "crixin",
+  "url": "https://www.npmjs.com/package/crixin",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "crixin",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CRIXIN_API_KEY",
+    "DEEPGRAM_API_KEY",
+    "TWILIO_ACCOUNT_SID",
+    "TWILIO_AUTH_TOKEN",
+    "TWILIO_PHONE_NUMBER"
+   ],
+   "remotes": [
+    {
+     "url": "https://crixin-platform.vercel.app/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.crixin/voice",
+   "publishedAt": "2026-09-04T12:45:10.982657Z",
+   "updatedAt": "2026-09-04T12:45:10.982657Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://crixin.com",
+ "keywords": [
+  "Crixin Voice"
+ ]
+}

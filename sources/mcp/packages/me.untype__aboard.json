@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "me.untype/aboard",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "Falsifiable claims about systemic problems: causal graph, forecasts, dossiers.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/ostin-pil/aboard",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "aboard-mcp-server",
+  "url": "https://www.npmjs.com/package/aboard-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "aboard-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ABOARD_AGENT_TOKEN",
+    "ABOARD_API_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://aboard.untype.me/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "me.untype/aboard",
+   "publishedAt": "2026-08-24T18:19:04.729772Z",
+   "updatedAt": "2026-08-24T18:19:04.729772Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://aboard.untype.me/about",
+ "keywords": [
+  "aboard"
+ ]
+}

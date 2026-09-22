@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.github/github-mcp-server",
+ "version": "1.12.2",
+ "versionKind": "semver",
+ "description": "Connect AI assistants to GitHub - manage repos, issues, PRs, and workflows through natural language.",
+ "license": "unknown",
+ "repository": "https://github.com/github/github-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "github-mcp-server",
+  "url": "https://hub.docker.com/r/github/github-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/github/github-mcp-server:1.12.2",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://api.githubcopilot.com/mcp/",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.github/github-mcp-server",
+   "publishedAt": "2026-09-16T10:57:24.450051Z",
+   "updatedAt": "2026-09-16T10:57:24.450051Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "GitHub"
+ ]
+}

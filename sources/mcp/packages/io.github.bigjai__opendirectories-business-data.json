@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.BigJai/opendirectories-business-data",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Search 12M+ verified businesses across 10 countries via government registers.",
+ "license": "MIT License",
+ "repository": "https://github.com/BigJai/opendirectories-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "opendirectories-mcp",
+  "url": "https://pypi.org/project/opendirectories-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "opendirectories-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "APAC_SUPABASE_KEY",
+    "APAC_SUPABASE_URL",
+    "EU_SUPABASE_KEY",
+    "EU_SUPABASE_URL",
+    "US_SUPABASE_KEY",
+    "US_SUPABASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://secure-wave--opendirectories-business-data.apify.actor/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.BigJai/opendirectories-business-data",
+   "publishedAt": "2026-03-02T06:16:31.528498Z",
+   "updatedAt": "2026-03-02T06:16:31.528498Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

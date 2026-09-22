@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "com.microsoft/esrp-oss-mcp-test",
+ "version": "26.226.151853",
+ "versionKind": "semver",
+ "description": "The ESRP OSS MCP server exposes tools to discover & validate trusted Microsoft OSS Packages.",
+ "license": "MIT",
+ "repository": "https://github.com/sravanism/esrp-oss-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@microsoft/esrp-release-test-integration",
+  "url": "https://www.npmjs.com/package/@microsoft/esrp-release-test-integration",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@microsoft/esrp-release-test-integration",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://esrp-mcp-server-test-{env}.azurewebsites.net/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.microsoft/esrp-oss-mcp-test",
+   "publishedAt": "2026-08-25T08:43:05.977182Z",
+   "updatedAt": "2026-08-25T08:43:05.977182Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

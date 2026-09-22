@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "deploy-on-aws",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/awslabs/agent-plugins",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/awslabs/agent-plugins/tree/main/plugins/deploy-on-aws",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "deployment",
+   "author": null,
+   "ref": "main",
+   "sha": "efe040ab66ed7eb4bccc0a94133181da5bc57567",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/awslabs/agent-plugins"
+}

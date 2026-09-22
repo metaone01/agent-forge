@@ -1,0 +1,62 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ni-c/smtp-mcp",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "MCP server that sends mail over SMTP, gated behind an allowlist and a human confirmation",
+ "license": "MIT",
+ "repository": "https://github.com/ni-c/smtp-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@ni-c/smtp-mcp",
+  "url": "https://www.npmjs.com/package/@ni-c/smtp-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@ni-c/smtp-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SMTP_ALLOWED_RECIPIENTS",
+    "SMTP_ALLOW_SEND",
+    "SMTP_ALLOW_TOOLS",
+    "SMTP_ATTACHMENT_DIR",
+    "SMTP_ATTACHMENT_TYPES",
+    "SMTP_AUDIT_LOG",
+    "SMTP_DENY_TOOLS",
+    "SMTP_FROM",
+    "SMTP_HOST",
+    "SMTP_INSECURE_TLS",
+    "SMTP_MAX_ATTACHMENT_BYTES",
+    "SMTP_MAX_MESSAGE_BYTES",
+    "SMTP_MAX_RECIPIENTS",
+    "SMTP_MAX_SENDS_PER_HOUR",
+    "SMTP_PASSWORD",
+    "SMTP_PORT",
+    "SMTP_REPLY_TO",
+    "SMTP_SIGNATURE",
+    "SMTP_TLS",
+    "SMTP_USER"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ni-c/smtp-mcp",
+   "publishedAt": "2026-09-07T18:06:20.626217Z",
+   "updatedAt": "2026-09-07T18:06:20.626217Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://smtp-mcp.ni-c.de",
+ "keywords": [
+  "SMTP"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "co.promptguard/security",
+ "version": "1.1.2",
+ "versionKind": "semver",
+ "description": "Scan prompts for injection attacks, redact PII, and audit LLM SDK usage from any MCP client",
+ "license": "MIT",
+ "repository": "https://github.com/acebot712/promptguard",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@promptguard/mcp-server",
+  "url": "https://www.npmjs.com/package/@promptguard/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@promptguard/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PROMPTGUARD_API_KEY"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "co.promptguard/security",
+   "publishedAt": "2026-08-24T03:40:51.154986Z",
+   "updatedAt": "2026-08-24T03:40:51.154986Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "PromptGuard"
+ ]
+}

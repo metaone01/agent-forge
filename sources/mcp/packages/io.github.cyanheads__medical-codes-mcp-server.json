@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/medical-codes-mcp-server",
+ "version": "0.2.9",
+ "versionKind": "semver",
+ "description": "Offline US medical code lookup and crosswalk — ICD-10-CM/PCS, HCPCS Level II, RxNorm. Keyless.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/medical-codes-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/medical-codes-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/medical-codes-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/medical-codes-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "MEDCODE_DB_PATH",
+    "MEDCODE_MAX_RESULTS"
+   ],
+   "remotes": [
+    {
+     "url": "https://medical-codes.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/medical-codes-mcp-server",
+   "publishedAt": "2026-09-19T17:55:28.45315Z",
+   "updatedAt": "2026-09-19T17:55:28.45315Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

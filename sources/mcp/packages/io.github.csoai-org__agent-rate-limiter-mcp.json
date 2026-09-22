@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.CSOAI-ORG/agent-rate-limiter-mcp",
+ "version": "1.0.10",
+ "versionKind": "semver",
+ "description": "Fleet-wide shared rate limiter for A2A + multi-MCP deployments. Most MCP servers rate-limit inde...",
+ "license": "MIT License",
+ "repository": "https://github.com/CSOAI-ORG/agent-rate-limiter-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "agent-rate-limiter-mcp",
+  "url": "https://pypi.org/project/agent-rate-limiter-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "agent-rate-limiter-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://api.meok.ai/v1/a2a/rate-limiter",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.CSOAI-ORG/agent-rate-limiter-mcp",
+   "publishedAt": "2026-06-30T03:52:18.094351Z",
+   "updatedAt": "2026-06-30T03:52:18.094351Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

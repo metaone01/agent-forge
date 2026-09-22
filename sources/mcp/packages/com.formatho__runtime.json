@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "com.formatho/runtime",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Self-hosted MCP server: 26 deterministic dev, security, and EVM tools.",
+ "license": "unknown",
+ "repository": "https://hub.docker.com/r/formatho/formatho-runtime",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "runtime",
+  "url": "https://hub.docker.com/r/formatho/formatho-runtime",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/formatho/formatho-runtime:0.3.0",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://mcp.formatho.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.formatho/runtime",
+   "publishedAt": "2026-09-12T08:38:43.030721Z",
+   "updatedAt": "2026-09-12T08:38:43.030721Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

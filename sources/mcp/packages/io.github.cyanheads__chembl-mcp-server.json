@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/chembl-mcp-server",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Link compounds to protein targets, rank bioactivity, and look up drug mechanisms and indications.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/chembl-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/chembl-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/chembl-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/chembl-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CANVAS_PROVIDER_TYPE",
+    "CHEMBL_API_BASE_URL",
+    "CHEMBL_DATAFRAME_DROP_ENABLED",
+    "CHEMBL_DEFAULT_LIMIT",
+    "CHEMBL_MAX_PAGE_SIZE",
+    "CHEMBL_MAX_SPILL_ROWS",
+    "CHEMBL_REQUEST_TIMEOUT_MS",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://chembl.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/chembl-mcp-server",
+   "publishedAt": "2026-09-19T21:06:24.968716Z",
+   "updatedAt": "2026-09-19T21:06:24.968716Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

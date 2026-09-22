@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.attestagents/attest-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "Scan agent payment endpoints (x402, AP2, L402, MPP, 402) for a trust grade A-F before paying.",
+ "license": "MIT",
+ "repository": "https://github.com/attestagents/Install-attest-agent",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "attest-mcp",
+  "url": "https://www.npmjs.com/package/attest-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "attest-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ATTEST_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://attestagent.org/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.attestagents/attest-mcp",
+   "publishedAt": "2026-06-07T03:48:31.251984Z",
+   "updatedAt": "2026-06-07T03:48:31.251984Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://attestagent.org",
+ "keywords": [
+  "Attest"
+ ]
+}

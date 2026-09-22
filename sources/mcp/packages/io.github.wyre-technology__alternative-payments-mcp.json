@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wyre-technology/alternative-payments-mcp",
+ "version": "1.0.8",
+ "versionKind": "semver",
+ "description": "MCP server for Alternative Payments — customers, invoices, payment requests, payouts, webhooks.",
+ "license": "unknown",
+ "repository": "https://github.com/wyre-technology/alternative-payments-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "alternative-payments-mcp",
+  "url": "https://hub.docker.com/r/wyre-technology/alternative-payments-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-technology/alternative-payments-mcp:v1.0.8",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ALTERNATIVE_PAYMENTS_CLIENT_ID",
+    "ALTERNATIVE_PAYMENTS_CLIENT_SECRET",
+    "ALTERNATIVE_PAYMENTS_ENVIRONMENT",
+    "AUTH_MODE",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wyre-technology/alternative-payments-mcp",
+   "publishedAt": "2026-08-20T18:53:24.387012Z",
+   "updatedAt": "2026-08-20T18:53:24.387012Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/wyre-technology/alternative-payments-mcp",
+ "keywords": [
+  "Alternative Payments"
+ ]
+}

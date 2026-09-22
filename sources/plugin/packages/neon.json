@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "neon",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/neondatabase/agent-skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "database",
+   "author": null,
+   "ref": "main",
+   "sha": "4a4266ac3da8cf29e3c995bad040ae4ac4476b28",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres"
+}

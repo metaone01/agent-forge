@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/cyanheads-mcp-server",
+ "version": "0.4.2",
+ "versionKind": "semver",
+ "description": "Fleet discovery for the cyanheads MCP ecosystem — semantic search + install snippets.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/cyanheads-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/cyanheads-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/cyanheads-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/cyanheads-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CATALOG_FETCH_TIMEOUT_MS",
+    "CATALOG_REFRESH_SECONDS",
+    "CATALOG_URL",
+    "EMBEDDING_MODEL_ID",
+    "MCP_LOG_LEVEL",
+    "SIMILARITY_FLOOR"
+   ],
+   "remotes": [
+    {
+     "url": "https://cyanheads.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/cyanheads-mcp-server",
+   "publishedAt": "2026-09-19T21:15:42.245197Z",
+   "updatedAt": "2026-09-19T21:15:42.245197Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

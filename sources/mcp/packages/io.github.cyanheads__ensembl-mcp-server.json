@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/ensembl-mcp-server",
+ "version": "0.4.4",
+ "versionKind": "semver",
+ "description": "Look up genes, sequences, variants, homologs, and cross-database xrefs from Ensembl REST.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/ensembl-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/ensembl-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/ensembl-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/ensembl-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ENSEMBL_BASE_URL",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://ensembl.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/ensembl-mcp-server",
+   "publishedAt": "2026-09-19T16:36:07.656383Z",
+   "updatedAt": "2026-09-19T16:36:07.656383Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

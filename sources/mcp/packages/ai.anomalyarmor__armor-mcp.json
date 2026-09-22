@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.anomalyarmor/armor-mcp",
+ "version": "0.6.1",
+ "versionKind": "semver",
+ "description": "Data observability tools for engineering teams: alerts, freshness, schema drift, lineage, quality.",
+ "license": "MIT",
+ "repository": "https://github.com/anomalyarmor/agents",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "armor-mcp",
+  "url": "https://pypi.org/project/armor-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "armor-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ARMOR_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.anomalyarmor.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.anomalyarmor/armor-mcp",
+   "publishedAt": "2026-04-18T00:51:37.350253Z",
+   "updatedAt": "2026-04-18T00:51:37.350253Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://www.anomalyarmor.ai",
+ "keywords": [
+  "AnomalyArmor"
+ ]
+}

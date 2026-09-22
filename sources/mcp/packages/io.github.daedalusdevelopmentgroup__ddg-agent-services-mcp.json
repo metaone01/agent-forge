@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.daedalusdevelopmentgroup/ddg-agent-services-mcp",
+ "version": "0.5.0",
+ "versionKind": "semver",
+ "description": "Pay-per-call x402 gateway: agent tools, OpenAI-compatible LLM, market data, RPC, security audits.",
+ "license": "MIT License",
+ "repository": "https://github.com/daedalusdevelopmentgroup/ddg-agent-payable-services",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "ddg-agent-services-mcp",
+  "url": "https://pypi.org/project/ddg-agent-services-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "ddg-agent-services-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DDG_AGENT_ID",
+    "DDG_PRIVATE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.daedalusdevelopmentgroup.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.daedalusdevelopmentgroup/ddg-agent-services-mcp",
+   "publishedAt": "2026-07-07T00:58:05.330647Z",
+   "updatedAt": "2026-07-07T00:58:05.330647Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://agents.daedalusdevelopmentgroup.com",
+ "keywords": [
+  "DDG Agent Services"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "learn-with-coursera",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Turn any learning intent into a personalized Coursera experience. Asks three quick questions (topic, familiarity, preferred format), searches Coursera's catalog, and delivers the right next step — a course, hands-on project, short video, or live roleplay — then maps a path forward. Requires the Coursera connector for catalog tools.",
+ "license": "unknown",
+ "repository": "https://github.com/coursera/skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/coursera/skills/tree/main/skills",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "learning",
+   "author": "Coursera",
+   "ref": "main",
+   "sha": "ac28fd6ebf8584e3ee196159bd6d4514fa07de0f",
+   "strict": false
+  }
+ },
+ "homepage": "https://github.com/coursera/skills"
+}

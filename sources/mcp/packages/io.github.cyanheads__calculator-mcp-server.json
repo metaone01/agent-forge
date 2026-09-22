@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/calculator-mcp-server",
+ "version": "0.4.3",
+ "versionKind": "semver",
+ "description": "Evaluate, simplify, and differentiate mathematical expressions.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/calculator-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/calculator-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/calculator-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/calculator-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CALC_EVALUATION_TIMEOUT_MS",
+    "CALC_MAX_EXPRESSION_LENGTH",
+    "CALC_MAX_RESULT_LENGTH",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://calculator.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/calculator-mcp-server",
+   "publishedAt": "2026-09-19T18:43:14.742446Z",
+   "updatedAt": "2026-09-19T18:43:14.742446Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.scorecard/mcp",
+ "version": "2.1.1",
+ "versionKind": "semver",
+ "description": "MCP server providing access to the Scorecard API to evaluate and optimize LLM systems.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/scorecard-ai/scorecard-node",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "scorecard-ai-mcp",
+  "url": "https://www.npmjs.com/package/scorecard-ai-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "scorecard-ai-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SCORECARD_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.scorecard.io/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.scorecard/mcp",
+   "publishedAt": "2025-09-12T04:07:55.578779Z",
+   "updatedAt": "2025-09-12T04:07:55.578779Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

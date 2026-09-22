@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.meertrack/mcp-server",
+ "version": "2.2.0",
+ "versionKind": "semver",
+ "description": "Competitive intelligence - track what competitors ship each week. 8 tools, 3 prompt workflows.",
+ "license": "MIT",
+ "repository": "https://github.com/meertrack/meertrack-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@meertrack/mcp",
+  "url": "https://www.npmjs.com/package/@meertrack/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@meertrack/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MEERTRACK_API_BASE_URL",
+    "MEERTRACK_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.meertrack.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.meertrack/mcp-server",
+   "publishedAt": "2026-08-03T20:23:36.154945Z",
+   "updatedAt": "2026-08-03T20:23:36.154945Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://meertrack.com",
+ "keywords": [
+  "Meertrack"
+ ]
+}

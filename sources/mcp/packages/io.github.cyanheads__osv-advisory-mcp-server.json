@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/osv-advisory-mcp-server",
+ "version": "0.1.14",
+ "versionKind": "semver",
+ "description": "Query OSV.dev for package vulnerabilities and batch-audit dependency lists via MCP.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/osv-advisory-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/osv-advisory-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/osv-advisory-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/osv-advisory-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "OSV_BATCH_CONCURRENCY",
+    "OSV_QUERY_MAX_PAGES",
+    "OSV_REQUEST_TIMEOUT_MS"
+   ],
+   "remotes": [
+    {
+     "url": "https://osv-advisory.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/osv-advisory-mcp-server",
+   "publishedAt": "2026-09-20T15:24:23.176483Z",
+   "updatedAt": "2026-09-20T15:24:23.176483Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

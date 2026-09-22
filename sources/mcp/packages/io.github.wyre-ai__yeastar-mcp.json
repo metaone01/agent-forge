@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/yeastar-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "MCP server for Yeastar P-Series PBX System API (read-only).",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/yeastar-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "yeastar-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/yeastar-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/yeastar-mcp:v1.0.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT",
+    "YEASTAR_CLIENT_ID",
+    "YEASTAR_CLIENT_SECRET",
+    "YEASTAR_PBX_DOMAIN"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/yeastar-mcp",
+   "publishedAt": "2026-09-20T19:35:01.273884Z",
+   "updatedAt": "2026-09-20T19:35:01.273884Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/yeastar-mcp",
+ "keywords": [
+  "Yeastar P-Series PBX"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.0rkz/byte-protocol",
+ "version": "0.13.0",
+ "versionKind": "semver",
+ "description": "PayPerByte — per-byte data for AI agents: x402 USDC on Base, EIP-712-attested. No token.",
+ "license": "MIT",
+ "repository": "https://github.com/0rkz/byte-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "byte-mcp-server",
+  "url": "https://www.npmjs.com/package/byte-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "byte-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BYTE_GATEWAY_ATTESTER",
+    "PRIVATE_KEY",
+    "RPC_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.payperbyte.io/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.0rkz/byte-protocol",
+   "publishedAt": "2026-09-13T03:53:06.135635Z",
+   "updatedAt": "2026-09-13T03:53:06.135635Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "app.cellarion/cellarion",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "Wine cellar manager: bottles, racks, drink windows, pairings and a shared wine registry.",
+ "license": "AGPL-3.0",
+ "repository": "https://github.com/jagduvi1/Cellarion",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "cellarion-mcp",
+  "url": "https://www.npmjs.com/package/cellarion-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "cellarion-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CELLARION_TOKEN",
+    "CELLARION_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://cellarion.app/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "app.cellarion/cellarion",
+   "publishedAt": "2026-07-18T18:34:09.625947Z",
+   "updatedAt": "2026-07-18T18:34:09.625947Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://cellarion.app",
+ "keywords": [
+  "Cellarion"
+ ]
+}

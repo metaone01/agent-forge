@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.sravanmodugula-solved/nexatron-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "Ask your enterprise data in plain English. Governed analytics over MCP, from dotSolved.",
+ "license": "MIT",
+ "repository": "https://github.com/sravanmodugula-solved/nexatron",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "nexatron-mcp",
+  "url": "https://pypi.org/project/nexatron-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "nexatron-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "NEXATRON_API_KEY",
+    "NEXATRON_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.nexatron.io/api/v1/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://api.nexatron.io/api/v1/mcp/stream",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.sravanmodugula-solved/nexatron-mcp",
+   "publishedAt": "2026-06-22T02:58:28.283041Z",
+   "updatedAt": "2026-06-22T02:58:28.283041Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://nexatron.io",
+ "keywords": [
+  "Nexatron"
+ ]
+}

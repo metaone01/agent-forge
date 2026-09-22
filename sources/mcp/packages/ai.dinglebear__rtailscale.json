@@ -1,0 +1,53 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.dinglebear/rtailscale",
+ "version": "0.1.4",
+ "versionKind": "semver",
+ "description": "Tailscale device, route, DNS, key, user, and ACL management over MCP and CLI.",
+ "license": "MIT",
+ "repository": "https://github.com/dinglebear-ai/rtailscale",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@dinglebear/rtailscale",
+  "url": "https://www.npmjs.com/package/@dinglebear/rtailscale",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@dinglebear/rtailscale",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "RUST_LOG",
+    "TAILSCALE_API_KEY",
+    "TAILSCALE_RMCP_RELEASE_BASE_URL",
+    "TAILSCALE_RMCP_REPO",
+    "TAILSCALE_RMCP_VERSION"
+   ],
+   "remotes": [
+    {
+     "url": "https://ts.dinglebear.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.dinglebear/rtailscale",
+   "publishedAt": "2026-08-04T14:20:42.446134Z",
+   "updatedAt": "2026-08-04T14:20:42.446134Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://rtailscale.dinglebear.ai",
+ "keywords": [
+  "Tailscale RMCP"
+ ]
+}

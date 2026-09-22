@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.hythe/hythe",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "HYTHE — coordination bus + shared truth for AI agent fleets — self-hosted MCP server + stdio bridge.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/hythe-dev/hythe",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@hythe/mcp",
+  "url": "https://www.npmjs.com/package/@hythe/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@hythe/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "API_KEY",
+    "HYTHE_AGENT_AUTH_MODE",
+    "HYTHE_AGENT_ID",
+    "HYTHE_AGENT_KEY_FILE",
+    "MCP_HOST",
+    "MCP_PORT"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.hythe/hythe",
+   "publishedAt": "2026-09-05T02:19:40.779434Z",
+   "updatedAt": "2026-09-05T02:19:40.779434Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

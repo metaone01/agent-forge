@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.amitesh-m/wealthville",
+ "version": "0.3.1",
+ "versionKind": "semver",
+ "description": "Solana + EVM liquidity-pool scores: Enter/Hold/Exit verdicts and 0-100 Wealthville Score.",
+ "license": "MIT",
+ "repository": "https://github.com/amitesh-m/wealthville-integrations",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@wealthville/mcp-server",
+  "url": "https://www.npmjs.com/package/@wealthville/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@wealthville/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "WEALTHVILLE_API_KEY",
+    "WEALTHVILLE_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://wealthville.net/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.amitesh-m/wealthville",
+   "publishedAt": "2026-07-27T15:24:28.486949Z",
+   "updatedAt": "2026-07-27T15:24:28.486949Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://wealthville.net/mcp",
+ "keywords": [
+  "Wealthville"
+ ]
+}

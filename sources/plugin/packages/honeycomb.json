@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "honeycomb",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Skills, agents, and workflows for Honeycomb observability — query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server.",
+ "license": "MIT",
+ "repository": "https://github.com/honeycombio/agent-skill",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/honeycombio/agent-skill/tree/main/honeycomb",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "monitoring",
+   "author": "Honeycomb",
+   "ref": "main",
+   "sha": "41214b7dfb97f262adabf295fa6f0fcad85bc0f6",
+   "strict": null
+  }
+ },
+ "homepage": "https://www.honeycomb.io"
+}

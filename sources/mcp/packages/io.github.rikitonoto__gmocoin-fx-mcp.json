@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.RikitoNoto/gmocoin-fx-mcp",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "MCP server for GMO Coin FX trading, positions, executions, klines, and account balances.",
+ "license": "unknown",
+ "repository": "https://github.com/RikitoNoto/gmocoin-fx-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "gmocoin-fx-mcp",
+  "url": "https://hub.docker.com/r/rikitonoto/gmocoin-fx-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/rikitonoto/gmocoin-fx-mcp:1.0.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GMO_API_KEY",
+    "GMO_SECRET_KEY",
+    "ORDER_CLIENT_ORDER_ID_PREFIX",
+    "ORDER_SIZE_LIMIT",
+    "ORDER_SYMBOL_LIMITS"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.RikitoNoto/gmocoin-fx-mcp",
+   "publishedAt": "2026-05-21T00:26:53.148028Z",
+   "updatedAt": "2026-05-21T00:26:53.148028Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "GMO Coin FX MCP Server"
+ ]
+}

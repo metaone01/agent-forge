@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.egocen-vivideo/vivideo",
+ "version": "1.0.2",
+ "versionKind": "semver",
+ "description": "AI video generation via the Vivideo API: auto or manual mode, avatars, voices, brand kits.",
+ "license": "MIT",
+ "repository": "https://github.com/egocen-vivideo/vivideo-toolchain",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@vivideo/mcp",
+  "url": "https://www.npmjs.com/package/@vivideo/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@vivideo/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "VIVIDEO_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.vivideo.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.egocen-vivideo/vivideo",
+   "publishedAt": "2026-07-28T13:44:29.653631Z",
+   "updatedAt": "2026-07-28T13:44:29.653631Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

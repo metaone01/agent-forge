@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.sapph1re/mcp-billing-gateway",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Billing proxy for MCP servers. Adds Stripe and x402 crypto payments without writing billing code.",
+ "license": "MIT",
+ "repository": "https://github.com/sapph1re/mcp-billing-gateway-sdk",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "mcp-billing-gateway",
+  "url": "https://pypi.org/project/mcp-billing-gateway/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "mcp-billing-gateway",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://mcp-billing-gateway-production.up.railway.app/mcp/",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.sapph1re/mcp-billing-gateway",
+   "publishedAt": "2026-08-19T20:00:19.165091Z",
+   "updatedAt": "2026-08-19T20:00:19.165091Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "MCP Billing Gateway"
+ ]
+}

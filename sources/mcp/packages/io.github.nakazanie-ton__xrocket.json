@@ -1,0 +1,57 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.nakazanie-ton/xrocket",
+ "version": "0.6.0",
+ "versionKind": "semver",
+ "description": "Autonomous xRocket CEX trading inside operator-set limits, plus live market data over MCP",
+ "license": "MIT",
+ "repository": "https://github.com/nakazanie-ton/myrocket",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "xrocket-mcp",
+  "url": "https://www.npmjs.com/package/xrocket-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "xrocket-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "XROCKET_ALLOW_MAINNET_WRITES",
+    "XROCKET_API_TOKEN",
+    "XROCKET_APPROVAL_TTL_MS",
+    "XROCKET_ENABLE_TRADING",
+    "XROCKET_ENABLE_TRANSFERS",
+    "XROCKET_ENABLE_WITHDRAWALS",
+    "XROCKET_ENVIRONMENT",
+    "XROCKET_PROFILE",
+    "XROCKET_TRADING_LIMIT"
+   ],
+   "remotes": [
+    {
+     "url": "https://xrocket-mcp-production.up.railway.app/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.nakazanie-ton/xrocket",
+   "publishedAt": "2026-08-25T05:35:42.858864Z",
+   "updatedAt": "2026-08-25T05:35:42.858864Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://xrocket-mcp-production.up.railway.app/",
+ "keywords": [
+  "xRocket Exchange MCP"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jyswee/gpusmarket",
+ "version": "2.4.16",
+ "versionKind": "semver",
+ "description": "Rent real GPUs from the terminal. Per-second billing, $0.50 minimum. stdio MCP server.",
+ "license": "SEE LICENSE IN LICENSE",
+ "repository": "https://github.com/jyswee/gpusmarket",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "gpusmarket",
+  "url": "https://www.npmjs.com/package/gpusmarket",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "gpusmarket",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GPUSMARKET_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.gpusmarket.com/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jyswee/gpusmarket",
+   "publishedAt": "2026-08-14T18:28:56.816619Z",
+   "updatedAt": "2026-08-14T18:28:56.816619Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://gpusmarket.com"
+}

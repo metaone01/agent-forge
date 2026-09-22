@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.desplega-ai/agent-swarm",
+ "version": "1.149.1",
+ "versionKind": "semver",
+ "description": "Full Agent Swarm API and MCP server with local SQLite storage for multi-agent orchestration.",
+ "license": "MIT",
+ "repository": "https://github.com/desplega-ai/agent-swarm",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@desplega.ai/agent-swarm",
+  "url": "https://www.npmjs.com/package/@desplega.ai/agent-swarm",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@desplega.ai/agent-swarm",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "AGENT_SWARM_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://{swarm_host}/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.desplega-ai/agent-swarm",
+   "publishedAt": "2026-09-15T09:59:24.086803Z",
+   "updatedAt": "2026-09-15T09:59:24.086803Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://docs.agent-swarm.dev",
+ "keywords": [
+  "Agent Swarm"
+ ]
+}

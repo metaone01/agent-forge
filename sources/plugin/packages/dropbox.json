@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "dropbox",
+ "version": "main",
+ "versionKind": "other",
+ "description": "The Dropbox plugin for Claude connects your Dropbox files directly to Claude, so you can search, organize, save generated content, and create sharing links without switching tools. It respects your existing Dropbox permissions, and Claude only works with files you already have access to.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/dropbox/dropbox-ai-plugins",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/dropbox/dropbox-ai-plugins/tree/main/claude",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "Dropbox",
+   "ref": "main",
+   "sha": "4135e81caf8275b4c97caef244479e0dcb6fb823",
+   "strict": null
+  }
+ },
+ "homepage": "https://www.dropbox.com"
+}

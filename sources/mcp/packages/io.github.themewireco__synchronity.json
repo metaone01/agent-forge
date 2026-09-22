@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.themewireco/synchronity",
+ "version": "0.5.21",
+ "versionKind": "semver",
+ "description": "Shop connected e-commerce stores: search, compare, cart, and checkout with buyer approval.",
+ "license": "MIT",
+ "repository": "https://github.com/themewireco/synchronity",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@synchronity/mcp-server",
+  "url": "https://www.npmjs.com/package/@synchronity/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@synchronity/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DEFAULT_SITE_ID",
+    "GATEWAY_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.synchronity.app/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.themewireco/synchronity",
+   "publishedAt": "2026-07-21T16:28:03.599817Z",
+   "updatedAt": "2026-07-21T16:28:03.599817Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://synchronity.app",
+ "keywords": [
+  "Synchronity"
+ ]
+}

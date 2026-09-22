@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hynix666/ultra-e2e-test",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "List, create and move tasks through todo, in progress and done.",
+ "license": "unknown",
+ "repository": "https://github.com/hynix666/ultra-e2e-test",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "ultra-e2e-test",
+  "url": "https://hub.docker.com/r/hynix666/ultra-e2e-test-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/hynix666/ultra-e2e-test-mcp-server:0.1.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TASK_API_TIMEOUT_MS",
+    "TASK_API_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hynix666/ultra-e2e-test",
+   "publishedAt": "2026-09-18T22:27:40.222183Z",
+   "updatedAt": "2026-09-18T22:27:40.222183Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "ultra-e2e-test tasks"
+ ]
+}

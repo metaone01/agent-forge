@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hmdmph/bamboo-mcp",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Read-only MCP server for self-hosted Atlassian Bamboo CI/CD",
+ "license": "unknown",
+ "repository": "https://github.com/hmdmph/bamboo-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "bamboo-mcp",
+  "url": "https://hub.docker.com/r/hmdmph/bamboo-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/hmdmph/bamboo-mcp:0.1.2",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BAMBOO_PROXY",
+    "BAMBOO_TOKEN",
+    "BAMBOO_URL",
+    "BITBUCKET_URL",
+    "MCP_TRANSPORT",
+    "VERBOSE"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hmdmph/bamboo-mcp",
+   "publishedAt": "2026-08-17T14:45:16.777821Z",
+   "updatedAt": "2026-08-17T14:45:16.777821Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Bamboo MCP Server"
+ ]
+}

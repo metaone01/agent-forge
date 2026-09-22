@@ -1,0 +1,64 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jmrplens/gitlab-mcp-server",
+ "version": "3.0.0",
+ "versionKind": "semver",
+ "description": "Go MCP server for GitLab: 2 dynamic tools reach 1000+ REST/GraphQL actions. Free/CE, no paid tier.",
+ "license": "unknown",
+ "repository": "https://github.com/jmrplens/gitlab-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "mcpb",
+  "package": "gitlab-mcp-server",
+  "url": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v3.0.0/gitlab-mcp-server.mcpb",
+  "typeRef": {
+   "registryType": "mcpb",
+   "identifier": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v3.0.0/gitlab-mcp-server.mcpb",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GITLAB_MCP_ALLOWED_IMPORT_DIRS",
+    "GITLAB_MCP_CAPABILITY_SURFACE",
+    "GITLAB_MCP_EMBEDDED_RESOURCES",
+    "GITLAB_MCP_EXCLUDE_TOOLS",
+    "GITLAB_MCP_IGNORE_SCOPES",
+    "GITLAB_MCP_LOG_LEVEL",
+    "GITLAB_MCP_META_PARAM_SCHEMA",
+    "GITLAB_MCP_RATE_LIMIT_BURST",
+    "GITLAB_MCP_RATE_LIMIT_RPS",
+    "GITLAB_MCP_READ_ONLY",
+    "GITLAB_MCP_SAFE_MODE",
+    "GITLAB_MCP_SKIP_TLS_VERIFY",
+    "GITLAB_MCP_TIER",
+    "GITLAB_MCP_TOOL_SURFACE",
+    "GITLAB_MCP_UPLOAD_MAX_FILE_SIZE",
+    "GITLAB_TOKEN",
+    "GITLAB_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.jmrp.io/gitlab",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jmrplens/gitlab-mcp-server",
+   "publishedAt": "2026-09-10T07:13:36.505026Z",
+   "updatedAt": "2026-09-10T07:13:36.505026Z",
+   "identityEvidence": "mcpb-bundle-url"
+  }
+ },
+ "homepage": "https://jmrp.io/docs/gitlab-mcp-server",
+ "keywords": [
+  "GitLab MCP Server"
+ ]
+}

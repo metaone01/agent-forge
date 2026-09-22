@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.kcofoni/gotify-mcp",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "MCP server for Gotify push notifications - send messages and manage apps/clients.",
+ "license": "unknown",
+ "repository": "https://github.com/jmagar/gotify-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "gotify-mcp",
+  "url": "https://hub.docker.com/r/kcofoni/gotify-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/kcofoni/gotify-mcp:v1.0.1",
+   "transport": "sse",
+   "environmentVariables": [
+    "GOTIFY_APP_TOKEN",
+    "GOTIFY_CLIENT_TOKEN",
+    "GOTIFY_MCP_PORT",
+    "GOTIFY_MCP_TRANSPORT",
+    "GOTIFY_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.kcofoni/gotify-mcp",
+   "publishedAt": "2025-12-22T21:35:19.576434Z",
+   "updatedAt": "2025-12-22T21:35:19.576434Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

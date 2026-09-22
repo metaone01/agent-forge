@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hydradns/hydra-mcp",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Manage a self-hosted DNS firewall: block domains, create policies, read query logs and metrics.",
+ "license": "unknown",
+ "repository": "https://github.com/hydradns/hydradns",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "hydra-mcp",
+  "url": "https://hub.docker.com/r/hydradns/hydra-cli",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/hydradns/hydra-cli:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HYDRA_API_URL",
+    "HYDRA_TOKEN",
+    "MCP_ROLE"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hydradns/hydra-mcp",
+   "publishedAt": "2026-09-21T04:27:23.27312Z",
+   "updatedAt": "2026-09-21T04:27:23.27312Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/hydradns/hydradns",
+ "keywords": [
+  "HydraDNS"
+ ]
+}

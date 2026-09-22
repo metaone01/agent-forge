@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.launchflag/launchflag",
+ "version": "0.2.7",
+ "versionKind": "semver",
+ "description": "Feature flags and kill switches. Turn a shipped feature off in production without a deploy.",
+ "license": "MIT",
+ "repository": "https://www.npmjs.com/package/launchflag-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "launchflag-mcp",
+  "url": "https://www.npmjs.com/package/launchflag-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "launchflag-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LAUNCHFLAG_TOKEN",
+    "LAUNCHFLAG_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://launchflag.dev/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.launchflag/launchflag",
+   "publishedAt": "2026-09-08T17:20:27.079288Z",
+   "updatedAt": "2026-09-08T17:20:27.079288Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://launchflag.dev",
+ "keywords": [
+  "LaunchFlag"
+ ]
+}

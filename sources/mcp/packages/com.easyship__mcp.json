@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "com.easyship/mcp",
+ "version": "0.6.5",
+ "versionKind": "semver",
+ "description": "Connect Easyship to compare rates, create shipments, buy labels, and track packages globally.",
+ "license": "MIT License",
+ "repository": "https://github.com/easyship/easyship-mcp-plugin",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "easyship-mcp",
+  "url": "https://pypi.org/project/easyship-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "easyship-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EASYSHIP_API_ACCESS_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.easyship.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.easyship/mcp",
+   "publishedAt": "2026-08-21T14:09:58.342299Z",
+   "updatedAt": "2026-08-21T14:09:58.342299Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Easyship"
+ ]
+}

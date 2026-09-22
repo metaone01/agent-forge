@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.marketintell/marketintell",
+ "version": "0.2.1",
+ "versionKind": "semver",
+ "description": "AI analyst desk for stocks, options & crypto with sourced trade setups and a public accuracy record.",
+ "license": "unknown",
+ "repository": "https://github.com/ravidsrk/marketintell",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "marketintell",
+  "url": "https://www.npmjs.com/package/marketintell",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "marketintell",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MARKETINTELL_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.marketintell.ai/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://api.marketintell.ai/mcp/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.marketintell/marketintell",
+   "publishedAt": "2026-06-01T22:07:15.763336Z",
+   "updatedAt": "2026-06-01T22:07:15.763336Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://marketintell.ai"
+}

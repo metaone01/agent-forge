@@ -1,0 +1,59 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.com.mcp/hapi-mcp",
+ "version": "0.6.0",
+ "versionKind": "semver",
+ "description": "HAPI MCP server: Dynamically exposes OpenAPI REST APIs as MCP tools for AI assistants",
+ "license": "unknown",
+ "repository": "https://github.com/larebelion/hapimcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "hapi-mcp",
+  "url": "https://hub.docker.com/v2/repositories/hapimcp/hapi-cli/",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/hapimcp/hapi-cli:0.6.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "HAPI_CONFIG_FILES",
+    "HAPI_CORS",
+    "HAPI_DEV",
+    "HAPI_FQDN",
+    "HAPI_HEADLESS",
+    "HAPI_HOME",
+    "HAPI_MCP",
+    "HAPI_OPENAPI",
+    "HAPI_PORT",
+    "HAPI_URL",
+    "NODE_ENV",
+    "PROJECT_NAME"
+   ],
+   "remotes": [
+    {
+     "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.com.mcp/hapi-mcp",
+   "publishedAt": "2026-01-07T00:32:01.41626Z",
+   "updatedAt": "2026-01-07T00:32:01.41626Z",
+   "identityEvidence": "url"
+  }
+ },
+ "homepage": "https://docs.mcp.com.ai/components/hapi-server/hapi-cli",
+ "keywords": [
+  "HAPI MCP Server"
+ ]
+}

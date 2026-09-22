@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "incident-io",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Work with incident.io from Claude: respond to and investigate incidents, check on-call schedules and escalations, and author the runbooks, skills and architecture docs that incident.io investigations draw on. Bundles the official incident.io MCP server (OAuth on first use).",
+ "license": "MIT",
+ "repository": "https://github.com/incident-io/skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/incident-io/skills/tree/main/plugins/incident-io",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "monitoring",
+   "author": "incident.io",
+   "ref": "main",
+   "sha": "6d0bbfc9e52256fc39326b9ba6d08f16831b60ae",
+   "strict": null
+  }
+ },
+ "homepage": "https://incident.io"
+}

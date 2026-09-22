@@ -1,0 +1,59 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.animicaorg/animica",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Read-only Animica chain data, free AI inference, verifiable quantum randomness, and mining stats.",
+ "license": "unknown",
+ "repository": "https://github.com/animicaorg/animica-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "animica-mcp",
+  "url": "https://pypi.org/project/animica-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "animica-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ANIMICA_API_KEY",
+    "ANIMICA_BASE_URL",
+    "ANIMICA_BEACON_URL",
+    "ANIMICA_MCP_TIMEOUT_S",
+    "ANIMICA_MODEL",
+    "ANIMICA_POOL_URL",
+    "ANIMICA_RPC_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.animica.org/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://animica.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.animicaorg/animica",
+   "publishedAt": "2026-08-14T22:24:51.067974Z",
+   "updatedAt": "2026-08-14T22:24:51.067974Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://animica.dev",
+ "keywords": [
+  "Animica"
+ ]
+}

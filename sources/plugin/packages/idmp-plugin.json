@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "idmp-plugin",
+ "version": "main",
+ "versionKind": "other",
+ "description": "TDengine IDMP plugin with packaged skills for discovery, schema inspection, and safe operational workflows.",
+ "license": "MIT",
+ "repository": "https://github.com/taosdata/agent-skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/taosdata/agent-skills/tree/main/plugins/idmp-plugin",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "TaosData",
+   "ref": "main",
+   "sha": "0b67242e2cd114ad9631c39aa20969fdd9780a11",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/taosdata/agent-skills"
+}

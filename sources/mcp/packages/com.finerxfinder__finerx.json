@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.finerxfinder/finerx",
+ "version": "1.5.0",
+ "versionKind": "semver",
+ "description": "US Rx prices by pharmacy + free discount card; also US equivalents of foreign brands, 12 languages",
+ "license": "MIT",
+ "repository": "https://pypi.org/project/finerx-mcp/",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "finerx-mcp",
+  "url": "https://pypi.org/project/finerx-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "finerx-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FINERX_API_BASE",
+    "FINERX_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://www.finerxfinder.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.finerxfinder/finerx",
+   "publishedAt": "2026-09-09T17:40:36.795962Z",
+   "updatedAt": "2026-09-09T17:40:36.795962Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://www.finerxfinder.com",
+ "keywords": [
+  "FineRx"
+ ]
+}

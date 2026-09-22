@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "circle-skills",
+ "version": "master",
+ "versionKind": "other",
+ "description": "Ship stablecoin apps faster. Best-practice skills for USDC payments, cross-chain transfers, wallets, and smart contracts — plus Circle's MCP server for real-time SDK and documentation guidance.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/circlefin/skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/circlefin/skills/tree/master/plugins/circle",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Circle",
+   "ref": "master",
+   "sha": "58ab8648bb1ae9d037a3bf5197ad3bb01262f5b1",
+   "strict": null
+  }
+ },
+ "homepage": "https://www.circle.com"
+}

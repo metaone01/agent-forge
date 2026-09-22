@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "com.backtest360/backtest360",
+ "version": "0.5.0",
+ "versionKind": "semver",
+ "description": "MCP server exposing the Backtest360 engine API as tools for AI agents.",
+ "license": "unknown",
+ "repository": "https://github.com/Backtest360/backtest360-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "backtest360-mcp",
+  "url": "https://pypi.org/project/backtest360-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "backtest360-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BACKTEST360_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.backtest360.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.backtest360/backtest360",
+   "publishedAt": "2026-07-29T22:19:34.344011Z",
+   "updatedAt": "2026-07-29T22:19:34.344011Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Backtest360"
+ ]
+}

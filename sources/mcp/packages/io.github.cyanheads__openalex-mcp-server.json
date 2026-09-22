@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openalex-mcp-server",
+ "version": "0.7.14",
+ "versionKind": "semver",
+ "description": "Access the OpenAlex academic research catalog — 270M+ publications.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openalex-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openalex-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openalex-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openalex-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "OPENALEX_API_KEY",
+    "OPENALEX_BASE_URL",
+    "OPENALEX_MAILTO"
+   ],
+   "remotes": [
+    {
+     "url": "https://openalex.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openalex-mcp-server",
+   "publishedAt": "2026-09-19T12:19:12.3463Z",
+   "updatedAt": "2026-09-19T12:19:12.3463Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

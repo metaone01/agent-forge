@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "atlassian-twg-cli",
+ "version": "b3336ef63d45e2636ff411a922ed602244e0f3db",
+ "versionKind": "other",
+ "description": "Teamwork Graph CLI is Atlassian's agent-first interface to your entire work context: Jira issues, Confluence pages, Bitbucket PRs, along with your connected third-party data sources. Purpose-built for coding agents like Claude Code (terminal or desktop), and powered by Atlassian's context graph. Try: \"draft a Jira issue from this PR and link it to the epic.\" Using Claude Code in the browser? Install the Atlassian Rovo MCP plugin instead. Run /twg-setup after install to connect Atlassian Teamwork Graph CLI to Claude Code.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/atlassian-labs/twg-plugins",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/atlassian-labs/twg-plugins.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "Atlassian",
+   "ref": null,
+   "sha": "b3336ef63d45e2636ff411a922ed602244e0f3db",
+   "strict": null
+  }
+ },
+ "homepage": "https://developer.atlassian.com/cloud/twg-cli/"
+}

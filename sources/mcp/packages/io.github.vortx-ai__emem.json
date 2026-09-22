@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Vortx-AI/emem",
+ "version": "2.4.0",
+ "versionKind": "semver",
+ "description": "Shared memory for AI agents. One address per fact, one signature you check. No key to read.",
+ "license": "unknown",
+ "repository": "https://github.com/Vortx-AI/emem",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "emem",
+  "url": "https://hub.docker.com/r/vortx-ai/emem",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/vortx-ai/emem:latest",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "EMEM_BIND",
+    "EMEM_DATA",
+    "EMEM_PUBLIC_URL",
+    "EMEM_TLS_DOMAINS",
+    "PORT"
+   ],
+   "remotes": [
+    {
+     "url": "https://emem.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Vortx-AI/emem",
+   "publishedAt": "2026-09-09T07:43:07.221737Z",
+   "updatedAt": "2026-09-09T07:43:07.221737Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://emem.dev",
+ "keywords": [
+  "emem, the verifiable memory protocol for the physical world"
+ ]
+}

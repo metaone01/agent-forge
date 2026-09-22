@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Edu963/ocultar-pii",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Zero-egress PII redaction for Claude. Runs locally — no data leaves your infrastructure.",
+ "license": "AGPL-3.0-only",
+ "repository": "https://github.com/Edu963/ocultar",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "ocultar-claude-mcp",
+  "url": "https://pypi.org/project/ocultar-claude-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "ocultar-claude-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "OCULTAR_API_KEY",
+    "OCULTAR_AUDITOR_TOKEN",
+    "OCULTAR_URL"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Edu963/ocultar-pii",
+   "publishedAt": "2026-04-28T18:21:06.59256Z",
+   "updatedAt": "2026-04-28T18:21:06.59256Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

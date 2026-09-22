@@ -50,6 +50,9 @@ For `mcpRef.registryBaseUrl`, maintainers currently accept the canonical public 
 
 ## Contributing a record
 
+What is currently published, and the upstream each source was collected from, is
+summarised in [`docs/collection-report.md`](docs/collection-report.md).
+
 1. Choose exactly one source by category.
 2. Add the package document under `sources/<category>/packages/`.
 3. Add its version and relative path to that source's `index.json`.

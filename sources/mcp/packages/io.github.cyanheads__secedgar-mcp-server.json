@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/secedgar-mcp-server",
+ "version": "0.15.7",
+ "versionKind": "semver",
+ "description": "Query SEC EDGAR filings, XBRL financials, and company data through MCP. STDIO & Streamable HTTP.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/secedgar-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/secedgar-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/secedgar-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/secedgar-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EDGAR_RATE_LIMIT_COOLDOWN_SECONDS",
+    "EDGAR_USER_AGENT",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://secedgar.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/secedgar-mcp-server",
+   "publishedAt": "2026-09-22T06:19:46.164563Z",
+   "updatedAt": "2026-09-22T06:19:46.164563Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

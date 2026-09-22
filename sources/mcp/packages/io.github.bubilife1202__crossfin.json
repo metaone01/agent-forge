@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.bubilife1202/crossfin",
+ "version": "1.18.0",
+ "versionKind": "semver",
+ "description": "AI agent access to Asian crypto markets. Korean exchange routing and x402 paid APIs.",
+ "license": "UNLICENSED",
+ "repository": "https://github.com/bubilife1202/crossfin",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "crossfin-mcp",
+  "url": "https://www.npmjs.com/package/crossfin-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "crossfin-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CROSSFIN_API_URL",
+    "CROSSFIN_LEDGER_PATH",
+    "EVM_PRIVATE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://crossfin.dev/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.bubilife1202/crossfin",
+   "publishedAt": "2026-02-25T09:06:53.279557Z",
+   "updatedAt": "2026-02-25T09:06:53.279557Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "CrossFin"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Argo-RPG-Platform/argo-mcp",
+ "version": "1.0.3",
+ "versionKind": "semver",
+ "description": "MCP server for Argo RPG Platform — connects AI assistants to campaign data via OAuth2",
+ "license": "MIT",
+ "repository": "https://github.com/Argo-RPG-Platform/MCP",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "argo-mcp",
+  "url": "https://www.npmjs.com/package/argo-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "argo-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ARGO_API_BASE",
+    "OAUTH_TOKEN",
+    "REFRESH_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.argo.games/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Argo-RPG-Platform/argo-mcp",
+   "publishedAt": "2026-05-14T14:41:08.311273Z",
+   "updatedAt": "2026-05-14T14:41:08.311273Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://app.argo.games/docs/mcp"
+}

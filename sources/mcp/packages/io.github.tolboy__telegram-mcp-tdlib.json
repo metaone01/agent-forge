@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.tolboy/telegram-mcp-tdlib",
+ "version": "1.16.0",
+ "versionKind": "semver",
+ "description": "Local-first TDLib Telegram MCP server with 110 tools, account isolation and production guardrails.",
+ "license": "unknown",
+ "repository": "https://github.com/tolboy/telegram-mcp-tdlib",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "telegram-mcp-tdlib",
+  "url": "https://hub.docker.com/r/tolboy/telegram-mcp-tdlib",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/tolboy/telegram-mcp-tdlib:1.16.0-stdio",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_READ_ONLY",
+    "MCP_TOOL_PROFILE",
+    "TDLIB_2FA_PASSWORD",
+    "TDLIB_API_HASH",
+    "TDLIB_API_ID",
+    "TDLIB_AUTH_CODE",
+    "TDLIB_PHONE_NUMBER"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.tolboy/telegram-mcp-tdlib",
+   "publishedAt": "2026-08-22T12:06:55.174521Z",
+   "updatedAt": "2026-08-22T12:06:55.174521Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Telegram MCP Server"
+ ]
+}

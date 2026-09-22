@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Nosmoht/talos-mcp-server",
+ "version": "2.5.1",
+ "versionKind": "semver",
+ "description": "MCP server for Talos Linux — resources, services, logs, health, config, lifecycle via gRPC.",
+ "license": "MIT",
+ "repository": "https://github.com/Nosmoht/talos-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "talos-mcp",
+  "url": "https://www.npmjs.com/package/talos-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "talos-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TALOSCONFIG",
+    "TALOS_CONTEXT",
+    "TALOS_ENDPOINTS",
+    "TALOS_MCP_ALLOWED_NODES",
+    "TALOS_MCP_ALLOWED_PATHS",
+    "TALOS_MCP_AUTH_TOKEN",
+    "TALOS_MCP_HTTP_ADDR",
+    "TALOS_MCP_MAX_BODY_SIZE",
+    "TALOS_MCP_MAX_CONCURRENT",
+    "TALOS_MCP_RATE_BURST",
+    "TALOS_MCP_RATE_LIMIT",
+    "TALOS_MCP_READ_ONLY",
+    "TALOS_MCP_SKIP_VERSION_CHECK"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Nosmoht/talos-mcp-server",
+   "publishedAt": "2026-06-16T09:08:11.354906Z",
+   "updatedAt": "2026-06-16T09:08:11.354906Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Talos Linux MCP Server"
+ ]
+}

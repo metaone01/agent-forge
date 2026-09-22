@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "cloud.massdriver/mcp-server",
+ "version": "0.1.7",
+ "versionKind": "semver",
+ "description": "Manage the Massdriver infrastructure platform: projects, environments, deployments, and more.",
+ "license": "unknown",
+ "repository": "https://github.com/massdriver-cloud/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-server",
+  "url": "https://hub.docker.com/r/massdrivercloud/mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/massdrivercloud/mcp-server:0.1.7",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MASSDRIVER_API_KEY",
+    "MASSDRIVER_ORGANIZATION_ID",
+    "MASSDRIVER_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "cloud.massdriver/mcp-server",
+   "publishedAt": "2026-08-04T22:44:04.69578Z",
+   "updatedAt": "2026-08-04T22:44:04.69578Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Massdriver"
+ ]
+}

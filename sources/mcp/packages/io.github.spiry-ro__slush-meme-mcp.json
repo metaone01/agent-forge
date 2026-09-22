@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.SPIRY-RO/slush-meme-mcp",
+ "version": "2.0.1",
+ "versionKind": "semver",
+ "description": "AI-native meme coin launchpad on Avalanche. Deploy tokens, simulate trades, query risk.",
+ "license": "MIT",
+ "repository": "https://github.com/SPIRY-RO/slush.meme",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "slush-meme-mcp-server",
+  "url": "https://www.npmjs.com/package/slush-meme-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "slush-meme-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HASURA_GRAPHQL_ADMIN_SECRET",
+    "HASURA_GRAPHQL_ENDPOINT",
+    "MCP_PORT",
+    "RISK_SCORING_URL",
+    "TOKEN_DEPLOYER_URL"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.SPIRY-RO/slush-meme-mcp",
+   "publishedAt": "2026-03-06T08:50:51.877532Z",
+   "updatedAt": "2026-03-06T08:50:51.877532Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

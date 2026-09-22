@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "valtown",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Build and deploy on Val Town. Bundles the Val Town MCP server and platform skills (HTTP vals, cron/intervals, SQLite, email, OAuth, React UI, third-party integrations, templates).",
+ "license": "MIT",
+ "repository": "https://github.com/val-town/plugins",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/val-town/plugins/tree/main/plugin",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "deployment",
+   "author": "Val Town",
+   "ref": "main",
+   "sha": "2d3ec654b6a7d93e209afb8f2e8848eddcb9f17b",
+   "strict": null
+  }
+ },
+ "homepage": "https://val.town"
+}

@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "monday-crm",
+ "version": "master",
+ "versionKind": "other",
+ "description": "Run your monday CRM in plain language. Build a pipeline from scratch, start the day with a ranked deal briefing, spin up a forecast dashboard, audit board health, clean up messy data in bulk, and turn meeting notes into deal updates. Every skill writes back into monday as a real update, doc, or dashboard. Built on the official monday MCP connector.",
+ "license": "MIT",
+ "repository": "https://github.com/mondaycom/mcp",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/mondaycom/mcp/tree/master/plugins/monday-crm",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "monday.com",
+   "ref": "master",
+   "sha": "5eb0835e921de42ba603d7a8315ab4a2575a46b2",
+   "strict": null
+  }
+ },
+ "homepage": "https://monday.com"
+}

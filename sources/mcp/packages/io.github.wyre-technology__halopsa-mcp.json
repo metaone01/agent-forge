@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wyre-technology/halopsa-mcp",
+ "version": "1.7.11",
+ "versionKind": "semver",
+ "description": "MCP server for HaloPSA — clients, tickets, and PSA workflows via the HaloPSA REST API.",
+ "license": "unknown",
+ "repository": "https://github.com/wyre-technology/halopsa-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "halopsa-mcp",
+  "url": "https://hub.docker.com/r/wyre-technology/halopsa-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-technology/halopsa-mcp:v1.7.11",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "HALOPSA_BASE_URL",
+    "HALOPSA_CLIENT_ID",
+    "HALOPSA_CLIENT_SECRET",
+    "HALOPSA_TENANT",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wyre-technology/halopsa-mcp",
+   "publishedAt": "2026-08-21T15:26:32.797417Z",
+   "updatedAt": "2026-08-21T15:26:32.797417Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/wyre-technology/halopsa-mcp",
+ "keywords": [
+  "HaloPSA"
+ ]
+}

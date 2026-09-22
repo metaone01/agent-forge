@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "co.machins/marketplace",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Agent-to-agent marketplace with escrow-protected trades via MCP tools.",
+ "license": "unknown",
+ "repository": "https://github.com/denizozzgur/agentrade",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "machins",
+  "url": "https://pypi.org/project/machins/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "machins",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MACHINS_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://machins.co/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "co.machins/marketplace",
+   "publishedAt": "2026-03-02T09:45:33.434957Z",
+   "updatedAt": "2026-03-02T09:45:33.434957Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://machins.co",
+ "keywords": [
+  "Machins Marketplace"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.JDoornink/k8gents",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "Kubernetes RCA agent that sandboxes its own AI with OPA Gatekeeper. MCP-ready for any client.",
+ "license": "unknown",
+ "repository": "https://github.com/JDoornink/K8gentS",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "k8gents",
+  "url": "https://hub.docker.com/r/jdoornink/k8gents",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/jdoornink/k8gents:0.1.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AI_API_KEY",
+    "AI_MODEL",
+    "KUBECONFIG"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.JDoornink/k8gents",
+   "publishedAt": "2026-04-26T02:26:31.773174Z",
+   "updatedAt": "2026-04-26T02:26:31.773174Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "K8gentS — Kubernetes RCA MCP Server"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.VictoriaMetrics/mcp-victoriametrics",
+ "version": "1.120.1",
+ "versionKind": "semver",
+ "description": "MCP Server for VictoriaMetrics. Provides integration with VictoriaMetrics API and documentation",
+ "license": "unknown",
+ "repository": "https://github.com/VictoriaMetrics/mcp-victoriametrics",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-victoriametrics",
+  "url": "https://hub.docker.com/r/victoriametrics/mcp-victoriametrics",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/victoriametrics/mcp-victoriametrics:1.120.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_DISABLED_TOOLS",
+    "MCP_DISABLE_RESOURCES",
+    "MCP_PASSTHROUGH_HEADERS",
+    "VMC_API_KEY",
+    "VM_INSTANCE_BEARER_TOKEN",
+    "VM_INSTANCE_ENTRYPOINT",
+    "VM_INSTANCE_TYPE"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.VictoriaMetrics/mcp-victoriametrics",
+   "publishedAt": "2026-03-19T09:28:40.370932Z",
+   "updatedAt": "2026-03-19T09:28:40.370932Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

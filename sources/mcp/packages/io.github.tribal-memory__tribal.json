@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.tribal-memory/tribal",
+ "version": "0.4.1",
+ "versionKind": "semver",
+ "description": "Self-hosted semantic memory over MCP for an engineering team's tacit knowledge. Needs Postgres.",
+ "license": "unknown",
+ "repository": "https://github.com/tribal-memory/tribal",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "tribal",
+  "url": "https://hub.docker.com/r/tribal-memory/tribal",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/tribal-memory/tribal:0.4.1",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "ANTHROPIC_API_KEY",
+    "OPENAI_API_KEY",
+    "TRIBAL_DATABASE__URL",
+    "TRIBAL_PROJECT_NAME",
+    "TRIBAL_PROJECT_REMOTE",
+    "TRIBAL_PUBLIC_MCP_URL",
+    "TRIBAL_SERVER__BIND_ADDRESS",
+    "TRIBAL_SERVER__TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.tribal-memory/tribal",
+   "publishedAt": "2026-06-28T21:49:26.748687Z",
+   "updatedAt": "2026-06-28T21:49:26.748687Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://tribal.build",
+ "keywords": [
+  "Tribal"
+ ]
+}

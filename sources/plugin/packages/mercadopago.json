@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "mercadopago",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Mercado Pago full-product integration toolkit. One agent routes to four orchestration skills (mp-integrate wizard, mp-webhooks, mp-test-setup, mp-review) that pull every endpoint, payload, and snippet live from the official Mercado Pago MCP server. The MCP must always be connected — there is no offline mode.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/mercadopago/mercadopago-claude-marketplace",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/mercadopago/mercadopago-claude-marketplace/tree/main/plugins/mercadopago",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Mercado Pago Developer Experience",
+   "ref": "main",
+   "sha": "c0d06959afc90b2f3d637c35eeb51c36f512c005",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/mercadopago/mercadopago-claude-marketplace/tree/main/plugins/mercadopago"
+}

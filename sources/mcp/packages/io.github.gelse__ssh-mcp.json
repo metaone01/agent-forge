@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.gelse/ssh-mcp",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "MCP gateway for controlled SSH access with per-client auth, command policies, and audit logging.",
+ "license": "unknown",
+ "repository": "https://github.com/gelse/ssh-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "ssh-mcp",
+  "url": "https://hub.docker.com/r/gelse/ssh-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/gelse/ssh-mcp:0.3.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "CONFIG_API_ENABLED",
+    "CONFIG_API_TOKEN",
+    "CONFIG_DIR",
+    "LOG_DIR"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.gelse/ssh-mcp",
+   "publishedAt": "2026-09-14T07:42:18.398237Z",
+   "updatedAt": "2026-09-14T07:42:18.398237Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/gelse/ssh-mcp#readme",
+ "keywords": [
+  "ssh-mcp"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.ausca/agent-services",
+ "version": "0.0.7",
+ "versionKind": "semver",
+ "description": "Pay-per-call APIs and MCP services for agents, no accounts or keys, with verifiable receipts.",
+ "license": "MIT",
+ "repository": "https://github.com/auscahq/ausca",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "ausca",
+  "url": "https://www.npmjs.com/package/ausca",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "ausca",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUSCA_MAX_PAYMENT_USD",
+    "AUSCA_PRIVATE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://ausca.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.ausca/agent-services",
+   "publishedAt": "2026-09-21T04:59:23.084369Z",
+   "updatedAt": "2026-09-21T04:59:23.084369Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://ausca.com",
+ "keywords": [
+  "Ausca"
+ ]
+}

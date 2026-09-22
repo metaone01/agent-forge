@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.sdebruyn/fabric-dw-mcp",
+ "version": "2026.9.0",
+ "versionKind": "semver",
+ "description": "MCP server for Microsoft Fabric Data Warehouses and SQL Analytics Endpoints",
+ "license": "unknown",
+ "repository": "https://github.com/sdebruyn/fabric-dw-mcp-cli",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "fabric-dw-mcp",
+  "url": "https://hub.docker.com/r/sdebruyn/fabric-dw",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/sdebruyn/fabric-dw:2026.9.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FABRIC_AUTH",
+    "FABRIC_LOG_LEVEL",
+    "FABRIC_MCP_ALLOW_DESTRUCTIVE",
+    "FABRIC_MCP_ALLOW_REMOTE",
+    "FABRIC_MCP_READONLY",
+    "FABRIC_MCP_WORKSPACES"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.sdebruyn/fabric-dw-mcp",
+   "publishedAt": "2026-09-09T15:38:34.047216Z",
+   "updatedAt": "2026-09-09T15:38:34.047216Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://fdw.debruyn.dev",
+ "keywords": [
+  "fabric-dw"
+ ]
+}

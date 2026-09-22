@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Mnexa-AI/mcp-server",
+ "version": "0.3.2",
+ "versionKind": "semver",
+ "description": "Authenticated email gateway for AI agents — per-agent inboxes, HITL approval, SPF/DKIM verified.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/Mnexa-AI/e2a",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@e2a/mcp-server",
+  "url": "https://www.npmjs.com/package/@e2a/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@e2a/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "E2A_AGENT_EMAIL",
+    "E2A_API_KEY",
+    "E2A_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.e2a.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Mnexa-AI/mcp-server",
+   "publishedAt": "2026-05-22T01:56:35.813147Z",
+   "updatedAt": "2026-05-22T01:56:35.813147Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://e2a.dev",
+ "keywords": [
+  "e2a — email for AI agents"
+ ]
+}

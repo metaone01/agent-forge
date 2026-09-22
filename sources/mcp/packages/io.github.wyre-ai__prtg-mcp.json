@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/prtg-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "MCP server for Paessler PRTG's REST API v2 - network/infrastructure monitoring for MSPs.",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/prtg-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "prtg-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/prtg-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/prtg-mcp:v1.0.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT",
+    "PRTG_API_KEY",
+    "PRTG_BASE_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/prtg-mcp",
+   "publishedAt": "2026-09-20T19:33:12.964404Z",
+   "updatedAt": "2026-09-20T19:33:12.964404Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/prtg-mcp",
+ "keywords": [
+  "PRTG"
+ ]
+}

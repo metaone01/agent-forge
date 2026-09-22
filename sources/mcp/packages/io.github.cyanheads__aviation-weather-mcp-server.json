@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/aviation-weather-mcp-server",
+ "version": "0.4.7",
+ "versionKind": "semver",
+ "description": "Fetch METARs, TAFs, PIREPs, and domestic SIGMETs from the NWS Aviation Weather Center.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/aviation-weather-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/aviation-weather-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/aviation-weather-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/aviation-weather-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AWC_BASE_URL",
+    "AWC_TIMEOUT_MS",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://aviation-weather.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/aviation-weather-mcp-server",
+   "publishedAt": "2026-09-19T18:48:19.047964Z",
+   "updatedAt": "2026-09-19T18:48:19.047964Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

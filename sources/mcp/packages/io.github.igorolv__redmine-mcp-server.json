@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.igorolv/redmine-mcp-server",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Redmine for AI agents: issues, projects, wiki, attachments, time entries and release analytics",
+ "license": "unknown",
+ "repository": "https://github.com/igorolv/redmine-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "redmine-mcp-server",
+  "url": "https://hub.docker.com/r/igorolv/redmine-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/igorolv/redmine-mcp-server:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "REDMINE_API_KEY",
+    "REDMINE_MCP_WRITE_ENABLED",
+    "REDMINE_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.igorolv/redmine-mcp-server",
+   "publishedAt": "2026-09-15T21:41:33.762354Z",
+   "updatedAt": "2026-09-15T21:41:33.762354Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/igorolv/redmine-mcp-server#readme",
+ "keywords": [
+  "Redmine MCP Server"
+ ]
+}

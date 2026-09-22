@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Gentleelephant/project-brain",
+ "version": "2.0.3",
+ "versionKind": "semver",
+ "description": "Read-only source search and retrieval across configured GitHub repositories",
+ "license": "unknown",
+ "repository": "https://github.com/Gentleelephant/project-brain",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "project-brain",
+  "url": "https://hub.docker.com/r/gentleelephant/project-brain",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/gentleelephant/project-brain:v2.0.3",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PB_FETCH_TTL",
+    "PB_GITHUB_TOKEN",
+    "PROJECT_BRAIN_REPO_LIST",
+    "PROJECT_BRAIN_STATE_DIR"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Gentleelephant/project-brain",
+   "publishedAt": "2026-08-08T10:47:11.31866Z",
+   "updatedAt": "2026-08-08T10:47:11.31866Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Project Brain"
+ ]
+}

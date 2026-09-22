@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "com.hasdata/google-flights",
+ "version": "1.0.6",
+ "versionKind": "semver",
+ "description": "Google Flights itineraries with fares, legs, carbon emissions and price history, as JSON.",
+ "license": "MIT",
+ "repository": "https://github.com/HasData/google-flights-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@hasdata/google-flights-mcp",
+  "url": "https://www.npmjs.com/package/@hasdata/google-flights-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@hasdata/google-flights-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HASDATA_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.hasdata.com/mcp?apis=google_travel_flights",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.hasdata/google-flights",
+   "publishedAt": "2026-09-22T07:36:25.325513Z",
+   "updatedAt": "2026-09-22T07:36:25.325513Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://hasdata.com/apis/google-flights-api",
+ "keywords": [
+  "HasData Google Flights"
+ ]
+}

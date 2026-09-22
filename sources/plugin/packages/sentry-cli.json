@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "sentry-cli",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Skills for using the Sentry CLI to interact with Sentry from the command line",
+ "license": "NOASSERTION",
+ "repository": "https://github.com/getsentry/cli",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/getsentry/cli/tree/main/packages/cli/plugins/sentry-cli",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "monitoring",
+   "author": "Sentry",
+   "ref": "main",
+   "sha": "936c2cdc2ac13978ca9a843b24a0583e9309af8e",
+   "strict": null
+  }
+ },
+ "homepage": "https://sentry.io"
+}

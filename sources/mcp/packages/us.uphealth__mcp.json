@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "us.uphealth/mcp",
+ "version": "1.1.7",
+ "versionKind": "semver",
+ "description": "The adaptive health-messaging engine for apps and agents. Federally-sourced. Not medical advice.",
+ "license": "MIT",
+ "repository": "https://github.com/ericinsf/uphealth",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@uphealth/mcp-server",
+  "url": "https://www.npmjs.com/package/@uphealth/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@uphealth/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "UPHEALTH_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.uphealth.us/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "us.uphealth/mcp",
+   "publishedAt": "2026-09-03T14:57:04.678817Z",
+   "updatedAt": "2026-09-03T14:57:04.678817Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://uphealth.us/docs/mcp-quickstart",
+ "keywords": [
+  "Uphealth Signal"
+ ]
+}

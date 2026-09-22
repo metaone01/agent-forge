@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.BuyWhere/buywhere-mcp",
+ "version": "0.3.17",
+ "versionKind": "semver",
+ "description": "Agent-native product catalog: 300M+ products, 150,000+ stores, deliver_to ranking.",
+ "license": "MIT",
+ "repository": "https://github.com/BuyWhere/buywhere-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@buywhere/mcp-server",
+  "url": "https://www.npmjs.com/package/@buywhere/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@buywhere/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BUYWHERE_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.buywhere.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.BuyWhere/buywhere-mcp",
+   "publishedAt": "2026-08-29T18:33:23.747119Z",
+   "updatedAt": "2026-08-29T18:33:23.747119Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://buywhere.ai"
+}

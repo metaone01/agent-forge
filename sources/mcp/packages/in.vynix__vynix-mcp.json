@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "in.vynix/vynix-mcp",
+ "version": "0.1.4",
+ "versionKind": "semver",
+ "description": "Give AI coding agents access to your Vynix visual feedback, bug reports, and AI diagnosis.",
+ "license": "MIT",
+ "repository": "https://github.com/UseVynix/vynix-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@usevynix/mcp-server",
+  "url": "https://www.npmjs.com/package/@usevynix/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@usevynix/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "VYNIX_API_TOKEN",
+    "VYNIX_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.vynix.in/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "in.vynix/vynix-mcp",
+   "publishedAt": "2026-07-28T16:47:08.272064Z",
+   "updatedAt": "2026-07-28T16:47:08.272064Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.vynix.in/mcp",
+ "keywords": [
+  "Vynix"
+ ]
+}

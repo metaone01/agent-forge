@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.daochild/aifinpay",
+ "version": "2.2.2",
+ "versionKind": "semver",
+ "description": "Pay for any HTTP API in stablecoins on Polygon and Solana with one MCP call.",
+ "license": "MIT",
+ "repository": "https://github.com/AiFinPay/sdk",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@aifinpay/mcp",
+  "url": "https://www.npmjs.com/package/@aifinpay/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@aifinpay/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AIFINPAY_AGENT_SECRET",
+    "AIFINPAY_BASE_URL",
+    "AIFINPAY_MAX_USD"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.aifinpay.io/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.daochild/aifinpay",
+   "publishedAt": "2026-09-20T14:26:49.09502Z",
+   "updatedAt": "2026-09-20T14:26:49.09502Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://aifinpay.io",
+ "keywords": [
+  "AiFinPay"
+ ]
+}

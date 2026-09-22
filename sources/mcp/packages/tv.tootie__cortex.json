@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "tv.tootie/cortex",
+ "version": "3.9.0",
+ "versionKind": "semver",
+ "description": "Syslog receiver and MCP server for homelab log intelligence.",
+ "license": "unknown",
+ "repository": "https://github.com/jmagar/cortex",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "cortex",
+  "url": "https://hub.docker.com/r/jmagar/cortex",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/jmagar/cortex:v3.9.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CORTEX_RECEIVER_HOST",
+    "CORTEX_RECEIVER_PORT",
+    "CORTEX_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://cortex.tootie.tv/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "tv.tootie/cortex",
+   "publishedAt": "2026-07-11T23:50:28.260103Z",
+   "updatedAt": "2026-07-11T23:50:28.260103Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Cortex"
+ ]
+}

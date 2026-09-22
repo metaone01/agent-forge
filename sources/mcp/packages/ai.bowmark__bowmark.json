@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.bowmark/bowmark",
+ "version": "2.1.0",
+ "versionKind": "semver",
+ "description": "Do things on live websites: prices, availability, quotes, bookings, anything behind a form or login.",
+ "license": "MIT",
+ "repository": "https://github.com/bowmark-ai/skill",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "bowmark-mcp",
+  "url": "https://pypi.org/project/bowmark-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "bowmark-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BOWMARK_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.bowmark.ai/mcp/registry",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.bowmark/bowmark",
+   "publishedAt": "2026-09-22T02:50:39.762334Z",
+   "updatedAt": "2026-09-22T02:50:39.762334Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://bowmark.ai",
+ "keywords": [
+  "Bowmark"
+ ]
+}

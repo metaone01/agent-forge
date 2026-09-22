@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.netixc/stremio-mcp",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Search, play, and control Stremio on Android TV over native ADB.",
+ "license": "unknown",
+ "repository": "https://github.com/netixc/stremio-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "stremio-mcp-server",
+  "url": "https://pypi.org/project/stremio-mcp-server/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "stremio-mcp-server",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ADB_PATH",
+    "ANDROID_TV_HOST",
+    "ANDROID_TV_PORT",
+    "STREMIO_AUTH_KEY",
+    "TMDB_API_KEY"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.netixc/stremio-mcp",
+   "publishedAt": "2026-07-21T23:12:26.427404Z",
+   "updatedAt": "2026-07-21T23:12:26.427404Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Stremio MCP Server"
+ ]
+}

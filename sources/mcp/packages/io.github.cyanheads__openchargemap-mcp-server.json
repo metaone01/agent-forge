@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openchargemap-mcp-server",
+ "version": "0.1.9",
+ "versionKind": "semver",
+ "description": "Find EV charging stations, detail, and reliability check-ins via the global Open Charge Map.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openchargemap-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openchargemap-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openchargemap-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openchargemap-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "OPENCHARGEMAP_API_KEY",
+    "OPENCHARGEMAP_BASE_URL",
+    "OPENCHARGEMAP_REFERENCE_REFRESH"
+   ],
+   "remotes": [
+    {
+     "url": "https://openchargemap.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openchargemap-mcp-server",
+   "publishedAt": "2026-09-20T19:42:50.202895Z",
+   "updatedAt": "2026-09-20T19:42:50.202895Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

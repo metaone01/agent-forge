@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "com.mireye/earth",
+ "version": "0.5.0",
+ "versionKind": "semver",
+ "description": "MCP server for Mireye Earth — federal-source-cited geospatial data for any MCP-aware agent.",
+ "license": "MIT",
+ "repository": "https://github.com/Mireye-Labs/mireye-earth-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "mireye-mcp",
+  "url": "https://pypi.org/project/mireye-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "mireye-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MIREYE_BASE_URL",
+    "MIREYE_BEARER_TOKEN",
+    "MIREYE_MCP_CREDENTIALS_FILE",
+    "MIREYE_TIMEOUT_S"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.mireye.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.mireye/earth",
+   "publishedAt": "2026-08-03T01:43:29.810751Z",
+   "updatedAt": "2026-08-03T01:43:29.810751Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://api.mireye.com"
+}

@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "com.fiatdock/fiatdock-mcp",
+ "version": "1.10.0",
+ "versionKind": "semver",
+ "description": "MCP marketplace: AI agents buy services from other agents per call in USDC, plus a bank cash-out",
+ "license": "MIT",
+ "repository": "https://github.com/fiatdock/fiatdock",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "fiatdock-mcp",
+  "url": "https://www.npmjs.com/package/fiatdock-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "fiatdock-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AGENT_PRIVATE_KEY",
+    "FIATDOCK_MAX_PRICE_USD",
+    "FIATDOCK_TOOLS",
+    "FIATDOCK_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://fiatdock.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.fiatdock/fiatdock-mcp",
+   "publishedAt": "2026-09-21T16:32:02.52332Z",
+   "updatedAt": "2026-09-21T16:32:02.52332Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://fiatdock.com",
+ "keywords": [
+  "FiatDock"
+ ]
+}

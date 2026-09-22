@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "app.apiguru/amazon-data",
+ "version": "1.1.29",
+ "versionKind": "semver",
+ "description": "Live Amazon product, review, search, deal, offer/stock and seller data across 20 marketplaces.",
+ "license": "MIT",
+ "repository": "https://github.com/apiguru-app/agent-kit",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "apiguru-mcp",
+  "url": "https://pypi.org/project/apiguru-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "apiguru-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "APIGURU_API_KEY",
+    "APIGURU_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.apiguru.app/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "app.apiguru/amazon-data",
+   "publishedAt": "2026-09-21T17:03:11.42795Z",
+   "updatedAt": "2026-09-21T17:03:11.42795Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://apiguru.app",
+ "keywords": [
+  "Apiguru Amazon Data"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hampsterx/claude-mcp-bridge",
+ "version": "0.7.1",
+ "versionKind": "semver",
+ "description": "Wraps Claude Code CLI as MCP tools: query, search, structured, ping, listSessions.",
+ "license": "MIT",
+ "repository": "https://github.com/hampsterx/claude-mcp-bridge",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "claude-mcp-bridge",
+  "url": "https://www.npmjs.com/package/claude-mcp-bridge",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "claude-mcp-bridge",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CLAUDE_BRIDGE_USE_API_KEY",
+    "CLAUDE_CLI_PATH",
+    "CLAUDE_DEFAULT_MODEL",
+    "CLAUDE_FALLBACK_MODEL",
+    "CLAUDE_MAX_BUDGET_USD",
+    "CLAUDE_MAX_CONCURRENT",
+    "CLAUDE_QUERY_EFFORT",
+    "CLAUDE_QUERY_MODEL",
+    "CLAUDE_SEARCH_EFFORT",
+    "CLAUDE_SEARCH_MODEL",
+    "CLAUDE_STRUCTURED_MODEL"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hampsterx/claude-mcp-bridge",
+   "publishedAt": "2026-08-03T02:05:23.223254Z",
+   "updatedAt": "2026-08-03T02:05:23.223254Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

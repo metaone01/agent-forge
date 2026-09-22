@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openstreetmap-mcp-server",
+ "version": "0.5.2",
+ "versionKind": "semver",
+ "description": "Geocode, reverse geocode, and run Overpass spatial queries on OpenStreetMap data.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openstreetmap-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openstreetmap-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openstreetmap-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openstreetmap-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "OSM_NOMINATIM_BASE_URL",
+    "OSM_OVERPASS_BASE_URL",
+    "OSM_OVERPASS_ENDPOINTS",
+    "OSM_OVERPASS_MAX_CONCURRENCY",
+    "OSM_USER_AGENT"
+   ],
+   "remotes": [
+    {
+     "url": "https://openstreetmap.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openstreetmap-mcp-server",
+   "publishedAt": "2026-09-22T06:20:11.123451Z",
+   "updatedAt": "2026-09-22T06:20:11.123451Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

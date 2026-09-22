@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.plural-pinelabs/pinelabs-online-mcp",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Create payment orders, checkout, subscriptions & UPI via PineLabs Plural PG gateway",
+ "license": "MIT",
+ "repository": "https://github.com/plural-pinelabs/pinelabs-online-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "pinelabs-mcp-server",
+  "url": "https://pypi.org/project/pinelabs-mcp-server/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "pinelabs-mcp-server",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PINELABS_CLIENT_ID",
+    "PINELABS_CLIENT_SECRET",
+    "PINELABS_ENV"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.pinelabs.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.plural-pinelabs/pinelabs-online-mcp",
+   "publishedAt": "2026-07-15T08:24:44.785145Z",
+   "updatedAt": "2026-07-15T08:24:44.785145Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://www.pinelabs.com/docs/online-payments",
+ "keywords": [
+  "PineLabs Plural PG — Payment Gateway MCP Server"
+ ]
+}

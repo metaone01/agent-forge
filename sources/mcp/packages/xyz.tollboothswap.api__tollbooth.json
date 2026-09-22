@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "xyz.tollboothswap.api/tollbooth",
+ "version": "1.0.3",
+ "versionKind": "semver",
+ "description": "Token swaps and honeypot/rug checks for AI agents on 8 chains, paid per-call in USDC via x402.",
+ "license": "MIT",
+ "repository": "https://github.com/soundsparkaudiolab/tollboothswap-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "tollboothswap-mcp",
+  "url": "https://www.npmjs.com/package/tollboothswap-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "tollboothswap-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TOLLBOOTH_PAYER_KEY",
+    "TOLLBOOTH_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.tollboothswap.xyz/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "xyz.tollboothswap.api/tollbooth",
+   "publishedAt": "2026-08-04T21:51:04.32502Z",
+   "updatedAt": "2026-08-04T21:51:04.32502Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://api.tollboothswap.xyz",
+ "keywords": [
+  "Tollbooth Swap API"
+ ]
+}

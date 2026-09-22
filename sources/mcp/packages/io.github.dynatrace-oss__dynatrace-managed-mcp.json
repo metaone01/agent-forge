@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.dynatrace-oss/dynatrace-managed-mcp",
+ "version": "1.1.1",
+ "versionKind": "semver",
+ "description": "MCP server for Dynatrace Managed to access logs, events, and metrics.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/dynatrace-oss/dynatrace-managed-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@dynatrace-oss/dynatrace-managed-mcp-server",
+  "url": "https://www.npmjs.com/package/@dynatrace-oss/dynatrace-managed-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@dynatrace-oss/dynatrace-managed-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DT_ENVIRONMENT_CONFIGS",
+    "DT_MCP_DISABLE_TELEMETRY",
+    "DT_MCP_RATE_LIMIT_MAX_CALLS",
+    "DT_MCP_RATE_LIMIT_WINDOW_MS",
+    "LOG_LEVEL"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.dynatrace-oss/dynatrace-managed-mcp",
+   "publishedAt": "2026-09-01T12:15:29.100794Z",
+   "updatedAt": "2026-09-01T12:15:29.100794Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

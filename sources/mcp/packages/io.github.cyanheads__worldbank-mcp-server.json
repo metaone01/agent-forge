@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/worldbank-mcp-server",
+ "version": "0.3.8",
+ "versionKind": "semver",
+ "description": "Query 29,500+ World Bank development indicators for 200+ countries across 60+ years.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/worldbank-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/worldbank-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/worldbank-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/worldbank-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "WORLDBANK_API_BASE_URL",
+    "WORLDBANK_CATALOG_CACHE_TTL_MS",
+    "WORLDBANK_DEFAULT_PER_PAGE",
+    "WORLDBANK_PIP_BASE_URL",
+    "WORLDBANK_PROJECTS_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://worldbank.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/worldbank-mcp-server",
+   "publishedAt": "2026-09-22T05:21:42.336033Z",
+   "updatedAt": "2026-09-22T05:21:42.336033Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

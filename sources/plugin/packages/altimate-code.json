@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "altimate-code",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Delegates dbt and warehouse work to altimate-code, a specialized CLI agent with 100+ purpose-built data tools (SQL analysis, column-level lineage, dbt build/test/run, warehouse profiling, FinOps, connectivity to Snowflake, BigQuery, Redshift, Databricks, Postgres, MySQL, DuckDB).",
+ "license": "MIT",
+ "repository": "https://github.com/AltimateAI/altimate-claude-plugin",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/AltimateAI/altimate-claude-plugin/tree/main/plugins/altimate-code",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "database",
+   "author": "AltimateAI",
+   "ref": "main",
+   "sha": "b7c8f68b3dfd303ab3ccf2f43934098811dfe2aa",
+   "strict": null
+  }
+ },
+ "homepage": "https://www.altimate.ai"
+}

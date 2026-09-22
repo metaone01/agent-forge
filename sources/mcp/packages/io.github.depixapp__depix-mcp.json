@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.depixapp/depix-mcp",
+ "version": "2.8.7",
+ "versionKind": "semver",
+ "description": "One MCP: hosted Pix receive + dated charges (26 tools), or local npx non-custodial wallet (62).",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/depixapp/depix-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@depixapp/mcp",
+  "url": "https://www.npmjs.com/package/@depixapp/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@depixapp/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DEPIX_API_KEY",
+    "DEPIX_WALLET_DIR",
+    "DEPIX_WALLET_PASSPHRASE"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.depixapp.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.depixapp/depix-mcp",
+   "publishedAt": "2026-09-04T14:40:53.401391Z",
+   "updatedAt": "2026-09-04T14:40:53.401391Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://depixapp.com",
+ "keywords": [
+  "DePix App MCP"
+ ]
+}

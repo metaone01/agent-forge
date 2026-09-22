@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.zenml-io/mcp-zenml",
+ "version": "2.0.0",
+ "versionKind": "semver",
+ "description": "MCP server for discovering, reading, and changing ZenML resources with compact generic tools",
+ "license": "unknown",
+ "repository": "https://github.com/zenml-io/mcp-zenml",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-zenml",
+  "url": "https://hub.docker.com/r/zenmldocker/mcp-zenml",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/zenmldocker/mcp-zenml:2.0.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ZENML_MCP_PROFILE",
+    "ZENML_MCP_WRITE_POLICY",
+    "ZENML_STORE_API_KEY",
+    "ZENML_STORE_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.zenml-io/mcp-zenml",
+   "publishedAt": "2026-09-21T15:12:02.086839Z",
+   "updatedAt": "2026-09-21T15:12:02.086839Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

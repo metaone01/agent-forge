@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/usgs-water-mcp-server",
+ "version": "0.2.4",
+ "versionKind": "semver",
+ "description": "Query real-time and historical USGS water data from ~8,000 stream gages and groundwater wells.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/usgs-water-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/usgs-water-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/usgs-water-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/usgs-water-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "USGS_REQUEST_TIMEOUT_MS",
+    "USGS_USER_AGENT"
+   ],
+   "remotes": [
+    {
+     "url": "https://usgs-water.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/usgs-water-mcp-server",
+   "publishedAt": "2026-09-19T21:03:46.840119Z",
+   "updatedAt": "2026-09-19T21:03:46.840119Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

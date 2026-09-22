@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.oaslananka/health-monitor-mcp",
+ "version": "1.4.0",
+ "versionKind": "semver",
+ "description": "Monitor MCP, CI, and HTTP targets with health history, TLS expiry, assertions, and diagnostics",
+ "license": "MIT",
+ "repository": "https://github.com/oaslananka/health-monitor-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "health-monitor-mcp",
+  "url": "https://www.npmjs.com/package/health-monitor-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "health-monitor-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GITHUB_TOKEN",
+    "GITLAB_TOKEN",
+    "HEALTH_MONITOR_AUTO_CHECK",
+    "HEALTH_MONITOR_DB",
+    "HEALTH_MONITOR_GITLAB_BASE_URL_ALLOWLIST",
+    "HEALTH_MONITOR_HTTP_TARGET_ALLOWLIST",
+    "HEALTH_MONITOR_MAX_CONCURRENCY",
+    "HEALTH_MONITOR_RETENTION_DAYS"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.oaslananka/health-monitor-mcp",
+   "publishedAt": "2026-07-22T23:11:09.996901Z",
+   "updatedAt": "2026-07-22T23:11:09.996901Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "MCP Health Monitor"
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "sh.uploads/mcp",
+ "version": "0.54.0",
+ "versionKind": "semver",
+ "description": "Host files from coding agents; stage on a branch and attach to GitHub PRs.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/buildinternet/uploads",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@buildinternet/uploads",
+  "url": "https://www.npmjs.com/package/@buildinternet/uploads",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@buildinternet/uploads",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "UPLOADS_API_URL",
+    "UPLOADS_TOKEN",
+    "UPLOADS_WORKSPACE"
+   ],
+   "remotes": [
+    {
+     "url": "https://agents.uploads.sh/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "sh.uploads/mcp",
+   "publishedAt": "2026-09-14T19:53:00.33069Z",
+   "updatedAt": "2026-09-14T19:53:00.33069Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://uploads.sh",
+ "keywords": [
+  "uploads.sh"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "lumen",
+ "version": "f60f9ecee41723b42f3758e9a9409141881ac7d5",
+ "versionKind": "other",
+ "description": "Precise local semantic code search via MCP. Indexes your codebase with Go AST parsing, embeds with Ollama or LM Studio, and exposes vector search to Claude through an MCP server — no cloud, no npm.",
+ "license": "NOASSERTION",
+ "repository": "https://github.com/ory/lumen",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/ory/lumen.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Ory Corp",
+   "ref": null,
+   "sha": "f60f9ecee41723b42f3758e9a9409141881ac7d5",
+   "strict": null
+  }
+ },
+ "homepage": "https://www.ory.sh"
+}

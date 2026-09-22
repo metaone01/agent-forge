@@ -1,0 +1,39 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.haidrau/sentinel-mcp-server",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Shopee price monitoring via MCP.requires extension + MCP Key. T-0 price data for SG/MY/TH/VN/ID/PH.",
+ "license": "unknown",
+ "repository": "https://github.com/haidrau/sentinel-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "sentinel-mcp-server",
+  "url": "https://hub.docker.com/r/haidrau/sentinel-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/haidrau/sentinel-mcp-server:0.2.0",
+   "transport": "sse",
+   "environmentVariables": [
+    "SENTINEL_API_KEY",
+    "SENTINEL_TOKEN"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.haidrau/sentinel-mcp-server",
+   "publishedAt": "2026-07-11T08:58:44.931673Z",
+   "updatedAt": "2026-07-11T08:58:44.931673Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

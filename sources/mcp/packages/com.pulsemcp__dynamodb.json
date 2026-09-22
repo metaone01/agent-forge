@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "com.pulsemcp/dynamodb",
+ "version": "0.2.7",
+ "versionKind": "semver",
+ "description": "MCP server for AWS DynamoDB with fine-grained tool control and configurable access levels.",
+ "license": "MIT",
+ "repository": "https://github.com/pulsemcp/mcp-servers",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "aws-dynamodb-mcp-server",
+  "url": "https://www.npmjs.com/package/aws-dynamodb-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "aws-dynamodb-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AWS_ACCESS_KEY_ID",
+    "AWS_REGION",
+    "AWS_SECRET_ACCESS_KEY",
+    "DYNAMODB_ALLOWED_TABLES",
+    "DYNAMODB_DISABLED_TOOLS",
+    "DYNAMODB_ENABLED_TOOLS",
+    "DYNAMODB_ENABLED_TOOL_GROUPS",
+    "DYNAMODB_ENDPOINT",
+    "SKIP_HEALTH_CHECKS"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.pulsemcp/dynamodb",
+   "publishedAt": "2026-06-17T03:55:49.744407Z",
+   "updatedAt": "2026-06-17T03:55:49.744407Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

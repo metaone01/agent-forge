@@ -1,0 +1,55 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.theoddden/terradev",
+ "version": "6.2.20",
+ "versionKind": "semver",
+ "description": "Cross-cloud GPU orchestration CLI.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/theoddden/Terradev",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "terradev-cli",
+  "url": "https://pypi.org/project/terradev-cli/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "terradev-cli",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+    "GOOGLE_APPLICATION_CREDENTIALS",
+    "HF_TOKEN",
+    "LAMBDA_API_KEY",
+    "RUNPOD_API_KEY",
+    "TERRADEV_MCP_BEARER_TOKEN",
+    "VAST_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://terradev-mcp.terradev.cloud/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.theoddden/terradev",
+   "publishedAt": "2026-09-10T01:01:53.022383Z",
+   "updatedAt": "2026-09-10T01:01:53.022383Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Terradev"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/cipp-mcp",
+ "version": "1.8.1",
+ "versionKind": "semver",
+ "description": "MCP server for CIPP — M365 multi-tenant management for MSPs (users, tenants, policies).",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/cipp-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "cipp-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/cipp-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/cipp-mcp:v1.8.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "CIPP_API_URL",
+    "CIPP_CLIENT_ID",
+    "CIPP_CLIENT_SECRET",
+    "CIPP_TENANT_ID",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/cipp-mcp",
+   "publishedAt": "2026-09-18T14:13:46.617442Z",
+   "updatedAt": "2026-09-18T14:13:46.617442Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/cipp-mcp",
+ "keywords": [
+  "CIPP"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/printix-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "MCP server for Printix's Cloud Print API.",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/printix-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "printix-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/printix-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/printix-mcp:v1.0.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT",
+    "PRINTIX_CLIENT_ID",
+    "PRINTIX_CLIENT_SECRET"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/printix-mcp",
+   "publishedAt": "2026-09-20T10:19:47.813885Z",
+   "updatedAt": "2026-09-20T10:19:47.813885Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/printix-mcp",
+ "keywords": [
+  "Printix"
+ ]
+}

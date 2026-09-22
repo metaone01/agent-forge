@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "com.harucms/haru-cms",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "日本語ヘッドレスCMS。記事の作成・更新・予約公開・画像取り込みをAIから実行できる。APIキーで接続、npm不要。Astro/Next.js等へ配信APIで届く。",
+ "license": "MIT",
+ "repository": "https://github.com/Masato-haru/webharu-cms",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "haru-cms-mcp",
+  "url": "https://www.npmjs.com/package/haru-cms-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "haru-cms-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HARU_CMS_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://app.harucms.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.harucms/haru-cms",
+   "publishedAt": "2026-08-14T07:58:59.85476Z",
+   "updatedAt": "2026-08-14T07:58:59.85476Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.webharu.com/cms",
+ "keywords": [
+  "ハルCMS (HARU CMS)"
+ ]
+}

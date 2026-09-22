@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "su.hpt/hptsu-mcp",
+ "version": "0.4.4",
+ "versionKind": "semver",
+ "description": "Search hpt.su — Russian/EAEU vehicle compliance documents: type approvals, certificates, VIN lookup.",
+ "license": "MIT",
+ "repository": "https://github.com/hpt-su/hptsu-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "hptsu-mcp",
+  "url": "https://pypi.org/project/hptsu-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "hptsu-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HPTSU_API_KEY",
+    "HPTSU_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.hpt.su/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "su.hpt/hptsu-mcp",
+   "publishedAt": "2026-08-19T10:46:45.005377Z",
+   "updatedAt": "2026-08-19T10:46:45.005377Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://hpt.su"
+}

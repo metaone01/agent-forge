@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.scavio-ai/scavio-mcp",
+ "version": "0.14.1",
+ "versionKind": "semver",
+ "description": "Structured web data from 31 platforms: Google, YouTube, Amazon, Walmart, Reddit, TikTok, LinkedIn",
+ "license": "MIT",
+ "repository": "https://github.com/scavio-ai/scavio-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@scavio/mcp-server",
+  "url": "https://www.npmjs.com/package/@scavio/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@scavio/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SCAVIO_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.scavio.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.scavio-ai/scavio-mcp",
+   "publishedAt": "2026-09-10T11:35:08.221809Z",
+   "updatedAt": "2026-09-10T11:35:08.221809Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Scavio"
+ ]
+}

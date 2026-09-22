@@ -1,0 +1,68 @@
+{
+ "schemaVersion": 1,
+ "name": "com.smartbear/smartbear-mcp",
+ "version": "0.41.0",
+ "versionKind": "semver",
+ "description": "MCP server for AI access to SmartBear tools, including BugSnag, Reflect, Swagger, PactFlow, QTM4J.",
+ "license": "MIT",
+ "repository": "https://github.com/SmartBear/smartbear-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@smartbear/mcp",
+  "url": "https://www.npmjs.com/package/@smartbear/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@smartbear/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BEARQ_API_BASE_URL",
+    "BEARQ_API_TOKEN",
+    "BUGSNAG_AUTH_TOKEN",
+    "BUGSNAG_PROJECT_API_KEY",
+    "PACT_BROKER_BASE_URL",
+    "PACT_BROKER_PASSWORD",
+    "PACT_BROKER_TOKEN",
+    "PACT_BROKER_USERNAME",
+    "QTM4J_API_KEY",
+    "QTM4J_AUTOMATION_API_KEY",
+    "QTM4J_BASE_URL",
+    "REFLECT_API_TOKEN",
+    "SWAGGER_API_KEY",
+    "SWAGGER_FUNCTIONAL_TESTING_API_TOKEN",
+    "SWAGGER_FUNCTIONAL_TESTING_BASE_PATH",
+    "ZEPHYR_API_TOKEN",
+    "ZEPHYR_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://bugsnag.mcp.smartbear.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://zephyr.mcp.smartbear.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.smartbear/smartbear-mcp",
+   "publishedAt": "2026-09-18T11:45:30.616085Z",
+   "updatedAt": "2026-09-18T11:45:30.616085Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "SmartBear MCP"
+ ]
+}

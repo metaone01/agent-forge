@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.trondbjoroy/met-mcp",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Weather forecasts from MET Norway (Yr): geocoding plus hourly forecasts worldwide.",
+ "license": "MIT",
+ "repository": "https://github.com/trondbjoroy/met-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "met-mcp",
+  "url": "https://www.npmjs.com/package/met-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "met-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MET_USER_AGENT"
+   ],
+   "remotes": [
+    {
+     "url": "https://met-mcp.met-mcp-worker.workers.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.trondbjoroy/met-mcp",
+   "publishedAt": "2026-08-22T19:58:45.850047Z",
+   "updatedAt": "2026-08-22T19:58:45.850047Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

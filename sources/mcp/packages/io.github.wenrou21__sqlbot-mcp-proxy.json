@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wenRou21/sqlbot-mcp-proxy",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "MCP server proxy for SQLBot Text-to-SQL queries and report generation.",
+ "license": "unknown",
+ "repository": "https://github.com/wenRou21/sqlbot-mcp-proxy",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "sqlbot-mcp-proxy",
+  "url": "https://hub.docker.com/r/wenrou21/sqlbot-mcp-proxy",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wenrou21/sqlbot-mcp-proxy:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SQLBOT_MCP_PROXY_ACCESS_KEY",
+    "SQLBOT_MCP_PROXY_BASE_URL",
+    "SQLBOT_MCP_PROXY_DOCKER_CONTAINER",
+    "SQLBOT_MCP_PROXY_SECRET_KEY"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wenRou21/sqlbot-mcp-proxy",
+   "publishedAt": "2026-06-29T13:06:32.763877Z",
+   "updatedAt": "2026-06-29T13:06:32.763877Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "SQLBot MCP Proxy"
+ ]
+}

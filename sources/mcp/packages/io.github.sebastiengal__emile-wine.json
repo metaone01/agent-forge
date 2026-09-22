@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.SebastienGal/emile-wine",
+ "version": "0.2.5",
+ "versionKind": "semver",
+ "description": "MCP server for the Émile wine cellar — list, add, recommend, scan and search 100k+ wines.",
+ "license": "MIT",
+ "repository": "https://www.npmjs.com/package/@emile-wine/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@emile-wine/mcp-server",
+  "url": "https://www.npmjs.com/package/@emile-wine/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@emile-wine/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EMILE_API_KEY",
+    "EMILE_API_URL",
+    "EMILE_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.emile.wine/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.SebastienGal/emile-wine",
+   "publishedAt": "2026-05-20T09:21:08.05522Z",
+   "updatedAt": "2026-05-20T09:21:08.05522Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://emile.wine/mcp/",
+ "keywords": [
+  "Émile"
+ ]
+}

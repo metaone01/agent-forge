@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openfda-mcp-server",
+ "version": "0.7.6",
+ "versionKind": "semver",
+ "description": "Query FDA data on drugs, food, devices, and recalls via openFDA. STDIO or Streamable HTTP.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openfda-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openfda-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openfda-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openfda-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "OPENFDA_API_KEY",
+    "OPENFDA_MIRROR_BASE_URL",
+    "OPENFDA_MIRROR_ENABLED",
+    "OPENFDA_MIRROR_FALLBACK_LIVE",
+    "OPENFDA_MIRROR_PATH",
+    "OPENFDA_MIRROR_REFRESH_CRON",
+    "OPENFDA_MIRROR_REFRESH_TIMEOUT_MS"
+   ],
+   "remotes": [
+    {
+     "url": "https://openfda.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openfda-mcp-server",
+   "publishedAt": "2026-09-22T05:34:24.679224Z",
+   "updatedAt": "2026-09-22T05:34:24.679224Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

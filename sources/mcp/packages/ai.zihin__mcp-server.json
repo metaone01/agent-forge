@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.zihin/mcp-server",
+ "version": "2.2.1",
+ "versionKind": "semver",
+ "description": "Chat with your Zihin.ai agents, list them and load platform skills from any MCP client.",
+ "license": "MIT",
+ "repository": "https://github.com/zihin-ai/zihin-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@zihin/mcp-server",
+  "url": "https://www.npmjs.com/package/@zihin/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@zihin/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ZIHIN_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://llm.zihin.ai/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.zihin/mcp-server",
+   "publishedAt": "2026-09-02T00:46:13.920612Z",
+   "updatedAt": "2026-09-02T00:46:13.920612Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Zihin"
+ ]
+}

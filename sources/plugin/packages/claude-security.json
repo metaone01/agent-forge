@@ -1,0 +1,40 @@
+{
+ "schemaVersion": 1,
+ "name": "claude-security",
+ "version": "unversioned",
+ "versionKind": "other",
+ "description": "Deep vulnerability scanning of your own code, run entirely inside your Claude Code session at a chosen effort tier, with every finding challenged before it is reported and the verification tally computed in code. Turns surviving findings into targeted patches, each verified by a panel of agents, that you apply when you choose.",
+ "license": "unknown",
+ "repository": "https://github.com/anthropics/claude-plugins-official",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "marketplace",
+  "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "local"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "security",
+   "author": "Anthropic",
+   "ref": null,
+   "sha": null,
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security"
+}

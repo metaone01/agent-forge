@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "sap-mdk-server",
+ "version": "68efb00cd62a905748c98c8533fecff2f3ff4a00",
+ "versionKind": "other",
+ "description": "MCP server for SAP Mobile Development Kit (MDK). Build and modify MDK applications with AI assistance — schema lookups, action validation, rule editing, and project scaffolding.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/SAP/mdk-mcp-server",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/SAP/mdk-mcp-server.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "SAP SE",
+   "ref": null,
+   "sha": "68efb00cd62a905748c98c8533fecff2f3ff4a00",
+   "strict": null
+  }
+ },
+ "homepage": "https://help.sap.com/docs/MDK"
+}

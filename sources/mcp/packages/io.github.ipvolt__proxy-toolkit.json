@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ipvolt/proxy-toolkit",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Proxy guides, tested configurations and error diagnostics, with an optional local route check.",
+ "license": "MIT",
+ "repository": "https://github.com/ipvolt/proxy-toolkit-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@ipvolt/proxy-toolkit-mcp",
+  "url": "https://www.npmjs.com/package/@ipvolt/proxy-toolkit-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@ipvolt/proxy-toolkit-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "IPVOLT_ENABLE_ROUTE_CHECK",
+    "IPVOLT_PROXY_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.ipvolt.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ipvolt/proxy-toolkit",
+   "publishedAt": "2026-09-14T14:50:56.514389Z",
+   "updatedAt": "2026-09-14T14:50:56.514389Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://ipvolt.com",
+ "keywords": [
+  "ipvolt Proxy Toolkit"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.yolfinance/yolfi-agent",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Let AI agents add Yolfi crypto checkout, paylinks, webhooks, and status checks.",
+ "license": "MIT",
+ "repository": "https://github.com/yolfinance/yolfi-agent",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@yolfi/agent",
+  "url": "https://www.npmjs.com/package/@yolfi/agent",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@yolfi/agent",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "YOLFI_API_KEY",
+    "YOLFI_WEBHOOK_SECRET"
+   ],
+   "remotes": [
+    {
+     "url": "https://app.yolfi.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.yolfinance/yolfi-agent",
+   "publishedAt": "2026-07-21T06:41:37.429393Z",
+   "updatedAt": "2026-07-21T06:41:37.429393Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://yolfi.com/ai-agent-kit",
+ "keywords": [
+  "Yolfi Payments MCP"
+ ]
+}

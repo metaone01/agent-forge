@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.chrassy/klanex",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Reliable async execution for agent tool calls: schema gating, retries, idempotency, audit trail.",
+ "license": "MIT",
+ "repository": "https://github.com/chrassy/klanex-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "klanex-mcp",
+  "url": "https://www.npmjs.com/package/klanex-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "klanex-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "KLANEX_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.klanexai.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.chrassy/klanex",
+   "publishedAt": "2026-07-21T15:52:17.945123Z",
+   "updatedAt": "2026-07-21T15:52:17.945123Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://klanexai.com",
+ "keywords": [
+  "klanex"
+ ]
+}

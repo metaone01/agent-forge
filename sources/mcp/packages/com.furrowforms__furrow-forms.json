@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "com.furrowforms/furrow-forms",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "Form backend an agent runs end to end: provision forms, snippets, spam, signed webhooks.",
+ "license": "MIT",
+ "repository": "https://github.com/useburrow/furrow-forms",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@furrowforms/mcp",
+  "url": "https://www.npmjs.com/package/@furrowforms/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@furrowforms/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FURROW_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.furrowforms.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.furrowforms/furrow-forms",
+   "publishedAt": "2026-08-26T20:10:18.479191Z",
+   "updatedAt": "2026-08-26T20:10:18.479191Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://furrowforms.com/ai"
+}

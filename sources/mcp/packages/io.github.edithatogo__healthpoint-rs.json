@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.edithatogo/healthpoint-rs",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Read-only MCP server for licensed Healthpoint HL7 FHIR API access.",
+ "license": "unknown",
+ "repository": "https://github.com/edithatogo/healthpoint-rs",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "healthpoint-rs",
+  "url": "https://hub.docker.com/r/edithatogo/healthpoint-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/edithatogo/healthpoint-mcp:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HEALTHPOINT_API_KEY",
+    "HEALTHPOINT_AUTH_SCHEME",
+    "HEALTHPOINT_BASE_URL",
+    "HEALTHPOINT_GEO_SEARCH_MODE",
+    "HEALTHPOINT_TIMEOUT_SECS"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.edithatogo/healthpoint-rs",
+   "publishedAt": "2026-06-30T01:49:36.233188Z",
+   "updatedAt": "2026-06-30T01:49:36.233188Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "healthpoint-rs"
+ ]
+}

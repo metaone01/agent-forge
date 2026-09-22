@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.hcarrillo001/retrieval-mcp",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "LLM evals as MCP tools: score outputs for faithfulness, relevancy, and hallucination.",
+ "license": "unknown",
+ "repository": "https://github.com/hcarrillo001/retrieval-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "retrieval-mcp",
+  "url": "https://hub.docker.com/r/hcarrillo001/retrieval-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/hcarrillo001/retrieval-mcp:1.0.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ANTHROPIC_API_KEY",
+    "RETRIEVAL_BUDGET_USD",
+    "RETRIEVAL_JUDGE_BACKEND",
+    "RETRIEVAL_JUDGE_MODEL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.hcarrillo001/retrieval-mcp",
+   "publishedAt": "2026-08-24T01:28:29.412844Z",
+   "updatedAt": "2026-08-24T01:28:29.412844Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://retrieval-mcp.com",
+ "keywords": [
+  "retriEVAL"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.outscraper/outscraper-mcp-server",
+ "version": "0.2.3",
+ "versionKind": "semver",
+ "description": "Outscraper MCP business discovery, Maps intelligence, enrichment, reviews, and contact data.",
+ "license": "MIT",
+ "repository": "https://github.com/outscraper/outscraper-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "outscraper-mcp",
+  "url": "https://www.npmjs.com/package/outscraper-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "outscraper-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CLOUD_SERVICE",
+    "HOST",
+    "HTTP_STATEFUL_SERVER",
+    "HTTP_STREAMABLE_SERVER",
+    "OUTSCRAPER_API_KEY",
+    "PORT",
+    "SSE_LOCAL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.outscraper.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.outscraper/outscraper-mcp-server",
+   "publishedAt": "2026-04-30T10:53:14.714991Z",
+   "updatedAt": "2026-04-30T10:53:14.714991Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Outscraper MCP Server"
+ ]
+}

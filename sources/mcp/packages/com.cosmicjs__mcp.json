@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "com.cosmicjs/mcp",
+ "version": "1.6.0",
+ "versionKind": "semver",
+ "description": "Manage Cosmic CMS content, media, object types, and AI generation from any MCP client.",
+ "license": "MIT",
+ "repository": "https://github.com/cosmicjs/mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cosmicjs/mcp",
+  "url": "https://www.npmjs.com/package/@cosmicjs/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cosmicjs/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "COSMIC_BUCKET_SLUG",
+    "COSMIC_READ_KEY",
+    "COSMIC_WRITE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.cosmicjs.com/v1/buckets/{bucket_slug}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.cosmicjs/mcp",
+   "publishedAt": "2026-07-31T03:20:24.526057Z",
+   "updatedAt": "2026-07-31T03:20:24.526057Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.cosmicjs.com",
+ "keywords": [
+  "Cosmic"
+ ]
+}

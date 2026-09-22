@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.setheerwagen/mcp-ollama-vllm",
+ "version": "1.0.2",
+ "versionKind": "semver",
+ "description": "Call your local Ollama or vLLM model over MCP with schema-validated JSON output",
+ "license": "unknown",
+ "repository": "https://github.com/setheerwagen/local-ai-mcp-servers",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "mcp-ollama-vllm",
+  "url": "https://pypi.org/project/mcp-ollama-vllm/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "mcp-ollama-vllm",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LOCAL_API_KEY",
+    "LOCAL_BACKEND",
+    "LOCAL_EMBED_MODEL",
+    "LOCAL_EMBED_PATH",
+    "LOCAL_HOST",
+    "LOCAL_SCHEMA_MODE",
+    "LOCAL_TIMEOUT"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.setheerwagen/mcp-ollama-vllm",
+   "publishedAt": "2026-09-08T20:26:11.385224Z",
+   "updatedAt": "2026-09-08T20:26:11.385224Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Ollama / vLLM Bridge"
+ ]
+}

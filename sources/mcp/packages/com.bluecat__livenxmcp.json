@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "com.bluecat/livenxmcp",
+ "version": "26.2",
+ "versionKind": "other",
+ "description": "MCP server for LiveAction LiveNX",
+ "license": "unknown",
+ "repository": "https://hub.docker.com/r/bluecat/livenxmcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "livenxmcp",
+  "url": "https://hub.docker.com/r/bluecat/livenxmcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "quay.io/bluecat/livenxmcp:26.2",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "LIVENXMCP_CLICKHOUSE_PASSWORD",
+    "LIVENXMCP_CLICKHOUSE_URL",
+    "LIVENXMCP_PROM_PASSWORD",
+    "LIVENXMCP_PROM_USERNAME",
+    "LIVENXMCP_TOKEN",
+    "LIVENXMCP_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.bluecat/livenxmcp",
+   "publishedAt": "2026-09-02T13:54:27.559629Z",
+   "updatedAt": "2026-09-02T13:54:27.559629Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

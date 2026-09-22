@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "vanta-mcp-plugin",
+ "version": "345d86b55faa649e955b7ea5569cf52d8425c2d5",
+ "versionKind": "other",
+ "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
+ "license": "MIT",
+ "repository": "https://github.com/VantaInc/vanta-mcp-plugin",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/VantaInc/vanta-mcp-plugin.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "security",
+   "author": "Vanta",
+   "ref": null,
+   "sha": "345d86b55faa649e955b7ea5569cf52d8425c2d5",
+   "strict": null
+  }
+ },
+ "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337"
+}

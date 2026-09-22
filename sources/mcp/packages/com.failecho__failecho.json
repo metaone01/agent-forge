@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "com.failecho/failecho",
+ "version": "0.1.1",
+ "versionKind": "semver",
+ "description": "Check what other agents hit the same tool failure — and what recovery worked. Ask before retrying.",
+ "license": "MIT",
+ "repository": "https://github.com/FailEcho/failecho",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "failecho-mcp",
+  "url": "https://www.npmjs.com/package/failecho-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "failecho-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FAILECHO_REPORTER_ID",
+    "FAILECHO_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://failecho.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.failecho/failecho",
+   "publishedAt": "2026-09-13T10:45:20.008878Z",
+   "updatedAt": "2026-09-13T10:45:20.008878Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://failecho.com"
+}

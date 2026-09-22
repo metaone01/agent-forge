@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "email.deadsimple/dead-simple-email",
+ "version": "0.2.2",
+ "versionKind": "semver",
+ "description": "Give an agent its own inbox: send, receive, and pull signup codes from real email.",
+ "license": "MIT",
+ "repository": "https://github.com/deadsimple-email/deadsimple-email",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "deadsimple-email",
+  "url": "https://pypi.org/project/deadsimple-email/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "deadsimple-email",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DSE_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.deadsimple.email/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "email.deadsimple/dead-simple-email",
+   "publishedAt": "2026-07-30T04:18:40.849217Z",
+   "updatedAt": "2026-07-30T04:18:40.849217Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://deadsimple.email",
+ "keywords": [
+  "Dead Simple Email"
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.rmzlb/notifyd",
+ "version": "0.4.0",
+ "versionKind": "semver",
+ "description": "Operate a self-hosted notifyd instance: digest, jobs, retries, suppressions, projects, test sends.",
+ "license": "unknown",
+ "repository": "https://github.com/rmzlb/notifyd",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "notifyd",
+  "url": "https://hub.docker.com/r/rmzlb/notifyd",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/rmzlb/notifyd:0.4.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "ADMIN_API_KEY",
+    "DATABASE_URL",
+    "EMAIL_FROM",
+    "EMAIL_PROVIDER",
+    "JWT_SECRET"
+   ],
+   "remotes": [
+    {
+     "url": "https://{notifyd_host}/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.rmzlb/notifyd",
+   "publishedAt": "2026-09-15T13:41:52.353979Z",
+   "updatedAt": "2026-09-15T13:41:52.353979Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/rmzlb/notifyd",
+ "keywords": [
+  "notifyd"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.vornicx/midas",
+ "version": "0.0.1",
+ "versionKind": "semver",
+ "description": "Local-first, source-traceable agent memory — no LLM at ingest, fully offline",
+ "license": "unknown",
+ "repository": "https://github.com/vornicx/Midas",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "midas-memory-mcp",
+  "url": "https://pypi.org/project/midas-memory-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "midas-memory-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MIDAS_MCP_DB",
+    "MIDAS_MCP_EMBEDDER",
+    "MIDAS_MCP_MAX_RECORDS",
+    "MIDAS_MCP_MIN_IMPORTANCE"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.vornicx/midas",
+   "publishedAt": "2026-06-07T12:56:07.644026Z",
+   "updatedAt": "2026-06-07T12:56:07.644026Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Midas"
+ ]
+}

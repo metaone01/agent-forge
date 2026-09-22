@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "market.mundane/mundane",
+ "version": "0.1.12",
+ "versionKind": "semver",
+ "description": "Hire verified, escrow-paid humans for real-world tasks: errands, photos, queues, bookings.",
+ "license": "unknown",
+ "repository": "https://github.com/sttruji/mundane-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "mundane-mcp",
+  "url": "https://pypi.org/project/mundane-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "mundane-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MUNDANE_API_BASE",
+    "MUNDANE_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.mundane.market/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "market.mundane/mundane",
+   "publishedAt": "2026-09-16T05:15:26.545097Z",
+   "updatedAt": "2026-09-16T05:15:26.545097Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://mundane.market/for-agents",
+ "keywords": [
+  "Mundane"
+ ]
+}

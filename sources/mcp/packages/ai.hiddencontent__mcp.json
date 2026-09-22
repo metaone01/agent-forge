@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.hiddencontent/mcp",
+ "version": "0.4.14",
+ "versionKind": "semver",
+ "description": "Check a document for hidden text before your agent reads it. PDF, Office, RTF, HTML.",
+ "license": "MIT",
+ "repository": "https://github.com/AeroSpark-ai/hidden-content-service",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@hiddencontent/mcp",
+  "url": "https://www.npmjs.com/package/@hiddencontent/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@hiddencontent/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HCS_API_TOKEN",
+    "HCS_CAPABILITIES",
+    "HCS_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.hiddencontent.ai/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.hiddencontent/mcp",
+   "publishedAt": "2026-09-04T05:25:13.355828Z",
+   "updatedAt": "2026-09-04T05:25:13.355828Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://hiddencontent.ai/start?ref=mcp-registry",
+ "keywords": [
+  "HiddenContent"
+ ]
+}

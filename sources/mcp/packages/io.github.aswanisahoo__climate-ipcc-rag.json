@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.AswaniSahoo/climate-ipcc-rag",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Search IPCC AR6 WG1 and answer with page-level citations, or refuse when unsupported.",
+ "license": "unknown",
+ "repository": "https://github.com/AswaniSahoo/climate-risk-agent",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "climate-ipcc-rag",
+  "url": "https://hub.docker.com/r/aswanisahoo/climate-ipcc-rag-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/aswanisahoo/climate-ipcc-rag-mcp:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GEMINI_API_KEY",
+    "GOOGLE_CLOUD_PROJECT",
+    "GOOGLE_GENAI_USE_VERTEXAI"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.AswaniSahoo/climate-ipcc-rag",
+   "publishedAt": "2026-08-10T20:06:30.589596Z",
+   "updatedAt": "2026-08-10T20:06:30.589596Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "IPCC AR6 Climate Retrieval"
+ ]
+}

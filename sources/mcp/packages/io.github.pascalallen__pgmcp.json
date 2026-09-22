@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.pascalallen/pgmcp",
+ "version": "1.1.0",
+ "versionKind": "semver",
+ "description": "Read-only Postgres ops/DBA diagnostics: slow queries, EXPLAIN, locks, index and table health.",
+ "license": "unknown",
+ "repository": "https://github.com/pascalallen/pgmcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "pgmcp",
+  "url": "https://hub.docker.com/r/pascalallen/pgmcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/pascalallen/pgmcp:1.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PGMCP_DATABASE_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.pascalallen/pgmcp",
+   "publishedAt": "2026-08-20T19:02:27.150786Z",
+   "updatedAt": "2026-08-20T19:02:27.150786Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/pascalallen/pgmcp",
+ "keywords": [
+  "pgmcp"
+ ]
+}

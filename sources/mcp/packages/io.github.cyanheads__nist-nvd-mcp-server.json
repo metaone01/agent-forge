@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/nist-nvd-mcp-server",
+ "version": "0.3.1",
+ "versionKind": "semver",
+ "description": "Search and audit NIST NVD CVEs by keyword, severity, CWE, CISA KEV status, and CPE.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/nist-nvd-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/nist-nvd-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/nist-nvd-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/nist-nvd-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "NVD_API_KEY",
+    "NVD_REQUEST_TIMEOUT_MS"
+   ],
+   "remotes": [
+    {
+     "url": "https://nist-nvd.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/nist-nvd-mcp-server",
+   "publishedAt": "2026-09-20T19:57:45.026926Z",
+   "updatedAt": "2026-09-20T19:57:45.026926Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

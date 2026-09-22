@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.mova-compact/mova-mcp-connector",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Thin MOVA MCP proxy for bindings, transport resolution, and upstream tools/call execution.",
+ "license": "unknown",
+ "repository": "https://github.com/mova-compact/mova-mcp-connector",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mova-mcp-connector",
+  "url": "https://hub.docker.com/r/mova-compact/mova-mcp-connector",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/mova-compact/mova-mcp-connector:0.1.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "MCP_DOOR_ACTOR_ID",
+    "MCP_DOOR_GATEWAY_KEY_ID",
+    "MCP_DOOR_GATEWAY_SHARED_SECRET",
+    "MOVA_ADMIN_READ_TOKEN",
+    "MOVA_PLATFORM_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.mova-compact/mova-mcp-connector",
+   "publishedAt": "2026-04-09T14:43:31.134629Z",
+   "updatedAt": "2026-04-09T14:43:31.134629Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/mova-compact/mova-mcp-connector",
+ "keywords": [
+  "MOVA MCP Connector"
+ ]
+}

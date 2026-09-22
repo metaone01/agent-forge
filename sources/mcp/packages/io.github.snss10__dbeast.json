@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.snss10/dbeast",
+ "version": "2.0.2",
+ "versionKind": "semver",
+ "description": "PostgreSQL MCP server for schema, query, health, security, and performance analysis.",
+ "license": "unknown",
+ "repository": "https://github.com/snss10/DBeast",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "dbeast",
+  "url": "https://hub.docker.com/r/snss10/dbeast",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/snss10/dbeast:2.0.2",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AWS_REGION",
+    "AWS_SECRET_NAME",
+    "DATABASE_URL",
+    "DB_HOST",
+    "DB_NAME",
+    "DB_PASSWORD",
+    "DB_PORT",
+    "DB_USER"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.snss10/dbeast",
+   "publishedAt": "2026-06-10T18:28:12.329653Z",
+   "updatedAt": "2026-06-10T18:28:12.329653Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "DBeast PostgreSQL MCP"
+ ]
+}

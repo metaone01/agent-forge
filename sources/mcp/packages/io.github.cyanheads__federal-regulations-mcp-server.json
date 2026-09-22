@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/federal-regulations-mcp-server",
+ "version": "0.2.5",
+ "versionKind": "semver",
+ "description": "Search and trace US federal rules across the Federal Register, eCFR, and Regulations.gov.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/federal-regulations-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/federal-regulations-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/federal-regulations-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/federal-regulations-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "REGULATIONS_GOV_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://federal-regulations.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/federal-regulations-mcp-server",
+   "publishedAt": "2026-09-20T21:08:44.75233Z",
+   "updatedAt": "2026-09-20T21:08:44.75233Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.CryptoSuess/basealpha",
+ "version": "0.1.7",
+ "versionKind": "semver",
+ "description": "Launch and trade memecoins on BaseAlpha. Remote MCP for discovery; npx @basealpha/mcp to sign.",
+ "license": "MIT",
+ "repository": "https://github.com/CryptoSuess/BaseAlpha",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@basealpha/mcp",
+  "url": "https://www.npmjs.com/package/@basealpha/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@basealpha/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BASEALPHA_API_KEY",
+    "BASEALPHA_PRIVATE_KEY",
+    "BASEALPHA_RPC_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://www.basealpha.fun/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.CryptoSuess/basealpha",
+   "publishedAt": "2026-09-19T00:49:59.254036Z",
+   "updatedAt": "2026-09-19T00:49:59.254036Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.basealpha.fun",
+ "keywords": [
+  "BaseAlpha"
+ ]
+}

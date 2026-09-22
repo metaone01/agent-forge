@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "azure-sql-developer",
+ "version": "8a82f442df5bb7bbf65f1eb774e32d1f55a07e04",
+ "versionKind": "other",
+ "description": "Agent skills for Azure SQL Developer, the Azure SQL Database engine running locally in a container. Teaches your agent to run the engine, connect, migrate, scaffold, build RAG, wire CI, and go local-to-cloud, using the real Private Preview image instead of the SQL Server image.",
+ "license": "MIT",
+ "repository": "https://github.com/microsoft/azure-sql-database-container",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/microsoft/azure-sql-database-container.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "database",
+   "author": "Microsoft",
+   "ref": null,
+   "sha": "8a82f442df5bb7bbf65f1eb774e32d1f55a07e04",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/microsoft/azure-sql-database-container"
+}

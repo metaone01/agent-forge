@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "com.driflyte/driflyte-mcp-server",
+ "version": "0.1.15",
+ "versionKind": "semver",
+ "description": "Driflyte MCP server which lets AI assistants query topic-specific knowledge from web and GitHub.",
+ "license": "MIT",
+ "repository": "https://github.com/serkan-ozal/driflyte-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@driflyte/mcp-server",
+  "url": "https://www.npmjs.com/package/@driflyte/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@driflyte/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://mcp.driflyte.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.driflyte.com/openai",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.driflyte/driflyte-mcp-server",
+   "publishedAt": "2025-09-30T05:25:52.990027Z",
+   "updatedAt": "2025-09-30T05:25:52.990027Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

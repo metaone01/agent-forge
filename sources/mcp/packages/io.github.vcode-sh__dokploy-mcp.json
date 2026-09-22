@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.vcode-sh/dokploy-mcp",
+ "version": "4.0.0",
+ "versionKind": "semver",
+ "description": "Dokploy MCP server for Codex, Cursor, and Claude with compact stdio and hosted HTTP modes",
+ "license": "MIT",
+ "repository": "https://github.com/vcode-sh/dokploy-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@vibetools/dokploy-mcp",
+  "url": "https://www.npmjs.com/package/@vibetools/dokploy-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@vibetools/dokploy-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DOKPLOY_API_KEY",
+    "DOKPLOY_PROFILES_JSON",
+    "DOKPLOY_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://{remoteHost}{mcpPath}",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.vcode-sh/dokploy-mcp",
+   "publishedAt": "2026-07-09T14:59:32.735904Z",
+   "updatedAt": "2026-07-09T14:59:32.735904Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://github.com/vcode-sh/dokploy-mcp",
+ "keywords": [
+  "Dokploy MCP"
+ ]
+}

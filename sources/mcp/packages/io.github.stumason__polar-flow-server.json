@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.StuMason/polar-flow-server",
+ "version": "1.5.1",
+ "versionKind": "semver",
+ "description": "Self-hosted Polar health analytics with a built-in MCP server: sleep, HRV, workouts, baselines.",
+ "license": "unknown",
+ "repository": "https://github.com/StuMason/polar-flow-server",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "polar-flow-server",
+  "url": "https://hub.docker.com/r/stumason/polar-flow-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/stumason/polar-flow-server:1.5.1",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "BASE_URL",
+    "DATABASE_URL",
+    "POLAR_CLIENT_ID",
+    "POLAR_CLIENT_SECRET"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.StuMason/polar-flow-server",
+   "publishedAt": "2026-09-10T08:49:08.718356Z",
+   "updatedAt": "2026-09-10T08:49:08.718356Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://stumason.github.io/polar-flow-server/",
+ "keywords": [
+  "Polar Health Data (self-hosted)"
+ ]
+}

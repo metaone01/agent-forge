@@ -1,0 +1,52 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.homespun/homespun",
+ "version": "1.6.89",
+ "versionKind": "semver",
+ "description": "Deploy a multi-user web app from your agent: hosting, auth, database, and permissions.",
+ "license": "MIT",
+ "repository": "https://github.com/homespunapps/homespun",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@homespunapps/mcp",
+  "url": "https://www.npmjs.com/package/@homespunapps/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@homespunapps/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HOMESPUN_AGENT_NAME",
+    "HOMESPUN_API_KEY",
+    "HOMESPUN_REGISTER_SECRET",
+    "HOMESPUN_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://homespun.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.homespun/homespun",
+   "publishedAt": "2026-09-13T14:52:14.87169Z",
+   "updatedAt": "2026-09-13T14:52:14.87169Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://homespun.dev",
+ "keywords": [
+  "Homespun"
+ ]
+}

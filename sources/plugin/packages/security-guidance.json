@@ -1,0 +1,40 @@
+{
+ "schemaVersion": 1,
+ "name": "security-guidance",
+ "version": "2.0.7",
+ "versionKind": "semver",
+ "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
+ "license": "unknown",
+ "repository": "https://github.com/anthropics/claude-plugins-official",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "marketplace",
+  "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "local"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "security",
+   "author": "Anthropic",
+   "ref": null,
+   "sha": null,
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance"
+}

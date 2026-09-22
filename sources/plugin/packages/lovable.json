@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "lovable",
+ "version": "0336e6db8026b0f02cb89d1451cc48ea3f469791",
+ "versionKind": "other",
+ "description": "Build, iterate on, deploy, and manage Lovable apps from Claude Code. Bundles the official Lovable MCP server (remote, OAuth 2.1) and adds focused commands for the common build/iterate/database workflows, with credit- and publish-safety prompts.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/lovablelabs/mcp",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/lovablelabs/mcp.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Lovable",
+   "ref": null,
+   "sha": "0336e6db8026b0f02cb89d1451cc48ea3f469791",
+   "strict": null
+  }
+ },
+ "homepage": "https://lovable.dev"
+}

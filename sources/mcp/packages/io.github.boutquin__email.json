@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.boutquin/email",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "Multi-account IMAP/SMTP email server with 22 tools for reading, sending, searching, and organizing.",
+ "license": "unknown",
+ "repository": "https://github.com/boutquin/mcp-server-email",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "email",
+  "url": "https://hub.docker.com/r/boutquin/mcp-server-email",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/boutquin/mcp-server-email:latest",
+   "transport": "stdio",
+   "environmentVariables": [
+    "EMAIL_ACCOUNTS",
+    "EMAIL_CONFIG_FILE"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.boutquin/email",
+   "publishedAt": "2026-03-13T03:08:43.837161Z",
+   "updatedAt": "2026-03-13T03:08:43.837161Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Email (IMAP/SMTP)"
+ ]
+}

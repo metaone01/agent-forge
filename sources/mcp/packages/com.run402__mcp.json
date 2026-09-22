@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.run402/mcp",
+ "version": "4.16.0",
+ "versionKind": "semver",
+ "description": "x402 pay-per-call infra for agents: $0.03 image generation, Postgres, auth, storage, functions.",
+ "license": "unknown",
+ "repository": "https://github.com/kychee-com/run402",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "run402-mcp",
+  "url": "https://www.npmjs.com/package/run402-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "run402-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "RUN402_MCP_PROFILE",
+    "RUN402_WALLET"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.run402.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.run402/mcp",
+   "publishedAt": "2026-07-31T11:27:42.734011Z",
+   "updatedAt": "2026-07-31T11:27:42.734011Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://run402.com",
+ "keywords": [
+  "Run402"
+ ]
+}

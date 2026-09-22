@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.isakskogstad/kolada-mcp",
+ "version": "2.2.1",
+ "versionKind": "semver",
+ "description": "Swedish municipality statistics from Kolada API. 6000+ KPIs for all 290 municipalities.",
+ "license": "MIT",
+ "repository": "https://github.com/isakskogstad/kolada-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "kolada-mcp-server",
+  "url": "https://www.npmjs.com/package/kolada-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "kolada-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://kolada-mcp-pafn.onrender.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://kolada-mcp-pafn.onrender.com/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.isakskogstad/kolada-mcp",
+   "publishedAt": "2025-11-29T02:30:10.318926Z",
+   "updatedAt": "2025-11-29T02:30:10.318926Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://github.com/isakskogstad/kolada-mcp",
+ "keywords": [
+  "Kolada MCP Server"
+ ]
+}

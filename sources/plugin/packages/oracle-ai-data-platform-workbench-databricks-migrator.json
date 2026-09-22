@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "oracle-ai-data-platform-workbench-databricks-migrator",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Drive the Oracle AI Data Platform (AIDP) Databricks Migration Toolkit in natural language. Plans and executes automated Databricks → AIDP migrations of notebooks, jobs, schedules, and catalog DDL — Pass-1 dependency rewrite + Pass-2 cell-by-cell execute/verify/fix on a live AIDP cluster with Claude.",
+ "license": "UPL-1.0",
+ "repository": "https://github.com/oracle-samples/oracle-aidp-samples",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/oracle-samples/oracle-aidp-samples/tree/main/ai/claude-code-plugins/oracle-ai-data-platform-workbench-databricks-migrator",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Oracle",
+   "ref": "main",
+   "sha": "a88bcf3a9f9acca94663a727de42d8535e869486",
+   "strict": null
+  }
+ },
+ "homepage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html"
+}

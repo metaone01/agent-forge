@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.lyf-wxy/spomory",
+ "version": "0.2.1",
+ "versionKind": "semver",
+ "description": "Explainable graph-retrieval memory engine with an RL-trained management policy.",
+ "license": "unknown",
+ "repository": "https://github.com/yliuai/spomory",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "spomory",
+  "url": "https://pypi.org/project/spomory/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "spomory",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LLM_API_KEY",
+    "LLM_BASE_URL",
+    "LLM_MODEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.yliuai.com/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://api.yliuai.com/mcp-apikey",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.lyf-wxy/spomory",
+   "publishedAt": "2026-09-22T00:33:37.618974Z",
+   "updatedAt": "2026-09-22T00:33:37.618974Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

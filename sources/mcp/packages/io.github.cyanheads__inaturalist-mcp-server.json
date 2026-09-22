@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/inaturalist-mcp-server",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Search iNaturalist sightings, identification threads, phenology, and look-alike species.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/inaturalist-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/inaturalist-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/inaturalist-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/inaturalist-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "INATURALIST_DAILY_REQUEST_BUDGET",
+    "INATURALIST_MAX_CONCURRENT_REQUESTS",
+    "INATURALIST_MIN_REQUEST_INTERVAL_MS",
+    "INATURALIST_USER_AGENT",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://inaturalist.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/inaturalist-mcp-server",
+   "publishedAt": "2026-09-20T14:04:52.942619Z",
+   "updatedAt": "2026-09-20T14:04:52.942619Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

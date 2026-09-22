@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "ai.llmintel/model-lifecycle",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Check whether an LLM model id is deprecated, retiring, or retired, and what to migrate to.",
+ "license": "MIT",
+ "repository": "https://github.com/hivemindunit/llmintel-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@llmintel/mcp",
+  "url": "https://www.npmjs.com/package/@llmintel/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@llmintel/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LLMINTEL_API_KEY",
+    "LLMINTEL_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://llmintel.ai/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "ai.llmintel/model-lifecycle",
+   "publishedAt": "2026-07-28T03:18:16.533649Z",
+   "updatedAt": "2026-07-28T03:18:16.533649Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://llmintel.ai",
+ "keywords": [
+  "LLMIntel Model Lifecycle"
+ ]
+}

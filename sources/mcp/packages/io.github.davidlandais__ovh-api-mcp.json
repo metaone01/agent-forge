@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.davidlandais/ovh-api-mcp",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "MCP server for the OVH API. Explore and call any OVH endpoint via sandboxed JS.",
+ "license": "unknown",
+ "repository": "https://github.com/davidlandais/ovh-api-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "ovh-api-mcp",
+  "url": "https://hub.docker.com/r/davidlandais/ovh-api-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/davidlandais/ovh-api-mcp:0.3.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "OVH_APPLICATION_KEY",
+    "OVH_APPLICATION_SECRET",
+    "OVH_CLIENT_ID",
+    "OVH_CLIENT_SECRET",
+    "OVH_CONSUMER_KEY",
+    "OVH_ENDPOINT",
+    "OVH_SERVICES"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.davidlandais/ovh-api-mcp",
+   "publishedAt": "2026-03-13T12:33:55.81954Z",
+   "updatedAt": "2026-03-13T12:33:55.81954Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

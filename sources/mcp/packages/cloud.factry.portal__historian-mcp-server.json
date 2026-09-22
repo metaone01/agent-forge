@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "cloud.factry.portal/historian-mcp-server",
+ "version": "0.0.6",
+ "versionKind": "semver",
+ "description": "MCP server for querying Factry Historian.",
+ "license": "unknown",
+ "repository": "https://hub.docker.com/v2/repositories/factry/mcp-server/",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "historian-mcp-server",
+  "url": "https://hub.docker.com/v2/repositories/factry/mcp-server/",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/factry/mcp-server:0.0.6",
+   "transport": "stdio",
+   "environmentVariables": [
+    "FACTRY_HISTORIAN_API_TOKEN",
+    "FACTRY_HISTORIAN_API_URL",
+    "FACTRY_HISTORIAN_ORGANIZATION_UUID",
+    "GRAFANA_API_KEY",
+    "GRAFANA_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "cloud.factry.portal/historian-mcp-server",
+   "publishedAt": "2026-09-08T08:14:19.207112Z",
+   "updatedAt": "2026-09-08T08:14:19.207112Z",
+   "identityEvidence": "url"
+  }
+ },
+ "keywords": [
+  "Factry Historian MCP"
+ ]
+}

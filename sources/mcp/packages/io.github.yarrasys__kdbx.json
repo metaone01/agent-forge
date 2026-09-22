@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.yarrasys/kdbx",
+ "version": "0.3.1",
+ "versionKind": "semver",
+ "description": "Read-only access to secrets in a local KeePassXC vault. Runs commands with them injected.",
+ "license": "unknown",
+ "repository": "https://github.com/yarrasys/kdbx",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "kdbx",
+  "url": "https://hub.docker.com/r/yarrasys/kdbx",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/yarrasys/kdbx:0.3.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "KDBX_ENV",
+    "KEEPASSXC_DIR"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.yarrasys/kdbx",
+   "publishedAt": "2026-08-03T00:52:02.222859Z",
+   "updatedAt": "2026-08-03T00:52:02.222859Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/yarrasys/kdbx#agent-and-editor-integration",
+ "keywords": [
+  "kdbx"
+ ]
+}

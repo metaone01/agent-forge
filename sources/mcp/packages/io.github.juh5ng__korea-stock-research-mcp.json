@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.juh5ng/korea-stock-research-mcp",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Korean equity research, analyst revisions, kimchi premium and news via x402.",
+ "license": "MIT",
+ "repository": "https://github.com/juh5ng/k-data-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "k-data-mcp",
+  "url": "https://www.npmjs.com/package/k-data-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "k-data-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "K_DATA_BASE_URL",
+    "K_DATA_MAX_SPEND_USD",
+    "K_DATA_PRIVATE_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://k-data-x402-production.theblack1022.workers.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.juh5ng/korea-stock-research-mcp",
+   "publishedAt": "2026-09-06T01:32:03.831077Z",
+   "updatedAt": "2026-09-06T01:32:03.831077Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://k-data-x402-production.theblack1022.workers.dev",
+ "keywords": [
+  "K-Data — Korean Sell-Side Research & Market Data"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wnsod/oneqaz-trading-mcp",
+ "version": "0.1.4",
+ "versionKind": "semver",
+ "description": "Live market data, signals, positions, and macro analysis for crypto, KR stocks, and US stocks.",
+ "license": "MIT",
+ "repository": "https://github.com/oneqaz-trading/oneqaz-trading-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "oneqaz-trading-mcp",
+  "url": "https://pypi.org/project/oneqaz-trading-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "oneqaz-trading-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DATA_ROOT",
+    "MCP_SERVER_PORT"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.oneqaz.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wnsod/oneqaz-trading-mcp",
+   "publishedAt": "2026-04-07T10:02:04.035131Z",
+   "updatedAt": "2026-04-07T10:02:04.035131Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "OneQAZ Trading Intelligence"
+ ]
+}

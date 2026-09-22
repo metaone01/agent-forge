@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.shittuay/devops-agent",
+ "version": "1.0.6",
+ "versionKind": "semver",
+ "description": "Manage AWS, Azure, GCP, Kubernetes, CI/CD, Docker, Terraform and more. 727 tools.",
+ "license": "MIT",
+ "repository": "https://github.com/shittuay/DevOps-Agent",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@devopsagent/mcp-server",
+  "url": "https://www.npmjs.com/package/@devopsagent/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@devopsagent/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "remotes": [
+    {
+     "url": "https://devopsagent.io/mcp/",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://devopsagent.io/mcp/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.shittuay/devops-agent",
+   "publishedAt": "2026-04-12T15:02:38.862134Z",
+   "updatedAt": "2026-04-12T15:02:38.862134Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://devopsagent.io",
+ "keywords": [
+  "DevOps Agent"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "semgrep",
+ "version": "f97e1ce43533ffde2eae9af2a80f95a7250c365f",
+ "versionKind": "other",
+ "description": "Semgrep catches security vulnerabilities in real-time and guides Claude to write secure code from the start.",
+ "license": "unknown",
+ "repository": "https://github.com/semgrep/mcp-marketplace",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/semgrep/mcp-marketplace/tree/HEAD/plugin",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "security",
+   "author": null,
+   "ref": null,
+   "sha": "f97e1ce43533ffde2eae9af2a80f95a7250c365f",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/semgrep/mcp-marketplace.git"
+}

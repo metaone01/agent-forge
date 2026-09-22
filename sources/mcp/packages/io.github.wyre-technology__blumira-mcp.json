@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wyre-technology/blumira-mcp",
+ "version": "1.2.12",
+ "versionKind": "semver",
+ "description": "MCP server for Blumira SIEM — query findings, evidence, and detection data via the Blumira API.",
+ "license": "unknown",
+ "repository": "https://github.com/wyre-technology/blumira-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "blumira-mcp",
+  "url": "https://hub.docker.com/r/wyre-technology/blumira-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-technology/blumira-mcp:v1.2.12",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "BLUMIRA_JWT_TOKEN",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wyre-technology/blumira-mcp",
+   "publishedAt": "2026-08-20T16:18:44.268495Z",
+   "updatedAt": "2026-08-20T16:18:44.268495Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/wyre-technology/blumira-mcp",
+ "keywords": [
+  "Blumira"
+ ]
+}

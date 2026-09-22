@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/eur-lex-mcp-server",
+ "version": "0.12.2",
+ "versionKind": "semver",
+ "description": "Search EU legislation, CJEU case law, and treaties; traverse CELLAR graph; browse EuroVoc concepts.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/eur-lex-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/eur-lex-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/eur-lex-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/eur-lex-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CELLAR_SPARQL_ENDPOINT",
+    "EURLEX_CONTENT_BASE_URL",
+    "MAX_SPARQL_RESULTS",
+    "MCP_LOG_LEVEL",
+    "SPARQL_QUERY_TIMEOUT_MS"
+   ],
+   "remotes": [
+    {
+     "url": "https://eur-lex.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/eur-lex-mcp-server",
+   "publishedAt": "2026-09-20T22:45:01.071455Z",
+   "updatedAt": "2026-09-20T22:45:01.071455Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

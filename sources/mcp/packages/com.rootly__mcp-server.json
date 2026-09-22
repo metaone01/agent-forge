@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "com.rootly/mcp-server",
+ "version": "2.2.4",
+ "versionKind": "semver",
+ "description": "Incident management, on-call scheduling, and intelligent analysis powered by Rootly.",
+ "license": "Apache Software License",
+ "repository": "https://github.com/Rootly-AI-Labs/Rootly-MCP-server",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "rootly-mcp-server",
+  "url": "https://pypi.org/project/rootly-mcp-server/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "rootly-mcp-server",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ROOTLY_API_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.rootly.com/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.rootly/mcp-server",
+   "publishedAt": "2026-02-18T20:44:50.870477Z",
+   "updatedAt": "2026-02-18T20:44:50.870477Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "Rootly"
+ ]
+}

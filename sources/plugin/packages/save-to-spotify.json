@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "save-to-spotify",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Create polished audio episodes with TTS narration, rich timelines, cover images, and save them to Spotify via the save-to-spotify CLI.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/spotify/save-to-spotify",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/spotify/save-to-spotify/tree/main/plugin",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "productivity",
+   "author": "Spotify",
+   "ref": "main",
+   "sha": "9d05c8cd8c8559552f84e27fe30f46b7693ce69a",
+   "strict": null
+  }
+ },
+ "homepage": "https://github.com/spotify/save-to-spotify"
+}

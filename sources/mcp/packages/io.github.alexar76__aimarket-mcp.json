@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.alexar76/aimarket-mcp",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Stdio + HTTP MCP gateway: SSRF-hardened web_fetch, web_search, metis_verify, market_search.",
+ "license": "MIT",
+ "repository": "https://github.com/alexar76/aimarket-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "aimarket-mcp",
+  "url": "https://pypi.org/project/aimarket-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "aimarket-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AIMARKET_METIS_KEY",
+    "AIMARKET_METIS_URL",
+    "AIMARKET_SEARCH_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://{aimarket_host}/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.alexar76/aimarket-mcp",
+   "publishedAt": "2026-08-16T20:44:18.893109Z",
+   "updatedAt": "2026-08-16T20:44:18.893109Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "AIMarket MCP Gateway"
+ ]
+}

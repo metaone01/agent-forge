@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.YS-projectcalc/agent-cold-email",
+ "version": "0.2.1",
+ "versionKind": "semver",
+ "description": "Coldrig — cold-email infra run by your agent: 28 MCP tools, live sending, free sandbox. $99/mo.",
+ "license": "MIT",
+ "repository": "https://github.com/YS-projectcalc/agent-cold-email",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "agent-cold-email",
+  "url": "https://www.npmjs.com/package/agent-cold-email",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "agent-cold-email",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AGENT_COLD_EMAIL_API_KEY",
+    "AGENT_COLD_EMAIL_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://agent-cold-email-api.yaakovscher.workers.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.YS-projectcalc/agent-cold-email",
+   "publishedAt": "2026-08-17T00:12:10.393015Z",
+   "updatedAt": "2026-08-17T00:12:10.393015Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://coldrig.dev/"
+}

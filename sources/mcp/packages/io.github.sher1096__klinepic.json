@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.sher1096/klinepic",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Create annotated candlestick charts from broker or exchange fills for post-trade review.",
+ "license": "unknown",
+ "repository": "https://github.com/sher1096/klinepic-agent-api-examples",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "klinepic",
+  "url": "https://hub.docker.com/r/sher1096/klinepic-mcp-server",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/sher1096/klinepic-mcp-server:0.1.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "KLINE_AGENT_API_KEY"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.sher1096/klinepic",
+   "publishedAt": "2026-07-13T10:18:18.071594Z",
+   "updatedAt": "2026-07-13T10:18:18.071594Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://klinepic.com/guides/trade-review-chart-api/",
+ "keywords": [
+  "KLinePic"
+ ]
+}

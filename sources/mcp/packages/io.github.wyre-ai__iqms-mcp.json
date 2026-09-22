@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.WYRE-AI/iqms-mcp",
+ "version": "1.2.14",
+ "versionKind": "semver",
+ "description": "MCP server for IQMS (DELMIAworks) ERP — manufacturing, inventory, production, and quality.",
+ "license": "unknown",
+ "repository": "https://github.com/WYRE-AI/iqms-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "iqms-mcp",
+  "url": "https://hub.docker.com/r/wyre-ai/iqms-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-ai/iqms-mcp:v1.2.14",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "IQMS_ORACLE_CONNECT_STRING",
+    "IQMS_ORACLE_PASSWORD",
+    "IQMS_ORACLE_USER",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.WYRE-AI/iqms-mcp",
+   "publishedAt": "2026-09-02T23:33:17.605081Z",
+   "updatedAt": "2026-09-02T23:33:17.605081Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/WYRE-AI/iqms-mcp",
+ "keywords": [
+  "IQMS / DELMIA Apriso"
+ ]
+}

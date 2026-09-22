@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.barneywohl/hugging-bay",
+ "version": "0.1.2",
+ "versionKind": "semver",
+ "description": "Verified open AI artifact search, trust evidence, downloads, and agent workflows from Hugging Bay.",
+ "license": "MIT",
+ "repository": "https://github.com/barneywohl/hugging-bay",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "hugging-bay-mcp",
+  "url": "https://www.npmjs.com/package/hugging-bay-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "hugging-bay-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "HUGGING_BAY_API",
+    "HUGGING_BAY_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://huggingbay.xyz/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.barneywohl/hugging-bay",
+   "publishedAt": "2026-07-14T01:22:40.182925Z",
+   "updatedAt": "2026-07-14T01:22:40.182925Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://huggingbay.xyz"
+}

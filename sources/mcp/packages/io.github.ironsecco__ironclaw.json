@@ -1,0 +1,40 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.IronSecCo/ironclaw",
+ "version": "0.1.530",
+ "versionKind": "semver",
+ "description": "Sandboxed shell exec for MCP clients: run untrusted agent commands in a gVisor container.",
+ "license": "unknown",
+ "repository": "https://github.com/IronSecCo/ironclaw",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "ironclaw",
+  "url": "https://hub.docker.com/r/ironsecco/ironclaw-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/ironsecco/ironclaw-mcp:v0.1.530",
+   "transport": "stdio",
+   "environmentVariables": [
+    "IRONCLAW_API_TOKEN",
+    "IRONCLAW_CONTROLPLANE_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.IronSecCo/ironclaw",
+   "publishedAt": "2026-09-19T21:04:12.534548Z",
+   "updatedAt": "2026-09-19T21:04:12.534548Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://ironclaw.sh"
+}

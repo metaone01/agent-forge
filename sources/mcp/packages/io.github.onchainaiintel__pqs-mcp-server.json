@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.OnChainAIIntel/pqs-mcp-server",
+ "version": "1.4.0",
+ "versionKind": "semver",
+ "description": "PQS scores any prompt before the model runs. 8 dimensions. 5 frameworks. Pre-flight, not post-hoc.",
+ "license": "MIT",
+ "repository": "https://github.com/OnChainAIIntel/pqs-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "pqs-mcp-server",
+  "url": "https://www.npmjs.com/package/pqs-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "pqs-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PQS_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://promptqualityscore.com/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.OnChainAIIntel/pqs-mcp-server",
+   "publishedAt": "2026-05-27T14:40:50.134088Z",
+   "updatedAt": "2026-05-27T14:40:50.134088Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://promptqualityscore.com"
+}

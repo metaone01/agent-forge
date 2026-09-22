@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "pl.cenogram/mcp-server",
+ "version": "0.6.0",
+ "versionKind": "semver",
+ "description": "Polish real estate for AI: 8M+ deed transaction prices (RCN) + per-parcel context by cadastral ID",
+ "license": "MIT",
+ "repository": "https://github.com/cenogram/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cenogram/mcp-server",
+  "url": "https://www.npmjs.com/package/@cenogram/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cenogram/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CENOGRAM_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.cenogram.pl/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "pl.cenogram/mcp-server",
+   "publishedAt": "2026-08-02T13:17:06.171063Z",
+   "updatedAt": "2026-08-02T13:17:06.171063Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://cenogram.pl/en/mcp?src=mcpregistry",
+ "keywords": [
+  "Cenogram - Polish Real Estate Prices & Parcel Data"
+ ]
+}

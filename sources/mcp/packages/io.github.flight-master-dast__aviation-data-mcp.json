@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.flight-master-dast/aviation-data-mcp",
+ "version": "1.0.5",
+ "versionKind": "semver",
+ "description": "航班管家 DAST 官方航空数据 MCP，支持 Remote HTTP 与 npm STDIO，提供航班动态、天气、轨迹及延误风险。Official Flight Master MCP.",
+ "license": "ISC",
+ "repository": "https://github.com/flight-master-dast/aviation-data-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@flightmaster/aviation-dast-mcp",
+  "url": "https://www.npmjs.com/package/@flightmaster/aviation-dast-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@flightmaster/aviation-dast-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DAST_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://fly.huoli.com/mcp/dast_mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.flight-master-dast/aviation-data-mcp",
+   "publishedAt": "2026-09-08T08:28:30.558916Z",
+   "updatedAt": "2026-09-08T08:28:30.558916Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "航班管家航空数据 MCP | Flight Master Aviation Data MCP"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.sachitrafa/cognitive-ai-memory",
+ "version": "1.0.2",
+ "versionKind": "semver",
+ "description": "Ebbinghaus-based persistent memory for Claude. Memories decay with time, strengthen on recall.",
+ "license": "unknown",
+ "repository": "https://github.com/sachitrafa/cognitive-ai-memory",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "cognitive-ai-memory",
+  "url": "https://hub.docker.com/r/your-memory/cognitive-ai-memory",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/your-memory/cognitive-ai-memory:1.0.2",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DATABASE_URL",
+    "EXTRACT_MODEL",
+    "OLLAMA_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.sachitrafa/cognitive-ai-memory",
+   "publishedAt": "2026-03-23T18:11:18.459906Z",
+   "updatedAt": "2026-03-23T18:11:18.459906Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

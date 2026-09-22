@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/astronomy-mcp-server",
+ "version": "0.2.10",
+ "versionKind": "semver",
+ "description": "Offline observational astronomy: positions, rise/set, moon phases, eclipses, and seasons.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/astronomy-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/astronomy-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/astronomy-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/astronomy-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ASTRONOMY_DEFAULT_TIMEZONE",
+    "ASTRONOMY_ENABLE_HORIZONS",
+    "ASTRONOMY_ENABLE_SATELLITES",
+    "MCP_LOG_LEVEL"
+   ],
+   "remotes": [
+    {
+     "url": "https://astronomy.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/astronomy-mcp-server",
+   "publishedAt": "2026-09-19T17:44:24.479804Z",
+   "updatedAt": "2026-09-19T17:44:24.479804Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

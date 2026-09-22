@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.jyswee/ainpc-cli",
+ "version": "1.5.3",
+ "versionKind": "semver",
+ "description": "AI NPCs with persistent memory for game studios. NPC CRUD, dialogue, voice. Stdio or remote SSE.",
+ "license": "SEE LICENSE IN LICENSE",
+ "repository": "https://github.com/jyswee/ainpc-cli",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "ainpc-cli",
+  "url": "https://www.npmjs.com/package/ainpc-cli",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "ainpc-cli",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AINPC_API_KEY",
+    "AINPC_GAME_ID"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.ainpcengine.com/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.jyswee/ainpc-cli",
+   "publishedAt": "2026-07-16T21:30:31.047162Z",
+   "updatedAt": "2026-07-16T21:30:31.047162Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://ainpcengine.com"
+}

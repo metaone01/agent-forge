@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "stackhawk-api",
+ "version": "main",
+ "versionKind": "other",
+ "description": "Query the StackHawk platform API for security posture reporting, findings analysis, and app management. Guides agents through authentication, data retrieval, and result presentation.",
+ "license": "MIT",
+ "repository": "https://github.com/stackhawk/agent-skills",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/stackhawk/agent-skills/tree/main/plugins/api",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "security",
+   "author": "StackHawk",
+   "ref": "main",
+   "sha": "66cac9baa5883a1007575faf1b22855a1124834a",
+   "strict": null
+  }
+ },
+ "homepage": "https://docs.stackhawk.com/ai-security/"
+}

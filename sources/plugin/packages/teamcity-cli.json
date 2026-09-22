@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "teamcity-cli",
+ "version": "ac6c1fd83300b2e42df48fcfff365ba03f73bb92",
+ "versionKind": "other",
+ "description": "Agent skill for interacting with TeamCity CI/CD using the teamcity CLI. Enables Claude to explore builds, view logs, start jobs, manage queues, agents, and more.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/JetBrains/teamcity-cli",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/JetBrains/teamcity-cli.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "JetBrains",
+   "ref": null,
+   "sha": "ac6c1fd83300b2e42df48fcfff365ba03f73bb92",
+   "strict": null
+  }
+ },
+ "homepage": "https://www.jetbrains.com/teamcity/"
+}

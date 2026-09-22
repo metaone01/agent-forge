@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.mailbuttons/mcp-server",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Governed email for AI agents (Mailbuttons / mbag.ai): sandbox inboxes, policy gate, audit log.",
+ "license": "MIT",
+ "repository": "https://github.com/mailbuttons/mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@mailbuttons/mcp-server",
+  "url": "https://www.npmjs.com/package/@mailbuttons/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@mailbuttons/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MAILBUTTONS_API_KEY",
+    "MAILBUTTONS_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mailbuttons.com/api/v1/mcp/rpc",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.mailbuttons/mcp-server",
+   "publishedAt": "2026-07-15T15:10:08.373769Z",
+   "updatedAt": "2026-07-15T15:10:08.373769Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://mailbuttons.com",
+ "keywords": [
+  "Mailbuttons (mbag.ai)"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "dev.pingzen/mcp",
+ "version": "0.13.0",
+ "versionKind": "semver",
+ "description": "Uptime monitoring with 127 tools across 23 protocols. Tag filtering + Code Mode.",
+ "license": "unknown",
+ "repository": "https://gitlab.com/dobryj/recorder2025",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp",
+  "url": "https://hub.docker.com/r/ilyakong/pingzen-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/ilyakong/pingzen-mcp:0.9.3",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DATABASE_URL",
+    "MCP_API_TOKEN",
+    "SECRET_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://pingzen.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "dev.pingzen/mcp",
+   "publishedAt": "2026-03-31T20:31:01.075653Z",
+   "updatedAt": "2026-03-31T20:31:01.075653Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://pingzen.dev",
+ "keywords": [
+  "PingZen Uptime Monitoring"
+ ]
+}

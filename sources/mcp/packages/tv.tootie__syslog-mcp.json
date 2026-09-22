@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "tv.tootie/syslog-mcp",
+ "version": "0.27.2",
+ "versionKind": "semver",
+ "description": "Syslog receiver and MCP server for homelab log intelligence.",
+ "license": "unknown",
+ "repository": "https://github.com/jmagar/syslog-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "syslog-mcp",
+  "url": "https://hub.docker.com/r/jmagar/syslog-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/jmagar/syslog-mcp:0.27.2",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SYSLOG_HOST",
+    "SYSLOG_MCP_TOKEN",
+    "SYSLOG_PORT"
+   ],
+   "remotes": [
+    {
+     "url": "https://syslog.tootie.tv/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "tv.tootie/syslog-mcp",
+   "publishedAt": "2026-05-21T06:29:21.831562Z",
+   "updatedAt": "2026-05-21T06:29:21.831562Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "Syslog MCP"
+ ]
+}

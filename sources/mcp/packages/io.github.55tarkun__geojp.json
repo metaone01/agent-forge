@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.55tarkun/geojp",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "MCP server for Japan geodata: cadastral lot numbers (chiban) and reverse geocoding, for AI agents.",
+ "license": "MIT",
+ "repository": "https://github.com/55tarkun/geojp-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "geojp-mcp",
+  "url": "https://www.npmjs.com/package/geojp-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "geojp-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GEOJP_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.reversegeojp.com",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.55tarkun/geojp",
+   "publishedAt": "2026-08-15T12:37:02.740541Z",
+   "updatedAt": "2026-08-15T12:37:02.740541Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

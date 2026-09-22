@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wyre-technology/kaseya-bms-mcp",
+ "version": "1.1.4",
+ "versionKind": "semver",
+ "description": "MCP server for Kaseya BMS PSA — tickets, accounts, time entries, contracts.",
+ "license": "unknown",
+ "repository": "https://github.com/wyre-technology/kaseya-bms-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "kaseya-bms-mcp",
+  "url": "https://hub.docker.com/r/wyre-technology/kaseya-bms-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-technology/kaseya-bms-mcp:v1.1.4",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "KASEYA_BMS_API_TOKEN",
+    "KASEYA_BMS_K1_TOKEN",
+    "KASEYA_BMS_TENANT_SUBDOMAIN",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wyre-technology/kaseya-bms-mcp",
+   "publishedAt": "2026-08-20T14:39:03.425703Z",
+   "updatedAt": "2026-08-20T14:39:03.425703Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/wyre-technology/kaseya-bms-mcp",
+ "keywords": [
+  "Kaseya BMS"
+ ]
+}

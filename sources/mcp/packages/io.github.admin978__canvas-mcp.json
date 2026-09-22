@@ -1,0 +1,40 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.admin978/canvas-mcp",
+ "version": "0.1.3",
+ "versionKind": "semver",
+ "description": "Local-first MCP server for Canvas LMS. Stdio transport, no third-party broker.",
+ "license": "MIT",
+ "repository": "https://github.com/admin978/canvas-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "canvas-local-mcp",
+  "url": "https://pypi.org/project/canvas-local-mcp/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "canvas-local-mcp",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CANVAS_BASE_URL",
+    "CANVAS_TOKEN"
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.admin978/canvas-mcp",
+   "publishedAt": "2026-07-24T07:37:04.785108Z",
+   "updatedAt": "2026-07-24T07:37:04.785108Z",
+   "identityEvidence": "pypi-json"
+  }
+ }
+}

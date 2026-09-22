@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.grafana/mcp-grafana",
+ "version": "v1.5.1",
+ "versionKind": "other",
+ "description": "An MCP server giving access to Grafana dashboards, data and more.",
+ "license": "unknown",
+ "repository": "https://github.com/grafana/mcp-grafana",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-grafana",
+  "url": "https://hub.docker.com/r/grafana/mcp-grafana",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/grafana/mcp-grafana:1.5.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "GRAFANA_EXTRA_HEADERS",
+    "GRAFANA_FORWARD_HEADERS",
+    "GRAFANA_ORG_ID",
+    "GRAFANA_PASSWORD",
+    "GRAFANA_SERVICE_ACCOUNT_TOKEN",
+    "GRAFANA_URL",
+    "GRAFANA_USERNAME"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.grafana.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.grafana/mcp-grafana",
+   "publishedAt": "2026-09-17T16:20:27.946858Z",
+   "updatedAt": "2026-09-17T16:20:27.946858Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

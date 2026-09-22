@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ohneben/anytype-mcp",
+ "version": "1.0.6",
+ "versionKind": "semver",
+ "description": "Self-hosted Anytype MCP server: the full Anytype API as an always-on Docker + HTTP endpoint.",
+ "license": "unknown",
+ "repository": "https://github.com/ohneben/Anytype-MCP",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "anytype-mcp",
+  "url": "https://hub.docker.com/r/ohneben/anytype-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/ohneben/anytype-mcp:1.0.6",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "ANYTYPE_API_BASE_URL",
+    "ANYTYPE_API_HOST_HEADER",
+    "ANYTYPE_API_KEY",
+    "ANYTYPE_MCP_SLIM_RESPONSES",
+    "ANYTYPE_VERSION",
+    "MCP_SHARED_TOKEN",
+    "PORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ohneben/anytype-mcp",
+   "publishedAt": "2026-09-05T08:26:25.781836Z",
+   "updatedAt": "2026-09-05T08:26:25.781836Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/ohneben/Anytype-MCP#readme",
+ "keywords": [
+  "Anytype (self-hosted HTTP)"
+ ]
+}

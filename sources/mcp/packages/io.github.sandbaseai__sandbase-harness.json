@@ -1,0 +1,42 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.sandbaseai/sandbase-harness",
+ "version": "0.3.8",
+ "versionKind": "semver",
+ "description": "Stdio MCP bridge for SandBase Harness agents, sessions, turns, artifacts, and cancellation.",
+ "license": "unknown",
+ "repository": "https://github.com/sandbaseai/sandbase-harness",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "sandbase-harness",
+  "url": "https://hub.docker.com/r/sandbaseai/sandbase-harness-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MANAGED_AGENTS_API_KEY",
+    "MANAGED_AGENTS_URL"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.sandbaseai/sandbase-harness",
+   "publishedAt": "2026-08-30T04:39:42.293152Z",
+   "updatedAt": "2026-08-30T04:39:42.293152Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "SandBase Harness"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "com.mailrith/mailrith",
+ "version": "1.1.1",
+ "versionKind": "semver",
+ "description": "Manage Subscribers, Broadcasts, Sequences, Automations, and reporting in Mailrith.",
+ "license": "MIT",
+ "repository": "https://github.com/anrawool/mailrith-agent-platform",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@mailrith/mcp-server",
+  "url": "https://www.npmjs.com/package/@mailrith/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@mailrith/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MAILRITH_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.mailrith.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.mailrith/mailrith",
+   "publishedAt": "2026-08-27T05:22:18.107799Z",
+   "updatedAt": "2026-08-27T05:22:18.107799Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://mailrith.com/developers/mcp",
+ "keywords": [
+  "Mailrith Email Marketing"
+ ]
+}

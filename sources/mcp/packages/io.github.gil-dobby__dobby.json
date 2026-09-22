@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.gil-dobby/dobby",
+ "version": "1.2.0",
+ "versionKind": "semver",
+ "description": "Connect, monitor, and control AI agents — tasks, approvals, schedules, and governance.",
+ "license": "MIT",
+ "repository": "https://github.com/dobby-ai/dobby",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@dobbyai/mcp-external",
+  "url": "https://www.npmjs.com/package/@dobbyai/mcp-external",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@dobbyai/mcp-external",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DOBBY_API_KEY",
+    "DOBBY_API_URL",
+    "DOBBY_TENANT_ID"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.dobby-ai.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.gil-dobby/dobby",
+   "publishedAt": "2026-07-31T03:49:33.995119Z",
+   "updatedAt": "2026-07-31T03:49:33.995119Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://dobby-ai.com",
+ "keywords": [
+  "Dobby"
+ ]
+}

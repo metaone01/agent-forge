@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.Imgrund/hybridlog",
+ "version": "0.1.13",
+ "versionKind": "semver",
+ "description": "Reads your own Garmin mirror: readiness, training load, muscle freshness, and read-only SQL.",
+ "license": "unknown",
+ "repository": "https://github.com/Imgrund/hybridlog",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "hybridlog",
+  "url": "https://hub.docker.com/r/imgrund/hybridlog",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/imgrund/hybridlog:0.1.13",
+   "transport": "stdio",
+   "environmentVariables": [
+    "APP_KEY",
+    "DATABASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://{hybridlog_host}/mcp/garmin",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.Imgrund/hybridlog",
+   "publishedAt": "2026-09-03T07:08:13.8133Z",
+   "updatedAt": "2026-09-03T07:08:13.8133Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/Imgrund/hybridlog#connect-an-ai",
+ "keywords": [
+  "hybridlog"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.pooriaarab/content-rabbit",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Create, schedule, and publish social posts, manage accounts, and read analytics as MCP tools.",
+ "license": "MIT",
+ "repository": "https://github.com/pooriaarab/content-rabbit",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@contentrabbit/mcp-server",
+  "url": "https://www.npmjs.com/package/@contentrabbit/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@contentrabbit/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "CONTENTRABBIT_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://contentrabbitai.com/api/v1/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.pooriaarab/content-rabbit",
+   "publishedAt": "2026-08-25T03:45:42.170713Z",
+   "updatedAt": "2026-08-25T03:45:42.170713Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://contentrabbitai.com",
+ "keywords": [
+  "Content Rabbit"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.andresdefi/zerodust",
+ "version": "0.3.1",
+ "versionKind": "semver",
+ "description": "Recover stranded native gas: empty a chain's balance to exactly zero on 25 EVM chains.",
+ "license": "MIT",
+ "repository": "https://github.com/andresdefi/zerodust",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@zerodust/mcp-server",
+  "url": "https://www.npmjs.com/package/@zerodust/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@zerodust/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ZERODUST_ALLOWED_DESTINATIONS",
+    "ZERODUST_ALLOW_EXECUTE",
+    "ZERODUST_API_KEY",
+    "ZERODUST_API_URL",
+    "ZERODUST_KEYSTORE_FILE",
+    "ZERODUST_KEYSTORE_PASSWORD",
+    "ZERODUST_KEYSTORE_PASSWORD_FILE",
+    "ZERODUST_PRIVATE_KEY",
+    "ZERODUST_PRIVATE_KEY_FILE",
+    "ZERODUST_SIGNER_MODULE"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.zerodust.xyz/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.andresdefi/zerodust",
+   "publishedAt": "2026-07-25T12:48:47.567913Z",
+   "updatedAt": "2026-07-25T12:48:47.567913Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

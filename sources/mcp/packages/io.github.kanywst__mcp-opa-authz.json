@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.kanywst/mcp-opa-authz",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Authorization answers from real policy code: evaluate Rego locally, or ask an AuthZEN 1.0 PDP.",
+ "license": "unknown",
+ "repository": "https://github.com/kanywst/mcp-opa-authz",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "mcp-opa-authz",
+  "url": "https://hub.docker.com/r/kanywst/mcp-opa-authz",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/kanywst/mcp-opa-authz:0.3.0",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTHZEN_PDP_TIMEOUT",
+    "AUTHZEN_PDP_TOKEN",
+    "AUTHZEN_PDP_URL",
+    "MCP_OPA_ALLOW_NETWORK_BUILTINS",
+    "MCP_OPA_EVAL_TIMEOUT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.kanywst/mcp-opa-authz",
+   "publishedAt": "2026-09-11T15:00:36.944024Z",
+   "updatedAt": "2026-09-11T15:00:36.944024Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/kanywst/mcp-opa-authz#readme"
+}

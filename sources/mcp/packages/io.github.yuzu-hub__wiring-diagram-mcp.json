@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.YUZU-Hub/wiring-diagram-mcp",
+ "version": "0.2.2",
+ "versionKind": "semver",
+ "description": "Generate 12V/24V/48V wiring diagrams and size wires, fuses, batteries, solar, and inverters.",
+ "license": "MIT",
+ "repository": "https://github.com/YUZU-Hub/wiring-diagram-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "wiring-diagram-mcp",
+  "url": "https://www.npmjs.com/package/wiring-diagram-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "wiring-diagram-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "VOLTPLAN_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.voltplan.app/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.YUZU-Hub/wiring-diagram-mcp",
+   "publishedAt": "2026-06-08T09:08:28.574109Z",
+   "updatedAt": "2026-06-08T09:08:28.574109Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://voltplan.app",
+ "keywords": [
+  "VoltPlan Wiring Diagrams"
+ ]
+}

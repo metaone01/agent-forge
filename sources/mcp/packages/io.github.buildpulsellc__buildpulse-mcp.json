@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.BuildPulseLLC/buildpulse-mcp",
+ "version": "0.1.7",
+ "versionKind": "semver",
+ "description": "BuildPulse CI test analytics for AI agents — flaky tests, CI failures, flakiness, and code coverage.",
+ "license": "MIT",
+ "repository": "https://github.com/BuildPulseLLC/buildpulse-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@buildpulse/mcp",
+  "url": "https://www.npmjs.com/package/@buildpulse/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@buildpulse/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BUILDPULSE_TOKEN",
+    "PLATFORM_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.buildpulse.io/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.BuildPulseLLC/buildpulse-mcp",
+   "publishedAt": "2026-09-14T03:02:51.712863Z",
+   "updatedAt": "2026-09-14T03:02:51.712863Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://platform.buildpulse.io/docs/mcp",
+ "keywords": [
+  "BuildPulse"
+ ]
+}

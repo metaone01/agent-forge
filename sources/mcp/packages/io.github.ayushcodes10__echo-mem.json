@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.ayushcodes10/echo-mem",
+ "version": "0.3.0",
+ "versionKind": "semver",
+ "description": "Shared memory for AI agents, as a graph in your own Postgres. Writes never call an LLM.",
+ "license": "unknown",
+ "repository": "https://github.com/ayushcodes10/echo-mem",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "echo-mem",
+  "url": "https://pypi.org/project/echo-mem/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "echo-mem",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ECHO_MEMORY_AGENT_ID",
+    "ECHO_MEMORY_DATABASE_URL",
+    "ECHO_MEMORY_USER_ID"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.echo-mem.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.ayushcodes10/echo-mem",
+   "publishedAt": "2026-09-12T19:57:28.83446Z",
+   "updatedAt": "2026-09-12T19:57:28.83446Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "homepage": "https://echo-mem.com",
+ "keywords": [
+  "Echo Memory"
+ ]
+}

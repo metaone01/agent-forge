@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wellknownmcp/cortex-gateway",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Self-hosted federated MCP gateway: one OAuth 2.1 MCP server in front of N apps, user-level scopes.",
+ "license": "unknown",
+ "repository": "https://github.com/wellknownmcp/cortex-gateway",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "cortex-gateway",
+  "url": "https://hub.docker.com/r/wellknownmcp/cortex-gateway",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wellknownmcp/cortex-gateway:v0.2.0",
+   "transport": "streamable-http",
+   "environmentVariables": [
+    "CORTEX_BACKENDS",
+    "CORTEX_CANONICAL_URI",
+    "CORTEX_TECHNICAL_TOKEN",
+    "OAUTH_ISSUER"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.cortex-gateway.dev/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wellknownmcp/cortex-gateway",
+   "publishedAt": "2026-07-20T11:51:16.164263Z",
+   "updatedAt": "2026-07-20T11:51:16.164263Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ }
+}

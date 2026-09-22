@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.sunaivacore/gate",
+ "version": "2.0.4",
+ "versionKind": "semver",
+ "description": "MCP enforcement layer that intercepts AI agent actions and blocks rule violations before execution.",
+ "license": "BUSL-1.1",
+ "repository": "https://www.npmjs.com/package/@sunaiva/gate",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@sunaiva/gate",
+  "url": "https://www.npmjs.com/package/@sunaiva/gate",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@sunaiva/gate",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "DISABLE_SUNAIVA_GATE",
+    "SUNAIVA_GATE_API_KEY",
+    "SUNAIVA_GATE_DRY_RUN"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.sunaivacore.io",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.sunaivacore/gate",
+   "publishedAt": "2026-07-19T02:17:41.41246Z",
+   "updatedAt": "2026-07-19T02:17:41.41246Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://sunaivacore.io/products/gate",
+ "keywords": [
+  "Sunaiva Gate — Agent Rule Enforcement"
+ ]
+}

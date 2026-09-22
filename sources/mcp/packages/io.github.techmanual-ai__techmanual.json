@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.techmanual-ai/techmanual",
+ "version": "0.2.1",
+ "versionKind": "semver",
+ "description": "Search technical manuals for T&M, industrial automation, and power electronics equipment.",
+ "license": "unknown",
+ "repository": "https://github.com/techmanual-ai/techmanual.ai",
+ "target": {
+  "type": "mcp",
+  "repository": "pypi",
+  "package": "techmanual-client",
+  "url": "https://pypi.org/project/techmanual-client/",
+  "typeRef": {
+   "registryType": "pypi",
+   "identifier": "techmanual-client",
+   "registryBaseUrl": "https://pypi.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TMAI_API_KEY",
+    "TMAI_API_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.techmanual.ai/mcp/",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.techmanual-ai/techmanual",
+   "publishedAt": "2026-05-03T15:33:19.606518Z",
+   "updatedAt": "2026-05-03T15:33:19.606518Z",
+   "identityEvidence": "pypi-json"
+  }
+ },
+ "keywords": [
+  "techmanual.ai"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.keepmysubs/keepmysubs",
+ "version": "0.1.0",
+ "versionKind": "semver",
+ "description": "Manage your KeepMySubs subscriptions, spend, renewals, and bills from any MCP client.",
+ "license": "MIT",
+ "repository": "https://github.com/golts/SubsTracker",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@keepmysubs/mcp",
+  "url": "https://www.npmjs.com/package/@keepmysubs/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@keepmysubs/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "KMS_API_KEY",
+    "KMS_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://keepmysubs.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.keepmysubs/keepmysubs",
+   "publishedAt": "2026-06-11T20:57:46.318045Z",
+   "updatedAt": "2026-06-11T20:57:46.318045Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://keepmysubs.com",
+ "keywords": [
+  "KeepMySubs"
+ ]
+}

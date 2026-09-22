@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.dinosaur24/mockhero",
+ "version": "0.2.0",
+ "versionKind": "semver",
+ "description": "Generate realistic relational test data — 156 field types, 22 locales, JSON/CSV/SQL, free previews.",
+ "license": "MIT",
+ "repository": "https://github.com/dinosaur24/mockhero",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@mockherodev/mcp-server",
+  "url": "https://www.npmjs.com/package/@mockherodev/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@mockherodev/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MOCKHERO_API_BASE",
+    "MOCKHERO_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://mockhero.dev/mcp/agent",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.dinosaur24/mockhero",
+   "publishedAt": "2026-07-03T19:15:14.846301Z",
+   "updatedAt": "2026-07-03T19:15:14.846301Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://mockhero.dev/docs/mcp",
+ "keywords": [
+  "MockHero"
+ ]
+}

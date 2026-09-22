@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cammac-creator/ibanforge",
+ "version": "1.7.0",
+ "versionKind": "semver",
+ "description": "Pre-payout IBAN screening for AI agents: validation, sanctions, Swiss clearing, risk scoring",
+ "license": "MIT",
+ "repository": "https://github.com/cammac-creator/ibanforge",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "ibanforge-mcp",
+  "url": "https://www.npmjs.com/package/ibanforge-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "ibanforge-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "IBANFORGE_API_BASE",
+    "IBANFORGE_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.ibanforge.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cammac-creator/ibanforge",
+   "publishedAt": "2026-09-15T18:51:37.450053Z",
+   "updatedAt": "2026-09-15T18:51:37.450053Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://ibanforge.com?src=mcp-registry"
+}

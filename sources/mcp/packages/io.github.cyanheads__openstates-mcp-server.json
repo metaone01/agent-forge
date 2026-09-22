@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.cyanheads/openstates-mcp-server",
+ "version": "0.3.2",
+ "versionKind": "semver",
+ "description": "Search bills, legislators, committees, and events across all 50 US states, DC, and 5 US territories.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/cyanheads/openstates-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@cyanheads/openstates-mcp-server",
+  "url": "https://www.npmjs.com/package/@cyanheads/openstates-mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@cyanheads/openstates-mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_LOG_LEVEL",
+    "OPENSTATES_API_KEY",
+    "OPENSTATES_DAILY_REQUEST_BUDGET",
+    "OPENSTATES_REQUEST_TIMEOUT_MS",
+    "OPENSTATES_TOTAL_REQUEST_BUDGET_MS"
+   ],
+   "remotes": [
+    {
+     "url": "https://openstates.caseyjhand.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.cyanheads/openstates-mcp-server",
+   "publishedAt": "2026-09-20T14:21:04.435997Z",
+   "updatedAt": "2026-09-20T14:21:04.435997Z",
+   "identityEvidence": "npm-packument"
+  }
+ }
+}

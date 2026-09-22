@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.kkjdaniel/bgg-mcp",
+ "version": "1.6.1",
+ "versionKind": "semver",
+ "description": "BoardGameGeek MCP server providing access to BGG API data through standardized tools",
+ "license": "unknown",
+ "repository": "https://github.com/kkjdaniel/bgg-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "bgg-mcp",
+  "url": "https://hub.docker.com/r/kdaniel/bgg-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "docker.io/kdaniel/bgg-mcp:1.6.1",
+   "transport": "stdio",
+   "environmentVariables": [
+    "BGG_API_KEY",
+    "BGG_COOKIE",
+    "BGG_USERNAME"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.kkjdaniel/bgg-mcp",
+   "publishedAt": "2026-02-13T02:33:55.103567Z",
+   "updatedAt": "2026-02-13T02:33:55.103567Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "keywords": [
+  "BoardGameGeek MCP Server"
+ ]
+}

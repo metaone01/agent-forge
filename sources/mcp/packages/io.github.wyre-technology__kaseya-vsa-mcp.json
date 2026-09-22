@@ -1,0 +1,48 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.wyre-technology/kaseya-vsa-mcp",
+ "version": "1.1.4",
+ "versionKind": "semver",
+ "description": "MCP server for Kaseya VSA RMM — agents, patches, procedures, alarms, tickets.",
+ "license": "unknown",
+ "repository": "https://github.com/wyre-technology/kaseya-vsa-mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "oci",
+  "package": "kaseya-vsa-mcp",
+  "url": "https://hub.docker.com/r/wyre-technology/kaseya-vsa-mcp",
+  "typeRef": {
+   "registryType": "oci",
+   "identifier": "ghcr.io/wyre-technology/kaseya-vsa-mcp:v1.1.4",
+   "transport": "stdio",
+   "environmentVariables": [
+    "AUTH_MODE",
+    "KASEYA_VSA_K1_TOKEN",
+    "KASEYA_VSA_PASSWORD",
+    "KASEYA_VSA_TENANT_URL",
+    "KASEYA_VSA_USERNAME",
+    "LOG_LEVEL",
+    "MCP_TRANSPORT"
+   ]
+  },
+  "verified": false,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "broken"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.wyre-technology/kaseya-vsa-mcp",
+   "publishedAt": "2026-08-20T14:39:11.312558Z",
+   "updatedAt": "2026-08-20T14:39:11.312558Z",
+   "identityEvidence": "dockerhub-api"
+  }
+ },
+ "homepage": "https://github.com/wyre-technology/kaseya-vsa-mcp",
+ "keywords": [
+  "Kaseya VSA"
+ ]
+}

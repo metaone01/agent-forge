@@ -1,0 +1,50 @@
+{
+ "schemaVersion": 1,
+ "name": "com.guffeyholdings/token-oracle",
+ "version": "1.0.1",
+ "versionKind": "semver",
+ "description": "Hosted MCP server for LLM cost estimation, model comparison, and budget-aware routing.",
+ "license": "MIT",
+ "repository": "https://github.com/VictoryInTech/TokenOracle-MCP",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "token-oracle-mcp",
+  "url": "https://www.npmjs.com/package/token-oracle-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "token-oracle-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "TOKEN_ORACLE_API_KEY",
+    "TOKEN_ORACLE_BASE_URL",
+    "TOKEN_ORACLE_SUBJECT"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.guffeyholdings.com/TokenOracle",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.guffeyholdings/token-oracle",
+   "publishedAt": "2026-03-09T23:05:38.690376Z",
+   "updatedAt": "2026-03-09T23:05:38.690376Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "TokenOracle"
+ ]
+}

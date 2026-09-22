@@ -1,0 +1,51 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.livevariant/livevariant",
+ "version": "0.1.5",
+ "versionKind": "semver",
+ "description": "Build, inspect and read adaptive A/B tests. Config travels in the URL; no account or API key needed.",
+ "license": "AGPL-3.0",
+ "repository": "https://github.com/livevariant/livevariant",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@livevariant/mcp",
+  "url": "https://www.npmjs.com/package/@livevariant/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@livevariant/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "LIVEVARIANT_API_TOKEN",
+    "LIVEVARIANT_ASSET_UPLOAD_TOKEN",
+    "LIVEVARIANT_SERVER_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://livevariant.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.livevariant/livevariant",
+   "publishedAt": "2026-08-27T06:45:43.739609Z",
+   "updatedAt": "2026-08-27T06:45:43.739609Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://livevariant.com",
+ "keywords": [
+  "LiveVariant"
+ ]
+}

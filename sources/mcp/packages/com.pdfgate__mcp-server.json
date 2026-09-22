@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "com.pdfgate/mcp-server",
+ "version": "1.4.0",
+ "versionKind": "semver",
+ "description": "MCP server for the PDFGate API. Generate PDFs, manage documents and handle e-signatures.",
+ "license": "unknown",
+ "repository": "https://github.com/pdfgate/pdfgate-mcp-server",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@pdfgate/mcp-server",
+  "url": "https://www.npmjs.com/package/@pdfgate/mcp-server",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@pdfgate/mcp-server",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "PDFGATE_API_KEY",
+    "PDFGATE_WEBHOOK_PORT"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.pdfgate.com/server",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.pdfgate/mcp-server",
+   "publishedAt": "2026-09-20T12:43:17.314087Z",
+   "updatedAt": "2026-09-20T12:43:17.314087Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://pdfgate.com"
+}

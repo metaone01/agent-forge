@@ -1,0 +1,56 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.itcons-app/mcp",
+ "version": "0.5.1",
+ "versionKind": "semver",
+ "description": "Connect AI assistants to Itcons.app work orders, reports, projects, users, and resources.",
+ "license": "MIT",
+ "repository": "https://github.com/itcons-app/mcp",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@itcons-app/mcp",
+  "url": "https://www.npmjs.com/package/@itcons-app/mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@itcons-app/mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ITCONS_DOMAIN",
+    "ITCONS_PASSWORD",
+    "ITCONS_TIMEZONE",
+    "ITCONS_TOKEN",
+    "ITCONS_USERNAME"
+   ],
+   "remotes": [
+    {
+     "url": "https://mcp.itcons.app/mcp",
+     "type": "streamable-http"
+    },
+    {
+     "url": "https://mcp.itcons.app/sse",
+     "type": "sse"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.itcons-app/mcp",
+   "publishedAt": "2026-04-21T11:42:39.419518Z",
+   "updatedAt": "2026-04-21T11:42:39.419518Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "keywords": [
+  "Itcons.app"
+ ]
+}

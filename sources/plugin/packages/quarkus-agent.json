@@ -1,0 +1,41 @@
+{
+ "schemaVersion": 1,
+ "name": "quarkus-agent",
+ "version": "31c9b96658d9afaf09f0013ad6c75b64b0019371",
+ "versionKind": "other",
+ "description": "MCP server for AI coding agents to create, manage, and interact with Quarkus applications. Provides tools for project scaffolding, dev mode lifecycle, extension skills, Dev MCP proxy, and documentation search.",
+ "license": "Apache-2.0",
+ "repository": "https://github.com/quarkusio/quarkus-agent-mcp",
+ "target": {
+  "type": "agent-plugin",
+  "repository": "git",
+  "url": "https://github.com/quarkusio/quarkus-agent-mcp.git",
+  "typeRef": {
+   "pluginManifestPath": ".claude-plugin/plugin.json",
+   "sourceType": "git",
+   "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "supportedAgents": [
+  {
+   "name": "claude-code"
+  }
+ ],
+ "_meta": {
+  "io.github.metaone01/marketplace": {
+   "marketplace": "claude-plugins-official",
+   "category": "development",
+   "author": "Quarkus",
+   "ref": null,
+   "sha": "31c9b96658d9afaf09f0013ad6c75b64b0019371",
+   "strict": null
+  }
+ },
+ "homepage": "https://quarkus.io"
+}

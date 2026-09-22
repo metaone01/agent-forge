@@ -1,0 +1,53 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.This-Is-Hellgate/secondeye-mcp-unblock",
+ "version": "1.2.7",
+ "versionKind": "semver",
+ "description": "Workflow diagnostics, capability routing, and x402 settlement for MCP-compatible agents.",
+ "license": "MIT",
+ "repository": "https://github.com/This-Is-Hellgate/second-eyes-ai",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "@secondeyes/mcp-unblock",
+  "url": "https://www.npmjs.com/package/@secondeyes/mcp-unblock",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "@secondeyes/mcp-unblock",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "MCP_X402_ALLOW_SLUGS",
+    "MCP_X402_MAX_SPEND_USD",
+    "MCP_X402_SESSION_MAX_USD",
+    "MCP_X402_WALLET_KEY",
+    "SECOND_EYE_BASE_URL"
+   ],
+   "remotes": [
+    {
+     "url": "https://secondeyesai.com/api/bar",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.This-Is-Hellgate/secondeye-mcp-unblock",
+   "publishedAt": "2026-07-07T21:05:38.820613Z",
+   "updatedAt": "2026-07-07T21:05:38.820613Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://secondeyesai.com/api/bar",
+ "keywords": [
+  "Second Eyes Agent Workflow Services"
+ ]
+}

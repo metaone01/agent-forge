@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "io.github.themutherfvcker/adu-zoning",
+ "version": "1.0.0",
+ "versionKind": "semver",
+ "description": "Check if a Florida address can build an ADU: county GIS zoning, eligibility verdict, local rules.",
+ "license": "MIT",
+ "repository": "https://github.com/themutherfvcker/ADU-Florida",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "adu-zoning-mcp",
+  "url": "https://www.npmjs.com/package/adu-zoning-mcp",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "adu-zoning-mcp",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "ADU_API_BASE",
+    "ADU_API_KEY"
+   ],
+   "remotes": [
+    {
+     "url": "https://www.adufloridainfo.com/api/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "io.github.themutherfvcker/adu-zoning",
+   "publishedAt": "2026-07-23T05:00:52.021908Z",
+   "updatedAt": "2026-07-23T05:00:52.021908Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://www.adufloridainfo.com"
+}

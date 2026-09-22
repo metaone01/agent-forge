@@ -1,0 +1,47 @@
+{
+ "schemaVersion": 1,
+ "name": "com.skillmd/skillmd",
+ "version": "1.2.0",
+ "versionKind": "semver",
+ "description": "Search, fetch, lint, and install Agent Skills (SKILL.md) from the SkillMD registry.",
+ "license": "MIT",
+ "repository": "https://github.com/skillmds/skillmd",
+ "target": {
+  "type": "mcp",
+  "repository": "npm",
+  "package": "skillmds",
+  "url": "https://www.npmjs.com/package/skillmds",
+  "typeRef": {
+   "registryType": "npm",
+   "identifier": "skillmds",
+   "registryBaseUrl": "https://registry.npmjs.org/",
+   "transport": "stdio",
+   "environmentVariables": [
+    "SKILLMD_API",
+    "SKILLMD_TOKEN"
+   ],
+   "remotes": [
+    {
+     "url": "https://api.skillmd.com/mcp",
+     "type": "streamable-http"
+    }
+   ]
+  },
+  "verified": true,
+  "verifiedAt": "2026-09-22T09:00:00Z",
+  "linkCheck": {
+   "lastCheckedAt": "2026-09-22T09:00:00Z",
+   "lastStatus": "ok"
+  }
+ },
+ "_meta": {
+  "io.github.metaone01/registry": {
+   "source": "registry.modelcontextprotocol.io",
+   "serverName": "com.skillmd/skillmd",
+   "publishedAt": "2026-09-13T12:35:11.944526Z",
+   "updatedAt": "2026-09-13T12:35:11.944526Z",
+   "identityEvidence": "npm-packument"
+  }
+ },
+ "homepage": "https://skillmd.com"
+}
