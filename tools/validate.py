@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -68,7 +69,9 @@ def schema_registry() -> Registry:
     return Registry().with_resources(resources)
 
 
+@lru_cache(maxsize=None)
 def build_validator(schema_name: str) -> Draft202012Validator:
+    """Compile each schema once; large catalogs otherwise rebuild it per file."""
     schema = load_json(ROOT / schema_name)
     Draft202012Validator.check_schema(schema)
     return Draft202012Validator(
@@ -264,7 +267,10 @@ def validate_all() -> tuple[list[str], list[str]]:
         errors.append(f"schema validation failed: {error}")
         return errors, warnings
 
-    for source_dir in sorted((ROOT / "sources").iterdir()):
+    sources_root = ROOT / "sources"
+    if not sources_root.exists():
+        sources_root = None
+    for source_dir in sorted(sources_root.iterdir()) if sources_root else ():
         if not source_dir.is_dir():
             continue
         # Empty legacy directories are ignored; tracked source projections must

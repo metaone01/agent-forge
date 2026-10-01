@@ -1,0 +1,32 @@
+name: Queue package uploads after cooldown
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find uploads older than ten minutes
+        env:
+          GH_TOKEN: ${{ secrets.AGENT_FORGE_APP_TOKEN != '' && secrets.AGENT_FORGE_APP_TOKEN || github.token }}
+        shell: bash
+        run: |
+          cutoff=$(date -u -d '10 minutes ago' +%s)
+          gh pr list --repo "$GITHUB_REPOSITORY" --base packages --state open \
+            --label package-submission --json number,createdAt,isDraft \
+            --jq '.[] | select(.isDraft == false) | [.number, .createdAt] | @tsv' |
+          while IFS=$'\t' read -r number created_at; do
+            [ -z "$number" ] && continue
+            created=$(date -u -d "$created_at" +%s)
+            if [ "$created" -le "$cutoff" ]; then
+              echo "Requesting merge queue for PR #$number"
+              gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --auto --squash --delete-branch=false
+            fi
+          done
