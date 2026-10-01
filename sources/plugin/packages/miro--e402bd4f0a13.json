@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.miro",
+  "name": "miro",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/miroapp/miro-ai",
+    "homepage": "https://miro.com",
+    "readme": "https://github.com/miroapp/miro-ai#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/miroapp/miro-ai/tree/main/claude-plugins/miro",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "design",
+      "author": "Miro",
+      "ref": "main",
+      "sha": "c2494b24510d01ec3e50fad94a0c5fc3ca40e339",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\miro.json"
+    }
+  }
+}

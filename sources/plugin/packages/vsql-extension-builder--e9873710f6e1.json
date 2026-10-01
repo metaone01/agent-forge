@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.vsql-extension-builder",
+  "name": "vsql-extension-builder",
+  "version": "18f7d68673e2bd5d400b4ee91298e5a4b9e8d24e",
+  "versionScheme": "unknown",
+  "description": "Builds a VillageSQL extension for MySQL end-to-end through a 7-phase persona-driven workflow. Commonly used to port PostgreSQL extensions to MySQL.",
+  "license": "NOASSERTION",
+  "links": {
+    "repository": "https://github.com/villagesql/villagesql-skills",
+    "homepage": "https://villagesql.com",
+    "readme": "https://github.com/villagesql/villagesql-skills#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/villagesql/villagesql-skills.git",
+      "priority": 10
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "database",
+      "author": "VillageSQL",
+      "ref": null,
+      "sha": "18f7d68673e2bd5d400b4ee91298e5a4b9e8d24e",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\vsql-extension-builder.json"
+    }
+  }
+}

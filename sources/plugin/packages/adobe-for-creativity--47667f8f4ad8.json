@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.adobe-for-creativity",
+  "name": "adobe-for-creativity",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life — from background removal to vectorization and professional retouching.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/adobe/skills",
+    "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity",
+    "readme": "https://github.com/adobe/skills#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "design",
+      "author": "Adobe",
+      "ref": "main",
+      "sha": "304aa23dfd84aeb7b005816962d1bfb40d27750a",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\adobe-for-creativity.json"
+    }
+  }
+}

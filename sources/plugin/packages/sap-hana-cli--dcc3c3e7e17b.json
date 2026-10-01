@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.sap-hana-cli",
+  "name": "sap-hana-cli",
+  "version": "abadd0aba32792b6378ed784e9f6d3e5b25dfc2a",
+  "versionScheme": "unknown",
+  "description": "150+ SAP HANA database tools for AI assistants. Query tables, import/export data, profile data quality, compare schemas, manage backups, monitor performance, and more. Connects to SAP HANA Cloud and on-premise databases.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/SAP-samples/hana-cli-claude-plugin",
+    "homepage": "https://github.com/SAP-samples/hana-cli-claude-plugin",
+    "readme": "https://github.com/SAP-samples/hana-cli-claude-plugin#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/SAP-samples/hana-cli-claude-plugin.git",
+      "priority": 10
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "database",
+      "author": "SAP SE",
+      "ref": null,
+      "sha": "abadd0aba32792b6378ed784e9f6d3e5b25dfc2a",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\sap-hana-cli.json"
+    }
+  }
+}

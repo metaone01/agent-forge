@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.hydradns/hydra-mcp",
+  "name": "io.github.hydradns/hydra-mcp",
+  "version": "0.1.0",
+  "versionScheme": "semver",
+  "description": "Manage a self-hosted DNS firewall: block domains, create policies, read query logs and metrics.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/hydradns/hydradns",
+    "homepage": "https://github.com/hydradns/hydradns",
+    "readme": "https://github.com/hydradns/hydradns#readme"
+  },
+  "keywords": [
+    "HydraDNS"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/hydradns/hydra-cli:0.1.0",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/hydradns/hydra-cli",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.hydradns/hydra-mcp",
+      "publishedAt": "2026-09-21T04:27:23.27312Z",
+      "updatedAt": "2026-09-21T04:27:23.27312Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.hydradns__hydra-mcp.json"
+    }
+  }
+}

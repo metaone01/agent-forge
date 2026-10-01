@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.stackhawk-hawkscan",
+  "name": "stackhawk-hawkscan",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent.",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/stackhawk/agent-skills",
+    "homepage": "https://docs.stackhawk.com/ai-security/",
+    "readme": "https://github.com/stackhawk/agent-skills#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/stackhawk/agent-skills/tree/main/plugins/hawkscan",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "security",
+      "author": "StackHawk",
+      "ref": "main",
+      "sha": "66cac9baa5883a1007575faf1b22855a1124834a",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\stackhawk-hawkscan.json"
+    }
+  }
+}

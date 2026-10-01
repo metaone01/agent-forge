@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.cockroachdb",
+  "name": "cockroachdb",
+  "version": "6c96c6394a61f366e8ec1b7cec2281e97507cbff",
+  "versionScheme": "unknown",
+  "description": "Connect Claude Code directly to your CockroachDB clusters for hands-on database work — explore schemas, write optimized SQL, debug queries, and manage distributed database clusters. This plugin provides 14 tools across two active MCP backends (self-hosted MCP Toolbox and managed CockroachDB Cloud MCP Server), three specialized agents (DBA, Developer, Operator), 32 skills across 6 operational domains, and built-in safety hooks.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/cockroachdb/claude-plugin",
+    "homepage": "https://github.com/cockroachdb/claude-plugin",
+    "readme": "https://github.com/cockroachdb/claude-plugin#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/cockroachdb/claude-plugin.git",
+      "priority": 10
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "database",
+      "author": "Cockroach Labs",
+      "ref": null,
+      "sha": "6c96c6394a61f366e8ec1b7cec2281e97507cbff",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\cockroachdb.json"
+    }
+  }
+}

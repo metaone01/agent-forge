@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.greptile",
+  "name": "greptile",
+  "version": "greptile--v1.2.3",
+  "versionScheme": "unknown",
+  "description": "AI code review agent for GitHub and GitLab. View and resolve Greptile's PR review comments, run reviews on your working branch, and search your organization's knowledge base and coding patterns, directly from Claude Code.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/greptileai/claude-plugin",
+    "homepage": "https://www.greptile.com/docs/mcp-v2/overview",
+    "readme": "https://github.com/greptileai/claude-plugin#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/greptileai/claude-plugin/tree/greptile--v1.2.3/plugins/greptile",
+      "priority": 10,
+      "ref": "greptile--v1.2.3"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "development",
+      "author": "Greptile",
+      "ref": "greptile--v1.2.3",
+      "sha": "6b725af2636072cab79e0a5426f6a960b0fd29ef",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\greptile.json"
+    }
+  }
+}

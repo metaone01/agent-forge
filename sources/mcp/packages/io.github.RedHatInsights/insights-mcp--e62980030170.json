@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.RedHatInsights/insights-mcp",
+  "name": "io.github.RedHatInsights/insights-mcp",
+  "version": "1.0.63+89b3ef05",
+  "versionScheme": "semver",
+  "description": "Model Context Protocol server for Red Hat Lightspeed - advisor, image builder, inventory, and more",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/RedHatInsights/insights-mcp",
+    "readme": "https://github.com/RedHatInsights/insights-mcp#readme"
+  },
+  "keywords": [
+    "Red Hat Lightspeed MCP"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/redhatinsights/red-hat-lightspeed-mcp",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/redhatinsights/red-hat-lightspeed-mcp",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.RedHatInsights/insights-mcp",
+      "publishedAt": "2026-09-22T08:27:53.169657Z",
+      "updatedAt": "2026-09-22T08:27:53.169657Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.redhatinsights__insights-mcp.json"
+    }
+  }
+}

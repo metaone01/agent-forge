@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.skyhook-io/radar",
+  "name": "io.github.skyhook-io/radar",
+  "version": "1.14.1",
+  "versionScheme": "semver",
+  "description": "Kubernetes MCP server for diagnosis, resource management, GitOps, and RBAC-enforced operations.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/skyhook-io/radar",
+    "homepage": "https://radarhq.io/product/mcp",
+    "readme": "https://github.com/skyhook-io/radar#readme"
+  },
+  "keywords": [
+    "Radar Kubernetes MCP Server"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/skyhook-io/radar:1.14.1",
+    "transport": "streamable-http"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/skyhook-io/radar",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.skyhook-io/radar",
+      "publishedAt": "2026-09-17T14:31:41.210459Z",
+      "updatedAt": "2026-09-17T14:31:41.210459Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.skyhook-io__radar.json"
+    }
+  }
+}

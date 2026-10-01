@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.aws-startup-advisor",
+  "name": "aws-startup-advisor",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Personalized architecture, cost, security, and migration guidance for startups. From day-one account setup and security baselines to production-ready infrastructure, cost optimization, and beyond. Includes AWS Activate Credits eligibility, 60+ exclusive startup offers, and multi-account multi-region support. Built on expertise from AWS Startup Solutions Architects and patterns from 350,000+ startups.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/awslabs/startups",
+    "homepage": "https://github.com/awslabs/startups",
+    "readme": "https://github.com/awslabs/startups#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/awslabs/startups/tree/main/advisor/plugins/aws-startup-advisor",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "development",
+      "author": "Amazon Web Services",
+      "ref": "main",
+      "sha": "dd7096bd634649bc89b6511d61cff16f58623284",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\aws-startup-advisor.json"
+    }
+  }
+}

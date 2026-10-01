@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.preset-cli-skills",
+  "name": "preset-cli-skills",
+  "version": "master",
+  "versionScheme": "unknown",
+  "description": "Preset CLI skills for explicit shell, scripting, and CI/CD workflows driven by the `sup` CLI (PyPI package `superset-sup`). Use only for CLI workflows; do not use for MCP-only work or as a substitute for direct API calls when the user wants HTTP/SDK code.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/preset-io/agent-skills",
+    "homepage": "https://www.preset.io",
+    "readme": "https://github.com/preset-io/agent-skills#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/preset-io/agent-skills/tree/master/plugins/preset-cli-skills",
+      "priority": 10,
+      "ref": "master"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "development",
+      "author": "Preset",
+      "ref": "master",
+      "sha": "8387ac0f0538271c79a2e227c7ddec084e8a5da3",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\preset-cli-skills.json"
+    }
+  }
+}

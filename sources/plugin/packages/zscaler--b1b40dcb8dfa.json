@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.zscaler",
+  "name": "zscaler",
+  "version": "809f68d6c921e0829fb2e07e9b797e7e70cf720b",
+  "versionScheme": "unknown",
+  "description": "Manage Zscaler cloud security platform including ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), EASM (attack surface), and Z-Insights (analytics). Create and manage policies, troubleshoot connectivity, audit security configurations, and investigate incidents across the full Zscaler ecosystem.",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/zscaler/zscaler-mcp-server",
+    "homepage": "https://github.com/zscaler/zscaler-mcp-server",
+    "readme": "https://github.com/zscaler/zscaler-mcp-server#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/zscaler/zscaler-mcp-server.git",
+      "priority": 10
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "security",
+      "author": "Zscaler",
+      "ref": null,
+      "sha": "809f68d6c921e0829fb2e07e9b797e7e70cf720b",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\zscaler.json"
+    }
+  }
+}

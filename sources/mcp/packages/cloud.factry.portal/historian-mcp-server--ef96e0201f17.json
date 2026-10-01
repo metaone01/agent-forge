@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.factry.portal/historian-mcp-server",
+  "name": "cloud.factry.portal/historian-mcp-server",
+  "version": "0.0.6",
+  "versionScheme": "semver",
+  "description": "MCP server for querying Factry Historian.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://hub.docker.com/v2/repositories/factry/mcp-server/"
+  },
+  "keywords": [
+    "Factry Historian MCP"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/factry/mcp-server:0.0.6",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/v2/repositories/factry/mcp-server/",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "cloud.factry.portal/historian-mcp-server",
+      "publishedAt": "2026-09-08T08:14:19.207112Z",
+      "updatedAt": "2026-09-08T08:14:19.207112Z",
+      "identityEvidence": "url"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\cloud.factry.portal__historian-mcp-server.json"
+    }
+  }
+}

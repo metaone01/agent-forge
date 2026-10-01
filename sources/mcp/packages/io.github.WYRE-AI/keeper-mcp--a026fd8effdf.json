@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.WYRE-AI/keeper-mcp",
+  "name": "io.github.WYRE-AI/keeper-mcp",
+  "version": "1.0.3",
+  "versionScheme": "semver",
+  "description": "Read-only multitenant Streamable HTTP bridge over Keeper Secrets Manager's MCP server.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/WYRE-AI/keeper-mcp",
+    "homepage": "https://github.com/WYRE-AI/keeper-mcp",
+    "readme": "https://github.com/WYRE-AI/keeper-mcp#readme"
+  },
+  "keywords": [
+    "Keeper Secrets Manager"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-ai/keeper-mcp:v1.0.3",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/wyre-ai/keeper-mcp",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.WYRE-AI/keeper-mcp",
+      "publishedAt": "2026-09-21T20:42:08.876431Z",
+      "updatedAt": "2026-09-21T20:42:08.876431Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.wyre-ai__keeper-mcp.json"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pascalallen/pgmcp",
+  "name": "io.github.pascalallen/pgmcp",
+  "version": "1.1.0",
+  "versionScheme": "semver",
+  "description": "Read-only Postgres ops/DBA diagnostics: slow queries, EXPLAIN, locks, index and table health.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/pascalallen/pgmcp",
+    "homepage": "https://github.com/pascalallen/pgmcp",
+    "readme": "https://github.com/pascalallen/pgmcp#readme"
+  },
+  "keywords": [
+    "pgmcp"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/pascalallen/pgmcp:1.1.0",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/pascalallen/pgmcp",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.pascalallen/pgmcp",
+      "publishedAt": "2026-08-20T19:02:27.150786Z",
+      "updatedAt": "2026-08-20T19:02:27.150786Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.pascalallen__pgmcp.json"
+    }
+  }
+}

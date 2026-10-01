@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.PromptExecution/just-mcp",
+  "name": "io.github.PromptExecution/just-mcp",
+  "version": "0.1.5",
+  "versionScheme": "semver",
+  "description": "Expose curated Justfile recipes via MCP for safe deterministic automation.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/PromptExecution/just-mcp",
+    "readme": "https://github.com/PromptExecution/just-mcp#readme"
+  },
+  "keywords": [
+    "Just MCP Server"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/promptexecution/just-mcp:0.1.5",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/promptexecution/just-mcp",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.PromptExecution/just-mcp",
+      "publishedAt": "2025-11-15T10:16:34.699806Z",
+      "updatedAt": "2025-11-15T10:16:34.699806Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.promptexecution__just-mcp.json"
+    }
+  }
+}

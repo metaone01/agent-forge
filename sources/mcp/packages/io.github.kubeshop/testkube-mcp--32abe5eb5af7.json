@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.kubeshop/testkube-mcp",
+  "name": "io.github.kubeshop/testkube-mcp",
+  "version": "2.9.1",
+  "versionScheme": "semver",
+  "description": "MCP server for Testkube - Manage test workflows, executions, and artifacts via AI assistants",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/kubeshop/testkube",
+    "readme": "https://github.com/kubeshop/testkube#readme"
+  },
+  "keywords": [],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/kubeshop/mcp-server:2.9.1",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/kubeshop/mcp-server",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.kubeshop/testkube-mcp",
+      "publishedAt": "2026-04-24T08:35:31.489242Z",
+      "updatedAt": "2026-04-24T08:35:31.489242Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.kubeshop__testkube-mcp.json"
+    }
+  }
+}

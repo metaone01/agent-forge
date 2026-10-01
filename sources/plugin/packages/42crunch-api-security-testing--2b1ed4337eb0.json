@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.42crunch-api-security-testing",
+  "name": "42crunch-api-security-testing",
+  "version": "v1.5.5",
+  "versionScheme": "unknown",
+  "description": "Automate API security directly in Claude Code with 42Crunch - automatically audit OpenAPI specs, detect vulnerabilities aligned with OWASP API Security risks (including BOLA/BFLA), and apply AI-powered fixes. Designed for AI-assisted development workflows, it provides continuous guardrails through an audit->scan->remediate->validate loop, ensuring APIs meet enterprise security standards before deployment.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/42Crunch-AI/claude-plugins",
+    "homepage": "https://42crunch.com",
+    "readme": "https://github.com/42Crunch-AI/claude-plugins#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/42Crunch-AI/claude-plugins/tree/v1.5.5/plugins/api-security-testing",
+      "priority": 10,
+      "ref": "v1.5.5"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "security",
+      "author": "42Crunch",
+      "ref": "v1.5.5",
+      "sha": "30287f5e3f122a646d1ac5ca3ab96e130c52a3ad",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\42crunch-api-security-testing.json"
+    }
+  }
+}

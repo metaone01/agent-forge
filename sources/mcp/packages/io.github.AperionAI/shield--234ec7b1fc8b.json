@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AperionAI/shield",
+  "name": "io.github.AperionAI/shield",
+  "version": "1.0.1",
+  "versionScheme": "semver",
+  "description": "Local guardrail proxy that blocks destructive MCP tool calls, rug pulls, and tool poisoning",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/AperionAI/shield",
+    "homepage": "https://docs.aperion.ai/aperion-shield.html",
+    "readme": "https://github.com/AperionAI/shield#readme"
+  },
+  "keywords": [
+    "Aperion Shield"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/aperionai/shield:shield-v1.0.1",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/aperionai/shield",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "io.github.AperionAI/shield",
+      "publishedAt": "2026-06-11T16:32:58.805674Z",
+      "updatedAt": "2026-06-11T16:32:58.805674Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\io.github.aperionai__shield.json"
+    }
+  }
+}

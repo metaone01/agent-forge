@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.mcp-apps",
+  "name": "mcp-apps",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Skills for creating MCP Apps with the MCP Apps SDK",
+  "license": "NOASSERTION",
+  "links": {
+    "repository": "https://github.com/modelcontextprotocol/ext-apps",
+    "homepage": "https://modelcontextprotocol.io",
+    "readme": "https://github.com/modelcontextprotocol/ext-apps#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/modelcontextprotocol/ext-apps/tree/main/plugins/mcp-apps",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "development",
+      "author": "Anthropic / Model Context Protocol",
+      "ref": "main",
+      "sha": "352f6ced4d80772e92b4e7a311854481a8d65b04",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\mcp-apps.json"
+    }
+  }
+}

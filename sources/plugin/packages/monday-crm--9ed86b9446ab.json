@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.monday-crm",
+  "name": "monday-crm",
+  "version": "master",
+  "versionScheme": "unknown",
+  "description": "Run your monday CRM in plain language. Build a pipeline from scratch, start the day with a ranked deal briefing, spin up a forecast dashboard, audit board health, clean up messy data in bulk, and turn meeting notes into deal updates. Every skill writes back into monday as a real update, doc, or dashboard. Built on the official monday MCP connector.",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/mondaycom/mcp",
+    "homepage": "https://monday.com",
+    "readme": "https://github.com/mondaycom/mcp#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/mondaycom/mcp/tree/master/plugins/monday-crm",
+      "priority": 10,
+      "ref": "master"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "productivity",
+      "author": "monday.com",
+      "ref": "master",
+      "sha": "5eb0835e921de42ba603d7a8315ab4a2575a46b2",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\monday-crm.json"
+    }
+  }
+}

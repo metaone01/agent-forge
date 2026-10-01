@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.snowflake-cortex-code",
+  "name": "snowflake-cortex-code",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Automatically route Snowflake prompts from Claude Code to Cortex Code for execution. Provides slash commands for code review and task delegation, plus skills for routing, run, and setup.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/Snowflake-Labs/snowflake-ai-kit",
+    "homepage": "https://docs.snowflake.com/en/user-guide/cortex-code",
+    "readme": "https://github.com/Snowflake-Labs/snowflake-ai-kit#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/Snowflake-Labs/snowflake-ai-kit/tree/main/plugins/cortex-code",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "development",
+      "author": "Snowflake",
+      "ref": "main",
+      "sha": "0c54225ea50b44c2ae07e1f378bf401e88b33c33",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\snowflake-cortex-code.json"
+    }
+  }
+}

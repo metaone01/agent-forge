@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.arcadedb/mcp-server",
+  "name": "com.arcadedb/mcp-server",
+  "version": "26.4.1-SNAPSHOT",
+  "versionScheme": "semver",
+  "description": "Built-in MCP server for ArcadeDB multi-model database (graph, document, vector, time-series)",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/ArcadeData/arcadedb",
+    "readme": "https://github.com/ArcadeData/arcadedb#readme"
+  },
+  "keywords": [
+    "ArcadeDB MCP Server"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/arcadedata/arcadedb:26.4.1-SNAPSHOT",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://hub.docker.com/r/arcadedata/arcadedb",
+      "priority": 10,
+      "registry": "oci"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "com.arcadedb/mcp-server",
+      "publishedAt": "2026-03-10T16:22:56.207278Z",
+      "updatedAt": "2026-03-10T16:22:56.207278Z",
+      "identityEvidence": "dockerhub-api"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\com.arcadedb__mcp-server.json"
+    }
+  }
+}

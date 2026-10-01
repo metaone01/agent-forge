@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.sentry-cli",
+  "name": "sentry-cli",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Skills for using the Sentry CLI to interact with Sentry from the command line",
+  "license": "NOASSERTION",
+  "links": {
+    "repository": "https://github.com/getsentry/cli",
+    "homepage": "https://sentry.io",
+    "readme": "https://github.com/getsentry/cli#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/getsentry/cli/tree/main/packages/cli/plugins/sentry-cli",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "monitoring",
+      "author": "Sentry",
+      "ref": "main",
+      "sha": "936c2cdc2ac13978ca9a843b24a0583e9309af8e",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\sentry-cli.json"
+    }
+  }
+}

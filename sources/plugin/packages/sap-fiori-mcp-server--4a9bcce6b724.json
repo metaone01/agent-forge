@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.sap-fiori-mcp-server",
+  "name": "sap-fiori-mcp-server",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "MCP server for SAP Fiori development tools for Claude Code. Build and modify SAP Fiori applications with AI assistance.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/SAP/open-ux-tools",
+    "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
+    "readme": "https://github.com/SAP/open-ux-tools#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "development",
+      "author": "SAP SE",
+      "ref": "main",
+      "sha": "31c1263fb76e1737dcb0a6d163c967d8f8126ddd",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\sap-fiori-mcp-server.json"
+    }
+  }
+}

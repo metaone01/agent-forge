@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.microsoft/microsoft-fabric",
+  "name": "com.microsoft/microsoft-fabric",
+  "version": "1.4.0",
+  "versionScheme": "semver",
+  "description": "MCP tools for interacting with Microsoft Fabric",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/microsoft/mcp",
+    "homepage": "https://github.com/microsoft/mcp/tree/main/servers/Fabric.Mcp.Server",
+    "readme": "https://github.com/microsoft/mcp#readme"
+  },
+  "keywords": [
+    "Microsoft Fabric MCP Server"
+  ],
+  "type": "mcp",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "Microsoft.Fabric.Mcp",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "registry",
+      "url": "https://www.nuget.org/packages/Microsoft.Fabric.Mcp",
+      "priority": 10,
+      "registry": "nuget"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/registry": {
+      "source": "registry.modelcontextprotocol.io",
+      "serverName": "com.microsoft/microsoft-fabric",
+      "publishedAt": "2026-08-27T12:28:37.508743Z",
+      "updatedAt": "2026-08-27T12:28:37.508743Z",
+      "identityEvidence": "nuget-flatcontainer"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\mcp\\packages\\com.microsoft__microsoft-fabric.json"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.aws-amplify",
+  "name": "aws-amplify",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Build full-stack apps with AWS Amplify Gen 2 using guided workflows for authentication, data models, storage, GraphQL APIs, and Lambda functions.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/awslabs/agent-plugins",
+    "homepage": "https://github.com/awslabs/agent-plugins",
+    "readme": "https://github.com/awslabs/agent-plugins#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/awslabs/agent-plugins/tree/main/plugins/aws-amplify",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "development",
+      "author": null,
+      "ref": "main",
+      "sha": "c65ee436b0db77bb75d380aef6fbdc9b114edf2a",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\aws-amplify.json"
+    }
+  }
+}

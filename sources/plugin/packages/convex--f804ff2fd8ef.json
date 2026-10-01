@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.convex",
+  "name": "convex",
+  "version": "6ca54f6e2e7582812187b8a5a4783fb4dff52692",
+  "versionScheme": "unknown",
+  "description": "Official Convex plugin for Claude Code with bundled Convex skills, the convex-expert subagent for code-writing, a runtime-error monitor, and MCP access for backend development, schema design, real-time features, auth, file storage, scheduled jobs, and AI agents.",
+  "license": "unknown",
+  "links": {
+    "repository": "https://github.com/get-convex/convex-backend-skill",
+    "homepage": "https://github.com/get-convex/convex-backend-skill",
+    "readme": "https://github.com/get-convex/convex-backend-skill#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/get-convex/convex-backend-skill.git",
+      "priority": 10
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "database",
+      "author": "Convex",
+      "ref": null,
+      "sha": "6ca54f6e2e7582812187b8a5a4783fb4dff52692",
+      "strict": null,
+      "displayName": "Convex"
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\convex.json"
+    }
+  }
+}

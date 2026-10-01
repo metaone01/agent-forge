@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.redis-development",
+  "name": "redis-development",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "Redis development best practices — data structures, query engine, vector search, caching, and performance optimization",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/redis/agent-skills",
+    "homepage": "https://redis.io",
+    "readme": "https://github.com/redis/agent-skills#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/redis/agent-skills/tree/main/plugins/redis-development",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "database",
+      "author": "Redis",
+      "ref": "main",
+      "sha": "172fb9effa139cd7432ac29a9ee81c45943e5a28",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\redis-development.json"
+    }
+  }
+}

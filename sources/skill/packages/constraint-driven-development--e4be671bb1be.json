@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.constraint-driven-development",
+  "name": "constraint-driven-development",
+  "version": "dc27a9c2e137",
+  "versionScheme": "unknown",
+  "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar — new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when the user wants dimensions they care about — accessibility, web performance, coverage — set up as enforced constraints, when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/addyosmani/agent-skills",
+    "readme": "https://github.com/addyosmani/agent-skills#readme"
+  },
+  "keywords": [],
+  "type": "skill",
+  "skillDetails": {
+    "skillPath": "skills/constraint-driven-development/SKILL.md"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/addyosmani/agent-skills/tree/dc27a9c2e13721158157632de61b4106c6c2a2a1/skills/constraint-driven-development",
+      "priority": 10
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/skill": {
+      "upstreamName": "constraint-driven-development",
+      "repo": "addyosmani/agent-skills",
+      "repoStars": 98288,
+      "repoTopics": [
+        "agent-skills",
+        "antigravity",
+        "claude-code",
+        "codex",
+        "cursor",
+        "skills"
+      ],
+      "branch": "main",
+      "commit": "dc27a9c2e13721158157632de61b4106c6c2a2a1",
+      "path": "skills/constraint-driven-development/SKILL.md",
+      "requires": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\skill\\packages\\constraint-driven-development.json"
+    }
+  }
+}

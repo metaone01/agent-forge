@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.grafana-mcp",
+  "name": "grafana-mcp",
+  "version": "main",
+  "versionScheme": "unknown",
+  "description": "MCP server for AI-assisted Grafana dashboard, datasource, alerting, and incident management.",
+  "license": "Apache-2.0",
+  "links": {
+    "repository": "https://github.com/grafana/ai-marketplace",
+    "homepage": "https://grafana.com",
+    "readme": "https://github.com/grafana/ai-marketplace#readme"
+  },
+  "keywords": [],
+  "type": "plugin",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git",
+    "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
+      "status": "active"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "upstream",
+      "type": "git",
+      "url": "https://github.com/grafana/ai-marketplace/tree/main/plugins/grafana-mcp",
+      "priority": 10,
+      "ref": "main"
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-09-22T09:00:00Z",
+  "publishedAt": "2026-09-22T09:00:00Z",
+  "_meta": {
+    "io.github.metaone01/marketplace": {
+      "marketplace": "claude-plugins-official",
+      "category": "monitoring",
+      "author": "Grafana",
+      "ref": "main",
+      "sha": "a5c72f2d74c640e9675eb0249526447968535015",
+      "strict": null
+    },
+    "org.agentforge/migration": {
+      "sourceSchemaVersion": 1,
+      "collectedAt": "2026-09-22T09:00:00Z",
+      "legacyPath": "sources\\plugin\\packages\\grafana-mcp.json"
+    }
+  }
+}
