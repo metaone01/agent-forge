@@ -1,8 +1,9 @@
 # Resource collection report
 
-This document records what was collected into the four independent Agent Forge
-sources, from which public upstream, and how each record was verified. It is an
-operational note; the published contract is the JSON under `sources/`.
+This document records the provenance of the initial metadata migration. Agent
+Forge integrates metadata only: it does not execute packages, audit sources, or
+guarantee availability, security, licensing, or compatibility. The published
+contract is the JSON under `sources/`.
 
 Collected at `2026-09-22T09:00:00Z`.
 
@@ -13,7 +14,7 @@ Collected at `2026-09-22T09:00:00Z`.
 | `agent-forge[mcp]` | MCP official registry (`registry.modelcontextprotocol.io/v0/servers`) | 14,662 | 34,802 latest records |
 | `agent-forge[plugin]` | Claude official plugin marketplace (`anthropics/claude-plugins-official`) | 310 | 310 marketplace entries |
 | `agent-forge[skill]` | `SKILL.md` files across public repositories | 925 | 925 enumerated skills |
-| `agent-forge[other]` | Curated public agent projects on GitHub | 30 | 30 candidates |
+| `agent-forge[general]` | Curated public agent projects on GitHub | 30 | 30 candidates |
 
 ## MCP servers
 
@@ -27,13 +28,10 @@ into 34,802 `latest` records. Coverage of that universe:
   requires `registryType` + `identifier`; they are therefore out of scope for this
   source and are counted here rather than silently dropped.
 
-Per-package identity and license were probed against the declared registry:
-npm packument, PyPI JSON, crates.io, NuGet, and OCI/MCPB metadata. Registry
-`server.json` carries no `license` field (0/34,802), so every license value comes
-from the distribution registry probe. Where a probe did not resolve, the record
-keeps `license: "unknown"` and `target.verified: false` with the observed
-`linkCheck.lastStatus` (1,283 records: 1,168 network errors, 89 HTTP 404, 26
-timeouts).
+These counts describe the archived collection only. The migration retained
+declared links and license strings as metadata and did not re-query registries.
+Unknown values remain unknown; no migrated v2 record is a source-verification
+claim.
 
 Registry types emitted: npm 9,401; pypi 3,736; mcpb 732; oci 640; nuget 105;
 cargo 48.
@@ -43,8 +41,8 @@ cargo 48.
 Built from the official Claude plugin marketplace manifest (310 entries).
 Source kinds: `url` 161, `git-subdir` 97, local string 52. The pinned revision is
 the entry `ref` (96) or commit `sha` (258) where present; 14 carry an explicit
-`version`. Repository licenses were resolved from each plugin's upstream GitHub
-repository (197 of 223 distinct repos resolved; 79 records remain `unknown`).
+`version`. Repository links and declared license values were retained as
+unverified metadata.
 
 ## Agent skills
 
@@ -64,7 +62,6 @@ a candidate that does not resolve is skipped rather than invented.
 
 ## Verification semantics
 
-`target.verified` means the publication-time check succeeded (a registry contained
-the identifier, or the URL was reachable). `target.verifiedAt` records when.
-`target.linkCheck` records the observed reachability. None of these fields imply a
-security review; see the consumer statement in `README.md`.
+The v1 `verified`, `verifiedAt`, and `linkCheck` fields were intentionally removed
+during migration. A record's presence means only that it was integrated into this
+catalog; consumers must independently inspect and validate every distribution.
