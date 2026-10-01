@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "id": "dsh.mcp.modelcontextprotocol.memory",
+  "name": "memory-mcp",
+  "displayName": "Model Context Protocol Memory Server",
+  "version": "main",
+  "versionScheme": "custom",
+  "description": "Official Model Context Protocol server providing a knowledge-graph-based persistent memory store.",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/modelcontextprotocol/servers",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+    "readme": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+    "license": "https://github.com/modelcontextprotocol/servers/blob/main/LICENSE"
+  },
+  "keywords": [
+    "mcp",
+    "memory",
+    "knowledge-graph",
+    "persistence"
+  ],
+  "type": "mcp",
+  "subtype": "local",
+  "mcpDetails": {
+    "registryType": "git",
+    "identifier": "modelcontextprotocol/servers/src/memory",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The upstream record describes a generic MCP server; no parseable DSH compatibility range was found. Treat this as an unverified DSH projection.",
+      "status": "experimental"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "github-source",
+      "type": "git",
+      "url": "https://github.com/modelcontextprotocol/servers.git",
+      "ref": "main",
+      "priority": 10,
+      "install": {
+        "type": "url",
+        "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory"
+      },
+      "notes": "Source tree entry; no immutable release version was recorded in this catalog entry."
+    }
+  ],
+  "facets": {
+    "capabilities": [
+      "memory.store",
+      "memory.recall",
+      "knowledge-graph"
+    ],
+    "effects": [
+      "persistent-state.write"
+    ],
+    "permissions": [
+      "filesystem.local-data"
+    ],
+    "runtime": [
+      "stdio",
+      "local-process"
+    ],
+    "integrations": [
+      "mcp-host"
+    ]
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "updatedAt": "2026-09-30T00:00:00Z"
+}

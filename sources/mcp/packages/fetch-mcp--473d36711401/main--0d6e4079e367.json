@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "id": "dsh.mcp.modelcontextprotocol.fetch",
+  "name": "fetch-mcp",
+  "displayName": "Model Context Protocol Fetch Server",
+  "version": "main",
+  "versionScheme": "custom",
+  "description": "Official Model Context Protocol server for retrieving web content and converting it to model-readable text.",
+  "license": "MIT",
+  "links": {
+    "repository": "https://github.com/modelcontextprotocol/servers",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+    "readme": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+    "license": "https://github.com/modelcontextprotocol/servers/blob/main/LICENSE"
+  },
+  "keywords": [
+    "mcp",
+    "web",
+    "fetch",
+    "markdown"
+  ],
+  "type": "mcp",
+  "subtype": "remote",
+  "mcpDetails": {
+    "registryType": "git",
+    "identifier": "modelcontextprotocol/servers/src/fetch",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "The upstream record describes a generic MCP server; no parseable DSH compatibility range was found. Treat this as an unverified DSH projection.",
+      "status": "experimental"
+    }
+  ],
+  "distributions": [
+    {
+      "id": "github-source",
+      "type": "git",
+      "url": "https://github.com/modelcontextprotocol/servers.git",
+      "ref": "main",
+      "priority": 10,
+      "install": {
+        "type": "url",
+        "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch"
+      },
+      "notes": "Source tree entry; no immutable release version was recorded in this catalog entry."
+    }
+  ],
+  "facets": {
+    "capabilities": [
+      "web.fetch",
+      "content.extract"
+    ],
+    "effects": [
+      "network.request"
+    ],
+    "permissions": [
+      "network.outbound"
+    ],
+    "runtime": [
+      "stdio",
+      "network"
+    ],
+    "integrations": [
+      "mcp-host"
+    ]
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "updatedAt": "2026-09-30T00:00:00Z"
+}
