@@ -118,7 +118,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REVISION: ${{ needs.generate.outputs.revision }}
         run: |
-          gh release create "catalog-${REVISION}" agent-forge-${REVISION}.tar.gz release-assets/*.db.zst \
+          gh release create --repo "${GITHUB_REPOSITORY}" "catalog-${REVISION}" agent-forge-${REVISION}.tar.gz release-assets/*.db.zst \
             --target main \
             --title "Catalog ${REVISION}" \
             --notes "Generated Agent Forge metadata projection. Metadata is integrated but not source-verified."
