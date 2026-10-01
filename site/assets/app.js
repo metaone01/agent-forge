@@ -4,6 +4,7 @@
 
   const page = document.body.dataset.page || "catalog";
   const base = new URL(page === "dashboard" ? "../" : page === "agent-dashboard" ? "../../" : "./", document.baseURI);
+  const dataBase = new URL("data/", base);
   const dataUrl = (path) => new URL(`data/${path}`.replace(/^data\/data\//, "data/"), base).href;
   const types = ["mcp", "plugin", "skill", "general", "bundle"];
   const colors = { mcp: "#0e766e", plugin: "#4876a7", skill: "#c87927", general: "#8667a9", bundle: "#53656a" };
@@ -30,6 +31,12 @@
   }
   function number(value) { return Number(value || 0).toLocaleString("zh-CN"); }
   function pathFor(path) { return /^https?:\/\//i.test(path) ? path : new URL(path.replace(/^\//, ""), base).href; }
+  // Manifest source paths are relative to the generated data directory, not the page root.
+  function dataPathFor(path) {
+    if (/^https?:\/\//i.test(path)) return path;
+    const normalized = String(path).replace(/^\/+/, "");
+    return new URL(normalized, normalized.startsWith("data/") ? base : dataBase).href;
+  }
   function safeHref(value) {
     try {
       const parsed = new URL(String(value || ""), base);
@@ -83,7 +90,7 @@
     const manifest = await loadManifest();
     const paths = indexCandidates(manifest);
     const loaded = await Promise.all(paths.map(async (path) => {
-      const absolute = /^https?:\/\//i.test(path) ? path : pathFor(path);
+      const absolute = dataPathFor(path);
       return normalizeIndex(await getJSON(absolute, true), absolute);
     }));
     state.entries = loaded.flat();
