@@ -13,9 +13,18 @@ jobs:
   queue:
     runs-on: ubuntu-latest
     steps:
+      - name: Create short-lived GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.AGENT_FORGE_APP_ID }}
+          private-key: ${{ secrets.AGENT_FORGE_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: agent-forge
+
       - name: Find uploads older than ten minutes
         env:
-          GH_TOKEN: ${{ secrets.AGENT_FORGE_APP_TOKEN != '' && secrets.AGENT_FORGE_APP_TOKEN || github.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         shell: bash
         run: |
           cutoff=$(date -u -d '10 minutes ago' +%s)
