@@ -1,0 +1,31 @@
+name: Submit package metadata
+description: Propose one Agent Forge package-version metadata record.
+title: "[package] "
+labels:
+  - package-submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Agent Forge only integrates metadata. It does not inspect, execute, or guarantee upstream content.
+        Paste one complete Schema v2 package record below. The automation will open a Pull Request for review.
+  - type: textarea
+    id: package_json
+    attributes:
+      label: Canonical package JSON
+      description: Use the package.schema.json v2 shape. Include targets and distributions for non-Bundle records.
+      placeholder: |
+        {
+          "schemaVersion": 2,
+          "id": "dsh.example.tool",
+          "name": "example-tool"
+        }
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Submission notes
+      description: Explain the public source links and any unknown compatibility ranges.
+    validations:
+      required: true

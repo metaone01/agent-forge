@@ -1,0 +1,136 @@
+name: Publish Agent Forge catalog revision
+
+on:
+  schedule:
+    - cron: '0 0,8,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: catalog-release
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    outputs:
+      revision: ${{ steps.revision.outputs.value }}
+      changed: ${{ steps.changes.outputs.changed }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e117569ac945acfbc318c1a823d3d4f7f1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          version: latest-known
+          enable-cache: true
+
+      - name: Validate canonical metadata
+        run: uv run --with jsonschema --with referencing python tools/validate.py --all
+
+      - name: Calculate UTC revision
+        id: revision
+        shell: bash
+        run: echo "value=$(date -u +%Y%m%dT%H%M%SZ)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate projections with ten-minute cutoff
+        run: uv run --with jsonschema --with referencing python tools/project.py --clean --revision "${{ steps.revision.outputs.value }}"
+
+      - name: Detect catalog changes
+        id: changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          # Generated Pages data is intentionally not committed. Compare the
+          # canonical source tree with the last immutable catalog tag instead.
+          # This keeps an unchanged scheduled point from creating a release.
+          last_tag=$(gh release list --limit 20 --json tagName --jq '[.[] | select(.tagName | startswith("catalog-"))][0].tagName' || true)
+          if [ -z "$last_tag" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff --quiet "$last_tag"..HEAD -- sources; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pack static catalog snapshot
+        shell: bash
+        run: tar -czf "agent-forge-${{ steps.revision.outputs.value }}.tar.gz" -C data .
+
+      - name: Build optional SQLite FTS snapshots
+        run: uv run --with jsonschema --with referencing python tools/snapshot.py --data data --output snapshots
+
+      - name: Compress timestamped SQLite assets
+        shell: bash
+        env:
+          REVISION: ${{ steps.revision.outputs.value }}
+        run: |
+          mkdir -p release-assets
+          while IFS= read -r db; do
+            relative="${db#snapshots/}"
+            agent="${relative%%/*}"
+            type="${relative#*/}"
+            type="${type%.db}"
+            zstd --quiet --force --ultra -19 "$db" -o "release-assets/${agent}-${type}-${REVISION}.db.zst"
+          done < <(find snapshots -type f -name '*.db' | sort)
+
+      - name: Assemble GitHub Pages site
+        shell: bash
+        run: |
+          rm -rf pages-staging
+          cp -R site pages-staging
+          rm -rf pages-staging/data
+          cp -R data pages-staging/data
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages-staging
+
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-release
+          path: |
+            agent-forge-${{ steps.revision.outputs.value }}.tar.gz
+            release-assets/*.db.zst
+
+  release:
+    needs: generate
+    if: needs.generate.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download catalog snapshot
+        uses: actions/download-artifact@v4
+        with:
+          name: catalog-release
+
+      - name: Create immutable GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVISION: ${{ needs.generate.outputs.revision }}
+        run: |
+          gh release create "catalog-${REVISION}" agent-forge-${REVISION}.tar.gz release-assets/*.db.zst \
+            --target main \
+            --title "Catalog ${REVISION}" \
+            --notes "Generated Agent Forge metadata projection. Metadata is integrated but not source-verified."
+
+  pages:
+    needs: generate
+    if: needs.generate.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

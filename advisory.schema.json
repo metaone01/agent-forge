@@ -1,67 +1,45 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://metaone01.github.io/agent-forge/advisory.schema.json",
-  "title": "Security Advisory Record",
+  "title": "Agent Forge Advisory Snapshot",
+  "description": "A third-party advisory snapshot associated with Agent Forge metadata. It is not a detection result or a safety guarantee.",
   "type": "object",
   "required": ["schemaVersion", "id", "source", "asOf", "disclaimer"],
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": { "type": "integer", "minimum": 1 },
-    "id": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Prefer a globally recognizable identifier such as GHSA-, CVE-, OSV-, or a source-defined stable identifier."
-    },
-    "aliases": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
-    },
-    "source": { "type": "string" },
+    "schemaVersion": { "type": "integer", "const": 2 },
+    "id": { "type": "string", "minLength": 1, "description": "Stable identifier such as GHSA-, CVE-, OSV-, or a source-defined identifier." },
+    "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "source": { "type": "string", "minLength": 1 },
     "sourceUrl": { "$ref": "package.schema.json#/$defs/url" },
+    "sourceRevision": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$", "description": "Revision of the external advisory source represented by this snapshot." },
     "asOf": { "$ref": "package.schema.json#/$defs/timestamp" },
-    "status": {
-      "type": "string",
-      "enum": ["draft", "published", "withdrawn", "superseded"]
-    },
+    "status": { "type": "string", "enum": ["draft", "published", "withdrawn", "superseded"] },
     "publishedAt": { "$ref": "package.schema.json#/$defs/timestamp" },
     "withdrawnAt": { "$ref": "package.schema.json#/$defs/timestamp" },
     "ttl": { "type": "integer", "minimum": 0 },
-    "disclaimer": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Third-party data. Not a detection result. No guarantee of accuracy, completeness, or timeliness."
-    },
-    "affectedPackages": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "required": ["name"],
-        "additionalProperties": false,
-        "properties": {
-          "name": { "$ref": "package.schema.json#/$defs/packageName" },
-          "type": {
-            "type": "string",
-            "enum": ["agent-plugin", "mcp", "skill", "generic"]
-          },
-          "typeRef": {
-            "type": "string",
-            "minLength": 1,
-            "description": "Source-local type-specific identifier, such as an MCP registry identifier."
-          },
-          "range": { "type": "string" },
-          "rangeType": { "$ref": "package.schema.json#/$defs/versionRangeType" },
-          "introduced": { "type": "string" },
-          "fixed": { "type": "string" },
-          "lastAffected": { "type": "string" }
-        }
+    "disclaimer": { "type": "string", "minLength": 1, "description": "Must communicate that this is third-party data, not a detection result, and carries no accuracy, completeness, timeliness, or safety guarantee." },
+    "affectedPackages": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/affectedPackage" } },
+    "advisories": { "type": "array", "items": { "$ref": "package.schema.json#/$defs/advisory" } },
+    "signature": { "$ref": "package.schema.json#/$defs/signature" },
+    "_meta": { "$ref": "package.schema.json#/$defs/extensionMeta" }
+  },
+  "$defs": {
+    "affectedPackage": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "$ref": "package.schema.json#/$defs/packageName", "description": "Package name as used by the referenced Agent Forge source." },
+        "sourceId": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+        "agentId": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["mcp", "plugin", "skill", "general", "bundle"] },
+        "range": { "type": "string", "minLength": 1 },
+        "versionScheme": { "$ref": "package.schema.json#/$defs/versionRangeType", "description": "Version comparison convention for range, introduced, fixed, and lastAffected." },
+        "introduced": { "type": "string", "minLength": 1 },
+        "fixed": { "type": "string", "minLength": 1 },
+        "lastAffected": { "type": "string", "minLength": 1 }
       }
-    },
-    "advisories": {
-      "type": "array",
-      "items": { "$ref": "package.schema.json#/$defs/advisory" }
-    },
-    "signature": { "$ref": "package.schema.json#/$defs/signature" }
+    }
   }
 }

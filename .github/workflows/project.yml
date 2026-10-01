@@ -1,0 +1,36 @@
+name: Build metadata projections
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  merge_group:
+
+permissions:
+  contents: read
+
+jobs:
+  project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e117569ac945acfbc318c1a823d3d4f7f1 # v7.0.1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          version: latest-known
+          enable-cache: true
+
+      - name: Validate canonical metadata
+        run: uv run --with jsonschema --with referencing python tools/validate.py --all
+
+      - name: Generate static projections
+        run: uv run --with jsonschema --with referencing python tools/project.py --clean --revision "${GITHUB_SHA::12}"
+
+      - name: Upload projection artifact
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4
+        with:
+          name: agent-forge-projections-${{ github.sha }}
+          path: data/
+          if-no-files-found: error

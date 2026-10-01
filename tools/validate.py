@@ -24,9 +24,10 @@ SCHEMA_FILES = (
 )
 CATEGORY_TYPES = {
     "mcp": "mcp",
-    "agent-plugin": "plugin",
+    "plugin": "plugin",
     "skill": "skill",
-    "generic": "other",
+    "general": "general",
+    "bundle": "bundle",
 }
 
 
@@ -35,8 +36,15 @@ def load_json(path: Path) -> Any:
         return json.load(handle)
 
 
-def category_for_target(target_type: str) -> str:
-    return CATEGORY_TYPES[target_type]
+def category_for_target(package_type: str) -> str:
+    """Return the physical source category for a package ``type``.
+
+    The v2 contract uses the same five values for package and source
+    projections.  Keeping this helper makes the projection rule explicit and
+    gives callers a single place to reject unknown categories.
+    """
+
+    return CATEGORY_TYPES[package_type]
 
 
 def serialized_meta_size(instance: dict[str, Any]) -> int:
@@ -86,19 +94,29 @@ def validate_instance(path: Path, schema_name: str) -> list[str]:
     ]
 
 
-def validate_source_package(path: Path, source_category: str) -> tuple[list[str], list[str]]:
+def validate_source_package(
+    path: Path,
+    source_category: str,
+    source_agent_id: str | None = None,
+) -> tuple[list[str], list[str]]:
     errors = validate_instance(path, "package.schema.json")
     warnings: list[str] = []
     if errors:
         return errors, warnings
 
     instance = load_json(path)
-    actual_category = category_for_target(instance["target"]["type"])
+    actual_category = category_for_target(instance["type"])
     if actual_category != source_category:
         errors.append(
-            f"{path}: target.type belongs to source category '{actual_category}', "
+            f"{path}: package type belongs to source category '{actual_category}', "
             f"not '{source_category}'"
         )
+    if source_agent_id is not None:
+        target_agents = {target["agentId"] for target in instance["targets"]}
+        if source_agent_id not in target_agents:
+            errors.append(
+                f"{path}: package targets do not include source Agent '{source_agent_id}'"
+            )
     meta_size = serialized_meta_size(instance)
     if meta_size > 4096:
         warnings.append(
@@ -111,31 +129,73 @@ def validate_source_directory(source_dir: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
     source_path = source_dir / "source.json"
-    index_path = source_dir / "index.json"
+    source_errors = validate_instance(source_path, "source.schema.json")
+    errors.extend(source_errors)
+    if source_errors:
+        return errors, warnings
 
-    errors.extend(validate_instance(source_path, "source.schema.json"))
+    source = load_json(source_path)
+    index_path = source_dir / Path(source["index"])
     errors.extend(validate_instance(index_path, "index.schema.json"))
     if errors:
         return errors, warnings
 
-    source = load_json(source_path)
     index = load_json(index_path)
     directory_category = source_dir.name
-    if source["category"] != directory_category:
+    if source["type"] != directory_category:
         errors.append(
-            f"{source_path}: source category '{source['category']}' does not match "
+            f"{source_path}: source type '{source['type']}' does not match "
             f"directory '{directory_category}'"
         )
-    if index["source"] != source["name"]:
+    if index["sourceId"] != source["sourceId"]:
         errors.append(
-            f"{index_path}: index source '{index['source']}' does not match "
-            f"manifest name '{source['name']}'"
+            f"{index_path}: index sourceId '{index['sourceId']}' does not match "
+            f"manifest sourceId '{source['sourceId']}'"
         )
-    if index["category"] != source["category"]:
+    if index["agentId"] != source["agentId"]:
         errors.append(
-            f"{index_path}: index category '{index['category']}' does not match "
-            f"manifest category '{source['category']}'"
+            f"{index_path}: index agentId '{index['agentId']}' does not match "
+            f"manifest agentId '{source['agentId']}'"
         )
+    if index["type"] != source["type"]:
+        errors.append(
+            f"{index_path}: index type '{index['type']}' does not match "
+            f"manifest type '{source['type']}'"
+        )
+    if index["revision"] != source["revision"]:
+        errors.append(
+            f"{index_path}: index revision '{index['revision']}' does not match "
+            f"manifest revision '{source['revision']}'"
+        )
+    manifest_from_index = (index_path.parent / Path(index["sourceManifest"])).resolve()
+    if manifest_from_index != source_path.resolve():
+        errors.append(
+            f"{index_path}: sourceManifest '{index['sourceManifest']}' does not point "
+            "to the source manifest"
+        )
+
+    # A mirror advertises the canonical source it mirrors and must serve the
+    # same immutable revision.  A revision mismatch can otherwise make two
+    # endpoints look interchangeable while returning different metadata.
+    source_id = source["sourceId"]
+    revision = source["revision"]
+    for mirror in source.get("sourceMirrors", []):
+        if mirror["mirrorOf"] != source_id:
+            errors.append(
+                f"{source_path}: source mirror '{mirror['sourceId']}' mirrorOf "
+                f"'{mirror['mirrorOf']}' does not match '{source_id}'"
+            )
+        if mirror["revision"] != revision:
+            errors.append(
+                f"{source_path}: source mirror '{mirror['sourceId']}' revision "
+                f"'{mirror['revision']}' does not match '{revision}'"
+            )
+    for related in source.get("relatedSources", []):
+        if related.get("relation") == "mirror" and related.get("revision") != revision:
+            errors.append(
+                f"{source_path}: related mirror '{related['sourceId']}' revision "
+                f"'{related.get('revision')}' does not match '{revision}'"
+            )
 
     indexed_paths: set[Path] = set()
     for package_name, entry in index["packages"].items():
@@ -155,7 +215,7 @@ def validate_source_directory(source_dir: Path) -> tuple[list[str], list[str]]:
             )
             continue
         package_errors, package_warnings = validate_source_package(
-            package_path, source["category"]
+            package_path, source["type"], source["agentId"]
         )
         errors.extend(package_errors)
         warnings.extend(package_warnings)
@@ -171,6 +231,12 @@ def validate_source_directory(source_dir: Path) -> tuple[list[str], list[str]]:
                     f"{package_path}: package version '{package['version']}' is not "
                     f"listed for '{package_name}'"
                 )
+            if entry.get("recordRevision") is not None and entry["recordRevision"] != index["revision"]:
+                errors.append(
+                    f"{index_path}: package '{package_name}' recordRevision "
+                    f"'{entry['recordRevision']}' does not match index revision "
+                    f"'{index['revision']}'"
+                )
 
     records_dir = source_dir / "packages"
     if records_dir.exists():
@@ -178,7 +244,7 @@ def validate_source_directory(source_dir: Path) -> tuple[list[str], list[str]]:
             if package_path.resolve() in indexed_paths:
                 continue
             package_errors, package_warnings = validate_source_package(
-                package_path, source["category"]
+                package_path, source["type"], source["agentId"]
             )
             errors.extend(package_errors)
             warnings.extend(package_warnings)
@@ -200,6 +266,10 @@ def validate_all() -> tuple[list[str], list[str]]:
 
     for source_dir in sorted((ROOT / "sources").iterdir()):
         if not source_dir.is_dir():
+            continue
+        # Empty legacy directories are ignored; tracked source projections must
+        # contain both manifests and are validated below.
+        if not (source_dir / "source.json").exists() and not (source_dir / "index.json").exists():
             continue
         source_errors, source_warnings = validate_source_directory(source_dir)
         errors.extend(source_errors)

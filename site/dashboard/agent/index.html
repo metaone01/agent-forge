@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Agent Forge agent dashboard">
+    <title>Agent Forge · Agent Dashboard</title>
+    <link rel="stylesheet" href="../../assets/styles.css">
+  </head>
+  <body data-page="agent-dashboard">
+    <header class="topbar">
+      <a class="brand" href="../../">Agent Forge <span>METADATA CATALOG</span></a>
+      <nav class="topnav" aria-label="主导航"><a href="../../">目录</a><a href="../">Dashboard</a><a class="button button-small" href="https://github.com/metaone01/agent-forge/issues/new/choose" target="_blank" rel="noreferrer">提交包</a></nav>
+    </header>
+    <main class="shell dashboard-shell">
+      <a class="back-link" href="../">← 返回总览</a>
+      <section class="dashboard-heading"><div><p class="eyebrow">AGENT PROFILE</p><h1 id="agent-title">Agent 数据</h1><p class="lede" id="agent-description">正在读取 Agent 投影…</p></div><div class="dashboard-updated" id="dashboard-updated">正在读取…</div></section>
+      <section id="global-metrics" class="metric-grid" aria-label="Agent 指标"></section>
+      <section class="dashboard-grid"><article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">TYPE MIX</p><h2>类型分布</h2></div></div><div id="agent-type-chart" class="bar-chart"></div></article><article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">FACETS</p><h2>常见 facet</h2></div></div><div id="agent-facet-chart" class="facet-chart"></div></article></section>
+      <section class="panel"><div class="panel-heading"><div><p class="eyebrow">RECENT UPDATES</p><h2>最近更新</h2></div></div><div id="recent-packages" class="result-list"></div></section>
+      <p class="disclaimer">数据已整合但未核验。Agent Forge 不提供安全、可信度或兼容性保证。</p>
+    </main>
+    <footer class="footer"><span>Agent Forge · 静态 Dashboard</span><a href="https://github.com/metaone01/agent-forge" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+    <script src="../../assets/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "id": "dsh.starter-bundle",
+  "name": "starter-bundle",
+  "displayName": "DSH Starter Bundle",
+  "version": "1.0.0",
+  "versionScheme": "semver",
+  "description": "A metadata-only collection of starter tools.",
+  "license": "MIT",
+  "links": {"repository": "https://github.com/metaone01/agent-forge", "readme": "https://metaone01.github.io/agent-forge/"},
+  "keywords": ["bundle", "starter"],
+  "type": "bundle",
+  "subtype": "curated",
+  "bundleDetails": {
+    "members": [
+      {"memberType": "package", "memberId": "dsh.playground", "agentId": "dsh", "versionRange": "^1.0.0", "versionScheme": "semver"},
+      {"memberType": "bundle", "memberId": "dsh.base-tools", "override": {"agentVersionRange": "^0.2.0", "versionScheme": "semver", "reason": "The upstream declaration is narrower than observed usage.", "createdAt": "2026-09-30T16:00:00Z", "createdBy": "admin"}}
+    ],
+    "effectiveTargets": [{"agentId": "dsh", "agentVersionRange": "^0.2.0", "versionScheme": "semver", "compatibilityStatus": "known", "rangeSource": "override"}],
+    "facetUnion": {"capabilities": ["gui.create", "code.generate"], "effects": ["workspace.modify"], "runtime": ["interactive.required"], "integrations": ["agent-ui"]},
+    "customFacetUnion": {"other": ["curated-community"]},
+    "calculationRevision": "20260930T160000Z"
+  },
+  "targets": [{"agentId": "dsh", "agentVersionRange": "^0.2.0", "versionScheme": "semver", "compatibilityStatus": "known", "status": "active"}],
+  "dependencies": [{"id": "dsh.playground", "agentId": "dsh", "optional": false}],
+  "facets": {"capabilities": ["gui.create", "code.generate"], "effects": ["workspace.modify"], "runtime": ["interactive.required"], "integrations": ["agent-ui"]},
+  "lifecycle": {"status": "active"},
+  "publishedAt": "2026-09-30T16:00:00Z"
+}

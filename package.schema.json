@@ -1,668 +1,151 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://metaone01.github.io/agent-forge/package.schema.json",
-  "title": "Agent Package Metadata",
-  "description": "Records information only. Installation is redirected to the target repository. No detection is performed here.",
+  "title": "Agent Forge Package Metadata v2",
+  "description": "A metadata-only record for one package version. It does not contain or verify executable artifacts.",
   "type": "object",
-  "required": ["schemaVersion", "name", "version", "description", "license", "target"],
   "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "version", "type", "description", "license", "targets"],
   "properties": {
-    "schemaVersion": {
-      "type": "integer",
-      "minimum": 1,
-      "description": "Metadata schema version. Increment on breaking changes."
-    },
-    "name": { "$ref": "#/$defs/packageName" },
-    "version": {
-      "type": "string",
-      "minLength": 1,
-      "description": "The publisher's original version string. Consumers interpret it in the target repository's versioning context."
-    },
-    "versionKind": {
-      "type": "string",
-      "enum": ["semver", "pep440", "calver", "other"],
-      "description": "Optional hint for indexing and comparison; it does not rewrite the original version."
-    },
-    "description": { "type": "string", "minLength": 1, "maxLength": 2000 },
-    "license": { "$ref": "#/$defs/stringOrArray" },
-    "homepage": { "$ref": "#/$defs/url" },
-    "repository": { "$ref": "#/$defs/url", "description": "Source repository URL." },
-    "documentation": { "$ref": "#/$defs/url" },
-    "keywords": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
-    },
-    "maintainers": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/maintainer" },
-      "minItems": 1
-    },
-
-    "arch": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
-    },
-    "os": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
-    },
-    "libc": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
-    },
-
-    "target": { "$ref": "#/$defs/target" },
-
-    "supportedAgents": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/supportedAgent" },
-      "uniqueItems": true
-    },
-
-    "conflicts": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/conflict" }
-    },
-    "depends": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/dependency" }
-    },
-    "optionalDepends": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/dependency" }
-    },
-    "makedepends": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/dependency" }
-    },
-    "provides": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/dependency" }
-    },
-    "replaces": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/dependency" }
-    },
-
+    "schemaVersion": { "const": 2, "description": "Breaking-version identifier for this JSON contract." },
+    "id": { "$ref": "#/$defs/identifier", "description": "Stable logical package identifier across versions and Agent projections." },
+    "name": { "$ref": "#/$defs/packageName", "description": "Human-facing package name or source-local slug." },
+    "displayName": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "version": { "type": "string", "minLength": 1, "description": "Original upstream version string; Agent Forge never rewrites it." },
+    "versionScheme": { "type": "string", "enum": ["semver", "npm", "pep440", "calver", "date", "custom", "unknown"], "description": "Optional comparison convention for version and ranges." },
+    "description": { "type": "string", "minLength": 1, "maxLength": 4000 },
+    "releaseNotes": { "type": "string", "maxLength": 10000 },
+    "license": { "$ref": "#/$defs/stringOrArray", "description": "Publisher-supplied license identifier or text; it is recorded, not legally verified." },
+    "links": { "$ref": "#/$defs/links", "description": "URLs for project pages and documents. README and LICENSE are links only." },
+    "keywords": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 100 }, "uniqueItems": true, "maxItems": 100 },
+    "maintainers": { "type": "array", "items": { "$ref": "#/$defs/maintainer" }, "uniqueItems": true, "maxItems": 100 },
+    "platform": { "$ref": "#/$defs/platform", "description": "Optional runtime platform hints, not an installation guarantee." },
+    "type": { "type": "string", "enum": ["mcp", "plugin", "skill", "general", "bundle"], "description": "One Agent Forge publication type." },
+    "subtype": { "type": ["string", "null"], "minLength": 1, "maxLength": 100, "description": "One administrator-defined subtype, or null when no subtype is assigned." },
+    "mcpDetails": { "$ref": "#/$defs/mcpDetails" },
+    "pluginDetails": { "$ref": "#/$defs/pluginDetails" },
+    "skillDetails": { "$ref": "#/$defs/skillDetails" },
+    "generalDetails": { "$ref": "#/$defs/generalDetails" },
+    "bundleDetails": { "$ref": "#/$defs/bundleDetails" },
+    "targets": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/agentTarget" }, "uniqueItems": true, "description": "Agent-specific compatibility and target metadata." },
+    "distributions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/distribution" }, "uniqueItems": true, "description": "Candidate locations for obtaining this package version; Agent Forge does not proxy or verify them." },
+    "dependencies": { "type": "array", "items": { "$ref": "#/$defs/dependency" }, "uniqueItems": true },
+    "conflicts": { "type": "array", "items": { "$ref": "#/$defs/dependency" }, "uniqueItems": true },
+    "provides": { "type": "array", "items": { "$ref": "#/$defs/dependency" }, "uniqueItems": true },
+    "replaces": { "type": "array", "items": { "$ref": "#/$defs/dependency" }, "uniqueItems": true },
+    "facets": { "$ref": "#/$defs/facetSet", "description": "Administrator-controlled facet labels, not guarantees." },
+    "customFacets": { "$ref": "#/$defs/customFacetSet", "description": "User-defined facet labels kept separate from administrator vocabulary." },
     "lifecycle": { "$ref": "#/$defs/lifecycle" },
-
-    "security": { "$ref": "#/$defs/security" },
-    "securityRefs": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/securityRef" }
-    },
-    "securityPolicyHints": { "$ref": "#/$defs/policyHints" },
-
-    "publishedAt": { "$ref": "#/$defs/timestamp" },
+    "createdAt": { "$ref": "#/$defs/timestamp" },
     "updatedAt": { "$ref": "#/$defs/timestamp" },
-    "_meta": { "$ref": "#/$defs/extensionMeta" }
+    "publishedAt": { "$ref": "#/$defs/timestamp" },
+    "_meta": { "$ref": "#/$defs/extensionMeta", "description": "Namespaced extension data preserved without interpretation." }
   },
-
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "enum": ["mcp", "plugin", "skill", "general"] } }, "required": ["type"] },
+      "then": { "required": ["distributions"] }
+    },
+    { "if": { "properties": { "type": { "const": "mcp" } }, "required": ["type"] }, "then": { "required": ["mcpDetails"], "not": { "anyOf": [{ "required": ["pluginDetails"] }, { "required": ["skillDetails"] }, { "required": ["generalDetails"] }, { "required": ["bundleDetails"] }] } } },
+    { "if": { "properties": { "type": { "const": "plugin" } }, "required": ["type"] }, "then": { "required": ["pluginDetails"], "not": { "anyOf": [{ "required": ["mcpDetails"] }, { "required": ["skillDetails"] }, { "required": ["generalDetails"] }, { "required": ["bundleDetails"] }] } } },
+    { "if": { "properties": { "type": { "const": "skill" } }, "required": ["type"] }, "then": { "required": ["skillDetails"], "not": { "anyOf": [{ "required": ["mcpDetails"] }, { "required": ["pluginDetails"] }, { "required": ["generalDetails"] }, { "required": ["bundleDetails"] }] } } },
+    { "if": { "properties": { "type": { "const": "general" } }, "required": ["type"] }, "then": { "required": ["generalDetails"], "not": { "anyOf": [{ "required": ["mcpDetails"] }, { "required": ["pluginDetails"] }, { "required": ["skillDetails"] }, { "required": ["bundleDetails"] }] } } },
+    { "if": { "properties": { "type": { "const": "bundle" } }, "required": ["type"] }, "then": { "required": ["bundleDetails"], "not": { "anyOf": [{ "required": ["mcpDetails"] }, { "required": ["pluginDetails"] }, { "required": ["skillDetails"] }, { "required": ["generalDetails"] }] } } }
+  ],
   "$defs": {
-    "packageName": {
-      "type": "string",
-      "minLength": 1,
-      "maxLength": 214,
-      "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$",
-      "description": "A source-local record name. Names are not globally unique; source category and source name form part of the identity."
-    },
-    "extensionMeta": {
-      "type": "object",
-      "description": "Namespaced extension data for private consumer metadata, experimental fields, or a structured description of an uncategorized agent tool. Consumers must preserve unknown values without interpreting them.",
-      "propertyNames": {
-        "pattern": "^[a-z][a-z0-9]*(\\.[a-z0-9-]+)+(/[a-z0-9-]+)?$"
-      },
-      "additionalProperties": true
-    },
-    "url": {
-      "type": "string",
-      "format": "uri",
-      "minLength": 1
-    },
-    "timestamp": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "stringOrArray": {
-      "oneOf": [
-        { "type": "string", "minLength": 1 },
-        {
-          "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "minItems": 1,
-          "uniqueItems": true
-        }
-      ]
-    },
-
-    "versionRangeType": {
-      "type": "string",
-      "enum": [
-        "semver",
-        "npm",
-        "pep440",
-        "calver",
-        "custom"
-      ]
-    },
-    "versionConstraint": {
-      "type": "object",
-      "required": ["range"],
-      "additionalProperties": false,
+    "identifier": { "type": "string", "minLength": 1, "maxLength": 214, "pattern": "^[A-Za-z0-9][A-Za-z0-9._/@+-]*$" },
+    "packageName": { "type": "string", "minLength": 1, "maxLength": 214, "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$" },
+    "url": { "type": "string", "format": "uri", "minLength": 1 },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "stringOrArray": { "oneOf": [ { "type": "string", "minLength": 1 }, { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } } ] },
+    "links": {
+      "type": "object", "additionalProperties": false,
       "properties": {
-        "range": { "type": "string", "minLength": 1 },
-        "rangeType": { "$ref": "#/$defs/versionRangeType" }
+        "repository": { "$ref": "#/$defs/url" }, "homepage": { "$ref": "#/$defs/url" }, "readme": { "$ref": "#/$defs/url" },
+        "license": { "$ref": "#/$defs/url" }, "documentation": { "$ref": "#/$defs/url" }, "changelog": { "$ref": "#/$defs/url" }, "issues": { "$ref": "#/$defs/url" }
       }
     },
-
     "maintainer": {
-      "type": "object",
-      "required": ["name"],
-      "additionalProperties": false,
+      "type": "object", "required": ["name"], "additionalProperties": false,
+      "properties": { "name": { "type": "string", "minLength": 1, "maxLength": 200 }, "url": { "$ref": "#/$defs/url" }, "email": { "type": "string", "format": "email" }, "role": { "type": "string", "enum": ["author", "maintainer", "contributor", "security"] } }
+    },
+    "platform": {
+      "type": "object", "additionalProperties": false,
       "properties": {
-        "name": { "type": "string", "minLength": 1 },
-        "email": { "type": "string", "format": "email" },
-        "url": { "$ref": "#/$defs/url" },
-        "role": {
-          "type": "string",
-          "enum": ["author", "maintainer", "contributor", "security"]
-        }
+        "os": { "$ref": "#/$defs/stringList" }, "arch": { "$ref": "#/$defs/stringList" }, "libc": { "$ref": "#/$defs/stringList" }, "runtime": { "$ref": "#/$defs/stringList" }
       }
     },
-
-    "checksum": {
-      "type": "object",
-      "additionalProperties": false,
-      "minProperties": 1,
+    "mcpDetails": {
+      "type": "object", "required": ["registryType", "identifier"], "additionalProperties": false,
       "properties": {
-        "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
-        "sha512": { "type": "string", "pattern": "^[a-fA-F0-9]{128}$" },
-        "blake2b": { "type": "string", "minLength": 1 }
+        "registryType": { "type": "string", "enum": ["npm", "pypi", "nuget", "cargo", "oci", "mcpb", "git", "other"] }, "registryBaseUrl": { "$ref": "#/$defs/url" }, "identifier": { "type": "string", "minLength": 1 },
+        "transport": { "type": "string", "enum": ["stdio", "streamable-http", "sse", "other"] }, "environmentVariables": { "$ref": "#/$defs/stringList" },
+        "remotes": { "type": "array", "items": { "type": "object", "required": ["url", "transport"], "additionalProperties": false, "properties": { "url": { "$ref": "#/$defs/url" }, "transport": { "type": "string", "enum": ["streamable-http", "sse"] } } }, "uniqueItems": true }
       }
     },
-    "signature": {
-      "type": "object",
-      "required": ["url"],
-      "additionalProperties": false,
-      "properties": {
-        "url": { "$ref": "#/$defs/url" },
-        "type": {
-          "type": "string",
-          "enum": ["gpg", "pgp", "minisign", "sigstore", "cosign"]
-        },
-        "keyId": { "type": "string" },
-        "keyUrl": { "$ref": "#/$defs/url" }
-      }
+    "pluginDetails": {
+      "type": "object", "required": ["manifestPath"], "additionalProperties": false,
+      "properties": { "manifestPath": { "type": "string", "minLength": 1 }, "sourceType": { "type": "string", "enum": ["git", "archive", "registry", "local", "other"] }, "marketplaceUrl": { "$ref": "#/$defs/url" }, "entrypoint": { "type": "string", "minLength": 1 }, "permissions": { "$ref": "#/$defs/stringList" } }
     },
-    "mirror": {
-      "type": "object",
-      "required": ["url"],
-      "additionalProperties": false,
-      "properties": {
-        "url": { "$ref": "#/$defs/url" },
-        "priority": { "type": "integer", "minimum": 0 },
-        "region": { "type": "string" }
-      }
+    "skillDetails": {
+      "type": "object", "required": ["skillPath"], "additionalProperties": false,
+      "properties": { "skillPath": { "type": "string", "minLength": 1 }, "allowedTools": { "$ref": "#/$defs/stringList" }, "compatibilityNotes": { "type": "string", "maxLength": 2000 }, "metadata": { "type": "object", "additionalProperties": { "type": "string" } } }
     },
-    "agentInstall": {
-      "type": "object",
-      "description": "An installation instruction record, not authorization to execute it. Consumers must obtain confirmation before execution.",
-      "required": ["type"],
-      "additionalProperties": false,
+    "generalDetails": {
+      "type": "object", "required": ["toolType", "agentUse"], "additionalProperties": false,
+      "properties": { "toolType": { "type": "string", "minLength": 1, "maxLength": 100, "description": "Nature of the general Agent tool, such as prompt-library or evaluation-harness." }, "agentUse": { "type": "string", "minLength": 1, "maxLength": 2000 }, "inputFormats": { "$ref": "#/$defs/stringList" }, "outputFormats": { "$ref": "#/$defs/stringList" } }
+    },
+    "agentTarget": {
+      "type": "object", "required": ["agentId", "compatibilityStatus"], "additionalProperties": false,
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["command", "url", "api", "script"]
-        },
-        "command": { "type": "string" },
-        "url": { "$ref": "#/$defs/url" },
-        "scriptIntegrity": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Integrity material for a script URL, preferably an SRI value such as sha256-<base64>."
-        },
-        "requires": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "env": {
-          "type": "object",
-          "additionalProperties": { "type": "string" }
-        },
-        "notes": { "type": "string" }
+        "agentId": { "type": "string", "minLength": 1, "maxLength": 100 }, "agentVersionRange": { "type": ["string", "null"], "minLength": 1, "description": "Null means no parseable upstream Agent range was supplied." },
+        "versionScheme": { "type": "string", "enum": ["semver", "npm", "pep440", "calver", "date", "custom", "unknown"] }, "compatibilityStatus": { "type": "string", "enum": ["known", "unknown"] }, "compatibilityNote": { "type": "string", "maxLength": 2000 },
+        "targetMetadata": { "type": "object", "additionalProperties": true }, "installMetadata": { "type": "object", "additionalProperties": true }, "status": { "type": "string", "enum": ["active", "deprecated", "unavailable", "experimental"] }
       },
       "allOf": [
-        {
-          "if": { "properties": { "type": { "const": "command" } } },
-          "then": { "required": ["command"] }
-        },
-        {
-          "if": { "properties": { "type": { "const": "url" } } },
-          "then": { "required": ["url"] }
-        },
-        {
-          "if": { "properties": { "type": { "const": "api" } } },
-          "then": { "required": ["url"] }
-        },
-        {
-          "if": { "properties": { "type": { "const": "script" } } },
-          "then": { "required": ["url", "scriptIntegrity"] }
-        }
+        { "if": { "properties": { "compatibilityStatus": { "const": "unknown" } }, "required": ["compatibilityStatus"] }, "then": { "properties": { "agentVersionRange": { "type": "null" } }, "required": ["compatibilityNote"] } },
+        { "if": { "properties": { "compatibilityStatus": { "const": "known" } }, "required": ["compatibilityStatus"] }, "then": { "required": ["agentVersionRange"] } }
       ]
     },
+    "distribution": {
+      "type": "object", "required": ["id", "type", "url"], "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" }, "type": { "type": "string", "enum": ["git", "release", "archive", "registry", "oci", "package", "other"] }, "url": { "$ref": "#/$defs/url" }, "agentIds": { "$ref": "#/$defs/stringList" }, "version": { "type": "string", "minLength": 1 }, "ref": { "type": "string", "minLength": 1 }, "registry": { "type": "string", "minLength": 1 }, "priority": { "type": "integer", "minimum": 0 }, "regions": { "$ref": "#/$defs/stringList" }, "checksum": { "$ref": "#/$defs/checksum" }, "signature": { "$ref": "#/$defs/signature" }, "install": { "$ref": "#/$defs/install" }, "notes": { "type": "string", "maxLength": 2000 }
+      }
+    },
+    "checksum": { "type": "object", "minProperties": 1, "additionalProperties": false, "properties": { "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" }, "sha512": { "type": "string", "pattern": "^[A-Fa-f0-9]{128}$" }, "blake2b": { "type": "string", "minLength": 1 } } },
+    "signature": { "type": "object", "required": ["url"], "additionalProperties": false, "properties": { "url": { "$ref": "#/$defs/url" }, "type": { "type": "string", "enum": ["gpg", "pgp", "minisign", "sigstore", "cosign", "other"] }, "keyId": { "type": "string", "minLength": 1 }, "keyUrl": { "$ref": "#/$defs/url" } } },
     "install": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "human": { "$ref": "#/$defs/url" },
-        "agent": { "$ref": "#/$defs/agentInstall" },
-        "steps": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "notes": {
-          "type": "string",
-          "description": "Human-readable installation notes. Script URLs must be traceable to target.url or target.mirrors; this schema records instructions and never executes them."
-        }
-      }
-    },
-
-    "mcpRef": {
-      "type": "object",
-      "required": ["registryType", "identifier"],
-      "additionalProperties": false,
-      "properties": {
-        "registryType": {
-          "type": "string",
-          "enum": ["npm", "pypi", "nuget", "cargo", "oci", "mcpb"]
-        },
-        "registryBaseUrl": {
-          "$ref": "#/$defs/url",
-          "description": "Registry base URL. See README.md for the maintained allowlist; the schema deliberately does not freeze that mutable list."
-        },
-        "identifier": { "type": "string", "minLength": 1 },
-        "environmentVariables": {
-          "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "uniqueItems": true
-        },
-        "transport": {
-          "type": "string",
-          "enum": ["stdio", "streamable-http", "sse"]
-        },
-        "remotes": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["url", "type"],
-            "additionalProperties": false,
-            "properties": {
-              "url": { "$ref": "#/$defs/url" },
-              "type": { "type": "string", "enum": ["streamable-http", "sse"] }
-            }
-          }
-        }
-      }
-    },
-    "agentPluginRef": {
-      "type": "object",
-      "required": ["pluginManifestPath", "sourceType"],
-      "additionalProperties": false,
-      "properties": {
-        "pluginManifestPath": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Path to the plugin manifest, commonly .claude-plugin/plugin.json."
-        },
-        "sourceType": { "type": "string", "enum": ["git", "local", "registry"] },
-        "requires": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/supportedAgent" },
-          "uniqueItems": true
-        },
-        "marketplaceUrl": { "$ref": "#/$defs/url" }
-      }
-    },
-    "skillRef": {
-      "type": "object",
-      "required": ["skillMarkdownPath"],
-      "additionalProperties": false,
-      "properties": {
-        "skillMarkdownPath": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Path to the skill definition, normally SKILL.md."
-        },
-        "license": { "type": "string", "minLength": 1 },
-        "compatibility": { "type": "string", "maxLength": 500 },
-        "metadata": {
-          "type": "object",
-          "additionalProperties": { "type": "string" }
-        },
-        "allowedTools": {
-          "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "uniqueItems": true
-        }
-      }
-    },
-    "genericRef": {
-      "type": "object",
-      "description": "Identity and scope evidence for an agent-related tool that does not fit the MCP, plugin, or skill categories.",
-      "required": ["kind", "agentUse"],
-      "additionalProperties": false,
-      "properties": {
-        "kind": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Concise tool kind, such as prompt-library, agent-ui, or evaluation-harness."
-        },
-        "agentUse": {
-          "type": "string",
-          "minLength": 1,
-          "maxLength": 1000,
-          "description": "How the tool is directly used to build, operate, evaluate, or extend an AI agent workflow."
-        }
-      }
-    },
-    "linkCheck": {
-      "type": "object",
-      "required": ["lastCheckedAt", "lastStatus"],
-      "additionalProperties": false,
-      "properties": {
-        "lastCheckedAt": { "$ref": "#/$defs/timestamp" },
-        "lastStatus": { "type": "string", "enum": ["ok", "redirect", "broken"] },
-        "finalUrl": { "$ref": "#/$defs/url" },
-        "okSince": { "$ref": "#/$defs/timestamp" },
-        "brokenSince": { "$ref": "#/$defs/timestamp" }
-      }
-    },
-
-    "target": {
-      "type": "object",
-      "required": ["type", "repository"],
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "agent-plugin",
-            "mcp",
-            "skill",
-            "generic"
-          ]
-        },
-        "repository": { "type": "string", "minLength": 1 },
-        "package": { "$ref": "#/$defs/packageName" },
-        "version": { "type": "string", "minLength": 1 },
-        "url": { "$ref": "#/$defs/url" },
-        "checksum": { "$ref": "#/$defs/checksum" },
-        "signature": { "$ref": "#/$defs/signature" },
-        "mirrors": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/mirror" }
-        },
-        "install": { "$ref": "#/$defs/install" },
-        "typeRef": {
-          "type": "object",
-          "description": "Category-specific identity and discovery metadata. Its shape is selected by target.type."
-        },
-        "verified": {
-          "type": "boolean",
-          "description": "Whether publication-time checks passed: the URL was reachable, supplied checksums matched, or the registry contained the identifier. This is not a security guarantee."
-        },
-        "verifiedAt": {
-          "$ref": "#/$defs/timestamp",
-          "description": "Time of the publication-time verification represented by verified."
-        },
-        "linkCheck": { "$ref": "#/$defs/linkCheck" }
-      },
+      "type": "object", "additionalProperties": false,
+      "properties": { "type": { "type": "string", "enum": ["command", "url", "api", "script", "registry"] }, "url": { "$ref": "#/$defs/url" }, "command": { "type": "string", "minLength": 1 }, "scriptIntegrity": { "type": "string", "minLength": 1 }, "requires": { "$ref": "#/$defs/stringList" }, "notes": { "type": "string", "maxLength": 2000 } },
       "allOf": [
-        {
-          "if": { "properties": { "type": { "const": "mcp" } }, "required": ["type"] },
-          "then": { "properties": { "typeRef": { "$ref": "#/$defs/mcpRef" } }, "required": ["typeRef"] }
-        },
-        {
-          "if": { "properties": { "type": { "const": "agent-plugin" } }, "required": ["type"] },
-          "then": { "properties": { "typeRef": { "$ref": "#/$defs/agentPluginRef" } }, "required": ["typeRef"] }
-        },
-        {
-          "if": { "properties": { "type": { "const": "skill" } }, "required": ["type"] },
-          "then": { "properties": { "typeRef": { "$ref": "#/$defs/skillRef" } }, "required": ["typeRef"] }
-        },
-        {
-          "if": { "properties": { "type": { "const": "generic" } }, "required": ["type"] },
-          "then": { "properties": { "typeRef": { "$ref": "#/$defs/genericRef" } }, "required": ["typeRef"] }
-        }
+        { "if": { "properties": { "type": { "const": "command" } }, "required": ["type"] }, "then": { "required": ["command"] } },
+        { "if": { "properties": { "type": { "enum": ["url", "api", "registry"] } }, "required": ["type"] }, "then": { "required": ["url"] } },
+        { "if": { "properties": { "type": { "const": "script" } }, "required": ["type"] }, "then": { "required": ["url", "scriptIntegrity"] } }
       ]
     },
-
-    "supportedAgent": {
-      "type": "object",
-      "required": ["name"],
-      "additionalProperties": false,
-      "properties": {
-        "name": { "type": "string", "minLength": 1 },
-        "versionRange": { "type": "string", "minLength": 1 },
-        "rangeType": { "$ref": "#/$defs/versionRangeType" },
-        "conflicts": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/conflict" }
-        },
-        "notes": { "type": "string" }
-      }
-    },
-
-    "dependency": {
-      "oneOf": [
-        { "type": "string", "minLength": 1 },
-        {
-          "type": "object",
-          "required": ["name"],
-          "additionalProperties": false,
-          "properties": {
-            "name": { "$ref": "#/$defs/packageName" },
-            "versionRange": { "type": "string" },
-            "rangeType": { "$ref": "#/$defs/versionRangeType" },
-            "repository": { "type": "string" },
-            "optional": { "type": "boolean" },
-            "reason": { "type": "string" }
-          }
-        }
-      ]
-    },
-    "conflict": {
-      "oneOf": [
-        { "type": "string", "minLength": 1 },
-        {
-          "type": "object",
-          "required": ["name"],
-          "additionalProperties": false,
-          "properties": {
-            "name": { "$ref": "#/$defs/packageName" },
-            "versionRange": { "type": "string" },
-            "rangeType": { "$ref": "#/$defs/versionRangeType" },
-            "repository": { "type": "string" },
-            "reason": { "type": "string" }
-          }
-        }
-      ]
-    },
-
-    "deprecated": {
-      "type": "object",
-      "required": ["is"],
-      "additionalProperties": false,
-      "properties": {
-        "is": { "type": "boolean" },
-        "reason": { "type": "string" },
-        "replacement": { "$ref": "#/$defs/packageName" },
-        "repository": { "type": "string" },
-        "since": { "$ref": "#/$defs/timestamp" }
-      }
-    },
-    "yanked": {
-      "type": "object",
-      "required": ["is"],
-      "additionalProperties": false,
-      "properties": {
-        "is": { "type": "boolean" },
-        "reason": { "type": "string" },
-        "at": { "$ref": "#/$defs/timestamp" }
-      }
-    },
-    "rename": {
-      "type": "object",
-      "required": ["to"],
-      "additionalProperties": false,
-      "properties": {
-        "to": { "$ref": "#/$defs/packageName" },
-        "repository": { "type": "string" },
-        "version": { "type": "string" },
-        "since": { "$ref": "#/$defs/timestamp" }
-      }
-    },
-    "lifecycle": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "deprecated": { "$ref": "#/$defs/deprecated" },
-        "archived": { "type": "boolean" },
-        "prerelease": { "type": "boolean" },
-        "yanked": { "$ref": "#/$defs/yanked" },
-        "rename": { "$ref": "#/$defs/rename" },
-        "linkStatusNote": {
-          "type": "string",
-          "description": "Operator note for link degradation or a pending replacement."
-        }
-      }
-    },
-
-    "severity": {
-      "type": "string",
-      "enum": ["none", "low", "medium", "high", "critical", "unknown"]
-    },
+    "dependency": { "type": "object", "required": ["id"], "additionalProperties": false, "properties": { "id": { "$ref": "#/$defs/identifier" }, "versionRange": { "type": "string", "minLength": 1 }, "versionScheme": { "type": "string", "enum": ["semver", "npm", "pep440", "calver", "date", "custom", "unknown"] }, "agentId": { "type": "string", "minLength": 1 }, "optional": { "type": "boolean" }, "reason": { "type": "string", "maxLength": 1000 } } },
+    "facetSet": { "type": "object", "additionalProperties": false, "properties": { "capabilities": { "$ref": "#/$defs/stringList" }, "effects": { "$ref": "#/$defs/stringList" }, "dataPractices": { "$ref": "#/$defs/stringList" }, "permissions": { "$ref": "#/$defs/stringList" }, "runtime": { "$ref": "#/$defs/stringList" }, "integrations": { "$ref": "#/$defs/stringList" } } },
+    "customFacetSet": { "type": "object", "additionalProperties": false, "properties": { "capabilities": { "$ref": "#/$defs/stringList" }, "effects": { "$ref": "#/$defs/stringList" }, "dataPractices": { "$ref": "#/$defs/stringList" }, "permissions": { "$ref": "#/$defs/stringList" }, "runtime": { "$ref": "#/$defs/stringList" }, "integrations": { "$ref": "#/$defs/stringList" }, "other": { "$ref": "#/$defs/stringList" } } },
+    "bundleDetails": { "type": "object", "required": ["members"], "additionalProperties": false, "properties": { "members": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/bundleMember" }, "uniqueItems": true }, "effectiveTargets": { "type": "array", "items": { "$ref": "#/$defs/effectiveTarget" }, "uniqueItems": true }, "facetUnion": { "$ref": "#/$defs/facetSet" }, "customFacetUnion": { "$ref": "#/$defs/customFacetSet" }, "calculationRevision": { "type": "string", "minLength": 1 } } },
+    "bundleMember": { "type": "object", "required": ["memberType", "memberId"], "additionalProperties": false, "properties": { "memberType": { "type": "string", "enum": ["package", "bundle"] }, "memberId": { "$ref": "#/$defs/identifier" }, "versionRange": { "type": "string", "minLength": 1 }, "versionScheme": { "type": "string", "enum": ["semver", "npm", "pep440", "calver", "date", "custom", "unknown"] }, "agentId": { "type": "string", "minLength": 1 }, "override": { "$ref": "#/$defs/bundleOverride" } } },
+    "bundleOverride": { "type": "object", "required": ["agentVersionRange", "reason"], "additionalProperties": false, "properties": { "agentVersionRange": { "type": "string", "minLength": 1 }, "versionScheme": { "type": "string", "enum": ["semver", "npm", "pep440", "calver", "date", "custom", "unknown"] }, "reason": { "type": "string", "minLength": 1, "maxLength": 2000 }, "createdAt": { "$ref": "#/$defs/timestamp" }, "createdBy": { "type": "string", "minLength": 1 } } },
+    "effectiveTarget": { "type": "object", "required": ["agentId", "compatibilityStatus"], "additionalProperties": false, "properties": { "agentId": { "type": "string", "minLength": 1 }, "agentVersionRange": { "type": ["string", "null"], "minLength": 1 }, "versionScheme": { "type": "string", "enum": ["semver", "npm", "pep440", "calver", "date", "custom", "unknown"] }, "compatibilityStatus": { "type": "string", "enum": ["known", "unknown", "conflict"] }, "rangeSource": { "type": "string", "enum": ["intersection", "override", "unknown"] }, "conflictNote": { "type": "string", "maxLength": 2000 } } },
+    "lifecycle": { "type": "object", "additionalProperties": false, "properties": { "status": { "type": "string", "enum": ["active", "deprecated", "archived", "yanked", "experimental"] }, "reason": { "type": "string", "maxLength": 2000 }, "replacementId": { "$ref": "#/$defs/identifier" }, "since": { "$ref": "#/$defs/timestamp" } } },
+    "versionRangeType": { "type": "string", "enum": ["semver", "npm", "pep440", "calver", "date", "custom", "unknown"] },
     "advisory": {
-      "type": "object",
-      "required": ["id"],
-      "additionalProperties": false,
+      "type": "object", "required": ["id"], "additionalProperties": false,
       "properties": {
-        "id": { "type": "string", "minLength": 1 },
-        "aliases": {
-          "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "uniqueItems": true
-        },
-        "severity": { "$ref": "#/$defs/severity" },
-        "cvss": {
-          "type": "object",
-          "required": ["score"],
-          "additionalProperties": false,
-          "properties": {
-            "version": { "type": "string" },
-            "score": { "type": "number", "minimum": 0, "maximum": 10 },
-            "vector": { "type": "string" }
-          }
-        },
-        "cwe": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "summary": { "type": "string" },
-        "impact": { "type": "string" },
-        "affected": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range": { "type": "string" },
-            "rangeType": { "$ref": "#/$defs/versionRangeType" },
-            "introduced": { "type": "string" },
-            "fixed": { "type": "string" },
-            "lastAffected": { "type": "string" }
-          }
-        },
-        "fixedIn": { "type": "string" },
-        "references": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/url" }
-        },
-        "publishedAt": { "$ref": "#/$defs/timestamp" },
-        "updatedAt": { "$ref": "#/$defs/timestamp" },
-        "status": {
-          "type": "string",
-          "enum": ["confirmed", "unconfirmed", "disputed", "rejected", "fixed"]
-        },
-        "source": { "type": "string" },
-        "sourceUrl": { "$ref": "#/$defs/url" }
+        "id": { "type": "string", "minLength": 1 }, "aliases": { "$ref": "#/$defs/stringList" },
+        "severity": { "type": "string", "enum": ["none", "low", "medium", "high", "critical", "unknown"] },
+        "summary": { "type": "string", "maxLength": 4000 }, "impact": { "type": "string", "maxLength": 4000 },
+        "references": { "type": "array", "items": { "$ref": "#/$defs/url" }, "uniqueItems": true },
+        "affected": { "type": "object", "additionalProperties": false, "properties": { "range": { "type": "string", "minLength": 1 }, "versionScheme": { "$ref": "#/$defs/versionRangeType" }, "introduced": { "type": "string", "minLength": 1 }, "fixed": { "type": "string", "minLength": 1 }, "lastAffected": { "type": "string", "minLength": 1 } } },
+        "fixedIn": { "type": "string", "minLength": 1 }, "publishedAt": { "$ref": "#/$defs/timestamp" }, "updatedAt": { "$ref": "#/$defs/timestamp" },
+        "status": { "type": "string", "enum": ["confirmed", "unconfirmed", "disputed", "rejected", "fixed"] }, "source": { "type": "string", "minLength": 1 }, "sourceUrl": { "$ref": "#/$defs/url" }
       }
     },
-    "securitySummary": {
-      "type": "object",
-      "required": ["count", "asOf"],
-      "additionalProperties": false,
-      "properties": {
-        "count": { "type": "integer", "minimum": 0 },
-        "highestSeverity": { "$ref": "#/$defs/severity" },
-        "asOf": { "$ref": "#/$defs/timestamp" },
-        "source": { "type": "string" }
-      }
-    },
-    "security": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "source": { "type": "string" },
-        "sourceUrl": { "$ref": "#/$defs/url" },
-        "asOf": { "$ref": "#/$defs/timestamp" },
-        "ttl": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Seconds after asOf before this snapshot should be refreshed."
-        },
-        "disclaimer": {
-          "type": "string",
-          "description": "Must state: Third-party data. Not a detection result. No guarantee of accuracy, completeness, timeliness, or safety."
-        },
-        "summary": { "$ref": "#/$defs/securitySummary" },
-        "advisories": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/advisory" }
-        }
-      }
-    },
-    "securityRef": {
-      "type": "object",
-      "required": ["id", "path"],
-      "additionalProperties": false,
-      "properties": {
-        "id": { "type": "string", "minLength": 1 },
-        "source": { "type": "string" },
-        "path": { "type": "string", "minLength": 1 },
-        "url": { "$ref": "#/$defs/url" },
-        "checksum": { "$ref": "#/$defs/checksum" }
-      }
-    },
-    "policyHints": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "blockOnSeverity": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/severity" },
-          "uniqueItems": true
-        },
-        "warnOnSeverity": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/severity" },
-          "uniqueItems": true
-        },
-        "requiresUserConfirmation": { "type": "boolean" },
-        "minAgeDays": { "type": "integer", "minimum": 0 }
-      }
-    }
+    "stringList": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 200 }, "uniqueItems": true, "maxItems": 200 },
+    "extensionMeta": { "type": "object", "propertyNames": { "pattern": "^[a-z][a-z0-9]*(\\.[a-z0-9-]+)+(/[a-z0-9-]+)?$" }, "additionalProperties": true }
   }
 }

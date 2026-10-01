@@ -1,51 +1,59 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://metaone01.github.io/agent-forge/source.schema.json",
-  "title": "Agent Forge Metadata Source",
-  "description": "Describes one independently consumable metadata source.",
+  "title": "Agent Forge Metadata Source Manifest",
+  "description": "Describes one independently consumable Agent Forge metadata catalog. A source is metadata only; it is not a plugin binary mirror.",
   "type": "object",
-  "required": ["schemaVersion", "name", "category", "baseUrl", "index"],
+  "required": ["schemaVersion", "sourceId", "name", "agentId", "type", "baseUrl", "index", "revision", "generatedAt"],
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": { "type": "integer", "const": 1 },
-    "name": {
-      "type": "string",
-      "pattern": "^agent-forge\\[(mcp|plugin|skill|other)\\]$"
-    },
-    "category": {
-      "type": "string",
-      "enum": ["mcp", "plugin", "skill", "other"]
-    },
-    "baseUrl": { "$ref": "package.schema.json#/$defs/url" },
-    "index": {
-      "type": "string",
-      "const": "index.json",
-      "description": "Index path relative to baseUrl."
-    },
-    "description": { "type": "string", "minLength": 1 },
-    "mirrors": {
-      "type": "array",
-      "items": { "$ref": "package.schema.json#/$defs/mirror" },
-      "uniqueItems": true
-    },
+    "schemaVersion": { "type": "integer", "const": 2, "description": "Breaking version of the source-manifest contract." },
+    "sourceId": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$", "description": "Stable machine-readable identity, for example agent-forge:dsh:plugin." },
+    "name": { "type": "string", "minLength": 1, "maxLength": 200, "description": "Human-readable source name; not the stable identity." },
+    "agentId": { "type": ["string", "null"], "minLength": 1, "description": "Agent projection covered by this source. Null denotes an all-agent catalog view." },
+    "type": { "type": "string", "enum": ["mcp", "plugin", "skill", "general", "bundle"], "description": "Agent Forge package category represented by this source." },
+    "baseUrl": { "$ref": "package.schema.json#/$defs/url", "description": "Base URL containing the manifest and its index." },
+    "index": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$", "description": "POSIX path to the index, relative to baseUrl. Usually index.json." },
+    "revision": { "$ref": "#/$defs/revision", "description": "Immutable catalog revision shared by this manifest, index, and generated assets." },
+    "generatedAt": { "$ref": "package.schema.json#/$defs/timestamp", "description": "Time at which this manifest was generated." },
+    "updatedAt": { "$ref": "package.schema.json#/$defs/timestamp", "description": "Time at which the catalog data was last changed." },
+    "mirrorOf": { "type": ["string", "null"], "minLength": 1, "description": "Canonical sourceId mirrored by this source. Omit or set null for a canonical source." },
+    "priority": { "type": "integer", "minimum": 0, "description": "Consumer selection priority; lower values are preferred." },
+    "official": { "type": "boolean", "description": "Whether the operator declares this an official endpoint; not a security guarantee." },
+    "description": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "indexChecksum": { "$ref": "package.schema.json#/$defs/checksum", "description": "Optional digest of the bytes at the index path." },
+    "sourceMirrors": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/sourceEndpoint" }, "description": "Known endpoints serving this catalog revision; these are metadata sources, not plugin distributions." },
+    "relatedSources": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/relatedSource" }, "description": "Other catalog endpoints related to this source, such as regional fallbacks." },
     "_meta": { "$ref": "package.schema.json#/$defs/extensionMeta" }
   },
-  "allOf": [
-    {
-      "if": { "properties": { "category": { "const": "mcp" } }, "required": ["category"] },
-      "then": { "properties": { "name": { "const": "agent-forge[mcp]" } } }
+  "$defs": {
+    "revision": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "sourceEndpoint": {
+      "type": "object",
+      "required": ["sourceId", "url", "mirrorOf", "revision", "priority"],
+      "additionalProperties": false,
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+        "url": { "$ref": "package.schema.json#/$defs/url" },
+        "mirrorOf": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+        "revision": { "$ref": "#/$defs/revision" },
+        "priority": { "type": "integer", "minimum": 0 },
+        "region": { "type": "string", "minLength": 1, "maxLength": 64 },
+        "official": { "type": "boolean" }
+      }
     },
-    {
-      "if": { "properties": { "category": { "const": "plugin" } }, "required": ["category"] },
-      "then": { "properties": { "name": { "const": "agent-forge[plugin]" } } }
-    },
-    {
-      "if": { "properties": { "category": { "const": "skill" } }, "required": ["category"] },
-      "then": { "properties": { "name": { "const": "agent-forge[skill]" } } }
-    },
-    {
-      "if": { "properties": { "category": { "const": "other" } }, "required": ["category"] },
-      "then": { "properties": { "name": { "const": "agent-forge[other]" } } }
+    "relatedSource": {
+      "type": "object",
+      "required": ["sourceId", "url", "relation"],
+      "additionalProperties": false,
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+        "url": { "$ref": "package.schema.json#/$defs/url" },
+        "relation": { "type": "string", "enum": ["mirror", "fallback", "regional", "supersedes"] },
+        "revision": { "$ref": "#/$defs/revision" },
+        "priority": { "type": "integer", "minimum": 0 },
+        "region": { "type": "string", "minLength": 1, "maxLength": 64 }
+      }
     }
-  ]
+  }
 }

@@ -1,28 +1,20 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "id": "dsh.playground",
   "name": "playground",
+  "displayName": "Playground",
   "version": "1.0.0",
-  "versionKind": "semver",
-  "description": "Claude Code plugin for creating interactive HTML playgrounds.",
+  "versionScheme": "semver",
+  "description": "Agent plugin for creating interactive HTML playgrounds.",
   "license": "MIT",
-  "homepage": "https://github.com/anthropics/claude-plugins-official",
-  "repository": "https://github.com/anthropics/claude-plugins-official",
-  "target": {
-    "type": "agent-plugin",
-    "repository": "git",
-    "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground",
-    "typeRef": {
-      "pluginManifestPath": ".claude-plugin/plugin.json",
-      "sourceType": "git",
-      "requires": [
-        { "name": "claude-code" }
-      ]
-    },
-    "verified": true,
-    "verifiedAt": "2026-09-20T00:00:00Z",
-    "linkCheck": {
-      "lastCheckedAt": "2026-09-20T00:00:00Z",
-      "lastStatus": "ok"
-    }
-  }
+  "links": {"repository": "https://github.com/anthropics/claude-plugins-official", "readme": "https://github.com/anthropics/claude-plugins-official#readme", "license": "https://github.com/anthropics/claude-plugins-official/blob/main/LICENSE"},
+  "keywords": ["plugin", "gui", "playground"],
+  "type": "plugin",
+  "subtype": "extension",
+  "pluginDetails": {"manifestPath": ".claude-plugin/plugin.json", "sourceType": "git", "entrypoint": "src/index.js"},
+  "targets": [{"agentId": "dsh", "agentVersionRange": "^0.2.0", "versionScheme": "semver", "compatibilityStatus": "known", "status": "active"}],
+  "distributions": [{"id": "github", "type": "git", "url": "https://github.com/anthropics/claude-plugins-official.git", "ref": "main", "priority": 10}],
+  "facets": {"capabilities": ["gui.create", "code.generate"], "effects": ["workspace.modify"], "runtime": ["interactive.required"], "integrations": ["agent-ui"]},
+  "lifecycle": {"status": "active"},
+  "publishedAt": "2026-09-30T16:00:00Z"
 }

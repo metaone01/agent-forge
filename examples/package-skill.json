@@ -1,29 +1,20 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "id": "dsh.template-skill",
   "name": "template-skill",
+  "displayName": "Template Skill",
   "version": "1.0.0",
-  "versionKind": "semver",
+  "versionScheme": "semver",
   "description": "Template for creating an Agent Skill from a SKILL.md definition.",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/anthropics/skills",
-  "repository": "https://github.com/anthropics/skills",
-  "target": {
-    "type": "skill",
-    "repository": "git",
-    "url": "https://github.com/anthropics/skills/tree/main/template",
-    "typeRef": {
-      "skillMarkdownPath": "template/SKILL.md",
-      "license": "Apache-2.0",
-      "compatibility": "Agents that support the Agent Skills SKILL.md format.",
-      "metadata": {
-        "source": "anthropics/skills"
-      }
-    },
-    "verified": true,
-    "verifiedAt": "2026-09-20T00:00:00Z",
-    "linkCheck": {
-      "lastCheckedAt": "2026-09-20T00:00:00Z",
-      "lastStatus": "ok"
-    }
-  }
+  "links": {"repository": "https://github.com/anthropics/skills", "readme": "https://github.com/anthropics/skills#readme", "license": "https://github.com/anthropics/skills/blob/main/LICENSE"},
+  "keywords": ["skill", "workflow"],
+  "type": "skill",
+  "subtype": "workflow",
+  "skillDetails": {"skillPath": "template/SKILL.md", "allowedTools": ["read_file"], "compatibilityNotes": "Agents that support the Agent Skills SKILL.md format.", "metadata": {"source": "anthropics/skills"}},
+  "targets": [{"agentId": "dsh", "agentVersionRange": null, "versionScheme": "unknown", "compatibilityStatus": "unknown", "compatibilityNote": "Upstream did not publish a parseable Agent range.", "status": "experimental"}],
+  "distributions": [{"id": "github", "type": "git", "url": "https://github.com/anthropics/skills.git", "ref": "main", "priority": 10}],
+  "facets": {"capabilities": ["workflow.schedule"], "runtime": ["offline.capable"], "integrations": ["terminal"]},
+  "lifecycle": {"status": "active"},
+  "publishedAt": "2026-09-30T16:00:00Z"
 }

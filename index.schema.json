@@ -1,61 +1,45 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://metaone01.github.io/agent-forge/index.schema.json",
-  "title": "Package Index",
+  "title": "Agent Forge Package Index",
+  "description": "A compact index for one Agent Forge source revision. It points to package records; it does not contain installation binaries.",
   "type": "object",
-  "required": ["schemaVersion", "source", "category", "updatedAt", "packages"],
+  "required": ["schemaVersion", "sourceId", "sourceManifest", "agentId", "type", "revision", "generatedAt", "packages"],
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": { "type": "integer", "minimum": 1 },
-    "source": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Independent metadata source name, for example agent-forge[mcp]."
-    },
-    "category": {
-      "type": "string",
-      "enum": ["mcp", "plugin", "skill", "other"]
-    },
+    "schemaVersion": { "type": "integer", "const": 2 },
+    "sourceId": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$", "description": "Must equal the source manifest sourceId." },
+    "sourceManifest": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$", "description": "POSIX path to the source manifest, relative to the index location. Usually source.json." },
+    "sourceUrl": { "$ref": "package.schema.json#/$defs/url", "description": "Optional canonical URL of the source manifest." },
+    "agentId": { "type": ["string", "null"], "minLength": 1, "description": "Must equal the source manifest agentId." },
+    "type": { "type": "string", "enum": ["mcp", "plugin", "skill", "general", "bundle"], "description": "Must equal the source manifest type." },
+    "revision": { "$ref": "#/$defs/revision", "description": "Must equal the source manifest revision." },
+    "generatedAt": { "$ref": "package.schema.json#/$defs/timestamp" },
     "updatedAt": { "$ref": "package.schema.json#/$defs/timestamp" },
+    "ttl": { "type": "integer", "minimum": 0, "description": "Recommended number of seconds before consumers refresh this index." },
+    "indexChecksum": { "$ref": "package.schema.json#/$defs/checksum", "description": "Optional digest of the canonical index bytes. Producers should define and document whether this value is calculated over a normalized copy with the field omitted." },
     "signature": { "$ref": "package.schema.json#/$defs/signature" },
-    "ttl": {
-      "type": "integer",
-      "minimum": 0,
-      "description": "Seconds after updatedAt before consumers should refresh this index."
-    },
-    "mirrors": {
-      "type": "array",
-      "items": { "$ref": "package.schema.json#/$defs/mirror" },
-      "uniqueItems": true
-    },
     "packages": {
       "type": "object",
-      "description": "Keyed by package name within this independent source.",
+      "description": "Package records keyed by source-local package name.",
+      "propertyNames": { "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$" },
+      "additionalProperties": { "$ref": "#/$defs/packageEntry" }
+    },
+    "_meta": { "$ref": "package.schema.json#/$defs/extensionMeta" }
+  },
+  "$defs": {
+    "revision": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "packageEntry": {
+      "type": "object",
+      "required": ["latest", "versions", "path"],
       "additionalProperties": false,
-      "patternProperties": {
-        "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$": {
-        "type": "object",
-        "required": ["latest", "versions"],
-        "additionalProperties": false,
-        "properties": {
-          "latest": { "type": "string", "minLength": 1 },
-          "versions": {
-            "type": "array",
-            "items": { "type": "string", "minLength": 1 },
-            "uniqueItems": true,
-            "minItems": 1
-          },
-          "path": {
-            "type": "string",
-            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$",
-            "description": "POSIX path relative to the source base URL (the directory containing source.json and index.json)."
-          },
-          "checksum": {
-            "$ref": "package.schema.json#/$defs/checksum",
-            "description": "Digest of the bytes at path."
-          }
-        }
-        }
+      "properties": {
+        "latest": { "type": "string", "minLength": 1 },
+        "versions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true, "minItems": 1 },
+        "path": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$", "description": "POSIX path to a package record relative to the source base URL." },
+        "checksum": { "$ref": "package.schema.json#/$defs/checksum" },
+        "recordRevision": { "$ref": "#/$defs/revision", "description": "Optional revision of the package record." },
+        "subtype": { "type": ["string", "null"], "minLength": 1, "description": "Administrator-defined subtype copied into this projection; null means no subtype." }
       }
     }
   }

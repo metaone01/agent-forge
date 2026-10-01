@@ -1,0 +1,43 @@
+name: Convert package issue to Pull Request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  proposal:
+    if: contains(github.event.issue.labels.*.name, 'package-submission')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create proposal branch and Pull Request
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.AGENT_FORGE_APP_TOKEN != '' && secrets.AGENT_FORGE_APP_TOKEN || github.token }}
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const match = body.match(/### Canonical package JSON\s+([\s\S]*?)(?=\n### |$)/i);
+            if (!match) throw new Error('The canonical package JSON section is missing.');
+            const fenced = match[1].match(/```(?:json)?\s*([\s\S]*?)```/i);
+            const raw = (fenced ? fenced[1] : match[1]).trim();
+            let record;
+            try { record = JSON.parse(raw); } catch (error) { throw new Error(`Invalid JSON: ${error.message}`); }
+            if (!record || record.schemaVersion !== 2 || typeof record.id !== 'string' || typeof record.name !== 'string' || typeof record.version !== 'string' || !['mcp','plugin','skill','general','bundle'].includes(record.type)) {
+              throw new Error('The record must contain schemaVersion=2, id, name, version, and a supported type.');
+            }
+            const safe = (value) => String(value).replace(/[^A-Za-z0-9._@+\/-]+/g, '-').replace(/^[-/]+|[-/]+$/g, '') || 'package';
+            const path = `sources/${record.type}/packages/${safe(record.name)}-${safe(record.version)}.json`;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const ref = await github.rest.git.getRef({ owner, repo, ref: 'heads/main' });
+            const branch = `proposal/issue-${issue.number}`;
+            await github.rest.git.createRef({ owner, repo, ref: `refs/heads/${branch}`, sha: ref.data.object.sha });
+            const content = Buffer.from(JSON.stringify(record, null, 2) + '\n').toString('base64');
+            await github.rest.repos.createOrUpdateFileContents({ owner, repo, path, message: `Add metadata proposal from issue #${issue.number}`, content, branch, committer: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' }, author: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' } });
+            const pr = await github.rest.pulls.create({ owner, repo, head: branch, base: 'main', title: `Metadata proposal: ${record.name} ${record.version}`, body: `Closes #${issue.number}\n\nSubmitted by @${issue.user.login}.\n\nThis PR was generated from the package submission form. Required schema and semantic checks must pass before merge.`, maintainer_can_modify: false });
+            await github.rest.issues.createComment({ owner, repo, issue_number: issue.number, body: `Created Pull Request #${pr.data.number} for review: ${pr.data.html_url}` });

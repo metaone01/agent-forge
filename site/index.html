@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Agent Forge metadata catalog">
+    <title>Agent Forge · 元数据目录</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="catalog">
+    <header class="topbar">
+      <a class="brand" href="./">Agent Forge <span>METADATA CATALOG</span></a>
+      <nav class="topnav" aria-label="主导航">
+        <a href="./" aria-current="page">目录</a>
+        <a href="dashboard/">Dashboard</a>
+        <a class="button button-small" href="https://github.com/metaone01/agent-forge/issues/new/choose" target="_blank" rel="noreferrer">提交包</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">READ-ONLY METADATA INDEX</p>
+          <h1>为 Agent 找到合适的工具。</h1>
+          <p class="lede">按 Agent、类型、版本范围和 facet 检索整合后的公开元数据。安装地址由每个包提供，目录本身不代理二进制文件。</p>
+        </div>
+        <div class="hero-stamp" id="revision-stamp">正在读取索引…</div>
+      </section>
+
+      <section class="search-panel" aria-label="搜索和筛选">
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="query" type="search" placeholder="搜索名称、描述、关键词或 facet" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div class="filters">
+          <label>Agent<select id="agent-filter"><option value="">全部 Agent</option></select></label>
+          <label>类型<select id="type-filter"><option value="">全部类型</option><option value="mcp">MCP</option><option value="plugin">Plugin</option><option value="skill">Skill</option><option value="general">General</option><option value="bundle">Bundle</option></select></label>
+          <label>Subtype<select id="subtype-filter"><option value="">全部 subtype</option></select></label>
+          <button class="button button-quiet" id="clear-filters" type="button">清除筛选</button>
+        </div>
+      </section>
+
+      <section class="catalog-toolbar">
+        <div><strong id="result-count">0</strong> 个结果 <span id="catalog-status" class="muted">正在加载…</span></div>
+        <label class="sort-control">排序<select id="sort-select"><option value="relevance">相关性</option><option value="updated">最近更新</option><option value="name">名称</option></select></label>
+      </section>
+      <section id="results" class="result-list" aria-live="polite"></section>
+      <div id="empty-state" class="empty-state" hidden>
+        <div class="empty-mark">∅</div>
+        <h2>没有匹配的包</h2>
+        <p>尝试减少筛选条件，或者查看 Dashboard 了解当前数据范围。</p>
+        <a class="button" href="dashboard/">打开 Dashboard</a>
+      </div>
+    </main>
+
+    <footer class="footer"><span>Agent Forge 只整合元数据，不验证来源、兼容性或安全性。</span><a href="https://github.com/metaone01/agent-forge" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

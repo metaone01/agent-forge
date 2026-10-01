@@ -1,32 +1,22 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "id": "dsh.prompt-library",
   "name": "prompt-library",
+  "displayName": "Prompt Library",
   "version": "2026.09",
-  "versionKind": "calver",
+  "versionScheme": "calver",
   "description": "An uncategorized collection of reusable prompts for agent workflows.",
   "license": "CC0-1.0",
-  "homepage": "https://github.com/f/prompts.chat",
-  "repository": "https://github.com/f/prompts.chat",
-  "target": {
-    "type": "generic",
-    "repository": "git",
-    "typeRef": {
-      "kind": "prompt-library",
-      "agentUse": "Provides reusable prompt material for constructing agent workflows."
-    },
-    "url": "https://github.com/f/prompts.chat",
-    "verified": true,
-    "verifiedAt": "2026-09-20T00:00:00Z",
-    "linkCheck": {
-      "lastCheckedAt": "2026-09-20T00:00:00Z",
-      "lastStatus": "ok"
-    }
-  },
-  "_meta": {
-    "io.github.metaone01/tool": {
-      "kind": "prompt-library",
-      "contentFormat": "markdown",
-      "summary": "Reusable prompt text; no executable component is implied."
-    }
-  }
+  "links": {"repository": "https://github.com/f/prompts.chat", "readme": "https://github.com/f/prompts.chat#readme", "license": "https://github.com/f/prompts.chat/blob/main/LICENSE"},
+  "keywords": ["prompt", "library"],
+  "type": "general",
+  "subtype": "prompt-library",
+  "generalDetails": {"toolType": "prompt-library", "agentUse": "Provides reusable prompt material for constructing agent workflows.", "inputFormats": ["markdown", "text"], "outputFormats": ["markdown", "text"]},
+  "targets": [{"agentId": "dsh", "agentVersionRange": null, "versionScheme": "unknown", "compatibilityStatus": "unknown", "compatibilityNote": "Upstream did not publish a parseable Agent range.", "status": "experimental"}],
+  "distributions": [{"id": "github", "type": "git", "url": "https://github.com/f/prompts.chat.git", "ref": "main", "priority": 10}],
+  "facets": {"capabilities": ["code.generate"], "runtime": ["offline.capable"], "integrations": ["terminal"]},
+  "customFacets": {"other": ["community-defined"]},
+  "lifecycle": {"status": "active"},
+  "publishedAt": "2026-09-30T16:00:00Z",
+  "_meta": {"io.github.metaone01/tool": {"contentFormat": "markdown"}}
 }
