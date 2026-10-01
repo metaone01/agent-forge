@@ -34,10 +34,12 @@ jobs:
             const path = `sources/${record.type}/packages/${safe(record.name)}-${safe(record.version)}.json`;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const ref = await github.rest.git.getRef({ owner, repo, ref: 'heads/main' });
+            const ref = await github.rest.git.getRef({ owner, repo, ref: 'heads/packages' });
             const branch = `proposal/issue-${issue.number}`;
             await github.rest.git.createRef({ owner, repo, ref: `refs/heads/${branch}`, sha: ref.data.object.sha });
             const content = Buffer.from(JSON.stringify(record, null, 2) + '\n').toString('base64');
             await github.rest.repos.createOrUpdateFileContents({ owner, repo, path, message: `Add metadata proposal from issue #${issue.number}`, content, branch, committer: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' }, author: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' } });
-            const pr = await github.rest.pulls.create({ owner, repo, head: branch, base: 'main', title: `Metadata proposal: ${record.name} ${record.version}`, body: `Closes #${issue.number}\n\nSubmitted by @${issue.user.login}.\n\nThis PR was generated from the package submission form. Required schema and semantic checks must pass before merge.`, maintainer_can_modify: false });
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issue.number, labels: ['package-submission'] });
+            const pr = await github.rest.pulls.create({ owner, repo, head: branch, base: 'packages', title: `Metadata proposal: ${record.name} ${record.version}`, body: `Closes #${issue.number}\n\nSubmitted by @${issue.user.login}.\n\nThis PR was generated from the package upload form. It will remain open for the ten-minute publication cooldown before entering Merge Queue. Required schema and semantic checks must pass before merge.`, maintainer_can_modify: false });
+            await github.rest.issues.addLabels({ owner, repo, issue_number: pr.data.number, labels: ['package-submission'] });
             await github.rest.issues.createComment({ owner, repo, issue_number: issue.number, body: `Created Pull Request #${pr.data.number} for review: ${pr.data.html_url}` });

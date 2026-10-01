@@ -1,0 +1,38 @@
+name: Sync main contract changes to packages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open synchronization pull request
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.AGENT_FORGE_APP_TOKEN != '' && secrets.AGENT_FORGE_APP_TOKEN || github.token }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const source = context.sha;
+            const branch = `sync/main-${source.slice(0, 12)}`;
+            try {
+              await github.rest.git.createRef({ owner, repo, ref: `refs/heads/${branch}`, sha: source });
+            } catch (error) {
+              if (error.status !== 422) throw error;
+            }
+            const existing = await github.rest.pulls.list({ owner, repo, head: `${owner}:${branch}`, base: 'packages', state: 'open' });
+            if (existing.data.length) return;
+            const pr = await github.rest.pulls.create({
+              owner, repo, head: branch, base: 'packages',
+              title: `Sync main contract ${source.slice(0, 12)} into packages`,
+              body: 'Synchronize schemas, tools, site, and workflows from main. Package records remain on the packages branch.',
+              maintainer_can_modify: false,
+            });
+            await github.rest.issues.addLabels({ owner, repo, issue_number: pr.data.number, labels: ['maintenance'] });
