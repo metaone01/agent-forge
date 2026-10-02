@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.com.mcp/openai-tools",
+  "name": "ai.com.mcp/openai-tools",
+  "displayName": "OpenAI Tools MCP Server",
+  "version": "0.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Focused MCP server for OpenAI image/audio generation (v2.0.0). Wraps endpoints via HAPI CLI.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.com.mcp/openai-tools",
+    "remotes": [
+      {
+        "url": "https://openai-tools.run.mcp.com.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9f93467ed5f73532",
+      "type": "other",
+      "url": "https://openai-tools.run.mcp.com.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://openai-tools.run.mcp.com.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/la-rebelion/hapimcp",
+    "homepage": "https://platform.openai.com/docs/api-reference"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.com.mcp/openai-tools"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.autorfp/mcp",
+  "name": "ai.autorfp/mcp",
+  "displayName": "AutoRFP.ai",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search AutoRFP.ai projects, requirements, content library, and tags for Q&A and analytics.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.autorfp/mcp",
+    "remotes": [
+      {
+        "url": "https://{api_host}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1fbb6abb71f10c1c",
+      "type": "other",
+      "url": "https://{api_host}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{api_host}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AutoRFP/mcp",
+    "homepage": "https://autorfp.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=2",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.autorfp/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.agent-preflight/agent-preflight",
+  "name": "com.agent-preflight/agent-preflight",
+  "displayName": "Agent Preflight",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Budgeted agent preflight: allow|block|reuse|defer|advise. Never executes destination tools. Free MCP",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.agent-preflight/agent-preflight",
+    "remotes": [
+      {
+        "url": "https://api.agent-preflight.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-86644ef84efddc09",
+      "type": "other",
+      "url": "https://api.agent-preflight.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.agent-preflight.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agent-preflight.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.agent-preflight/agent-preflight"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

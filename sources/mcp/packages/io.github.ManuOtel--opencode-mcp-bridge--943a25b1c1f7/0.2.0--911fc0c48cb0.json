@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.ManuOtel/opencode-mcp-bridge",
+  "name": "io.github.ManuOtel/opencode-mcp-bridge",
+  "displayName": "OpenCode MCP Bridge",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Coordinate and verify OpenCode workers over MCP Streamable HTTP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.ManuOtel/opencode-mcp-bridge",
+    "remotes": [
+      {
+        "url": "https://opencode-mcp.manuotel.com/worker-mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c463c112268d29ec",
+      "type": "other",
+      "url": "https://opencode-mcp.manuotel.com/worker-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://opencode-mcp.manuotel.com/worker-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ManuOtel/opencode-mcp-bridge",
+    "homepage": "https://github.com/ManuOtel/opencode-mcp-bridge"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ManuOtel/opencode-mcp-bridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

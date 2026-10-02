@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c0f67cba360ccdd383843c50379b5739dd6dc532f4d5a23bdf3564cc1993f4af",
+  "name": "miseryrua/dsh-wb-cron",
+  "displayName": "miseryrua/dsh-wb-cron",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "无人值守定时任务调度器：cron/固定间隔/一次性三种调度，到点在 web profile 进程内拉起全新 root agent 执行任务指令（全栈继承 agentrouter/wb-memory/skills/hooks），会话落盘可续聊；每任务可钉模型与 Agent 预设（预设被删/损坏时三级降级跑完并留痕）；提供 cron_* 模型工具、设置页完整管理与侧边栏速览。零 npm",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/miseryrua/dsh-wb-cron",
+    "readme": "https://github.com/miseryrua/dsh-wb-cron#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/miseryrua/dsh-wb-cron"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14526"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15751"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

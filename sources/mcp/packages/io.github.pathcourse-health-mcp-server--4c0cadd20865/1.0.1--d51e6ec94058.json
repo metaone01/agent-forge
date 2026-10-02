@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pathcourse-health/mcp-server",
   "name": "io.github.pathcourse-health/mcp-server",
+  "displayName": "PathCourse Health (PCH)",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Cheaper LLM inference, USDC agent payments via x402, agent identity / reputation lookup.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/pathcourse-health/pch-mcp-server",
-    "homepage": "https://pathcoursehealth.com",
-    "readme": "https://github.com/pathcourse-health/pch-mcp-server#readme"
-  },
-  "keywords": [
-    "PathCourse Health (PCH)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@pathcourse/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Cheaper LLM inference, USDC agent payments via x402, agent identity / reputation lookup.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pathcourse/mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cbcc9eb9d28c9c1d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@pathcourse/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-7f9ccc9818fa0317",
+      "type": "registry",
+      "url": "https://pypi.org/project/pch-mcp-server",
+      "registry": "pypi",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/pathcourse-health/pch-mcp-server",
+    "homepage": "https://pathcoursehealth.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pathcourse-health__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=270",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pathcourse-health/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

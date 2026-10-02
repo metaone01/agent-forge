@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.dxbdata/dxb-data",
+  "name": "io.dxbdata/dxb-data",
+  "displayName": "io.dxbdata/dxb-data",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official Dubai real estate data: live prices and rental yields by area, from the DLD.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.dxbdata/dxb-data",
+    "remotes": [
+      {
+        "url": "https://dxbdata.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ebc20c4bd6b9a8c9",
+      "type": "other",
+      "url": "https://dxbdata.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://dxbdata.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.dxbdata/dxb-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

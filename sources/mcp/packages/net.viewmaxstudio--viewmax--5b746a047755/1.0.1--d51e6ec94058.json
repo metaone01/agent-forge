@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.viewmaxstudio/viewmax",
+  "name": "net.viewmaxstudio/viewmax",
+  "displayName": "ViewMax MCP",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Generate AI video from any MCP client. Pick the model, see the per-second price before you spend.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.viewmaxstudio/viewmax",
+    "remotes": [
+      {
+        "url": "https://viewmaxstudio.net/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-acee193e0fe5bf85",
+      "type": "other",
+      "url": "https://viewmaxstudio.net/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://viewmaxstudio.net/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://viewmaxstudio.net/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.viewmaxstudio/viewmax"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

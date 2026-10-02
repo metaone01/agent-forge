@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.lodekeep/memory",
+  "name": "com.lodekeep/memory",
+  "displayName": "Lodekeep",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Memory MCP server for Claude Code. Correct a fact and the old version stops being recalled.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "lodekeep",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://lodekeep.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9caa1833261b943b",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/lodekeep",
+      "registry": "npm",
+      "version": "0.3.6"
+    },
+    {
+      "id": "upstream-708a99f3a8cc2b21",
+      "type": "other",
+      "url": "https://lodekeep.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://lodekeep.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://lodekeep.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=59",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.lodekeep/memory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

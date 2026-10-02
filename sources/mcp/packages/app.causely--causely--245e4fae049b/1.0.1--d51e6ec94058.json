@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.causely/causely",
+  "name": "app.causely/causely",
+  "displayName": "app.causely/causely",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Causal reasoning for reliability: root cause, blast radius, and service health for agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.causely/causely",
+    "remotes": [
+      {
+        "url": "https://api.causely.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-56a2ab118796fb4f",
+      "type": "other",
+      "url": "https://api.causely.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.causely.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/causely-oss/causely-client",
+    "homepage": "https://docs.causely.ai/agent-integration/mcp-server/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=18",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.causely/causely"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

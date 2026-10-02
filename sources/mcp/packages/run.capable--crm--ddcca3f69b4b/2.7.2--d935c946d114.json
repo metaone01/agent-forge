@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.run.capable/crm",
+  "name": "run.capable/crm",
+  "displayName": "Capable",
+  "version": "2.7.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP-native CRM: your assistant proposes updates, you approve them field by field.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "run.capable/crm",
+    "remotes": [
+      {
+        "url": "https://crm.capable.run/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c367afeb96c8cf3c",
+      "type": "other",
+      "url": "https://crm.capable.run/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://crm.capable.run/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://capable.run"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "run.capable/crm"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

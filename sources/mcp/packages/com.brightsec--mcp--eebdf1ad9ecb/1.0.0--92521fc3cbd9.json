@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.brightsec/mcp",
+  "name": "com.brightsec/mcp",
+  "displayName": "Bright Security",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Enables AI agents to access Bright Security tools for app discovery and security testing.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.brightsec/mcp",
+    "remotes": [
+      {
+        "url": "https://{instance}.brightsec.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d2d952630414da7c",
+      "type": "other",
+      "url": "https://{instance}.brightsec.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{instance}.brightsec.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://brightsec.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=38",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.brightsec/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

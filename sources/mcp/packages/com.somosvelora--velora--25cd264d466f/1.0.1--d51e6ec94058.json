@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.somosvelora/velora",
+  "name": "com.somosvelora/velora",
+  "displayName": "com.somosvelora/velora",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted Argentine commerce MCP: real AFIP invoicing, MercadoPago, logistics, catalog & WhatsApp.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.somosvelora/velora",
+    "remotes": [
+      {
+        "url": "https://tools.somosvelora.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d87460af38a5cc0b",
+      "type": "other",
+      "url": "https://tools.somosvelora.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tools.somosvelora.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/crossi-dev/velora-mcp",
+    "homepage": "https://somosvelora.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.somosvelora/velora"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

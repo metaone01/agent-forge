@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.TonyGJJ/twtapi",
+  "name": "io.github.TonyGJJ/twtapi",
+  "displayName": "TwtAPI",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted Twitter/X tools for search, users, timelines, followers, trends, and research.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.TonyGJJ/twtapi",
+    "remotes": [
+      {
+        "url": "https://mcp.twtapi.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.twtapi.com/sse?mcp_key={mcp_key}",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-070bd7defa5c63ef",
+      "type": "other",
+      "url": "https://mcp.twtapi.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.twtapi.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8f99c46a97ff873e",
+      "type": "other",
+      "url": "https://mcp.twtapi.com/sse?mcp_key={mcp_key}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.twtapi.com/sse?mcp_key={mcp_key}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TonyGJJ/twtapi-mcp",
+    "homepage": "https://www.twtapi.com/en/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=157",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.TonyGJJ/twtapi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

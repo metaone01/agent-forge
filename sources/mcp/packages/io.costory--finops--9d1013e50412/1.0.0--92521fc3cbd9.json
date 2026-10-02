@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.costory/finops",
+  "name": "io.costory/finops",
+  "displayName": "Costory FinOps MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "FinOps MCP: query allocated, correlated cloud and AI cost across AWS, GCP, Azure and Snowflake.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.costory/finops",
+    "remotes": [
+      {
+        "url": "https://app-api.costory.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-56d78e620d47235d",
+      "type": "other",
+      "url": "https://app-api.costory.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app-api.costory.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/costory-io/costory-finops-mcp-skills",
+    "homepage": "https://docs.costory.io/features/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.costory/finops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

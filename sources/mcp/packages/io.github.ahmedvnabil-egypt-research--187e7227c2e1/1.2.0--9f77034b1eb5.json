@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ahmedvnabil/egypt-research",
   "name": "io.github.ahmedvnabil/egypt-research",
+  "displayName": "Egypt Research Commons",
   "version": "1.2.0",
-  "versionScheme": "semver",
-  "description": "Source-grounded research for Egyptian public affairs",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ahmedvnabil/erx",
-    "homepage": "https://erx-mcp.zad.tools",
-    "readme": "https://github.com/ahmedvnabil/erx#readme"
-  },
-  "keywords": [
-    "Egypt Research Commons"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "egypt-research-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Source-grounded research for Egyptian public affairs",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "egypt-research-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://erx-mcp.zad.tools/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a5bc0f980eb67cbf",
       "type": "registry",
       "url": "https://www.npmjs.com/package/egypt-research-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-0ce4943cddc0d941",
+      "type": "other",
+      "url": "https://erx-mcp.zad.tools/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://erx-mcp.zad.tools/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ahmedvnabil/erx",
+    "homepage": "https://erx-mcp.zad.tools"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ahmedvnabil__egypt-research.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=166",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ahmedvnabil/egypt-research"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

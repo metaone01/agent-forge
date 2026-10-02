@@ -2,50 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.OleksandrKucherenko/mcp-obsidian-via-rest",
   "name": "io.github.OleksandrKucherenko/mcp-obsidian-via-rest",
+  "displayName": "Obsidian Vault MCP Server",
   "version": "1.3.3",
-  "versionScheme": "semver",
-  "description": "Access Obsidian vaults via Local REST API - read, search, and interact with notes",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/OleksandrKucherenko/mcp-obsidian-via-rest",
-    "homepage": "https://github.com/OleksandrKucherenko/mcp-obsidian-via-rest#readme",
-    "readme": "https://github.com/OleksandrKucherenko/mcp-obsidian-via-rest#readme"
-  },
-  "keywords": [
-    "Obsidian Vault MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@oleksandrkucherenko/mcp-obsidian",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Access Obsidian vaults via Local REST API - read, search, and interact with notes",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@oleksandrkucherenko/mcp-obsidian",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-645b54bf90f1058d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@oleksandrkucherenko/mcp-obsidian",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.3.3"
+    },
+    {
+      "id": "upstream-374f8c5db3a7ca03",
+      "type": "oci",
+      "url": "https://ghcr.io/oleksandrkucherenko/obsidian-mcp:1.3.3",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-dcbf26b0af48c737",
+      "type": "oci",
+      "url": "https://docker.io/oleksandrkucherenko/obsidian-mcp:1.3.3",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/OleksandrKucherenko/mcp-obsidian-via-rest",
+    "homepage": "https://github.com/OleksandrKucherenko/mcp-obsidian-via-rest#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.oleksandrkucherenko__mcp-obsidian-via-rest.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.OleksandrKucherenko/mcp-obsidian-via-rest"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

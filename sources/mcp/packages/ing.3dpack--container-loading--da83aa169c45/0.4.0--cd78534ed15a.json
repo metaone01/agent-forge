@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ing.3dpack/container-loading",
+  "name": "ing.3dpack/container-loading",
+  "displayName": "3DPACK.ING — Container & Truck Load Planning",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Container load planning in Claude & ChatGPT: what fits, how full, a labelled 3D plan in the chat.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@3dpacking/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://3dpack.ing/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-eaf06b3139aebbd5",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@3dpacking/mcp-server",
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-d5116680edc0a233",
+      "type": "other",
+      "url": "https://3dpack.ing/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://3dpack.ing/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/OnurGumus/3dpacking-mcp",
+    "homepage": "https://3dpack.ing"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ing.3dpack/container-loading"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

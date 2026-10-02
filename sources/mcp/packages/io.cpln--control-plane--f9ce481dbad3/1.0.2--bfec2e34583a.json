@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.cpln/control-plane",
+  "name": "io.cpln/control-plane",
+  "displayName": "Control Plane",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Control Plane (controlplane.com): deploy and operate workloads across AWS, GCP, Azure, and more.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.cpln/control-plane",
+    "remotes": [
+      {
+        "url": "https://mcp.cpln.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-db6fcd82cdbe435a",
+      "type": "other",
+      "url": "https://mcp.cpln.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cpln.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/controlplane-com/ai-plugin",
+    "homepage": "https://controlplane.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.cpln/control-plane"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

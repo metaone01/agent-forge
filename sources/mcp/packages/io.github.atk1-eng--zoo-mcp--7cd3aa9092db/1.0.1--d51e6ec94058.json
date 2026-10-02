@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.atk1-eng/zoo-mcp",
+  "name": "io.github.atk1-eng/zoo-mcp",
+  "displayName": "io.github.atk1-eng/zoo-mcp",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A sample zoo MCP server",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.atk1-eng/zoo-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-on-cloudrun-673872727624.us-central1.run.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-885c6056bcf1f00a",
+      "type": "other",
+      "url": "https://mcp-on-cloudrun-673872727624.us-central1.run.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-on-cloudrun-673872727624.us-central1.run.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=173",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.atk1-eng/zoo-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

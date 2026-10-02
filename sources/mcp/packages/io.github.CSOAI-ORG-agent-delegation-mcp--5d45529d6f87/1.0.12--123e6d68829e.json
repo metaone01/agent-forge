@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/agent-delegation-mcp",
   "name": "io.github.CSOAI-ORG/agent-delegation-mcp",
+  "displayName": "io.github.CSOAI-ORG/agent-delegation-mcp",
   "version": "1.0.12",
-  "versionScheme": "semver",
-  "description": "Agent Delegation MCP Server by MEOK AI Labs",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/agent-delegation-mcp",
-    "readme": "https://github.com/CSOAI-ORG/agent-delegation-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "agent-delegation-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Agent Delegation MCP Server by MEOK AI Labs",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "agent-delegation-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/a2a/delegation",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9d992b3596fc96c2",
       "type": "registry",
-      "url": "https://pypi.org/project/agent-delegation-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/agent-delegation-mcp",
+      "registry": "pypi",
+      "version": "1.0.12"
+    },
+    {
+      "id": "upstream-77c943f35c84af14",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/a2a/delegation",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/a2a/delegation"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/agent-delegation-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__agent-delegation-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=115",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/agent-delegation-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

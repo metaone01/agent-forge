@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pl.szuruszuru/booking",
+  "name": "pl.szuruszuru/booking",
+  "displayName": "SzuruSzuru – rezerwacja czyszczenia tapicerki",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Quote, check slots and book on-site upholstery, carpet and mattress cleaning in Pomorskie, Poland.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pl.szuruszuru/booking",
+    "remotes": [
+      {
+        "url": "https://agent.szuruszuru.pl/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4001d1787ce59e54",
+      "type": "other",
+      "url": "https://agent.szuruszuru.pl/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent.szuruszuru.pl/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://szuruszuru.pl/llms.txt"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pl.szuruszuru/booking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

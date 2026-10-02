@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.uk.co.mediadepot/site",
+  "name": "uk.co.mediadepot/site",
+  "displayName": "uk.co.mediadepot/site",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Media Depot: the site's own MCP server — shop; every answer cites the site.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "uk.co.mediadepot/site",
+    "remotes": [
+      {
+        "url": "https://mediadepot.co.uk/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0ee468af8a86f883",
+      "type": "other",
+      "url": "https://mediadepot.co.uk/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mediadepot.co.uk/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/joeetdev/venture-estate",
+    "homepage": "https://mediadepot.co.uk"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=380",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "uk.co.mediadepot/site"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

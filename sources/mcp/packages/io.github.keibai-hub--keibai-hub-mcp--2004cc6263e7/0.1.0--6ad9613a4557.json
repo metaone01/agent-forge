@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.keibai-hub/keibai-hub-mcp",
+  "name": "io.github.keibai-hub/keibai-hub-mcp",
+  "displayName": "不動産競売 構造化データハブ — Japan real-estate auctions",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Japanese court-run real-estate auctions (BIT). 5 tools, ~1,480 active listings. CC BY 4.0.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.keibai-hub/keibai-hub-mcp",
+    "remotes": [
+      {
+        "url": "https://keibai-hub.com/mcp-auctions",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fafbf6de28a6c8af",
+      "type": "other",
+      "url": "https://keibai-hub.com/mcp-auctions",
+      "install": {
+        "type": "api",
+        "url": "https://keibai-hub.com/mcp-auctions"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/keibai-hub/keibai-hub-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=224",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.keibai-hub/keibai-hub-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

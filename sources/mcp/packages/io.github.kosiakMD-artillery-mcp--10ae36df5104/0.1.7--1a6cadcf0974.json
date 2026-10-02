@@ -2,47 +2,55 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kosiakMD/artillery-mcp",
   "name": "io.github.kosiakMD/artillery-mcp",
+  "displayName": "io.github.kosiakMD/artillery-mcp",
   "version": "0.1.7",
-  "versionScheme": "semver",
-  "description": "MCP server for Artillery 2.x — full flags, Fargate, raw-text parser, project launcher (MIT)",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/kosiakMD/artillery-mcp",
-    "readme": "https://github.com/kosiakMD/artillery-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@kosiakmd/artillery-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Artillery 2.x — full flags, Fargate, raw-text parser, project launcher (MIT)",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@kosiakmd/artillery-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9c610580e83ed4be",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@kosiakmd/artillery-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.7"
+    },
+    {
+      "id": "upstream-6dda9145cc6bb073",
+      "type": "oci",
+      "url": "https://docker.io/kosiakmd/artillery-mcp:0.1.7",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-acd5e66cd93ee259",
+      "type": "oci",
+      "url": "https://ghcr.io/kosiakmd/artillery-mcp:0.1.7",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kosiakMD/artillery-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +63,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kosiakmd__artillery-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=225",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kosiakMD/artillery-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

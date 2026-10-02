@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.townbrief/townbrief",
+  "name": "com.townbrief/townbrief",
+  "displayName": "TownBrief - Massachusetts Local Government Intelligence",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MA local gov meetings, transcripts, articles, bylaws, calendars for 351 towns.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.townbrief/townbrief",
+    "remotes": [
+      {
+        "url": "https://api.townbrief.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.townbrief.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ed583775110d6b80",
+      "type": "other",
+      "url": "https://api.townbrief.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.townbrief.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-4294d7d5472de266",
+      "type": "other",
+      "url": "https://api.townbrief.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.townbrief.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/davevwatkins/townbrief-mcp",
+    "homepage": "https://api.townbrief.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=82",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.townbrief/townbrief"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.nordicmcp/google-mail",
+  "name": "eu.nordicmcp/google-mail",
+  "displayName": "NordicMCP — Google Mail",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted Gmail MCP server: read, search, and manage messages. Google OAuth2 handled by NordicMCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "eu.nordicmcp/google-mail",
+    "remotes": [
+      {
+        "url": "https://nordicmcp.eu/mcp/google-mail/{token}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-42a6a5b71de4a870",
+      "type": "other",
+      "url": "https://nordicmcp.eu/mcp/google-mail/{token}",
+      "install": {
+        "type": "api",
+        "url": "https://nordicmcp.eu/mcp/google-mail/{token}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pefman/nordicmcp.eu",
+    "homepage": "https://nordicmcp.eu/docs/integrations/google-mail"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.nordicmcp/google-mail"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

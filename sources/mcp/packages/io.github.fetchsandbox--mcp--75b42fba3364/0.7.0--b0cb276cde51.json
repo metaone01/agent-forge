@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.fetchsandbox/mcp",
+  "name": "io.github.fetchsandbox/mcp",
+  "displayName": "FetchSandbox",
+  "version": "0.7.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A deterministic verification engine for agents. Proves a fix: fails on the old code, passes on new.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "fetchsandbox-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://fetchsandbox.com/mcp/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-09ab2b1e02e6939f",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/fetchsandbox-mcp",
+      "registry": "npm",
+      "version": "0.7.0"
+    },
+    {
+      "id": "upstream-ff06687561007324",
+      "type": "other",
+      "url": "https://fetchsandbox.com/mcp/v1",
+      "install": {
+        "type": "api",
+        "url": "https://fetchsandbox.com/mcp/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/fetchsandbox/mcp",
+    "homepage": "https://fetchsandbox.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=201",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fetchsandbox/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

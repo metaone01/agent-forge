@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.in.fastdb.md/chainpulse",
+  "name": "in.fastdb.md/chainpulse",
+  "displayName": "chainpulse — real-time crypto + prediction market data for AI agents",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Crypto prices, gas, DeFi TVL, and live Polymarket odds. x402 pay-per-call, $0.001, no API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "in.fastdb.md/chainpulse",
+    "remotes": [
+      {
+        "url": "https://md.fastdb.in/pulse/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b6a72ce4eeed0dc1",
+      "type": "other",
+      "url": "https://md.fastdb.in/pulse/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://md.fastdb.in/pulse/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://md.fastdb.in/pulse"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "in.fastdb.md/chainpulse"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

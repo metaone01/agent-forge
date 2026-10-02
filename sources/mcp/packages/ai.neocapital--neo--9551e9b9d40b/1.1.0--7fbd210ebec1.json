@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.neocapital/neo",
+  "name": "ai.neocapital/neo",
+  "displayName": "ai.neocapital/neo",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Portafolio argentino consolidado, precios BYMA en vivo, cauciones y ordenes. Solo lectura.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.neocapital/neo",
+    "remotes": [
+      {
+        "url": "https://onlarfokemwasskttroh.supabase.co/functions/v1/neo-mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ce5ba0dc1f3d5fe1",
+      "type": "other",
+      "url": "https://onlarfokemwasskttroh.supabase.co/functions/v1/neo-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://onlarfokemwasskttroh.supabase.co/functions/v1/neo-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ioai-labs/neo-capital-ai",
+    "homepage": "https://app.neocapital.ai/conectar-tu-ia"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=9",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.neocapital/neo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

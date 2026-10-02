@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/france-payments-mcp",
+  "name": "app.wishpool/france-payments-mcp",
+  "displayName": "France Payments (Stripe — Cartes Bancaires)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "France payments for AI agents — Cartes Bancaires via Stripe. Never holds funds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/france-payments-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-fr.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-aa8e41fb63aad120",
+      "type": "other",
+      "url": "https://mcp-fr.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-fr.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/france-payments-mcp",
+    "homepage": "https://github.com/junter1989k-ai/france-payments-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=22",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/france-payments-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

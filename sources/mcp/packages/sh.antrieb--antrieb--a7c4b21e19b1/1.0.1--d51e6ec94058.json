@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.antrieb/antrieb",
+  "name": "sh.antrieb/antrieb",
+  "displayName": "sh.antrieb/antrieb",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Validates AI infra code on real VMs. Self-corrects until it works. No containers, no sandboxes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.antrieb/antrieb",
+    "remotes": [
+      {
+        "url": "https://antrieb.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-791c987e0bbbc966",
+      "type": "other",
+      "url": "https://antrieb.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://antrieb.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jade-pico/antrieb-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.antrieb/antrieb"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

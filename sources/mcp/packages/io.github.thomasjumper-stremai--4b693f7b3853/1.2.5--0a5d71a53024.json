@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.thomasjumper/stremai",
   "name": "io.github.thomasjumper/stremai",
+  "displayName": "StremAI",
   "version": "1.2.5",
-  "versionScheme": "semver",
-  "description": "StremAI MCP: shared memory for AI coding agents. Connected agents can recall. OAuth + local stdio.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/thomasjumper/agentbay",
-    "readme": "https://github.com/thomasjumper/agentbay#readme"
-  },
-  "keywords": [
-    "StremAI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "aiagentsbay-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "StremAI MCP: shared memory for AI coding agents. Connected agents can recall. OAuth + local stdio.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "aiagentsbay-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://stremai.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-18ba5587a7a4c2e7",
       "type": "registry",
       "url": "https://www.npmjs.com/package/aiagentsbay-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.5"
+    },
+    {
+      "id": "upstream-56b0b45e9ce774b5",
+      "type": "other",
+      "url": "https://stremai.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://stremai.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/thomasjumper/agentbay"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.thomasjumper__stremai.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=340",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.thomasjumper/stremai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

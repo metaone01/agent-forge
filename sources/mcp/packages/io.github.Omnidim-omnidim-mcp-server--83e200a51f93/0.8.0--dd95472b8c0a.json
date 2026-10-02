@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Omnidim/omnidim-mcp-server",
   "name": "io.github.Omnidim/omnidim-mcp-server",
+  "displayName": "io.github.Omnidim/omnidim-mcp-server",
   "version": "0.8.0",
-  "versionScheme": "semver",
-  "description": "Official MCP server for OmniDimension. Drive voice agents, dispatch calls, and run bulk campaigns.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Omnidim/omnidim-mcp-server",
-    "homepage": "https://omnidim.io",
-    "readme": "https://github.com/Omnidim/omnidim-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@omnidim-ai/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Official MCP server for OmniDimension. Drive voice agents, dispatch calls, and run bulk campaigns.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@omnidim-ai/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.omnidim.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6f63a5d55d897c8d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@omnidim-ai/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.8.0"
+    },
+    {
+      "id": "upstream-ca9c07500a0989ce",
+      "type": "other",
+      "url": "https://mcp.omnidim.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.omnidim.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Omnidim/omnidim-mcp-server",
+    "homepage": "https://omnidim.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.omnidim__omnidim-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Omnidim/omnidim-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

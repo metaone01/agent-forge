@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.76236278c0229b2fa514be60de9a35f5d367d007d6f7794b9faa4313534c70fb",
+  "name": "shenzhantu/dsh-subagent-model",
+  "displayName": "shenzhantu/dsh-subagent-model",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 子代理模型插件：在 composer 底部（官方模型菜单左侧）增加「子代理模型」菜单，为子代理独立配置 provider/model/推理强度/档位（与「设置 -> Agent 预设」同源：官方内置 + 插件预置的 轻量执行/只读研究 注册为真实用户预设 + 用户自建预设）；主 agent 模型仍走官方管理。注册 delegate_subagent 工具让子代理真正使用配置的模型与档位",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/shenzhantu/dsh-subagent-model",
+    "readme": "https://github.com/shenzhantu/dsh-subagent-model#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/shenzhantu/dsh-subagent-model"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "9138"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "6811"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "9785"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "7654"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

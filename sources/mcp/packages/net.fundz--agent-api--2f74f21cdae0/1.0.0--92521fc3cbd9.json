@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.fundz/agent-api",
+  "name": "net.fundz/agent-api",
+  "displayName": "Fundz Agent API",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Dated funding and SEC 8-K events, each linked to the filing it came from.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.fundz/agent-api",
+    "remotes": [
+      {
+        "url": "https://api.fundz.net/v1/agent/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c817be5772d1dc24",
+      "type": "other",
+      "url": "https://api.fundz.net/v1/agent/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.fundz.net/v1/agent/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Fund-z/agent-api-docs",
+    "homepage": "https://app.fundz.net/agent-api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=367",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.fundz/agent-api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

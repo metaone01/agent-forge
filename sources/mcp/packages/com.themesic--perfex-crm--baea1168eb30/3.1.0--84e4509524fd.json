@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.themesic/perfex-crm",
+  "name": "com.themesic/perfex-crm",
+  "displayName": "Perfex CRM",
+  "version": "3.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read and write a self-hosted Perfex CRM from an AI agent: 148 permission-filtered tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.themesic/perfex-crm",
+    "remotes": [
+      {
+        "url": "https://{perfex_host}/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-53fdb921eb1bd52c",
+      "type": "other",
+      "url": "https://{perfex_host}/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{perfex_host}/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/themesic/perfex-rest-api-examples",
+    "homepage": "https://themesic.com/product/rest-api-module-for-perfex-crm-connect-your-perfex-crm-with-third-party-applications/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=81",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.themesic/perfex-crm"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kubently/kubently",
   "name": "io.github.kubently/kubently",
+  "displayName": "io.github.kubently/kubently",
   "version": "2.3.1",
-  "versionScheme": "semver",
-  "description": "Troubleshoot Kubernetes agentically: natural-language cluster diagnosis via ask_kubently",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/kubently/kubently",
-    "readme": "https://github.com/kubently/kubently#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@kubently/cli",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Troubleshoot Kubernetes agentically: natural-language cluster diagnosis via ask_kubently",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@kubently/cli",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7b66b8a2bbc616ad",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@kubently/cli",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.3.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kubently/kubently"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kubently__kubently.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kubently/kubently"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.affset/mcp",
   "name": "io.github.affset/mcp",
+  "displayName": "affset",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Run affset from chat: stats, campaigns, zones, payouts, targeting, and team.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/affset/mcp",
-    "homepage": "https://affset.com/integrations",
-    "readme": "https://github.com/affset/mcp#readme"
-  },
-  "keywords": [
-    "affset"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@affset/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Run affset from chat: stats, campaigns, zones, payouts, targeting, and team.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@affset/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.affset.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8de3c8469ae4c210",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@affset/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.0"
+    },
+    {
+      "id": "upstream-d2eb1f55197364ca",
+      "type": "other",
+      "url": "https://mcp.affset.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.affset.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/affset/mcp",
+    "homepage": "https://affset.com/integrations"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.affset__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=165",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.affset/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

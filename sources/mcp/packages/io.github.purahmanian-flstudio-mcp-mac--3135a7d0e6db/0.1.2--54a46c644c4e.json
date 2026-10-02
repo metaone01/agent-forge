@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.purahmanian/flstudio-mcp-mac",
   "name": "io.github.purahmanian/flstudio-mcp-mac",
+  "displayName": "FL Studio MCP Mac",
   "version": "0.1.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "macOS-first MCP bridge for FL Studio using CoreMIDI and FL Studio Python MIDI scripts.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/purahmanian/flstudio-mcp-mac",
-    "readme": "https://github.com/purahmanian/flstudio-mcp-mac#readme"
-  },
-  "keywords": [
-    "FL Studio MCP Mac"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "flstudio-mcp-mac",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "flstudio-mcp-mac",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7ba34f3c533b9b3f",
       "type": "registry",
-      "url": "https://pypi.org/project/flstudio-mcp-mac/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/flstudio-mcp-mac",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/purahmanian/flstudio-mcp-mac"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.purahmanian__flstudio-mcp-mac.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=292",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.purahmanian/flstudio-mcp-mac"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

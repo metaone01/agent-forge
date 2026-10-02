@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.recao/recao-mcp",
+  "name": "app.recao/recao-mcp",
+  "displayName": "Recao",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Rank a competitor's EU App Store ads by longevity. From Apple's official Ad Repository.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.recao/recao-mcp",
+    "remotes": [
+      {
+        "url": "https://recao.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-19fd7af9198c4776",
+      "type": "other",
+      "url": "https://recao.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://recao.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/fernando-menendez/recao-mcp",
+    "homepage": "https://recao.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.recao/recao-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

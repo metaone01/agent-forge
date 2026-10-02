@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.zaq2989/clawagent",
+  "name": "io.github.zaq2989/clawagent",
+  "displayName": "ClawAgent",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI agent marketplace with MCP support and HTTP 402 micropayments (x402/intmax402).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.zaq2989/clawagent",
+    "remotes": [
+      {
+        "url": "https://clawagent-production.up.railway.app/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c8517cfae3f53cdf",
+      "type": "other",
+      "url": "https://clawagent-production.up.railway.app/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://clawagent-production.up.railway.app/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/zaq2989/Clawagent"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=354",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.zaq2989/clawagent"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

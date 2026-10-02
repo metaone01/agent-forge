@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.cz-agents/realestate",
+  "name": "dev.cz-agents/realestate",
+  "displayName": "dev.cz-agents/realestate",
+  "version": "0.3.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Czech distressed real estate — anonymized district aggregates (k≥5). Free tier.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@czagents/realestate",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://realestate.cz-agents.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5a2aaf5b6de45101",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@czagents/realestate",
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-2198a7ddb3077498",
+      "type": "other",
+      "url": "https://realestate.cz-agents.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://realestate.cz-agents.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/martinhavel/cz-agents-mcp",
+    "homepage": "https://cz-agents.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=90",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.cz-agents/realestate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

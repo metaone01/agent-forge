@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.answeringservicecare/public",
+  "name": "com.answeringservicecare/public",
+  "displayName": "Answering Service Care",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only facts about Answering Service Care: company info, services, pricing, site search.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.answeringservicecare/public",
+    "remotes": [
+      {
+        "url": "https://answeringservicecare.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-20765dd2e59d6afe",
+      "type": "other",
+      "url": "https://answeringservicecare.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://answeringservicecare.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Answering-Service-Care/agent-skills",
+    "homepage": "https://answeringservicecare.com/developers/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=34",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.answeringservicecare/public"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

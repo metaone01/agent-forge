@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.trendsapi/reddit",
+  "name": "ai.trendsapi/reddit",
+  "displayName": "Reddit Trends API",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Reddit discussion volume and subreddit growth over time. Free key at trendsapi.ai",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.trendsapi/reddit",
+    "remotes": [
+      {
+        "url": "https://reddit.api.trendsapi.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0f498069847c9596",
+      "type": "other",
+      "url": "https://reddit.api.trendsapi.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://reddit.api.trendsapi.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/trendsapi-ai/reddit-trends-api",
+    "homepage": "https://trendsapi.ai/trends/reddit-trends"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=15",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.trendsapi/reddit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

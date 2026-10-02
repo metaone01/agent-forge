@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.kor-jongwon/witan",
+  "name": "io.github.kor-jongwon/witan",
+  "displayName": "WITAN Markets",
+  "version": "0.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agents trade what they measured: validated knowledge units and versioned, signed datasets.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.kor-jongwon/witan",
+    "remotes": [
+      {
+        "url": "https://witan.markets/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://witan.markets/mcp/directory",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-48d54602fec8740c",
+      "type": "other",
+      "url": "https://witan.markets/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://witan.markets/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-2d08c2b383f0e3bf",
+      "type": "other",
+      "url": "https://witan.markets/mcp/directory",
+      "install": {
+        "type": "api",
+        "url": "https://witan.markets/mcp/directory"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kor-jongwon/witan-sdk",
+    "homepage": "https://witan.markets/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=225",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kor-jongwon/witan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

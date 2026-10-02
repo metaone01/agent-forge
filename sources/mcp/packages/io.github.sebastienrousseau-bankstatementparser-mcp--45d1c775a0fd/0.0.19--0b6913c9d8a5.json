@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sebastienrousseau/bankstatementparser-mcp",
   "name": "io.github.sebastienrousseau/bankstatementparser-mcp",
+  "displayName": "io.github.sebastienrousseau/bankstatementparser-mcp",
   "version": "0.0.19",
-  "versionScheme": "semver",
-  "description": "MCP server for parsing bank statements (BAI2, MT940/MT942, CAMT.053, OFX) via stdio.",
-  "license": "Apache-2.0 OR MIT",
-  "links": {
-    "repository": "https://github.com/sebastienrousseau/bankstatementparser-mcp",
-    "readme": "https://github.com/sebastienrousseau/bankstatementparser-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "bankstatementparser-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for parsing bank statements (BAI2, MT940/MT942, CAMT.053, OFX) via stdio.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "bankstatementparser-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-82014baabd843089",
       "type": "registry",
-      "url": "https://pypi.org/project/bankstatementparser-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/bankstatementparser-mcp",
+      "registry": "pypi",
+      "version": "0.0.19"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sebastienrousseau/bankstatementparser-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sebastienrousseau__bankstatementparser-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sebastienrousseau/bankstatementparser-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/brazil-payments-mcp",
+  "name": "app.wishpool/brazil-payments-mcp",
+  "displayName": "Brazil Payments (Mercado Pago — Pix / cards / boleto)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Brazil payments for AI agents — Pix, cards, boleto via Mercado Pago. Never holds funds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/brazil-payments-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-br.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ec64b3cc06f360fd",
+      "type": "other",
+      "url": "https://mcp-br.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-br.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/brazil-payments-mcp",
+    "homepage": "https://github.com/junter1989k-ai/brazil-payments-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=22",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/brazil-payments-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

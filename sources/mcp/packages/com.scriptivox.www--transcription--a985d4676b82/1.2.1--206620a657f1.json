@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.scriptivox.www/transcription",
+  "name": "com.scriptivox.www/transcription",
+  "displayName": "com.scriptivox.www/transcription",
+  "version": "1.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI transcription from URLs or files. 119 languages, diarization, SRT/VTT/text export.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@scriptivox/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://platform.scriptivox.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9f7deab31460c452",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@scriptivox/mcp-server",
+      "registry": "npm",
+      "version": "1.2.1"
+    },
+    {
+      "id": "upstream-10583576c6fc9b2c",
+      "type": "oci",
+      "url": "https://docker.io/sparkleofficialmain/scriptivox-mcp-server:1.2.1",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-b3ee1f5a70f30d0f",
+      "type": "other",
+      "url": "https://platform.scriptivox.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://platform.scriptivox.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SparkleOfficial/scriptivox-mcp-server",
+    "homepage": "https://platform.scriptivox.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=75",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.scriptivox.www/transcription"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

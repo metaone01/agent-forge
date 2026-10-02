@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cturkieh/france-data-mcp",
   "name": "io.github.cturkieh/france-data-mcp",
+  "displayName": "io.github.cturkieh/france-data-mcp",
   "version": "0.31.0",
-  "versionScheme": "semver",
-  "description": "French public-data MCP: cross-ref health, demographics, business, geo & real-estate.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/cturkieh/france-data-mcp",
-    "readme": "https://github.com/cturkieh/france-data-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "france-data-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "French public-data MCP: cross-ref health, demographics, business, geo & real-estate.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "france-data-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://france-data-mcp.vercel.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f5b4fb8c28f2b85f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/france-data-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.31.0"
+    },
+    {
+      "id": "upstream-e407d32d2c76e8bf",
+      "type": "other",
+      "url": "https://france-data-mcp.vercel.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://france-data-mcp.vercel.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/cturkieh/france-data-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cturkieh__france-data-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=187",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cturkieh/france-data-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

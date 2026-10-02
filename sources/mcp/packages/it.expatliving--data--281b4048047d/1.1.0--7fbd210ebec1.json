@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.it.expatliving/data",
+  "name": "it.expatliving/data",
+  "displayName": "Expat Living Italy",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Sourced data on Italy's ~7,900 comuni for people relocating or retiring there.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "it.expatliving/data",
+    "remotes": [
+      {
+        "url": "https://www.expatliving.it/api/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f04c0504482c4f20",
+      "type": "other",
+      "url": "https://www.expatliving.it/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.expatliving.it/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.expatliving.it/data/ask-your-ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=363",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "it.expatliving/data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

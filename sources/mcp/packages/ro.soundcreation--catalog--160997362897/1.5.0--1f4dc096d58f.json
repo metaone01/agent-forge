@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ro.soundcreation/catalog",
+  "name": "ro.soundcreation/catalog",
+  "displayName": "SoundCreation Catalog",
+  "version": "1.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "52,000 musical instruments: prices, deals, bundles, open-box, alternatives, accessories, guides.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ro.soundcreation/catalog",
+    "remotes": [
+      {
+        "url": "https://www.soundcreation.ro/api/agent/mcp.php",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a8a651bff44a5623",
+      "type": "other",
+      "url": "https://www.soundcreation.ro/api/agent/mcp.php",
+      "install": {
+        "type": "api",
+        "url": "https://www.soundcreation.ro/api/agent/mcp.php"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.soundcreation.ro/api/agent/setup.md"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ro.soundcreation/catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

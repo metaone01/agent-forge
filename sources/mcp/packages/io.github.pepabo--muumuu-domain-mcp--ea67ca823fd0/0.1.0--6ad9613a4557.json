@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pepabo/muumuu-domain-mcp",
+  "name": "io.github.pepabo/muumuu-domain-mcp",
+  "displayName": "Muumuu Domain MCP Server",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official remote MCP server bridge for Muumuu Domain.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pepabo/muumuu-domain-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.muumuu-domain.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a0288b14fb1ec99f",
+      "type": "other",
+      "url": "https://mcp.muumuu-domain.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.muumuu-domain.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pepabo/muumuu-domain-mcp",
+    "homepage": "https://muumuu-domain.com/muumuu-domain-mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=271",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pepabo/muumuu-domain-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

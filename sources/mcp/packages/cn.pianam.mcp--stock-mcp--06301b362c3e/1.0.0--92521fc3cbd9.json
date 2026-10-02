@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cn.pianam.mcp/stock-mcp",
+  "name": "cn.pianam.mcp/stock-mcp",
+  "displayName": "cn.pianam.mcp/stock-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "China A-share real-time stock quotes and major indices with dual-source fallback.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cn.pianam.mcp/stock-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.pianam.cn/stock-mcp/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bfcab7ddd5f0d65a",
+      "type": "other",
+      "url": "https://mcp.pianam.cn/stock-mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pianam.cn/stock-mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/boy-373/stock-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cn.pianam.mcp/stock-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

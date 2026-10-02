@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.mcpanalytics/analytics",
+  "name": "ai.mcpanalytics/analytics",
+  "displayName": "ai.mcpanalytics/analytics",
+  "version": "1.0.7",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The statistical analyst in your AI chat — validated, citable, re-runnable analysis of your data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.mcpanalytics/analytics",
+    "remotes": [
+      {
+        "url": "https://api.mcpanalytics.ai/auth0",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.mcpanalytics.ai/mcp/api-key",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a618d7a3f5058258",
+      "type": "other",
+      "url": "https://api.mcpanalytics.ai/auth0",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcpanalytics.ai/auth0"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-0f531e666b55dedf",
+      "type": "other",
+      "url": "https://api.mcpanalytics.ai/mcp/api-key",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcpanalytics.ai/mcp/api-key"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/embeddedlayers/mcp-analytics"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.mcpanalytics/analytics"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

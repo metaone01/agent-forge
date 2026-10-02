@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.info.fapd/fapd",
+  "name": "info.fapd/fapd",
+  "displayName": "Free Agentic Publication Digester",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cited daily digests of official US federal publications. Read-only; no inference.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "info.fapd/fapd",
+    "remotes": [
+      {
+        "url": "https://fapd.info/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8a3b03e4af74a99d",
+      "type": "other",
+      "url": "https://fapd.info/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fapd.info/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/davidkarnowski/free-agentic-publication-digester",
+    "homepage": "https://fapd.info/agents.html"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "info.fapd/fapd"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

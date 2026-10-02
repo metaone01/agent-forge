@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.fieldcure/rag",
   "name": "io.github.fieldcure/rag",
+  "displayName": "io.github.fieldcure/rag",
   "version": "2.5.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP RAG server with hybrid search, multi-KB support, and AI-powered chunk contextualization.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/fieldcure/fieldcure-mcp-rag",
-    "readme": "https://github.com/fieldcure/fieldcure-mcp-rag#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "FieldCure.Mcp.Rag",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "FieldCure.Mcp.Rag",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fa669e84db7de847",
       "type": "registry",
       "url": "https://www.nuget.org/packages/FieldCure.Mcp.Rag",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "2.5.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/fieldcure/fieldcure-mcp-rag"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fieldcure__rag.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=201",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fieldcure/rag"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

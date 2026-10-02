@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sonpiaz/openaffiliate-mcp",
   "name": "io.github.sonpiaz/openaffiliate-mcp",
+  "displayName": "io.github.sonpiaz/openaffiliate-mcp",
   "version": "0.0.3",
-  "versionScheme": "semver",
-  "description": "Search and discover affiliate programs with agent-ready data and commission details.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Affitor/open-affiliate",
-    "readme": "https://github.com/Affitor/open-affiliate#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "openaffiliate-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search and discover affiliate programs with agent-ready data and commission details.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "openaffiliate-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://openaffiliate.dev/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bcac435c8d6ce085",
       "type": "registry",
       "url": "https://www.npmjs.com/package/openaffiliate-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.0.3"
+    },
+    {
+      "id": "upstream-d943a6d22b0b1be7",
+      "type": "other",
+      "url": "https://openaffiliate.dev/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://openaffiliate.dev/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Affitor/open-affiliate"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sonpiaz__openaffiliate-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=331",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sonpiaz/openaffiliate-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

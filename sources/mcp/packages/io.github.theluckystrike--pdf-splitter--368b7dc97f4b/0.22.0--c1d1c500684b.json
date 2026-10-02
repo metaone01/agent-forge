@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.theluckystrike/pdf-splitter",
+  "name": "io.github.theluckystrike/pdf-splitter",
+  "displayName": "io.github.theluckystrike/pdf-splitter",
+  "version": "0.22.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Split PDFs from your AI chat: extract page ranges, split by size or count. All data is local.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/pdf.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/pdf-splitter",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-539fda2514edd3ea",
+      "type": "archive",
+      "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/pdf.mcpb",
+      "registry": "mcpb",
+      "version": "0.22.0"
+    },
+    {
+      "id": "upstream-0c1b7cee076a6d6e",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/pdf-splitter",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/pdf-splitter"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/pdf"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=339",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/pdf-splitter"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

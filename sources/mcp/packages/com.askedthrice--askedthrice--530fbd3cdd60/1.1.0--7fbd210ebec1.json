@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.askedthrice/askedthrice",
+  "name": "com.askedthrice/askedthrice",
+  "displayName": "Asked Thrice",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Measure whether AI assistants actually recommend a brand, from measured answers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "askedthrice-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.askedthrice.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-601d5bb44a23dc00",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/askedthrice-mcp",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-352c8517d743d61f",
+      "type": "other",
+      "url": "https://mcp.askedthrice.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.askedthrice.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/nahuelsoria/llmaudit-mcp",
+    "homepage": "https://askedthrice.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.askedthrice/askedthrice"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.hyperping/hyperping",
+  "name": "com.hyperping/hyperping",
+  "displayName": "com.hyperping/hyperping",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Uptime, API and server monitoring with outages, reporting, on-call and status pages.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.hyperping/hyperping",
+    "remotes": [
+      {
+        "url": "https://api.hyperping.io/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fe9ca3bfca68a722",
+      "type": "other",
+      "url": "https://api.hyperping.io/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.hyperping.io/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hyperping/mcp-server",
+    "homepage": "https://hyperping.com/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=54",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hyperping/hyperping"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.EricSpencer00/instxnt",
+  "name": "io.github.EricSpencer00/instxnt",
+  "displayName": "io.github.EricSpencer00/instxnt",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Create instxnt.xyz storefronts through Claude: add products, connect Stripe, go live.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@instxntdotxyz/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.instxnt.xyz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-78ce0bbf4b3f5400",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@instxntdotxyz/mcp-server",
+      "registry": "npm",
+      "version": "0.2.5"
+    },
+    {
+      "id": "upstream-c68d30a786ec2348",
+      "type": "other",
+      "url": "https://mcp.instxnt.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.instxnt.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/EricSpencer00/instxnt-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=125",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.EricSpencer00/instxnt"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

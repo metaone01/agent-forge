@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.olyport/cms-medicare",
+  "name": "com.olyport/cms-medicare",
+  "displayName": "CMS Medicare Data",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Medicare spending, chronic conditions, hospital quality, readmissions, and enrollment",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.olyport/cms-medicare",
+    "remotes": [
+      {
+        "url": "https://mcp.olyport.com/cms-medicare/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-515337be7c2aea52",
+      "type": "other",
+      "url": "https://mcp.olyport.com/cms-medicare/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.olyport.com/cms-medicare/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://olyport.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=66",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.olyport/cms-medicare"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

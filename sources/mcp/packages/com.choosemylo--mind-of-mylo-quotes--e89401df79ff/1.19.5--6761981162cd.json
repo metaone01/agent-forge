@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.choosemylo/mind-of-mylo-quotes",
+  "name": "com.choosemylo/mind-of-mylo-quotes",
+  "displayName": "com.choosemylo/mind-of-mylo-quotes",
+  "version": "1.19.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Machine-learning-backed insurance premium estimates from Mylo, comparing 100+ carriers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.choosemylo/mind-of-mylo-quotes",
+    "remotes": [
+      {
+        "url": "https://choosemylo.com/api/gateway/chatbot/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-08a2bc1f82e2aab4",
+      "type": "other",
+      "url": "https://choosemylo.com/api/gateway/chatbot/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://choosemylo.com/api/gateway/chatbot/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/choosemylo/mind-of-mylo-chatbot",
+    "homepage": "https://choosemylo.com/ai-assistant-quotes"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=39",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.choosemylo/mind-of-mylo-quotes"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

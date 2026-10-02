@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.chinamarketing/intelligence",
+  "name": "ai.chinamarketing/intelligence",
+  "displayName": "China Marketing AI Intelligence MCP",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP server for China brand visibility, destination demand, and KOL discovery workflows.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.chinamarketing/intelligence",
+    "remotes": [
+      {
+        "url": "https://api.chinamarketing.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-502ceb78c64b9f56",
+      "type": "other",
+      "url": "https://api.chinamarketing.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.chinamarketing.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.chinamarketing.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.chinamarketing/intelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

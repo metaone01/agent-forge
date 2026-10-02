@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/ct-dmv",
+  "name": "io.github.pipeworx-io/ct-dmv",
+  "displayName": "Ct Dmv",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connecticut DMV MCP — electric-vehicle registrations at vehicle level, aggregated on",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/ct-dmv",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/ct-dmv/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6fb9dba3873d54e7",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/ct-dmv/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/ct-dmv/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-ct-dmv",
+    "homepage": "https://pipeworx.io/packs/ct-dmv"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=277",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/ct-dmv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

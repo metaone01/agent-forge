@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c9a2b4a3c285799f6782c5f344bff1553b9df14476d1db0b7e388b368c00f916",
+  "name": "hswsp/dsh-plugins-gadget/dsh-bash-prefix",
+  "displayName": "hswsp/dsh-plugins-gadget/dsh-bash-prefix",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness plugin: every bash call runs your own preamble commands first (e.g. export https_proxy/http_proxy/all_proxy to enable a VPN proxy). Toggle on/off and edit the preamble in Settings →",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "dsh-bash-prefix/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/hswsp/dsh-plugins-gadget",
+    "readme": "https://github.com/hswsp/dsh-plugins-gadget#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/hswsp/dsh-plugins-gadget/tree/HEAD/dsh-bash-prefix"
+    }
+  ],
+  "keywords": [
+    "models",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "7350"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "hswsp/dsh-plugins-gadget"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

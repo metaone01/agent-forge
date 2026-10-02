@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.droplinked.mcp/server",
+  "name": "com.droplinked.mcp/server",
+  "displayName": "droplinked",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agentic commerce + trust MCP: discover, verify, and transact across droplinked's merchant network.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.droplinked.mcp/server",
+    "remotes": [
+      {
+        "url": "https://mcp.droplinked.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-702b98a2a389c4eb",
+      "type": "other",
+      "url": "https://mcp.droplinked.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.droplinked.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/droplinked/droplinked-mcp",
+    "homepage": "https://droplinked.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=44",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.droplinked.mcp/server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

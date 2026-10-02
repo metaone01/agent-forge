@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wisepenny/wise-penny",
+  "name": "app.wisepenny/wise-penny",
+  "displayName": "Wise Penny",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Chat with your bank data: balances, transactions, budgets, bills. Reads only, never moves money.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wisepenny/wise-penny",
+    "remotes": [
+      {
+        "url": "https://www.wisepenny.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-20929911746ba5aa",
+      "type": "other",
+      "url": "https://www.wisepenny.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.wisepenny.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.wisepenny.app/connect"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=22",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wisepenny/wise-penny"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

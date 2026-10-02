@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ausca/agent-services",
+  "name": "com.ausca/agent-services",
+  "displayName": "Ausca",
+  "version": "1.2.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pay-per-call APIs and MCP services for agents, no accounts or keys, with verifiable receipts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "ausca",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ausca.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4f2b35291ed9e5db",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/ausca",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-ecd40e5904d994fb",
+      "type": "other",
+      "url": "https://ausca.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ausca.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/auscahq/ausca",
+    "homepage": "https://ausca.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ausca/agent-services"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

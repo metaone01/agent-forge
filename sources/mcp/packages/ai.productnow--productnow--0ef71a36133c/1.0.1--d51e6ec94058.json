@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.productnow/productnow",
+  "name": "ai.productnow/productnow",
+  "displayName": "ProductNow",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connect AI agents to ProductNow's context engine to search, create, review, and act.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.productnow/productnow",
+    "remotes": [
+      {
+        "url": "https://api.productnow-prod.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-56b0559374248704",
+      "type": "other",
+      "url": "https://api.productnow-prod.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.productnow-prod.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ProductNowAI/productnow-mcp",
+    "homepage": "https://productnow.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=10",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.productnow/productnow"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

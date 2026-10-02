@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.f66ac19e78ba57a2a6f3ebc2c1029ac1b3dd80b0c1ccfb0437257b854a8f3948",
+  "name": "xby-skill/xby-ocr-id-card",
+  "displayName": "xby-skill/xby-ocr-id-card",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "识别身份证正面（姓名、性别、民族、出生日期、住址、身份证号）和背面（签发机关、有效期限），自动判断正反面并校验身份证号有效性。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/xby-skill/xby-ocr-id-card",
+    "readme": "https://github.com/xby-skill/xby-ocr-id-card#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/xby-skill/xby-ocr-id-card"
+    }
+  ],
+  "keywords": [
+    "vision"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12691"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12371"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

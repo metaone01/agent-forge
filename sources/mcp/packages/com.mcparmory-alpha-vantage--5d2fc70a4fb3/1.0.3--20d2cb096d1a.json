@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcparmory/alpha-vantage",
   "name": "com.mcparmory/alpha-vantage",
+  "displayName": "com.mcparmory/alpha-vantage",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "Track stock prices, search symbols, and compute 50+ technical indicators",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/mcparmory/registry",
-    "readme": "https://github.com/mcparmory/registry#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcparmory-alpha-vantage",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Track stock prices, search symbols, and compute 50+ technical indicators",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcparmory-alpha-vantage",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cf2a9bdf1811c7ab",
       "type": "registry",
-      "url": "https://pypi.org/project/mcparmory-alpha-vantage/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcparmory-alpha-vantage",
+      "registry": "pypi",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-d55ece6199a40ede",
+      "type": "oci",
+      "url": "https://ghcr.io/mcparmory/alpha-vantage:1.0.3",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcparmory/registry"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcparmory__alpha-vantage.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=61",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcparmory/alpha-vantage"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

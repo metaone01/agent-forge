@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.paulieb89/uk-legal-mcp",
   "name": "io.github.paulieb89/uk-legal-mcp",
+  "displayName": "UK Legal Research",
   "version": "0.6.1",
-  "versionScheme": "semver",
-  "description": "UK legal research — case law, legislation, Hansard, bills, votes, committees, HMRC, citations",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/paulieb89/uk-legal-mcp",
-    "homepage": "https://bouch.dev/products/uk-legal-mcp",
-    "readme": "https://github.com/paulieb89/uk-legal-mcp#readme"
-  },
-  "keywords": [
-    "UK Legal Research"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "uk-legal-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "UK legal research — case law, legislation, Hansard, bills, votes, committees, HMRC, citations",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "uk-legal-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://uk-legal-mcp.fly.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7a5ac2eba150c9f8",
       "type": "registry",
-      "url": "https://pypi.org/project/uk-legal-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/uk-legal-mcp",
+      "registry": "pypi",
+      "version": "0.6.1"
+    },
+    {
+      "id": "upstream-439ec59b034479c9",
+      "type": "other",
+      "url": "https://uk-legal-mcp.fly.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://uk-legal-mcp.fly.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/paulieb89/uk-legal-mcp",
+    "homepage": "https://bouch.dev/products/uk-legal-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.paulieb89__uk-legal-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=270",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.paulieb89/uk-legal-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

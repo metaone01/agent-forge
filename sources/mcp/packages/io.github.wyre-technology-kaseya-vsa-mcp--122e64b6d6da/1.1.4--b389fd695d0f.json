@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wyre-technology/kaseya-vsa-mcp",
   "name": "io.github.wyre-technology/kaseya-vsa-mcp",
+  "displayName": "Kaseya VSA",
   "version": "1.1.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Kaseya VSA RMM — agents, patches, procedures, alarms, tickets.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/wyre-technology/kaseya-vsa-mcp",
-    "homepage": "https://github.com/wyre-technology/kaseya-vsa-mcp",
-    "readme": "https://github.com/wyre-technology/kaseya-vsa-mcp#readme"
-  },
-  "keywords": [
-    "Kaseya VSA"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-technology/kaseya-vsa-mcp:v1.1.4",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-technology/kaseya-vsa-mcp:v1.1.4",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-technology/kaseya-vsa-mcp",
-      "priority": 10,
+      "id": "upstream-351a447103191a5d",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-technology/kaseya-vsa-mcp:v1.1.4",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wyre-technology/kaseya-vsa-mcp",
+    "homepage": "https://github.com/wyre-technology/kaseya-vsa-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-technology__kaseya-vsa-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=351",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wyre-technology/kaseya-vsa-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

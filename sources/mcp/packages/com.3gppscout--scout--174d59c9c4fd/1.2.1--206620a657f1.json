@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.3gppscout/scout",
+  "name": "com.3gppscout/scout",
+  "displayName": "3GPP Scout",
+  "version": "1.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted 3GPP MCP server for Rel-15–20 TS/TR search. Index stays current.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.3gppscout/scout",
+    "remotes": [
+      {
+        "url": "https://api.3gppscout.com/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c3ab232885694877",
+      "type": "other",
+      "url": "https://api.3gppscout.com/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://api.3gppscout.com/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/carrotlabsai/3gpp-scout-mcp",
+    "homepage": "https://3gppscout.com/mcp/?src=mcpregistry"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.3gppscout/scout"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

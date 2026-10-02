@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.aa8c6492964e345aceae9f7e3d3a83bf991d90197e081a8ec890ceb294732a2c",
+  "name": "doer1296/dsh-plugin-voice",
+  "displayName": "doer1296/dsh-plugin-voice",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 插件：语音 + 通知出口——agent 通过云端 TTS（火山 seed-tts 高音质，失败自动回退 SAPI）/ 桌面通知 / 提示音主动联系用户。融合 dsh-plugin-notify 的 DSH 原生深度集成与 agent-voice-mcp-minus 的云端 TTS 调优，零 Python 依赖，Windows 原生。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/doer1296/dsh-plugin-voice",
+    "readme": "https://github.com/doer1296/dsh-plugin-voice#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/doer1296/dsh-plugin-voice"
+    },
+    {
+      "id": "npm-908e6618696d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-plugin-voice",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "notifications"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12099"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12546"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-plugin-voice"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.homes.a-du/a-du",
+  "name": "homes.a-du/a-du",
+  "displayName": "A-du: ADU rentals, plans and rules",
+  "version": "0.9.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Permit-verified ADU rentals, pre-approved plans and cited ADU rules for LA, San Diego, SF and NYC.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "homes.a-du/a-du",
+    "remotes": [
+      {
+        "url": "https://a-du.homes/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-17a277742d8d6dc4",
+      "type": "other",
+      "url": "https://a-du.homes/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://a-du.homes/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cfkoss/a-du",
+    "homepage": "https://a-du.homes/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "homes.a-du/a-du"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

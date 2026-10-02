@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ni-c/opengist-mcp",
   "name": "io.github.ni-c/opengist-mcp",
+  "displayName": "Opengist",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "Read, create, update and delete gists on a self-hosted Opengist instance",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ni-c/opengist-mcp",
-    "homepage": "https://opengist-mcp.ni-c.de",
-    "readme": "https://github.com/ni-c/opengist-mcp#readme"
-  },
-  "keywords": [
-    "Opengist"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "opengist-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Read, create, update and delete gists on a self-hosted Opengist instance",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "opengist-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1e13999a36031dda",
       "type": "registry",
       "url": "https://www.npmjs.com/package/opengist-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.0"
+    },
+    {
+      "id": "upstream-6a207d9dd8a1eed2",
+      "type": "oci",
+      "url": "https://ghcr.io/ni-c/opengist-mcp:0.5.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ni-c/opengist-mcp",
+    "homepage": "https://opengist-mcp.ni-c.de"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ni-c__opengist-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ni-c/opengist-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

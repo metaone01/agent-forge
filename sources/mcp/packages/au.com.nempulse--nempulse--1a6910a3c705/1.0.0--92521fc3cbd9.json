@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.au.com.nempulse/nempulse",
+  "name": "au.com.nempulse/nempulse",
+  "displayName": "au.com.nempulse/nempulse",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only access to Australian NEM grid-scale battery performance, revenue, dispatch and FCAS data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "au.com.nempulse/nempulse",
+    "remotes": [
+      {
+        "url": "https://nempulse.com.au/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-06b56368c5a461a8",
+      "type": "other",
+      "url": "https://nempulse.com.au/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://nempulse.com.au/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/FDSchaefer/bessPerformance",
+    "homepage": "https://nempulse.com.au"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "au.com.nempulse/nempulse"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

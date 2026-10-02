@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.energy.clarigrid/clarigrid",
+  "name": "energy.clarigrid/clarigrid",
+  "displayName": "Clarigrid",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only electricity, gas, and weather data with structured provenance and units.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "energy.clarigrid/clarigrid",
+    "remotes": [
+      {
+        "url": "https://mcp.clarigrid.energy/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a49386271bd66b3e",
+      "type": "other",
+      "url": "https://mcp.clarigrid.energy/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.clarigrid.energy/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AlexanderHoogsteyn/ClariGrid"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "energy.clarigrid/clarigrid"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

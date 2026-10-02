@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2fe3b317b915692ad40e72af4fec41cd146fdb2095e297579fe294c4c198273f",
+  "name": "lmh-2026/dsh-periscope",
+  "displayName": "lmh-2026/dsh-periscope",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH plugin: keep text-only models (deepseek-v4-flash / deepseek-v4-pro) as the session default, and automatically route requests that carry image content to a configured vision-capable model",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/lmh-2026/dsh-periscope",
+    "readme": "https://github.com/lmh-2026/dsh-periscope#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/lmh-2026/dsh-periscope"
+    },
+    {
+      "id": "npm-85c6dbf22a99",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-periscope",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "vision",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6419"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "6325"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "9117"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

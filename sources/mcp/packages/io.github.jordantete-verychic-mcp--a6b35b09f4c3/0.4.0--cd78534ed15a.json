@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jordantete/verychic-mcp",
   "name": "io.github.jordantete/verychic-mcp",
+  "displayName": "VeryChic Hotel Deals",
   "version": "0.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Unofficial read-only MCP server for VeryChic hotel offers",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/jordantete/verychic-mcp",
-    "homepage": "https://github.com/jordantete/verychic-mcp",
-    "readme": "https://github.com/jordantete/verychic-mcp#readme"
-  },
-  "keywords": [
-    "VeryChic Hotel Deals"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "verychic-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "verychic-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://verychic-mcp.fly.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ffbce69c5984535b",
       "type": "registry",
-      "url": "https://pypi.org/project/verychic-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/verychic-mcp",
+      "registry": "pypi",
+      "version": "0.4.0"
+    },
+    {
+      "id": "upstream-6e305c11baad3a10",
+      "type": "other",
+      "url": "https://verychic-mcp.fly.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://verychic-mcp.fly.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/jordantete/verychic-mcp",
+    "homepage": "https://github.com/jordantete/verychic-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jordantete__verychic-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=221",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jordantete/verychic-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

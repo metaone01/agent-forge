@@ -2,47 +2,55 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.khalid-tounoussi-1/stil-ets-mcp",
   "name": "io.github.khalid-tounoussi-1/stil-ets-mcp",
+  "displayName": "STIL Lab Assistant",
   "version": "1.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "STIL lab at ETS Montreal — knowledge base and paper search via ArXiv and Semantic Scholar.",
   "license": "unknown",
-  "links": {
-    "repository": "https://hub.docker.com/r/khalid-tounoussi-1/stil-ets-mcp"
-  },
-  "keywords": [
-    "STIL Lab Assistant"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/khalid-tounoussi-1/stil-ets-mcp:1.0.0",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/khalid-tounoussi-1/stil-ets-mcp:1.0.0",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://web-production-4729.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/khalid-tounoussi-1/stil-ets-mcp",
-      "priority": 10,
+      "id": "upstream-3bdc479e9ff0bc45",
+      "type": "oci",
+      "url": "https://ghcr.io/khalid-tounoussi-1/stil-ets-mcp:1.0.0",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-b3fadc3f98df5452",
+      "type": "other",
+      "url": "https://web-production-4729.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://web-production-4729.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +63,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.khalid-tounoussi-1__stil-ets-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=224",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.khalid-tounoussi-1/stil-ets-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

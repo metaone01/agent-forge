@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.global.mycelium/emissions-database",
+  "name": "global.mycelium/emissions-database",
+  "displayName": "Mycelium Emissions Database",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search company carbon emissions: scope 1, 2 and 3 figures, Mycelium Scores and rankings.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "global.mycelium/emissions-database",
+    "remotes": [
+      {
+        "url": "https://mycelium.global/mcp/server",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0aca3c309c37548f",
+      "type": "other",
+      "url": "https://mycelium.global/mcp/server",
+      "install": {
+        "type": "api",
+        "url": "https://mycelium.global/mcp/server"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/MyceliumNetwork/mcp-server",
+    "homepage": "https://mycelium.global/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "global.mycelium/emissions-database"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

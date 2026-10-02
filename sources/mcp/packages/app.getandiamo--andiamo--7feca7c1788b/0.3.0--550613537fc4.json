@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.getandiamo/andiamo",
+  "name": "app.getandiamo/andiamo",
+  "displayName": "Andiamo",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Plan door-to-door trips across French trains, buses, transit and flights.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.getandiamo/andiamo",
+    "remotes": [
+      {
+        "url": "https://getandiamo.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-75865f153acdfe0a",
+      "type": "other",
+      "url": "https://getandiamo.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://getandiamo.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/NicoLeblanc/andiamo",
+    "homepage": "https://getandiamo.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=19",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.getandiamo/andiamo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

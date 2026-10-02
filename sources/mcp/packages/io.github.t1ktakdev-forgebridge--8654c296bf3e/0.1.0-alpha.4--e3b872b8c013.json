@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.t1ktakdev/forgebridge",
   "name": "io.github.t1ktakdev/forgebridge",
+  "displayName": "ForgeBridge",
   "version": "0.1.0-alpha.4",
-  "versionScheme": "semver",
-  "description": "A local, permissioned MCP agent for authorized developer workstations.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/t1ktakdev/ForgeBridge",
-    "readme": "https://github.com/t1ktakdev/ForgeBridge#readme"
-  },
-  "keywords": [
-    "ForgeBridge"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "forgebridge",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A local, permissioned MCP agent for authorized developer workstations.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "forgebridge",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a29acd8a43748fdf",
       "type": "registry",
       "url": "https://www.npmjs.com/package/forgebridge",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.0-alpha.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/t1ktakdev/ForgeBridge"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.t1ktakdev__forgebridge.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=335",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.t1ktakdev/forgebridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

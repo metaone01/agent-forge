@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.newyorkautoquotes/insurance",
+  "name": "com.newyorkautoquotes/insurance",
+  "displayName": "New York Insurance",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "New York's published auto insurance averages. Not a quote; we are not licensed here yet.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.newyorkautoquotes/insurance",
+    "remotes": [
+      {
+        "url": "https://newyorkautoquotes.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-929b26c901f9f253",
+      "type": "other",
+      "url": "https://newyorkautoquotes.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://newyorkautoquotes.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=65",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.newyorkautoquotes/insurance"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

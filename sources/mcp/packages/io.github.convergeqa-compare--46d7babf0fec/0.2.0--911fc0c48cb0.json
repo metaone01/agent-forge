@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.convergeqa/compare",
   "name": "io.github.convergeqa/compare",
+  "displayName": "ConvergeQA Compare (Due Diligence)",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Compare one prompt across a multi-model panel side by side, with public verification receipts.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/convergeqa/convergeqa-mcp",
-    "homepage": "https://convergeqa.net/agents",
-    "readme": "https://github.com/convergeqa/convergeqa-mcp#readme"
-  },
-  "keywords": [
-    "ConvergeQA Compare (Due Diligence)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "convergeqa-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Compare one prompt across a multi-model panel side by side, with public verification receipts.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "convergeqa-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-00502d2ee9885ecc",
       "type": "registry",
-      "url": "https://pypi.org/project/convergeqa-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/convergeqa-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/convergeqa/convergeqa-mcp",
+    "homepage": "https://convergeqa.net/agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.convergeqa__compare.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.convergeqa/compare"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

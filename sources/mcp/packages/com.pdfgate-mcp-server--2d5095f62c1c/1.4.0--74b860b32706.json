@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.pdfgate/mcp-server",
   "name": "com.pdfgate/mcp-server",
+  "displayName": "com.pdfgate/mcp-server",
   "version": "1.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for the PDFGate API. Generate PDFs, manage documents and handle e-signatures.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/pdfgate/pdfgate-mcp-server",
-    "homepage": "https://pdfgate.com",
-    "readme": "https://github.com/pdfgate/pdfgate-mcp-server#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@pdfgate/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pdfgate/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.pdfgate.com/server",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a7e65b49ded32eef",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@pdfgate/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.4.0"
+    },
+    {
+      "id": "upstream-7e744cc6191f243e",
+      "type": "other",
+      "url": "https://mcp.pdfgate.com/server",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pdfgate.com/server"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/pdfgate/pdfgate-mcp-server",
+    "homepage": "https://pdfgate.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.pdfgate__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=68",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.pdfgate/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

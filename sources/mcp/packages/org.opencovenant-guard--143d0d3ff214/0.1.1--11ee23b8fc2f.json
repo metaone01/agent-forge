@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.org.opencovenant/guard",
   "name": "org.opencovenant/guard",
+  "displayName": "Covenant Guard",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Hard spend cap, OS sandbox, and signed receipts for unattended coding agents like Claude Code.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/open-covenant/covenant",
-    "homepage": "https://opencovenant.org/guard",
-    "readme": "https://github.com/open-covenant/covenant#readme"
-  },
-  "keywords": [
-    "Covenant Guard"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/open-covenant/covenant/releases/download/covguard-v0.1.1/covenant-guard.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/open-covenant/covenant/releases/download/covguard-v0.1.1/covenant-guard.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-9d3f7ced05c28add",
+      "type": "archive",
       "url": "https://github.com/open-covenant/covenant/releases/download/covguard-v0.1.1/covenant-guard.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/open-covenant/covenant",
+    "homepage": "https://opencovenant.org/guard"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\org.opencovenant__guard.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=371",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.opencovenant/guard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

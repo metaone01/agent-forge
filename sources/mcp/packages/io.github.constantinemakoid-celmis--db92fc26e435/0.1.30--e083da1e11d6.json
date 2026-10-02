@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.constantinemakoid/celmis",
   "name": "io.github.constantinemakoid/celmis",
+  "displayName": "io.github.constantinemakoid/celmis",
   "version": "0.1.30",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted code intelligence: cross-repo Q&A, dependency audits and PR review, over MCP",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Celmis-labs/Celmis",
-    "homepage": "https://celmis-labs.github.io",
-    "readme": "https://github.com/Celmis-labs/Celmis#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/celmis-labs/celmis-api:v0.1.30",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/celmis-labs/celmis-api:v0.1.30",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/celmis-labs/celmis-api",
-      "priority": 10,
+      "id": "upstream-712017b6438fa654",
+      "type": "oci",
+      "url": "https://ghcr.io/celmis-labs/celmis-api:v0.1.30",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Celmis-labs/Celmis",
+    "homepage": "https://celmis-labs.github.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.constantinemakoid__celmis.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.constantinemakoid/celmis"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

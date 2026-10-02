@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.snoozelieb/coach-mcp",
   "name": "io.github.snoozelieb/coach-mcp",
+  "displayName": "io.github.snoozelieb/coach-mcp",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Adaptive AI training coach MCP server backed by Garmin Connect",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/snoozelieb/coach-mcp",
-    "readme": "https://github.com/snoozelieb/coach-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "garmin-coach-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "garmin-coach-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6679adea0d8aaf05",
       "type": "registry",
-      "url": "https://pypi.org/project/garmin-coach-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/garmin-coach-mcp",
+      "registry": "pypi",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/snoozelieb/coach-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.snoozelieb__coach-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=331",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.snoozelieb/coach-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

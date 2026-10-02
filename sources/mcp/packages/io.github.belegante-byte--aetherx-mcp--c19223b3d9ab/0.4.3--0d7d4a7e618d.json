@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.belegante-byte/aetherx-mcp",
+  "name": "io.github.belegante-byte/aetherx-mcp",
+  "displayName": "Aether-X Port Congestion Oracle",
+  "version": "0.4.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live port congestion signal, vessel queue, ETA delay and demurrage exposure for 19 ports.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "aetherx-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://aetherx.aether-grid.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8a02435e14b3a3f1",
+      "type": "registry",
+      "url": "https://pypi.org/project/aetherx-mcp",
+      "registry": "pypi",
+      "version": "0.2.4"
+    },
+    {
+      "id": "upstream-c0d1426e6367f9b6",
+      "type": "other",
+      "url": "https://aetherx.aether-grid.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://aetherx.aether-grid.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/belegante-byte/aetherx-oracle-engine",
+    "homepage": "https://aetherx.aether-grid.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=176",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.belegante-byte/aetherx-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

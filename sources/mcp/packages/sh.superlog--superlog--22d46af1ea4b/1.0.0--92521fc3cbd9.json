@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.superlog/superlog",
+  "name": "sh.superlog/superlog",
+  "displayName": "Superlog",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Open-source agent that observes and fixes your application. Query logs, traces, metrics, incidents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.superlog/superlog",
+    "remotes": [
+      {
+        "url": "https://api.superlog.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e73549a59ae1e50e",
+      "type": "other",
+      "url": "https://api.superlog.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.superlog.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/superloglabs/superlog",
+    "homepage": "https://superlog.sh"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.superlog/superlog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

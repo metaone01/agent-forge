@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.unaibamir/agent-abilities-for-mcp",
+  "name": "io.github.unaibamir/agent-abilities-for-mcp",
+  "displayName": "Agent Abilities for MCP",
+  "version": "1.7.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Self-hosted WordPress MCP server with per-capability permission controls and a full audit log.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.unaibamir/agent-abilities-for-mcp",
+    "remotes": [
+      {
+        "url": "https://{hostname}/wp-json/agent-abilities-for-mcp/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-726fcb56b1938974",
+      "type": "other",
+      "url": "https://{hostname}/wp-json/agent-abilities-for-mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{hostname}/wp-json/agent-abilities-for-mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/unaibamir/agent-abilities-for-mcp",
+    "homepage": "https://agentabilitieswp.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=344",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.unaibamir/agent-abilities-for-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

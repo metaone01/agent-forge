@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.vn.datacore/datacore-a2a",
   "name": "vn.datacore/datacore-a2a",
+  "displayName": "DataCore A2A",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Chuẩn hoá địa chỉ Việt Nam và tra cứu doanh nghiệp theo tên hoặc mã số thuế, qua DataCore A2A.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/DataCore-VietNam/datacore-a2a-mcp",
-    "readme": "https://github.com/DataCore-VietNam/datacore-a2a-mcp#readme"
-  },
-  "keywords": [
-    "DataCore A2A"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "datacore-a2a-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "datacore-a2a-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-20d4b1b887224f48",
       "type": "registry",
-      "url": "https://pypi.org/project/datacore-a2a-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/datacore-a2a-mcp",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/DataCore-VietNam/datacore-a2a-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\vn.datacore__datacore-a2a.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "vn.datacore/datacore-a2a"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.banking-mcp/banking",
+  "name": "com.banking-mcp/banking",
+  "displayName": "BankingMCP",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only access to your bank balances and transactions in Germany and the EU. Free trial.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.banking-mcp/banking",
+    "remotes": [
+      {
+        "url": "https://banking-mcp.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-01057249d1e52e99",
+      "type": "other",
+      "url": "https://banking-mcp.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://banking-mcp.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://banking-mcp.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=36",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.banking-mcp/banking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

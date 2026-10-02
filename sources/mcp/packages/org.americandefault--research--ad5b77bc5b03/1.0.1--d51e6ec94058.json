@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.americandefault/research",
+  "name": "org.americandefault/research",
+  "displayName": "American Default Research",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP for U.S. household distress: 96 indicators, ADI composite, 3,144 counties.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.americandefault/research",
+    "remotes": [
+      {
+        "url": "https://mcp.americandefault.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-490ae622b3578554",
+      "type": "other",
+      "url": "https://mcp.americandefault.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.americandefault.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/vibecode1/american-default-mcp",
+    "homepage": "https://americandefault.org/press/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=370",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.americandefault/research"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

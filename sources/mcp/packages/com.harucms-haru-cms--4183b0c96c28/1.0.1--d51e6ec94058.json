@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.harucms/haru-cms",
   "name": "com.harucms/haru-cms",
+  "displayName": "ハルCMS (HARU CMS)",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "日本語ヘッドレスCMS。記事の作成・更新・予約公開・画像取り込みをAIから実行できる。APIキーで接続、npm不要。Astro/Next.js等へ配信APIで届く。",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Masato-haru/webharu-cms",
-    "homepage": "https://www.webharu.com/cms",
-    "readme": "https://github.com/Masato-haru/webharu-cms#readme"
-  },
-  "keywords": [
-    "ハルCMS (HARU CMS)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "haru-cms-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "日本語ヘッドレスCMS。記事の作成・更新・予約公開・画像取り込みをAIから実行できる。APIキーで接続、npm不要。Astro/Next.js等へ配信APIで届く。",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "haru-cms-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://app.harucms.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-562aa2c9bbf82003",
       "type": "registry",
       "url": "https://www.npmjs.com/package/haru-cms-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-df3a7f0d27500928",
+      "type": "other",
+      "url": "https://app.harucms.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.harucms.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Masato-haru/webharu-cms",
+    "homepage": "https://www.webharu.com/cms"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.harucms__haru-cms.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.harucms/haru-cms"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

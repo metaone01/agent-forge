@@ -2,47 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.smeet666/mcp-ashby",
   "name": "io.github.smeet666/mcp-ashby",
+  "displayName": "io.github.smeet666/mcp-ashby",
   "version": "2.0.1",
-  "versionScheme": "semver",
-  "description": "Search public Ashby job boards: resolve a company, read its openings and the pay it publishes.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/smeet666/mcp-ashby",
-    "readme": "https://github.com/smeet666/mcp-ashby#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-ashby",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search public Ashby job boards: resolve a company, read its openings and the pay it publishes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-ashby",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-619e3867250f265e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-ashby",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.0.1"
+    },
+    {
+      "id": "upstream-00373f187b2774e7",
+      "type": "archive",
+      "url": "https://github.com/smeet666/mcp-ashby/releases/download/v2.0.1/mcp-ashby-2.0.1.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/smeet666/mcp-ashby"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.smeet666__mcp-ashby.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=330",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.smeet666/mcp-ashby"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

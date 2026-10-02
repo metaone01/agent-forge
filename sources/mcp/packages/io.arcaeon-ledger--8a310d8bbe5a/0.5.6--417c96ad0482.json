@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.arcaeon/ledger",
   "name": "io.arcaeon/ledger",
+  "displayName": "Arcaeon Ledger",
   "version": "0.5.6",
-  "versionScheme": "semver",
-  "description": "Tamper-evident action logging for agents: hash-chained append/verify, one JSONL file, zero deps.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/dan8433-user/ledger",
-    "homepage": "https://arcaeon.io/ai",
-    "readme": "https://github.com/dan8433-user/ledger#readme"
-  },
-  "keywords": [
-    "Arcaeon Ledger"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "arcaeon-ledger",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Tamper-evident action logging for agents: hash-chained append/verify, one JSONL file, zero deps.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "arcaeon-ledger",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-859b96c2154892e4",
       "type": "registry",
-      "url": "https://pypi.org/project/arcaeon-ledger/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/arcaeon-ledger",
+      "registry": "pypi",
+      "version": "0.5.6"
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/dan8433-user/ledger",
+    "homepage": "https://arcaeon.io/ai"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.arcaeon__ledger.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=102",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.arcaeon/ledger"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

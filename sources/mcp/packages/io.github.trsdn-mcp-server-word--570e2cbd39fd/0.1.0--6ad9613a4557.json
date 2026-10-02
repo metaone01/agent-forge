@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.trsdn/mcp-server-word",
   "name": "io.github.trsdn/mcp-server-word",
+  "displayName": "Word",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Microsoft Word automation for AI assistants. Requires Word for Windows.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/trsdn/mcp-server-word",
-    "readme": "https://github.com/trsdn/mcp-server-word#readme"
-  },
-  "keywords": [
-    "Word"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "WordMcp.McpServer",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "WordMcp.McpServer",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-00d511987fed3816",
       "type": "registry",
       "url": "https://www.nuget.org/packages/WordMcp.McpServer",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/trsdn/mcp-server-word"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.trsdn__mcp-server-word.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.trsdn/mcp-server-word"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

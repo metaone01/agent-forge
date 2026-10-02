@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alexeibespalov/trident",
   "name": "io.github.alexeibespalov/trident",
+  "displayName": "io.github.alexeibespalov/trident",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "Create and edit collaborative architecture diagrams with any AI assistant using the Trident 2D DSL.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/alexeibespalov/tridentpublic",
-    "readme": "https://github.com/alexeibespalov/tridentpublic#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "trident-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Create and edit collaborative architecture diagrams with any AI assistant using the Trident 2D DSL.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "trident-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.tridentchart.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2fce8c3b9919a037",
       "type": "registry",
       "url": "https://www.npmjs.com/package/trident-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-573f37dbb0102563",
+      "type": "other",
+      "url": "https://mcp.tridentchart.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tridentchart.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/alexeibespalov/tridentpublic"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alexeibespalov__trident.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alexeibespalov/trident"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

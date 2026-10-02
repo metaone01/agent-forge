@@ -2,47 +2,39 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.uantum/agents-u-cash",
   "name": "io.github.uantum/agents-u-cash",
+  "displayName": "agents.u.cash",
   "version": "0.6.7",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Non-custodial HTTP-402 crypto payments for AI agents. 77-tool MCP server.",
   "license": "unknown",
-  "links": {
-    "repository": "https://hub.docker.com/r/udotcash/agents-u-cash-mcp"
-  },
-  "keywords": [
-    "agents.u.cash"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/udotcash/agents-u-cash-mcp:0.6.7",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/udotcash/agents-u-cash-mcp:0.6.7",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/udotcash/agents-u-cash-mcp",
-      "priority": 10,
+      "id": "upstream-338ba5039e66b487",
+      "type": "oci",
+      "url": "https://ghcr.io/udotcash/agents-u-cash-mcp:0.6.7",
       "registry": "oci"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +47,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.uantum__agents-u-cash.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=344",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.uantum/agents-u-cash"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

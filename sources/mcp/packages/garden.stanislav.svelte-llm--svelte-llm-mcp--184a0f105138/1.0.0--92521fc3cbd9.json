@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.garden.stanislav.svelte-llm/svelte-llm-mcp",
+  "name": "garden.stanislav.svelte-llm/svelte-llm-mcp",
+  "displayName": "garden.stanislav.svelte-llm/svelte-llm-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "An MCP server that provides access to Svelte 5 and SvelteKit documentation",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "garden.stanislav.svelte-llm/svelte-llm-mcp",
+    "remotes": [
+      {
+        "url": "https://svelte-llm.stanislav.garden/mcp/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://svelte-llm.stanislav.garden/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c9330daca1ecdb80",
+      "type": "other",
+      "url": "https://svelte-llm.stanislav.garden/mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://svelte-llm.stanislav.garden/mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-81dee166fdaf71d7",
+      "type": "other",
+      "url": "https://svelte-llm.stanislav.garden/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://svelte-llm.stanislav.garden/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/khromov/svelte-llm-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "garden.stanislav.svelte-llm/svelte-llm-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

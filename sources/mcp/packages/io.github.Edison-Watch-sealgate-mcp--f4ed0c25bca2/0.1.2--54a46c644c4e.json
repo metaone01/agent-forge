@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Edison-Watch/sealgate-mcp",
   "name": "io.github.Edison-Watch/sealgate-mcp",
+  "displayName": "Sealgate",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Sealgate gateway proxy: list governed MCP servers and review agent session and audit status.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Edison-Watch/sealgate-mcp",
-    "homepage": "https://sealgate.ai",
-    "readme": "https://github.com/Edison-Watch/sealgate-mcp#readme"
-  },
-  "keywords": [
-    "Sealgate"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@sealgate/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Sealgate gateway proxy: list governed MCP servers and review agent session and audit status.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@sealgate/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.sealgate.ai/mcp/{api_key}/?client={label}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c62fb7624376cdfb",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@sealgate/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-dba55916d4e1d43e",
+      "type": "other",
+      "url": "https://mcp.sealgate.ai/mcp/{api_key}/?client={label}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.sealgate.ai/mcp/{api_key}/?client={label}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Edison-Watch/sealgate-mcp",
+    "homepage": "https://sealgate.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.edison-watch__sealgate-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=124",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Edison-Watch/sealgate-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

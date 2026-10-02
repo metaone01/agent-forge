@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Aryan-Jhaveri/mcp-statcan",
   "name": "io.github.Aryan-Jhaveri/mcp-statcan",
+  "displayName": "Statistics Canada MCP Server",
   "version": "0.7.17",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Access Statistics Canada data via the Web Data Services API",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Aryan-Jhaveri/mcp-statcan",
-    "homepage": "https://github.com/Aryan-Jhaveri/mcp-statcan",
-    "readme": "https://github.com/Aryan-Jhaveri/mcp-statcan#readme"
-  },
-  "keywords": [
-    "Statistics Canada MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "statcan-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "statcan-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-83c2eb3d0ac8a5f7",
       "type": "registry",
-      "url": "https://pypi.org/project/statcan-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/statcan-mcp-server",
+      "registry": "pypi",
+      "version": "0.7.17"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Aryan-Jhaveri/mcp-statcan",
+    "homepage": "https://github.com/Aryan-Jhaveri/mcp-statcan"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aryan-jhaveri__mcp-statcan.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Aryan-Jhaveri/mcp-statcan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

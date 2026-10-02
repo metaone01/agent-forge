@@ -2,49 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.nyxory/nyxory",
   "name": "com.nyxory/nyxory",
+  "displayName": "nyxory",
   "version": "0.12.4",
-  "versionScheme": "semver",
-  "description": "Agent-to-agent cloud service: deploys and runs your apps and services — domains, logs, real status.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@nyxory/mcp",
-    "homepage": "https://nyxory.com"
-  },
-  "keywords": [
-    "nyxory"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@nyxory/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Agent-to-agent cloud service: deploys and runs your apps and services — domains, logs, real status.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@nyxory/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.nyxory.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d1fcd35001834167",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@nyxory/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.12.4"
+    },
+    {
+      "id": "upstream-e5a6577e4c872f6b",
+      "type": "other",
+      "url": "https://api.nyxory.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.nyxory.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://nyxory.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.nyxory__nyxory.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=66",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.nyxory/nyxory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.coordinalo/mcp-server",
+  "name": "com.coordinalo/mcp-server",
+  "displayName": "Coordinalo — Service Business Operations",
+  "version": "4.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Scheduling, availability, clients, billing and CRM for appointment-based services.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.coordinalo/mcp-server",
+    "remotes": [
+      {
+        "url": "https://coordinalo.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-13479ed15ee9a245",
+      "type": "other",
+      "url": "https://coordinalo.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://coordinalo.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/danioni/coordinalo-mcp",
+    "homepage": "https://coordinalo.com/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=41",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.coordinalo/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

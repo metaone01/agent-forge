@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bguillow-rgb/pour-picks",
   "name": "io.github.bguillow-rgb/pour-picks",
+  "displayName": "Pour Picks",
   "version": "1.0.4",
-  "versionScheme": "semver",
-  "description": "Search the Pour Picks bourbon & whiskey database: 4,700+ bottles with tasting profiles and prices.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/bguillow-rgb/pour-picks-mcp",
-    "homepage": "https://pourpicks.app/mcp",
-    "readme": "https://github.com/bguillow-rgb/pour-picks-mcp#readme"
-  },
-  "keywords": [
-    "Pour Picks"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "pour-picks-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search the Pour Picks bourbon & whiskey database: 4,700+ bottles with tasting profiles and prices.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "pour-picks-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.pourpicks.app/?src=registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c21f9106014e76be",
       "type": "registry",
       "url": "https://www.npmjs.com/package/pour-picks-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-d0e63071897a2c94",
+      "type": "other",
+      "url": "https://mcp.pourpicks.app/?src=registry",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pourpicks.app/?src=registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/bguillow-rgb/pour-picks-mcp",
+    "homepage": "https://pourpicks.app/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bguillow-rgb__pour-picks.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=176",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bguillow-rgb/pour-picks"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

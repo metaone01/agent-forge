@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.clauxel.genaispanmapper/genaispanmapper-mcp",
+  "name": "com.clauxel.genaispanmapper/genaispanmapper-mcp",
+  "displayName": "com.clauxel.genaispanmapper/genaispanmapper-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP for GenAI span mapping, provider normalization, dashboard schemas, and receipts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.clauxel.genaispanmapper/genaispanmapper-mcp",
+    "remotes": [
+      {
+        "url": "https://genaispanmapper.clauxel.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-71b59894641d5c83",
+      "type": "other",
+      "url": "https://genaispanmapper.clauxel.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://genaispanmapper.clauxel.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/clauxel/genai-span-mapper-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=40",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.clauxel.genaispanmapper/genaispanmapper-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.hydracept/hydracept",
+  "name": "com.hydracept/hydracept",
+  "displayName": "Hydracept",
+  "version": "0.4.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Execution control plane for agents: capabilities, durable jobs, budgets, receipts, and BYOK.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "hydracept",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.hydracept.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ed070c60b7551a65",
+      "type": "registry",
+      "url": "https://pypi.org/project/hydracept",
+      "registry": "pypi",
+      "version": "0.4.4"
+    },
+    {
+      "id": "upstream-e27d6e11904bce7d",
+      "type": "other",
+      "url": "https://api.hydracept.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.hydracept.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/zencodeinc/hydracept-public",
+    "homepage": "https://hydracept.com/plugin"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=54",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hydracept/hydracept"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.no.cantara/kcp-harness",
   "name": "no.cantara/kcp-harness",
+  "displayName": "kcp-harness — KCP compliance proxy",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "MCP compliance proxy between agent and tools: deterministic governance, fail-closed, audit trail.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/Cantara/kcp-harness",
-    "homepage": "https://cantara.github.io/kcp-harness/",
-    "readme": "https://github.com/Cantara/kcp-harness#readme"
-  },
-  "keywords": [
-    "kcp-harness — KCP compliance proxy"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "kcp-harness",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP compliance proxy between agent and tools: deterministic governance, fail-closed, audit trail.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "kcp-harness",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-50c6aa41b04c3d68",
       "type": "registry",
       "url": "https://www.npmjs.com/package/kcp-harness",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Cantara/kcp-harness",
+    "homepage": "https://cantara.github.io/kcp-harness/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\no.cantara__kcp-harness.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "no.cantara/kcp-harness"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

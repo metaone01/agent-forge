@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ch.entscheidsuche/mcp",
+  "name": "ch.entscheidsuche/mcp",
+  "displayName": "Entscheidsuche — Schweizer Gerichtsentscheide",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Suche in Schweizer Gerichtsentscheiden aller Instanzen (Bund, Kantone) in DE/FR/IT.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ch.entscheidsuche/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.entscheidsuche.ch/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7ef795061702a505",
+      "type": "other",
+      "url": "https://mcp.entscheidsuche.ch/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.entscheidsuche.ch/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/entscheidsuche/entscheidsuche-mcp",
+    "homepage": "https://entscheidsuche.ch"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ch.entscheidsuche/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

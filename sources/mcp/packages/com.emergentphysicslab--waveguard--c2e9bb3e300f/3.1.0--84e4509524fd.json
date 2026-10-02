@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.emergentphysicslab/waveguard",
+  "name": "com.emergentphysicslab/waveguard",
+  "displayName": "WaveGuard",
+  "version": "3.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Anomaly detection API powered by physics simulation. Scan any data for outliers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.emergentphysicslab/waveguard",
+    "remotes": [
+      {
+        "url": "https://gpartin--waveguard-api-fastapi-app.modal.run/v2/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3455d4eba9cff507",
+      "type": "other",
+      "url": "https://gpartin--waveguard-api-fastapi-app.modal.run/v2/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gpartin--waveguard-api-fastapi-app.modal.run/v2/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/gpartin/LFMAnomalyDetection",
+    "homepage": "https://github.com/gpartin/WaveGuardClient"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=46",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.emergentphysicslab/waveguard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

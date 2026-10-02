@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.hubspot-sales",
+  "name": "hubspot-sales",
+  "displayName": "HubSpot/hubspot-mcp-plugins/HubSpot-Sales",
+  "version": "a0c59600fc1ddcf03ceca71aebf0c28aa55f49e3",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "HubSpot-Sales/.claude-plugin/plugin.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/HubSpot/hubspot-mcp-plugins",
+    "readme": "https://github.com/HubSpot/hubspot-mcp-plugins#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/HubSpot/hubspot-mcp-plugins/tree/a0c59600fc1ddcf03ceca71aebf0c28aa55f49e3/HubSpot-Sales",
+      "ref": "a0c59600fc1ddcf03ceca71aebf0c28aa55f49e3"
+    }
+  ],
+  "keywords": [],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": ".claude-plugin/marketplace.json",
+          "entry": "hubspot-sales"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

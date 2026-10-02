@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.metricspot/seo-mcp",
   "name": "com.metricspot/seo-mcp",
+  "displayName": "com.metricspot/seo-mcp",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Six tools for SEO and AI-readability audits. 91 checks, 11 score modules.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/MetricSpot/mcp-server",
-    "homepage": "https://metricspot.com/features/seo-mcp/",
-    "readme": "https://github.com/MetricSpot/mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@metricspot/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Six tools for SEO and AI-readability audits. 91 checks, 11 score modules.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@metricspot/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.metricspot.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3e995e263c3e6ac1",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@metricspot/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-0c7a910d1d8208f4",
+      "type": "other",
+      "url": "https://mcp.metricspot.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.metricspot.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/MetricSpot/mcp-server",
+    "homepage": "https://metricspot.com/features/seo-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.metricspot__seo-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.metricspot/seo-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

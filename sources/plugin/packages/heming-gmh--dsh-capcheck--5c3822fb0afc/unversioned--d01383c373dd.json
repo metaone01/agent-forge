@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.29e48653e232ff0a6c81826c1d681a81f0b26654ddb1f6f057153f3d58a0edc1",
+  "name": "heming-gmh/dsh-capcheck",
+  "displayName": "heming-gmh/dsh-capcheck",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "V0 capability-disclosure scanner for DeepSeek Harness (DSH) cordis plugins: reports which sensitive services (credentials/shell/approval/sandbox/fs/tools...) a plugin declares or references before",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/heming-gmh/dsh-capcheck",
+    "readme": "https://github.com/heming-gmh/dsh-capcheck#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/heming-gmh/dsh-capcheck"
+    }
+  ],
+  "keywords": [
+    "safety",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "1903"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "3547"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "5475"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "8008"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

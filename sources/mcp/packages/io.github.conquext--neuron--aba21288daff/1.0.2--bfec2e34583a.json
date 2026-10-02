@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.conquext/neuron",
+  "name": "io.github.conquext/neuron",
+  "displayName": "io.github.conquext/neuron",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI-powered WhatsApp chatbot platform with 196 tools for bots, campaigns, and contacts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "neuron-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.neuron.ng/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1777b5be21b721fe",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/neuron-mcp-server",
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-c792ae8decbb1f47",
+      "type": "other",
+      "url": "https://mcp.neuron.ng/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.neuron.ng/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/conquext/neuron"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.conquext/neuron"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

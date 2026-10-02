@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.limonene/limonene",
+  "name": "app.limonene/limonene",
+  "displayName": "Limonene",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only Amazon seller analytics: sales, Buy Box, FBA inventory, alerts, revenue and fees.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.limonene/limonene",
+    "remotes": [
+      {
+        "url": "https://limonene.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-dc8f74826f85daf8",
+      "type": "other",
+      "url": "https://limonene.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://limonene.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/M-Abozaid/limonene-mcp",
+    "homepage": "https://limonene.app/connect-ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=19",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.limonene/limonene"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

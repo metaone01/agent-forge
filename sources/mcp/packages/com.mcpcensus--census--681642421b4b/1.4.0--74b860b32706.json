@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mcpcensus/census",
+  "name": "com.mcpcensus/census",
+  "displayName": "The MCP Census",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Vet any MCP server before you depend on it. Stamp: PASS, REVIEW, or BLOCK.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mcpcensus/census",
+    "remotes": [
+      {
+        "url": "https://api.mcpcensus.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-90dda6d4638cc671",
+      "type": "other",
+      "url": "https://api.mcpcensus.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcpcensus.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mcpcensus.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpcensus/census"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

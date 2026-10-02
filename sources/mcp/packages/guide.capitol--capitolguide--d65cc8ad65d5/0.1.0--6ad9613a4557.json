@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.guide.capitol/capitolguide",
+  "name": "guide.capitol/capitolguide",
+  "displayName": "guide.capitol/capitolguide",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Navigate the U.S. Capitol complex: decode room codes, route buildings, check access, amenities.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "guide.capitol/capitolguide",
+    "remotes": [
+      {
+        "url": "https://capitol.guide/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0be0a89a9d5dd461",
+      "type": "other",
+      "url": "https://capitol.guide/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://capitol.guide/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://capitol.guide"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "guide.capitol/capitolguide"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.il.co.bituchon/car-insurance",
+  "name": "il.co.bituchon/car-insurance",
+  "displayName": "ביטוחון: Israeli car data and car-insurance facts",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Israeli car data by plate or model, licence fee, recalls, thefts and car-insurance facts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "il.co.bituchon/car-insurance",
+    "remotes": [
+      {
+        "url": "https://bituchon.co.il/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e6cea95ae9dfb763",
+      "type": "other",
+      "url": "https://bituchon.co.il/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bituchon.co.il/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://bituchon.co.il/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "il.co.bituchon/car-insurance"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

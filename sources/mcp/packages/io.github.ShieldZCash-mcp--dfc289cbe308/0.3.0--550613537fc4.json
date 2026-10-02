@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ShieldZCash/mcp",
   "name": "io.github.ShieldZCash/mcp",
+  "displayName": "io.github.ShieldZCash/mcp",
   "version": "0.3.0",
-  "versionScheme": "semver",
-  "description": "Keyless non-custodial crypto payments for AI agents: payment links and tip jars, no API key.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ShieldZCash/shieldz-mcp",
-    "homepage": "https://shieldz.cash/agents",
-    "readme": "https://github.com/ShieldZCash/shieldz-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@shieldz/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Keyless non-custodial crypto payments for AI agents: payment links and tip jars, no API key.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@shieldz/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://shieldz.cash/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a4b6495c7a5d0d00",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@shieldz/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-b16531593075becc",
+      "type": "other",
+      "url": "https://shieldz.cash/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://shieldz.cash/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ShieldZCash/shieldz-mcp",
+    "homepage": "https://shieldz.cash/agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.shieldzcash__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=153",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ShieldZCash/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

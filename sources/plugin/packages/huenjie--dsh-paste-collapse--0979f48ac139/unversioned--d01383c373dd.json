@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.8880b28656f5d9c63ec24e948322e6b6e43ecd7119f0732ce2d548e22a429456",
+  "name": "huenjie/dsh-paste-collapse",
+  "displayName": "huenjie/dsh-paste-collapse",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "AI 输入框粘贴大段文本自动缩略为 [Paste #N +M lines] 小序号标签(编号不可改); 点击预览全文(点外关闭)、 编辑名称、↺ 恢复纯原文;无删除按钮,删输入框标签文本即消失;发送时自动展开原文并加固定方括号纯标识块分隔(编号与输入框一致);slash 命令参数展开不加装饰;代理可用 myds_read_captured 工具按编号读取标签对应文本。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/huenjie/dsh-paste-collapse",
+    "readme": "https://github.com/huenjie/dsh-paste-collapse#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/huenjie/dsh-paste-collapse"
+    },
+    {
+      "id": "npm-82a654618dcd",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-paste-collapse",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13590"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "11995"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-paste-collapse"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

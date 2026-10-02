@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pierre3/zap-mcp",
   "name": "io.github.pierre3/zap-mcp",
+  "displayName": "OWASP ZAP MCP Server",
   "version": "1.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for OWASP ZAP vulnerability scanning with Docker management",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/pierre3/dotnet-zap-mcp",
-    "homepage": "https://github.com/pierre3/dotnet-zap-mcp",
-    "readme": "https://github.com/pierre3/dotnet-zap-mcp#readme"
-  },
-  "keywords": [
-    "OWASP ZAP MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "dotnet-zap-mcp",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "dotnet-zap-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-be8d502416b44f69",
       "type": "registry",
       "url": "https://www.nuget.org/packages/dotnet-zap-mcp",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "1.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/pierre3/dotnet-zap-mcp",
+    "homepage": "https://github.com/pierre3/dotnet-zap-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pierre3__zap-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=272",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pierre3/zap-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

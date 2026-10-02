@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.piiiico/proof-of-commitment",
   "name": "io.github.piiiico/proof-of-commitment",
+  "displayName": "Commit — Supply Chain Risk Scoring",
   "version": "1.36.0",
-  "versionScheme": "semver",
-  "description": "Supply chain risk scoring for npm, PyPI, Cargo, and Go. 9 tools. Behavioral signals.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/piiiico/proof-of-commitment",
-    "homepage": "https://getcommit.dev",
-    "readme": "https://github.com/piiiico/proof-of-commitment#readme"
-  },
-  "keywords": [
-    "Commit — Supply Chain Risk Scoring"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "proof-of-commitment",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Supply chain risk scoring for npm, PyPI, Cargo, and Go. 9 tools. Behavioral signals.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "proof-of-commitment",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://poc-backend.amdal-dev.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b963e40b7569b442",
       "type": "registry",
       "url": "https://www.npmjs.com/package/proof-of-commitment",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.36.0"
+    },
+    {
+      "id": "upstream-e2fe03b0402a2975",
+      "type": "other",
+      "url": "https://poc-backend.amdal-dev.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://poc-backend.amdal-dev.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/piiiico/proof-of-commitment",
+    "homepage": "https://getcommit.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.piiiico__proof-of-commitment.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=272",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.piiiico/proof-of-commitment"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

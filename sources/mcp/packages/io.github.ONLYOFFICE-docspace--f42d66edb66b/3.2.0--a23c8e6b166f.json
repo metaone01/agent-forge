@@ -2,47 +2,87 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ONLYOFFICE/docspace",
   "name": "io.github.ONLYOFFICE/docspace",
+  "displayName": "io.github.ONLYOFFICE/docspace",
   "version": "3.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "A room-based collaborative platform",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ONLYOFFICE/docspace-mcp",
-    "homepage": "https://ONLYOFFICE.github.io/",
-    "readme": "https://github.com/ONLYOFFICE/docspace-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/ONLYOFFICE/docspace-mcp/releases/download/v3.2.0/onlyoffice-docspace-mcp-3.2.0.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/ONLYOFFICE/docspace-mcp/releases/download/v3.2.0/onlyoffice-docspace-mcp-3.2.0.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.onlyoffice.com/sse",
+        "transport": "sse"
+      },
+      {
+        "url": "https://mcp.onlyoffice.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0899ce0dde9ecb18",
+      "type": "archive",
+      "url": "https://github.com/ONLYOFFICE/docspace-mcp/releases/download/v3.2.0/onlyoffice-docspace-mcp-3.2.0.mcpb",
+      "registry": "mcpb",
+      "version": "3.2.0"
+    },
+    {
+      "id": "upstream-1e3cedc5548e9fd8",
       "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/962498237/5bae3690-11b2-4d35-b93d-e9bf06d3d3dc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T11%3A18%3A21Z&rscd=attachment%3B+filename%3Donlyoffice-docspace-mcp-3.2.0.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T10%3A17%3A34Z&ske=2026-09-22T11%3A18%3A21Z&sks=b&skv=2018-11-09&sig=ZqOtHTb9WNy7WEQdDFp0129OURHEf9dResfINsv2R9Q%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3MzA4OSwibmJmIjoxNzkwMDcyNzg5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.cng_KXQM3zHASnCmF_n9nnQW-7M7y2aq3KWJrA8yLwM&response-content-disposition=attachment%3B%20filename%3Donlyoffice-docspace-mcp-3.2.0.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
-      "registry": "mcpb"
+      "url": "https://www.npmjs.com/package/@onlyoffice/docspace-mcp",
+      "registry": "npm",
+      "version": "3.2.0"
+    },
+    {
+      "id": "upstream-08d9b128392b041f",
+      "type": "oci",
+      "url": "https://docker.io/onlyoffice/docspace-mcp:3.2.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-38c9b4cba23583d3",
+      "type": "other",
+      "url": "https://mcp.onlyoffice.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.onlyoffice.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-be7ba7cae91685a4",
+      "type": "other",
+      "url": "https://mcp.onlyoffice.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.onlyoffice.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ONLYOFFICE/docspace-mcp",
+    "homepage": "https://ONLYOFFICE.github.io/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +95,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.onlyoffice__docspace.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ONLYOFFICE/docspace"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

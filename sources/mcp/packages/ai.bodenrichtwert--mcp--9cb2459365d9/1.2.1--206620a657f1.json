@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.bodenrichtwert/mcp",
+  "name": "ai.bodenrichtwert/mcp",
+  "displayName": "bodenrichtwert.ai — Verlässliche Bodenrichtwerte für Mensch und KI",
+  "version": "1.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "German land values (Bodenrichtwerte) by address + land-use type. Coverage varies; not in SH/SN/BY.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.bodenrichtwert/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.bodenrichtwert.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a4cad90577aae6d7",
+      "type": "other",
+      "url": "https://mcp.bodenrichtwert.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.bodenrichtwert.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://bodenrichtwert.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=2",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.bodenrichtwert/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.agentgrade/mcp-server",
+  "name": "com.agentgrade/mcp-server",
+  "displayName": "AgentGrade",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Scan any website for AI agent readiness, payment protocols, and discovery endpoints",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.agentgrade/mcp-server",
+    "remotes": [
+      {
+        "url": "https://agentgrade.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-90145c2396593bd2",
+      "type": "other",
+      "url": "https://agentgrade.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentgrade.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.agentgrade/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

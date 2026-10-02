@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0d0d0cd84d3d2d1875a2638704b71418d448e17df5feabe6d953050de1650408",
+  "name": "EasyTZ/dsh-desktop/kernel-src",
+  "displayName": "EasyTZ/dsh-desktop/kernel-src",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "内核的安装规格，不是可运行的包。prepare-kernel.mjs 按这里声明的版本、按目标平台对它做一次干净 npm ci，装出 kernel/runtime/node_modules 与 kernel/pnpm。版本号故意写死精确值（不用 ^ / ~）——这里要的就是「这一版发哪个内核」这句声明，升级内核因此变成一次跟着提交走的、有意的改动。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "kernel-src/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/EasyTZ/dsh-desktop",
+    "readme": "https://github.com/EasyTZ/dsh-desktop#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/EasyTZ/dsh-desktop/tree/HEAD/kernel-src"
+    }
+  ],
+  "keywords": [
+    "terminal"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13816"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13689"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

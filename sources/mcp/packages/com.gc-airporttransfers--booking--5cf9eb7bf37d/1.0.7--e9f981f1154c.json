@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.gc-airporttransfers/booking",
+  "name": "com.gc-airporttransfers/booking",
+  "displayName": "com.gc-airporttransfers/booking",
+  "version": "1.0.7",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Fixed-price GC & Brisbane airport and cruise transfers. Live quotes, human-confirmed bookings.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.gc-airporttransfers/booking",
+    "remotes": [
+      {
+        "url": "https://gc-airporttransfers.com/wp-json/atb-gateway/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-68d6ca1c4b3de85d",
+      "type": "other",
+      "url": "https://gc-airporttransfers.com/wp-json/atb-gateway/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gc-airporttransfers.com/wp-json/atb-gateway/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://gc-airporttransfers.com.au/ai-agent-gateway/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=49",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.gc-airporttransfers/booking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

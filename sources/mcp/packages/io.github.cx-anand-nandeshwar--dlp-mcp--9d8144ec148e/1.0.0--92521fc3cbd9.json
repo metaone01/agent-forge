@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cx-anand-nandeshwar/dlp-mcp",
+  "name": "io.github.cx-anand-nandeshwar/dlp-mcp",
+  "displayName": "io.github.cx-anand-nandeshwar/dlp-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The DLP MCP provides the compliance violation in the one drive, google drive documents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.cx-anand-nandeshwar/dlp-mcp",
+    "remotes": [
+      {
+        "url": "https://{api_host}/api/dlp/mcp/{tenant_id}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8b16da5e9f1cc3f5",
+      "type": "other",
+      "url": "https://{api_host}/api/dlp/mcp/{tenant_id}",
+      "install": {
+        "type": "api",
+        "url": "https://{api_host}/api/dlp/mcp/{tenant_id}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cx-anand-nandeshwar/security-mcp-marketplace"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=187",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cx-anand-nandeshwar/dlp-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

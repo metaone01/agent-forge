@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jmrplens/libgen-mcp",
+  "name": "io.github.jmrplens/libgen-mcp",
+  "displayName": "Books & Papers MCP Server",
+  "version": "2.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Federated search of books and papers, BibTeX/RIS citations, open-access retrieval and reading.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/jmrplens/libgen-mcp/releases/download/v2.0.1/libgen-mcp.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.jmrp.io/libgen",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-df926c649eec00f2",
+      "type": "archive",
+      "url": "https://github.com/jmrplens/libgen-mcp/releases/download/v2.0.1/libgen-mcp.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.1"
+    },
+    {
+      "id": "upstream-aa5dfe8689f4f367",
+      "type": "oci",
+      "url": "https://ghcr.io/jmrplens/libgen-mcp:2.0.1@sha256:f6bccc64de0d437a994ff5476081bf07b73f3771624e277805bbb9c7da03e9d0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-2280bffd456d81a4",
+      "type": "oci",
+      "url": "https://docker.io/jmrplens/libgen-mcp:2.0.1@sha256:f6bccc64de0d437a994ff5476081bf07b73f3771624e277805bbb9c7da03e9d0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-8eb2988da74233ff",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@jmrp.io/libgen-mcp",
+      "registry": "npm",
+      "version": "2.0.1"
+    },
+    {
+      "id": "upstream-795c9e48af7b31fc",
+      "type": "registry",
+      "url": "https://pypi.org/project/libgen-mcp",
+      "registry": "pypi",
+      "version": "2.0.1"
+    },
+    {
+      "id": "upstream-e41d2989d6170e58",
+      "type": "registry",
+      "url": "https://www.nuget.org/packages/libgen-mcp",
+      "registry": "nuget",
+      "version": "2.0.1"
+    },
+    {
+      "id": "upstream-850565244f0e96e8",
+      "type": "other",
+      "url": "https://mcp.jmrp.io/libgen",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.jmrp.io/libgen"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jmrplens/libgen-mcp",
+    "homepage": "https://jmrp.io/docs/libgen-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=218",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jmrplens/libgen-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

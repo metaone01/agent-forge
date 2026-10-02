@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.fpetitit/mcpcheckup",
+  "name": "io.github.fpetitit/mcpcheckup",
+  "displayName": "io.github.fpetitit/mcpcheckup",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Scans remote MCP servers for protocol, security, and TLS issues; exposes scan tools via MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.fpetitit/mcpcheckup",
+    "remotes": [
+      {
+        "url": "https://mcpcheckup.xyz/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7409a67be6ed70eb",
+      "type": "other",
+      "url": "https://mcpcheckup.xyz/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpcheckup.xyz/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/fpetitit/mcpcheck",
+    "homepage": "https://mcpcheckup.xyz"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fpetitit/mcpcheckup"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

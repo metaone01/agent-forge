@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.a825812350f5b7f34df7c8bd45330f4b16e5e2dde6535cfc5380a9b1c961f795",
+  "name": "miuzel/dsh-graph/dsh-graph-host",
+  "displayName": "miuzel/dsh-graph/dsh-graph-host",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "dsh-graph 单包（host+client 合并，g-116）：把 dsh-graph 核心层包装为 DSH cordis 插件，同时提供 graph_* 目标生命周期工具（建卡/判据/迁移/派发/评审/交付）、/api/dsh-graph REST 端点与浏览器二维泳道看板（conversation.view）。包名 = repo 名（负责人定案）；内部 host 插件 id 保留",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "dsh-graph-host/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/miuzel/dsh-graph",
+    "readme": "https://github.com/miuzel/dsh-graph#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/miuzel/dsh-graph/tree/HEAD/dsh-graph-host"
+    },
+    {
+      "id": "npm-0a32fcb219e2",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-graph",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "4190"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/miuzel__dsh-graph--dsh-graph-host.yml"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/repositories.csv",
+          "entry": "2773"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/verified-plugins.csv",
+          "entry": "2033"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "3732"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "miuzel/dsh-graph"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "10356"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-graph"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

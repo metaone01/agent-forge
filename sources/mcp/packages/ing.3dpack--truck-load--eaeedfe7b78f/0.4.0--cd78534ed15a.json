@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ing.3dpack/truck-load",
+  "name": "ing.3dpack/truck-load",
+  "displayName": "3DPACK.ING — Truck Load Planning",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Truck & trailer load planning in Claude & ChatGPT: what fits, how full, a labelled 3D plan in chat.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ing.3dpack/truck-load",
+    "remotes": [
+      {
+        "url": "https://3dpack.ing/mcp?server=truck-load",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7da445cf83615cd1",
+      "type": "other",
+      "url": "https://3dpack.ing/mcp?server=truck-load",
+      "install": {
+        "type": "api",
+        "url": "https://3dpack.ing/mcp?server=truck-load"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/OnurGumus/3dpacking-mcp",
+    "homepage": "https://3dpack.ing"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ing.3dpack/truck-load"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

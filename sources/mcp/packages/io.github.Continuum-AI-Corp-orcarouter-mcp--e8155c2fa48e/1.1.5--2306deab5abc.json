@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Continuum-AI-Corp/orcarouter-mcp",
   "name": "io.github.Continuum-AI-Corp/orcarouter-mcp",
+  "displayName": "OrcaRouter",
   "version": "1.1.5",
-  "versionScheme": "semver",
-  "description": "Browse 160+ LLM models and live pricing — no API key needed for catalog. Add key to route chat.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Continuum-AI-Corp/orcarouter-mcp-server",
-    "homepage": "https://orcarouter.ai",
-    "readme": "https://github.com/Continuum-AI-Corp/orcarouter-mcp-server#readme"
-  },
-  "keywords": [
-    "OrcaRouter"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@orcarouter/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Browse 160+ LLM models and live pricing — no API key needed for catalog. Add key to route chat.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@orcarouter/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-08d617a963e9ae8d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@orcarouter/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Continuum-AI-Corp/orcarouter-mcp-server",
+    "homepage": "https://orcarouter.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.continuum-ai-corp__orcarouter-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=120",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Continuum-AI-Corp/orcarouter-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

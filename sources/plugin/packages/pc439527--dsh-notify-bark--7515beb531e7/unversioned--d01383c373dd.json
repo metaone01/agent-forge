@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.bf16343795373fdfc23021f3d04a620963c4a378b7d69da2136fdb1489ced16b",
+  "name": "pc439527/dsh-notify-bark",
+  "displayName": "pc439527/dsh-notify-bark",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Bark 推送通知插件：DSH Host 端监听回合结束 / 等待回答 / 等待授权等事件，通过 Bark Server 推送到 iPhone。设置页经专用 RPC 读写 Host 配置（Bark 地址脱敏，不落地到浏览器）。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/pc439527/dsh-notify-bark",
+    "readme": "https://github.com/pc439527/dsh-notify-bark#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/pc439527/dsh-notify-bark"
+    },
+    {
+      "id": "npm-34a4d4a9ff51",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-notify-bark",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "notifications",
+    "channels"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6005"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/pc439527__dsh-notify-bark.yml"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

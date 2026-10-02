@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.louissarvin/proctor",
   "name": "io.github.louissarvin/proctor",
+  "displayName": "io.github.louissarvin/proctor",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Human oversight for AI agents: block a tool call on a verified human, with on-chain proof.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/louissarvin/proctor",
-    "readme": "https://github.com/louissarvin/proctor#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "proctor-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Human oversight for AI agents: block a tool call on a verified human, with on-chain proof.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "proctor-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6645c0361010bfda",
       "type": "registry",
       "url": "https://www.npmjs.com/package/proctor-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/louissarvin/proctor"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.louissarvin__proctor.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=230",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.louissarvin/proctor"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

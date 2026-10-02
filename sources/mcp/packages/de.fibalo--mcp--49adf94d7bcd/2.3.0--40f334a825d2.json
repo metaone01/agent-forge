@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.de.fibalo/mcp",
+  "name": "de.fibalo/mcp",
+  "displayName": "Fibalo",
+  "version": "2.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "German bookkeeping: E-Rechnung invoices, DATEV export, BWA, UStVA, Belege and bank data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "de.fibalo/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.fibalo.de/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1b17161041f5cdf4",
+      "type": "other",
+      "url": "https://mcp.fibalo.de/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.fibalo.de/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://fibalo.de"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "de.fibalo/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

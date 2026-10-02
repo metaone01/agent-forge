@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.market.payapi/marketplace",
+  "name": "market.payapi/marketplace",
+  "displayName": "PayAPI Market",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search settlement-verified x402 APIs. Discovery is free. Agents pay the provider in USDC on Base.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "market.payapi/marketplace",
+    "remotes": [
+      {
+        "url": "https://payapi.market/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-56b98379abef1ac9",
+      "type": "other",
+      "url": "https://payapi.market/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://payapi.market/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://payapi.market"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "market.payapi/marketplace"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

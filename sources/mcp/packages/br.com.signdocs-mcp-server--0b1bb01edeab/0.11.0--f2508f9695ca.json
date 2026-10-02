@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.br.com.signdocs/mcp-server",
   "name": "br.com.signdocs/mcp-server",
+  "displayName": "br.com.signdocs/mcp-server",
   "version": "0.11.0",
-  "versionScheme": "semver",
-  "description": "Assinatura eletrônica no Brasil (ICP-Brasil): envie, assine e verifique com sua conta SignDocs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/signdocsbrasil/signdocs-mcp-server",
-    "homepage": "https://www.signdocs.com.br/integracao-claude-ia-mcp.html",
-    "readme": "https://github.com/signdocsbrasil/signdocs-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@signdocs-brasil/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Assinatura eletrônica no Brasil (ICP-Brasil): envie, assine e verifique com sua conta SignDocs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@signdocs-brasil/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.signdocs.com.br/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-64ebbd72d06bfd31",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@signdocs-brasil/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.11.0"
+    },
+    {
+      "id": "upstream-041597a07b060014",
+      "type": "other",
+      "url": "https://mcp.signdocs.com.br/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.signdocs.com.br/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/signdocsbrasil/signdocs-mcp-server",
+    "homepage": "https://www.signdocs.com.br/integracao-claude-ia-mcp.html"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\br.com.signdocs__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "br.com.signdocs/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

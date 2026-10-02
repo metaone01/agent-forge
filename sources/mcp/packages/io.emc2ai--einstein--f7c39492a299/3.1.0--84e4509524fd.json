@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.emc2ai/einstein",
+  "name": "io.emc2ai/einstein",
+  "displayName": "Agent Einstein — Crypto & Market Intelligence",
+  "version": "3.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI price forecasts, whale flows, market sentiment and prediction signals. 18 tools free, no account.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.emc2ai/einstein",
+    "remotes": [
+      {
+        "url": "https://emc2ai.io/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c7ab9e817592716b",
+      "type": "other",
+      "url": "https://emc2ai.io/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://emc2ai.io/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ChuXo/einstein-claude-plugin",
+    "homepage": "https://emc2ai.io/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=104",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.emc2ai/einstein"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.autonomyforge.pressuredesk/pressuredesk",
+  "name": "dev.autonomyforge.pressuredesk/pressuredesk",
+  "displayName": "PressureDesk",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only BUY / WAIT / AVOID spend gate for paid APIs, MCP endpoints, and x402 routes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.autonomyforge.pressuredesk/pressuredesk",
+    "remotes": [
+      {
+        "url": "https://pressuredesk.autonomyforge.dev/mcp/http",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0c66a1ccb6a2ddb1",
+      "type": "other",
+      "url": "https://pressuredesk.autonomyforge.dev/mcp/http",
+      "install": {
+        "type": "api",
+        "url": "https://pressuredesk.autonomyforge.dev/mcp/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://pressuredesk.autonomyforge.dev/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=90",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.autonomyforge.pressuredesk/pressuredesk"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

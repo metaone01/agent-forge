@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.getbotlens/1845meat",
+  "name": "com.getbotlens/1845meat",
+  "displayName": "1845 Smoked Meat AI Gateway",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP gateway for 1845meat.com: products, prices, stock and cart links. Read-only, no auth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.getbotlens/1845meat",
+    "remotes": [
+      {
+        "url": "https://1845meat.mcp.getbotlens.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-63c4e48161886cc7",
+      "type": "other",
+      "url": "https://1845meat.mcp.getbotlens.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://1845meat.mcp.getbotlens.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://1845meat.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=50",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.getbotlens/1845meat"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

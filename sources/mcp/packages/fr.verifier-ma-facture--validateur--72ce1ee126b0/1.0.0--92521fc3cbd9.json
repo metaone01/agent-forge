@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fr.verifier-ma-facture/validateur",
+  "name": "fr.verifier-ma-facture/validateur",
+  "displayName": "Vérifier ma facture (Factur-X)",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Conformité Factur-X : 21 critères PDF/A-3, XML CII EN 16931 et BR-FR. Analyse locale, gratuite.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fr.verifier-ma-facture/validateur",
+    "remotes": [
+      {
+        "url": "https://mcp.verifier-ma-facture.fr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-86843ade8f8312eb",
+      "type": "other",
+      "url": "https://mcp.verifier-ma-facture.fr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.verifier-ma-facture.fr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://verifier-ma-facture.fr"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fr.verifier-ma-facture/validateur"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

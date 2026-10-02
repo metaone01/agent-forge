@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.f6fec126e928470309330947a81edb3f59eece7a0078aae2d0d7e1466e429faa",
+  "name": "ycp424c/dsh-deliver",
+  "displayName": "ycp424c/dsh-deliver",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "dsh-deliver 是一个 Codex Skill，用于把经过明确授权的代码实现任务委托给 DeepSeek Harness（DSH），由 DSH 完成实现、自测和独立 review，最后由 Codex 只读验收。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/ycp424c/dsh-deliver",
+    "readme": "https://github.com/ycp424c/dsh-deliver/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ycp424c/dsh-deliver"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "3047"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

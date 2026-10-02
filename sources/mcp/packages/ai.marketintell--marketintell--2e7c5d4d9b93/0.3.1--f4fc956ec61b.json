@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.marketintell/marketintell",
+  "name": "ai.marketintell/marketintell",
+  "displayName": "ai.marketintell/marketintell",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI analyst desk for stocks, options & crypto with sourced trade setups and a public accuracy record.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "marketintell",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.marketintell.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.marketintell.ai/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-50f2e08b12e8d1b6",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/marketintell",
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-3bd4ca97995ef28c",
+      "type": "other",
+      "url": "https://api.marketintell.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.marketintell.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b192aa8b0b866a1e",
+      "type": "other",
+      "url": "https://api.marketintell.ai/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.marketintell.ai/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ravidsrk/marketintell",
+    "homepage": "https://marketintell.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.marketintell/marketintell"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

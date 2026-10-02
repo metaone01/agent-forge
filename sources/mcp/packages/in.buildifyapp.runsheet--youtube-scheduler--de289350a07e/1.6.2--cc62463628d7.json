@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.in.buildifyapp.runsheet/youtube-scheduler",
+  "name": "in.buildifyapp.runsheet/youtube-scheduler",
+  "displayName": "Runsheet YouTube Scheduler",
+  "version": "1.6.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Schedule, publish and retitle YouTube videos, plan the month with AI, and upload from your machine.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "runsheet-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://runsheet.buildifyapp.in/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5638a51678791c8d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/runsheet-mcp",
+      "registry": "npm",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-d5a01a9feb04053a",
+      "type": "other",
+      "url": "https://runsheet.buildifyapp.in/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://runsheet.buildifyapp.in/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://runsheet.buildifyapp.in/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "in.buildifyapp.runsheet/youtube-scheduler"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

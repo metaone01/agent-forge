@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.53e109b3947feb496db4878c8e1307d55e94b819c17dda49260741277eb20720",
+  "name": "jiang12345-code/dsh-agent-selector",
+  "displayName": "jiang12345-code/dsh-agent-selector",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "智能体选择器：像模型选择器一样在输入框旁勾选委派目标+具体模型，把对话任务派给外部智能体（Codex CLI / WorkBuddy 内置模型活动价 automation 桥 / WorkBuddy 自定义模型直连 / Claude Code）执行，结果流回 DSH 对话。含 agent_dispatch 工具 + composer 两步下拉 + 设置面板 + 桥健康探活 + 反冒充出处凭证。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/jiang12345-code/dsh-agent-selector",
+    "readme": "https://github.com/jiang12345-code/dsh-agent-selector#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/jiang12345-code/dsh-agent-selector"
+    },
+    {
+      "id": "npm-b3a068d44a11",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-agent-selector",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15716"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13529"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-agent-selector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

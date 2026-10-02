@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cyanheads/census-mcp-server",
+  "name": "io.github.cyanheads/census-mcp-server",
+  "displayName": "io.github.cyanheads/census-mcp-server",
+  "version": "0.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query U.S. Census Bureau data, variables, and geography via MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cyanheads/census-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://census.caseyjhand.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b3b572223d55d77e",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cyanheads/census-mcp-server",
+      "registry": "npm",
+      "version": "0.6.0"
+    },
+    {
+      "id": "upstream-11fdd8df98c6999b",
+      "type": "other",
+      "url": "https://census.caseyjhand.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://census.caseyjhand.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cyanheads/census-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=187",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cyanheads/census-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,48 +2,54 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.clouatre-labs/code-analyze-mcp",
   "name": "io.github.clouatre-labs/code-analyze-mcp",
+  "displayName": "Code Analyze MCP",
   "version": "0.6.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for code structure analysis using tree-sitter.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/clouatre-labs/code-analyze-mcp",
-    "readme": "https://github.com/clouatre-labs/code-analyze-mcp#readme"
-  },
-  "keywords": [
-    "Code Analyze MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.6.0/code-analyze-mcp-0.6.0-aarch64-apple-darwin.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.6.0/code-analyze-mcp-0.6.0-aarch64-apple-darwin.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-af10ee01cd982c99",
+      "type": "archive",
       "url": "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.6.0/code-analyze-mcp-0.6.0-aarch64-apple-darwin.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-abfdb06314b1b658",
+      "type": "archive",
+      "url": "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.6.0/code-analyze-mcp-0.6.0-aarch64-unknown-linux-musl.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-9393aa7c196879a3",
+      "type": "archive",
+      "url": "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.6.0/code-analyze-mcp-0.6.0-x86_64-unknown-linux-musl.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/clouatre-labs/code-analyze-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +62,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.clouatre-labs__code-analyze-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=183",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.clouatre-labs/code-analyze-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

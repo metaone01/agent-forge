@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.rowsafe/rowsafe",
+  "name": "sh.rowsafe/rowsafe",
+  "displayName": "Rowsafe",
+  "version": "0.4.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "PostgreSQL backups and a safety net for AI agents: check recoverability, set restore points.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.rowsafe/rowsafe",
+    "remotes": [
+      {
+        "url": "https://api.rowsafe.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-759b760001b4d0b7",
+      "type": "other",
+      "url": "https://api.rowsafe.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.rowsafe.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rowsafe/rowsafe",
+    "homepage": "https://rowsafe.sh/docs/reference/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.rowsafe/rowsafe"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

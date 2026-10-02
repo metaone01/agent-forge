@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Ilya-a-sergeyev-ger/krauncher-mcp",
   "name": "io.github.Ilya-a-sergeyev-ger/krauncher-mcp",
+  "displayName": "Krauncher analyzer",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "How long a GPU job will run and cost, before running it — static code analysis, never executed.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Ilya-a-sergeyev-ger/krauncher",
-    "readme": "https://github.com/Ilya-a-sergeyev-ger/krauncher#readme"
-  },
-  "keywords": [
-    "Krauncher analyzer"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "krauncher-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "How long a GPU job will run and cost, before running it — static code analysis, never executed.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "krauncher-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b91854c71312c2a7",
       "type": "registry",
-      "url": "https://pypi.org/project/krauncher-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/krauncher-mcp",
+      "registry": "pypi",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Ilya-a-sergeyev-ger/krauncher"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ilya-a-sergeyev-ger__krauncher-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Ilya-a-sergeyev-ger/krauncher-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

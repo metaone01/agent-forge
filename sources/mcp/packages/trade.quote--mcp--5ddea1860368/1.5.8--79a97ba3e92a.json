@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.trade.quote/mcp",
+  "name": "trade.quote/mcp",
+  "displayName": "Quote.Trade MCP Adapter",
+  "version": "1.5.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Quote.Trade MCP: login, deposit address, market data, orders, and withdraws.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "trade.quote/mcp",
+    "remotes": [
+      {
+        "url": "https://quote.trade/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6117f1bb40d27ed0",
+      "type": "other",
+      "url": "https://quote.trade/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://quote.trade/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://quote.trade"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=378",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "trade.quote/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

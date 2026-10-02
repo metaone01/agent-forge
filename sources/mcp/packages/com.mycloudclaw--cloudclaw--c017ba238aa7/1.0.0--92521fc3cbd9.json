@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mycloudclaw/cloudclaw",
+  "name": "com.mycloudclaw/cloudclaw",
+  "displayName": "CloudClaw",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI agent hosting platform: 37+ connectors, 181 tools, BYOK vault, marketplace.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mycloudclaw/cloudclaw",
+    "remotes": [
+      {
+        "url": "https://mycloudclaw.com/api/agents/{agent_id}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-799d7b42309ebfd8",
+      "type": "other",
+      "url": "https://mycloudclaw.com/api/agents/{agent_id}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mycloudclaw.com/api/agents/{agent_id}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mkc909/cloudclaw-core"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mycloudclaw/cloudclaw"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

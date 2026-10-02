@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.virwave/virwave-breathe",
+  "name": "io.github.virwave/virwave-breathe",
+  "displayName": "VirWave Breathe",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Calm, animated breathing sessions paced to your breath. Runs locally and collects nothing.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "virwave-breathe",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://xswebtvkueusdaeboizp.supabase.co/functions/v1/breathe",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5d610058a7004fdf",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/virwave-breathe",
+      "registry": "npm",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-6945ae59a12e1d16",
+      "type": "other",
+      "url": "https://xswebtvkueusdaeboizp.supabase.co/functions/v1/breathe",
+      "install": {
+        "type": "api",
+        "url": "https://xswebtvkueusdaeboizp.supabase.co/functions/v1/breathe"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/virwave/virwave-breathe",
+    "homepage": "https://virwave.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=347",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.virwave/virwave-breathe"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

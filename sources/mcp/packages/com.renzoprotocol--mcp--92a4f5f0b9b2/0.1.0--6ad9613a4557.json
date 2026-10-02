@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.renzoprotocol/mcp",
+  "name": "com.renzoprotocol/mcp",
+  "displayName": "Renzo MCP Server",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for Renzo protocol data, including chains, vaults, operators, and ezETH metrics.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.renzoprotocol/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.renzoprotocol.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-308dc9516c911bdd",
+      "type": "other",
+      "url": "https://mcp.renzoprotocol.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.renzoprotocol.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=73",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.renzoprotocol/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

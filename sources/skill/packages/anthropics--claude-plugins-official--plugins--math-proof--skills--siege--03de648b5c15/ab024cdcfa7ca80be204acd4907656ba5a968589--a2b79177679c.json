@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.f679078ac5677075b30260d1dc1f0afcb81c3037d6915d39e82adab24de05530",
+  "name": "anthropics/claude-plugins-official/plugins/math-proof/skills/siege",
+  "displayName": "anthropics/claude-plugins-official/plugins/math-proof/skills/siege",
+  "version": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "Work on one hard mathematics problem in rounds: each round a judge writes a few self-contained questions, independent workers answer them, and the judge keeps a ledger of what is proved, refuted and open, until the judge concludes or the rounds run out, and then a proof.md says plainly what is and is not proved. A run takes hours and dozens of worker runs. Usage: /math-proof:siege [NAME=value settings] <the problem, stated in full, or the path of a file holding it>.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "plugins/math-proof/skills/siege/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "readme": "https://github.com/anthropics/claude-plugins-official/blob/ab024cdcfa7ca80be204acd4907656ba5a968589/plugins/math-proof/skills/siege/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/ab024cdcfa7ca80be204acd4907656ba5a968589/plugins/math-proof/skills/siege",
+      "ref": "ab024cdcfa7ca80be204acd4907656ba5a968589"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": "plugins/math-proof/skills/siege/SKILL.md"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

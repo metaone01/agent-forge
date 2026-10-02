@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Estaite-Solutions/estaite-mcp",
+  "name": "io.github.Estaite-Solutions/estaite-mcp",
+  "displayName": "io.github.Estaite-Solutions/estaite-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Current US rental market data for AI agents: 1,500+ submarkets, monthly rent + vacancy + trends.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Estaite-Solutions/estaite-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.estaite.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f9054adfb6721f76",
+      "type": "other",
+      "url": "https://mcp.estaite.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.estaite.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Estaite-Solutions/estaite-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=125",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Estaite-Solutions/estaite-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

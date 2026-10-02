@@ -2,48 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.app.takehub/mcp",
   "name": "app.takehub/mcp",
+  "displayName": "app.takehub/mcp",
   "version": "1.1.2",
-  "versionScheme": "semver",
-  "description": "Manage discussion topics, gather votes and video rationale, and read AI insights.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mauurda/takehub",
-    "homepage": "https://takehub.app",
-    "readme": "https://github.com/mauurda/takehub#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@takehub/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Manage discussion topics, gather votes and video rationale, and read AI insights.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@takehub/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b2107ea79df385de",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@takehub/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mauurda/takehub",
+    "homepage": "https://takehub.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\app.takehub__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.takehub/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

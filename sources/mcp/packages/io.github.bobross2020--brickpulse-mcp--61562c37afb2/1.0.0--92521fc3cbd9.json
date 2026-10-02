@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.bobross2020/brickpulse-mcp",
+  "name": "io.github.bobross2020/brickpulse-mcp",
+  "displayName": "io.github.bobross2020/brickpulse-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query LEGO set details, retirement dates, deals, and price history from BrickPulse.ai",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.bobross2020/brickpulse-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.brickpulse.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.brickpulse.ai/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bde0ccc09aab3a19",
+      "type": "other",
+      "url": "https://mcp.brickpulse.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.brickpulse.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a0a4d84384c172d6",
+      "type": "other",
+      "url": "https://mcp.brickpulse.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.brickpulse.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bobross2020/brickpulse-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bobross2020/brickpulse-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

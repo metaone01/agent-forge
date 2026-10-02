@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.swarm0x/swarm0x",
+  "name": "sh.swarm0x/swarm0x",
+  "displayName": "Swarm0x",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Run before you buy on Robinhood Chain: a simulated buy and sell, plus trades your own wallet signs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.swarm0x/swarm0x",
+    "remotes": [
+      {
+        "url": "https://api.swarm0x.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0f84672d268462c8",
+      "type": "other",
+      "url": "https://api.swarm0x.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.swarm0x.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/swarm0xsh/swarm0x-mcp",
+    "homepage": "https://docs.swarm0x.sh/agents/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.swarm0x/swarm0x"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

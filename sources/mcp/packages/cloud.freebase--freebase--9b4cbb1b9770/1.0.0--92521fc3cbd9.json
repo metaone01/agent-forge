@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.freebase/freebase",
+  "name": "cloud.freebase/freebase",
+  "displayName": "freebase.cloud",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free cloud databases over MCP: query, store, list and annotate across 15 engines.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cloud.freebase/freebase",
+    "remotes": [
+      {
+        "url": "https://freebase.cloud/api/mcp/{token}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c7842160185be5f3",
+      "type": "other",
+      "url": "https://freebase.cloud/api/mcp/{token}",
+      "install": {
+        "type": "api",
+        "url": "https://freebase.cloud/api/mcp/{token}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/freebase-cloud/free-database-mcp-server",
+    "homepage": "https://freebase.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cloud.freebase/freebase"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

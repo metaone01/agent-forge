@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.dc1e9e2442ff66ff6003293178d9f5c75ea138154b873d705e79516d0899e4cc",
+  "name": "luxueliu/luxueliu-agent-discipline-skills/skills/systematic-debugging",
+  "displayName": "luxueliu/luxueliu-agent-discipline-skills/skills/systematic-debugging",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "AI 不缺聪明，缺纪律！交付前自检（没从磁盘回读不算完成）/跑偏纠偏（一句「你偏了」就停）/系统化调试（同一个修复猜三次不收敛时用）/多 agent 接力（防旧状态盖掉新写入）——4 个单文件技能零依赖，每条都来自真实翻车事故，DeepSeek Harness / Claude Code / Codex 通用",
+  "license": "MIT",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "skills/systematic-debugging/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/luxueliu/luxueliu-agent-discipline-skills",
+    "readme": "https://github.com/luxueliu/luxueliu-agent-discipline-skills/blob/HEAD/skills/systematic-debugging/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/luxueliu/luxueliu-agent-discipline-skills/tree/HEAD/skills/systematic-debugging"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "872"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

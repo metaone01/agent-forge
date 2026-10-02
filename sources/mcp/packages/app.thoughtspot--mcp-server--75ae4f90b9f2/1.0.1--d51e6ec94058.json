@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.thoughtspot/mcp-server",
+  "name": "app.thoughtspot/mcp-server",
+  "displayName": "app.thoughtspot/mcp-server",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP Server for ThoughtSpot - provides OAuth authentication and tools for querying data",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.thoughtspot/mcp-server",
+    "remotes": [
+      {
+        "url": "https://agent.thoughtspot.app/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agent.thoughtspot.app/sse",
+        "transport": "sse"
+      },
+      {
+        "url": "https://agent.thoughtspot.app/bearer/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agent.thoughtspot.app/bearer/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-eb1c1e079df7098b",
+      "type": "other",
+      "url": "https://agent.thoughtspot.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent.thoughtspot.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f409f3ed9a094091",
+      "type": "other",
+      "url": "https://agent.thoughtspot.app/sse",
+      "install": {
+        "type": "api",
+        "url": "https://agent.thoughtspot.app/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-562e7a233e06333a",
+      "type": "other",
+      "url": "https://agent.thoughtspot.app/bearer/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent.thoughtspot.app/bearer/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b3811ffddc7f330c",
+      "type": "other",
+      "url": "https://agent.thoughtspot.app/bearer/sse",
+      "install": {
+        "type": "api",
+        "url": "https://agent.thoughtspot.app/bearer/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/thoughtspot/mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.thoughtspot/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

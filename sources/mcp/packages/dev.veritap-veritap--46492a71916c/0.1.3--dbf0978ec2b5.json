@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.dev.veritap/veritap",
   "name": "dev.veritap/veritap",
+  "displayName": "dev.veritap/veritap",
   "version": "0.1.3",
-  "versionScheme": "semver",
-  "description": "Check whether a real-world fact can be verified before an agent acts on it. Free, no auth.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/veritap-mcp",
-    "homepage": "https://veritap.dev"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "veritap-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Check whether a real-world fact can be verified before an agent acts on it. Free, no auth.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "veritap-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://veritap.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-33053e801bca47ae",
       "type": "registry",
       "url": "https://www.npmjs.com/package/veritap-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.3"
+    },
+    {
+      "id": "upstream-d01bf9eac988d28c",
+      "type": "other",
+      "url": "https://veritap.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://veritap.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://veritap.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.veritap__veritap.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=94",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.veritap/veritap"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

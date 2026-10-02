@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.SynapseNetworkAI/synapse-network-mcp-server",
+  "name": "io.github.SynapseNetworkAI/synapse-network-mcp-server",
+  "displayName": "Synapse Network MCP Server for paid API calls",
+  "version": "0.1.9",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Synapse Network MCP paid API calls via discover_services; not Synapse.org/Sage Bionetworks Synapse.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@synapse-network-ai/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.synapse-network.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-82838bff5d7106d8",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@synapse-network-ai/mcp-server",
+      "registry": "npm",
+      "version": "0.1.5"
+    },
+    {
+      "id": "upstream-de61cafccc0c6e60",
+      "type": "other",
+      "url": "https://mcp.synapse-network.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.synapse-network.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SynapseNetworkAI/Synapse-Network-MCP-Server",
+    "homepage": "https://docs.synapse-network.ai/mcp/brand-disambiguation"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=155",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SynapseNetworkAI/synapse-network-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

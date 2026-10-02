@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.decibelshield/decibel-shield",
+  "name": "app.decibelshield/decibel-shield",
+  "displayName": "app.decibelshield/decibel-shield",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Noise data tools: city noise rankings, decibel levels of common sounds, NIOSH safe-exposure math.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.decibelshield/decibel-shield",
+    "remotes": [
+      {
+        "url": "https://decibelshield.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f72a5d79fba56401",
+      "type": "other",
+      "url": "https://decibelshield.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://decibelshield.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/appstackllc/decibelshieldwebsite",
+    "homepage": "https://decibelshield.app/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=18",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.decibelshield/decibel-shield"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

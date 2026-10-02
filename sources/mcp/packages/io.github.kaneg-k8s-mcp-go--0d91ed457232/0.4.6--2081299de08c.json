@@ -2,49 +2,73 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kaneg/k8s-mcp-go",
   "name": "io.github.kaneg/k8s-mcp-go",
+  "displayName": "K8s MCP Server (Go)",
   "version": "0.4.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Safe Kubernetes access for AI agents via MCP. Read-only by default, with explicit permission modes.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/kaneg/k8s-mcp-go",
-    "homepage": "https://github.com/kaneg/k8s-mcp-go",
-    "readme": "https://github.com/kaneg/k8s-mcp-go#readme"
-  },
-  "keywords": [
-    "K8s MCP Server (Go)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_darwin_amd64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_darwin_amd64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-c010ec58d598283d",
+      "type": "archive",
       "url": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_darwin_amd64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-e55e8100a8480654",
+      "type": "archive",
+      "url": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_darwin_arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-85b2c40526c61ff4",
+      "type": "archive",
+      "url": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_linux_amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-104d2d71abfda083",
+      "type": "archive",
+      "url": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_linux_arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-852ab9e886314aba",
+      "type": "archive",
+      "url": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_windows_amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-1bbdd763a0900aac",
+      "type": "archive",
+      "url": "https://github.com/kaneg/k8s-mcp-go/releases/download/v0.4.6/k8s-mcp-go_0.4.6_windows_arm64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kaneg/k8s-mcp-go",
+    "homepage": "https://github.com/kaneg/k8s-mcp-go"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +81,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kaneg__k8s-mcp-go.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=223",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kaneg/k8s-mcp-go"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.AgentTools-Cloud/agent-tools-mcp",
   "name": "io.github.AgentTools-Cloud/agent-tools-mcp",
+  "displayName": "agent-tools (x402 + MCP + A2A directory)",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Discover x402 services, MCP servers and A2A agents by intent — agent-tools.cloud directory.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/AgentTools-Cloud/AgentToolsCollection",
-    "homepage": "https://agent-tools.cloud",
-    "readme": "https://github.com/AgentTools-Cloud/AgentToolsCollection#readme"
-  },
-  "keywords": [
-    "agent-tools (x402 + MCP + A2A directory)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "agent-tools-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Discover x402 services, MCP servers and A2A agents by intent — agent-tools.cloud directory.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "agent-tools-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agent-tools.cloud/mcp-discovery/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-72e1c9da8cfb983e",
       "type": "registry",
-      "url": "https://pypi.org/project/agent-tools-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/agent-tools-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-0b00ef91f41d9133",
+      "type": "other",
+      "url": "https://agent-tools.cloud/mcp-discovery/",
+      "install": {
+        "type": "api",
+        "url": "https://agent-tools.cloud/mcp-discovery/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/AgentTools-Cloud/AgentToolsCollection",
+    "homepage": "https://agent-tools.cloud"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.agenttools-cloud__agent-tools-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AgentTools-Cloud/agent-tools-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

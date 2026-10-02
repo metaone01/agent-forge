@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ar.com.consignatarias/cattle-market",
+  "name": "ar.com.consignatarias/cattle-market",
+  "displayName": "ar.com.consignatarias/cattle-market",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Mercado ganadero argentino: INMAG, precios, dispersión, remates, directorio y valor de la hectárea.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ar.com.consignatarias/cattle-market",
+    "remotes": [
+      {
+        "url": "https://www.consignatarias.com.ar/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ba6ce074fab83c69",
+      "type": "other",
+      "url": "https://www.consignatarias.com.ar/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.consignatarias.com.ar/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.consignatarias.com.ar"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=23",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ar.com.consignatarias/cattle-market"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

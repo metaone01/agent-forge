@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.e3c98ca668a048dd35958b3edeebadffa55e55cfa6c36ca530a2b76b9cee6e85",
+  "name": "Aclypea/dsh-repetition-guard",
+  "displayName": "Aclypea/dsh-repetition-guard",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness (DSH) 模型输出复读熔断插件：P1 通用流式复读检测（llm/stream 在线拦截）+ P2 Vision Toolkit 局部防护，命中即终止流并给出结构化错误码，避免模型复读浪费大量 output tokens。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Aclypea/dsh-repetition-guard",
+    "readme": "https://github.com/Aclypea/dsh-repetition-guard#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Aclypea/dsh-repetition-guard"
+    }
+  ],
+  "keywords": [
+    "safety",
+    "vision"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11977"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13036"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cammac-creator/ibanforge",
+  "name": "io.github.cammac-creator/ibanforge",
+  "displayName": "io.github.cammac-creator/ibanforge",
+  "version": "1.8.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check the bank behind an IBAN before you pay: bank-code check, BIC with source, bank-level sanctions",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "ibanforge-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.ibanforge.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d7d6a39088426748",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/ibanforge-mcp",
+      "registry": "npm",
+      "version": "1.8.1"
+    },
+    {
+      "id": "upstream-3744c7526c498e94",
+      "type": "other",
+      "url": "https://api.ibanforge.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.ibanforge.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cammac-creator/ibanforge",
+    "homepage": "https://ibanforge.com?src=mcp-registry"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=179",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cammac-creator/ibanforge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

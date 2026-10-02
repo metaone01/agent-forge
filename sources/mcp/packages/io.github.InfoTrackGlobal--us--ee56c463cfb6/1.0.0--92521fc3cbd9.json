@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.InfoTrackGlobal/us",
+  "name": "io.github.InfoTrackGlobal/us",
+  "displayName": "InfoTrack (US)",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Court e-filing and process serving. Submit filings, serve process, and manage orders.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.InfoTrackGlobal/us",
+    "remotes": [
+      {
+        "url": "https://search.infotrack.com/services/mcp-us-server/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b176f42f69f00c89",
+      "type": "other",
+      "url": "https://search.infotrack.com/services/mcp-us-server/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://search.infotrack.com/services/mcp-us-server/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://search.infotrack.com/services/mcp-us-server/docs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.InfoTrackGlobal/us"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

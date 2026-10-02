@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.15293ddf90b38940856d3c87887d009e2e8df78c851090267a4b6edb05a915c0",
+  "name": "hu568/meow-academy/android-app/runtime-assets/dsh-closure",
+  "displayName": "hu568/meow-academy/android-app/runtime-assets/dsh-closure",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "喵仓（meow-academy）安卓 App 内置 DSH jsonrpc 运行时的依赖清单（0.1.5-rc.2 基线）：按 cordis.yml 行集 + 四预设行集 + 手写宿主入口（host.mjs / meow-jsonrpc.js）的依赖闭包生成（dependencies + optional + peer），剔除上游",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "android-app/runtime-assets/dsh-closure/meow-runtime.package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/hu568/meow-academy",
+    "readme": "https://github.com/hu568/meow-academy#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/hu568/meow-academy/tree/HEAD/android-app/runtime-assets/dsh-closure"
+    }
+  ],
+  "keywords": [
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14329"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

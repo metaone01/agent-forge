@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.smarterweather/weather",
   "name": "io.github.smarterweather/weather",
+  "displayName": "Smarter Weather",
   "version": "0.0.1",
-  "versionScheme": "semver",
-  "description": "Smarter Weather MCP: forecasts, alerts, outlooks, observations, AQI, grids, and map imagery.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/smarterweather/developer",
-    "homepage": "https://smarterweather.com/developers",
-    "readme": "https://github.com/smarterweather/developer#readme"
-  },
-  "keywords": [
-    "Smarter Weather"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@smarterweather/mcp-weather",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Smarter Weather MCP: forecasts, alerts, outlooks, observations, AQI, grids, and map imagery.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@smarterweather/mcp-weather",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.smarterweather.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d8a0fedf617c1f97",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@smarterweather/mcp-weather",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.0.1"
+    },
+    {
+      "id": "upstream-bb7065838bf5cfe5",
+      "type": "other",
+      "url": "https://mcp.smarterweather.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.smarterweather.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/smarterweather/developer",
+    "homepage": "https://smarterweather.com/developers"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.smarterweather__weather.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=330",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.smarterweather/weather"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

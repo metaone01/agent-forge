@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.tlders/domain-prices",
+  "name": "com.tlders/domain-prices",
+  "displayName": "TLDers Domain Prices",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Compare domain prices across 145+ registrars and 1,100+ TLDs, find promo codes, check availability.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@tlders/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.tlders.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bdbb0324f0787f6d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@tlders/mcp",
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-2c584b2bbdd4167a",
+      "type": "other",
+      "url": "https://www.tlders.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.tlders.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TLDers/tlders-mcp",
+    "homepage": "https://www.tlders.com/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=82",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.tlders/domain-prices"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

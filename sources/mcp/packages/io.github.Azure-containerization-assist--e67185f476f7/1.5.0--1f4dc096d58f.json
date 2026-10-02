@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Azure/containerization-assist",
   "name": "io.github.Azure/containerization-assist",
+  "displayName": "Containerization Assist",
   "version": "1.5.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "TypeScript MCP server for AI-powered containerization workflows with Docker and Kubernetes support",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Azure/containerization-assist",
-    "homepage": "https://github.com/Azure/containerization-assist#readme",
-    "readme": "https://github.com/Azure/containerization-assist#readme"
-  },
-  "keywords": [
-    "Containerization Assist"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "containerization-assist-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "containerization-assist-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-24686fb153682d29",
       "type": "registry",
       "url": "https://www.npmjs.com/package/containerization-assist-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Azure/containerization-assist",
+    "homepage": "https://github.com/Azure/containerization-assist#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.azure__containerization-assist.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=112",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Azure/containerization-assist"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

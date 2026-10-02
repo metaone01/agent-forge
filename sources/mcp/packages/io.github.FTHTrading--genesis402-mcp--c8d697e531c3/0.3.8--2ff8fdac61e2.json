@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.FTHTrading/genesis402-mcp",
+  "name": "io.github.FTHTrading/genesis402-mcp",
+  "displayName": "Genesis402 by UnyKorn (x402 pay-per-call)",
+  "version": "0.3.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Counterparty checks, sanctions screening, company lookup and 360 pay-per-call APIs over x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "genesis402-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://twin.unykorn.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5cffad4adb5dfb80",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/genesis402-mcp",
+      "registry": "npm",
+      "version": "0.3.8"
+    },
+    {
+      "id": "upstream-e73d9b68d562ff09",
+      "type": "other",
+      "url": "https://twin.unykorn.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://twin.unykorn.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/FTHTrading/genesis402-agent-kit",
+    "homepage": "https://twin.unykorn.org/catalog"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=129",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.FTHTrading/genesis402-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

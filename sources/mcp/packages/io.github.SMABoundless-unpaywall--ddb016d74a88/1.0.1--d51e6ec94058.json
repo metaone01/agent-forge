@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SMABoundless/unpaywall",
   "name": "io.github.SMABoundless/unpaywall",
+  "displayName": "io.github.SMABoundless/unpaywall",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Open-access availability for 120M+ scholarly articles via the Unpaywall API",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/SMABoundless/unpaywall-mcp-server.git",
-    "readme": "https://github.com/SMABoundless/unpaywall-mcp-server.git#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "unpaywall-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Open-access availability for 120M+ scholarly articles via the Unpaywall API",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "unpaywall-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1c9d4e628f433834",
       "type": "registry",
-      "url": "https://pypi.org/project/unpaywall-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/unpaywall-mcp-server",
+      "registry": "pypi",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/SMABoundless/unpaywall-mcp-server.git"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.smaboundless__unpaywall.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=151",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SMABoundless/unpaywall"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

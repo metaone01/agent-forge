@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.dizpers/polystrike",
+  "name": "io.github.dizpers/polystrike",
+  "displayName": "Polystrike",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live Elon Musk & Ted Cruz tweet feed, tweet counters, and Polymarket tweet-count market data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.dizpers/polystrike",
+    "remotes": [
+      {
+        "url": "https://polystrike.xyz/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://polystrike.xyz/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-14b03efd37ec1ea7",
+      "type": "other",
+      "url": "https://polystrike.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://polystrike.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-0e10f8a8dc57d200",
+      "type": "other",
+      "url": "https://polystrike.xyz/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://polystrike.xyz/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://polystrike.xyz"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=194",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dizpers/polystrike"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

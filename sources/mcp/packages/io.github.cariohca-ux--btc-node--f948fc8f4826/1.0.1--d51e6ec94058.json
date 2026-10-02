@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cariohca-ux/btc-node",
+  "name": "io.github.cariohca-ux/btc-node",
+  "displayName": "IRONCLAW BTC Node",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real BTC full node: fees, mempool, txs, portfolio, trace, whales, SEC, scraping, Reddit via x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.cariohca-ux/btc-node",
+    "remotes": [
+      {
+        "url": "https://mcp.btcnode.uk/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1ed2aadb22406690",
+      "type": "other",
+      "url": "https://mcp.btcnode.uk/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.btcnode.uk/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cariohca-ux/x402-btc-node"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=180",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cariohca-ux/btc-node"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

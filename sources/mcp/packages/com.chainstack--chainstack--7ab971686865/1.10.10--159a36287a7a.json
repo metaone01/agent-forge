@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.chainstack/chainstack",
+  "name": "com.chainstack/chainstack",
+  "displayName": "Chainstack",
+  "version": "1.10.10",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Deploy and manage blockchain nodes across 70+ protocols, search docs, request testnet funds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.chainstack/chainstack",
+    "remotes": [
+      {
+        "url": "https://mcp.chainstack.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b36d35e2a2931ee6",
+      "type": "other",
+      "url": "https://mcp.chainstack.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.chainstack.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/chainstacklabs/mcp-server",
+    "homepage": "https://docs.chainstack.com/docs/chainstack-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=39",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.chainstack/chainstack"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.mailkite/agent-mail",
+  "name": "dev.mailkite/agent-mail",
+  "displayName": "dev.mailkite/agent-mail",
+  "version": "0.12.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Give an AI agent its own inbox — receive email as a webhook, send over a verified domain.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.mailkite/agent-mail",
+    "remotes": [
+      {
+        "url": "https://mcp.mailkite.dev/mcp?ref=agent-mail",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e3d2c6cb9ea20cd2",
+      "type": "other",
+      "url": "https://mcp.mailkite.dev/mcp?ref=agent-mail",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mailkite.dev/mcp?ref=agent-mail"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mailkite/mailkite-mcp",
+    "homepage": "https://mailkite.dev/docs/ai-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=92",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.mailkite/agent-mail"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

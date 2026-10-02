@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.ai.agenticaffiliate/affiliate-networks-mcp",
   "name": "ai.agenticaffiliate/affiliate-networks-mcp",
+  "displayName": "Affiliate Networks MCP",
   "version": "0.19.0",
-  "versionScheme": "semver",
-  "description": "Affiliate network reporting in your AI client. Bring your own keys. Most adapters experimental.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/bobberrisford/affiliatemcp",
-    "homepage": "https://agenticaffiliate.ai",
-    "readme": "https://github.com/bobberrisford/affiliatemcp#readme"
-  },
-  "keywords": [
-    "Affiliate Networks MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "affiliate-networks-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Affiliate network reporting in your AI client. Bring your own keys. Most adapters experimental.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "affiliate-networks-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.agenticaffiliate.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fcabcdeb5082c6be",
       "type": "registry",
       "url": "https://www.npmjs.com/package/affiliate-networks-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.19.0"
+    },
+    {
+      "id": "upstream-1b199d81be133623",
+      "type": "other",
+      "url": "https://mcp.agenticaffiliate.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.agenticaffiliate.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/bobberrisford/affiliatemcp",
+    "homepage": "https://agenticaffiliate.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.agenticaffiliate__affiliate-networks-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=1",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.agenticaffiliate/affiliate-networks-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

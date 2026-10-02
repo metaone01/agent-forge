@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.rootsbymenda/pharma-regulatory",
+  "name": "io.github.rootsbymenda/pharma-regulatory",
+  "displayName": "io.github.rootsbymenda/pharma-regulatory",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Drug safety: DrugBank, interactions, FAERS, WHO, TGA. 7 databases. Free.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.rootsbymenda/pharma-regulatory",
+    "remotes": [
+      {
+        "url": "https://pharma-mcp-server.rootsbybenda.workers.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://pharma-mcp-server.rootsbybenda.workers.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d3341600f8bc6a29",
+      "type": "other",
+      "url": "https://pharma-mcp-server.rootsbybenda.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pharma-mcp-server.rootsbybenda.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-c7abf1d7410443e0",
+      "type": "other",
+      "url": "https://pharma-mcp-server.rootsbybenda.workers.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://pharma-mcp-server.rootsbybenda.workers.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rootsbymenda/pharma-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=298",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rootsbymenda/pharma-regulatory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

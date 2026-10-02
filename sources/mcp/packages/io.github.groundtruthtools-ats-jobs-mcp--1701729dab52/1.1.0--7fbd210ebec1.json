@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.groundtruthtools/ats-jobs-mcp",
   "name": "io.github.groundtruthtools/ats-jobs-mcp",
+  "displayName": "ATS Jobs",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "Open jobs read from a company's own careers system: Greenhouse, Ashby, Lever.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/groundtruthtools/ats-jobs-mcp",
-    "readme": "https://github.com/groundtruthtools/ats-jobs-mcp#readme"
-  },
-  "keywords": [
-    "ATS Jobs"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ats-jobs-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Open jobs read from a company's own careers system: Greenhouse, Ashby, Lever.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ats-jobs-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ats-jobs-api.groundtruthtools.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5ab51004b5619689",
       "type": "registry",
-      "url": "https://pypi.org/project/ats-jobs-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ats-jobs-mcp",
+      "registry": "pypi",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-55843ea8b9eb5416",
+      "type": "other",
+      "url": "https://ats-jobs-api.groundtruthtools.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ats-jobs-api.groundtruthtools.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/groundtruthtools/ats-jobs-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.groundtruthtools__ats-jobs-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=207",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.groundtruthtools/ats-jobs-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

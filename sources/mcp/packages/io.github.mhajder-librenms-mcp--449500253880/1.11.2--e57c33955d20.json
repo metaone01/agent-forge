@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mhajder/librenms-mcp",
   "name": "io.github.mhajder/librenms-mcp",
+  "displayName": "LibreNMS MCP",
   "version": "1.11.2",
-  "versionScheme": "semver",
-  "description": "MCP server for LibreNMS network monitoring - query devices, ports, alerts, and manage infrastructure",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/mhajder/librenms-mcp",
-    "homepage": "https://github.com/mhajder/librenms-mcp",
-    "readme": "https://github.com/mhajder/librenms-mcp#readme"
-  },
-  "keywords": [
-    "LibreNMS MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "librenms-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for LibreNMS network monitoring - query devices, ports, alerts, and manage infrastructure",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "librenms-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0544752a92434666",
       "type": "registry",
-      "url": "https://pypi.org/project/librenms-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/librenms-mcp",
+      "registry": "pypi",
+      "version": "1.11.2"
+    },
+    {
+      "id": "upstream-40a9543e9ead7f0a",
+      "type": "oci",
+      "url": "https://ghcr.io/mhajder/librenms-mcp:1.11.2",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mhajder/librenms-mcp",
+    "homepage": "https://github.com/mhajder/librenms-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mhajder__librenms-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=248",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mhajder/librenms-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

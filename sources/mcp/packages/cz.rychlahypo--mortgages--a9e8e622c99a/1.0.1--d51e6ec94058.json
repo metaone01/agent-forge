@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cz.rychlahypo/mortgages",
+  "name": "cz.rychlahypo/mortgages",
+  "displayName": "Rychlá Hypo – Czech mortgages",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Czech mortgage rates, payment comparison and max loan per bank for 6 major Czech banks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cz.rychlahypo/mortgages",
+    "remotes": [
+      {
+        "url": "https://rychlahypo.cz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5f9c04a58725fbd6",
+      "type": "other",
+      "url": "https://rychlahypo.cz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://rychlahypo.cz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/emil-asistent/rychlahypo-mcp",
+    "homepage": "https://rychlahypo.cz/api-dokumentace"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=88",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cz.rychlahypo/mortgages"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

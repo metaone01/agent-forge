@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.saagpatel/portfolio-mcp",
   "name": "io.github.saagpatel/portfolio-mcp",
+  "displayName": "saagarpatel.dev Portfolio",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "Agent-native MCP server over the public saagarpatel.dev corpus. Read-only, stateless.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/saagpatel/portfolio-mcp",
-    "homepage": "https://saagarpatel.dev",
-    "readme": "https://github.com/saagpatel/portfolio-mcp#readme"
-  },
-  "keywords": [
-    "saagarpatel.dev Portfolio"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "saagar-portfolio-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Agent-native MCP server over the public saagarpatel.dev corpus. Read-only, stateless.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "saagar-portfolio-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.saagarpatel.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c5c4e8cb5365803f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/saagar-portfolio-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-675fe8ac05f3baa3",
+      "type": "other",
+      "url": "https://mcp.saagarpatel.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.saagarpatel.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/saagpatel/portfolio-mcp",
+    "homepage": "https://saagarpatel.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.saagpatel__portfolio-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=300",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.saagpatel/portfolio-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

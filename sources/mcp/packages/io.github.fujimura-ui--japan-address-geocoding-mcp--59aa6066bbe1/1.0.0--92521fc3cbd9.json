@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.fujimura-ui/japan-address-geocoding-mcp",
+  "name": "io.github.fujimura-ui/japan-address-geocoding-mcp",
+  "displayName": "Japan Address & Geocoding",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Japanese address search and geocoding (official address registry): postal codes and coordinates.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.fujimura-ui/japan-address-geocoding-mcp",
+    "remotes": [
+      {
+        "url": "https://jusho-mcp.plus-synergy.workers.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://jusho-mcp.plus-synergy.workers.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ae61e864bd481236",
+      "type": "other",
+      "url": "https://jusho-mcp.plus-synergy.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://jusho-mcp.plus-synergy.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-2ce852c05e8a2826",
+      "type": "other",
+      "url": "https://jusho-mcp.plus-synergy.workers.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://jusho-mcp.plus-synergy.workers.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=203",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fujimura-ui/japan-address-geocoding-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

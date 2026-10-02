@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.sawftware-apps/commodities-sh",
+  "name": "io.github.sawftware-apps/commodities-sh",
+  "displayName": "Primary Source Commodities",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Primary-source commodities data for AI agents — EIA, FRED, CFTC, USDA, USGS via x402 on Base.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.sawftware-apps/commodities-sh",
+    "remotes": [
+      {
+        "url": "https://api.commodities.sh/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2fe15ca6a0b6c0f4",
+      "type": "other",
+      "url": "https://api.commodities.sh/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.commodities.sh/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=325",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sawftware-apps/commodities-sh"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

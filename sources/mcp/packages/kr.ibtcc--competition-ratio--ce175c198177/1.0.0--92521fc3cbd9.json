@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.kr.ibtcc/competition-ratio",
+  "name": "kr.ibtcc/competition-ratio",
+  "displayName": "IBTCC 공기업 경쟁률 조회",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "한국 공공기관(공기업) 채용 경쟁률을 기관명으로 조회합니다. 알리오(ALIO) 공시 데이터 기반으로 최근 채용 건별 1차 지원자 수와 1차 경쟁률을 반환합니다.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "kr.ibtcc/competition-ratio",
+    "remotes": [
+      {
+        "url": "https://ibtcc.kr/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5177c3f75377d1c1",
+      "type": "other",
+      "url": "https://ibtcc.kr/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ibtcc.kr/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jojunho74/hometest"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=364",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "kr.ibtcc/competition-ratio"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

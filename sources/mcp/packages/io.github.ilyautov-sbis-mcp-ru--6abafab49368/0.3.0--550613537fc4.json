@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ilyautov/sbis-mcp-ru",
   "name": "io.github.ilyautov/sbis-mcp-ru",
+  "displayName": "СБИС (Saby) MCP (RU) — документы, подпись, ЭДО",
   "version": "0.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "API СБИС (Saby) в ИИ-ассистенте: документы, этапы ЭДО, подпись, сертификаты",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ilyautov/sbis-mcp-ru",
-    "homepage": "https://business-mcp-ru.aifrontier.tech/sbis-api.html",
-    "readme": "https://github.com/ilyautov/sbis-mcp-ru#readme"
-  },
-  "keywords": [
-    "СБИС (Saby) MCP (RU) — документы, подпись, ЭДО"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sbis-mcp-ru",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sbis-mcp-ru",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6e8744f75850b984",
       "type": "registry",
-      "url": "https://pypi.org/project/sbis-mcp-ru/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sbis-mcp-ru",
+      "registry": "pypi",
+      "version": "0.3.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ilyautov/sbis-mcp-ru",
+    "homepage": "https://business-mcp-ru.aifrontier.tech/sbis-api.html"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ilyautov__sbis-mcp-ru.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=212",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ilyautov/sbis-mcp-ru"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

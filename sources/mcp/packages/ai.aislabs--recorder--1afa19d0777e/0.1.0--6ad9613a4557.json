@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.aislabs/recorder",
+  "name": "ai.aislabs/recorder",
+  "displayName": "AIS Agent Flight Recorder — dead-man alerts & resume for AI agents",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Dead-man switch for AI agents & cron jobs: heartbeat with state capsule, alerts + resume links",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.aislabs/recorder",
+    "remotes": [
+      {
+        "url": "https://api.aislabs.ai/recorder/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f373d0244a5846df",
+      "type": "other",
+      "url": "https://api.aislabs.ai/recorder/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.aislabs.ai/recorder/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://aislabs.ai/gateway"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=1",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.aislabs/recorder"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

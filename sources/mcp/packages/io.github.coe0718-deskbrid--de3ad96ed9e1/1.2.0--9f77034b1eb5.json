@@ -2,45 +2,39 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.coe0718/deskbrid",
   "name": "io.github.coe0718/deskbrid",
+  "displayName": "io.github.coe0718/deskbrid",
   "version": "1.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Linux automation. 125 MCP tools: windows, input, screenshots, clipboard, print, AT-SPI. 9 DEs.",
   "license": "unknown",
-  "links": {
-    "repository": "https://hub.docker.com/r/coe0718/deskbrid"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/coe0718/deskbrid:1.2.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/coe0718/deskbrid:1.2.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/coe0718/deskbrid",
-      "priority": 10,
+      "id": "upstream-f7dea8b554b96ea5",
+      "type": "oci",
+      "url": "https://ghcr.io/coe0718/deskbrid:1.2.0",
       "registry": "oci"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -53,6 +47,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.coe0718__deskbrid.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=185",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.coe0718/deskbrid"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

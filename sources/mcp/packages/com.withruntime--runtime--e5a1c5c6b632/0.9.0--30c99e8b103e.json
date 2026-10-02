@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.withruntime/runtime",
+  "name": "com.withruntime/runtime",
+  "displayName": "Runtime Cloud",
+  "version": "0.9.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Linux microVM sandboxes for AI agents: run commands, files, processes, pause and wake.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "withruntime",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.withruntime.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d052c9643e953118",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/withruntime",
+      "registry": "npm",
+      "version": "0.9.0"
+    },
+    {
+      "id": "upstream-2021faae5eb40e90",
+      "type": "other",
+      "url": "https://api.withruntime.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.withruntime.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/withruntime/runtime",
+    "homepage": "https://withruntime.com/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=87",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.withruntime/runtime"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

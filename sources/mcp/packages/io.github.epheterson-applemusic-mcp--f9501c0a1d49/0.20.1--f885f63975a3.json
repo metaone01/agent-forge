@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.epheterson/applemusic-mcp",
   "name": "io.github.epheterson/applemusic-mcp",
+  "displayName": "io.github.epheterson/applemusic-mcp",
   "version": "0.20.1",
-  "versionScheme": "semver",
-  "description": "Apple Music MCP server: playlists, library, catalog, playback and Up Next, on Mac/Windows/Linux.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/epheterson/applemusic-mcp",
-    "readme": "https://github.com/epheterson/applemusic-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "applemusic-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Apple Music MCP server: playlists, library, catalog, playback and Up Next, on Mac/Windows/Linux.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "applemusic-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ca152dd69485f81c",
       "type": "registry",
-      "url": "https://pypi.org/project/applemusic-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/applemusic-mcp",
+      "registry": "pypi",
+      "version": "0.20.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/epheterson/applemusic-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.epheterson__applemusic-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=199",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.epheterson/applemusic-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.handsforagents/hands",
+  "name": "com.handsforagents/hands",
+  "displayName": "Hands for Agents",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Human-operated physical world in the EU: make, assemble, measure, verify, ship.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "handsforagents-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.handsforagents.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-92b11cf0481876e4",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/handsforagents-mcp",
+      "registry": "npm",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-b01d388528e82e9f",
+      "type": "other",
+      "url": "https://mcp.handsforagents.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.handsforagents.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/handsforagents/handsforagents-mcp",
+    "homepage": "https://handsforagents.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.handsforagents/hands"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.krmisystems/fantasy-football-manager",
   "name": "io.github.krmisystems/fantasy-football-manager",
+  "displayName": "Fantasy Football Manager",
   "version": "0.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "ESPN draft and lineup analysis for Codex and MCP clients. Live actions use the ESPN companion.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/krmisystems/fantasy-football-manager",
-    "homepage": "https://github.com/krmisystems/fantasy-football-manager/blob/main/docs/PLUGIN_INSTALL.md",
-    "readme": "https://github.com/krmisystems/fantasy-football-manager#readme"
-  },
-  "keywords": [
-    "Fantasy Football Manager"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "fantasy-football-manager",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "fantasy-football-manager",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-63b1a3e1578c9c51",
       "type": "registry",
-      "url": "https://pypi.org/project/fantasy-football-manager/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/fantasy-football-manager",
+      "registry": "pypi",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/krmisystems/fantasy-football-manager",
+    "homepage": "https://github.com/krmisystems/fantasy-football-manager/blob/main/docs/PLUGIN_INSTALL.md"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.krmisystems__fantasy-football-manager.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.krmisystems/fantasy-football-manager"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.me.stabledrop/escrow-payments",
+  "name": "me.stabledrop/escrow-payments",
+  "displayName": "Stabledrop escrow payments",
+  "version": "7.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Stablecoin escrow payments the buyer can dispute, with a signed receipt. Pay a wallet or an email.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "me.stabledrop/escrow-payments",
+    "remotes": [
+      {
+        "url": "https://api.stabledrop.me/api/ap2/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b4bd90146e1a5b98",
+      "type": "other",
+      "url": "https://api.stabledrop.me/api/ap2/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.stabledrop.me/api/ap2/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/conduit-ucpi/ap2service",
+    "homepage": "https://stabledrop.me"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "me.stabledrop/escrow-payments"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

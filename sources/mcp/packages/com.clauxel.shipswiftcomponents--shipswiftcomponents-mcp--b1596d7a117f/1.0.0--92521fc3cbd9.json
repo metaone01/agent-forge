@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.clauxel.shipswiftcomponents/shipswiftcomponents-mcp",
+  "name": "com.clauxel.shipswiftcomponents/shipswiftcomponents-mcp",
+  "displayName": "com.clauxel.shipswiftcomponents/shipswiftcomponents-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A paid remote MCP for ShipSwift, built to return verdicts, receipts, usage logs, and audit-ready JSO",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.clauxel.shipswiftcomponents/shipswiftcomponents-mcp",
+    "remotes": [
+      {
+        "url": "https://shipswiftcomponents.clauxel.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c96d8b660f9e5a49",
+      "type": "other",
+      "url": "https://shipswiftcomponents.clauxel.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://shipswiftcomponents.clauxel.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/clauxel/shipswift-component-mcp-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=40",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.clauxel.shipswiftcomponents/shipswiftcomponents-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

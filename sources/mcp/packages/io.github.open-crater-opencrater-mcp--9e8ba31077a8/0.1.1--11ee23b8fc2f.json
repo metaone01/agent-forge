@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.open-crater/opencrater-mcp",
   "name": "io.github.open-crater/opencrater-mcp",
+  "displayName": "io.github.open-crater/opencrater-mcp",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Monetize your MCP server or CLI: live OpenCrater network stats + how maintainers earn USDC.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/open-crater/opencrater-mcp",
-    "readme": "https://github.com/open-crater/opencrater-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "opencrater-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Monetize your MCP server or CLI: live OpenCrater network stats + how maintainers earn USDC.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "opencrater-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://opencrater.to/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8a9a668a46326afa",
       "type": "registry",
       "url": "https://www.npmjs.com/package/opencrater-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-4f2934fda1eac612",
+      "type": "other",
+      "url": "https://opencrater.to/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://opencrater.to/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/open-crater/opencrater-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.open-crater__opencrater-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.open-crater/opencrater-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

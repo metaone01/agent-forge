@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Nimistu/lahend-mcp",
+  "name": "io.github.Nimistu/lahend-mcp",
+  "displayName": "lahend.ee — Estonian court decisions",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Estonian court decisions: full-text case-law search, each ruling linked to its companies. Free.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Nimistu/lahend-mcp",
+    "remotes": [
+      {
+        "url": "https://lahend.ee/api/lahend-mcp/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://lahend.ee/api/lahend-mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-33dba28a30f87f21",
+      "type": "other",
+      "url": "https://lahend.ee/api/lahend-mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://lahend.ee/api/lahend-mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f82a36a565e6d1fc",
+      "type": "other",
+      "url": "https://lahend.ee/api/lahend-mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://lahend.ee/api/lahend-mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Nimistu/lahend-mcp",
+    "homepage": "https://lahend.ee"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=144",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Nimistu/lahend-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.rudranaresh0201/devmcp",
   "name": "io.github.rudranaresh0201/devmcp",
+  "displayName": "devmcp",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Git/CI MCP server with the full protocol surface (tools, resources, prompts, roots, sampling).",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/rudranaresh0201/mcp",
-    "homepage": "https://github.com/rudranaresh0201/mcp/tree/main/devmcp#readme",
-    "readme": "https://github.com/rudranaresh0201/mcp#readme"
-  },
-  "keywords": [
-    "devmcp"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "devmcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Git/CI MCP server with the full protocol surface (tools, resources, prompts, roots, sampling).",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "devmcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0dadd0e37e149234",
       "type": "registry",
-      "url": "https://pypi.org/project/devmcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/devmcp-server",
+      "registry": "pypi",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/rudranaresh0201/mcp",
+    "homepage": "https://github.com/rudranaresh0201/mcp/tree/main/devmcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rudranaresh0201__devmcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=298",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rudranaresh0201/devmcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

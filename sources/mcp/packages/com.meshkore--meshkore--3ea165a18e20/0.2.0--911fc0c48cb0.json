@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.meshkore/meshkore",
+  "name": "com.meshkore/meshkore",
+  "displayName": "MeshKore",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Find a live agent by describing the task, then call its skills. Availability is probe-verified.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.meshkore/meshkore",
+    "remotes": [
+      {
+        "url": "https://mcp.meshkore.com/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b434c08747956dd0",
+      "type": "other",
+      "url": "https://mcp.meshkore.com/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.meshkore.com/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/meshkore/mcp",
+    "homepage": "https://meshkore.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.meshkore/meshkore"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.DashankaNadeeshanDeSilva/kontor-mcp",
   "name": "io.github.DashankaNadeeshanDeSilva/kontor-mcp",
+  "displayName": "Kontor MCP",
   "version": "1.0.4",
-  "versionScheme": "semver",
-  "description": "Offline e-invoice tools for AI agents: validate, audit, convert and generate XRechnung/ZUGFeRD.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/DashankaNadeeshanDeSilva/kontor-mcp",
-    "homepage": "https://github.com/DashankaNadeeshanDeSilva/kontor-mcp#readme",
-    "readme": "https://github.com/DashankaNadeeshanDeSilva/kontor-mcp#readme"
-  },
-  "keywords": [
-    "Kontor MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@kontor-mcp/server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Offline e-invoice tools for AI agents: validate, audit, convert and generate XRechnung/ZUGFeRD.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@kontor-mcp/server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6ce0c3a9fd7a9ebb",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@kontor-mcp/server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-43763e3331097fd4",
+      "type": "oci",
+      "url": "https://ghcr.io/dashankanadeeshandesilva/kontor-mcp:1.0.4",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/DashankaNadeeshanDeSilva/kontor-mcp",
+    "homepage": "https://github.com/DashankaNadeeshanDeSilva/kontor-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dashankanadeeshandesilva__kontor-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=122",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.DashankaNadeeshanDeSilva/kontor-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

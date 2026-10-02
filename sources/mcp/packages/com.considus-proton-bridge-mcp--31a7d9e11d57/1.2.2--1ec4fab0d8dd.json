@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.com.considus/proton-bridge-mcp",
   "name": "com.considus/proton-bridge-mcp",
+  "displayName": "Proton Bridge MCP",
   "version": "1.2.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read, organise and carefully-gated send for Proton Mail, without your mail leaving this machine.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Considus/proton-bridge-mcp",
-    "homepage": "https://considus.com/proton-bridge-mcp/",
-    "readme": "https://github.com/Considus/proton-bridge-mcp#readme"
-  },
-  "keywords": [
-    "Proton Bridge MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Considus/proton-bridge-mcp/releases/download/v1.2.2/proton-bridge-mcp-1.2.2.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Considus/proton-bridge-mcp/releases/download/v1.2.2/proton-bridge-mcp-1.2.2.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1307893643/c9240753-101b-4278-aac3-2f864ccc9b28?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T10%3A52%3A22Z&rscd=attachment%3B+filename%3Dproton-bridge-mcp-1.2.2.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T09%3A51%3A37Z&ske=2026-09-22T10%3A52%3A22Z&sks=b&skv=2018-11-09&sig=BdoiwVIXcPA0bn90hkgnnSSygjygoPwufqzsth40Ay4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3MjI2NSwibmJmIjoxNzkwMDcxOTY1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.3PF6e4POR8OVcD3MFncWK5bGlE8AFjME9RBzgvhyOzk&response-content-disposition=attachment%3B%20filename%3Dproton-bridge-mcp-1.2.2.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
+      "id": "upstream-670351910ac2ec31",
+      "type": "archive",
+      "url": "https://github.com/Considus/proton-bridge-mcp/releases/download/v1.2.2/proton-bridge-mcp-1.2.2.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Considus/proton-bridge-mcp",
+    "homepage": "https://considus.com/proton-bridge-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.considus__proton-bridge-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=41",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.considus/proton-bridge-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

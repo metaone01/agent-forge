@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.tagit/nfc-verify",
+  "name": "network.tagit/nfc-verify",
+  "displayName": "TAG IT Verify",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verify on-chain lifecycle state and provenance of NFC-tagged physical products.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "network.tagit/nfc-verify",
+    "remotes": [
+      {
+        "url": "https://verify.tagit.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-633dc7a4881e2404",
+      "type": "other",
+      "url": "https://verify.tagit.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://verify.tagit.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TAG-IT-NETWORK/tagit-dashboard",
+    "homepage": "https://verify.tagit.network"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.tagit/nfc-verify"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

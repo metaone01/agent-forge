@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.doricstack/mcp-broker",
   "name": "io.github.doricstack/mcp-broker",
+  "displayName": "mcp-broker",
   "version": "2.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local MCP broker that exposes one compact entry for many upstream servers.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/doricstack/mcp-broker",
-    "homepage": "https://github.com/doricstack/mcp-broker#readme",
-    "readme": "https://github.com/doricstack/mcp-broker#readme"
-  },
-  "keywords": [
-    "mcp-broker"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-broker",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-broker",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f979fd974e112c87",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-broker/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-broker",
+      "registry": "pypi",
+      "version": "2.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/doricstack/mcp-broker",
+    "homepage": "https://github.com/doricstack/mcp-broker#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.doricstack__mcp-broker.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=195",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.doricstack/mcp-broker"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

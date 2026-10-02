@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Apex-Fusion/vector",
+  "name": "io.github.Apex-Fusion/vector",
+  "displayName": "Vector (Apex Fusion)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "24 keyless tools for AI agents on Vector, the Apex Fusion eUTXO L2: wallets, contracts, registry.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Apex-Fusion/vector",
+    "remotes": [
+      {
+        "url": "https://mcp.vector.{network}.apexfusion.org/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.vector.{network}.apexfusion.org/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-40f4630666942ccb",
+      "type": "other",
+      "url": "https://mcp.vector.{network}.apexfusion.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.vector.{network}.apexfusion.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-5d261f5bda199ec9",
+      "type": "other",
+      "url": "https://mcp.vector.{network}.apexfusion.org/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.vector.{network}.apexfusion.org/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Apex-Fusion/mcp-server",
+    "homepage": "https://apex-fusion.github.io/vector-ai-documentation/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Apex-Fusion/vector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

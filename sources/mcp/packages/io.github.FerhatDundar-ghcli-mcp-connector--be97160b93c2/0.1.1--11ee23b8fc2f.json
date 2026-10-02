@@ -2,47 +2,79 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.FerhatDundar/ghcli-mcp-connector",
   "name": "io.github.FerhatDundar/ghcli-mcp-connector",
+  "displayName": "io.github.FerhatDundar/ghcli-mcp-connector",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for the GitHub CLI (gh). Read-only by default; single Go binary.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/FerhatDundar/ghcli-mcp-connector",
-    "homepage": "https://github.com/FerhatDundar/ghcli-mcp-connector#readme",
-    "readme": "https://github.com/FerhatDundar/ghcli-mcp-connector#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-darwin-arm64.zip",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-darwin-arm64.zip",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-eb8f2d433a5d7a14",
+      "type": "archive",
       "url": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-darwin-arm64.zip",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-ced187130759588d",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-darwin-amd64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-97f0c5052e70d956",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-linux-amd64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-a17012da39fd1b26",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-linux-arm64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-bbd43328f57af6e8",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-windows-amd64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-53958e993171b176",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-windows-arm64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/FerhatDundar/ghcli-mcp-connector",
+    "homepage": "https://github.com/FerhatDundar/ghcli-mcp-connector#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +87,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ferhatdundar__ghcli-mcp-connector.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=129",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.FerhatDundar/ghcli-mcp-connector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

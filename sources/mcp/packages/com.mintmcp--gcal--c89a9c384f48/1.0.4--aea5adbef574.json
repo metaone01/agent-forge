@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mintmcp/gcal",
+  "name": "com.mintmcp/gcal",
+  "displayName": "com.mintmcp/gcal",
+  "version": "1.0.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A MCP server that works with Google Calendar to manage event listing, reading, and updates.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mintmcp/gcal",
+    "remotes": [
+      {
+        "url": "https://gcal.mintmcp.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-362a150559b8a5ca",
+      "type": "other",
+      "url": "https://gcal.mintmcp.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gcal.mintmcp.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mintmcp/servers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mintmcp/gcal"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

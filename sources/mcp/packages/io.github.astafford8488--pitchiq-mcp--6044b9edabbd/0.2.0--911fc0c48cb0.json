@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.astafford8488/pitchiq-mcp",
+  "name": "io.github.astafford8488/pitchiq-mcp",
+  "displayName": "io.github.astafford8488/pitchiq-mcp",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-native CRM + get-booked platform. Operate over MCP, or pay per call via x402. No login.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.astafford8488/pitchiq-mcp",
+    "remotes": [
+      {
+        "url": "https://pitchiq-mcp-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-60ddcddbd89822ca",
+      "type": "other",
+      "url": "https://pitchiq-mcp-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pitchiq-mcp-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/astafford8488/PitchIQ",
+    "homepage": "https://www.chuhching.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=173",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.astafford8488/pitchiq-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

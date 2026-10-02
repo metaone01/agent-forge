@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcpbundles/uk-public-services-health",
   "name": "com.mcpbundles/uk-public-services-health",
+  "displayName": "UK Public Services & Health MCP Server from MCPBundles",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Access CQC care ratings, NHS health services, and food hygiene data across the UK",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/thinkchainai/mcpbundles",
-    "homepage": "https://mcpbundles.com/skills/uk-public-services-health",
-    "readme": "https://github.com/thinkchainai/mcpbundles#readme"
-  },
-  "keywords": [
-    "UK Public Services & Health MCP Server from MCPBundles"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-public-services-health-v1.0.0+build.df3c573e/uk-public-services-health.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-public-services-health-v1.0.0+build.df3c573e/uk-public-services-health.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.mcpbundles.com/bundle/uk-public-services-health/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-71d3ed1e733f8af6",
+      "type": "archive",
       "url": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-public-services-health-v1.0.0+build.df3c573e/uk-public-services-health.mcpb",
-      "priority": 10,
       "registry": "mcpb"
+    },
+    {
+      "id": "upstream-df474a196ee2c7e6",
+      "type": "other",
+      "url": "https://mcp.mcpbundles.com/bundle/uk-public-services-health/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mcpbundles.com/bundle/uk-public-services-health/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/thinkchainai/mcpbundles",
+    "homepage": "https://mcpbundles.com/skills/uk-public-services-health"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcpbundles__uk-public-services-health.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpbundles/uk-public-services-health"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

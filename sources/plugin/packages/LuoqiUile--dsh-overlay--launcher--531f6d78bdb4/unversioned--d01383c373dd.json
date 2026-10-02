@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2dd4663f7d4687cad49290015874bf50fdea811f247c58a9ca20cd27b14bef1c",
+  "name": "LuoqiUile/dsh-overlay/launcher",
+  "displayName": "LuoqiUile/dsh-overlay/launcher",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "dsh 启动钩子：dsh web 服务就绪后自动拉起 DSH 插件控制台悬浮窗（单实例，已在运行则复用）。路径优先级：插件配置 exe > 环境变量 DSH_OVERLAY_EXE > 注册表 DSH_OVERLAY_EXE > 安装包默认目录 > 便携版默认目录 > 本机开发目录。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "launcher/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/LuoqiUile/dsh-overlay",
+    "readme": "https://github.com/LuoqiUile/dsh-overlay#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/LuoqiUile/dsh-overlay/tree/HEAD/launcher"
+    }
+  ],
+  "keywords": [
+    "devtools"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14481"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

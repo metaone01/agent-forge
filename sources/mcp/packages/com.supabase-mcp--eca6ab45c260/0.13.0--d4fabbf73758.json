@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.supabase/mcp",
   "name": "com.supabase/mcp",
+  "displayName": "Supabase",
   "version": "0.13.0",
-  "versionScheme": "semver",
-  "description": "MCP server for interacting with the Supabase platform",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/supabase/mcp",
-    "homepage": "https://supabase.com/mcp",
-    "readme": "https://github.com/supabase/mcp#readme"
-  },
-  "keywords": [
-    "Supabase"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@supabase/mcp-server-supabase",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for interacting with the Supabase platform",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@supabase/mcp-server-supabase",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.supabase.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-75b053e2d2a4358e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@supabase/mcp-server-supabase",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.13.0"
+    },
+    {
+      "id": "upstream-59540801852b5994",
+      "type": "other",
+      "url": "https://mcp.supabase.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.supabase.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/supabase/mcp",
+    "homepage": "https://supabase.com/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.supabase__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=79",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.supabase/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

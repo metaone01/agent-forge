@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.dev.shiranui-isuzu/unity-mcp",
   "name": "dev.shiranui-isuzu/unity-mcp",
+  "displayName": "Unity MCP",
   "version": "4.4.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Unity Editor automation for AI agents: scenes, prefabs, assets, shaders, Timeline, tests, builds.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/isuzu-shiranui/UnityMCP",
-    "homepage": "https://unity-mcp.shiranui-isuzu.dev/en/",
-    "readme": "https://github.com/isuzu-shiranui/UnityMCP#readme"
-  },
-  "keywords": [
-    "Unity MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "IsuzuUnityCli",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "IsuzuUnityCli",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-842641ae81eb8b09",
       "type": "registry",
       "url": "https://www.nuget.org/packages/IsuzuUnityCli",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "4.4.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/isuzu-shiranui/UnityMCP",
+    "homepage": "https://unity-mcp.shiranui-isuzu.dev/en/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.shiranui-isuzu__unity-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=94",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.shiranui-isuzu/unity-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

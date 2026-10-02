@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.de.wovitamine/catalog",
+  "name": "de.wovitamine/catalog",
+  "displayName": "wovitamine.de Preisvergleich",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Deutscher Preisvergleich für Vitamine – Bestpreis-Suche (read-only).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "de.wovitamine/catalog",
+    "remotes": [
+      {
+        "url": "https://wovitamine.de/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3a55128be2015b26",
+      "type": "other",
+      "url": "https://wovitamine.de/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://wovitamine.de/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://wovitamine.de"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "de.wovitamine/catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

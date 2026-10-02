@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.flamap/flamap",
+  "name": "app.flamap/flamap",
+  "displayName": "FlaMap",
+  "version": "2.7.12",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your own cycling data for your AI assistant: rides, power, climbs and routes. Read-only.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.flamap/flamap",
+    "remotes": [
+      {
+        "url": "https://api.flamap.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b5584705045f9e1b",
+      "type": "other",
+      "url": "https://api.flamap.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.flamap.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://flamap.app/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=18",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.flamap/flamap"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

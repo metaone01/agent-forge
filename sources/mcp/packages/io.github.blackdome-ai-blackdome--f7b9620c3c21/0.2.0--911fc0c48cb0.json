@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.blackdome-ai/blackdome",
   "name": "io.github.blackdome-ai/blackdome",
+  "displayName": "BlackDome Threat Intel",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Live honeypot threat intel: attacker IPs, IOCs, credentials, payloads, actors.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/blackdome-ai/blackdome-mcp",
-    "homepage": "https://blackdome.ai",
-    "readme": "https://github.com/blackdome-ai/blackdome-mcp#readme"
-  },
-  "keywords": [
-    "BlackDome Threat Intel"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "blackdome-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "blackdome-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-650476f819ead635",
       "type": "registry",
-      "url": "https://pypi.org/project/blackdome-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/blackdome-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/blackdome-ai/blackdome-mcp",
+    "homepage": "https://blackdome.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.blackdome-ai__blackdome.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.blackdome-ai/blackdome"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

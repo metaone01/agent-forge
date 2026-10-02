@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cash.forage/forage",
+  "name": "cash.forage/forage",
+  "displayName": "cash.forage/forage",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Web search and URL-to-markdown for agents. Pay per call in USDC on Base, no signup.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cash.forage/forage",
+    "remotes": [
+      {
+        "url": "https://forage.cash/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e6bbd7198df1d502",
+      "type": "other",
+      "url": "https://forage.cash/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://forage.cash/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://forage.cash"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cash.forage/forage"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

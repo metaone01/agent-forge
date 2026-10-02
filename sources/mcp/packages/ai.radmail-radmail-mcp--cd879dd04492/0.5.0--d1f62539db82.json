@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.ai.radmail/radmail-mcp",
   "name": "ai.radmail/radmail-mcp",
+  "displayName": "ai.radmail/radmail-mcp",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "Email OS for agents - real-inbox search, triage, commitments, and a verifiable BEC hard-stop.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/radmail-ai/radmail-mcp",
-    "homepage": "https://radmail.ai/for-agents",
-    "readme": "https://github.com/radmail-ai/radmail-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "radmail-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Email OS for agents - real-inbox search, triage, commitments, and a verifiable BEC hard-stop.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "radmail-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://radmail.ai/api/mcp/sandbox",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d505e77514b1cd10",
       "type": "registry",
       "url": "https://www.npmjs.com/package/radmail-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.0"
+    },
+    {
+      "id": "upstream-80bda5098139b83e",
+      "type": "other",
+      "url": "https://radmail.ai/api/mcp/sandbox",
+      "install": {
+        "type": "api",
+        "url": "https://radmail.ai/api/mcp/sandbox"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/radmail-ai/radmail-mcp",
+    "homepage": "https://radmail.ai/for-agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.radmail__radmail-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=11",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.radmail/radmail-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

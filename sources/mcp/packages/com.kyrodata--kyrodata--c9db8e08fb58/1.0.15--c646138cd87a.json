@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.kyrodata/kyrodata",
+  "name": "com.kyrodata/kyrodata",
+  "displayName": "Kyrodata — Brazil Trade, Crop & Commodity Data",
+  "version": "1.0.15",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Brazil exports and imports from MDIC/ComexStat, plus crop, climate and commodity forecasts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.kyrodata/kyrodata",
+    "remotes": [
+      {
+        "url": "https://mcp.kyrodata.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b304e2d132ab585e",
+      "type": "other",
+      "url": "https://mcp.kyrodata.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.kyrodata.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://kyrodata.com/en-US/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=57",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.kyrodata/kyrodata"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

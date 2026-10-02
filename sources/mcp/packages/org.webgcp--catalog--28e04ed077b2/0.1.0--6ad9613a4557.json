@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.webgcp/catalog",
+  "name": "org.webgcp/catalog",
+  "displayName": "The Network Catalog (webGCP)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Semantic search over The Network catalog (skills, agencies, roles) with signed webGCP provenance.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.webgcp/catalog",
+    "remotes": [
+      {
+        "url": "https://catalog.myparallel.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://catalog.myparallel.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e5fb49ee13161476",
+      "type": "other",
+      "url": "https://catalog.myparallel.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://catalog.myparallel.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-eb3822f1577d2340",
+      "type": "other",
+      "url": "https://catalog.myparallel.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://catalog.myparallel.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://webgcp.org/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.webgcp/catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

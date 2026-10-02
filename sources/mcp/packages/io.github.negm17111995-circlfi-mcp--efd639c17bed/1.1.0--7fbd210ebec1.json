@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.negm17111995/circlfi-mcp",
   "name": "io.github.negm17111995/circlfi-mcp",
+  "displayName": "io.github.negm17111995/circlfi-mcp",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "13-model stock valuation engine for AI agents - fair values for 5,900+ US stocks, updated daily.",
-  "license": "ISC",
-  "links": {
-    "repository": "https://github.com/negm17111995/Circlfi-MCP",
-    "homepage": "https://circlfi.com/mcp/",
-    "readme": "https://github.com/negm17111995/Circlfi-MCP#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "circlfi-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "13-model stock valuation engine for AI agents - fair values for 5,900+ US stocks, updated daily.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "circlfi-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://circlfi.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-129c2924fee335e5",
       "type": "registry",
       "url": "https://www.npmjs.com/package/circlfi-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-2079d6a90000b8a3",
+      "type": "other",
+      "url": "https://circlfi.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://circlfi.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/negm17111995/Circlfi-MCP",
+    "homepage": "https://circlfi.com/mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.negm17111995__circlfi-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=262",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.negm17111995/circlfi-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

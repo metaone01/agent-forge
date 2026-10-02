@@ -2,49 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.sgpdirectory/singapore-business-directory",
   "name": "com.sgpdirectory/singapore-business-directory",
+  "displayName": "Singapore Business Directory",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Singapore business directory. Search companies, UENs, and SSIC industry classifications.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@sgpdirectory/mcp-server",
-    "homepage": "https://sgpdirectory.com/?utm_source=mcp-registry&utm_medium=referral"
-  },
-  "keywords": [
-    "Singapore Business Directory"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@sgpdirectory/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Singapore business directory. Search companies, UENs, and SSIC industry classifications.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@sgpdirectory/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://sgpdirectory.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-41a5e9962255890b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@sgpdirectory/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-3dc1bf23afe641a3",
+      "type": "other",
+      "url": "https://sgpdirectory.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://sgpdirectory.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://sgpdirectory.com/?utm_source=mcp-registry&utm_medium=referral"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.sgpdirectory__singapore-business-directory.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=76",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.sgpdirectory/singapore-business-directory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

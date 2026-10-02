@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0107a3506d9d7243a5b5c834cb2b937401672008b8591d6594f2b1c3650b02ff",
+  "name": "ccr-wer/dsh-dolphin-security",
+  "displayName": "ccr-wer/dsh-dolphin-security",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "此为 DSH 生态插件。Dolphin - 主动巡检型安全防御插件，支持本地扫描与远程 SSH 巡逻。将渗透测试方法论（信息收集→漏洞探测→利用验证→报告）转化为主动防御巡检流程：基于 Semgrep 的扫描层与基于 SSH 的执行层相融合，可对本地目录做静态扫描，也可将扫描命令经 SSH 下发至远程主机执行并回收结构化结果。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/ccr-wer/dsh-dolphin-security",
+    "readme": "https://github.com/ccr-wer/dsh-dolphin-security#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ccr-wer/dsh-dolphin-security"
+    },
+    {
+      "id": "npm-a62f1ea069af",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-dolphin-security",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12877"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13182"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-dolphin-security"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

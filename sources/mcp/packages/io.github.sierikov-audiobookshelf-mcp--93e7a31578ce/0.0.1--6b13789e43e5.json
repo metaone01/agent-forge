@@ -2,48 +2,66 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sierikov/audiobookshelf-mcp",
   "name": "io.github.sierikov/audiobookshelf-mcp",
+  "displayName": "Audiobookshelf",
   "version": "0.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Browse libraries, search books, and control playback in your self-hosted Audiobookshelf instance.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/sierikov/audiobookshelf-mcp",
-    "readme": "https://github.com/sierikov/audiobookshelf-mcp#readme"
-  },
-  "keywords": [
-    "Audiobookshelf"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/sierikov/audiobookshelf-mcp/releases/download/v0.0.1/audiobookshelf-mcp-macos-arm64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/sierikov/audiobookshelf-mcp/releases/download/v0.0.1/audiobookshelf-mcp-macos-arm64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-620b89250808e9fe",
+      "type": "archive",
       "url": "https://github.com/sierikov/audiobookshelf-mcp/releases/download/v0.0.1/audiobookshelf-mcp-macos-arm64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-ba351ce97b02de69",
+      "type": "archive",
+      "url": "https://github.com/sierikov/audiobookshelf-mcp/releases/download/v0.0.1/audiobookshelf-mcp-macos-amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-fbde3c34fe457256",
+      "type": "archive",
+      "url": "https://github.com/sierikov/audiobookshelf-mcp/releases/download/v0.0.1/audiobookshelf-mcp-linux-amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-124a34ac39911553",
+      "type": "archive",
+      "url": "https://github.com/sierikov/audiobookshelf-mcp/releases/download/v0.0.1/audiobookshelf-mcp-linux-arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-84c27acfafb64168",
+      "type": "archive",
+      "url": "https://github.com/sierikov/audiobookshelf-mcp/releases/download/v0.0.1/audiobookshelf-mcp-windows-amd64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sierikov/audiobookshelf-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +74,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sierikov__audiobookshelf-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=329",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sierikov/audiobookshelf-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

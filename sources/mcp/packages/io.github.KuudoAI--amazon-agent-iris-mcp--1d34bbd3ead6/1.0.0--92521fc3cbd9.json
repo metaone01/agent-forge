@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.KuudoAI/amazon-agent-iris-mcp",
+  "name": "io.github.KuudoAI/amazon-agent-iris-mcp",
+  "displayName": "Amazon listing image and video MCP server (Amazon Agent Iris)",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server that creates Amazon listing images and product video from live catalog data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.KuudoAI/amazon-agent-iris-mcp",
+    "remotes": [
+      {
+        "url": "https://{AGENT_IRIS_HOST}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f5fcf78c0514454b",
+      "type": "other",
+      "url": "https://{AGENT_IRIS_HOST}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{AGENT_IRIS_HOST}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/KuudoAI/amazon-agent-iris-mcp",
+    "homepage": "https://www.kuudo.com/features/amazon-agent-iris/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=138",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.KuudoAI/amazon-agent-iris-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

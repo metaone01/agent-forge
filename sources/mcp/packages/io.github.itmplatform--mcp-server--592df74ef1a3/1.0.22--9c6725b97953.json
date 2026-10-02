@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.itmplatform/mcp-server",
+  "name": "io.github.itmplatform/mcp-server",
+  "displayName": "ITM Platform",
+  "version": "1.0.22",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connect AI assistants to ITM Platform projects, tasks, budgets, risks, and team workload.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@itm-platform/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.itmplatform.com/v2/_/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-343e00c4493dad4a",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@itm-platform/mcp-server",
+      "registry": "npm",
+      "version": "1.0.22"
+    },
+    {
+      "id": "upstream-a546a624dcb1de86",
+      "type": "other",
+      "url": "https://api.itmplatform.com/v2/_/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://api.itmplatform.com/v2/_/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/itmplatform/mcp-server",
+    "homepage": "https://developers.itmplatform.com/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=215",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.itmplatform/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

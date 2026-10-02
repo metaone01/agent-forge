@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.scanverity/resolution-rules",
+  "name": "com.scanverity/resolution-rules",
+  "displayName": "Scanverity Resolution Rules",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search Polymarket contracts and inspect source-linked settlement rules. Approved account required.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.scanverity/resolution-rules",
+    "remotes": [
+      {
+        "url": "https://scanverity.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://scanverity-resolution-rules.mcpize.run",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a1eb03e7d34caa77",
+      "type": "other",
+      "url": "https://scanverity.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://scanverity.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-d70e9f58092c0ab6",
+      "type": "other",
+      "url": "https://scanverity-resolution-rules.mcpize.run",
+      "install": {
+        "type": "api",
+        "url": "https://scanverity-resolution-rules.mcpize.run"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://scanverity.com/connectors"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=74",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.scanverity/resolution-rules"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

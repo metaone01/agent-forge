@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Creator-API/creator-api-mcp",
+  "name": "io.github.Creator-API/creator-api-mcp",
+  "displayName": "io.github.Creator-API/creator-api-mcp",
+  "version": "0.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Native OnlyFans and Fansly access as MCP tools. One CreatorAPI key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "creator-api-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.creator-api.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fcc8c9528758516b",
+      "type": "registry",
+      "url": "https://pypi.org/project/creator-api-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-464c3a4badbb93b0",
+      "type": "other",
+      "url": "https://api.creator-api.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.creator-api.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Creator-API/creator-api-mcp",
+    "homepage": "https://creator-api.com/onlyfans-api-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=121",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Creator-API/creator-api-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

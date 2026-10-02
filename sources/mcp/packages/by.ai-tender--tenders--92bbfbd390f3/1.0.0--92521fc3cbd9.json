@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.by.ai-tender/tenders",
+  "name": "by.ai-tender/tenders",
+  "displayName": "AI-TENDER — open procurements of Belarus",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Open public procurements of Belarus: search by words or customer UNP, source link for each.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "by.ai-tender/tenders",
+    "remotes": [
+      {
+        "url": "https://ai-tender.by/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-83f1579545be3143",
+      "type": "other",
+      "url": "https://ai-tender.by/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ai-tender.by/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ai-tender.by/zakupki.php"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "by.ai-tender/tenders"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.agentpays/agentpays",
+  "name": "dev.agentpays/agentpays",
+  "displayName": "AgentPays",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Payment infrastructure for AI agents: spending rules, approval flows, single-use virtual cards.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.agentpays/agentpays",
+    "remotes": [
+      {
+        "url": "https://agentpays.dev/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4abc63eceb415e13",
+      "type": "other",
+      "url": "https://agentpays.dev/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentpays.dev/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "deprecated"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.agentpays/agentpays"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

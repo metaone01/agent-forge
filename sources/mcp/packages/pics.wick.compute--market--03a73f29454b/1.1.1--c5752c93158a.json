@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pics.wick.compute/market",
+  "name": "pics.wick.compute/market",
+  "displayName": "compute.wick.pics",
+  "version": "1.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live GPU spot market: 1,700+ offers, 10 provider feeds. History, watches, limit orders, no fee",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pics.wick.compute/market",
+    "remotes": [
+      {
+        "url": "https://compute.wick.pics/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d0728ae3548bd77f",
+      "type": "other",
+      "url": "https://compute.wick.pics/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://compute.wick.pics/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/aitools420/compute-wick",
+    "homepage": "https://compute.wick.pics/agents/"
+  },
+  "lifecycle": {
+    "status": "deprecated"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pics.wick.compute/market"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

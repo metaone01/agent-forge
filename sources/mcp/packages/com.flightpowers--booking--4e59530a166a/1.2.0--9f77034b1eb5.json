@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.flightpowers/booking",
+  "name": "com.flightpowers/booking",
+  "displayName": "Booking.com Hotel Search (Live Prices)",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live Booking.com hotel prices, plus per-country pricing for rate-parity monitoring.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.flightpowers/booking",
+    "remotes": [
+      {
+        "url": "https://hotels.flightpowers.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d681b23deb8bc246",
+      "type": "other",
+      "url": "https://hotels.flightpowers.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://hotels.flightpowers.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mtnrabi/google-flights-mcp",
+    "homepage": "https://hotels.flightpowers.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=48",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.flightpowers/booking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

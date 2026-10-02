@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.fryd/mcp-server",
+  "name": "app.fryd/mcp-server",
+  "displayName": "Fryd - Your Garden Companion",
+  "version": "1.0.10",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search crops, check companion planting, explore seasonal calendars, and find planting plans.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.fryd/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.fryd.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d5e6212a7abb25ba",
+      "type": "other",
+      "url": "https://mcp.fryd.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.fryd.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://fryd.notion.site/Fryd-MCP-Server-362a7763fcc580a592eacd41df3db717"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=19",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.fryd/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

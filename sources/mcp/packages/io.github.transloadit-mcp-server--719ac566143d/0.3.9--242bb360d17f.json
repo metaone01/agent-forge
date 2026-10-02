@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.transloadit/mcp-server",
   "name": "io.github.transloadit/mcp-server",
+  "displayName": "Transloadit Media Processing",
   "version": "0.3.9",
-  "versionScheme": "semver",
-  "description": "Process video, audio, images, and documents with 86+ cloud media processing robots.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/transloadit/node-sdk",
-    "homepage": "https://transloadit.com/docs/sdks/mcp-server/",
-    "readme": "https://github.com/transloadit/node-sdk#readme"
-  },
-  "keywords": [
-    "Transloadit Media Processing"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@transloadit/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Process video, audio, images, and documents with 86+ cloud media processing robots.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@transloadit/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api2.transloadit.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b0c0c03bcbc4af5e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@transloadit/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.9"
+    },
+    {
+      "id": "upstream-2621d9fcba894c1d",
+      "type": "other",
+      "url": "https://api2.transloadit.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api2.transloadit.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/transloadit/node-sdk",
+    "homepage": "https://transloadit.com/docs/sdks/mcp-server/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.transloadit__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=342",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.transloadit/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

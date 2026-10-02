@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.arcadia-finance/mcp-server",
   "name": "io.github.arcadia-finance/mcp-server",
+  "displayName": "Arcadia Finance",
   "version": "0.5.1",
-  "versionScheme": "semver",
-  "description": "Concentrated liquidity on Uniswap/Aerodrome (rebalance, compound, leverage) or single-sided lending.",
-  "license": "AGPL-3.0",
-  "links": {
-    "repository": "https://github.com/arcadia-finance/mcp-server",
-    "homepage": "https://arcadia.finance",
-    "readme": "https://github.com/arcadia-finance/mcp-server#readme"
-  },
-  "keywords": [
-    "Arcadia Finance"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@arcadia-finance/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Concentrated liquidity on Uniswap/Aerodrome (rebalance, compound, leverage) or single-sided lending.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@arcadia-finance/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.arcadia.finance/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d7293a23431e1f2f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@arcadia-finance/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.1"
+    },
+    {
+      "id": "upstream-d16cc42a159939c5",
+      "type": "other",
+      "url": "https://mcp.arcadia.finance/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.arcadia.finance/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/arcadia-finance/mcp-server",
+    "homepage": "https://arcadia.finance"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.arcadia-finance__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=171",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.arcadia-finance/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

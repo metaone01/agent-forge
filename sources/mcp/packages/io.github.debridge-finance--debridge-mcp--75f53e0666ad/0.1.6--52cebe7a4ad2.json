@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.debridge-finance/debridge-mcp",
+  "name": "io.github.debridge-finance/debridge-mcp",
+  "displayName": "io.github.debridge-finance/debridge-mcp",
+  "version": "0.1.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "deBridge MCP",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@debridge-finance/debridge-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agents.debridge.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-be7a6a4bc865fd3c",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@debridge-finance/debridge-mcp",
+      "registry": "npm",
+      "version": "0.1.5"
+    },
+    {
+      "id": "upstream-a2efeef335c4b758",
+      "type": "other",
+      "url": "https://agents.debridge.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agents.debridge.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/debridge-finance/debridge-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=192",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.debridge-finance/debridge-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

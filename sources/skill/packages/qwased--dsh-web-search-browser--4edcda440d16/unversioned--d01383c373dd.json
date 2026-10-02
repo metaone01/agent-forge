@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.d939ed9a2b7076b31da99741e82379f5e7101e8a2052e1f1ed509baa28c3cb33",
+  "name": "qwased/dsh-web-search-browser",
+  "displayName": "qwased/dsh-web-search-browser",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "面向 DeepSeek Harness (DSH) 的浏览器网页搜索技能：通过 Playwright MCP 驱动本机 Edge 打开必应搜索，按可信/可疑/拦截三级安全规则过滤后输出。A browser web-search skill for DeepSeek Harness (DSH) via Playwright MCP + Edge + Bing with three-tier safe",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/qwased/dsh-web-search-browser",
+    "readme": "https://github.com/qwased/dsh-web-search-browser/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/qwased/dsh-web-search-browser"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16328"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "864"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

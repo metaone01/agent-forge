@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.astranl/counterparty-nl",
+  "name": "com.astranl/counterparty-nl",
+  "displayName": "AstraNL Dutch counterparty check",
+  "version": "1.36.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check a Dutch supplier before you pay: KvK register, name match, VIES VAT, EU sanctions. No key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.astranl/counterparty-nl",
+    "remotes": [
+      {
+        "url": "https://astranl.com/mcp/streamable?profile=counterparty",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-672428cb61b21081",
+      "type": "other",
+      "url": "https://astranl.com/mcp/streamable?profile=counterparty",
+      "install": {
+        "type": "api",
+        "url": "https://astranl.com/mcp/streamable?profile=counterparty"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://astranl.com/check-counterparty/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.astranl/counterparty-nl"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

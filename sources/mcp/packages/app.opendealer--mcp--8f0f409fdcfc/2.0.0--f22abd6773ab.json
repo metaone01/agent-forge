@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.opendealer/mcp",
+  "name": "app.opendealer/mcp",
+  "displayName": "OpenDealer MCP Server",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Automotive inventory search for AI assistants: vehicles, dealers, deals, and market data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.opendealer/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.opendealer.app/rpc",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fef781284c107576",
+      "type": "other",
+      "url": "https://mcp.opendealer.app/rpc",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.opendealer.app/rpc"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://opendealer.pro"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.opendealer/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

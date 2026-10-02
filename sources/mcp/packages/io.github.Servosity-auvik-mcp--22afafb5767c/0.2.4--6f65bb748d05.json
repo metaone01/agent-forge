@@ -2,48 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Servosity/auvik-mcp",
   "name": "io.github.Servosity/auvik-mcp",
+  "displayName": "Auvik MCP",
   "version": "0.2.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Every Auvik endpoint as a command, plus the cross-client answers the Auvik UI and API cannot give",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/servosity/msp-skills",
-    "readme": "https://github.com/servosity/msp-skills#readme"
-  },
-  "keywords": [
-    "Auvik MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Servosity/msp-skills/releases/download/auvik-v0.2.4/auvik-mcp.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Servosity/msp-skills/releases/download/auvik-v0.2.4/auvik-mcp.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1250321811/0158eb3b-8f04-4bc2-81eb-492a07e63b94?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T11%3A18%3A17Z&rscd=attachment%3B+filename%3Dauvik-mcp.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T10%3A17%3A40Z&ske=2026-09-22T11%3A18%3A17Z&sks=b&skv=2018-11-09&sig=WRV0oeV2GC3r2%2FgkmXFjjfTqYJq%2FfjthUiUrDDsTMU4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3NDY5NywibmJmIjoxNzkwMDcyODk3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Acf4Bld7w5F3IEW5TWhcOTQW_87Tn7apBKhSX7TIo8k&response-content-disposition=attachment%3B%20filename%3Dauvik-mcp.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
-      "registry": "mcpb"
+      "id": "upstream-364b58512a8dec0d",
+      "type": "archive",
+      "url": "https://github.com/Servosity/msp-skills/releases/download/auvik-v0.2.4/auvik-mcp.mcpb",
+      "registry": "mcpb",
+      "version": "0.2.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/servosity/msp-skills"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.servosity__auvik-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=152",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Servosity/auvik-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.com.justdukkan/invoice-intake-mcp",
   "name": "com.justdukkan/invoice-intake-mcp",
+  "displayName": "Invoice Intake (reference)",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Reference invoice-intake MCP servers: read/draft/commit split, typed errors, approval gate, audit",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/justdukkan/invoice-intake-mcp",
-    "homepage": "https://justdukkan.com/insights/mcp-server-and-tool-design/",
-    "readme": "https://github.com/justdukkan/invoice-intake-mcp#readme"
-  },
-  "keywords": [
-    "Invoice Intake (reference)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "invoice-intake-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Reference invoice-intake MCP servers: read/draft/commit split, typed errors, approval gate, audit",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "invoice-intake-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-64ae44b8ac57ba20",
       "type": "registry",
-      "url": "https://pypi.org/project/invoice-intake-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/invoice-intake-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/justdukkan/invoice-intake-mcp",
+    "homepage": "https://justdukkan.com/insights/mcp-server-and-tool-design/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.justdukkan__invoice-intake-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=56",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.justdukkan/invoice-intake-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

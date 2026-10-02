@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.dev.stackfiesta/stackfiesta-mcp",
   "name": "dev.stackfiesta/stackfiesta-mcp",
+  "displayName": "StackFiesta",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Discover AI tools for game development — 100+ tools indexed by engine, task, and pricing.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/stackfiesta/stackfiesta-mcp",
-    "homepage": "https://stackfiesta.dev",
-    "readme": "https://github.com/stackfiesta/stackfiesta-mcp#readme"
-  },
-  "keywords": [
-    "StackFiesta"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@stackfiesta/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Discover AI tools for game development — 100+ tools indexed by engine, task, and pricing.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@stackfiesta/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://stackfiesta.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-adec8db4e86d5883",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@stackfiesta/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-f5885c85e87cc8e9",
+      "type": "other",
+      "url": "https://stackfiesta.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://stackfiesta.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/stackfiesta/stackfiesta-mcp",
+    "homepage": "https://stackfiesta.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.stackfiesta__stackfiesta-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=94",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.stackfiesta/stackfiesta-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

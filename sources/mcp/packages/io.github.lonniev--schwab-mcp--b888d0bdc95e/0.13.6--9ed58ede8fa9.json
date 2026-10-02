@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.lonniev/schwab-mcp",
+  "name": "io.github.lonniev/schwab-mcp",
+  "displayName": "io.github.lonniev/schwab-mcp",
+  "version": "0.13.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Multi-tenant FastMCP server for Charles Schwab brokerage data, monetized via DPYC Tollbooth",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.lonniev/schwab-mcp",
+    "remotes": [
+      {
+        "url": "https://schwab-mcp.fastmcp.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-071f8c710026fd9b",
+      "type": "other",
+      "url": "https://schwab-mcp.fastmcp.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://schwab-mcp.fastmcp.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/lonniev/schwab-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=230",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.lonniev/schwab-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

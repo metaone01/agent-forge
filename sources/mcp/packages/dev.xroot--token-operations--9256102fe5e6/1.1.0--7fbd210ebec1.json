@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.xroot/token-operations",
+  "name": "dev.xroot/token-operations",
+  "displayName": "dev.xroot/token-operations",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only Solana and Robinhood Chain tools: wallet recovery, token safety, unlocks, upgrades, fees.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.xroot/token-operations",
+    "remotes": [
+      {
+        "url": "https://api.xroot.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.xroot.dev/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1f3dd5c0db481b75",
+      "type": "other",
+      "url": "https://api.xroot.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.xroot.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-c6bc30d8e8108d03",
+      "type": "other",
+      "url": "https://api.xroot.dev/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.xroot.dev/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://app.xroot.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.xroot/token-operations"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

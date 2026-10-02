@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vmware-skills/vmware-nsx-security",
   "name": "io.github.vmware-skills/vmware-nsx-security",
+  "displayName": "VMware NSX Security",
   "version": "1.13.0",
-  "versionScheme": "semver",
-  "description": "VMware NSX security: DFW policies and exclusions, groups, tags, Traceflow, IDPS — 22 MCP tools.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/vmware-skills/VMware-NSX-Security",
-    "readme": "https://github.com/vmware-skills/VMware-NSX-Security#readme"
-  },
-  "keywords": [
-    "VMware NSX Security"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "vmware-nsx-security",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "VMware NSX security: DFW policies and exclusions, groups, tags, Traceflow, IDPS — 22 MCP tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "vmware-nsx-security",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5f57482a488fefb1",
       "type": "registry",
-      "url": "https://pypi.org/project/vmware-nsx-security/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/vmware-nsx-security",
+      "registry": "pypi",
+      "version": "1.13.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/vmware-skills/VMware-NSX-Security"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vmware-skills__vmware-nsx-security.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=348",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vmware-skills/vmware-nsx-security"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

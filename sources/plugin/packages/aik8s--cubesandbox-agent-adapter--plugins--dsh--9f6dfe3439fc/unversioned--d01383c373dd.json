@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.9f6dfe3439fce1bd9ad3fc7d002aa144f6636683c5bbf32e50bf76f4e5cc5e44",
+  "name": "aik8s/cubesandbox-agent-adapter/plugins/dsh",
+  "displayName": "aik8s/cubesandbox-agent-adapter/plugins/dsh",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Policy-controlled CubeSandbox execution adapter for OpenClaw and DeepSeek Harness",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "plugins/dsh/cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/aik8s/cubesandbox-agent-adapter",
+    "readme": "https://github.com/aik8s/cubesandbox-agent-adapter#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/aik8s/cubesandbox-agent-adapter/tree/HEAD/plugins/dsh"
+    }
+  ],
+  "keywords": [
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11981"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

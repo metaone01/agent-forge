@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.markaestro/mcp",
+  "name": "com.markaestro/mcp",
+  "displayName": "Markaestro",
+  "version": "0.3.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Schedule, publish, and review social posts and analytics for a Markaestro brand.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@markaestro/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://markaestro.com/api/public/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a1418b6511a06869",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@markaestro/mcp",
+      "registry": "npm",
+      "version": "0.3.3"
+    },
+    {
+      "id": "upstream-b289795b1abd1f19",
+      "type": "other",
+      "url": "https://markaestro.com/api/public/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://markaestro.com/api/public/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/markaestro/markaestro-agents",
+    "homepage": "https://markaestro.com/developers/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=60",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.markaestro/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

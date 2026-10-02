@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.glc-rag/geo-mcp",
+  "name": "io.github.glc-rag/geo-mcp",
+  "displayName": "GLC Geo MCP",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free GeoNames MCP: countries, cities, POIs, distance & nearby. Remote HTTP + agent token signup.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.glc-rag/geo-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.glc-rag.hu/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0d29323daaca7404",
+      "type": "other",
+      "url": "https://mcp.glc-rag.hu/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.glc-rag.hu/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/glc-rag/geo-mcp",
+    "homepage": "https://mcp.glc-rag.hu"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=206",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.glc-rag/geo-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

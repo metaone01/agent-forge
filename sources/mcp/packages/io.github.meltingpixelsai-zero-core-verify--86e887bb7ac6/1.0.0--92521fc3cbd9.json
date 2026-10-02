@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.meltingpixelsai/zero-core-verify",
   "name": "io.github.meltingpixelsai/zero-core-verify",
+  "displayName": "io.github.meltingpixelsai/zero-core-verify",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Post-tx outcome verification via LLM-as-judge. Zero Core Verify.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/meltingpixelsai/harvey-verify",
-    "homepage": "https://relayzero.ai",
-    "readme": "https://github.com/meltingpixelsai/harvey-verify#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@meltingpixels/zero-core-verify",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "streamable-http"
-  },
+  "description": "Post-tx outcome verification via LLM-as-judge. Zero Core Verify.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@meltingpixels/zero-core-verify",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://verify.rugslayer.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-192cd9e0e5c1c166",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@meltingpixels/zero-core-verify",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-5cbe9bb61bacfa22",
+      "type": "other",
+      "url": "https://verify.rugslayer.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://verify.rugslayer.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/meltingpixelsai/harvey-verify",
+    "homepage": "https://relayzero.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.meltingpixelsai__zero-core-verify.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=248",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.meltingpixelsai/zero-core-verify"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

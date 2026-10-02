@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jaymiller-cmg/dealsync-mcp-server",
+  "name": "io.github.jaymiller-cmg/dealsync-mcp-server",
+  "displayName": "DealSync — Shared Deal Room for LOs and Realtors",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Shared deal room where Loan Officers and Realtors track leads from conversation to closing.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.jaymiller-cmg/dealsync-mcp-server",
+    "remotes": [
+      {
+        "url": "https://dealsync-mcp-server.jaymiller.workers.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-504357fcce445f42",
+      "type": "other",
+      "url": "https://dealsync-mcp-server.jaymiller.workers.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://dealsync-mcp-server.jaymiller.workers.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jaymiller-cmg/dealsync-mcp-server",
+    "homepage": "https://dealsync.me"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=217",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jaymiller-cmg/dealsync-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

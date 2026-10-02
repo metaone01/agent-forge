@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mrkeyoor/should-i-use",
   "name": "io.github.mrkeyoor/should-i-use",
+  "displayName": "io.github.mrkeyoor/should-i-use",
   "version": "0.3.2",
-  "versionScheme": "semver",
-  "description": "Honest library picks for coding agents in 25-360 tokens. Tells your agent what NOT to install.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mrkeyoor/should-i-use",
-    "homepage": "https://mrkeyoor.com/libs/",
-    "readme": "https://github.com/mrkeyoor/should-i-use#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "should-i-use-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Honest library picks for coding agents in 25-360 tokens. Tells your agent what NOT to install.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "should-i-use-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mrkeyoor.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c3efca7e925e1495",
       "type": "registry",
       "url": "https://www.npmjs.com/package/should-i-use-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.2"
+    },
+    {
+      "id": "upstream-ef813c1c1915aa06",
+      "type": "other",
+      "url": "https://mrkeyoor.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mrkeyoor.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/mrkeyoor/should-i-use",
+    "homepage": "https://mrkeyoor.com/libs/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mrkeyoor__should-i-use.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=260",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mrkeyoor/should-i-use"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

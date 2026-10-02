@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kapella-hub/firekeep",
   "name": "io.github.kapella-hub/firekeep",
+  "displayName": "Firekeep",
   "version": "1.6.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted operating layer for AI agents: knowledge, continuity, coordination, and governance.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/kapella-hub/FirekeepHQ",
-    "homepage": "https://firekeep.ai",
-    "readme": "https://github.com/kapella-hub/FirekeepHQ#readme"
-  },
-  "keywords": [
-    "Firekeep"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "firekeep-client",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "firekeep-client",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-66adba56d4281453",
       "type": "registry",
-      "url": "https://pypi.org/project/firekeep-client/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/firekeep-client",
+      "registry": "pypi",
+      "version": "1.6.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kapella-hub/FirekeepHQ",
+    "homepage": "https://firekeep.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kapella-hub__firekeep.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=223",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kapella-hub/firekeep"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.tierproxy/python-sdk",
   "name": "io.github.tierproxy/python-sdk",
+  "displayName": "tierproxy",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Multi-provider proxy infrastructure for AI/ML. Geo, sessions, cost-aware routing, usage tools.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/tierproxy/python-sdk",
-    "homepage": "https://tierproxy.com",
-    "readme": "https://github.com/tierproxy/python-sdk#readme"
-  },
-  "keywords": [
-    "tierproxy"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "tierproxy",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Multi-provider proxy infrastructure for AI/ML. Geo, sessions, cost-aware routing, usage tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "tierproxy",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bae2ec8c6c0f3d76",
       "type": "registry",
-      "url": "https://pypi.org/project/tierproxy/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/tierproxy",
+      "registry": "pypi",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/tierproxy/python-sdk",
+    "homepage": "https://tierproxy.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tierproxy__python-sdk.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=341",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tierproxy/python-sdk"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

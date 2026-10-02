@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cammac-creator/openswissdata",
+  "name": "io.github.cammac-creator/openswissdata",
+  "displayName": "OpenSwissData",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Swiss customs tariff (TARES), FINMA register, NOGA/NACE/ISIC codes. 3 free tools + search trial.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@openswissdata/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.openswissdata.com/jsonrpc",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fa5e61cb6f75ab3e",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@openswissdata/mcp",
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-1c2a4bab0846cfb5",
+      "type": "other",
+      "url": "https://mcp.openswissdata.com/jsonrpc",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.openswissdata.com/jsonrpc"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cammac-creator/openswissdata",
+    "homepage": "https://www.openswissdata.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=179",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cammac-creator/openswissdata"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

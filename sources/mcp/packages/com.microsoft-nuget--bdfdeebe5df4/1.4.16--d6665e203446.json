@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.com.microsoft/nuget",
   "name": "com.microsoft/nuget",
+  "displayName": "Microsoft NuGet",
   "version": "1.4.16",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "A Model Context Protocol (MCP) server for NuGet.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/NuGet/Home",
-    "readme": "https://github.com/NuGet/Home#readme"
-  },
-  "keywords": [
-    "Microsoft NuGet"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "NuGet.Mcp.Server",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "NuGet.Mcp.Server",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6f0847eedf8672b5",
       "type": "registry",
       "url": "https://www.nuget.org/packages/NuGet.Mcp.Server",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "1.4.16"
     }
   ],
+  "links": {
+    "repository": "https://github.com/NuGet/Home"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.microsoft__nuget.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.microsoft/nuget"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

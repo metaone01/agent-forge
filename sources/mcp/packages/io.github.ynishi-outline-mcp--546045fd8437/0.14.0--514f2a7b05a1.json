@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ynishi/outline-mcp",
   "name": "io.github.ynishi/outline-mcp",
+  "displayName": "io.github.ynishi/outline-mcp",
   "version": "0.14.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Tree-structured knowledge base as an MCP server",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ynishi/outline-mcp",
-    "readme": "https://github.com/ynishi/outline-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/ynishi/outline-mcp:0.14.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/ynishi/outline-mcp:0.14.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/ynishi/outline-mcp",
-      "priority": 10,
+      "id": "upstream-209079959a993cfd",
+      "type": "oci",
+      "url": "https://ghcr.io/ynishi/outline-mcp:0.14.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ynishi/outline-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ynishi__outline-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ynishi/outline-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

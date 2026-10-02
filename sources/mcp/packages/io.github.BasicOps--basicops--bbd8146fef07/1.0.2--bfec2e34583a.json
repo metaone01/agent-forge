@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.BasicOps/basicops",
+  "name": "io.github.BasicOps/basicops",
+  "displayName": "io.github.BasicOps/basicops",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "BasicOps MCP server for project management, tasks, notes, and team collaboration.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.BasicOps/basicops",
+    "remotes": [
+      {
+        "url": "https://app.basicops.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://app.basicops.com/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2f66e54a22fcedf3",
+      "type": "other",
+      "url": "https://app.basicops.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.basicops.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-91091bbb206623ed",
+      "type": "other",
+      "url": "https://app.basicops.com/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://app.basicops.com/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/BasicOps/mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=113",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.BasicOps/basicops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

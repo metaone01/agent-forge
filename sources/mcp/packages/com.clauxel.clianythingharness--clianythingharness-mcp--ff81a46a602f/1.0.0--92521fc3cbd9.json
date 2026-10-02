@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.clauxel.clianythingharness/clianythingharness-mcp",
+  "name": "com.clauxel.clianythingharness/clianythingharness-mcp",
+  "displayName": "com.clauxel.clianythingharness/clianythingharness-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A paid remote MCP for CLI tool MCP, built to return verdicts, receipts, usage logs, and audit-ready",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.clauxel.clianythingharness/clianythingharness-mcp",
+    "remotes": [
+      {
+        "url": "https://clianythingharness.clauxel.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7b689bedde1283f4",
+      "type": "other",
+      "url": "https://clianythingharness.clauxel.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://clianythingharness.clauxel.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/clauxel/cli-anything-hub-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=40",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.clauxel.clianythingharness/clianythingharness-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

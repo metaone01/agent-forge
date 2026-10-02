@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.smartbear/smartbear-mcp",
+  "name": "com.smartbear/smartbear-mcp",
+  "displayName": "SmartBear MCP",
+  "version": "0.41.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for AI access to SmartBear tools, including BugSnag, Reflect, Swagger, PactFlow, QTM4J.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@smartbear/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://bugsnag.mcp.smartbear.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://zephyr.mcp.smartbear.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-916e57a6df7f83de",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@smartbear/mcp",
+      "registry": "npm",
+      "version": "0.41.3"
+    },
+    {
+      "id": "upstream-e48e15fe024a7425",
+      "type": "other",
+      "url": "https://bugsnag.mcp.smartbear.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bugsnag.mcp.smartbear.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9ae950be34249435",
+      "type": "other",
+      "url": "https://zephyr.mcp.smartbear.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://zephyr.mcp.smartbear.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SmartBear/smartbear-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.smartbear/smartbear-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

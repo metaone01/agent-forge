@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.svgrid/svgrid",
   "name": "com.svgrid/svgrid",
+  "displayName": "SvGrid",
   "version": "3.0.1",
-  "versionScheme": "semver",
-  "description": "Checks AI-written SvGrid code against the real API, plus version-pinned Svelte 5 grid docs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/sv-grid/sv-grid",
-    "homepage": "https://svgrid.com/docs/help/mcp-server/",
-    "readme": "https://github.com/sv-grid/sv-grid#readme"
-  },
-  "keywords": [
-    "SvGrid"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@svgrid/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Checks AI-written SvGrid code against the real API, plus version-pinned Svelte 5 grid docs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@svgrid/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.svgrid.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2b01f9432e481009",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@svgrid/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.0.1"
+    },
+    {
+      "id": "upstream-40ceb8bf40934823",
+      "type": "other",
+      "url": "https://mcp.svgrid.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.svgrid.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/sv-grid/sv-grid",
+    "homepage": "https://svgrid.com/docs/help/mcp-server/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.svgrid__svgrid.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=79",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.svgrid/svgrid"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

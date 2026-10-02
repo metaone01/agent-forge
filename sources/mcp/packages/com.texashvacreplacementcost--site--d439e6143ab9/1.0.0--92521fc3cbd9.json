@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.texashvacreplacementcost/site",
+  "name": "com.texashvacreplacementcost/site",
+  "displayName": "com.texashvacreplacementcost/site",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Texas HVAC Replacement Cost: the site's own MCP server — enquiry (enquiry = a human handoff, not...",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.texashvacreplacementcost/site",
+    "remotes": [
+      {
+        "url": "https://texashvacreplacementcost.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-84489e5fde0f91b3",
+      "type": "other",
+      "url": "https://texashvacreplacementcost.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://texashvacreplacementcost.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/joeetdev/venture-estate",
+    "homepage": "https://texashvacreplacementcost.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=80",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.texashvacreplacementcost/site"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

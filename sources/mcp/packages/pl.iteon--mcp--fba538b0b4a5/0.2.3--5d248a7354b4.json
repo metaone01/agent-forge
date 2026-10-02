@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pl.iteon/mcp",
+  "name": "pl.iteon/mcp",
+  "displayName": "ITEON MCP Server",
+  "version": "0.2.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Polski software house B2B: 5 public + 7 OAuth 2.1 private MCP tools (AI estimate, draft, risk).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pl.iteon/mcp",
+    "remotes": [
+      {
+        "url": "https://api.iteon.pl/api/v1/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.iteon.pl/api/v1/mcp/public",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8573792cbbf6f306",
+      "type": "other",
+      "url": "https://api.iteon.pl/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.iteon.pl/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-6ad99eb2dd1f30e2",
+      "type": "other",
+      "url": "https://api.iteon.pl/api/v1/mcp/public",
+      "install": {
+        "type": "api",
+        "url": "https://api.iteon.pl/api/v1/mcp/public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ITEONpl/iteon-apps"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pl.iteon/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.oracle-ai-data-platform-workbench-engineer-agent",
+  "name": "oracle-ai-data-platform-workbench-engineer-agent",
+  "displayName": "oracle-samples/oracle-aidp-samples/ai/claude-code-plugins/oracle-ai-data-platform-workbench-engineer-agent",
+  "version": "90b42d6c24d4e5da784842c21234a750f7e55fef",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Oracle AI Data Platform (AIDP) Workbench engineer agent for Claude Code — a 37-skill agent that operates the full Spark/Delta lakehouse in natural language. Discovers your catalog into a grounding cache, turns plain English into accurate Spark SQL, and runs the lifecycle (CREATE/INSERT/UPDATE/DELETE/MERGE, OPTIMIZE/VACUUM, time-travel). Ingests files, profiles data and sets quality rules, authors and repairs pipelines, provisions clusters, and debugs via the Spark UI. Governs the platform (roles, credential store, Delta Sharing, audit logs), plus native Git, bundles, and MLOps/MLflow. Runs via the official Oracle aidp CLI.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "ai/claude-code-plugins/oracle-ai-data-platform-workbench-engineer-agent/.claude-plugin/plugin.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/oracle-samples/oracle-aidp-samples",
+    "readme": "https://github.com/oracle-samples/oracle-aidp-samples#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/oracle-samples/oracle-aidp-samples/tree/90b42d6c24d4e5da784842c21234a750f7e55fef/ai/claude-code-plugins/oracle-ai-data-platform-workbench-engineer-agent",
+      "ref": "90b42d6c24d4e5da784842c21234a750f7e55fef"
+    }
+  ],
+  "keywords": [],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": ".claude-plugin/marketplace.json",
+          "entry": "oracle-ai-data-platform-workbench-engineer-agent"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

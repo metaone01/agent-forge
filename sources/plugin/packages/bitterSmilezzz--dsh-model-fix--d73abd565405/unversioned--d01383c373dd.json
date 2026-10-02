@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.1076f8230d15709b0b94f3c86049a60af3797861a21fcaca1b505fe17f934b5c",
+  "name": "bitterSmilezzz/dsh-model-fix",
+  "displayName": "bitterSmilezzz/dsh-model-fix",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 模型流式缺陷修复：opencode 聚合端点上 muse-spark-1.2 不发送 finish_reason/[DONE]，导致 pi-ai 每次对话结尾报 \"Stream ended without finish_reason\"（TRANSPORT）并触发重试。本插件在 llm/stream waterfall 上把「已输出内容但结尾被截断」的 finish 改写为正常 stop",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/bitterSmilezzz/dsh-model-fix",
+    "readme": "https://github.com/bitterSmilezzz/dsh-model-fix#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/bitterSmilezzz/dsh-model-fix"
+    }
+  ],
+  "keywords": [
+    "models",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "5707"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

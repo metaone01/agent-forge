@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.n0brains/mcp",
+  "name": "com.n0brains/mcp",
+  "displayName": "com.n0brains/mcp",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Self-routing market intel for agents: A-F trade checks, one-call briefs, real liq maps, proof board.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.n0brains/mcp",
+    "remotes": [
+      {
+        "url": "https://api.n0brains.com/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c96a923925b8ddad",
+      "type": "other",
+      "url": "https://api.n0brains.com/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://api.n0brains.com/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://n0brains.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.n0brains/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

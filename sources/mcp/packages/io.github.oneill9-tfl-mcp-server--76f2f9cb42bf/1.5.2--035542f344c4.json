@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.oneill9/tfl-mcp-server",
   "name": "io.github.oneill9/tfl-mcp-server",
+  "displayName": "io.github.oneill9/tfl-mcp-server",
   "version": "1.5.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Community-built server providing real-time London transport data via the TfL Unified API",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/oneill9/tfl-mcp-server",
-    "readme": "https://github.com/oneill9/tfl-mcp-server#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/oneill9/tfl-mcp-server:1.5.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/oneill9/tfl-mcp-server:1.5.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/oneill9/tfl-mcp-server",
-      "priority": 10,
+      "id": "upstream-47cc97d8a32ec322",
+      "type": "oci",
+      "url": "https://ghcr.io/oneill9/tfl-mcp-server:1.5.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/oneill9/tfl-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.oneill9__tfl-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.oneill9/tfl-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

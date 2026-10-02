@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.me.seekon.fast/product-discovery-mcp",
+  "name": "me.seekon.fast/product-discovery-mcp",
+  "displayName": "SeekOnMe Product Discovery",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP server for product discovery catalog and retrieving product details.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "me.seekon.fast/product-discovery-mcp",
+    "remotes": [
+      {
+        "url": "https://fast.seekon.me/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d6df526e34d5c47c",
+      "type": "other",
+      "url": "https://fast.seekon.me/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://fast.seekon.me/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "me.seekon.fast/product-discovery-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

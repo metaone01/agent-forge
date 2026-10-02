@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.geekflare/mcp",
+  "name": "com.geekflare/mcp",
+  "displayName": "com.geekflare/mcp",
+  "version": "0.3.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Geekflare MCP server for scraping, search, screenshots, broken links, DNS lookup, and network tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@geekflare/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.geekflare.com/{API_KEY}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-10f470c259a19c90",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@geekflare/mcp",
+      "registry": "npm",
+      "version": "0.3.5"
+    },
+    {
+      "id": "upstream-00659aed4fd0dcf6",
+      "type": "oci",
+      "url": "https://geekflarehq/geekflare-api-mcp:0.3.5",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-523cba0c649db1e9",
+      "type": "other",
+      "url": "https://mcp.geekflare.com/{API_KEY}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.geekflare.com/{API_KEY}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=50",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.geekflare/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

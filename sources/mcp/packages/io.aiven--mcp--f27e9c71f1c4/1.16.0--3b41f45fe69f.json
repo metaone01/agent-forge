@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.aiven/mcp",
+  "name": "io.aiven/mcp",
+  "displayName": "Aiven MCP",
+  "version": "1.16.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Provision PostgreSQL, manage Apache Kafka, and deploy apps with Aiven - all from your AI assistant.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-aiven",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.aiven.live/mcp?read_only={read_only}&services_scope={services_scope}&allow_secrets={allow_secrets}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-37300cba5397d140",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/mcp-aiven",
+      "registry": "npm",
+      "version": "1.16.0"
+    },
+    {
+      "id": "upstream-8a10ff334650dd53",
+      "type": "other",
+      "url": "https://mcp.aiven.live/mcp?read_only={read_only}&services_scope={services_scope}&allow_secrets={allow_secrets}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aiven.live/mcp?read_only={read_only}&services_scope={services_scope}&allow_secrets={allow_secrets}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/aiven-open/mcp-aiven",
+    "homepage": "https://aiven.io/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=102",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.aiven/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

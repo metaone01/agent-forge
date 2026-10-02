@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.cloudquell/cloudquell-mcp-server",
+  "name": "com.cloudquell/cloudquell-mcp-server",
+  "displayName": "CloudQuell",
+  "version": "0.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Ask about AWS, Azure, GCP, OpenAI, Anthropic and Snowflake costs, budgets, and anomalies.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.cloudquell/cloudquell-mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.cloudquell.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-648d50734db454f3",
+      "type": "other",
+      "url": "https://mcp.cloudquell.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cloudquell.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.cloudquell.com/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=40",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.cloudquell/cloudquell-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

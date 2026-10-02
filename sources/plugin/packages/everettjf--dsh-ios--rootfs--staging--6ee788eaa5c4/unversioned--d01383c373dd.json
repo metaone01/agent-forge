@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.6ee788eaa5c47c3417d25997cc51a1747a291cc0459c8ede06e35a6d9f44265f",
+  "name": "everettjf/dsh-ios/rootfs/staging",
+  "displayName": "everettjf/dsh-ios/rootfs/staging",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Pins the @deepseek-ai/dsh tree that build-rootfs.sh installs into the guest (linux/arm64/musl).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "rootfs/staging/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/everettjf/dsh-ios",
+    "readme": "https://github.com/everettjf/dsh-ios#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/everettjf/dsh-ios/tree/HEAD/rootfs/staging"
+    }
+  ],
+  "keywords": [
+    "devtools"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "4682"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "everettjf/dsh-ios"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

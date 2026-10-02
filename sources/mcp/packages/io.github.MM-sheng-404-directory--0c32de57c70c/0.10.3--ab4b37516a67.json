@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MM-sheng/404-directory",
   "name": "io.github.MM-sheng/404-directory",
+  "displayName": "404.directory",
   "version": "0.10.3",
-  "versionScheme": "semver",
-  "description": "Risk preflight for AI Agent tool actions and Polymarket settlement and execution checks.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/MM-sheng/404-directory",
-    "homepage": "https://404.directory",
-    "readme": "https://github.com/MM-sheng/404-directory#readme"
-  },
-  "keywords": [
-    "404.directory"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@mmvv1638/404-directory-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Risk preflight for AI Agent tool actions and Polymarket settlement and execution checks.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@mmvv1638/404-directory-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://404.directory/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-91207561bdc3cb1e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@mmvv1638/404-directory-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.10.3"
+    },
+    {
+      "id": "upstream-8af0e19cfc34752c",
+      "type": "other",
+      "url": "https://404.directory/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://404.directory/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/MM-sheng/404-directory",
+    "homepage": "https://404.directory"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mm-sheng__404-directory.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=140",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MM-sheng/404-directory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

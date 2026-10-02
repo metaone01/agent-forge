@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.chunxiaoxx/nautilus-compass",
   "name": "io.github.chunxiaoxx/nautilus-compass",
+  "displayName": "Nautilus Compass Memory",
   "version": "3.2.0",
-  "versionScheme": "semver",
-  "description": "Local-first long-term memory for AI agents, with byte-recomputable signed verification receipts.",
-  "license": "LicenseRef-Modified-MIT",
-  "links": {
-    "repository": "https://github.com/chunxiaoxx/nautilus-compass",
-    "readme": "https://github.com/chunxiaoxx/nautilus-compass#readme"
-  },
-  "keywords": [
-    "Nautilus Compass Memory"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "nautilus-compass",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Local-first long-term memory for AI agents, with byte-recomputable signed verification receipts.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "nautilus-compass",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://compass.nautilus.social/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e7a2315e320ca0a4",
       "type": "registry",
-      "url": "https://pypi.org/project/nautilus-compass/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/nautilus-compass",
+      "registry": "pypi",
+      "version": "3.2.0"
+    },
+    {
+      "id": "upstream-e077b9b4071fa47e",
+      "type": "other",
+      "url": "https://compass.nautilus.social/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://compass.nautilus.social/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/chunxiaoxx/nautilus-compass"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.chunxiaoxx__nautilus-compass.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=182",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.chunxiaoxx/nautilus-compass"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

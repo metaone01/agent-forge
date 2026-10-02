@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.edgethirteen.www/numbercheck",
+  "name": "com.edgethirteen.www/numbercheck",
+  "displayName": "com.edgethirteen.www/numbercheck",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Checks $TICKER numeric claims in financial writing against SEC EDGAR XBRL data from the latest 10-K.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.edgethirteen.www/numbercheck",
+    "remotes": [
+      {
+        "url": "https://www.edgethirteen.com/api/mcp/numbercheck",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a7557649dfc088c1",
+      "type": "other",
+      "url": "https://www.edgethirteen.com/api/mcp/numbercheck",
+      "install": {
+        "type": "api",
+        "url": "https://www.edgethirteen.com/api/mcp/numbercheck"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.edgethirteen.com/tools/numbercheck"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=45",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.edgethirteen.www/numbercheck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.sallim/korea-realty",
+  "name": "app.sallim/korea-realty",
+  "displayName": "app.sallim/korea-realty",
+  "version": "0.98.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Korean real estate: court auctions, 10M+ MOLIT records, subscription notice facts, loan/DSR rules",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.sallim/korea-realty",
+    "remotes": [
+      {
+        "url": "https://realty.sallim.app/mcp?via=official",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d3452fd8c2b7fbb2",
+      "type": "other",
+      "url": "https://realty.sallim.app/mcp?via=official",
+      "install": {
+        "type": "api",
+        "url": "https://realty.sallim.app/mcp?via=official"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sallim-app/korea-realty",
+    "homepage": "https://realty.sallim.app/mcp/pricing"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.sallim/korea-realty"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

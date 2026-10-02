@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.signal8/mcp",
+  "name": "ai.signal8/mcp",
+  "displayName": "Signal8",
+  "version": "0.16.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SEC filings, dilution, insider & institutional ownership, and political-trade data for AI agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@signal8ai/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.signal8.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cbba69f72f78ce7c",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@signal8ai/mcp",
+      "registry": "npm",
+      "version": "0.16.1"
+    },
+    {
+      "id": "upstream-cf53b69f2bfcdc1b",
+      "type": "other",
+      "url": "https://mcp.signal8.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.signal8.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/signal8ai/signal8-mcp",
+    "homepage": "https://signal8.ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=12",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.signal8/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

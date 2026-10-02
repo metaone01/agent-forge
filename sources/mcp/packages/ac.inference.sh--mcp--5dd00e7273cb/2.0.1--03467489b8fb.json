@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ac.inference.sh/mcp",
+  "name": "ac.inference.sh/mcp",
+  "displayName": "inference.sh",
+  "version": "2.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "run any ai model. compose agents, stack knowledge, connect tools. one api, pay per run.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ac.inference.sh/mcp",
+    "remotes": [
+      {
+        "url": "https://api.inference.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cb4d6335008efda4",
+      "type": "other",
+      "url": "https://api.inference.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.inference.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=1",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ac.inference.sh/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

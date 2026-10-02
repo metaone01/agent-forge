@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.fetcher/mcp",
+  "name": "sh.fetcher/mcp",
+  "displayName": "fetcher.sh — web data for agents",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "111 web-data endpoints across 11 services. Pay per call in USDC via x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.fetcher/mcp",
+    "remotes": [
+      {
+        "url": "https://fetcher.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-756eb2dd757ab277",
+      "type": "other",
+      "url": "https://fetcher.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fetcher.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://fetcher.sh"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.fetcher/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

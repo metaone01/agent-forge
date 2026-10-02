@@ -2,50 +2,74 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.paulieb89/pinescript-mcp",
   "name": "io.github.paulieb89/pinescript-mcp",
+  "displayName": "Pine Script v6 Documentation",
   "version": "0.6.17",
-  "versionScheme": "semver",
-  "description": "Pine Script v6 documentation lookup, function validation, and linting for AI code generation",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/paulieb89/pinescript-mcp",
-    "homepage": "https://bouch.dev",
-    "readme": "https://github.com/paulieb89/pinescript-mcp#readme"
-  },
-  "keywords": [
-    "Pine Script v6 Documentation"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "pinescript-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Pine Script v6 documentation lookup, function validation, and linting for AI code generation",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "pinescript-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://pinescript-mcp.fly.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://pinescript-mcp.fly.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6926b39e80bc45d1",
       "type": "registry",
-      "url": "https://pypi.org/project/pinescript-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/pinescript-mcp",
+      "registry": "pypi",
+      "version": "0.6.17"
+    },
+    {
+      "id": "upstream-c97955a1b8390fdc",
+      "type": "other",
+      "url": "https://pinescript-mcp.fly.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pinescript-mcp.fly.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-229b048acce3d5ba",
+      "type": "other",
+      "url": "https://pinescript-mcp.fly.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://pinescript-mcp.fly.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/paulieb89/pinescript-mcp",
+    "homepage": "https://bouch.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +82,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.paulieb89__pinescript-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=270",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.paulieb89/pinescript-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

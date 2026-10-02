@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.russellshen1992/2o",
   "name": "io.github.russellshen1992/2o",
+  "displayName": "io.github.russellshen1992/2o",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Human intelligence API — AI agents verify facts with human domain experts via MCP",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/russellshen1992/2o",
-    "readme": "https://github.com/russellshen1992/2o#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@russellshen1992/2o-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Human intelligence API — AI agents verify facts with human domain experts via MCP",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@russellshen1992/2o-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.2oapi.xyz/api/mcp",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-162b9dcafd1c5f38",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@russellshen1992/2o-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-4fedfa20bd0a534e",
+      "type": "other",
+      "url": "https://www.2oapi.xyz/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.2oapi.xyz/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/russellshen1992/2o"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.russellshen1992__2o.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=299",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.russellshen1992/2o"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

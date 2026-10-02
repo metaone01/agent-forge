@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.tickerdb/mcp-server",
   "name": "com.tickerdb/mcp-server",
+  "displayName": "TickerDB",
   "version": "1.8.6",
-  "versionScheme": "semver",
-  "description": "Pre-computed market data that improves agent reasoning, reduces token usage, and replaces pipelines.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/tickerdb/tickerdb-mcp",
-    "readme": "https://github.com/tickerdb/tickerdb-mcp#readme"
-  },
-  "keywords": [
-    "TickerDB"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "tickerdb-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Pre-computed market data that improves agent reasoning, reduces token usage, and replaces pipelines.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "tickerdb-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.tickerdb.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b5f23e786fea2992",
       "type": "registry",
       "url": "https://www.npmjs.com/package/tickerdb-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.8.6"
+    },
+    {
+      "id": "upstream-9fde3a0b72bf4165",
+      "type": "other",
+      "url": "https://mcp.tickerdb.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tickerdb.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/tickerdb/tickerdb-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.tickerdb__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=82",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.tickerdb/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

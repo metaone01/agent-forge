@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.bestcarfinder/dealer-mcp",
+  "name": "com.bestcarfinder/dealer-mcp",
+  "displayName": "com.bestcarfinder/dealer-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Car dealer AI: search inventory, match Car Wanted buyer requests, and draft private offers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.bestcarfinder/dealer-mcp",
+    "remotes": [
+      {
+        "url": "https://www.bestcarfinder.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-05bd0d3b14cff8ee",
+      "type": "other",
+      "url": "https://www.bestcarfinder.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.bestcarfinder.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.bestcarfinder.com/dealers/ai-assistant"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=36",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.bestcarfinder/dealer-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

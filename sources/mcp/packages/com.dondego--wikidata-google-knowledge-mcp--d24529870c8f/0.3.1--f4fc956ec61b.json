@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.dondego/wikidata-google-knowledge-mcp",
+  "name": "com.dondego/wikidata-google-knowledge-mcp",
+  "displayName": "Wikidata + Google Knowledge Graph MCP",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only Wikidata tools and identity evidence. Local optional Google KG; bounded public remote.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "wikidata-google-knowledge-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://wikidata-knowledge-mcp.revanalex.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8fe75c4b54495ee6",
+      "type": "registry",
+      "url": "https://pypi.org/project/wikidata-google-knowledge-mcp",
+      "registry": "pypi",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-e3b541afef35a8e3",
+      "type": "other",
+      "url": "https://wikidata-knowledge-mcp.revanalex.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://wikidata-knowledge-mcp.revanalex.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://gitlab.com/revanalex/wikidata-google-knowledge-mcp",
+    "homepage": "https://wikidata-google-knowledge-mcp-1be269.gitlab.io/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=44",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.dondego/wikidata-google-knowledge-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

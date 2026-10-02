@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.e97a016deadf828c3e4dc807b78111e0b746a80c09e8c476f5b16c1dcd902163",
+  "name": "yLong765/dsh-ide-bridge/dsh-ide-bridge",
+  "displayName": "yLong765/dsh-ide-bridge/dsh-ide-bridge",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "IDE ↔ Harness 双向桥: IDE 侧 POST /ide-bridge {text} → 浏览器输入框草稿追加; 聊天内 /open-in-rider 链接 → Rider 跳转到对应行(toast 提示); /ide-bridge/links-config 两级开关(AGENTS.md 指令块)。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "dsh-ide-bridge/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/yLong765/dsh-ide-bridge",
+    "readme": "https://github.com/yLong765/dsh-ide-bridge#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/yLong765/dsh-ide-bridge/tree/HEAD/dsh-ide-bridge"
+    }
+  ],
+  "keywords": [
+    "notifications",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "4496"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "8383"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "11521"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "8789"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

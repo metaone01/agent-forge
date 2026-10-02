@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.apancyborg/appsgolem-mcp",
   "name": "io.github.apancyborg/appsgolem-mcp",
+  "displayName": "AppsGolem YouTube Cutter",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Cut clips from YouTube videos in any format and get a direct download URL.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/apancyborg/appsgolem-mcp",
-    "homepage": "https://appsgolem.com/agents",
-    "readme": "https://github.com/apancyborg/appsgolem-mcp#readme"
-  },
-  "keywords": [
-    "AppsGolem YouTube Cutter"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "appsgolem-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Cut clips from YouTube videos in any format and get a direct download URL.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "appsgolem-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6a5302e525210f1b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/appsgolem-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/apancyborg/appsgolem-mcp",
+    "homepage": "https://appsgolem.com/agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.apancyborg__appsgolem-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=170",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.apancyborg/appsgolem-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

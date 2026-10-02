@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.fa941ce31b35da6f286dc61fcef0937b5dde054781c7010799cf350100ade0c6",
+  "name": "MarkJun236/DSH-chat",
+  "displayName": "MarkJun236/DSH-chat",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH Web GUI 的普通对话插件：独立侧边栏「对话」入口，不绑工作区、不带工具，直接复用 DSH 现有 ctx.llm 模型路由（支持切换已导入的任意 provider/model，流式输出），多会话历史持久化到 ~/.dsh/dsh-chat.json。热插拔 —— 通过 profile 的 cordis.patch.yml + node_modules symlink 挂载，不改",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/MarkJun236/DSH-chat",
+    "readme": "https://github.com/MarkJun236/DSH-chat#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/MarkJun236/DSH-chat"
+    }
+  ],
+  "keywords": [
+    "models",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "1981"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "542"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "1331"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "MarkJun236/DSH-chat"
+        },
+        {
+          "repository": "kingselyjoe/awesome-dsh-list",
+          "revision": "d67ba17e53c45c77ed5d281df7e0cd76db746b06",
+          "path": "README.md",
+          "entry": "533"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "6770"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

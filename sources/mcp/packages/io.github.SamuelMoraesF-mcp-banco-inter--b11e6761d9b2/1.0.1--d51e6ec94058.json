@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SamuelMoraesF/mcp-banco-inter",
   "name": "io.github.SamuelMoraesF/mcp-banco-inter",
+  "displayName": "io.github.SamuelMoraesF/mcp-banco-inter",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Servidor MCP para integração com o Banco Inter (PJ). Consulte saldos e gerencie cobranças.",
-  "license": "ISC",
-  "links": {
-    "repository": "https://github.com/SamuelMoraesF/mcp-banco-inter",
-    "readme": "https://github.com/SamuelMoraesF/mcp-banco-inter#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-banco-inter",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Servidor MCP para integração com o Banco Inter (PJ). Consulte saldos e gerencie cobranças.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-banco-inter",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2d335704dd96389a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-banco-inter",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-2cf1fe0f7af23e49",
+      "type": "oci",
+      "url": "https://samuelmoraesf/mcp-banco-inter:1.0.1",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/SamuelMoraesF/mcp-banco-inter"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.samuelmoraesf__mcp-banco-inter.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=151",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SamuelMoraesF/mcp-banco-inter"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

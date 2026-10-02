@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SunFlash12/forge-cascade-mcp",
   "name": "io.github.SunFlash12/forge-cascade-mcp",
+  "displayName": "Forge Cascade MCP Memory Server",
   "version": "0.1.7",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "AI memory buyer routing with Forge docs, pricing, paid recommendations, and MCP discovery.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/SunFlash12/forge-cascade-mcp",
-    "homepage": "https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html?utm_source=official_mcp_registry&utm_medium=mcp_registry&utm_campaign=forge_mcp_memory_server",
-    "readme": "https://github.com/SunFlash12/forge-cascade-mcp#readme"
-  },
-  "keywords": [
-    "Forge Cascade MCP Memory Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://forgecascade.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/sunflash12/forge-cascade-mcp",
-      "priority": 10,
+      "id": "upstream-b5a3445997cd5850",
+      "type": "oci",
+      "url": "https://ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-30af2b332275cdac",
+      "type": "other",
+      "url": "https://forgecascade.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://forgecascade.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/SunFlash12/forge-cascade-mcp",
+    "homepage": "https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html?utm_source=official_mcp_registry&utm_medium=mcp_registry&utm_campaign=forge_mcp_memory_server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sunflash12__forge-cascade-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=155",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SunFlash12/forge-cascade-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

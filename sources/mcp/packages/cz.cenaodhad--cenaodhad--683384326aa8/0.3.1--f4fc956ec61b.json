@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cz.cenaodhad/cenaodhad",
+  "name": "cz.cenaodhad/cenaodhad",
+  "displayName": "cenaodhad – ceny bytů v Praze z katastru",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "cenaodhad.cz: odhad bytu v Praze z prodejů v katastru, domy a pozemky s makléřem, ověření inzerátu",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cz.cenaodhad/cenaodhad",
+    "remotes": [
+      {
+        "url": "https://mcp.cenaodhad.cz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cf11666c417dccc9",
+      "type": "other",
+      "url": "https://mcp.cenaodhad.cz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cenaodhad.cz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cenaodhad.cz"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=88",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cz.cenaodhad/cenaodhad"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

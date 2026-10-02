@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.IsaiahDupree/storebridge-mcp",
+  "name": "io.github.IsaiahDupree/storebridge-mcp",
+  "displayName": "io.github.IsaiahDupree/storebridge-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP connector for App Store + Google Play data via StoreBridge API. No auth required.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.IsaiahDupree/storebridge-mcp",
+    "remotes": [
+      {
+        "url": "https://storebridge-mcp.vercel.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e80a14eb7a5f5d21",
+      "type": "other",
+      "url": "https://storebridge-mcp.vercel.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://storebridge-mcp.vercel.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/IsaiahDupree/storebridge-mcp",
+    "homepage": "https://storebridge-mcp.vercel.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.IsaiahDupree/storebridge-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.goesByhc/cn-scraper-mcp",
   "name": "io.github.goesByhc/cn-scraper-mcp",
+  "displayName": "CN Scraper MCP",
   "version": "0.4.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for AI agents to search major Chinese internet platforms with local-first login support.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/goesByhc/cn-scraper-mcp",
-    "readme": "https://github.com/goesByhc/cn-scraper-mcp#readme"
-  },
-  "keywords": [
-    "CN Scraper MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "cn-scraper-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "cn-scraper-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3afdf6007cd3415d",
       "type": "registry",
-      "url": "https://pypi.org/project/cn-scraper-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/cn-scraper-mcp",
+      "registry": "pypi",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/goesByhc/cn-scraper-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.goesbyhc__cn-scraper-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=206",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.goesByhc/cn-scraper-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

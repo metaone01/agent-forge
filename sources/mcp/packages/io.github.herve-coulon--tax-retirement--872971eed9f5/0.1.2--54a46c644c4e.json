@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.herve-coulon/tax-retirement",
+  "name": "io.github.herve-coulon/tax-retirement",
+  "displayName": "io.github.herve-coulon/tax-retirement",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Calcul fiscal (IR, IFI, PER, plus-value) et retraite français — 32 régimes, sourcé et daté.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.herve-coulon/tax-retirement",
+    "remotes": [
+      {
+        "url": "https://app.qotien.fr/api/fiscal/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e2b594d6a1372d8d",
+      "type": "other",
+      "url": "https://app.qotien.fr/api/fiscal/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.qotien.fr/api/fiscal/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/herve-coulon/qotien-mcp",
+    "homepage": "https://qotien.fr"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=209",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.herve-coulon/tax-retirement"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

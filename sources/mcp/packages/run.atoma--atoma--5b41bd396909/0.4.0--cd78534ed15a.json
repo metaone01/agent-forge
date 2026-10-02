@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.run.atoma/atoma",
+  "name": "run.atoma/atoma",
+  "displayName": "atoma",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Start and follow atoma builds; read their runs, traces, agent registry and skill catalogue.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "run.atoma/atoma",
+    "remotes": [
+      {
+        "url": "https://atoma.run/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6c09b37aea020bba",
+      "type": "other",
+      "url": "https://atoma.run/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://atoma.run/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mgtf/atoma",
+    "homepage": "https://atoma.run"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "run.atoma/atoma"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

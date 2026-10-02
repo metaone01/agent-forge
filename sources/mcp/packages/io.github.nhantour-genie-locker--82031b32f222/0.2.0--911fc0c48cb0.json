@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nhantour/genie-locker",
   "name": "io.github.nhantour/genie-locker",
+  "displayName": "GenieLocker",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Discover and quote quality-gated private AI inference without creating or buying a locker.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/nhantour/genie-locker",
-    "homepage": "https://genie.locker/",
-    "readme": "https://github.com/nhantour/genie-locker#readme"
-  },
-  "keywords": [
-    "GenieLocker"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/nhantour/genie-locker-mcp:0.2.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/nhantour/genie-locker-mcp:0.2.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/nhantour/genie-locker-mcp",
-      "priority": 10,
+      "id": "upstream-5b12f9825d43a6f4",
+      "type": "oci",
+      "url": "https://ghcr.io/nhantour/genie-locker-mcp:0.2.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nhantour/genie-locker",
+    "homepage": "https://genie.locker/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nhantour__genie-locker.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nhantour/genie-locker"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

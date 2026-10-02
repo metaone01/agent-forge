@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.detailobsessed/unblu",
   "name": "io.github.detailobsessed/unblu",
+  "displayName": "io.github.detailobsessed/unblu",
   "version": "0.10.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Operate Unblu deployments: health checks, conversation ops, and 300+ API endpoints",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/detailobsessed/unblu-mcp",
-    "readme": "https://github.com/detailobsessed/unblu-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "unblu-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "unblu-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cbe9ad13d4fc8beb",
       "type": "registry",
-      "url": "https://pypi.org/project/unblu-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/unblu-mcp",
+      "registry": "pypi",
+      "version": "0.10.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/detailobsessed/unblu-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.detailobsessed__unblu.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=192",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.detailobsessed/unblu"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

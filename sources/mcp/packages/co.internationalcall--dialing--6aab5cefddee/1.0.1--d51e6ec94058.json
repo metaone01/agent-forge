@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.internationalcall/dialing",
+  "name": "co.internationalcall/dialing",
+  "displayName": "InternationalCall.co dialing",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Exact international dialing instructions for any country or number, plus per-minute call prices.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "co.internationalcall/dialing",
+    "remotes": [
+      {
+        "url": "https://internationalcall.co/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d4cb0189905b3081",
+      "type": "other",
+      "url": "https://internationalcall.co/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://internationalcall.co/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://internationalcall.co/call/international-dialing-codes"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=28",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.internationalcall/dialing"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

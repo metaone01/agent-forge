@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.ansvar/eu-regulations",
+  "name": "eu.ansvar/eu-regulations",
+  "displayName": "Ansvar: EU Regulations",
+  "version": "1.0.e5bd3e25",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "EU regulations (GDPR, DORA, NIS2, AI Act, etc.) via Ansvar Gateway. Cited, OAuth + paid.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "eu.ansvar/eu-regulations",
+    "remotes": [
+      {
+        "url": "https://gateway.ansvar.eu/eu/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5ddc354eb742425b",
+      "type": "other",
+      "url": "https://gateway.ansvar.eu/eu/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.ansvar.eu/eu/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Ansvar-Systems/ansvar-gateway",
+    "homepage": "https://ansvar.eu"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=97",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.ansvar/eu-regulations"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2a45e44960fbb4c2a91a3d9a8cdf97eb6be02c6786b9edfceca1912ad7826a1f",
+  "name": "aleskxyz/dsh-subagent-fork-lite",
+  "displayName": "aleskxyz/dsh-subagent-fork-lite",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "In-process DeepSeek Harness subagent provider that seeds a child with only the last N completed parent turns (fork-lite), leaving official fork untouched.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/aleskxyz/dsh-subagent-fork-lite",
+    "readme": "https://github.com/aleskxyz/dsh-subagent-fork-lite#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/aleskxyz/dsh-subagent-fork-lite"
+    },
+    {
+      "id": "npm-5f09dd58da61",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-subagent-fork-lite",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14974"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-subagent-fork-lite"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

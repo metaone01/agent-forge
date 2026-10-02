@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.shuaicongxiaomai/agentguard",
   "name": "io.github.shuaicongxiaomai/agentguard",
+  "displayName": "AgentGuard — security checks for AI agents",
   "version": "0.1.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Secret, CVE and dependency-vulnerability scanning for AI agents (free, OSV.dev).",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/shuaicongxiaomai/agentguard",
-    "readme": "https://github.com/shuaicongxiaomai/agentguard#readme"
-  },
-  "keywords": [
-    "AgentGuard — security checks for AI agents"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/shuaicongxiaomai/agentguard:0.1.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/shuaicongxiaomai/agentguard:0.1.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/shuaicongxiaomai/agentguard",
-      "priority": 10,
+      "id": "upstream-bfa6f68f6646bbfe",
+      "type": "oci",
+      "url": "https://ghcr.io/shuaicongxiaomai/agentguard:0.1.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/shuaicongxiaomai/agentguard"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.shuaicongxiaomai__agentguard.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=329",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.shuaicongxiaomai/agentguard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

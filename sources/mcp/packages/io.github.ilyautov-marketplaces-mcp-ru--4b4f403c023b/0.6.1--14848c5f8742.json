@@ -2,50 +2,58 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ilyautov/marketplaces-mcp-ru",
   "name": "io.github.ilyautov/marketplaces-mcp-ru",
+  "displayName": "Marketplaces MCP (RU) — Wildberries, Ozon, Yandex Market, Avito",
   "version": "0.6.1",
-  "versionScheme": "semver",
-  "description": "Wildberries, Ozon, Yandex Market & Avito seller APIs for AI assistants: schema-driven, safety-gated.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ilyautov/marketplaces-mcp-ru",
-    "homepage": "https://marketplaces-mcp-ru.aifrontier.tech/",
-    "readme": "https://github.com/ilyautov/marketplaces-mcp-ru#readme"
-  },
-  "keywords": [
-    "Marketplaces MCP (RU) — Wildberries, Ozon, Yandex Market, Avito"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "marketplaces-mcp-ru",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Wildberries, Ozon, Yandex Market & Avito seller APIs for AI assistants: schema-driven, safety-gated.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "marketplaces-mcp-ru",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-70ae2b4332a49873",
       "type": "registry",
       "url": "https://www.npmjs.com/package/marketplaces-mcp-ru",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.1"
+    },
+    {
+      "id": "upstream-d95dba40ee096120",
+      "type": "registry",
+      "url": "https://pypi.org/project/marketplaces-mcp-ru",
+      "registry": "pypi",
+      "version": "0.6.1"
+    },
+    {
+      "id": "upstream-bb3859ca9f6e1d07",
+      "type": "oci",
+      "url": "https://ghcr.io/ilyautov/marketplaces-mcp-ru:0.6.1",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ilyautov/marketplaces-mcp-ru",
+    "homepage": "https://marketplaces-mcp-ru.aifrontier.tech/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +66,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ilyautov__marketplaces-mcp-ru.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=212",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ilyautov/marketplaces-mcp-ru"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

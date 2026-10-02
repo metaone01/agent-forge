@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.tylergibbs1/backwork-mcp",
+  "name": "io.github.tylergibbs1/backwork-mcp",
+  "displayName": "Backwork",
+  "version": "2.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Medicare and commercial payer policies, prior auth, claim risk, and medical codes from Backwork.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@backwork/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://backworkhealth.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3a39a2e4151db9a8",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@backwork/mcp",
+      "registry": "npm",
+      "version": "2.1.2"
+    },
+    {
+      "id": "upstream-39ae660083ab1bdc",
+      "type": "other",
+      "url": "https://backworkhealth.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://backworkhealth.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/tylergibbs1/backwork-mcp",
+    "homepage": "https://backworkhealth.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tylergibbs1/backwork-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

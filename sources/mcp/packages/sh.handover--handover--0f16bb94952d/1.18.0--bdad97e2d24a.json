@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.handover/handover",
+  "name": "sh.handover/handover",
+  "displayName": "Handover",
+  "version": "1.18.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Shared, versioned context that humans and AI agents can publish, review, annotate, and continue.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.handover/handover",
+    "remotes": [
+      {
+        "url": "https://handover.sh/api/mcp?profile=core",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a4a69c454ec16e80",
+      "type": "other",
+      "url": "https://handover.sh/api/mcp?profile=core",
+      "install": {
+        "type": "api",
+        "url": "https://handover.sh/api/mcp?profile=core"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/44-pixels/handover-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.handover/handover"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

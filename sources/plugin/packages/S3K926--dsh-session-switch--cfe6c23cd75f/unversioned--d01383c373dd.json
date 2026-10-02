@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.15d79baa94cfef547ef78413965664c31355756081033ac3eefb6ba55ec178cd",
+  "name": "S3K926/dsh-session-switch",
+  "displayName": "S3K926/dsh-session-switch",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 会话切换插件：Host 半边接 dsh-auto-handoff 的请求建新会话、把交接包作为第一条消息发进去、把待接写给客户端切界面并归档原会话；Client 半边是空壳。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/S3K926/dsh-session-switch",
+    "readme": "https://github.com/S3K926/dsh-session-switch#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/S3K926/dsh-session-switch"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16392"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

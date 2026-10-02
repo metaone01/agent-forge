@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.123db3ea88c11f84467e7c0b86ca363e92d02239b2590c5f969e8fde77818888",
+  "name": "YenWuLiu/dsh-kernel-0.1.2-rc.1/apps/pet",
+  "displayName": "YenWuLiu/dsh-kernel-0.1.2-rc.1/apps/pet",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 的内核裁剪版：从上游 monorepo（deepseek-ai/deepseek-harness@master，0.1.2-rc.1）中保留 Agent 运行时闭包（151 个包），删除 Web 外壳、浏览器 UI、实验包与外部协议适配（116 个包）。分层与组合机制与上游完全一致，可作为二次开发的基座。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "apps/pet/cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/YenWuLiu/dsh-kernel-0.1.2-rc.1",
+    "readme": "https://github.com/YenWuLiu/dsh-kernel-0.1.2-rc.1#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/YenWuLiu/dsh-kernel-0.1.2-rc.1/tree/HEAD/apps/pet"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "devtools"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14812"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

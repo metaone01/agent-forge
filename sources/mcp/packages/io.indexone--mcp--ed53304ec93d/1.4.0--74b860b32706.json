@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.indexone/mcp",
+  "name": "io.indexone/mcp",
+  "displayName": "Index One",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query financial index data, run backtests, and deploy systematic investment strategies on Index One.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.indexone/mcp",
+    "remotes": [
+      {
+        "url": "https://api.indexone.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fff9b91a52770518",
+      "type": "other",
+      "url": "https://api.indexone.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.indexone.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/index1one/indexone-mcp",
+    "homepage": "https://indexone.io/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=356",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.indexone/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

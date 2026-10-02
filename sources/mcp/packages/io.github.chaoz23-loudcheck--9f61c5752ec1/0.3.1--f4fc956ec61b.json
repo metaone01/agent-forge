@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.chaoz23/loudcheck",
   "name": "io.github.chaoz23/loudcheck",
+  "displayName": "loudcheck",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "Loudness compliance verdicts (EBU R128, ATSC A/85): pass/fail with exact ffmpeg remediation.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/chaoz23/loudcheck",
-    "homepage": "https://github.com/chaoz23/loudcheck",
-    "readme": "https://github.com/chaoz23/loudcheck#readme"
-  },
-  "keywords": [
-    "loudcheck"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "loudcheck",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Loudness compliance verdicts (EBU R128, ATSC A/85): pass/fail with exact ffmpeg remediation.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "loudcheck",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b50fb97da8883e46",
       "type": "registry",
-      "url": "https://pypi.org/project/loudcheck/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/loudcheck",
+      "registry": "pypi",
+      "version": "0.3.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/chaoz23/loudcheck",
+    "homepage": "https://github.com/chaoz23/loudcheck"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.chaoz23__loudcheck.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=181",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.chaoz23/loudcheck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

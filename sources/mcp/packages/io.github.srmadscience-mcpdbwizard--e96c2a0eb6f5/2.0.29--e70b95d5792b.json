@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.srmadscience/mcpdbwizard",
   "name": "io.github.srmadscience/mcpdbwizard",
+  "displayName": "MCPDBWizard",
   "version": "2.0.29",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "An Oracle MCP server built from the PL/SQL, tables and statements you select. No run-sql tool",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/srmadscience/mcpdbwizard-open",
-    "homepage": "https://mcpdbwizard.com/",
-    "readme": "https://github.com/srmadscience/mcpdbwizard-open#readme"
-  },
-  "keywords": [
-    "MCPDBWizard"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/srmadscience/mcpdbwizard:2.0.29",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/srmadscience/mcpdbwizard:2.0.29",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/srmadscience/mcpdbwizard",
-      "priority": 10,
+      "id": "upstream-3b0bab96f737e950",
+      "type": "oci",
+      "url": "https://ghcr.io/srmadscience/mcpdbwizard:2.0.29",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/srmadscience/mcpdbwizard-open",
+    "homepage": "https://mcpdbwizard.com/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.srmadscience__mcpdbwizard.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=332",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.srmadscience/mcpdbwizard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

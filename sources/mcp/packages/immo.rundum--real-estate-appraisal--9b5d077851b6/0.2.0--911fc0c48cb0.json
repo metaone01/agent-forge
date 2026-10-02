@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.immo.rundum/real-estate-appraisal",
+  "name": "immo.rundum/real-estate-appraisal",
+  "displayName": "Rundum Immo Real Estate Appraisal",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "German property depreciation, purchase-price allocation, appraisal prices and bookings via AfAMax.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@rundum-immo/real-estate-appraisal-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.rundum.immo/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-636fa2059949c538",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@rundum-immo/real-estate-appraisal-mcp",
+      "registry": "npm",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-ef35c1cc35edc72d",
+      "type": "other",
+      "url": "https://mcp.rundum.immo/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.rundum.immo/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Rundum-Immo/real-estate-appraisal-mcp",
+    "homepage": "https://afamax.de"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "immo.rundum/real-estate-appraisal"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

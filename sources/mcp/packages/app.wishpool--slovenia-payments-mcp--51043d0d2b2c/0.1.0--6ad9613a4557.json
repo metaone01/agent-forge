@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/slovenia-payments-mcp",
+  "name": "app.wishpool/slovenia-payments-mcp",
+  "displayName": "Slovenia Payments (Stripe — cards / Apple Pay)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Slovenia payments for AI agents — cards / Apple Pay via Stripe. Never holds funds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/slovenia-payments-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-si.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-27ba5c0b22ead978",
+      "type": "other",
+      "url": "https://mcp-si.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-si.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/slovenia-payments-mcp",
+    "homepage": "https://github.com/junter1989k-ai/slovenia-payments-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=23",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/slovenia-payments-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

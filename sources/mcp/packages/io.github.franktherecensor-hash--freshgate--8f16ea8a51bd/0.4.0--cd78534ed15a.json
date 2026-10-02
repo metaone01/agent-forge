@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.franktherecensor-hash/freshgate",
+  "name": "io.github.franktherecensor-hash/freshgate",
+  "displayName": "FreshGate",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Paid MCP tool that checks whether a web page has changed. $0.001 per check via x402 on Base.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.franktherecensor-hash/freshgate",
+    "remotes": [
+      {
+        "url": "https://freshgate-api.franktherecensor.workers.dev/paid-mcp",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ac186ac3de9879d5",
+      "type": "other",
+      "url": "https://freshgate-api.franktherecensor.workers.dev/paid-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://freshgate-api.franktherecensor.workers.dev/paid-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/franktherecensor-hash/freshgate"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=203",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.franktherecensor-hash/freshgate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

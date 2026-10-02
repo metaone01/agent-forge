@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.net.mail7/email-validation",
   "name": "net.mail7/email-validation",
+  "displayName": "Mail7 Email Validation",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Verify email addresses, clean lists, and audit a domain SPF, DKIM, DMARC and MX setup.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/dvlop/mail7-mcp",
-    "homepage": "https://mail7.net/integrations/mcp/",
-    "readme": "https://github.com/dvlop/mail7-mcp#readme"
-  },
-  "keywords": [
-    "Mail7 Email Validation"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mail7-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Verify email addresses, clean lists, and audit a domain SPF, DKIM, DMARC and MX setup.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mail7-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-656dce39e2e68442",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mail7-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dvlop/mail7-mcp",
+    "homepage": "https://mail7.net/integrations/mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\net.mail7__email-validation.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=367",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.mail7/email-validation"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

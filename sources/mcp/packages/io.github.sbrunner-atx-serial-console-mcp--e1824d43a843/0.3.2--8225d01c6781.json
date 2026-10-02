@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sbrunner-atx/serial-console-mcp",
   "name": "io.github.sbrunner-atx/serial-console-mcp",
+  "displayName": "Serial Console MCP: AI for telecom equipment and any serial device",
   "version": "0.3.2",
-  "versionScheme": "semver",
-  "description": "Let AI configure telecom gear over serial: Juniper and Cisco, Icom CI-V, Yaesu/Kenwood CAT, rotators",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/sbrunner-atx/serial-console-mcp",
-    "homepage": "https://github.com/sbrunner-atx/serial-console-mcp#readme",
-    "readme": "https://github.com/sbrunner-atx/serial-console-mcp#readme"
-  },
-  "keywords": [
-    "Serial Console MCP: AI for telecom equipment and any serial device"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "serial-console-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Let AI configure telecom gear over serial: Juniper and Cisco, Icom CI-V, Yaesu/Kenwood CAT, rotators",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "serial-console-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7bd35b24d121b62e",
       "type": "registry",
-      "url": "https://pypi.org/project/serial-console-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/serial-console-mcp",
+      "registry": "pypi",
+      "version": "0.3.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sbrunner-atx/serial-console-mcp",
+    "homepage": "https://github.com/sbrunner-atx/serial-console-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sbrunner-atx__serial-console-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=325",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sbrunner-atx/serial-console-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

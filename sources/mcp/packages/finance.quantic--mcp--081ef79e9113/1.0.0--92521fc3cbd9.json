@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.finance.quantic/mcp",
+  "name": "finance.quantic/mcp",
+  "displayName": "Quantic Finance",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Dividend portfolio tracking and planning for US and EU markets: income, safety, Spain-aware taxes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "finance.quantic/mcp",
+    "remotes": [
+      {
+        "url": "https://quantic.finance/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b55555ff770a04c5",
+      "type": "other",
+      "url": "https://quantic.finance/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://quantic.finance/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://quantic.finance"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "finance.quantic/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

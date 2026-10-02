@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.starfetch-js/starfetch",
   "name": "io.github.starfetch-js/starfetch",
+  "displayName": "Starfetch",
   "version": "0.3.0",
-  "versionScheme": "semver",
-  "description": "Query public astronomy catalogs through metadata-first TAP and ADQL tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/starfetch-js/starfetch",
-    "readme": "https://github.com/starfetch-js/starfetch#readme"
-  },
-  "keywords": [
-    "Starfetch"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@starfetch-js/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Query public astronomy catalogs through metadata-first TAP and ADQL tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@starfetch-js/mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b11a1893294f76bc",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@starfetch-js/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/starfetch-js/starfetch"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.starfetch-js__starfetch.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=333",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.starfetch-js/starfetch"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

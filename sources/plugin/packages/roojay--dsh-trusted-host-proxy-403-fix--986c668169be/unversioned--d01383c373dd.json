@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.9185ce9fd001b0f597e8525f7290d5f8daf29686eb67d05728b36533b0cbb9ff",
+  "name": "roojay/dsh-trusted-host-proxy-403-fix",
+  "displayName": "roojay/dsh-trusted-host-proxy-403-fix",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Fix privileged /api 403 when DeepSeek Harness Web UI is reached through a reverse proxy Host already listed in --trusted-host. Not an authentication layer.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/roojay/dsh-trusted-host-proxy-403-fix",
+    "readme": "https://github.com/roojay/dsh-trusted-host-proxy-403-fix#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/roojay/dsh-trusted-host-proxy-403-fix"
+    },
+    {
+      "id": "npm-48b44a02cca2",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-trusted-host-proxy-403-fix",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "models",
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "9789"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "9690"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "2817"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

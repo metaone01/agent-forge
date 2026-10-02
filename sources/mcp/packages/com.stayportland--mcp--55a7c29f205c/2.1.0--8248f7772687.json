@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.stayportland/mcp",
+  "name": "com.stayportland/mcp",
+  "displayName": "com.stayportland/mcp",
+  "version": "2.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search Portland rentals, compare homes, save a shortlist, and get a live quote. No payments.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.stayportland/mcp",
+    "remotes": [
+      {
+        "url": "https://www.stayportland.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4695b1934140ff5f",
+      "type": "other",
+      "url": "https://www.stayportland.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.stayportland.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=78",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.stayportland/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

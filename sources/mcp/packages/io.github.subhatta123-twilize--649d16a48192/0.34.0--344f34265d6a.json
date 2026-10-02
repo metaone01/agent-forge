@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.subhatta123/twilize",
   "name": "io.github.subhatta123/twilize",
+  "displayName": "Twilize",
   "version": "0.34.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Generate Tableau .twb/.twbx workbooks: 47 tools for charts, dashboards, rules, CSV pipelines.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/subhatta123/twilize",
-    "homepage": "https://github.com/subhatta123/twilize",
-    "readme": "https://github.com/subhatta123/twilize#readme"
-  },
-  "keywords": [
-    "Twilize"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "twilize",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "twilize",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://web-production-dcbcb.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d050d70baf0723d7",
       "type": "registry",
-      "url": "https://pypi.org/project/twilize/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/twilize",
+      "registry": "pypi",
+      "version": "0.34.0"
+    },
+    {
+      "id": "upstream-c7944009188eaa59",
+      "type": "other",
+      "url": "https://web-production-dcbcb.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://web-production-dcbcb.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/subhatta123/twilize",
+    "homepage": "https://github.com/subhatta123/twilize"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.subhatta123__twilize.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.subhatta123/twilize"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

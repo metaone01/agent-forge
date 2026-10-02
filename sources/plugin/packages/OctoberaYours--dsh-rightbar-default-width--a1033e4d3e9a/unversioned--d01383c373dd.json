@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.309ea254645a0b941152f5858819b541647a926880e443aa811296e4d216a13c",
+  "name": "OctoberaYours/dsh-rightbar-default-width",
+  "displayName": "OctoberaYours/dsh-rightbar-default-width",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH Web 插件：把右侧栏的默认宽度从「半屏（视口的 45%）」改成一个更合理的比例，同时保留拖拽调宽的能力。DSH 本身不持久化右栏宽度（layout store 的 rightbar 初值是 null），所以每次刷新都回到 45%；本插件在右栏首次打开前把初值置为配置的比例，之后用户的拖拽照常生效，且拖过的宽度会被记住。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/OctoberaYours/dsh-rightbar-default-width",
+    "readme": "https://github.com/OctoberaYours/dsh-rightbar-default-width#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/OctoberaYours/dsh-rightbar-default-width"
+    }
+  ],
+  "keywords": [
+    "marketplace",
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16234"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16298"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

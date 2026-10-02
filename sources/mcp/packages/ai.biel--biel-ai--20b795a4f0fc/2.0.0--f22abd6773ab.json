@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.biel/biel-ai",
+  "name": "ai.biel/biel-ai",
+  "displayName": "Biel.ai",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query your product docs from AI tools. Source-cited answers from your indexed documentation.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.biel/biel-ai",
+    "remotes": [
+      {
+        "url": "https://mcp.biel.ai/v2/{project_slug}/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.biel.ai/sse?project_slug={project_slug}&domain={domain}",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-553dc4784aa2c15d",
+      "type": "other",
+      "url": "https://mcp.biel.ai/v2/{project_slug}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.biel.ai/v2/{project_slug}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-6b87e1eda6a24123",
+      "type": "other",
+      "url": "https://mcp.biel.ai/sse?project_slug={project_slug}&domain={domain}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.biel.ai/sse?project_slug={project_slug}&domain={domain}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TechDocsStudio/biel-mcp",
+    "homepage": "https://biel.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=2",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.biel/biel-ai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

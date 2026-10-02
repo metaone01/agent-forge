@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vystartasv/wwa-mcp",
   "name": "io.github.vystartasv/wwa-mcp",
+  "displayName": "Works With Agents MCP",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "14 MCP tools: facts, pitfalls, skills, handoff protocols, trust scores, identity verification.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/vystartasv/wwa-mcp",
-    "homepage": "https://workswithagents.dev/mcp",
-    "readme": "https://github.com/vystartasv/wwa-mcp#readme"
-  },
-  "keywords": [
-    "Works With Agents MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "wwa-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "14 MCP tools: facts, pitfalls, skills, handoff protocols, trust scores, identity verification.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "wwa-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5ae3e3b4b39ba20c",
       "type": "registry",
-      "url": "https://pypi.org/project/wwa-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/wwa-mcp",
+      "registry": "pypi",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/vystartasv/wwa-mcp",
+    "homepage": "https://workswithagents.dev/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vystartasv__wwa-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=348",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vystartasv/wwa-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

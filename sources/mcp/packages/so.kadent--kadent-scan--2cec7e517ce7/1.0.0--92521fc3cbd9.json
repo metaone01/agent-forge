@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.so.kadent/kadent-scan",
+  "name": "so.kadent/kadent-scan",
+  "displayName": "Kadent Scan",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free, read-only security scanner for remote MCP servers, before you connect them.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "so.kadent/kadent-scan",
+    "remotes": [
+      {
+        "url": "https://mcp.kadent.so/scan/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-35c94551eb28abe0",
+      "type": "other",
+      "url": "https://mcp.kadent.so/scan/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.kadent.so/scan/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://kadent.so/scan"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "so.kadent/kadent-scan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

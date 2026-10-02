@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.now.sendly/sendly",
+  "name": "now.sendly/sendly",
+  "displayName": "Sendly",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Send email, manage contacts, campaigns and workflows, and diagnose deliverability in Sendly.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "now.sendly/sendly",
+    "remotes": [
+      {
+        "url": "https://app.sendly.now/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-82a1fcee03f4123c",
+      "type": "other",
+      "url": "https://app.sendly.now/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.sendly.now/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://docs.sendly.now/guides/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "now.sendly/sendly"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

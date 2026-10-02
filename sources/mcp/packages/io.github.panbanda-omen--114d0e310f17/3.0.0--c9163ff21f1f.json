@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.panbanda/omen",
   "name": "io.github.panbanda/omen",
+  "displayName": "io.github.panbanda/omen",
   "version": "3.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Multi-language code analysis for complexity, debt, hotspots, ownership, and defect prediction",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/panbanda/omen",
-    "readme": "https://github.com/panbanda/omen#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/panbanda/omen:3.0.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/panbanda/omen:3.0.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/panbanda/omen",
-      "priority": 10,
+      "id": "upstream-32884e6cab19dca0",
+      "type": "oci",
+      "url": "https://ghcr.io/panbanda/omen:3.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/panbanda/omen"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.panbanda__omen.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=270",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.panbanda/omen"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

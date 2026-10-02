@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcplookup/mcp",
   "name": "com.mcplookup/mcp",
+  "displayName": "MCPLookup",
   "version": "0.1.6",
-  "versionScheme": "semver",
-  "description": "Look up independent trust ratings and security, maintenance, and adoption evidence for MCP servers.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mcplookupdev/mcplookup-mcp",
-    "homepage": "https://mcplookup.com",
-    "readme": "https://github.com/mcplookupdev/mcplookup-mcp#readme"
-  },
-  "keywords": [
-    "MCPLookup"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@mcplookup/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Look up independent trust ratings and security, maintenance, and adoption evidence for MCP servers.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@mcplookup/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcplookup.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a285dd4e9b52e520",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@mcplookup/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.6"
+    },
+    {
+      "id": "upstream-b09ae8833f8f5a4e",
+      "type": "other",
+      "url": "https://mcplookup.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcplookup.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcplookupdev/mcplookup-mcp",
+    "homepage": "https://mcplookup.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcplookup__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcplookup/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

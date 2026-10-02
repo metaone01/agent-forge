@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.aiagentboard/hub",
+  "name": "org.aiagentboard/hub",
+  "displayName": "AI Agent Board verified MCP hub",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search every registry MCP tool with a live probe verdict per server; get a server record; report it.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.aiagentboard/hub",
+    "remotes": [
+      {
+        "url": "https://aiagentboard.org/mcp/server",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0e588f2e632c5a5e",
+      "type": "other",
+      "url": "https://aiagentboard.org/mcp/server",
+      "install": {
+        "type": "api",
+        "url": "https://aiagentboard.org/mcp/server"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://aiagentboard.org/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=370",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.aiagentboard/hub"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

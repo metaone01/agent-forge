@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.6020a56048de0e57bbefdf7e9bff77f1bf1eccf43e3756d67b52f568ec26da59",
+  "name": "zhanghao3693/dsh-llm-router",
+  "displayName": "zhanghao3693/dsh-llm-router",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Task-aware automatic model router (auto route) for the DeepSeek Harness: picks a backend model per request (vision / long-context / default) and falls back across configured models on clean",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/zhanghao3693/dsh-llm-router",
+    "readme": "https://github.com/zhanghao3693/dsh-llm-router#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/zhanghao3693/dsh-llm-router"
+    },
+    {
+      "id": "npm-562ccc18c079",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-llm-router",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "vision",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16989"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "4660"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-llm-router"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.video.future/future-video-studio",
   "name": "video.future/future-video-studio",
+  "displayName": "Future Video Studio",
   "version": "0.1.8",
-  "versionScheme": "semver",
-  "description": "Create and manage cinematic AI video renders through the Future Video Studio Agent API.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/ariadne-coil/fvs-mcp",
-    "homepage": "https://future.video",
-    "readme": "https://github.com/ariadne-coil/fvs-mcp#readme"
-  },
-  "keywords": [
-    "Future Video Studio"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "future-video-studio-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Create and manage cinematic AI video renders through the Future Video Studio Agent API.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "future-video-studio-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.future.video/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9c1c394ae55b961a",
       "type": "registry",
-      "url": "https://pypi.org/project/future-video-studio-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/future-video-studio-mcp",
+      "registry": "pypi",
+      "version": "0.1.8"
+    },
+    {
+      "id": "upstream-e74268b88c662b51",
+      "type": "other",
+      "url": "https://mcp.future.video/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.future.video/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ariadne-coil/fvs-mcp",
+    "homepage": "https://future.video"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\video.future__future-video-studio.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "video.future/future-video-studio"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Elemzir/kta-oracle",
+  "name": "io.github.Elemzir/kta-oracle",
+  "displayName": "KTA-Oracle",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live KTA rates, market data, payment rails, AML/VAT compliance, SDK snippets. 16 tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Elemzir/kta-oracle",
+    "remotes": [
+      {
+        "url": "https://kta-oracle.vercel.app/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://kta-oracle.vercel.app/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-47c735297f37ec2f",
+      "type": "other",
+      "url": "https://kta-oracle.vercel.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://kta-oracle.vercel.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8c8d4e4665d31096",
+      "type": "other",
+      "url": "https://kta-oracle.vercel.app/sse",
+      "install": {
+        "type": "api",
+        "url": "https://kta-oracle.vercel.app/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Elemzir/KTA-Oracle"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=124",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Elemzir/kta-oracle"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

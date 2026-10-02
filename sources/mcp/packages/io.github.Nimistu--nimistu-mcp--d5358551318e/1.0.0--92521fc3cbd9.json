@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Nimistu/nimistu-mcp",
+  "name": "io.github.Nimistu/nimistu-mcp",
+  "displayName": "nimistu — Estonian Business Register",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Estonian Business Register: companies, people, beneficial owners, trademarks. Free, no API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Nimistu/nimistu-mcp",
+    "remotes": [
+      {
+        "url": "https://nimistu.ee/api/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://nimistu.ee/api/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2e2a5664664b9c1e",
+      "type": "other",
+      "url": "https://nimistu.ee/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://nimistu.ee/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a33b88f2d2aeaef5",
+      "type": "other",
+      "url": "https://nimistu.ee/api/sse",
+      "install": {
+        "type": "api",
+        "url": "https://nimistu.ee/api/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Nimistu/nimistu-mcp",
+    "homepage": "https://nimistu.ee"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=144",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Nimistu/nimistu-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

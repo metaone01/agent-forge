@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.m-dev-tools/m-dev-tools-mcp",
   "name": "io.github.m-dev-tools/m-dev-tools-mcp",
+  "displayName": "m-dev-tools",
   "version": "0.2.4",
-  "versionScheme": "semver",
-  "description": "MCP server wrapping the m-dev-tools catalog: route_intent, describe, verify.",
-  "license": "AGPL-3.0",
-  "links": {
-    "repository": "https://github.com/m-dev-tools/m-dev-tools-mcp",
-    "homepage": "https://github.com/m-dev-tools/m-dev-tools-mcp",
-    "readme": "https://github.com/m-dev-tools/m-dev-tools-mcp#readme"
-  },
-  "keywords": [
-    "m-dev-tools"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "m-dev-tools-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server wrapping the m-dev-tools catalog: route_intent, describe, verify.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "m-dev-tools-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e657316208ac3acc",
       "type": "registry",
-      "url": "https://pypi.org/project/m-dev-tools-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/m-dev-tools-mcp",
+      "registry": "pypi",
+      "version": "0.2.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/m-dev-tools/m-dev-tools-mcp",
+    "homepage": "https://github.com/m-dev-tools/m-dev-tools-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.m-dev-tools__m-dev-tools-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=231",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.m-dev-tools/m-dev-tools-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

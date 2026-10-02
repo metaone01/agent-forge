@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.84d5e8d9769f4b7c865a2813e50cb488b16f8b595d93f20a1a289e74863c0289",
+  "name": "jonah791/dsh-agent-vision",
+  "displayName": "jonah791/dsh-agent-vision",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "多模态视觉插件（辅助通道）：把本地图片喂给 OpenAI 兼容 VLM（默认 qwen3.8-flash）做读图/描述/双图对比——批量审图/省主会话上下文；主会话亲眼看图走官方 read_image（原生多模态）",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/jonah791/dsh-agent-vision",
+    "readme": "https://github.com/jonah791/dsh-agent-vision#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/jonah791/dsh-agent-vision"
+    }
+  ],
+  "keywords": [
+    "vision",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15774"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13891"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

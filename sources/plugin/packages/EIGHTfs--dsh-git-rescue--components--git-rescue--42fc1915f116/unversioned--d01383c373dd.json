@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.3d7402cc2b7341f130d09d195f43b2226feef0903e9dd445e6440546469874cc",
+  "name": "EIGHTfs/dsh-git-rescue/components/git-rescue",
+  "displayName": "EIGHTfs/dsh-git-rescue/components/git-rescue",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH git 版本管理 + 崩溃自动救援：.dsh 与 workspace 纳入 git，自动 commit、GitHub token 远端备份（REST API 降级）、崩溃自动回退",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "components/git-rescue/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/EIGHTfs/dsh-git-rescue",
+    "readme": "https://github.com/EIGHTfs/dsh-git-rescue#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/EIGHTfs/dsh-git-rescue/tree/HEAD/components/git-rescue"
+    }
+  ],
+  "keywords": [
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "4066"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "1016"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "2109"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

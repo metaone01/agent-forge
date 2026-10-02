@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.rwestergren/hevy-mcp-remote",
   "name": "io.github.rwestergren/hevy-mcp-remote",
+  "displayName": "Hevy MCP (Remote)",
   "version": "0.1.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Hosted/gateway-ready Hevy fitness MCP: workouts, routines, templates.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/rwestergren/hevy-mcp",
-    "homepage": "https://github.com/rwestergren/hevy-mcp",
-    "readme": "https://github.com/rwestergren/hevy-mcp#readme"
-  },
-  "keywords": [
-    "Hevy MCP (Remote)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/rwestergren/hevy-mcp:0.1.6",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/rwestergren/hevy-mcp:0.1.6",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/rwestergren/hevy-mcp",
-      "priority": 10,
+      "id": "upstream-763d008e39a3eb7f",
+      "type": "oci",
+      "url": "https://ghcr.io/rwestergren/hevy-mcp:0.1.6",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/rwestergren/hevy-mcp",
+    "homepage": "https://github.com/rwestergren/hevy-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rwestergren__hevy-mcp-remote.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=299",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rwestergren/hevy-mcp-remote"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

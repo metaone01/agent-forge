@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.nefesh/human-state",
+  "name": "ai.nefesh/human-state",
+  "displayName": "Nefesh — Real-Time Human State Awareness for AI",
+  "version": "4.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Fuses biometric signals into a stress score (0-100) for AI adaptation. MCP + A2A native.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.nefesh/human-state",
+    "remotes": [
+      {
+        "url": "https://mcp.nefesh.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c0efb963e692fb9f",
+      "type": "other",
+      "url": "https://mcp.nefesh.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nefesh.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/nefesh-ai/nefesh-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=9",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.nefesh/human-state"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

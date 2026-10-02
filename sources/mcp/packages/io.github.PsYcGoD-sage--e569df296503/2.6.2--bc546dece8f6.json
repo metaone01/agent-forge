@@ -2,49 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.PsYcGoD/sage",
   "name": "io.github.PsYcGoD/sage",
+  "displayName": "SAGE Wrapper",
   "version": "2.6.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Command wrapper MCP server for coding agents, compression, workflows, and local automation.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/PsYcGoD/sage",
-    "readme": "https://github.com/PsYcGoD/sage#readme"
-  },
-  "keywords": [
-    "SAGE Wrapper"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "psycgod-sage",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "psycgod-sage",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-260bb46e14c3cbfb",
       "type": "registry",
-      "url": "https://pypi.org/project/psycgod-sage/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/psycgod-sage",
+      "registry": "pypi",
+      "version": "2.6.2"
+    },
+    {
+      "id": "upstream-66ceba6ed78dc207",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/psycgod-sage",
+      "registry": "npm",
+      "version": "2.6.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/PsYcGoD/sage"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.psycgod__sage.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=148",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.PsYcGoD/sage"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

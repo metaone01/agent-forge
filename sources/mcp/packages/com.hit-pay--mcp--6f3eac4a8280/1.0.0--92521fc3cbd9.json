@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.hit-pay/mcp",
+  "name": "com.hit-pay/mcp",
+  "displayName": "HitPay MCP Server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official HitPay MCP: sales, payouts, balances; create payment links and invoices. OAuth; no refunds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.hit-pay/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.hit-pay.com/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f1bb932975211cfb",
+      "type": "other",
+      "url": "https://mcp.hit-pay.com/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.hit-pay.com/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hit-pay/claude-code-plugin",
+    "homepage": "https://hitpayapp.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hit-pay/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

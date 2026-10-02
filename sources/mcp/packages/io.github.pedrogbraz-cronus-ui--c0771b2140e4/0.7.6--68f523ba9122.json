@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pedrogbraz/cronus-ui",
   "name": "io.github.pedrogbraz/cronus-ui",
+  "displayName": "Cronus UI",
   "version": "0.7.6",
-  "versionScheme": "semver",
-  "description": "Search, install, compose, add-page, and theme Cronus UI from the live registry.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/pedrogbraz/cronus-ui",
-    "homepage": "https://aicronus.com/docs/mcp",
-    "readme": "https://github.com/pedrogbraz/cronus-ui#readme"
-  },
-  "keywords": [
-    "Cronus UI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "cronus-ui-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search, install, compose, add-page, and theme Cronus UI from the live registry.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "cronus-ui-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://aicronus.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-61a7a7776af934a2",
       "type": "registry",
       "url": "https://www.npmjs.com/package/cronus-ui-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.7.6"
+    },
+    {
+      "id": "upstream-65eb98891505aaaa",
+      "type": "other",
+      "url": "https://aicronus.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://aicronus.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/pedrogbraz/cronus-ui",
+    "homepage": "https://aicronus.com/docs/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pedrogbraz__cronus-ui.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=271",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pedrogbraz/cronus-ui"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

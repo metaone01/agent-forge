@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ch.antevo/mandates",
+  "name": "ch.antevo/mandates",
+  "displayName": "Antevo Mandates",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your client book: who is due a review, what their mandate allows, and what has moved.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ch.antevo/mandates",
+    "remotes": [
+      {
+        "url": "https://api.antevo.ch/mcp/mandates/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.antevo.ch/mcp/mandates/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-42e2bde550c92818",
+      "type": "other",
+      "url": "https://api.antevo.ch/mcp/mandates/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.antevo.ch/mcp/mandates/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8857d0acc5ecbf1a",
+      "type": "other",
+      "url": "https://api.antevo.ch/mcp/mandates/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.antevo.ch/mcp/mandates/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://antevo.ch/mandate"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ch.antevo/mandates"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

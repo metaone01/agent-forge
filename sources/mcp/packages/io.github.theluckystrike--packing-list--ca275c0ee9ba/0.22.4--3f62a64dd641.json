@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.theluckystrike/packing-list",
+  "name": "io.github.theluckystrike/packing-list",
+  "displayName": "io.github.theluckystrike/packing-list",
+  "version": "0.22.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Packing slips: cartons, contents, weights, chargeable weight and what is still to pack.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/packing-list.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/packing-slip",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b32723b54c27fa47",
+      "type": "archive",
+      "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/packing-list.mcpb",
+      "registry": "mcpb",
+      "version": "0.22.0"
+    },
+    {
+      "id": "upstream-36bb23b12d1c4cbc",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/packing-slip",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/packing-slip"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/packing-list"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=339",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/packing-list"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

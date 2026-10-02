@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.biodnd/agent-press",
+  "name": "com.biodnd/agent-press",
+  "displayName": "com.biodnd/agent-press",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent Press: news MCP server streaming company headlines",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.biodnd/agent-press",
+    "remotes": [
+      {
+        "url": "https://agent-press.biodnd.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-af33929e09bde57a",
+      "type": "other",
+      "url": "https://agent-press.biodnd.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://agent-press.biodnd.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/markchiang/go-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=36",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.biodnd/agent-press"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

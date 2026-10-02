@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.glass.cocktail/cocktail-glass",
+  "name": "glass.cocktail/cocktail-glass",
+  "displayName": "Cocktail Glass",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search 500 cocktail recipes, get full recipes, find drinks by ingredient, suggest random picks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "glass.cocktail/cocktail-glass",
+    "remotes": [
+      {
+        "url": "https://cocktail.glass/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f42c7ec86b9ed1f7",
+      "type": "other",
+      "url": "https://cocktail.glass/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://cocktail.glass/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cocktail.glass"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "glass.cocktail/cocktail-glass"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.stockmarketscan/earningscalls-mcp",
   "name": "io.github.stockmarketscan/earningscalls-mcp",
+  "displayName": "EarningsCalls.dev",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "177,000+ earnings call transcripts for AI - speaker segments & full-text search.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/stockmarketscan/earningscalls-mcp",
-    "homepage": "https://earningscalls.dev/mcp",
-    "readme": "https://github.com/stockmarketscan/earningscalls-mcp#readme"
-  },
-  "keywords": [
-    "EarningsCalls.dev"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@earningscalls/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "177,000+ earnings call transcripts for AI - speaker segments & full-text search.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@earningscalls/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.earningscalls.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e9eae2dd1c346cde",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@earningscalls/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-365a22d2d4b68607",
+      "type": "other",
+      "url": "https://mcp.earningscalls.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.earningscalls.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/stockmarketscan/earningscalls-mcp",
+    "homepage": "https://earningscalls.dev/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.stockmarketscan__earningscalls-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stockmarketscan/earningscalls-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

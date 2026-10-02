@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.LiquiHog/hogswap-mcp",
   "name": "io.github.LiquiHog/hogswap-mcp",
+  "displayName": "io.github.LiquiHog/hogswap-mcp",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Pay any Algorand x402 invoice with any asset, plus DEX swap quotes and unsigned builds.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/LiquiHog/hogswap-mcp",
-    "readme": "https://github.com/LiquiHog/hogswap-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "hogswap-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Pay any Algorand x402 invoice with any asset, plus DEX swap quotes and unsigned builds.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "hogswap-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://hogswap-v1.liquihog.dev/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-70bbd7fb2bc1852f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/hogswap-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.0"
+    },
+    {
+      "id": "upstream-16bfa0a676be221b",
+      "type": "other",
+      "url": "https://hogswap-v1.liquihog.dev/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://hogswap-v1.liquihog.dev/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/LiquiHog/hogswap-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.liquihog__hogswap-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=139",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.LiquiHog/hogswap-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

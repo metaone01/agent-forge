@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.kymaapi/kyma",
   "name": "com.kymaapi/kyma",
+  "displayName": "Kyma API",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "Live model catalog with prices and measured uptime, rankings, credits and spend, spend-capped chat.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/kyma-api/kyma-mcp-plugin",
-    "homepage": "https://kymaapi.com",
-    "readme": "https://github.com/kyma-api/kyma-mcp-plugin#readme"
-  },
-  "keywords": [
-    "Kyma API"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@kyma-api/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Live model catalog with prices and measured uptime, rankings, credits and spend, spend-capped chat.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@kyma-api/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.kymaapi.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-74c9a65ac72f735f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@kyma-api/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-38ac8f1a36d744d8",
+      "type": "other",
+      "url": "https://mcp.kymaapi.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.kymaapi.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/kyma-api/kyma-mcp-plugin",
+    "homepage": "https://kymaapi.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.kymaapi__kyma.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=57",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.kymaapi/kyma"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

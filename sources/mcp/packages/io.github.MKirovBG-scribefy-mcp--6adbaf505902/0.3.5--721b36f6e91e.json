@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MKirovBG/scribefy-mcp",
   "name": "io.github.MKirovBG/scribefy-mcp",
+  "displayName": "Scribefy",
   "version": "0.3.5",
-  "versionScheme": "semver",
-  "description": "Search YouTube, get video metadata, and extract timestamped transcripts for AI workflows.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/MKirovBG/scribefy-mcp",
-    "homepage": "https://scribefy.app",
-    "readme": "https://github.com/MKirovBG/scribefy-mcp#readme"
-  },
-  "keywords": [
-    "Scribefy"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "scribefy-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search YouTube, get video metadata, and extract timestamped transcripts for AI workflows.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "scribefy-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-92eb5e5489c58f21",
       "type": "registry",
       "url": "https://www.npmjs.com/package/scribefy-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MKirovBG/scribefy-mcp",
+    "homepage": "https://scribefy.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mkirovbg__scribefy-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=140",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MKirovBG/scribefy-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

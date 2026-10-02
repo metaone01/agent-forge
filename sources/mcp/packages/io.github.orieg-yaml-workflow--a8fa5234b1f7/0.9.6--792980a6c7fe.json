@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.orieg/yaml-workflow",
   "name": "io.github.orieg/yaml-workflow",
+  "displayName": "YAML Workflow",
   "version": "0.9.6",
-  "versionScheme": "semver",
-  "description": "Expose declarative YAML-defined workflows as MCP tools over stdio",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/orieg/yaml-workflow",
-    "readme": "https://github.com/orieg/yaml-workflow#readme"
-  },
-  "keywords": [
-    "YAML Workflow"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "yaml-workflow",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Expose declarative YAML-defined workflows as MCP tools over stdio",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "yaml-workflow",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8442ab6051c36385",
       "type": "registry",
-      "url": "https://pypi.org/project/yaml-workflow/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/yaml-workflow",
+      "registry": "pypi",
+      "version": "0.9.6"
     }
   ],
+  "links": {
+    "repository": "https://github.com/orieg/yaml-workflow"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.orieg__yaml-workflow.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=269",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.orieg/yaml-workflow"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

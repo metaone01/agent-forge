@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.apished/pesel-nip-regon-validator",
+  "name": "com.apished/pesel-nip-regon-validator",
+  "displayName": "PESEL/NIP/REGON Validator",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Validates Polish PESEL, NIP, and REGON checksums; PESEL also decodes birth date and sex.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.apished/pesel-nip-regon-validator",
+    "remotes": [
+      {
+        "url": "https://apished.com/mcp/v1/idvalidate",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-06fd4f957f327809",
+      "type": "other",
+      "url": "https://apished.com/mcp/v1/idvalidate",
+      "install": {
+        "type": "api",
+        "url": "https://apished.com/mcp/v1/idvalidate"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://apished.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=34",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.apished/pesel-nip-regon-validator"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

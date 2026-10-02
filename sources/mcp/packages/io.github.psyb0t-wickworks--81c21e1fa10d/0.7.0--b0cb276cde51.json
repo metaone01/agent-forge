@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.psyb0t/wickworks",
   "name": "io.github.psyb0t/wickworks",
+  "displayName": "Wickworks",
   "version": "0.7.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted MCP server: technical indicators + smart-money-concepts from OHLC bars.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/psyb0t/docker-wickworks",
-    "readme": "https://github.com/psyb0t/docker-wickworks#readme"
-  },
-  "keywords": [
-    "Wickworks"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/psyb0t/wickworks:v0.7.0",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/psyb0t/wickworks:v0.7.0",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/psyb0t/wickworks",
-      "priority": 10,
+      "id": "upstream-1bf41e09998e09ae",
+      "type": "oci",
+      "url": "https://docker.io/psyb0t/wickworks:v0.7.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/psyb0t/docker-wickworks"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.psyb0t__wickworks.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=292",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.psyb0t/wickworks"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

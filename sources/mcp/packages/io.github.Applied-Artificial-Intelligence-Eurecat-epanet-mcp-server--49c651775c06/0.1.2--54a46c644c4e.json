@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Applied-Artificial-Intelligence-Eurecat/epanet-mcp-server",
   "name": "io.github.Applied-Artificial-Intelligence-Eurecat/epanet-mcp-server",
+  "displayName": "EPANET MCP Server",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "MCP server for EPANET water-distribution network simulation and scenario analysis.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Applied-Artificial-Intelligence-Eurecat/epanet-mcp-server",
-    "readme": "https://github.com/Applied-Artificial-Intelligence-Eurecat/epanet-mcp-server#readme"
-  },
-  "keywords": [
-    "EPANET MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "epanet-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for EPANET water-distribution network simulation and scenario analysis.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "epanet-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-316c1d86596d6b8f",
       "type": "registry",
-      "url": "https://pypi.org/project/epanet-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/epanet-mcp-server",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Applied-Artificial-Intelligence-Eurecat/epanet-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.applied-artificial-intelligence-eurecat__epanet-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Applied-Artificial-Intelligence-Eurecat/epanet-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

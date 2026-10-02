@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Kaanthan24/agnigateway-mcp",
+  "name": "io.github.Kaanthan24/agnigateway-mcp",
+  "displayName": "AgniGateway Marketplace",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI marketplace — flights, tours, activities, transport & more via MCP. No auth required.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Kaanthan24/agnigateway-mcp",
+    "remotes": [
+      {
+        "url": "https://api.agnigateway.com/mcp/v1/public/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e0589f845dec9a48",
+      "type": "other",
+      "url": "https://api.agnigateway.com/mcp/v1/public/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.agnigateway.com/mcp/v1/public/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Kaanthan24/agnigateway-mcp",
+    "homepage": "https://agnigateway.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=137",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Kaanthan24/agnigateway-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

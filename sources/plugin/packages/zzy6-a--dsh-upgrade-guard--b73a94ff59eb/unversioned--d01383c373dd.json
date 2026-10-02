@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.65dba940b6b5472329c30189a3518aadef3b2438d9ae1bacb6d1cd08d68b379e",
+  "name": "zzy6-a/dsh-upgrade-guard",
+  "displayName": "zzy6-a/dsh-upgrade-guard",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH upgrade guard: audits installed plugin compatibility after each DeepSeek Harness upgrade, repairs or disables where possible, and an out-of-host supervisor rescues boot failures or rolls back to",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/zzy6-a/dsh-upgrade-guard",
+    "readme": "https://github.com/zzy6-a/dsh-upgrade-guard#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/zzy6-a/dsh-upgrade-guard"
+    }
+  ],
+  "keywords": [
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14881"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/zzy6-a__dsh-upgrade-guard.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14222"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

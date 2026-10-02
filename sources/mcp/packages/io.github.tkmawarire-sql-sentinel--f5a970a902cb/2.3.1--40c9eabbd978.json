@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.tkmawarire/sql-sentinel",
   "name": "io.github.tkmawarire/sql-sentinel",
+  "displayName": "SQL Sentinel MCP Server",
   "version": "2.3.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "SQL Server monitoring and diagnostics for AI agents using Extended Events. No ODBC drivers required.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/tkmawarire/sql-sentinel",
-    "homepage": "https://github.com/tkmawarire/sql-sentinel",
-    "readme": "https://github.com/tkmawarire/sql-sentinel#readme"
-  },
-  "keywords": [
-    "SQL Sentinel MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "Neofenyx.SqlSentinel.Mcp",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "Neofenyx.SqlSentinel.Mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d7b5ae8294c963b2",
       "type": "registry",
       "url": "https://www.nuget.org/packages/Neofenyx.SqlSentinel.Mcp",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "2.3.1"
+    },
+    {
+      "id": "upstream-bf8865b885cccea9",
+      "type": "oci",
+      "url": "https://ghcr.io/tkmawarire/sql-sentinel-mcp",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/tkmawarire/sql-sentinel",
+    "homepage": "https://github.com/tkmawarire/sql-sentinel"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tkmawarire__sql-sentinel.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=341",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tkmawarire/sql-sentinel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

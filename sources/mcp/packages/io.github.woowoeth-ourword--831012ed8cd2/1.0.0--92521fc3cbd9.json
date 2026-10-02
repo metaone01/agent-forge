@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.woowoeth/ourword",
   "name": "io.github.woowoeth/ourword",
+  "displayName": "io.github.woowoeth/ourword",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Search Chinese deep-reads of 190+ podcasts; every point and quote has an audio timestamp.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/woowoeth/podcast",
-    "homepage": "https://ourword.ai/podcast/",
-    "readme": "https://github.com/woowoeth/podcast#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/woowoeth/podcast/releases/download/mcp-v1.0.0/ourword-mcp.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/woowoeth/podcast/releases/download/mcp-v1.0.0/ourword-mcp.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-2149246118d83080",
+      "type": "archive",
       "url": "https://github.com/woowoeth/podcast/releases/download/mcp-v1.0.0/ourword-mcp.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/woowoeth/podcast",
+    "homepage": "https://ourword.ai/podcast/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.woowoeth__ourword.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=350",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.woowoeth/ourword"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

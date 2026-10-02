@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.tv.web3/web3tv",
+  "name": "tv.web3/web3tv",
+  "displayName": "Web3TV MCP Server",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP server for Web3TV creators — manage your account over MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "tv.web3/web3tv",
+    "remotes": [
+      {
+        "url": "https://api.web3.tv/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3196d6f05a5bd58b",
+      "type": "other",
+      "url": "https://api.web3.tv/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.web3.tv/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/web3tv/api-symfony"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=379",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tv.web3/web3tv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

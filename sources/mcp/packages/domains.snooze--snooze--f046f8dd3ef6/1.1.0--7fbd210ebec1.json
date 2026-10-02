@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.domains.snooze/snooze",
+  "name": "domains.snooze/snooze",
+  "displayName": "snooze",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Watch domains and forecast when they drop; check a name's domain, handles, and trademark.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "domains.snooze/snooze",
+    "remotes": [
+      {
+        "url": "https://mcp.snooze.domains/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c1af784ec5ba4389",
+      "type": "other",
+      "url": "https://mcp.snooze.domains/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.snooze.domains/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://snooze.domains/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "domains.snooze/snooze"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

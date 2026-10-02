@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.octotrip/flights",
+  "name": "app.octotrip/flights",
+  "displayName": "OctoTrip Flights",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free, no-login flight search with real-time pricing from multiple airlines.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.octotrip/flights",
+    "remotes": [
+      {
+        "url": "https://mcp.octotrip.app/flights/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e4423e95998ad940",
+      "type": "other",
+      "url": "https://mcp.octotrip.app/flights/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.octotrip.app/flights/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/octotrip/flights"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.octotrip/flights"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

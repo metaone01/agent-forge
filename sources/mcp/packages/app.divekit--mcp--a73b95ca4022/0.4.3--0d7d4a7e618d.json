@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.divekit/mcp",
+  "name": "app.divekit/mcp",
+  "displayName": "Dive Kit",
+  "version": "0.4.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Experimental. Plan scuba decompression dives, gas blends and gas use with Dive Kit. Reference only.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.divekit/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.divekit.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5eeb3bfcced3d219",
+      "type": "other",
+      "url": "https://mcp.divekit.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.divekit.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://divekit.app/ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=18",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.divekit/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

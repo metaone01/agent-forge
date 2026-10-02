@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.08dd606e073a95f2c2a14459324c8ec8987b857dc6a19378007c0da26d0b2a38",
+  "name": "Lixiuxiu559/AgentForge/skills/bug-debugging",
+  "displayName": "Lixiuxiu559/AgentForge/skills/bug-debugging",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "通用 agent 工作流与工程技能集，同时作为 Claude Code 插件与 DeepSeek Harness 插件分发。实施编排 + 三轴 diff 评审 + 复杂度审计 + 突变测试，零外部依赖。",
+  "license": "MIT",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "skills/bug-debugging/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/Lixiuxiu559/AgentForge",
+    "readme": "https://github.com/Lixiuxiu559/AgentForge/blob/HEAD/skills/bug-debugging/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Lixiuxiu559/AgentForge/tree/HEAD/skills/bug-debugging"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "366"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

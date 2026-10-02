@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.rs.rides/airport-transfers",
+  "name": "rs.rides/airport-transfers",
+  "displayName": "rs.rides/airport-transfers",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Airport transfers: Novi Sad ↔ Belgrade Airport (BEG). Look up prices and book a ride.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "rs.rides/airport-transfers",
+    "remotes": [
+      {
+        "url": "https://rides.rs/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7c3c317f62b01b70",
+      "type": "other",
+      "url": "https://rides.rs/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://rides.rs/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/vladand-source/rides",
+    "homepage": "https://rides.rs/en/for-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "rs.rides/airport-transfers"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

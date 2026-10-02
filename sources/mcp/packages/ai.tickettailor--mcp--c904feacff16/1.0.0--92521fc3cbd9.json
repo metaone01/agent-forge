@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.tickettailor/mcp",
+  "name": "ai.tickettailor/mcp",
+  "displayName": "ai.tickettailor/mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Provides event organisers with tools to interact with a Ticket Tailor box office account.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.tickettailor/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.tickettailor.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.tickettailor.ai/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fc741c14f86e1a27",
+      "type": "other",
+      "url": "https://mcp.tickettailor.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tickettailor.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f39bf1603e225226",
+      "type": "other",
+      "url": "https://mcp.tickettailor.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tickettailor.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=15",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.tickettailor/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

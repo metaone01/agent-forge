@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.bowmark/bowmark",
+  "name": "ai.bowmark/bowmark",
+  "displayName": "Bowmark",
+  "version": "8.153.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Do things on live websites: prices, availability, quotes, bookings, anything behind a form or login.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "bowmark-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.bowmark.ai/mcp/registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7d5640502b543fa2",
+      "type": "registry",
+      "url": "https://pypi.org/project/bowmark-mcp",
+      "registry": "pypi",
+      "version": "2.1.0"
+    },
+    {
+      "id": "upstream-98d92a5470ca2ab2",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@bowmark/mcp",
+      "registry": "npm",
+      "version": "2.1.0"
+    },
+    {
+      "id": "upstream-1c1e069d86cd41a2",
+      "type": "other",
+      "url": "https://api.bowmark.ai/mcp/registry",
+      "install": {
+        "type": "api",
+        "url": "https://api.bowmark.ai/mcp/registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bowmark-ai/skill",
+    "homepage": "https://bowmark.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.bowmark/bowmark"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

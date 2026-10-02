@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.postflow/mcp",
+  "name": "app.postflow/mcp",
+  "displayName": "PostFlow",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Schedule, publish and manage social media posts across platforms.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.postflow/mcp",
+    "remotes": [
+      {
+        "url": "https://api.postflow.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f437a5c172968d2c",
+      "type": "other",
+      "url": "https://api.postflow.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.postflow.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.postflow/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

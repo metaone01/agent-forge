@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.asharehub/mcp",
+  "name": "com.asharehub/mcp",
+  "displayName": "AShareHub — Chinese A-Share Market Data",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cloud MCP server for Chinese A-share and ETF market data, news, financials and capital flows.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.asharehub/mcp",
+    "remotes": [
+      {
+        "url": "https://asharehub.com/mcp/sse?api_key={api_key}",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8cacdc7c86b18fdb",
+      "type": "other",
+      "url": "https://asharehub.com/mcp/sse?api_key={api_key}",
+      "install": {
+        "type": "api",
+        "url": "https://asharehub.com/mcp/sse?api_key={api_key}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://asharehub.com/en/docs#mcp-setup"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.asharehub/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

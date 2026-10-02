@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.de.nebenkostenpro/nebenkosten",
+  "name": "de.nebenkostenpro/nebenkosten",
+  "displayName": "NebenkostenPro",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "German housing costs: utility costs of 400 cities, property tax rates, housing benefit, deadlines.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "de.nebenkostenpro/nebenkosten",
+    "remotes": [
+      {
+        "url": "https://nebenkostenpro.de/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-880bce47b77711cd",
+      "type": "other",
+      "url": "https://nebenkostenpro.de/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://nebenkostenpro.de/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://nebenkostenpro.de/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "de.nebenkostenpro/nebenkosten"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

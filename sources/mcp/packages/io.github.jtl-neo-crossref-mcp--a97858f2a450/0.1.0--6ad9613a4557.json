@@ -2,48 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jtl-neo/crossref-mcp",
   "name": "io.github.jtl-neo/crossref-mcp",
+  "displayName": "io.github.jtl-neo/crossref-mcp",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "MCP server wrapping the Crossref REST API for scholarly metadata.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/jtl-neo/crossref-api-MCP",
-    "homepage": "https://github.com/jtl-neo/crossref-api-MCP",
-    "readme": "https://github.com/jtl-neo/crossref-api-MCP#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "crossref-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server wrapping the Crossref REST API for scholarly metadata.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "crossref-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e773ed15f2efce93",
       "type": "registry",
-      "url": "https://pypi.org/project/crossref-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/crossref-mcp",
+      "registry": "pypi",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-b98a1b66bb3ff746",
+      "type": "oci",
+      "url": "https://docker.io/heyinnaneo/crossref-mcp:0.1.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/jtl-neo/crossref-api-MCP",
+    "homepage": "https://github.com/jtl-neo/crossref-api-MCP"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jtl-neo__crossref-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=222",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jtl-neo/crossref-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

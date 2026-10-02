@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.openworklabs/openwork",
+  "name": "com.openworklabs/openwork",
+  "displayName": "OpenWork MCP Gateway",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your OpenWork org's skills, plugins, workflows, and connections through one OAuth MCP URL.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.openworklabs/openwork",
+    "remotes": [
+      {
+        "url": "https://api.openworklabs.com/mcp/agent",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-305915cf0b6e2c04",
+      "type": "other",
+      "url": "https://api.openworklabs.com/mcp/agent",
+      "install": {
+        "type": "api",
+        "url": "https://api.openworklabs.com/mcp/agent"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/different-ai/openwork",
+    "homepage": "https://openworklabs.com/docs/start-here/connect-openwork-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=67",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.openworklabs/openwork"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

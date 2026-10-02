@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.trendsmcp/steam",
+  "name": "ai.trendsmcp/steam",
+  "displayName": "Steam Trends MCP",
+  "version": "1.0.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Steam concurrent players by game over time, monthly trends and growth. Free key at trendsmcp.ai",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.trendsmcp/steam",
+    "remotes": [
+      {
+        "url": "https://steam.api.trendsmcp.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8a1bbe17f68bce13",
+      "type": "other",
+      "url": "https://steam.api.trendsmcp.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://steam.api.trendsmcp.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/trendsmcp-ai/steam-trends-mcp",
+    "homepage": "https://trendsmcp.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.trendsmcp/steam"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

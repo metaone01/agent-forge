@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.stcmain/whats-running-mcp",
   "name": "io.github.stcmain/whats-running-mcp",
+  "displayName": "What's Running",
   "version": "0.1.6",
-  "versionScheme": "semver",
-  "description": "Live OS ground truth for agents: running agent sessions, listening ports, daemons, system load.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/stcmain/whats-running-mcp",
-    "homepage": "https://shifttheculture.media/agent-tools",
-    "readme": "https://github.com/stcmain/whats-running-mcp#readme"
-  },
-  "keywords": [
-    "What's Running"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "whats-running-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Live OS ground truth for agents: running agent sessions, listening ports, daemons, system load.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "whats-running-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c8538030eace5025",
       "type": "registry",
       "url": "https://www.npmjs.com/package/whats-running-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.6"
     }
   ],
+  "links": {
+    "repository": "https://github.com/stcmain/whats-running-mcp",
+    "homepage": "https://shifttheculture.media/agent-tools"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.stcmain__whats-running-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=333",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stcmain/whats-running-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

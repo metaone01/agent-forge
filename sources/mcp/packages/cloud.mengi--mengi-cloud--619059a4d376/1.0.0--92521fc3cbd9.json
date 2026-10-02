@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.mengi/mengi-cloud",
+  "name": "cloud.mengi/mengi-cloud",
+  "displayName": "Mengi Cloud",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage Kubernetes clusters, deployments, databases, secrets and observability on Mengi Cloud.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cloud.mengi/mengi-cloud",
+    "remotes": [
+      {
+        "url": "https://mcp.mengi.cloud/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c9620e5cecb02146",
+      "type": "other",
+      "url": "https://mcp.mengi.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mengi.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mengi.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cloud.mengi/mengi-cloud"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

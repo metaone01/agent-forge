@@ -2,48 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.ai.adtest/adtest-mcp",
   "name": "ai.adtest/adtest-mcp",
+  "displayName": "ai.adtest/adtest-mcp",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "AI-only ad scoring for Claude: score image, video or text ads on 13 dimensions before you spend.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/menaker/adtest-mcp",
-    "homepage": "https://adtest.ai/",
-    "readme": "https://github.com/menaker/adtest-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "adtest-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AI-only ad scoring for Claude: score image, video or text ads on 13 dimensions before you spend.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "adtest-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e2e4e6f23c0b221a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/adtest-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/menaker/adtest-mcp",
+    "homepage": "https://adtest.ai/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.adtest__adtest-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=1",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.adtest/adtest-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

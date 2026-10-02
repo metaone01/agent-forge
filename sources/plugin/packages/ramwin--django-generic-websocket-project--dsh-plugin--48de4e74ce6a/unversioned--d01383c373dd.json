@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.48de4e74ce6a97b5aa4f503d11dc97429769a14966241063dcf4deac9e7e8502",
+  "name": "ramwin/django-generic-websocket-project/dsh-plugin",
+  "displayName": "ramwin/django-generic-websocket-project/dsh-plugin",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "AI Council for DeepSeek Harness: 让 DeepSeek 做计划/编码/执行/评价，每一步都交给 Kimi、Claude 等异模型迭代评审，并在每轮 AI 反馈后留出 3 秒人工打断窗口。底层复用 django-generic-websocket-project 的 HTTP + WebSocket 广播服务。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "dsh-plugin/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/ramwin/django-generic-websocket-project",
+    "readme": "https://github.com/ramwin/django-generic-websocket-project#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ramwin/django-generic-websocket-project/tree/HEAD/dsh-plugin"
+    }
+  ],
+  "keywords": [
+    "models",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16337"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

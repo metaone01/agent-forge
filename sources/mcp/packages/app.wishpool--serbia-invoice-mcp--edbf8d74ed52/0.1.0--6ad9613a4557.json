@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/serbia-invoice-mcp",
+  "name": "app.wishpool/serbia-invoice-mcp",
+  "displayName": "Serbia Invoices (SEF eFaktura national API)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Serbia SEF eFaktura invoices for AI agents: build UBL 2.1 SRB-CIUS, upload to SEF, query, cancel.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/serbia-invoice-mcp",
+    "remotes": [
+      {
+        "url": "https://inv-rs.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2d303fcd8e90b3e6",
+      "type": "other",
+      "url": "https://inv-rs.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://inv-rs.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/serbia-invoice-mcp",
+    "homepage": "https://github.com/junter1989k-ai/serbia-invoice-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=23",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/serbia-invoice-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

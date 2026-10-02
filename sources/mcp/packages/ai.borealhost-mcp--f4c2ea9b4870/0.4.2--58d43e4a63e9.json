@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.ai.borealhost/mcp",
   "name": "ai.borealhost/mcp",
+  "displayName": "BorealHost",
   "version": "0.4.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Agent-native web hosting — deploy sites, manage DNS, register domains, scale infrastructure",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/alainsvrd/borealhost-mcp",
-    "homepage": "https://borealhost.ai",
-    "readme": "https://github.com/alainsvrd/borealhost-mcp#readme"
-  },
-  "keywords": [
-    "BorealHost"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "borealhost-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "borealhost-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://borealhost.ai/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-64a20686008a522d",
       "type": "registry",
-      "url": "https://pypi.org/project/borealhost-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/borealhost-mcp",
+      "registry": "pypi",
+      "version": "0.4.2"
+    },
+    {
+      "id": "upstream-5b264692591f0460",
+      "type": "other",
+      "url": "https://borealhost.ai/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://borealhost.ai/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/alainsvrd/borealhost-mcp",
+    "homepage": "https://borealhost.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.borealhost__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.borealhost/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

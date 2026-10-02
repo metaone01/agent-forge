@@ -2,49 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alice51849/lumi-app-finder",
   "name": "io.github.alice51849/lumi-app-finder",
+  "displayName": "Lumi App Finder",
   "version": "1.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Find Lumi Studio iOS apps by task across all 50 Apple locales, with direct App Store links.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/alice51849/lumi-mcp",
-    "homepage": "https://alice51849.github.io/ios-app-guide/",
-    "readme": "https://github.com/alice51849/lumi-mcp#readme"
-  },
-  "keywords": [
-    "Lumi App Finder"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-c18438c81005a95f",
+      "type": "archive",
       "url": "https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "1.3.0"
+    },
+    {
+      "id": "upstream-a731ed0ee2110595",
+      "type": "oci",
+      "url": "https://ghcr.io/alice51849/lumi-app-finder:1.3.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/alice51849/lumi-mcp",
+    "homepage": "https://alice51849.github.io/ios-app-guide/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alice51849__lumi-app-finder.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alice51849/lumi-app-finder"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

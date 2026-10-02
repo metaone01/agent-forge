@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cpfhub/cpfhub",
   "name": "io.github.cpfhub/cpfhub",
+  "displayName": "io.github.cpfhub/cpfhub",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "MCP server for CPFHub.io. Query Brazilian CPF data directly from AI agents.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/cpfhub/cpfhub-mcp",
-    "readme": "https://github.com/cpfhub/cpfhub-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@cpfhub/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for CPFHub.io. Query Brazilian CPF data directly from AI agents.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cpfhub/mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-12bdd080ce7e42b6",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@cpfhub/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/cpfhub/cpfhub-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cpfhub__cpfhub.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cpfhub/cpfhub"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

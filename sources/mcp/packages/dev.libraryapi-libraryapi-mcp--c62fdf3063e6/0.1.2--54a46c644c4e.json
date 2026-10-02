@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.dev.libraryapi/libraryapi-mcp",
   "name": "dev.libraryapi/libraryapi-mcp",
+  "displayName": "LibraryAPI",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "US public libraries and branches near any address, with collections from the IMLS survey",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/library-api/libraryapi-mcp",
-    "homepage": "https://libraryapi.dev",
-    "readme": "https://github.com/library-api/libraryapi-mcp#readme"
-  },
-  "keywords": [
-    "LibraryAPI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "libraryapi-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "US public libraries and branches near any address, with collections from the IMLS survey",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "libraryapi-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2d9f3643ba6c309c",
       "type": "registry",
-      "url": "https://pypi.org/project/libraryapi-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/libraryapi-mcp",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/library-api/libraryapi-mcp",
+    "homepage": "https://libraryapi.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.libraryapi__libraryapi-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=92",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.libraryapi/libraryapi-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

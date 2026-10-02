@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.m9labs-railscope/verantis-mcp",
   "name": "io.github.m9labs-railscope/verantis-mcp",
+  "displayName": "io.github.m9labs-railscope/verantis-mcp",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Verified directory for machine payments (x402 & MPP): check services and wallets before agents pay.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/m9labs-railscope/verantis-mcp",
-    "readme": "https://github.com/m9labs-railscope/verantis-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "verantis-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Verified directory for machine payments (x402 & MPP): check services and wallets before agents pay.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "verantis-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.verantis.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-48a7b3440a4fda5c",
       "type": "registry",
-      "url": "https://pypi.org/project/verantis-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/verantis-mcp",
+      "registry": "pypi",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-c9686f85782fc588",
+      "type": "other",
+      "url": "https://api.verantis.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.verantis.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/m9labs-railscope/verantis-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.m9labs-railscope__verantis-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=231",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.m9labs-railscope/verantis-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

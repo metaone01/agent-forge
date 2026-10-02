@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.clauxel.mcpriskledger/mcpriskledger-mcp",
+  "name": "com.clauxel.mcpriskledger/mcpriskledger-mcp",
+  "displayName": "MCP Risk Ledger MCP",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Paid remote MCP for server intake risk reports, tool review, approvals, and readiness.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.clauxel.mcpriskledger/mcpriskledger-mcp",
+    "remotes": [
+      {
+        "url": "https://mcpriskledger.clauxel.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b611c8e25389d81c",
+      "type": "other",
+      "url": "https://mcpriskledger.clauxel.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpriskledger.clauxel.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mcpriskledger.clauxel.com/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=40",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.clauxel.mcpriskledger/mcpriskledger-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

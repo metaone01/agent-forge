@@ -2,50 +2,67 @@
   "schemaVersion": 2,
   "id": "mcp.io.banksync/mcp",
   "name": "io.banksync/mcp",
+  "displayName": "BankSync",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "Connect AI agents to bank accounts, transactions, balances, and investments.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/banksynchq/banksync-mcp",
-    "homepage": "https://banksync.io/developers",
-    "readme": "https://github.com/banksynchq/banksync-mcp#readme"
-  },
-  "keywords": [
-    "BankSync"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@banksync/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Connect AI agents to bank accounts, transactions, balances, and investments.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@banksync/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.banksync.io",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-91ae21cb5a8199f6",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@banksync/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-9d37f81f4a29c4ee",
+      "type": "registry",
+      "url": "https://pypi.org/project/banksync-mcp",
+      "registry": "pypi",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-fd21ed2d3b05c0b5",
+      "type": "other",
+      "url": "https://mcp.banksync.io",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.banksync.io"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/banksynchq/banksync-mcp",
+    "homepage": "https://banksync.io/developers"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +75,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.banksync__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=102",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.banksync/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

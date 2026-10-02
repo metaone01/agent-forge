@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.calcourtdeadlines/deadlines",
+  "name": "com.calcourtdeadlines/deadlines",
+  "displayName": "California Court Deadlines",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Computes California state court deadlines and cites the code section behind every date. No API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.calcourtdeadlines/deadlines",
+    "remotes": [
+      {
+        "url": "https://calcourtdeadlines.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a32c971d03332856",
+      "type": "other",
+      "url": "https://calcourtdeadlines.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://calcourtdeadlines.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://calcourtdeadlines.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=38",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.calcourtdeadlines/deadlines"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

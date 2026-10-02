@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jyswee/taufunctions",
+  "name": "io.github.jyswee/taufunctions",
+  "displayName": "io.github.jyswee/taufunctions",
+  "version": "1.2.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Serverless functions for coding agents. Deploy, invoke, monitor. 13 tools, stdio or remote.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "taufunctions",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.taufunctions.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.taufunctions.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cb09133aa1d82c7b",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/taufunctions",
+      "registry": "npm",
+      "version": "1.2.5"
+    },
+    {
+      "id": "upstream-19ec69325cf1a7a5",
+      "type": "other",
+      "url": "https://mcp.taufunctions.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.taufunctions.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-24fc649e8c64c993",
+      "type": "other",
+      "url": "https://mcp.taufunctions.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.taufunctions.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jyswee/taufunctions",
+    "homepage": "https://taufunctions.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=223",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jyswee/taufunctions"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

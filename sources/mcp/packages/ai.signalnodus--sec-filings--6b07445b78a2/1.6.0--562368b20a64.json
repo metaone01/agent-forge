@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.signalnodus/sec-filings",
+  "name": "ai.signalnodus/sec-filings",
+  "displayName": "Signal Nodus SEC Filings",
+  "version": "1.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Amendment-safe 10-K/10-Q section diffs, claim checks vs XBRL, 8-K events. Accuracy published.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.signalnodus/sec-filings",
+    "remotes": [
+      {
+        "url": "https://mcp.signalnodus.ai/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2c8a797e79db78ac",
+      "type": "other",
+      "url": "https://mcp.signalnodus.ai/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.signalnodus.ai/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hgenix20/signalnodus",
+    "homepage": "https://signalnodus.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=12",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.signalnodus/sec-filings"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

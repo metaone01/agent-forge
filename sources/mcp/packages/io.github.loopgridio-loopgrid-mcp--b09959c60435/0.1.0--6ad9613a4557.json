@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.loopgridio/loopgrid-mcp",
   "name": "io.github.loopgridio/loopgrid-mcp",
+  "displayName": "LoopGrid MCP",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP bridge for tamper-evident evidence around consequential AI and agent decisions.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/loopgridio/loopgrid-mcp",
-    "readme": "https://github.com/loopgridio/loopgrid-mcp#readme"
-  },
-  "keywords": [
-    "LoopGrid MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "loopgrid-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "loopgrid-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a1d94d846b1c37d4",
       "type": "registry",
-      "url": "https://pypi.org/project/loopgrid-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/loopgrid-mcp",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/loopgridio/loopgrid-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.loopgridio__loopgrid-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=230",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.loopgridio/loopgrid-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

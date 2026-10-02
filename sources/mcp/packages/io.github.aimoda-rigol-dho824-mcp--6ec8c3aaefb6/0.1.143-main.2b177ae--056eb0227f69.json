@@ -2,49 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aimoda/rigol-dho824-mcp",
   "name": "io.github.aimoda/rigol-dho824-mcp",
+  "displayName": "Rigol DHO824 Oscilloscope",
   "version": "0.1.143-main.2b177ae",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Control and query Rigol DHO824 oscilloscope for waveform capture and measurements",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/aimoda/rigol-dho824-mcp",
-    "homepage": "https://aimoda.github.io/rigol-dho824-mcp/",
-    "readme": "https://github.com/aimoda/rigol-dho824-mcp#readme"
-  },
-  "keywords": [
-    "Rigol DHO824 Oscilloscope"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/aimoda/rigol-dho824-mcp:0.1.143-main.2b177ae",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/aimoda/rigol-dho824-mcp:0.1.143-main.2b177ae",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/aimoda/rigol-dho824-mcp",
-      "priority": 10,
+      "id": "upstream-9fcea2285f774fb1",
+      "type": "oci",
+      "url": "https://ghcr.io/aimoda/rigol-dho824-mcp:0.1.143-main.2b177ae",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-48ffdf3ed73c6760",
+      "type": "registry",
+      "url": "https://pypi.org/project/rigol-dho824-mcp",
+      "registry": "pypi",
+      "version": "0.1.143"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aimoda/rigol-dho824-mcp",
+    "homepage": "https://aimoda.github.io/rigol-dho824-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aimoda__rigol-dho824-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=167",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aimoda/rigol-dho824-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.58799cedf5b89c848524fefddb42c918f06b1d87f1630902c7bab9a2bfbca13a",
+  "name": "xby-skill/xby-seg",
+  "displayName": "xby-skill/xby-seg",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "实例分割比目标检测更进一步，不但要识别图像中的单个对象，还要将其从图像的其余部分中分割出来。对图像中的80类COCO目标进行实例分割，输出边界框、掩膜、置信度和类别标签。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/xby-skill/xby-seg",
+    "readme": "https://github.com/xby-skill/xby-seg#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/xby-skill/xby-seg"
+    }
+  ],
+  "keywords": [
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12726"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12410"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

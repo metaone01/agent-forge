@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pvliesdonk/paperless-mcp",
   "name": "io.github.pvliesdonk/paperless-mcp",
+  "displayName": "Paperless MCP",
   "version": "3.0.0",
-  "versionScheme": "semver",
-  "description": "Paperless-NGX over MCP: search, read, upload and tag documents; manage correspondents and types.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/pvliesdonk/paperless-mcp",
-    "homepage": "https://pvliesdonk.github.io/paperless-mcp/",
-    "readme": "https://github.com/pvliesdonk/paperless-mcp#readme"
-  },
-  "keywords": [
-    "Paperless MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "pvliesdonk-paperless-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Paperless-NGX over MCP: search, read, upload and tag documents; manage correspondents and types.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "pvliesdonk-paperless-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3e7c2a83d8afe03b",
       "type": "registry",
-      "url": "https://pypi.org/project/pvliesdonk-paperless-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/pvliesdonk-paperless-mcp",
+      "registry": "pypi",
+      "version": "3.0.0"
+    },
+    {
+      "id": "upstream-dfa9a0dcdbd17248",
+      "type": "oci",
+      "url": "https://ghcr.io/pvliesdonk/paperless-mcp:v3.0.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/pvliesdonk/paperless-mcp",
+    "homepage": "https://pvliesdonk.github.io/paperless-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pvliesdonk__paperless-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=292",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pvliesdonk/paperless-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.putput-io-dev/putput-mcp",
   "name": "io.github.putput-io-dev/putput-mcp",
+  "displayName": "io.github.putput-io-dev/putput-mcp",
   "version": "0.0.3",
-  "versionScheme": "semver",
-  "description": "File uploads for AI agents. Upload, list, and manage files. No signup required.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/putput-io/mcp",
-    "readme": "https://github.com/putput-io/mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@putput/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "File uploads for AI agents. Upload, list, and manage files. No signup required.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@putput/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://putput.io/api/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f4478959e44fe236",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@putput/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.0.3"
+    },
+    {
+      "id": "upstream-cbf86e1006045473",
+      "type": "other",
+      "url": "https://putput.io/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://putput.io/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/putput-io/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.putput-io-dev__putput-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=292",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.putput-io-dev/putput-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

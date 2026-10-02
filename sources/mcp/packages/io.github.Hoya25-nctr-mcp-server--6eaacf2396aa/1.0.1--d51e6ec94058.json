@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Hoya25/nctr-mcp-server",
   "name": "io.github.Hoya25/nctr-mcp-server",
+  "displayName": "io.github.Hoya25/nctr-mcp-server",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "NCTR Alliance rewards — search bounties, check earning rates, and discover communities.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Hoya25/mcp-server",
-    "readme": "https://github.com/Hoya25/mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@hoya25/nctr-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "NCTR Alliance rewards — search bounties, check earning rates, and discover communities.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@hoya25/nctr-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://yhwcaodofmbusjurawhp.supabase.co/functions/v1/mcp/rpc",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4e7ac54fb8109f11",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@hoya25/nctr-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-f4e3e3843efda298",
+      "type": "other",
+      "url": "https://yhwcaodofmbusjurawhp.supabase.co/functions/v1/mcp/rpc",
+      "install": {
+        "type": "api",
+        "url": "https://yhwcaodofmbusjurawhp.supabase.co/functions/v1/mcp/rpc"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Hoya25/mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.hoya25__nctr-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=133",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Hoya25/nctr-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

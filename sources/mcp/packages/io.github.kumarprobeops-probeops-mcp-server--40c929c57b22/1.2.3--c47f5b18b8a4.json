@@ -2,48 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kumarprobeops/probeops-mcp-server",
   "name": "io.github.kumarprobeops/probeops-mcp-server",
+  "displayName": "io.github.kumarprobeops/probeops-mcp-server",
   "version": "1.2.3",
-  "versionScheme": "semver",
-  "description": "Network diagnostics from 6 global regions. SSL, DNS, ping, whois, traceroute, port scan, latency.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/kumarprobeops/probeops-mcp-server",
-    "homepage": "https://probeops.com",
-    "readme": "https://github.com/kumarprobeops/probeops-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@probeops/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Network diagnostics from 6 global regions. SSL, DNS, ping, whois, traceroute, port scan, latency.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@probeops/mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0a2374aac313ce74",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@probeops/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kumarprobeops/probeops-mcp-server",
+    "homepage": "https://probeops.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kumarprobeops__probeops-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kumarprobeops/probeops-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

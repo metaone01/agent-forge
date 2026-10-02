@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.marcosnovo/lexvibe",
   "name": "io.github.marcosnovo/lexvibe",
+  "displayName": "io.github.marcosnovo/lexvibe",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "One-step legal compliance for vibe-coded apps: privacy, terms, cookie banner and EU AI Act check.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/marcosnovo/lexvibe-mcp",
-    "homepage": "https://golexvibe.com",
-    "readme": "https://github.com/marcosnovo/lexvibe-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@lexvibe/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "One-step legal compliance for vibe-coded apps: privacy, terms, cookie banner and EU AI Act check.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@lexvibe/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://golexvibe.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c689b6cd43baba54",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@lexvibe/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-712c05cfd76faa1e",
+      "type": "other",
+      "url": "https://golexvibe.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://golexvibe.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/marcosnovo/lexvibe-mcp",
+    "homepage": "https://golexvibe.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.marcosnovo__lexvibe.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=233",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.marcosnovo/lexvibe"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

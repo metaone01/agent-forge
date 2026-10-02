@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.akmalovaa/proxmox-mcp",
   "name": "io.github.akmalovaa/proxmox-mcp",
+  "displayName": "Proxmox VE",
   "version": "2.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Manage Proxmox VE nodes, VMs, containers, storage and snapshots. Read-only by default.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/akmalovaa/proxmox-mcp",
-    "homepage": "https://github.com/akmalovaa/proxmox-mcp",
-    "readme": "https://github.com/akmalovaa/proxmox-mcp#readme"
-  },
-  "keywords": [
-    "Proxmox VE"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "proxmox-ve-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "proxmox-ve-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-68d47f19a4aeee38",
       "type": "registry",
-      "url": "https://pypi.org/project/proxmox-ve-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/proxmox-ve-mcp",
+      "registry": "pypi",
+      "version": "2.3.0"
+    },
+    {
+      "id": "upstream-e234d989cad33c98",
+      "type": "oci",
+      "url": "https://ghcr.io/akmalovaa/proxmox-mcp:2.3.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/akmalovaa/proxmox-mcp",
+    "homepage": "https://github.com/akmalovaa/proxmox-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.akmalovaa__proxmox-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=167",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.akmalovaa/proxmox-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

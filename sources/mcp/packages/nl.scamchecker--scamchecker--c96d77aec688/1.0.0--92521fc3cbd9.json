@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.nl.scamchecker/scamchecker",
+  "name": "nl.scamchecker/scamchecker",
+  "displayName": "Scamchecker.nl",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check a suspicious message, link or screenshot for scams (NL/BE). Marks red flags and explains why.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "nl.scamchecker/scamchecker",
+    "remotes": [
+      {
+        "url": "https://scamchecker.nl/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6a584ef5c2026f1f",
+      "type": "other",
+      "url": "https://scamchecker.nl/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://scamchecker.nl/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/smrht/scamchecker-plugin",
+    "homepage": "https://scamchecker.nl"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "nl.scamchecker/scamchecker"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

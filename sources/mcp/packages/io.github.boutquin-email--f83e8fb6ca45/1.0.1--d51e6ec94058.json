@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.boutquin/email",
   "name": "io.github.boutquin/email",
+  "displayName": "Email (IMAP/SMTP)",
   "version": "1.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Multi-account IMAP/SMTP email server with 22 tools for reading, sending, searching, and organizing.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/boutquin/mcp-server-email",
-    "readme": "https://github.com/boutquin/mcp-server-email#readme"
-  },
-  "keywords": [
-    "Email (IMAP/SMTP)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/boutquin/mcp-server-email:latest",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/boutquin/mcp-server-email:latest",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/boutquin/mcp-server-email",
-      "priority": 10,
+      "id": "upstream-d0656e1b84e5a32b",
+      "type": "oci",
+      "url": "https://ghcr.io/boutquin/mcp-server-email:latest",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/boutquin/mcp-server-email"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.boutquin__email.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=178",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.boutquin/email"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

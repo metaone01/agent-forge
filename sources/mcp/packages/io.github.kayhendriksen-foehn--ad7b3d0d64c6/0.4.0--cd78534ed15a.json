@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kayhendriksen/foehn",
   "name": "io.github.kayhendriksen/foehn",
+  "displayName": "foehn",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Access Swiss meteorological open data from MeteoSwiss, powered by foehn",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/kayhendriksen/foehn",
-    "homepage": "https://github.com/kayhendriksen/foehn",
-    "readme": "https://github.com/kayhendriksen/foehn#readme"
-  },
-  "keywords": [
-    "foehn"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "foehn",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Access Swiss meteorological open data from MeteoSwiss, powered by foehn",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "foehn",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-03e7b78fc03b33eb",
       "type": "registry",
-      "url": "https://pypi.org/project/foehn/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/foehn",
+      "registry": "pypi",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kayhendriksen/foehn",
+    "homepage": "https://github.com/kayhendriksen/foehn"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kayhendriksen__foehn.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=224",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kayhendriksen/foehn"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

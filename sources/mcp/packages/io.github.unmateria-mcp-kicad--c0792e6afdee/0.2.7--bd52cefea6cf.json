@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.unmateria/mcp-kicad",
   "name": "io.github.unmateria/mcp-kicad",
+  "displayName": "KiCad Schematics",
   "version": "0.2.7",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Design KiCad schematics by talking to Claude. Places parts, wires nets, runs ERC. Needs KiCad 10.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/unmateria/MCP-Kicad",
-    "readme": "https://github.com/unmateria/MCP-Kicad#readme"
-  },
-  "keywords": [
-    "KiCad Schematics"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/unmateria/MCP-Kicad/releases/download/v0.2.7/mcp-kicad.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/unmateria/MCP-Kicad/releases/download/v0.2.7/mcp-kicad.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-5e9ad633bc0d2877",
+      "type": "archive",
       "url": "https://github.com/unmateria/MCP-Kicad/releases/download/v0.2.7/mcp-kicad.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/unmateria/MCP-Kicad"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.unmateria__mcp-kicad.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=344",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.unmateria/mcp-kicad"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

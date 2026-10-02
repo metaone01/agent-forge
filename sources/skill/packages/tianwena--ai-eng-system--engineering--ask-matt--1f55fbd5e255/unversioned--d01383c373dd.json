@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.91c0aaa485916548bc9a5f10d6e45e70697c62f13e0757ffc2f82d2c0b74e5dc",
+  "name": "tianwena/ai-eng-system/engineering/ask-matt",
+  "displayName": "tianwena/ai-eng-system/engineering/ask-matt",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "本仓库自身的检查器（validate-skills / verify-all 等）需要一个 YAML 解析器。**为什么不用手写解析**：validate-skills 的全部价值在于用 DSH 真正用的那个解析器去判——手写的宽松解析会把 DSH 会拒绝的技能判成合格，那就是闸门撒谎。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "engineering/ask-matt/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/tianwena/ai-eng-system",
+    "readme": "https://github.com/tianwena/ai-eng-system/blob/HEAD/engineering/ask-matt/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/tianwena/ai-eng-system/tree/HEAD/engineering/ask-matt"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13986"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

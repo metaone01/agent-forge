@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.zepgram/toyota",
   "name": "io.github.zepgram/toyota",
+  "displayName": "Toyota & Lexus",
   "version": "0.3.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Toyota & Lexus vehicles: fuel, range, location, trips, health, climate, charging, commands",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/zepgram/toyota-mcp",
-    "homepage": "https://github.com/zepgram/toyota-mcp",
-    "readme": "https://github.com/zepgram/toyota-mcp#readme"
-  },
-  "keywords": [
-    "Toyota & Lexus"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "toyota-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "toyota-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ac2abacd5ff8d40f",
       "type": "registry",
-      "url": "https://pypi.org/project/toyota-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/toyota-mcp",
+      "registry": "pypi",
+      "version": "0.3.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/zepgram/toyota-mcp",
+    "homepage": "https://github.com/zepgram/toyota-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.zepgram__toyota.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=355",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.zepgram/toyota"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

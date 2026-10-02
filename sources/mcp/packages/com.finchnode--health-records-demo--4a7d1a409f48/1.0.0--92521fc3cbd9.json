@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.finchnode/health-records-demo",
+  "name": "com.finchnode/health-records-demo",
+  "displayName": "FinchNode Synthetic Health Records",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Synthetic EHR: medications, labs, conditions, allergies, immunizations, FHIR R4. No API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.finchnode/health-records-demo",
+    "remotes": [
+      {
+        "url": "https://api.finchnode.com/demo/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f791bbc4e2d2dbbc",
+      "type": "other",
+      "url": "https://api.finchnode.com/demo/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.finchnode.com/demo/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://finchnode.com/developers/demo-api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=48",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.finchnode/health-records-demo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

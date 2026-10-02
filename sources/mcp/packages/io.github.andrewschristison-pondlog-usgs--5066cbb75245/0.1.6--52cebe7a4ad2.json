@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.andrewschristison/pondlog-usgs",
   "name": "io.github.andrewschristison/pondlog-usgs",
+  "displayName": "io.github.andrewschristison/pondlog-usgs",
   "version": "0.1.6",
-  "versionScheme": "semver",
-  "description": "USGS Water Services MCP server. Real-time streamflow, gage height, and site metadata from NWIS.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/andrewschristison/pondlog",
-    "readme": "https://github.com/andrewschristison/pondlog#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@pondlog/mcp-usgs",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "USGS Water Services MCP server. Real-time streamflow, gage height, and site metadata from NWIS.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pondlog/mcp-usgs",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ed0eb4330f5b7cae",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@pondlog/mcp-usgs",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.6"
     }
   ],
+  "links": {
+    "repository": "https://github.com/andrewschristison/pondlog"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.andrewschristison__pondlog-usgs.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=169",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.andrewschristison/pondlog-usgs"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.com.1102tools/gsa-calc-mcp",
   "name": "com.1102tools/gsa-calc-mcp",
+  "displayName": "GSA CALC+",
   "version": "1.0.9",
-  "versionScheme": "semver",
-  "description": "GSA CALC+ awarded labor ceiling rates from more than 230,000 MAS contract records. 8 tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/1102tools-dev/federal-contracting-mcps",
-    "homepage": "https://1102tools.com",
-    "readme": "https://github.com/1102tools-dev/federal-contracting-mcps#readme"
-  },
-  "keywords": [
-    "GSA CALC+"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "gsa-calc-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "GSA CALC+ awarded labor ceiling rates from more than 230,000 MAS contract records. 8 tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "gsa-calc-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-781b6f68b49e31ab",
       "type": "registry",
-      "url": "https://pypi.org/project/gsa-calc-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/gsa-calc-mcp",
+      "registry": "pypi",
+      "version": "1.0.9"
     }
   ],
+  "links": {
+    "repository": "https://github.com/1102tools-dev/federal-contracting-mcps",
+    "homepage": "https://1102tools.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.1102tools__gsa-calc-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.1102tools/gsa-calc-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.visuary/actuarial-value-calculator",
+  "name": "ai.visuary/actuarial-value-calculator",
+  "displayName": "Visuary Actuarial Value Calculator",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Calculate Actuarial Value (AV) & metal tier of a health insurance plan from any document.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.visuary/actuarial-value-calculator",
+    "remotes": [
+      {
+        "url": "https://mcp.visuary.ai/av",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8ec91408a4c61e66",
+      "type": "other",
+      "url": "https://mcp.visuary.ai/av",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.visuary.ai/av"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://visuary.ai/connectors/actuarial-value-calculator"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.visuary/actuarial-value-calculator"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

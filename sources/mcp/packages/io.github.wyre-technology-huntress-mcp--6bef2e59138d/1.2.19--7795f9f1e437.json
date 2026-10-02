@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wyre-technology/huntress-mcp",
   "name": "io.github.wyre-technology/huntress-mcp",
+  "displayName": "Huntress",
   "version": "1.2.19",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Huntress — accounts, organizations, agents, incidents, and reports.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/wyre-technology/huntress-mcp",
-    "homepage": "https://github.com/wyre-technology/huntress-mcp",
-    "readme": "https://github.com/wyre-technology/huntress-mcp#readme"
-  },
-  "keywords": [
-    "Huntress"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-technology/huntress-mcp:v1.2.19",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-technology/huntress-mcp:v1.2.19",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-technology/huntress-mcp",
-      "priority": 10,
+      "id": "upstream-38f510a6cdba7cc6",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-technology/huntress-mcp:v1.2.19",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wyre-technology/huntress-mcp",
+    "homepage": "https://github.com/wyre-technology/huntress-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-technology__huntress-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=351",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wyre-technology/huntress-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

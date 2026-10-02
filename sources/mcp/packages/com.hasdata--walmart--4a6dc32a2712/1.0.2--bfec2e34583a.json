@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.hasdata/walmart",
+  "name": "com.hasdata/walmart",
+  "displayName": "HasData Walmart",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Walmart search, product pages and customer reviews on walmart.com and walmart.ca, as JSON.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@hasdata/walmart-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.hasdata.com/mcp?apis=walmart",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-463e5541fce9e133",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@hasdata/walmart-mcp",
+      "registry": "npm",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-a50e2cca81103e33",
+      "type": "registry",
+      "url": "https://pypi.org/project/hasdata-walmart-mcp",
+      "registry": "pypi",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-929cc8d7a8915bb2",
+      "type": "other",
+      "url": "https://mcp.hasdata.com/mcp?apis=walmart",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.hasdata.com/mcp?apis=walmart"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/HasData/walmart-mcp",
+    "homepage": "https://docs.hasdata.com/apis/walmart/search"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hasdata/walmart"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

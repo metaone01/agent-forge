@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.291cee13340106193b7c44993672738bcfeae8a60e829aa549ad1290b6a80534",
+  "name": "jing-hy/dsh-unified-market",
+  "displayName": "jing-hy/dsh-unified-market",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "统一插件市场（Unified Plugin Market for DeepSeek Harness）：聚合精选目录（awesome-dsh-plugin.com）+ GitHub dsh-plugin 生态 + npm registry 三源；对 DSH Desktop（EAC）特化（web-desktop profile）；来源白名单 + 冲突预检 + 试装验证；后台自动检测 +",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/jing-hy/dsh-unified-market",
+    "readme": "https://github.com/jing-hy/dsh-unified-market#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/jing-hy/dsh-unified-market"
+    },
+    {
+      "id": "npm-2965aae14519",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-unified-market",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "marketplace",
+    "terminal"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "9972"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/jing-hy__dsh-unified-market.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "10266"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-unified-market"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

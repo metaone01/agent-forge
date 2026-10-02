@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.f52b480484634766f59983d4d320f5c96bb9c82e5d04b08b6ee062408a6f9fa0",
+  "name": "xiaoyuink/dsh-image-vision",
+  "displayName": "xiaoyuink/dsh-image-vision",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "图片识别插件：自动判断当前模型是否具备视觉能力，有则用当前模型并按插件预设提示词分析，无则调用插件配置的视觉模型。文本模型可直接在对话框粘贴/上传/拖拽图片，发送时自动写入 DSH 附件存储（永久），消息区渲染缩略图，模型自动调用 image_vision / ocr / ground / crop 系列工具识别与精读；模型选择器保持简洁。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/xiaoyuink/dsh-image-vision",
+    "readme": "https://github.com/xiaoyuink/dsh-image-vision#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/xiaoyuink/dsh-image-vision"
+    }
+  ],
+  "keywords": [
+    "vision",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "4571"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/xiaoyuink__dsh-image-vision.yml"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "2645"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "4321"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "4274"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

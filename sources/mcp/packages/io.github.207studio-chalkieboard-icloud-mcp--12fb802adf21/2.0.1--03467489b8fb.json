@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.207studio/chalkieboard-icloud-mcp",
   "name": "io.github.207studio/chalkieboard-icloud-mcp",
+  "displayName": "Chalkieboard iCloud",
   "version": "2.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read Chalkieboard (iPad) iCloud lesson folders, add materials, append lesson plans. No network.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/207studio/chalkieboard-icloud-mcp",
-    "homepage": "https://github.com/207studio/chalkieboard-icloud-mcp",
-    "readme": "https://github.com/207studio/chalkieboard-icloud-mcp#readme"
-  },
-  "keywords": [
-    "Chalkieboard iCloud"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/207studio/chalkieboard-icloud-mcp/releases/download/v2.0.1/chalkieboard.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/207studio/chalkieboard-icloud-mcp/releases/download/v2.0.1/chalkieboard.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1360128003/3bdad728-0276-432b-adda-8fbb4e179551?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T11%3A13%3A51Z&rscd=attachment%3B+filename%3Dchalkieboard.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T10%3A13%3A35Z&ske=2026-09-22T11%3A13%3A51Z&sks=b&skv=2018-11-09&sig=pDE%2BTrkpXhR%2Fr8dmjAbN650Zct6kKgBQLEgpMoaFnEQ%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3MjQ5NSwibmJmIjoxNzkwMDcyMTk1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.NisKNrvqYHG3cfVqTVha5UYxErsnwm7lGPnslg1TNoY&response-content-disposition=attachment%3B%20filename%3Dchalkieboard.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
+      "id": "upstream-b14dc7448432b4ff",
+      "type": "archive",
+      "url": "https://github.com/207studio/chalkieboard-icloud-mcp/releases/download/v2.0.1/chalkieboard.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/207studio/chalkieboard-icloud-mcp",
+    "homepage": "https://github.com/207studio/chalkieboard-icloud-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.207studio__chalkieboard-icloud-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=105",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.207studio/chalkieboard-icloud-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

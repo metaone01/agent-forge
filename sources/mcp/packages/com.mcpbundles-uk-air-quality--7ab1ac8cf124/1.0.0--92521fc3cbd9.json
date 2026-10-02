@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcpbundles/uk-air-quality",
   "name": "com.mcpbundles/uk-air-quality",
+  "displayName": "UK Air Quality MCP Server from MCPBundles",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Access UK air quality data, monitoring sites, and hourly pollutant measurements across regions",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/thinkchainai/mcpbundles",
-    "homepage": "https://mcpbundles.com/skills/uk-air-quality",
-    "readme": "https://github.com/thinkchainai/mcpbundles#readme"
-  },
-  "keywords": [
-    "UK Air Quality MCP Server from MCPBundles"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-air-quality-v1.0.0+build.5d5a8d2a/uk-air-quality.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-air-quality-v1.0.0+build.5d5a8d2a/uk-air-quality.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.mcpbundles.com/bundle/uk-air-quality/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-e526edaa5a495d9d",
+      "type": "archive",
       "url": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-air-quality-v1.0.0+build.5d5a8d2a/uk-air-quality.mcpb",
-      "priority": 10,
       "registry": "mcpb"
+    },
+    {
+      "id": "upstream-fceeb2432028414f",
+      "type": "other",
+      "url": "https://mcp.mcpbundles.com/bundle/uk-air-quality/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mcpbundles.com/bundle/uk-air-quality/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/thinkchainai/mcpbundles",
+    "homepage": "https://mcpbundles.com/skills/uk-air-quality"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcpbundles__uk-air-quality.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpbundles/uk-air-quality"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

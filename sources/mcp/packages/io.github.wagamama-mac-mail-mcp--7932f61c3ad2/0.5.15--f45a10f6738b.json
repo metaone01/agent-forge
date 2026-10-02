@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wagamama/mac-mail-mcp",
   "name": "io.github.wagamama/mac-mail-mcp",
+  "displayName": "Mac Mail MCP",
   "version": "0.5.15",
-  "versionScheme": "semver",
-  "description": "Mac Mail MCP server with full-coverage FTS5 body search for local Apple Mail.",
-  "license": "GNU General Public License v3 (GPLv3)",
-  "links": {
-    "repository": "https://github.com/wagamama/apple-app-mcp",
-    "readme": "https://github.com/wagamama/apple-app-mcp#readme"
-  },
-  "keywords": [
-    "Mac Mail MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mac-mail-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Mac Mail MCP server with full-coverage FTS5 body search for local Apple Mail.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mac-mail-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9188d69e12f7b364",
       "type": "registry",
-      "url": "https://pypi.org/project/mac-mail-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mac-mail-mcp",
+      "registry": "pypi",
+      "version": "0.5.15"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wagamama/apple-app-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wagamama__mac-mail-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=348",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wagamama/mac-mail-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

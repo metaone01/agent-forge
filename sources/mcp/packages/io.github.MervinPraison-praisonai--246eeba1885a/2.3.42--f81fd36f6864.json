@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MervinPraison/praisonai",
   "name": "io.github.MervinPraison/praisonai",
+  "displayName": "PraisonAI",
   "version": "2.3.42",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "AI Agents Framework with Self Reflection and MCP support",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/MervinPraison/PraisonAI",
-    "readme": "https://github.com/MervinPraison/PraisonAI#readme"
-  },
-  "keywords": [
-    "PraisonAI"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "praisonai",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "praisonai",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4a73091fe4636b21",
       "type": "registry",
-      "url": "https://pypi.org/project/praisonai/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/praisonai",
+      "registry": "pypi",
+      "version": "2.3.42"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MervinPraison/PraisonAI"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mervinpraison__praisonai.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MervinPraison/praisonai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

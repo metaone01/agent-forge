@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Webba-Creative-Technologies/capslane",
   "name": "io.github.Webba-Creative-Technologies/capslane",
+  "displayName": "io.github.Webba-Creative-Technologies/capslane",
   "version": "0.1.8",
-  "versionScheme": "semver",
-  "description": "Retrieve existing or generated YouTube transcripts with timestamps through Capslane.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Webba-Creative-Technologies/capslane-mcp",
-    "readme": "https://github.com/Webba-Creative-Technologies/capslane-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@webba_tech/capslane-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Retrieve existing or generated YouTube transcripts with timestamps through Capslane.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@webba_tech/capslane-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://capslane.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-27b4bb31b7e6833b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@webba_tech/capslane-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.8"
+    },
+    {
+      "id": "upstream-fbe055f8013e5822",
+      "type": "other",
+      "url": "https://capslane.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://capslane.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Webba-Creative-Technologies/capslane-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.webba-creative-technologies__capslane.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=160",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Webba-Creative-Technologies/capslane"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

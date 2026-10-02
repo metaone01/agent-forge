@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.hyreflow/hyreflow",
+  "name": "ai.hyreflow/hyreflow",
+  "displayName": "Hyreflow",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Recruitment automation: source, enrich, qualify and sequence candidates, push to your ATS.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.hyreflow/hyreflow",
+    "remotes": [
+      {
+        "url": "https://recruit.hyreflow.ai/api/v2/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6ec617f4f7c2a73b",
+      "type": "other",
+      "url": "https://recruit.hyreflow.ai/api/v2/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://recruit.hyreflow.ai/api/v2/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/automindz-solutions/hyreflow-plugins",
+    "homepage": "https://hyreflow.ai/docs/mcp-setup"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=7",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.hyreflow/hyreflow"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

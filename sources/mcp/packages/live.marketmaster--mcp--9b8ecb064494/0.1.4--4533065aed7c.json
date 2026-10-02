@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.live.marketmaster/mcp",
+  "name": "live.marketmaster/mcp",
+  "displayName": "live.marketmaster/mcp",
+  "version": "0.1.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live Kalshi and Polymarket data: EV edges, cross-venue arbitrage, markets, and whale trades.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@marketmaster/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.marketmaster.live/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4a41055a8e66fabd",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@marketmaster/mcp",
+      "registry": "npm",
+      "version": "0.1.3"
+    },
+    {
+      "id": "upstream-b50e594a8dafd693",
+      "type": "other",
+      "url": "https://api.marketmaster.live/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.marketmaster.live/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://marketmaster.live/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "live.marketmaster/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

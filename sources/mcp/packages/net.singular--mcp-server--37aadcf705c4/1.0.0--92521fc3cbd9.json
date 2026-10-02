@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.singular/mcp-server",
+  "name": "net.singular/mcp-server",
+  "displayName": "net.singular/mcp-server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Marketing intelligence MCP server providing campaign performance data and analytics tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.singular/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.singular.net/mcp-server/mcp",
+        "transport": "sse"
+      },
+      {
+        "url": "https://mcp.singular.net/mcp-server/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f18d1930ee071a10",
+      "type": "other",
+      "url": "https://mcp.singular.net/mcp-server/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.singular.net/mcp-server/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9afc1d5cebe5fb2c",
+      "type": "other",
+      "url": "https://mcp.singular.net/mcp-server/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.singular.net/mcp-server/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.singular/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

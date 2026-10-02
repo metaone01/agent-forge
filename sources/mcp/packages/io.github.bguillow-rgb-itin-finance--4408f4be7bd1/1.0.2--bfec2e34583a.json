@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bguillow-rgb/itin-finance",
   "name": "io.github.bguillow-rgb/itin-finance",
+  "displayName": "ITIN Finance",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "Verified ITIN lender directory + 290 bilingual guides on US loans, cards & credit without an SSN.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/bguillow-rgb/itin-finance-mcp",
-    "homepage": "https://itinlending.net/mcp",
-    "readme": "https://github.com/bguillow-rgb/itin-finance-mcp#readme"
-  },
-  "keywords": [
-    "ITIN Finance"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "itin-finance-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Verified ITIN lender directory + 290 bilingual guides on US loans, cards & credit without an SSN.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "itin-finance-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.itinlending.net/?src=registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-40e3aa20a866ab29",
       "type": "registry",
       "url": "https://www.npmjs.com/package/itin-finance-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-2f6807189b0c1a5e",
+      "type": "other",
+      "url": "https://mcp.itinlending.net/?src=registry",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.itinlending.net/?src=registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/bguillow-rgb/itin-finance-mcp",
+    "homepage": "https://itinlending.net/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bguillow-rgb__itin-finance.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=176",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bguillow-rgb/itin-finance"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

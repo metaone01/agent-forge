@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.kaiv/email-check",
+  "name": "ai.kaiv/email-check",
+  "displayName": "ai.kaiv/email-check",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Email posture for any domain: can it receive mail, can it be spoofed? MX, SPF and DMARC.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.kaiv/email-check",
+    "remotes": [
+      {
+        "url": "https://api.kaiv.ai/api/bridge/mcp/email-check-b6ab5250",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3c15eb1dcce006ef",
+      "type": "other",
+      "url": "https://api.kaiv.ai/api/bridge/mcp/email-check-b6ab5250",
+      "install": {
+        "type": "api",
+        "url": "https://api.kaiv.ai/api/bridge/mcp/email-check-b6ab5250"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=7",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.kaiv/email-check"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

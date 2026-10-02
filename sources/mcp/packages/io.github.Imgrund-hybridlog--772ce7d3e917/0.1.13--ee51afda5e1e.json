@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Imgrund/hybridlog",
   "name": "io.github.Imgrund/hybridlog",
+  "displayName": "hybridlog",
   "version": "0.1.13",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Reads your own Garmin mirror: readiness, training load, muscle freshness, and read-only SQL.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Imgrund/hybridlog",
-    "homepage": "https://github.com/Imgrund/hybridlog#connect-an-ai",
-    "readme": "https://github.com/Imgrund/hybridlog#readme"
-  },
-  "keywords": [
-    "hybridlog"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/imgrund/hybridlog:0.1.13",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/imgrund/hybridlog:0.1.13",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://{hybridlog_host}/mcp/garmin",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/imgrund/hybridlog",
-      "priority": 10,
+      "id": "upstream-e2bbfeb82eb2aa62",
+      "type": "oci",
+      "url": "https://ghcr.io/imgrund/hybridlog:0.1.13",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-66ef3b54c8ba4cf5",
+      "type": "other",
+      "url": "https://{hybridlog_host}/mcp/garmin",
+      "install": {
+        "type": "api",
+        "url": "https://{hybridlog_host}/mcp/garmin"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Imgrund/hybridlog",
+    "homepage": "https://github.com/Imgrund/hybridlog#connect-an-ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.imgrund__hybridlog.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Imgrund/hybridlog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.joachim-aqf/azure-devops",
+  "name": "io.github.joachim-aqf/azure-devops",
+  "displayName": "Azure DevOps (unofficial remote entry)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Unofficial entry for Microsoft's hosted Azure DevOps MCP server. Not affiliated with Microsoft.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.joachim-aqf/azure-devops",
+    "remotes": [
+      {
+        "url": "https://mcp.dev.azure.com/{organization}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4989a314f629884d",
+      "type": "other",
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.dev.azure.com/{organization}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=220",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.joachim-aqf/azure-devops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

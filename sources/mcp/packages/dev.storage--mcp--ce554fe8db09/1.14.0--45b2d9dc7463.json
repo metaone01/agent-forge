@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.storage/mcp",
+  "name": "dev.storage/mcp",
+  "displayName": "Tigris MCP Server",
+  "version": "1.14.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Tigris MCP Server seamlessly connects AI agents to Tigris bucket and object management.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.storage/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.storage.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3251810fb5b34faa",
+      "type": "other",
+      "url": "https://mcp.storage.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.storage.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/tigrisdata/mcp",
+    "homepage": "https://mcp.storage.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=94",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.storage/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.syndicalt/zaxy",
   "name": "io.github.syndicalt/zaxy",
+  "displayName": "io.github.syndicalt/zaxy",
   "version": "3.2.0",
-  "versionScheme": "semver",
-  "description": "Event-sourced, auditable agent memory over MCP: cited checkout, replayable provenance.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/syndicalt/zaxy",
-    "readme": "https://github.com/syndicalt/zaxy#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "zaxy-memory",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Event-sourced, auditable agent memory over MCP: cited checkout, replayable provenance.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "zaxy-memory",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-72c7cdd58b551a2c",
       "type": "registry",
-      "url": "https://pypi.org/project/zaxy-memory/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/zaxy-memory",
+      "registry": "pypi",
+      "version": "3.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/syndicalt/zaxy"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.syndicalt__zaxy.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=335",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.syndicalt/zaxy"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.theoddden/atomic-clock",
   "name": "io.github.theoddden/atomic-clock",
+  "displayName": "io.github.theoddden/atomic-clock",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Current UTC time from NTP atomic clocks. Zero-dependency stdio server.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/theoddden/atomic-clock-mcp",
-    "readme": "https://github.com/theoddden/atomic-clock-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "atomic-clock-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "atomic-clock-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7705733851d0db33",
       "type": "registry",
-      "url": "https://pypi.org/project/atomic-clock-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/atomic-clock-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/theoddden/atomic-clock-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.theoddden__atomic-clock.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=340",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theoddden/atomic-clock"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

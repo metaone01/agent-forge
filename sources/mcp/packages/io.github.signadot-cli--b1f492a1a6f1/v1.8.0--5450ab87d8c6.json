@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.signadot/cli",
   "name": "io.github.signadot/cli",
+  "displayName": "Signadot MCP Server",
   "version": "v1.8.0",
   "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Connect to Signadot to manage ephemeral environments and route traffic to local services.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/signadot/cli",
-    "readme": "https://github.com/signadot/cli#readme"
-  },
-  "keywords": [
-    "Signadot MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/signadot/cli/releases/download/v1.8.0/signadot-cli_mcp_linux_amd64.tar.gz",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/signadot/cli/releases/download/v1.8.0/signadot-cli_mcp_linux_amd64.tar.gz",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-fd84a6977b392c0a",
+      "type": "archive",
       "url": "https://github.com/signadot/cli/releases/download/v1.8.0/signadot-cli_mcp_linux_amd64.tar.gz",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-55ddf354138908d9",
+      "type": "archive",
+      "url": "https://github.com/signadot/cli/releases/download/v1.8.0/signadot-cli_mcp_linux_arm64.tar.gz",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-dd7d2b8c67ddabd1",
+      "type": "archive",
+      "url": "https://github.com/signadot/cli/releases/download/v1.8.0/signadot-cli_mcp_darwin_amd64.tar.gz",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-bdeb7502d4dc7ed0",
+      "type": "archive",
+      "url": "https://github.com/signadot/cli/releases/download/v1.8.0/signadot-cli_mcp_darwin_arm64.tar.gz",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/signadot/cli"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.signadot__cli.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=329",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.signadot/cli"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

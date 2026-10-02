@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.no.synligdigital/aeo-audit",
+  "name": "no.synligdigital/aeo-audit",
+  "displayName": "AEO Audit",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AEO audit: score any website 0-100 for AI visibility. Checks schema, meta, content, AI crawlers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "no.synligdigital/aeo-audit",
+    "remotes": [
+      {
+        "url": "https://aeo-mcp-server.amdal-dev.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0b12875a225027d1",
+      "type": "other",
+      "url": "https://aeo-mcp-server.amdal-dev.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://aeo-mcp-server.amdal-dev.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/piiiico/aeo-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "no.synligdigital/aeo-audit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

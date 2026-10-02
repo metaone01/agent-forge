@@ -2,48 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.astrogilda/waitbus",
   "name": "io.github.astrogilda/waitbus",
+  "displayName": "io.github.astrogilda/waitbus",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Workstation-local event bus: agents wait on or emit CI/pytest/Docker/filesystem events, no polling.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/astrogilda/waitbus",
-    "homepage": "https://github.com/astrogilda/waitbus",
-    "readme": "https://github.com/astrogilda/waitbus#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "waitbus",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Workstation-local event bus: agents wait on or emit CI/pytest/Docker/filesystem events, no polling.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "waitbus",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4dd95246ac8e79ec",
       "type": "registry",
-      "url": "https://pypi.org/project/waitbus/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/waitbus",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/astrogilda/waitbus",
+    "homepage": "https://github.com/astrogilda/waitbus"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.astrogilda__waitbus.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=173",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.astrogilda/waitbus"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

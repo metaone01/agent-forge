@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.bizverify/mcp",
+  "name": "co.bizverify/mcp",
+  "displayName": "BizVerify",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "KYB for AI agents: verify business registrations from MCP clients.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "co.bizverify/mcp",
+    "remotes": [
+      {
+        "url": "https://api.bizverify.co/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-849ee5905cba4350",
+      "type": "other",
+      "url": "https://api.bizverify.co/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.bizverify.co/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/BizVerify/bizverify-mcp",
+    "homepage": "https://bizverify.co/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.bizverify/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

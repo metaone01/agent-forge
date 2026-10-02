@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Spacemandomains/mcp-registry-search",
+  "name": "io.github.Spacemandomains/mcp-registry-search",
+  "displayName": "MCP Registry Search",
+  "version": "1.0.9",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and browse every MCP server in the Model Context Protocol registry.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Spacemandomains/mcp-registry-search",
+    "remotes": [
+      {
+        "url": "https://mcpregistrysearchwilfredleejr.vercel.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-db2db4e7837f3875",
+      "type": "other",
+      "url": "https://mcpregistrysearchwilfredleejr.vercel.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpregistrysearchwilfredleejr.vercel.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Spacemandomains/mcp-registry-search"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=154",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Spacemandomains/mcp-registry-search"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

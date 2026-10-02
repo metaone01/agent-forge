@@ -2,48 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.smeet666/mcp-bbc-goodfood",
   "name": "io.github.smeet666/mcp-bbc-goodfood",
+  "displayName": "io.github.smeet666/mcp-bbc-goodfood",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "Search BBC Good Food recipes, read one, and scale its ingredients. No API key.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/smeet666/mcp-bbc-goodfood",
-    "homepage": "https://github.com/smeet666/mcp-bbc-goodfood#readme",
-    "readme": "https://github.com/smeet666/mcp-bbc-goodfood#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-bbc-goodfood",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search BBC Good Food recipes, read one, and scale its ingredients. No API key.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-bbc-goodfood",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a2f45cf14182490b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-bbc-goodfood",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-b05deda9197f00bb",
+      "type": "archive",
+      "url": "https://github.com/smeet666/mcp-bbc-goodfood/releases/download/v1.1.0/mcp-bbc-goodfood-1.1.0.mcpb",
+      "registry": "mcpb",
+      "version": "1.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/smeet666/mcp-bbc-goodfood",
+    "homepage": "https://github.com/smeet666/mcp-bbc-goodfood#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.smeet666__mcp-bbc-goodfood.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=330",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.smeet666/mcp-bbc-goodfood"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

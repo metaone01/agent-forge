@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MasterPlayspots/motionspec",
   "name": "io.github.MasterPlayspots/motionspec",
+  "displayName": "MotionSpec — verified web motion (reduced-motion / WCAG)",
   "version": "1.2.7",
-  "versionScheme": "semver",
-  "description": "Deterministic motion compiler + validator: reports WCAG 2.2.2 pause-path candidates, fail-closed.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/MasterPlayspots/motionspec",
-    "homepage": "https://motionspec.dev",
-    "readme": "https://github.com/MasterPlayspots/motionspec#readme"
-  },
-  "keywords": [
-    "MotionSpec — verified web motion (reduced-motion / WCAG)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "motionspec",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Deterministic motion compiler + validator: reports WCAG 2.2.2 pause-path candidates, fail-closed.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "motionspec",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.motionspec.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5784ab11edd5920d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/motionspec",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.7"
+    },
+    {
+      "id": "upstream-63d5eeb4a4b242eb",
+      "type": "other",
+      "url": "https://api.motionspec.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.motionspec.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/MasterPlayspots/motionspec",
+    "homepage": "https://motionspec.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.masterplayspots__motionspec.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MasterPlayspots/motionspec"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

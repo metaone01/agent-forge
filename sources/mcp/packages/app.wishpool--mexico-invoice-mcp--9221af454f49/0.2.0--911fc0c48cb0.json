@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/mexico-invoice-mcp",
+  "name": "app.wishpool/mexico-invoice-mcp",
+  "displayName": "Mexico Invoices (CFDI 4.0 factura electrónica)",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Mexico CFDI 4.0 invoices for AI agents - issue, query, cancel facturas via Facturapi.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/mexico-invoice-mcp",
+    "remotes": [
+      {
+        "url": "https://inv-mx.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ccb0468bb571d94f",
+      "type": "other",
+      "url": "https://inv-mx.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://inv-mx.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/mexico-invoice-mcp",
+    "homepage": "https://github.com/junter1989k-ai/mexico-invoice-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=23",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/mexico-invoice-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.8d16f6464c2425407ee0d9740a18b44f6b51f9f6f9b1f3202de54872980554d9",
+  "name": "ylw-a/dsh-desktop/runtime",
+  "displayName": "ylw-a/dsh-desktop/runtime",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Bundled runtime for the DeepSeek Harness desktop app: the dsh CLI and its full production dependency tree (including peer dependencies that electron-builder otherwise drops).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "runtime/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/ylw-a/dsh-desktop",
+    "readme": "https://github.com/ylw-a/dsh-desktop#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ylw-a/dsh-desktop/tree/HEAD/runtime"
+    }
+  ],
+  "keywords": [
+    "terminal"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "3184"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "5106"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "7468"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "3917"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

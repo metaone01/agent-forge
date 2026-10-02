@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.invoicebadger/invoice-badger",
+  "name": "com.invoicebadger/invoice-badger",
+  "displayName": "com.invoicebadger/invoice-badger",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Invoicing you drive by talking to your AI: log time, raise invoices and track what's owed via MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.invoicebadger/invoice-badger",
+    "remotes": [
+      {
+        "url": "https://invoicebadger.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1dad9dfebba0596d",
+      "type": "other",
+      "url": "https://invoicebadger.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://invoicebadger.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=55",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.invoicebadger/invoice-badger"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MikkoParkkola/mcp-gateway",
   "name": "io.github.MikkoParkkola/mcp-gateway",
+  "displayName": "MCP Gateway",
   "version": "3.5.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Universal MCP gateway with Meta-MCP discovery, routing, and REST API capabilities.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/MikkoParkkola/mcp-gateway",
-    "homepage": "https://github.com/MikkoParkkola/mcp-gateway#readme",
-    "readme": "https://github.com/MikkoParkkola/mcp-gateway#readme"
-  },
-  "keywords": [
-    "MCP Gateway"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/mikkoparkkola/mcp-gateway:3.5.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/mikkoparkkola/mcp-gateway:3.5.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/mikkoparkkola/mcp-gateway",
-      "priority": 10,
+      "id": "upstream-935494dbf08befc2",
+      "type": "oci",
+      "url": "https://ghcr.io/mikkoparkkola/mcp-gateway:3.5.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MikkoParkkola/mcp-gateway",
+    "homepage": "https://github.com/MikkoParkkola/mcp-gateway#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mikkoparkkola__mcp-gateway.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=142",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MikkoParkkola/mcp-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

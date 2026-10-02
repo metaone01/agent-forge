@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.applivery.docs/mcp",
+  "name": "com.applivery.docs/mcp",
+  "displayName": "com.applivery.docs/mcp",
+  "version": "2.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and read the public Applivery docs (MDM & app distribution). Read-only, no auth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.applivery.docs/mcp",
+    "remotes": [
+      {
+        "url": "https://docs.applivery.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b4072c838ab29dd7",
+      "type": "other",
+      "url": "https://docs.applivery.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://docs.applivery.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/applivery/docs-front",
+    "homepage": "https://docs.applivery.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=34",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.applivery.docs/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

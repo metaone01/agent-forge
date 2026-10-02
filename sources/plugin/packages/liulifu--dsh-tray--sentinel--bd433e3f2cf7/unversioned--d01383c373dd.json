@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.bd433e3f2cf706aa9d03cf9f8f407891d1faad4640fa7dfd6927518f1b5100ec",
+  "name": "liulifu/dsh-tray/sentinel",
+  "displayName": "liulifu/dsh-tray/sentinel",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH client sentinel: detects a client plugin that fails to load (the 'Failed to load plugins' page), extracts the culprit plugin name, and beacons it to the dsh-harness-tray local endpoint. Zero",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "sentinel/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/liulifu/dsh-tray",
+    "readme": "https://github.com/liulifu/dsh-tray#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/liulifu/dsh-tray/tree/HEAD/sentinel"
+    }
+  ],
+  "keywords": [
+    "terminal"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12311"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

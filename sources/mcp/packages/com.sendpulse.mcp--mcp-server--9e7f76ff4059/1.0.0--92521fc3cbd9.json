@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.sendpulse.mcp/mcp-server",
+  "name": "com.sendpulse.mcp/mcp-server",
+  "displayName": "SendPulse",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Empower AI agents with SendPulse email, CRM, chatbot, SMTP, and course automation",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.sendpulse.mcp/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.sendpulse.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-63c622a16912ba90",
+      "type": "other",
+      "url": "https://mcp.sendpulse.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.sendpulse.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sendpulse/mcp-server",
+    "homepage": "https://sendpulse.com/features/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=75",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.sendpulse.mcp/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.freshypenguin/ao-page-watch",
+  "name": "com.freshypenguin/ao-page-watch",
+  "displayName": "Austin Oaks Page Watch",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Watch a public web page for changes when your agent cannot stay running. Hourly checks, signed diffs",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.freshypenguin/ao-page-watch",
+    "remotes": [
+      {
+        "url": "https://ao-page-watch-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3178db098c0e20d1",
+      "type": "other",
+      "url": "https://ao-page-watch-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ao-page-watch-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ao-page-watch-production.up.railway.app/mcp/info"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=49",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.freshypenguin/ao-page-watch"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

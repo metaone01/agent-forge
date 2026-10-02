@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.strac-io/strac-mcp-dlp",
   "name": "io.github.strac-io/strac-mcp-dlp",
+  "displayName": "Strac MCP DLP",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Detect and redact PII, PHI, PCI and secrets in text and files before an AI agent sees them.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/strac-io/strac-mcp-dlp",
-    "homepage": "https://www.strac.io/mcp-integrations",
-    "readme": "https://github.com/strac-io/strac-mcp-dlp#readme"
-  },
-  "keywords": [
-    "Strac MCP DLP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "strac-mcp-dlp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Detect and redact PII, PHI, PCI and secrets in text and files before an AI agent sees them.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "strac-mcp-dlp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-00ce1021739674e0",
       "type": "registry",
-      "url": "https://pypi.org/project/strac-mcp-dlp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/strac-mcp-dlp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/strac-io/strac-mcp-dlp",
+    "homepage": "https://www.strac.io/mcp-integrations"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.strac-io__strac-mcp-dlp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.strac-io/strac-mcp-dlp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

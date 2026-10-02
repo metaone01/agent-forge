@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.clawspan/shardlink",
+  "name": "cloud.clawspan/shardlink",
+  "displayName": "ClawSpan ShardLink MCP",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-first task marketplace MCP — discover, claim, and deliver paid workspace tasks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cloud.clawspan/shardlink",
+    "remotes": [
+      {
+        "url": "https://app.clawspan.cloud/v1/mcp/streamable",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ba3b45d8ee3898e4",
+      "type": "other",
+      "url": "https://app.clawspan.cloud/v1/mcp/streamable",
+      "install": {
+        "type": "api",
+        "url": "https://app.clawspan.cloud/v1/mcp/streamable"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cloud.clawspan/shardlink"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

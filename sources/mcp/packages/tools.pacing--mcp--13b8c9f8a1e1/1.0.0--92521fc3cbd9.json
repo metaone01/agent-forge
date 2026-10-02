@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.tools.pacing/mcp",
+  "name": "tools.pacing/mcp",
+  "displayName": "Pacing Tools",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Ask your AI about your fitness: activities and data from Garmin, COROS, Strava, GPX and more",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "tools.pacing/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.pacing.tools/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-21b627507deec7b4",
+      "type": "other",
+      "url": "https://mcp.pacing.tools/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pacing.tools/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://pacing.tools/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=378",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tools.pacing/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.jsonpad/api",
+  "name": "io.jsonpad/api",
+  "displayName": "JSONPad",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Build and run a JSONPad backend: lists, items, indexes, write rules, schema sync, history, flows.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@basementuniverse/jsonpad-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.jsonpad.io/api",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fdd4b4434b4b0a30",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@basementuniverse/jsonpad-mcp",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-dc71708c092f3f8b",
+      "type": "other",
+      "url": "https://mcp.jsonpad.io/api",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.jsonpad.io/api"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://jsonpad.io/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=356",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.jsonpad/api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

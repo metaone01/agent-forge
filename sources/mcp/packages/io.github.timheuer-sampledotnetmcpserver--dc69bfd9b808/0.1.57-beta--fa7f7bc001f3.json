@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.timheuer/sampledotnetmcpserver",
   "name": "io.github.timheuer/sampledotnetmcpserver",
+  "displayName": "io.github.timheuer/sampledotnetmcpserver",
   "version": "0.1.57-beta",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Sample .NET MCP Server",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/timheuer/sampledotnetmcpserver",
-    "readme": "https://github.com/timheuer/sampledotnetmcpserver#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "TimHeuer.SampleDotnetMcpServer",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "TimHeuer.SampleDotnetMcpServer",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9cc94a414b7bdd53",
       "type": "registry",
       "url": "https://www.nuget.org/packages/TimHeuer.SampleDotnetMcpServer",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "0.1.57-beta"
     }
   ],
+  "links": {
+    "repository": "https://github.com/timheuer/sampledotnetmcpserver"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.timheuer__sampledotnetmcpserver.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=341",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.timheuer/sampledotnetmcpserver"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

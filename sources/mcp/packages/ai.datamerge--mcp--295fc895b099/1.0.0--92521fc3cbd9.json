@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.datamerge/mcp",
+  "name": "ai.datamerge/mcp",
+  "displayName": "DataMerge MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "B2B data enrichment for 375M+ companies: legal entities, corporate hierarchies, and contacts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.datamerge/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.datamerge.ai",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2a2b2ff67c7d4bc1",
+      "type": "other",
+      "url": "https://mcp.datamerge.ai",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.datamerge.ai"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=4",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.datamerge/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.vet.bio/biovet-mcp",
+  "name": "vet.bio/biovet-mcp",
+  "displayName": "vet.bio/biovet-mcp",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Moscow vet clinic network (20 clinics, 24/7): clinics, live prices, slots, booking, triage. Russian",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "vet.bio/biovet-mcp",
+    "remotes": [
+      {
+        "url": "https://bio.vet/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4ff5ca464820fb22",
+      "type": "other",
+      "url": "https://bio.vet/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bio.vet/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Bio-Vet/biovet-mcp",
+    "homepage": "https://bio.vet/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "vet.bio/biovet-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

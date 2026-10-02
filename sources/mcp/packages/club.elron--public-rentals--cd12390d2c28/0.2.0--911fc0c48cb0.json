@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.club.elron/public-rentals",
+  "name": "club.elron/public-rentals",
+  "displayName": "Elron Club Public Rentals",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search Elron Club furnished apartments, availability, prices, details, and rental applications.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "club.elron/public-rentals",
+    "remotes": [
+      {
+        "url": "https://elron.club/api/agent/public/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e7ea598f73923172",
+      "type": "other",
+      "url": "https://elron.club/api/agent/public/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://elron.club/api/agent/public/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "club.elron/public-rentals"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,52 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.chuofringer/placeroot",
   "name": "io.github.chuofringer/placeroot",
+  "displayName": "PlaceRoot",
   "version": "0.10.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Grounds AI agents in Overture Maps open data — compact answers, no API key.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/chuofringer/placeroot",
-    "homepage": "https://placeroot.dev",
-    "readme": "https://github.com/chuofringer/placeroot#readme"
-  },
-  "keywords": [
-    "PlaceRoot"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "placeroot",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "placeroot",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e4de6242ca7e8940",
       "type": "registry",
-      "url": "https://pypi.org/project/placeroot/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/placeroot",
+      "registry": "pypi",
+      "version": "0.10.0"
+    },
+    {
+      "id": "upstream-ab8fa14b907edf55",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/placeroot",
+      "registry": "npm",
+      "version": "0.10.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/chuofringer/placeroot",
+    "homepage": "https://placeroot.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +60,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.chuofringer__placeroot.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=182",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.chuofringer/placeroot"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

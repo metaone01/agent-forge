@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.theluckystrike/purchase-order",
+  "name": "io.github.theluckystrike/purchase-order",
+  "displayName": "io.github.theluckystrike/purchase-order",
+  "version": "0.22.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Purchase orders for suppliers: VAT line items, a delivery date, an A4 PDF, mark received.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/billing-docs.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/purchase-order",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a1739e141ba5e18f",
+      "type": "archive",
+      "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/billing-docs.mcpb",
+      "registry": "mcpb",
+      "version": "0.22.0"
+    },
+    {
+      "id": "upstream-f5fb3888c2562000",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/purchase-order",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/purchase-order"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/billing-docs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=339",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/purchase-order"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

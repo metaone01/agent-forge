@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.WYRE-AI/scalepad-mcp",
   "name": "io.github.WYRE-AI/scalepad-mcp",
+  "displayName": "ScalePad",
   "version": "1.0.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for ScalePad — Core, Lifecycle Manager, ControlMap, Backup Radar, and Quoter.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/WYRE-AI/scalepad-mcp",
-    "homepage": "https://github.com/WYRE-AI/scalepad-mcp",
-    "readme": "https://github.com/WYRE-AI/scalepad-mcp#readme"
-  },
-  "keywords": [
-    "ScalePad"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-ai/scalepad-mcp:v1.0.6",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-ai/scalepad-mcp:v1.0.6",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-ai/scalepad-mcp",
-      "priority": 10,
+      "id": "upstream-362435b0aaa24bdc",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-ai/scalepad-mcp:v1.0.6",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/WYRE-AI/scalepad-mcp",
+    "homepage": "https://github.com/WYRE-AI/scalepad-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-ai__scalepad-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=160",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.WYRE-AI/scalepad-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

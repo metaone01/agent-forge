@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.174ed40eb21a955052594077fd167a0153b2e452ce3cdadbd7c4aba08126375e",
+  "name": "KasenRi/dsh-orbit",
+  "displayName": "KasenRi/dsh-orbit",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "让 AI 项目可以在无人监管下持续推进。Orbit 会自动规划任务、分工执行、逐步检查并继续完成后续工作；不同环节可以使用不同模型，让低成本模型承担执行任务、强模型负责规划和审核，从而降低整体 AI 使用成本。Watchdog 还会监控运行异常，在任务卡死或中断时协助恢复。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/KasenRi/dsh-orbit",
+    "readme": "https://github.com/KasenRi/dsh-orbit#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/KasenRi/dsh-orbit"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15830"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/KasenRi__dsh-orbit.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14694"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

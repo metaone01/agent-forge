@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mcpqueen/registry",
+  "name": "com.mcpqueen/registry",
+  "displayName": "MCP Queen",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The evidence layer for MCP: live operational grades plus Trust Receipts for every registry server.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mcpqueen/registry",
+    "remotes": [
+      {
+        "url": "https://mcpqueen.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5a3c7c0a0d422c22",
+      "type": "other",
+      "url": "https://mcpqueen.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpqueen.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mcpqueen/mcpqueen",
+    "homepage": "https://mcpqueen.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpqueen/registry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

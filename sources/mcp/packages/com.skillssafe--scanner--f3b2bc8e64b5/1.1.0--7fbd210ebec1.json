@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.skillssafe/scanner",
+  "name": "com.skillssafe/scanner",
+  "displayName": "SkillsSafe Security Scanner",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI skill security scanner. Detects prompt injection, credential theft, ClawHavoc. Free, no signup.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "skillssafe-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.skillssafe.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-02dfba9e83368754",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/skillssafe-mcp",
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-df34a7f44b5b66f0",
+      "type": "other",
+      "url": "https://mcp.skillssafe.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.skillssafe.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/GUCCI-atlasv/Skillssafe.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.skillssafe/scanner"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

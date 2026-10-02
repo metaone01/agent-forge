@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.amyodov/yet-another-agentic-chat",
   "name": "io.github.amyodov/yet-another-agentic-chat",
+  "displayName": "YAAC",
   "version": "0.5.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Messaging between concurrent AI coding sessions, across clients, over MCP. Zero infrastructure.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/amyodov/yet-another-agentic-chat",
-    "homepage": "https://github.com/amyodov/yet-another-agentic-chat",
-    "readme": "https://github.com/amyodov/yet-another-agentic-chat#readme"
-  },
-  "keywords": [
-    "YAAC"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "yet-another-agentic-chat",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "yet-another-agentic-chat",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2bbad52226801b69",
       "type": "registry",
-      "url": "https://pypi.org/project/yet-another-agentic-chat/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/yet-another-agentic-chat",
+      "registry": "pypi",
+      "version": "0.5.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/amyodov/yet-another-agentic-chat",
+    "homepage": "https://github.com/amyodov/yet-another-agentic-chat"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.amyodov__yet-another-agentic-chat.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=169",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.amyodov/yet-another-agentic-chat"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Khamel83/argus",
   "name": "io.github.Khamel83/argus",
+  "displayName": "Argus Retrieval",
   "version": "1.6.4",
-  "versionScheme": "semver",
-  "description": "Multi-provider search broker for AI agents: 14 providers, 12-step extraction, retrieval workflows.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Khamel83/argus",
-    "readme": "https://github.com/Khamel83/argus#readme"
-  },
-  "keywords": [
-    "Argus Retrieval"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "argus-search",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Multi-provider search broker for AI agents: 14 providers, 12-step extraction, retrieval workflows.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "argus-search",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fc48709bee8f2136",
       "type": "registry",
-      "url": "https://pypi.org/project/argus-search/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/argus-search",
+      "registry": "pypi",
+      "version": "1.6.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Khamel83/argus"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.khamel83__argus.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=137",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Khamel83/argus"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

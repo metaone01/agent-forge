@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Crumbedsausage/zuckerbot",
   "name": "io.github.Crumbedsausage/zuckerbot",
+  "displayName": "ZuckerBot — Meta Ads MCP Server",
   "version": "0.4.4",
-  "versionScheme": "semver",
-  "description": "60+ Meta Ads tools for AI agents: audits, campaign management, audiences and CAPI tracking.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/DatalisHQ/zuckerbot",
-    "homepage": "https://zuckerbot.ai",
-    "readme": "https://github.com/DatalisHQ/zuckerbot#readme"
-  },
-  "keywords": [
-    "ZuckerBot — Meta Ads MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "zuckerbot-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "60+ Meta Ads tools for AI agents: audits, campaign management, audiences and CAPI tracking.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "zuckerbot-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://zuckerbot.ai/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-53e5947a97e6ef7c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/zuckerbot-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.4"
+    },
+    {
+      "id": "upstream-c3557b84b89a90df",
+      "type": "other",
+      "url": "https://zuckerbot.ai/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://zuckerbot.ai/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/DatalisHQ/zuckerbot",
+    "homepage": "https://zuckerbot.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.crumbedsausage__zuckerbot.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=121",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Crumbedsausage/zuckerbot"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

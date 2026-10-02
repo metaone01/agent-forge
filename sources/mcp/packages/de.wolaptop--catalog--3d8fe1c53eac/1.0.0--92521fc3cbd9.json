@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.de.wolaptop/catalog",
+  "name": "de.wolaptop/catalog",
+  "displayName": "wolaptop.de Preisvergleich",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Deutscher Preisvergleich für Laptops – Bestpreis-Suche (read-only).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "de.wolaptop/catalog",
+    "remotes": [
+      {
+        "url": "https://wolaptop.de/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-200cc642fd45b67d",
+      "type": "other",
+      "url": "https://wolaptop.de/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://wolaptop.de/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://wolaptop.de"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "de.wolaptop/catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

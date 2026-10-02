@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/peru-payments-mcp",
+  "name": "app.wishpool/peru-payments-mcp",
+  "displayName": "Peru Payments (Mercado Pago — Yape / PagoEfectivo)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Peru payments for AI agents — Yape / PagoEfectivo via Mercado Pago. Never holds funds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/peru-payments-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-pe.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f12bab2d8cfabfe9",
+      "type": "other",
+      "url": "https://mcp-pe.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-pe.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/peru-payments-mcp",
+    "homepage": "https://github.com/junter1989k-ai/peru-payments-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=23",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/peru-payments-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.anthony-chaudhary/dos-kernel",
   "name": "io.github.anthony-chaudhary/dos-kernel",
+  "displayName": "DOS — the trust substrate for agent fleets",
   "version": "0.30.0",
-  "versionScheme": "semver",
-  "description": "Verify what agents actually shipped, arbitrate file collisions, refuse with structured reasons.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/anthony-chaudhary/dos-kernel",
-    "homepage": "https://github.com/anthony-chaudhary/dos-kernel",
-    "readme": "https://github.com/anthony-chaudhary/dos-kernel#readme"
-  },
-  "keywords": [
-    "DOS — the trust substrate for agent fleets"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "dos-kernel",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Verify what agents actually shipped, arbitrate file collisions, refuse with structured reasons.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "dos-kernel",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3ee77d01f591f415",
       "type": "registry",
-      "url": "https://pypi.org/project/dos-kernel/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/dos-kernel",
+      "registry": "pypi",
+      "version": "0.30.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/anthony-chaudhary/dos-kernel",
+    "homepage": "https://github.com/anthony-chaudhary/dos-kernel"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.anthony-chaudhary__dos-kernel.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=170",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.anthony-chaudhary/dos-kernel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

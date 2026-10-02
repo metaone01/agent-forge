@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.workingcapitalquotes/site",
+  "name": "com.workingcapitalquotes/site",
+  "displayName": "com.workingcapitalquotes/site",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Working Capital Quotes: the site's own MCP server — dataset, enquiry (enquiry = a human handoff,...",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.workingcapitalquotes/site",
+    "remotes": [
+      {
+        "url": "https://workingcapitalquotes.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5e5aa0a415570e2a",
+      "type": "other",
+      "url": "https://workingcapitalquotes.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://workingcapitalquotes.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/joeetdev/venture-estate",
+    "homepage": "https://workingcapitalquotes.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=87",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.workingcapitalquotes/site"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

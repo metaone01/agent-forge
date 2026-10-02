@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.fujimura-ui/japan-real-estate-mcp",
+  "name": "io.github.fujimura-ui/japan-real-estate-mcp",
+  "displayName": "Japan Real Estate Prices",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Japan real estate transaction prices and official land values (MLIT data) by area, year, and type.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.fujimura-ui/japan-real-estate-mcp",
+    "remotes": [
+      {
+        "url": "https://fudousan-mcp.plus-synergy.workers.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://fudousan-mcp.plus-synergy.workers.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-23815099af6685ff",
+      "type": "other",
+      "url": "https://fudousan-mcp.plus-synergy.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fudousan-mcp.plus-synergy.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-84e3e168d0dff648",
+      "type": "other",
+      "url": "https://fudousan-mcp.plus-synergy.workers.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://fudousan-mcp.plus-synergy.workers.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/fujimura-ui/japan-real-estate-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=203",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fujimura-ui/japan-real-estate-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

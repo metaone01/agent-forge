@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ca.taparcelle/foncier",
+  "name": "ca.taparcelle/foncier",
+  "displayName": "TaParcelle, renseignement foncier du Québec",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Québec land intelligence: municipal decisions, zoning, assessment roll, registry, permits.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ca.taparcelle/foncier",
+    "remotes": [
+      {
+        "url": "https://mcp.taparcelle.ca/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-034757d13c9e6dc6",
+      "type": "other",
+      "url": "https://mcp.taparcelle.ca/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.taparcelle.ca/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.taparcelle.ca/connecteur"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ca.taparcelle/foncier"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

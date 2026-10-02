@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.rowb.hive-ledger/rotation",
+  "name": "app.rowb.hive-ledger/rotation",
+  "displayName": "Hive Ledger — deterministic varroa treatment rotation",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Checks a beekeeping varroa treatment rotation for resistance risk and withdrawal-period conflicts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.rowb.hive-ledger/rotation",
+    "remotes": [
+      {
+        "url": "https://hive-ledger.rowb.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3313adde51044a2e",
+      "type": "other",
+      "url": "https://hive-ledger.rowb.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://hive-ledger.rowb.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://hive-ledger.rowb.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.rowb.hive-ledger/rotation"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

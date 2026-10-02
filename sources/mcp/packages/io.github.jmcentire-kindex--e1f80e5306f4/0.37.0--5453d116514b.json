@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jmcentire/kindex",
   "name": "io.github.jmcentire/kindex",
+  "displayName": "Kindex",
   "version": "0.37.0",
-  "versionScheme": "semver",
-  "description": "Persistent knowledge graph and MCP server for AI workflows with git-tracked project context.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/wandercom/kindex",
-    "homepage": "https://kindex.tools/",
-    "readme": "https://github.com/wandercom/kindex#readme"
-  },
-  "keywords": [
-    "Kindex"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "kindex",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Persistent knowledge graph and MCP server for AI workflows with git-tracked project context.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "kindex",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c90a03dc760f8130",
       "type": "registry",
-      "url": "https://pypi.org/project/kindex/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/kindex",
+      "registry": "pypi",
+      "version": "0.37.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wandercom/kindex",
+    "homepage": "https://kindex.tools/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jmcentire__kindex.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=218",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jmcentire/kindex"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

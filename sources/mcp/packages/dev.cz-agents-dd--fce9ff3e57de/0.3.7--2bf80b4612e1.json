@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.dev.cz-agents/dd",
   "name": "dev.cz-agents/dd",
+  "displayName": "dev.cz-agents/dd",
   "version": "0.3.7",
-  "versionScheme": "semver",
-  "description": "Czech & EU due diligence in one call — facts, insolvency, sanctions, VAT, risk score, UBO chain.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/martinhavel/cz-agents-mcp",
-    "homepage": "https://cz-agents.dev",
-    "readme": "https://github.com/martinhavel/cz-agents-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@czagents/dd",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Czech & EU due diligence in one call — facts, insolvency, sanctions, VAT, risk score, UBO chain.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@czagents/dd",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://dd.cz-agents.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f867adbc280a6cb2",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@czagents/dd",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.7"
+    },
+    {
+      "id": "upstream-8aaf69781d3938bb",
+      "type": "other",
+      "url": "https://dd.cz-agents.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://dd.cz-agents.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/martinhavel/cz-agents-mcp",
+    "homepage": "https://cz-agents.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.cz-agents__dd.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=90",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.cz-agents/dd"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

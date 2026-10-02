@@ -2,48 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Delego-Dev/delego",
   "name": "io.github.Delego-Dev/delego",
+  "displayName": "io.github.Delego-Dev/delego",
   "version": "0.3.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Intent-bound action authorization for AI agents: policy, human approval, and a signed audit trail.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Delego-Dev/delego",
-    "homepage": "https://delegohq.com",
-    "readme": "https://github.com/Delego-Dev/delego#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "delego",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "delego",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-45067d7a2f9d26cc",
       "type": "registry",
-      "url": "https://pypi.org/project/delego/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/delego",
+      "registry": "pypi",
+      "version": "0.3.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Delego-Dev/delego",
+    "homepage": "https://delegohq.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.delego-dev__delego.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=123",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Delego-Dev/delego"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

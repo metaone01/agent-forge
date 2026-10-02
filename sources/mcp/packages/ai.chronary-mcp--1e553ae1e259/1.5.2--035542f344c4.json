@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.ai.chronary/mcp",
   "name": "ai.chronary/mcp",
+  "displayName": "Chronary",
   "version": "1.5.2",
-  "versionScheme": "semver",
-  "description": "Calendar API for AI agents: events, availability, Google/Microsoft setup, scheduling, and iCal.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/Chronary/chronary-mcp",
-    "homepage": "https://docs.chronary.ai/mcp/overview",
-    "readme": "https://github.com/Chronary/chronary-mcp#readme"
-  },
-  "keywords": [
-    "Chronary"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@chronary/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Calendar API for AI agents: events, availability, Google/Microsoft setup, scheduling, and iCal.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@chronary/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.chronary.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f9d2242a7f524148",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@chronary/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.5.2"
+    },
+    {
+      "id": "upstream-79688e50576659ff",
+      "type": "other",
+      "url": "https://api.chronary.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.chronary.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Chronary/chronary-mcp",
+    "homepage": "https://docs.chronary.ai/mcp/overview"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.chronary__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.chronary/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

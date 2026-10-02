@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fi.akkilahdot/travel-search",
+  "name": "fi.akkilahdot/travel-search",
+  "displayName": "Akkilahdot travel search",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Realtime package holiday and charter flight prices from Finland. Inventory not on Google Flights.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fi.akkilahdot/travel-search",
+    "remotes": [
+      {
+        "url": "https://www.akkilahdot.fi/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5d12d72c4772f433",
+      "type": "other",
+      "url": "https://www.akkilahdot.fi/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.akkilahdot.fi/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.akkilahdot.fi/api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fi.akkilahdot/travel-search"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.theluckystrike/time-tracker-timesheet-billable-hours",
+  "name": "io.github.theluckystrike/time-tracker-timesheet-billable-hours",
+  "displayName": "io.github.theluckystrike/time-tracker-timesheet-billable-hours",
+  "version": "0.22.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Track billable time from your AI chat: timers, entries, reports, CSV export. All data stays local.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/time-tracker.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/time-tracker",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b067ef1eb85d7cec",
+      "type": "archive",
+      "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/time-tracker.mcpb",
+      "registry": "mcpb",
+      "version": "0.22.0"
+    },
+    {
+      "id": "upstream-335a4e80418a3a0f",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/time-tracker",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/time-tracker"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/time-tracker"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=340",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/time-tracker-timesheet-billable-hours"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

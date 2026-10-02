@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.TencentCloudBase/cloudbase-mcp",
+  "name": "io.github.TencentCloudBase/cloudbase-mcp",
+  "displayName": "CloudBase",
+  "version": "2.34.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "CloudBase MCP: DB, functions, storage, hosting via @cloudbase/cloudbase-mcp",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cloudbase/cloudbase-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://tcb-api.cloud.tencent.com/mcp/v1?env_id={env_id}",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://tcb-api.tencentcloud.com/mcp/v1?env_id={env_id}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6d3afc87d34eaea4",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cloudbase/cloudbase-mcp",
+      "registry": "npm",
+      "version": "2.34.8"
+    },
+    {
+      "id": "upstream-f121345deadcee42",
+      "type": "other",
+      "url": "https://tcb-api.cloud.tencent.com/mcp/v1?env_id={env_id}",
+      "install": {
+        "type": "api",
+        "url": "https://tcb-api.cloud.tencent.com/mcp/v1?env_id={env_id}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-1170172052592ac7",
+      "type": "other",
+      "url": "https://tcb-api.tencentcloud.com/mcp/v1?env_id={env_id}",
+      "install": {
+        "type": "api",
+        "url": "https://tcb-api.tencentcloud.com/mcp/v1?env_id={env_id}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit",
+    "homepage": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=156",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.TencentCloudBase/cloudbase-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

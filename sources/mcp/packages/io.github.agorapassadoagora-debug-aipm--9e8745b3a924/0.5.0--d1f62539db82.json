@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.agorapassadoagora-debug/aipm",
   "name": "io.github.agorapassadoagora-debug/aipm",
+  "displayName": "AI Process Manager (AIPM)",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "Structured Windows state for AI agents: processes, windows, UI trees. No screenshots.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/aipm-engine/AIPM",
-    "readme": "https://github.com/aipm-engine/AIPM#readme"
-  },
-  "keywords": [
-    "AI Process Manager (AIPM)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "aipm-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Structured Windows state for AI agents: processes, windows, UI trees. No screenshots.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "aipm-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0d035be2c388b8db",
       "type": "registry",
       "url": "https://www.npmjs.com/package/aipm-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aipm-engine/AIPM"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.agorapassadoagora-debug__aipm.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=166",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.agorapassadoagora-debug/aipm"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

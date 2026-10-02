@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.primecutsnursery/public-data",
+  "name": "com.primecutsnursery/public-data",
+  "displayName": "Prime Cuts Nursery",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live cannabis clone inventory, seasonal pricing, CA delivery quotes, cultivar genetics. Read-only.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.primecutsnursery/public-data",
+    "remotes": [
+      {
+        "url": "https://www.primecutsnursery.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ba3f211423eec0c6",
+      "type": "other",
+      "url": "https://www.primecutsnursery.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.primecutsnursery.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.primecutsnursery.com/connect"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=70",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.primecutsnursery/public-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

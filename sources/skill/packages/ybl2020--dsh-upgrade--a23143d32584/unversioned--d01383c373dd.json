@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.40290cacaf864cc1fed817b699242e56a1e2b75a91579f2817849a1d85c7aa00",
+  "name": "ybl2020/dsh-upgrade",
+  "displayName": "ybl2020/dsh-upgrade",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "DeepSeek Harness (dsh) 升级流程技能：升级前评估 → 用户审核放行 → 升级 → 升级后验证。含强制备份、回滚手册、第三方插件与技能影响评估。A reviewable, rollback-safe dsh upgrade skill.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/ybl2020/dsh-upgrade",
+    "readme": "https://github.com/ybl2020/dsh-upgrade/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ybl2020/dsh-upgrade"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14803"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "679"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

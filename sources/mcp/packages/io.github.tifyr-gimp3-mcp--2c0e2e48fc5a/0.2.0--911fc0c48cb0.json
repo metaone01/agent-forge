@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.tifyr/gimp3-mcp",
   "name": "io.github.tifyr/gimp3-mcp",
+  "displayName": "GIMP 3 MCP",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Let AI assistants paint, edit and export images in a running GIMP 3, with 80 tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/tifyr/gimp3-mcp",
-    "readme": "https://github.com/tifyr/gimp3-mcp#readme"
-  },
-  "keywords": [
-    "GIMP 3 MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "gimp3-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "gimp3-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8beb1d0dd1dcd678",
       "type": "registry",
-      "url": "https://pypi.org/project/gimp3-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/gimp3-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/tifyr/gimp3-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tifyr__gimp3-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=341",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tifyr/gimp3-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.PanosSalt/MCP-Gateway",
+  "name": "io.github.PanosSalt/MCP-Gateway",
+  "displayName": "MCP Gateway",
+  "version": "1.0.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Multi-tenant MCP platform with OAuth 2.1, Entra SSO, RBAC and audit logging.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.PanosSalt/MCP-Gateway",
+    "remotes": [
+      {
+        "url": "https://your-gateway.example.com/t/your-org/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-504ebecb8f4c6a7b",
+      "type": "other",
+      "url": "https://your-gateway.example.com/t/your-org/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://your-gateway.example.com/t/your-org/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/PanosSalt/MCP-Gateway"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=146",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.PanosSalt/MCP-Gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.kolmo.www/kolmo-mcp-server",
+  "name": "io.kolmo.www/kolmo-mcp-server",
+  "displayName": "io.kolmo.www/kolmo-mcp-server",
+  "version": "1.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "WA permit rules (80+ cities, cited), parcel zoning, L&I license checks, Seattle cost estimates & ROI",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.kolmo.www/kolmo-mcp-server",
+    "remotes": [
+      {
+        "url": "https://www.kolmo.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8ae3d3e228d0b71d",
+      "type": "other",
+      "url": "https://www.kolmo.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.kolmo.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Kolmo-Construction/kolmo-mcp-server",
+    "homepage": "https://www.kolmo.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=357",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.kolmo.www/kolmo-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

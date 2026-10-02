@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.alion/alion",
+  "name": "io.alion/alion",
+  "displayName": "Alion: jobs, employers and labour-market data",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verified job postings from employer ATS boards, employer hiring signals and pay statistics.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.alion/alion",
+    "remotes": [
+      {
+        "url": "https://alion.io/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://alion.io/mcp/oauth",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-82eb5bf3e719db9b",
+      "type": "other",
+      "url": "https://alion.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://alion.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-76f22ae2f0ced660",
+      "type": "other",
+      "url": "https://alion.io/mcp/oauth",
+      "install": {
+        "type": "api",
+        "url": "https://alion.io/mcp/oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://alion.io/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=102",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.alion/alion"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

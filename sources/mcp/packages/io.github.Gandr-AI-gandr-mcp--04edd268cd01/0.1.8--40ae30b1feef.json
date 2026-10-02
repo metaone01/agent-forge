@@ -2,48 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Gandr-AI/gandr-mcp",
   "name": "io.github.Gandr-AI/gandr-mcp",
+  "displayName": "io.github.Gandr-AI/gandr-mcp",
   "version": "0.1.8",
-  "versionScheme": "semver",
-  "description": "Text to speech for MCP clients. 23 languages, six voices, every render watermarked.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Gandr-AI/gandr-mcp",
-    "homepage": "https://gandr.ai",
-    "readme": "https://github.com/Gandr-AI/gandr-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "gandr-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Text to speech for MCP clients. 23 languages, six voices, every render watermarked.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "gandr-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1e05b8cfa3ba7484",
       "type": "registry",
-      "url": "https://pypi.org/project/gandr-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/gandr-mcp",
+      "registry": "pypi",
+      "version": "0.1.8"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Gandr-AI/gandr-mcp",
+    "homepage": "https://gandr.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.gandr-ai__gandr-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=131",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Gandr-AI/gandr-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

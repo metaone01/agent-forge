@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.5ea508f7474495b10c473333bfae8f93b55db05c1a0b2211ca94e613da9c470a",
+  "name": "iamcuteclaw/codex-save-dsh/lid-beacon",
+  "displayName": "iamcuteclaw/codex-save-dsh/lid-beacon",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "A watchdog for a local agent host: bring the host back, raise the agent back, and only then call a second agent.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "lid-beacon/cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/iamcuteclaw/codex-save-dsh",
+    "readme": "https://github.com/iamcuteclaw/codex-save-dsh#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/iamcuteclaw/codex-save-dsh/tree/HEAD/lid-beacon"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15622"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

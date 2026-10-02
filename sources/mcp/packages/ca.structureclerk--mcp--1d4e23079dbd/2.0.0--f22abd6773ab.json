@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ca.structureclerk/mcp",
+  "name": "ca.structureclerk/mcp",
+  "displayName": "StructureClerk",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI agent policy decisions: ALLOW, DENY, APPROVE, ESCALATE. 192 jurisdictions, signed evidence.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ca.structureclerk/mcp",
+    "remotes": [
+      {
+        "url": "https://structureclerk.ca/api/mcp-http",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1f982f40bb4c4fce",
+      "type": "other",
+      "url": "https://structureclerk.ca/api/mcp-http",
+      "install": {
+        "type": "api",
+        "url": "https://structureclerk.ca/api/mcp-http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://structureclerk.ca/authority"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ca.structureclerk/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.theluckystrike/freelance-invoice",
+  "name": "io.github.theluckystrike/freelance-invoice",
+  "displayName": "io.github.theluckystrike/freelance-invoice",
+  "version": "0.21.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Create PDF invoices from your AI chat: clients, numbering, VAT, overdue reports. All data is local.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.21.0/invoice.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/freelance-invoice",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b5e5da8e4a2af277",
+      "type": "archive",
+      "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.21.0/invoice.mcpb",
+      "registry": "mcpb",
+      "version": "0.21.0"
+    },
+    {
+      "id": "upstream-90efe91382bba13c",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/freelance-invoice",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/freelance-invoice"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/invoice"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=339",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/freelance-invoice"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

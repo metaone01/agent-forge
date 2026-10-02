@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.alchemy/mcp",
+  "name": "com.alchemy/mcp",
+  "displayName": "Alchemy MCP Server",
+  "version": "0.7.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Blockchain data across 100+ chains: token prices, NFTs, transfers, simulation, traces, Solana DAS",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.alchemy/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.alchemy.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3b50ddc65329b428",
+      "type": "other",
+      "url": "https://mcp.alchemy.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.alchemy.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://docs.alchemy.com/docs/alchemy-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=33",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.alchemy/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

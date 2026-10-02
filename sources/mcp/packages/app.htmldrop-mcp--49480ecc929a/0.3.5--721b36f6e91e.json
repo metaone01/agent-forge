@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.app.htmldrop/mcp",
   "name": "app.htmldrop/mcp",
+  "displayName": "app.htmldrop/mcp",
   "version": "0.3.5",
-  "versionScheme": "semver",
-  "description": "Publish HTML or Markdown from any MCP client to a live, shareable URL on htmldrop.app.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@htmldrop.app/mcp",
-    "homepage": "https://htmldrop.app"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@htmldrop.app/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Publish HTML or Markdown from any MCP client to a live, shareable URL on htmldrop.app.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@htmldrop.app/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://htmldrop.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-de5845c88243300b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@htmldrop.app/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.5"
+    },
+    {
+      "id": "upstream-7ae1b81a289c1034",
+      "type": "other",
+      "url": "https://htmldrop.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://htmldrop.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://htmldrop.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\app.htmldrop__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=19",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.htmldrop/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

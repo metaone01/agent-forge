@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.taifoon/coordination-layer",
+  "name": "io.taifoon/coordination-layer",
+  "displayName": "Taifoon coordination layer",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Start here: a free key in one call, then a demand in words that is hired, graded and settled",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.taifoon/coordination-layer",
+    "remotes": [
+      {
+        "url": "https://coord.taifoon.dev/mcp?ref=mcp-registry",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://www.taifoon.io/api/mcp?ref=mcp-registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7c692606edc12273",
+      "type": "other",
+      "url": "https://coord.taifoon.dev/mcp?ref=mcp-registry",
+      "install": {
+        "type": "api",
+        "url": "https://coord.taifoon.dev/mcp?ref=mcp-registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-23033fbc0773a69b",
+      "type": "other",
+      "url": "https://www.taifoon.io/api/mcp?ref=mcp-registry",
+      "install": {
+        "type": "api",
+        "url": "https://www.taifoon.io/api/mcp?ref=mcp-registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.taifoon.io/docs/coordination-api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=359",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.taifoon/coordination-layer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

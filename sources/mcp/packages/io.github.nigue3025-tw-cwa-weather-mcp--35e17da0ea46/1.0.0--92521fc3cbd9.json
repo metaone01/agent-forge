@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nigue3025/tw-cwa-weather-mcp",
   "name": "io.github.nigue3025/tw-cwa-weather-mcp",
+  "displayName": "Taiwan CWA Weather",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Access Taiwan CWA weather data and forecasts for all counties and cities",
-  "license": "MIT",
-  "links": {
-    "repository": "https://pypi.org/project/tw-cwa-weather-mcp/"
-  },
-  "keywords": [
-    "Taiwan CWA Weather"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "tw-cwa-weather-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Access Taiwan CWA weather data and forecasts for all counties and cities",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "tw-cwa-weather-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e29b937f83ec68ea",
       "type": "registry",
-      "url": "https://pypi.org/project/tw-cwa-weather-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/tw-cwa-weather-mcp",
+      "registry": "pypi",
+      "version": "1.0.0"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nigue3025__tw-cwa-weather-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=264",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nigue3025/tw-cwa-weather-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

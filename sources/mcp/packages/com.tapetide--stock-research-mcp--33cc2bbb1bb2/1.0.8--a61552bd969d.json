@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.tapetide/stock-research-mcp",
+  "name": "com.tapetide/stock-research-mcp",
+  "displayName": "Tapetide — Indian Stock Market (NSE & BSE)",
+  "version": "1.0.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "52 tools for Indian stock markets — NSE & BSE quotes, screener, financials, FII/DII, options",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "tapetide-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.tapetide.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a0314fc56a1715ce",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/tapetide-mcp",
+      "registry": "npm",
+      "version": "1.0.7"
+    },
+    {
+      "id": "upstream-7f6335a726c8bdf9",
+      "type": "other",
+      "url": "https://mcp.tapetide.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tapetide.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Tapetide-hq/nse-bse-indian-stock-market-data-mcp",
+    "homepage": "https://mcp.tapetide.com/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=80",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.tapetide/stock-research-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

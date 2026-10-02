@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.paulieb89/property-shared",
   "name": "io.github.paulieb89/property-shared",
+  "displayName": "UK Property Data",
   "version": "1.5.1",
-  "versionScheme": "semver",
-  "description": "UK property data — Land Registry comps, EPC, Rightmove, rental yields, stamp duty, Companies House",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/paulieb89/property-shared",
-    "homepage": "https://bouch.dev/products/property-report",
-    "readme": "https://github.com/paulieb89/property-shared#readme"
-  },
-  "keywords": [
-    "UK Property Data"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "property-shared",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "UK property data — Land Registry comps, EPC, Rightmove, rental yields, stamp duty, Companies House",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "property-shared",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://property-shared.fly.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d894a3dbcc5ab45c",
       "type": "registry",
-      "url": "https://pypi.org/project/property-shared/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/property-shared",
+      "registry": "pypi",
+      "version": "1.5.1"
+    },
+    {
+      "id": "upstream-de032685d65acf1d",
+      "type": "other",
+      "url": "https://property-shared.fly.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://property-shared.fly.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/paulieb89/property-shared",
+    "homepage": "https://bouch.dev/products/property-report"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.paulieb89__property-shared.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=270",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.paulieb89/property-shared"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Varpost/scout",
   "name": "io.github.Varpost/scout",
+  "displayName": "Scout Security",
   "version": "0.1.7",
-  "versionScheme": "semver",
-  "description": "Deterministic, zero-token security scanner your AI agent calls to find and re-verify issues.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Varpost/Scout",
-    "readme": "https://github.com/Varpost/Scout#readme"
-  },
-  "keywords": [
-    "Scout Security"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "scout-security",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Deterministic, zero-token security scanner your AI agent calls to find and re-verify issues.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "scout-security",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6ba38aa75a395a9a",
       "type": "registry",
-      "url": "https://pypi.org/project/scout-security/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/scout-security",
+      "registry": "pypi",
+      "version": "0.1.7"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Varpost/Scout"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.varpost__scout.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=158",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Varpost/scout"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

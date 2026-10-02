@@ -2,46 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.co.pepys/pepys-mcp",
   "name": "co.pepys/pepys-mcp",
+  "displayName": "co.pepys/pepys-mcp",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Transcribe audio & video: diarization, timed SRT/VTT, podcasts, paste-a-link, whole-feed batch.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/pepys-mcp"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "pepys-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Transcribe audio & video: diarization, timed SRT/VTT, podcasts, paste-a-link, whole-feed batch.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "pepys-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://pepys.co/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-015213075c2d4455",
       "type": "registry",
       "url": "https://www.npmjs.com/package/pepys-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-248093d145856125",
+      "type": "other",
+      "url": "https://pepys.co/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pepys.co/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\co.pepys__pepys-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.pepys/pepys-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

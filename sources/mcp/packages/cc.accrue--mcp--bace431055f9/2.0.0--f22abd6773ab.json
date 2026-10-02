@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cc.accrue/mcp",
+  "name": "cc.accrue/mcp",
+  "displayName": "cc.accrue/mcp",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Stablecoin Yield Index (SYX) and live USDC vault APYs across Ethereum, Base, Arbitrum.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cc.accrue/mcp",
+    "remotes": [
+      {
+        "url": "https://accrue.cc/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-beb7111070fd59c4",
+      "type": "other",
+      "url": "https://accrue.cc/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://accrue.cc/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://accrue.cc"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cc.accrue/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

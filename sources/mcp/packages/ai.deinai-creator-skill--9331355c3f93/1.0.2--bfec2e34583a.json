@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.ai.deinai/creator-skill",
   "name": "ai.deinai/creator-skill",
+  "displayName": "Creator SKILL — Influencer Discovery",
   "version": "1.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "AI influencer search on TikTok, Instagram, YouTube. Deinai MCP token required; credits per result.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/deinai/deinai_backend",
-    "homepage": "https://deinai.ai",
-    "readme": "https://github.com/deinai/deinai_backend#readme"
-  },
-  "keywords": [
-    "Creator SKILL — Influencer Discovery"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "deinai-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "deinai-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://deinai.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-240c46fbb7324646",
       "type": "registry",
-      "url": "https://pypi.org/project/deinai-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/deinai-mcp",
+      "registry": "pypi",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-662259ab875dc064",
+      "type": "other",
+      "url": "https://deinai.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://deinai.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/deinai/deinai_backend",
+    "homepage": "https://deinai.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.deinai__creator-skill.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=4",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.deinai/creator-skill"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

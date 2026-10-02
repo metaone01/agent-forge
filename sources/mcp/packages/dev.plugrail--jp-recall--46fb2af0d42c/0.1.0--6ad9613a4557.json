@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.plugrail/jp-recall",
+  "name": "dev.plugrail/jp-recall",
+  "displayName": "PlugRail JP Recall",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search Japanese product recalls by keyword and category using public Consumer Affairs Agency data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.plugrail/jp-recall",
+    "remotes": [
+      {
+        "url": "https://jp-recall.plugrail.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-550873e2d3ea49ee",
+      "type": "other",
+      "url": "https://jp-recall.plugrail.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://jp-recall.plugrail.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/plugrail/servers",
+    "homepage": "https://plugrail.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=93",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.plugrail/jp-recall"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

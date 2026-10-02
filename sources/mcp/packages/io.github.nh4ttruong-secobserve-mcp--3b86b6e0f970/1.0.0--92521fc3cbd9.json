@@ -2,47 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nh4ttruong/secobserve-mcp",
   "name": "io.github.nh4ttruong/secobserve-mcp",
+  "displayName": "io.github.nh4ttruong/secobserve-mcp",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for SecObserve: triage findings, import scan reports and SBOMs, generate VEX.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/nh4ttruong/secobserve-mcp",
-    "readme": "https://github.com/nh4ttruong/secobserve-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "secobserve-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "secobserve-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6a0412cf912eb556",
       "type": "registry",
-      "url": "https://pypi.org/project/secobserve-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/secobserve-mcp",
+      "registry": "pypi",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-3f6d9459c205f088",
+      "type": "oci",
+      "url": "https://ghcr.io/nh4ttruong/secobserve-mcp:1.0.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nh4ttruong/secobserve-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nh4ttruong__secobserve-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nh4ttruong/secobserve-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

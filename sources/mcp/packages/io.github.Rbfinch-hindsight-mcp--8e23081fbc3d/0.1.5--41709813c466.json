@@ -2,48 +2,66 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Rbfinch/hindsight-mcp",
   "name": "io.github.Rbfinch/hindsight-mcp",
+  "displayName": "Hindsight MCP",
   "version": "0.1.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for AI-assisted coding with development history: git, tests, Copilot.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Rbfinch/hindsight-mcp",
-    "readme": "https://github.com/Rbfinch/hindsight-mcp#readme"
-  },
-  "keywords": [
-    "Hindsight MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Rbfinch/hindsight-mcp/releases/download/v0.1.5/hindsight-mcp-v0.1.5-x86_64-unknown-linux-gnu.tar.gz",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Rbfinch/hindsight-mcp/releases/download/v0.1.5/hindsight-mcp-v0.1.5-x86_64-unknown-linux-gnu.tar.gz",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1136030242/f7a0d880-c96e-40ee-ab36-41597acb0f54?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T11%3A17%3A59Z&rscd=attachment%3B+filename%3Dhindsight-mcp-v0.1.5-x86_64-unknown-linux-gnu.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T10%3A17%3A24Z&ske=2026-09-22T11%3A17%3A59Z&sks=b&skv=2018-11-09&sig=fgFOyGtCaqI8pTQi55ws7moQhrhD3z3A3AdOMzIrnsA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3MzE2MiwibmJmIjoxNzkwMDcyODYyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.8cVwy7KblawEw7s1PXQvlGIgOuFMaYm9x0xPfuyU02w&response-content-disposition=attachment%3B%20filename%3Dhindsight-mcp-v0.1.5-x86_64-unknown-linux-gnu.tar.gz&response-content-type=application%2Foctet-stream",
-      "priority": 10,
+      "id": "upstream-b55c5573ea0c3736",
+      "type": "archive",
+      "url": "https://github.com/Rbfinch/hindsight-mcp/releases/download/v0.1.5/hindsight-mcp-v0.1.5-x86_64-unknown-linux-gnu.tar.gz",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-c47bbe0d44649eac",
+      "type": "archive",
+      "url": "https://github.com/Rbfinch/hindsight-mcp/releases/download/v0.1.5/hindsight-mcp-v0.1.5-aarch64-unknown-linux-gnu.tar.gz",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-7825a777ca54bc06",
+      "type": "archive",
+      "url": "https://github.com/Rbfinch/hindsight-mcp/releases/download/v0.1.5/hindsight-mcp-v0.1.5-x86_64-apple-darwin.tar.gz",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-993ae9ed8c6d3e99",
+      "type": "archive",
+      "url": "https://github.com/Rbfinch/hindsight-mcp/releases/download/v0.1.5/hindsight-mcp-v0.1.5-aarch64-apple-darwin.tar.gz",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-8f72ff303301ba93",
+      "type": "archive",
+      "url": "https://github.com/Rbfinch/hindsight-mcp/releases/download/v0.1.5/hindsight-mcp-v0.1.5-x86_64-pc-windows-msvc.zip",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Rbfinch/hindsight-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +74,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rbfinch__hindsight-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=149",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Rbfinch/hindsight-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pcas-io/plexus",
+  "name": "io.github.pcas-io/plexus",
+  "displayName": "io.github.pcas-io/plexus",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Typed on-prem knowledge graph for AI agents — read-only for humans, write-only for agents via MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pcas-io/plexus",
+    "remotes": [
+      {
+        "url": "https://{plexus_host}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-950eb983f6830eb7",
+      "type": "other",
+      "url": "https://{plexus_host}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{plexus_host}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pcas-io/plexus"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=271",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pcas-io/plexus"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

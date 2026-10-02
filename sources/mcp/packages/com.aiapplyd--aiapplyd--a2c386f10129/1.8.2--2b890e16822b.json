@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.aiapplyd/aiapplyd",
+  "name": "com.aiapplyd/aiapplyd",
+  "displayName": "AI Applyd",
+  "version": "1.8.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Auto-apply that ends on an interview. Job matches, per-role resumes, apply, approve, track receipts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "aiapplyd-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.aiapplyd.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-747339b63901210b",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/aiapplyd-mcp",
+      "registry": "npm",
+      "version": "1.8.2"
+    },
+    {
+      "id": "upstream-2b7a711b256b2933",
+      "type": "other",
+      "url": "https://mcp.aiapplyd.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aiapplyd.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/aiapplyd/aiapplyd-mcp",
+    "homepage": "https://aiapplyd.com/mcps"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.aiapplyd/aiapplyd"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

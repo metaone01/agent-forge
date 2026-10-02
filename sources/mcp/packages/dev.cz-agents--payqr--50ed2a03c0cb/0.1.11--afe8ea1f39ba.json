@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.cz-agents/payqr",
+  "name": "dev.cz-agents/payqr",
+  "displayName": "dev.cz-agents/payqr",
+  "version": "0.1.11",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "European payment QR — SPAYD (CZ/SK) & EPC/GiroCode (SEPA), plus text/WiFi/vCard. Local, free.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@czagents/payqr",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://payqr.cz-agents.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cd0a53ab1d5f661a",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@czagents/payqr",
+      "registry": "npm",
+      "version": "0.1.4"
+    },
+    {
+      "id": "upstream-9d9895f1896426ed",
+      "type": "other",
+      "url": "https://payqr.cz-agents.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://payqr.cz-agents.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/martinhavel/cz-agents-mcp",
+    "homepage": "https://qr.cz-agents.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=90",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.cz-agents/payqr"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

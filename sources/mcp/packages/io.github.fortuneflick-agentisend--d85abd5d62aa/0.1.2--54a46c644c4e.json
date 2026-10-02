@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.fortuneflick/agentisend",
   "name": "io.github.fortuneflick/agentisend",
+  "displayName": "AgentiSend",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Transactional email API for AI agents: verified domains, a per-sender budget, and a kill switch.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/fortuneflick/agentisend-claude-plugin",
-    "homepage": "https://agentisend.com/docs/guides/mcp",
-    "readme": "https://github.com/fortuneflick/agentisend-claude-plugin#readme"
-  },
-  "keywords": [
-    "AgentiSend"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@agentisend/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Transactional email API for AI agents: verified domains, a per-sender budget, and a kill switch.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@agentisend/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.agentisend.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-915539a2a1caad36",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@agentisend/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-fb9e5639117b7ca9",
+      "type": "other",
+      "url": "https://api.agentisend.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.agentisend.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/fortuneflick/agentisend-claude-plugin",
+    "homepage": "https://agentisend.com/docs/guides/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fortuneflick__agentisend.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fortuneflick/agentisend"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

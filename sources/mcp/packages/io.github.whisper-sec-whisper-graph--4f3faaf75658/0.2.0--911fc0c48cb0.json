@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.whisper-sec/whisper-graph",
   "name": "io.github.whisper-sec/whisper-graph",
+  "displayName": "WhisperGraph",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "The internet's infrastructure graph for AI agents - 46B nodes and edges, free trial via 2 HTTP calls",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/whisper-sec/whisper-graph-mcp",
-    "homepage": "https://www.whisper.security/docs/ai/mcp/setup",
-    "readme": "https://github.com/whisper-sec/whisper-graph-mcp#readme"
-  },
-  "keywords": [
-    "WhisperGraph"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@whisper-security/whisper-graph-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "The internet's infrastructure graph for AI agents - 46B nodes and edges, free trial via 2 HTTP calls",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@whisper-security/whisper-graph-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.whisper.security",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6595867130ee5444",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@whisper-security/whisper-graph-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-3dca5f65d5c5b058",
+      "type": "other",
+      "url": "https://mcp.whisper.security",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.whisper.security"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/whisper-sec/whisper-graph-mcp",
+    "homepage": "https://www.whisper.security/docs/ai/mcp/setup"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.whisper-sec__whisper-graph.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=350",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.whisper-sec/whisper-graph"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

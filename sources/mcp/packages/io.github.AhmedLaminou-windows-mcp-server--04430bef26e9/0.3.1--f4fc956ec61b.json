@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.AhmedLaminou/windows-mcp-server",
   "name": "io.github.AhmedLaminou/windows-mcp-server",
+  "displayName": "Windows Management",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "Local Windows management, diagnostics, security, cleanup, and optimization MCP server.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/AhmedLaminou/windows-mcp-server",
-    "homepage": "https://github.com/AhmedLaminou/windows-mcp-server",
-    "readme": "https://github.com/AhmedLaminou/windows-mcp-server#readme"
-  },
-  "keywords": [
-    "Windows Management"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "windows-management-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Local Windows management, diagnostics, security, cleanup, and optimization MCP server.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "windows-management-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a155b4a3836a3e1a",
       "type": "registry",
-      "url": "https://pypi.org/project/windows-management-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/windows-management-mcp-server",
+      "registry": "pypi",
+      "version": "0.3.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/AhmedLaminou/windows-mcp-server",
+    "homepage": "https://github.com/AhmedLaminou/windows-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ahmedlaminou__windows-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=109",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AhmedLaminou/windows-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

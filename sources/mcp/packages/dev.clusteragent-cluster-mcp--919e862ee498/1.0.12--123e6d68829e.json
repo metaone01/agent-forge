@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.dev.clusteragent/cluster-mcp",
   "name": "dev.clusteragent/cluster-mcp",
+  "displayName": "dev.clusteragent/cluster-mcp",
   "version": "1.0.12",
-  "versionScheme": "semver",
-  "description": "Self-hostable index of AI financial agents — tokenized stocks + crypto, memory, LLM gateway.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/clusteragent/cluster",
-    "readme": "https://github.com/clusteragent/cluster#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@clusteragent/cluster-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Self-hostable index of AI financial agents — tokenized stocks + crypto, memory, LLM gateway.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@clusteragent/cluster-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.clusteragent.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a2d589dabe1ab14c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@clusteragent/cluster-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.12"
+    },
+    {
+      "id": "upstream-7353ee2a5651da58",
+      "type": "other",
+      "url": "https://mcp.clusteragent.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.clusteragent.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/clusteragent/cluster"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.clusteragent__cluster-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=90",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.clusteragent/cluster-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

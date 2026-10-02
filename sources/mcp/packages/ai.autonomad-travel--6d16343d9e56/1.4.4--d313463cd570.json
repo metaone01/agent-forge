@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.ai.autonomad/travel",
   "name": "ai.autonomad/travel",
+  "displayName": "ai.autonomad/travel",
   "version": "1.4.4",
-  "versionScheme": "semver",
-  "description": "AI travel agent — book flights, hotels, activities, and events worldwide via autonomad.ai.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Autonomad1/autonomad1",
-    "homepage": "https://www.autonomad.ai",
-    "readme": "https://github.com/Autonomad1/autonomad1#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "autonomad-travel",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AI travel agent — book flights, hotels, activities, and events worldwide via autonomad.ai.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "autonomad-travel",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.autonomad.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8a36df6c9fb19871",
       "type": "registry",
       "url": "https://www.npmjs.com/package/autonomad-travel",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.4.4"
+    },
+    {
+      "id": "upstream-2a8e6d0d133fef9a",
+      "type": "other",
+      "url": "https://mcp.autonomad.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.autonomad.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Autonomad1/autonomad1",
+    "homepage": "https://www.autonomad.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.autonomad__travel.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=2",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.autonomad/travel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

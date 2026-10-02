@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mcp-dir/restituicao_irpf-mcp",
+  "name": "io.github.mcp-dir/restituicao_irpf-mcp",
+  "displayName": "Restituição IRPF",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Looks up an individual's income tax refund status from the CPF, date of birth, and tax year. Platfor",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mcp-dir/restituicao_irpf-mcp",
+    "remotes": [
+      {
+        "url": "https://api.mcp.ai/p_restituicao_irpf",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0c53def85aaaabf5",
+      "type": "other",
+      "url": "https://api.mcp.ai/p_restituicao_irpf",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcp.ai/p_restituicao_irpf"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mcp-dir/restituicao_irpf-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=243",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mcp-dir/restituicao_irpf-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

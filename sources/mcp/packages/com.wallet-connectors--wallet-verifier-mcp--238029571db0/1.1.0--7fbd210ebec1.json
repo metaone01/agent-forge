@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.wallet-connectors/wallet-verifier-mcp",
+  "name": "com.wallet-connectors/wallet-verifier-mcp",
+  "displayName": "com.wallet-connectors/wallet-verifier-mcp",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for verifying EUDI/Talao wallet data via OIDC4VP (pull) for AI agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.wallet-connectors/wallet-verifier-mcp",
+    "remotes": [
+      {
+        "url": "https://wallet-connectors.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6f80439f387689db",
+      "type": "other",
+      "url": "https://wallet-connectors.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://wallet-connectors.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TalaoDAO/connectors"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=86",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.wallet-connectors/wallet-verifier-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

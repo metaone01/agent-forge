@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.fec7efe16bb0a2ea5961132516fe15def96a55e3c873048a9e54f45edc583cb9",
+  "name": "liuyun847/dsh-host-restart",
+  "displayName": "liuyun847/dsh-host-restart",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 宿主插件:给模型一个 restart_dsh 工具 —— 写重启标记并用 WMI 启动脱离 dsh 进程树的驱动脚本,杀掉当前 dsh 后由常驻看门狗拉起新进程,新进程再用 sessionController 恢复原会话并注入「已重启」继续对话;重启前还会经可选服务 slHandoff(dsh-host-sl 提供)顺手保存一份会话交接记录;重启从不被拒绝 ——",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/liuyun847/dsh-host-restart",
+    "readme": "https://github.com/liuyun847/dsh-host-restart#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/liuyun847/dsh-host-restart"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15963"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16235"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

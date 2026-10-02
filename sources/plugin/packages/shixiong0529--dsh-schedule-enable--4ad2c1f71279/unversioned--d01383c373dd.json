@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.d9b718c207d2d98e5c6dbe3b77a2d2f41c9c21b0d185fe79a078836f77a2133a",
+  "name": "shixiong0529/dsh-schedule-enable",
+  "displayName": "shixiong0529/dsh-schedule-enable",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "在 DeepSeek Harness 的组合 profile 中启用内置持久化调度器 dsh-schedule,让活跃根 Agent 获得 schedule_create / schedule_list / schedule_delete 工具。Enable the built-in durable scheduler in a composing profile.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/shixiong0529/dsh-schedule-enable",
+    "readme": "https://github.com/shixiong0529/dsh-schedule-enable#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/shixiong0529/dsh-schedule-enable"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "8254"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "6630"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "11630"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

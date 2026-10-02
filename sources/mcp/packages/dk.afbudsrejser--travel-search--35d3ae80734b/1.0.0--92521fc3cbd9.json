@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dk.afbudsrejser/travel-search",
+  "name": "dk.afbudsrejser/travel-search",
+  "displayName": "Afbudsrejser travel search",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Realtime package holiday and charter flight prices from Denmark. Inventory not on Google Flights.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dk.afbudsrejser/travel-search",
+    "remotes": [
+      {
+        "url": "https://www.afbudsrejser.dk/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-10488d7909c02b9e",
+      "type": "other",
+      "url": "https://www.afbudsrejser.dk/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.afbudsrejser.dk/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.afbudsrejser.dk/api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dk.afbudsrejser/travel-search"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

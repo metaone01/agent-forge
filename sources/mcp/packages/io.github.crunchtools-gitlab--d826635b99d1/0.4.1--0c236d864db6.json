@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.crunchtools/gitlab",
   "name": "io.github.crunchtools/gitlab",
+  "displayName": "MCP Gitlab",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "Secure MCP server for GitLab projects, merge requests, issues, and pipelines",
-  "license": "GNU Affero General Public License v3 or later (AGPLv3+)",
-  "links": {
-    "repository": "https://github.com/crunchtools/mcp-gitlab",
-    "readme": "https://github.com/crunchtools/mcp-gitlab#readme"
-  },
-  "keywords": [
-    "MCP Gitlab"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-gitlab-crunchtools",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Secure MCP server for GitLab projects, merge requests, issues, and pipelines",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-gitlab-crunchtools",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d5b2c1b519340cb1",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-gitlab-crunchtools/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-gitlab-crunchtools",
+      "registry": "pypi",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/crunchtools/mcp-gitlab"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.crunchtools__gitlab.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=187",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.crunchtools/gitlab"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

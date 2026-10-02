@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.hankookilbo.mcp/hankookilbo-mcp",
+  "name": "com.hankookilbo.mcp/hankookilbo-mcp",
+  "displayName": "한국일보 뉴스 (Hankookilbo)",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hankookilbo (Korean daily) news metadata: titles, dates, sections, bylines, links, and excerpts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.hankookilbo.mcp/hankookilbo-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.hankookilbo.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7e3c8f8d16c6aea9",
+      "type": "other",
+      "url": "https://mcp.hankookilbo.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.hankookilbo.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hkilbo/hankookilbo-mcp",
+    "homepage": "https://www.hankookilbo.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hankookilbo.mcp/hankookilbo-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

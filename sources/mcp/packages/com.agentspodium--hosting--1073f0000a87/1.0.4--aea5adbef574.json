@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.agentspodium/hosting",
+  "name": "com.agentspodium/hosting",
+  "displayName": "AgentsPodium Hosting",
+  "version": "1.0.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Create, watch, pay for and connect hosted AI agent pods on AgentsPodium. Needs an API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.agentspodium/hosting",
+    "remotes": [
+      {
+        "url": "https://mcp.agentspodium.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-507c2a3f4afaf43a",
+      "type": "other",
+      "url": "https://mcp.agentspodium.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.agentspodium.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/agentspodium/agent-gateway",
+    "homepage": "https://hosting.defispace.com/docs/mcp.html"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.agentspodium/hosting"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.aradia/sovereign-hardware",
+  "name": "com.aradia/sovereign-hardware",
+  "displayName": "ARADIA | sovereign & private agentic systems",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "On-prem Agentic AI on NVIDIA DGX. Query specs, model CapEx ROI, Purchase & join Partner Program.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.aradia/sovereign-hardware",
+    "remotes": [
+      {
+        "url": "https://aradia.com/api/a2a/mcp-endpoint.php",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3ac2046e10ecdf38",
+      "type": "other",
+      "url": "https://aradia.com/api/a2a/mcp-endpoint.php",
+      "install": {
+        "type": "api",
+        "url": "https://aradia.com/api/a2a/mcp-endpoint.php"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ARADIA-systems/aradia-mcp-server",
+    "homepage": "https://aradia.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=34",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.aradia/sovereign-hardware"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

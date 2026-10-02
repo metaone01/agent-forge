@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Convrgent/aeo-scanner",
   "name": "io.github.Convrgent/aeo-scanner",
+  "displayName": "AEO Scanner",
   "version": "2.2.1",
-  "versionScheme": "semver",
-  "description": "AI visibility for ChatGPT/Perplexity/Claude — triple score (AEO+GEO+Agent) with fix code. Free.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Convrgent/aeo-scanner-mcp",
-    "readme": "https://github.com/Convrgent/aeo-scanner-mcp#readme"
-  },
-  "keywords": [
-    "AEO Scanner"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "aeo-scanner",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "AI visibility for ChatGPT/Perplexity/Claude — triple score (AEO+GEO+Agent) with fix code. Free.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "aeo-scanner",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://aeo-mcp.convrgent.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-adcbc6e0967bceff",
       "type": "registry",
-      "url": "https://pypi.org/project/aeo-scanner/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/aeo-scanner",
+      "registry": "pypi",
+      "version": "2.2.1"
+    },
+    {
+      "id": "upstream-7007332cb1988351",
+      "type": "other",
+      "url": "https://aeo-mcp.convrgent.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://aeo-mcp.convrgent.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Convrgent/aeo-scanner-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.convrgent__aeo-scanner.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=120",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Convrgent/aeo-scanner"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

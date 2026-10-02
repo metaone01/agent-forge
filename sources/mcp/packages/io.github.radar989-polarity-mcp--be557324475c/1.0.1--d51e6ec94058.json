@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.radar989/polarity-mcp",
   "name": "io.github.radar989/polarity-mcp",
+  "displayName": "Polarity",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Real-time threat intelligence lookups and IOC parsing from your self-hosted Polarity instance.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@polarityio/mcp-connector"
-  },
-  "keywords": [
-    "Polarity"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@polarityio/mcp-connector",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Real-time threat intelligence lookups and IOC parsing from your self-hosted Polarity instance.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@polarityio/mcp-connector",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ae44f9195a6f6c3d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@polarityio/mcp-connector",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.radar989__polarity-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=293",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.radar989/polarity-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

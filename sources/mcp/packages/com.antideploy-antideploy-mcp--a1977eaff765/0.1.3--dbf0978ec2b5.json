@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.com.antideploy/antideploy-mcp",
   "name": "com.antideploy/antideploy-mcp",
+  "displayName": "Antideploy",
   "version": "0.1.3",
-  "versionScheme": "semver",
-  "description": "Deploy an app to Antideploy from a coding agent. No Dockerfile, no YAML, no cloud console.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/antideploy/antideploy-mcp",
-    "homepage": "https://antideploy.com/docs/deploying/mcp",
-    "readme": "https://github.com/antideploy/antideploy-mcp#readme"
-  },
-  "keywords": [
-    "Antideploy"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "antideploy-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Deploy an app to Antideploy from a coding agent. No Dockerfile, no YAML, no cloud console.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "antideploy-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-09fcffa01dc7208a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/antideploy-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/antideploy/antideploy-mcp",
+    "homepage": "https://antideploy.com/docs/deploying/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.antideploy__antideploy-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=34",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.antideploy/antideploy-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

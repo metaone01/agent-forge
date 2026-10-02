@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.devchad-cmd/skilldb",
   "name": "io.github.devchad-cmd/skilldb",
+  "displayName": "SkillDB",
   "version": "0.8.3",
-  "versionScheme": "semver",
-  "description": "A registry of 5,900+ peer-authored skills any MCP agent can search and load on demand.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/devchad-cmd/skilldb-sdk",
-    "homepage": "https://skilldb.dev",
-    "readme": "https://github.com/devchad-cmd/skilldb-sdk#readme"
-  },
-  "keywords": [
-    "SkillDB"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "skilldb",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A registry of 5,900+ peer-authored skills any MCP agent can search and load on demand.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "skilldb",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.skilldb.dev",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9f363e5d415569fc",
       "type": "registry",
       "url": "https://www.npmjs.com/package/skilldb",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.8.3"
+    },
+    {
+      "id": "upstream-3d70f5e5b737a712",
+      "type": "other",
+      "url": "https://mcp.skilldb.dev",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.skilldb.dev"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/devchad-cmd/skilldb-sdk",
+    "homepage": "https://skilldb.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.devchad-cmd__skilldb.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=193",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.devchad-cmd/skilldb"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.name.findadomain/domain-finder",
+  "name": "name.findadomain/domain-finder",
+  "displayName": "Findadomain.name",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Find domains and domain hacks with live availability, registrar prices, and keyword search demand.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "name.findadomain/domain-finder",
+    "remotes": [
+      {
+        "url": "https://findadomain.name/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fe28c8dfa3d30a7d",
+      "type": "other",
+      "url": "https://findadomain.name/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://findadomain.name/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://findadomain.name/?utm_source=mcp-registry&utm_medium=listing&utm_campaign=mcp-launch-sep09"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "name.findadomain/domain-finder"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

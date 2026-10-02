@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.wiselyenterprisesllc/x402-agent-payment-infrastructure",
+  "name": "com.wiselyenterprisesllc/x402-agent-payment-infrastructure",
+  "displayName": "Wisely x402 Agent-Payment Infrastructure",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Self-facilitated x402/MCP payments for hosted endpoints, rail proofs, receipts, and agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.wiselyenterprisesllc/x402-agent-payment-infrastructure",
+    "remotes": [
+      {
+        "url": "https://payments.wiselyenterprisesllc.com/ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4c3d891b28a308d7",
+      "type": "other",
+      "url": "https://payments.wiselyenterprisesllc.com/ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://payments.wiselyenterprisesllc.com/ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://wiselyenterprisesllc.com/guides/x402-agent-payment-infrastructure/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=87",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.wiselyenterprisesllc/x402-agent-payment-infrastructure"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

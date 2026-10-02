@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.dev.forgesworn/402-mcp",
   "name": "dev.forgesworn/402-mcp",
+  "displayName": "dev.forgesworn/402-mcp",
   "version": "3.15.2",
-  "versionScheme": "semver",
-  "description": "AI agents discover, pay for, and consume any Lightning-gated API autonomously",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/forgesworn/402-mcp",
-    "readme": "https://github.com/forgesworn/402-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "402-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AI agents discover, pay for, and consume any Lightning-gated API autonomously",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "402-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1f3110de7e09f3f5",
       "type": "registry",
       "url": "https://www.npmjs.com/package/402-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.15.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/forgesworn/402-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.forgesworn__402-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=91",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.forgesworn/402-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

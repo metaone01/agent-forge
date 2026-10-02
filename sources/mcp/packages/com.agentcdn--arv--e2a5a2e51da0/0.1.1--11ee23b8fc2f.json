@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.agentcdn/arv",
+  "name": "com.agentcdn/arv",
+  "displayName": "AgentCDN ARV",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-Ready Video (ARV): search video moments, moment context, rights, and signed playback",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.agentcdn/arv",
+    "remotes": [
+      {
+        "url": "https://mcp.agentcdn.com/c/{publisher}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e55a31deca95d228",
+      "type": "other",
+      "url": "https://mcp.agentcdn.com/c/{publisher}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.agentcdn.com/c/{publisher}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agentcdn.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.agentcdn/arv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

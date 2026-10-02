@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SocioLogicAI/signal-relay",
   "name": "io.github.SocioLogicAI/signal-relay",
+  "displayName": "io.github.SocioLogicAI/signal-relay",
   "version": "2.0.0",
-  "versionScheme": "semver",
-  "description": "Connect AI agents to SocioLogic's synthetic persona platform for market research.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/SocioLogicAI/signal-relay",
-    "readme": "https://github.com/SocioLogicAI/signal-relay#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "signal-relay-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "streamable-http"
-  },
+  "description": "Connect AI agents to SocioLogic's synthetic persona platform for market research.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "signal-relay-mcp",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://mcp.sociologic.ai",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-aab2982657f0a1d3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/signal-relay-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.0.0"
+    },
+    {
+      "id": "upstream-7dbc08b1e5d82519",
+      "type": "other",
+      "url": "https://mcp.sociologic.ai",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.sociologic.ai"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/SocioLogicAI/signal-relay"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sociologicai__signal-relay.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=154",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SocioLogicAI/signal-relay"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

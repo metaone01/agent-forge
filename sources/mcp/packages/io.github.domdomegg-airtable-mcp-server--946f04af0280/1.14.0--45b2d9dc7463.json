@@ -2,50 +2,57 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.domdomegg/airtable-mcp-server",
   "name": "io.github.domdomegg/airtable-mcp-server",
+  "displayName": "Airtable",
   "version": "1.14.0",
-  "versionScheme": "semver",
-  "description": "Read and write access to Airtable database schemas, tables, and records.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/domdomegg/airtable-mcp-server.git",
-    "homepage": "https://github.com/domdomegg/airtable-mcp-server#readme",
-    "readme": "https://github.com/domdomegg/airtable-mcp-server.git#readme"
-  },
-  "keywords": [
-    "Airtable"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "airtable-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Read and write access to Airtable database schemas, tables, and records.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "airtable-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-85f6799df89e8ec0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/airtable-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.14.0"
+    },
+    {
+      "id": "upstream-7d281d95df338378",
+      "type": "oci",
+      "url": "https://docker.io/domdomegg/airtable-mcp-server:1.14.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-e37fd7a21495ff49",
+      "type": "archive",
+      "url": "https://github.com/domdomegg/airtable-mcp-server/releases/download/v1.14.0/airtable-mcp-server.mcpb",
+      "registry": "mcpb",
+      "version": "1.14.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/domdomegg/airtable-mcp-server.git",
+    "homepage": "https://github.com/domdomegg/airtable-mcp-server#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +65,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.domdomegg__airtable-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=195",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.domdomegg/airtable-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

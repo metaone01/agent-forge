@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.tracegazer/invgate-service-desk-mcp",
   "name": "io.github.tracegazer/invgate-service-desk-mcp",
+  "displayName": "InvGate Service Desk",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "InvGate Service Desk MCP: 96 tools/11 domains, 3-tier access (none/support/full), OTel.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/tracegazer/invgate-service-desk-mcp",
-    "homepage": "https://github.com/tracegazer/invgate-service-desk-mcp",
-    "readme": "https://github.com/tracegazer/invgate-service-desk-mcp#readme"
-  },
-  "keywords": [
-    "InvGate Service Desk"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "invgate-service-desk-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "InvGate Service Desk MCP: 96 tools/11 domains, 3-tier access (none/support/full), OTel.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "invgate-service-desk-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3001c17312c8b9e2",
       "type": "registry",
-      "url": "https://pypi.org/project/invgate-service-desk-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/invgate-service-desk-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-4d037a00e038220f",
+      "type": "oci",
+      "url": "https://ghcr.io/tracegazer/invgate-service-desk-mcp:0.2.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/tracegazer/invgate-service-desk-mcp",
+    "homepage": "https://github.com/tracegazer/invgate-service-desk-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tracegazer__invgate-service-desk-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=342",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tracegazer/invgate-service-desk-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

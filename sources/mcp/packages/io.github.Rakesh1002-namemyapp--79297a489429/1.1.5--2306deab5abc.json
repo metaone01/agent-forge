@@ -2,48 +2,74 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Rakesh1002/namemyapp",
   "name": "io.github.Rakesh1002/namemyapp",
+  "displayName": "io.github.Rakesh1002/namemyapp",
   "version": "1.1.5",
-  "versionScheme": "semver",
-  "description": "Brandable business names with live domain availability + one-click buy URLs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Rakesh1002/namemyapp-mcp",
-    "homepage": "https://namemy.app/agents",
-    "readme": "https://github.com/Rakesh1002/namemyapp-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@namemyapp/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Brandable business names with live domain availability + one-click buy URLs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@namemyapp/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.namemy.app/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.namemy.app/direct",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f77ed369248e2edf",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@namemyapp/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.5"
+    },
+    {
+      "id": "upstream-67cf164f04190533",
+      "type": "other",
+      "url": "https://mcp.namemy.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.namemy.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-95fb5aaef5a1ced6",
+      "type": "other",
+      "url": "https://mcp.namemy.app/direct",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.namemy.app/direct"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Rakesh1002/namemyapp-mcp",
+    "homepage": "https://namemy.app/agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +82,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rakesh1002__namemyapp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=149",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Rakesh1002/namemyapp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

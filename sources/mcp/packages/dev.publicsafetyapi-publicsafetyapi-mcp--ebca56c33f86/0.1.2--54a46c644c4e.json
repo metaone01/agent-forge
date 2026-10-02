@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.dev.publicsafetyapi/publicsafetyapi-mcp",
   "name": "dev.publicsafetyapi/publicsafetyapi-mcp",
+  "displayName": "PublicSafetyAPI",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "US police, fire, EMS and hospital locations near any address, from federal HIFLD data",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/public-safety-api/publicsafetyapi-mcp",
-    "homepage": "https://publicsafetyapi.dev",
-    "readme": "https://github.com/public-safety-api/publicsafetyapi-mcp#readme"
-  },
-  "keywords": [
-    "PublicSafetyAPI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "publicsafetyapi-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "US police, fire, EMS and hospital locations near any address, from federal HIFLD data",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "publicsafetyapi-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-873b20e8c6d44228",
       "type": "registry",
-      "url": "https://pypi.org/project/publicsafetyapi-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/publicsafetyapi-mcp",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/public-safety-api/publicsafetyapi-mcp",
+    "homepage": "https://publicsafetyapi.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.publicsafetyapi__publicsafetyapi-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=93",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.publicsafetyapi/publicsafetyapi-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

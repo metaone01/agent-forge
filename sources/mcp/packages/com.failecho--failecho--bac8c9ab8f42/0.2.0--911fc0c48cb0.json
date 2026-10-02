@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.failecho/failecho",
+  "name": "com.failecho/failecho",
+  "displayName": "com.failecho/failecho",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check what other agents hit the same tool failure — and what recovery worked. Ask before retrying.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "failecho-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://failecho.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e7f4e46236e7fa75",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/failecho-mcp",
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-5876f132cf934f87",
+      "type": "registry",
+      "url": "https://pypi.org/project/failecho-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-174471e8bf343acd",
+      "type": "other",
+      "url": "https://failecho.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://failecho.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/FailEcho/failecho",
+    "homepage": "https://failecho.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=47",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.failecho/failecho"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

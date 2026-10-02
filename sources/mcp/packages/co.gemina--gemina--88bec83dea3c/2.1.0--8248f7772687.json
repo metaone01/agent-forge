@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.gemina/gemina",
+  "name": "co.gemina/gemina",
+  "displayName": "Gemina",
+  "version": "2.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Extract, search and tag any document: invoices, receipts, contracts, templates. OAuth or API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "co.gemina/gemina",
+    "remotes": [
+      {
+        "url": "https://api.gemina.co/api/v1/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fb3423f74b986443",
+      "type": "other",
+      "url": "https://api.gemina.co/api/v1/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://api.gemina.co/api/v1/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/tommyil/gemina-mcp",
+    "homepage": "https://www.gemina.co/product/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=28",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.gemina/gemina"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

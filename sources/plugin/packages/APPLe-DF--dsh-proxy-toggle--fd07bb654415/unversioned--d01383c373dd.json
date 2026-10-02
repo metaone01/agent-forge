@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.5f3aa5057881e5f85bb95e908e54c4ae4ae38718d5266d4e2f95ae4b9abbc3a2",
+  "name": "APPLe-DF/dsh-proxy-toggle",
+  "displayName": "APPLe-DF/dsh-proxy-toggle",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 代理路由快捷开关：把主进程通过全局 fetch 发出的模型 API / Files API 请求在「直连」与「本地 HTTP/SOCKS5 代理」之间按请求即时切换；显式指定 dispatcher 的 web-fetch-http 固定出口不受此开关影响。默认复用 DSH 宿主认证；独立回环 fallback 端点、token/session 和 CLI 控制需通过",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/APPLe-DF/dsh-proxy-toggle",
+    "readme": "https://github.com/APPLe-DF/dsh-proxy-toggle#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/APPLe-DF/dsh-proxy-toggle"
+    },
+    {
+      "id": "npm-a8b62370b2b6",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-proxy-toggle",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "models",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15011"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-proxy-toggle"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

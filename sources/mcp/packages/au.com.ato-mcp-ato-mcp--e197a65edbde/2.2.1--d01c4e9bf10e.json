@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.au.com.ato-mcp/ato-mcp",
   "name": "au.com.ato-mcp/ato-mcp",
+  "displayName": "Australian Tax MCP",
   "version": "2.2.1",
-  "versionScheme": "semver",
-  "description": "Cited Australian tax answers from 34,500+ ATO documents, legislation and public rulings.",
-  "license": "AGPL-3.0-only",
-  "links": {
-    "repository": "https://github.com/william-laverty/ato-mcp",
-    "homepage": "https://ato-mcp.com.au",
-    "readme": "https://github.com/william-laverty/ato-mcp#readme"
-  },
-  "keywords": [
-    "Australian Tax MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "ato-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Cited Australian tax answers from 34,500+ ATO documents, legislation and public rulings.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "ato-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.ato-mcp.com.au/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b93e048e35db261f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/ato-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.2.1"
+    },
+    {
+      "id": "upstream-12be078eb710ca79",
+      "type": "other",
+      "url": "https://api.ato-mcp.com.au/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.ato-mcp.com.au/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/william-laverty/ato-mcp",
+    "homepage": "https://ato-mcp.com.au"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\au.com.ato-mcp__ato-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "au.com.ato-mcp/ato-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

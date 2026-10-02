@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/greece-invoice-mcp",
+  "name": "app.wishpool/greece-invoice-mcp",
+  "displayName": "Greece Invoices (AADE myDATA national API)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Greece myDATA invoices for AI agents: build AADE XML, transmit to myDATA, query by MARK.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/greece-invoice-mcp",
+    "remotes": [
+      {
+        "url": "https://inv-gr.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3a4f13086420b47e",
+      "type": "other",
+      "url": "https://inv-gr.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://inv-gr.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/greece-invoice-mcp",
+    "homepage": "https://github.com/junter1989k-ai/greece-invoice-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=22",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/greece-invoice-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

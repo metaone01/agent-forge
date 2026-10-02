@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.hostkey-cloud-ru/mcp-server-ru",
+  "name": "io.github.hostkey-cloud-ru/mcp-server-ru",
+  "displayName": "io.github.hostkey-cloud-ru/mcp-server-ru",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP-сервер Hostkey .ru (InvAPI): серверы, питание, заказ, DNS, S3, биллинг",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "hostkey-mcp-server-ru",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.hostkey.ru/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-12df0c7508e6b94c",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/hostkey-mcp-server-ru",
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-f02f1f9727a2dccb",
+      "type": "other",
+      "url": "https://mcp.hostkey.ru/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.hostkey.ru/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hostkey-cloud-ru/mcp-server-ru"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=210",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hostkey-cloud-ru/mcp-server-ru"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

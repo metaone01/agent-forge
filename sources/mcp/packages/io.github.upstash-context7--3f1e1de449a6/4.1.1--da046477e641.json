@@ -2,50 +2,67 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.upstash/context7",
   "name": "io.github.upstash/context7",
+  "displayName": "Context7",
   "version": "4.1.1",
-  "versionScheme": "semver",
-  "description": "Up-to-date code docs for any prompt",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/upstash/context7",
-    "homepage": "https://context7.com",
-    "readme": "https://github.com/upstash/context7#readme"
-  },
-  "keywords": [
-    "Context7"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@upstash/context7-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Up-to-date code docs for any prompt",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@upstash/context7-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.context7.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-afe295b1cf1ed9e0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@upstash/context7-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "4.1.1"
+    },
+    {
+      "id": "upstream-30671a7d58888177",
+      "type": "archive",
+      "url": "https://github.com/upstash/context7/releases/download/mcpb-v4.1.1/context7.mcpb",
+      "registry": "mcpb",
+      "version": "4.1.1"
+    },
+    {
+      "id": "upstream-7fc9a36d10446747",
+      "type": "other",
+      "url": "https://mcp.context7.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.context7.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/upstash/context7",
+    "homepage": "https://context7.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +75,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.upstash__context7.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=344",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.upstash/context7"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

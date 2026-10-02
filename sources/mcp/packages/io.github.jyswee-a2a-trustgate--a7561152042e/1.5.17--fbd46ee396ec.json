@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jyswee/a2a-trustgate",
   "name": "io.github.jyswee/a2a-trustgate",
+  "displayName": "io.github.jyswee/a2a-trustgate",
   "version": "1.5.17",
-  "versionScheme": "semver",
-  "description": "A2A TrustGate: 4-gate firewall that screens every AI-agent action before it runs. 50 tools.",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/jyswee/a2a-trustgate",
-    "homepage": "https://a2ainfrastructure.com",
-    "readme": "https://github.com/jyswee/a2a-trustgate#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "a2a-trustgate",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A2A TrustGate: 4-gate firewall that screens every AI-agent action before it runs. 50 tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "a2a-trustgate",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.a2ainfrastructure.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4d5e12ebbc24aed8",
       "type": "registry",
       "url": "https://www.npmjs.com/package/a2a-trustgate",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.5.17"
+    },
+    {
+      "id": "upstream-01b22fa48a5d5895",
+      "type": "other",
+      "url": "https://mcp.a2ainfrastructure.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.a2ainfrastructure.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/jyswee/a2a-trustgate",
+    "homepage": "https://a2ainfrastructure.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jyswee__a2a-trustgate.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=223",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jyswee/a2a-trustgate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

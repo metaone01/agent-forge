@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.yadu-tv/db-compare",
   "name": "io.github.yadu-tv/db-compare",
+  "displayName": "db-compare",
   "version": "v0.1.1",
   "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only MCP to diff SQL Server/Azure SQL schema, procs, views, and tables between environments.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/yadu-tv/db-compare",
-    "readme": "https://github.com/yadu-tv/db-compare#readme"
-  },
-  "keywords": [
-    "db-compare"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "db-compare-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "db-compare-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ff8b9ee34de4f944",
       "type": "registry",
-      "url": "https://pypi.org/project/db-compare-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/db-compare-mcp",
+      "registry": "pypi",
+      "version": "v0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/yadu-tv/db-compare"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yadu-tv__db-compare.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yadu-tv/db-compare"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

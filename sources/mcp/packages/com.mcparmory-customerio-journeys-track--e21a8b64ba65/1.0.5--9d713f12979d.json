@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcparmory/customerio-journeys-track",
   "name": "com.mcparmory/customerio-journeys-track",
+  "displayName": "com.mcparmory/customerio-journeys-track",
   "version": "1.0.5",
-  "versionScheme": "semver",
-  "description": "Track customer data, manage audience segments, and trigger personalized campaigns",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/mcparmory/registry",
-    "readme": "https://github.com/mcparmory/registry#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcparmory-customerio-journeys-track",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Track customer data, manage audience segments, and trigger personalized campaigns",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcparmory-customerio-journeys-track",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-de5c8cd6429614e5",
       "type": "registry",
-      "url": "https://pypi.org/project/mcparmory-customerio-journeys-track/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcparmory-customerio-journeys-track",
+      "registry": "pypi",
+      "version": "1.0.5"
+    },
+    {
+      "id": "upstream-31f76e18d658b909",
+      "type": "oci",
+      "url": "https://ghcr.io/mcparmory/customerio-journeys-track:1.0.5",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcparmory/registry"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcparmory__customerio-journeys-track.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=61",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcparmory/customerio-journeys-track"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.dnsmint/mcp",
+  "name": "com.dnsmint/mcp",
+  "displayName": "DNSMint",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Mint a secure HTTPS endpoint for your agents. Each on its own dedicated domain.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "dnsmint-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://dnsmint.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cd378de3d96e99d0",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dnsmint-mcp-server",
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-352af75654c1b152",
+      "type": "other",
+      "url": "https://dnsmint.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://dnsmint.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=44",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.dnsmint/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

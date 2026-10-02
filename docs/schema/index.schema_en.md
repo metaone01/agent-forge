@@ -24,6 +24,8 @@ An index is a compact package index for one source revision. It supports low-ban
 
 Each `packageEntry` contains `latest`, `versions`, and `path`, with optional `checksum`, `recordRevision`, and administrator `subtype`. Paths must be safe relative paths.
 
+Optional `id`, `summary`, `keywords`, and generated `searchText` support identity lookup and index-level search. Equal names may appear in different categories; names do not replace global ids. Projections preserve the canonical index's `latest` designation when that version is included, otherwise selecting a deterministic fallback. Path, digest, and search fields always describe the selected version.
+
 ## TypeScript example
 
 ```typescript

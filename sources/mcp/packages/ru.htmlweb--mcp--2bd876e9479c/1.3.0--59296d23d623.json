@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ru.htmlweb/mcp",
+  "name": "ru.htmlweb/mcp",
+  "displayName": "htmlweb.ru — справочники и проверки для AI",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "RU INN/OGRN, banks, geo, WHOIS. Agent self-registers via register_agent. 20 free/day.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ru.htmlweb/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.htmlweb.ru/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-413b9cef491141b7",
+      "type": "other",
+      "url": "https://mcp.htmlweb.ru/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.htmlweb.ru/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kdg22/mcp-htmlweb",
+    "homepage": "https://mcp.htmlweb.ru/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ru.htmlweb/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

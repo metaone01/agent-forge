@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.backpow/pow-mining-oracle",
+  "name": "com.backpow/pow-mining-oracle",
+  "displayName": "BackPow PoW Oracle",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Proof of Work oracle: solo mining odds, cost of production, hashrate, mining hardware",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@backpow/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.backpow.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0b5ed4b805a5dfbe",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@backpow/mcp-server",
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-5c9d24f3e507d71b",
+      "type": "other",
+      "url": "https://mcp.backpow.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.backpow.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/BackpowCom/backpow-mcp-server",
+    "homepage": "https://backpow.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=36",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.backpow/pow-mining-oracle"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c28abab3fe290d50d9f13176471acfec446d7310f617c3b11674ff6e168bde9c",
+  "name": "Sharl210/dsh-strip-sandbox-permissions",
+  "displayName": "Sharl210/dsh-strip-sandbox-permissions",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Strip sandbox_permissions / justification from model tool-call arguments so sandbox escalation is never triggered when the session already has sufficient permission.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Sharl210/dsh-strip-sandbox-permissions",
+    "readme": "https://github.com/Sharl210/dsh-strip-sandbox-permissions#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Sharl210/dsh-strip-sandbox-permissions"
+    },
+    {
+      "id": "npm-04138befebb3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-strip-sandbox-permissions",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "safety",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "9096"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "4409"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "6613"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "10368"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

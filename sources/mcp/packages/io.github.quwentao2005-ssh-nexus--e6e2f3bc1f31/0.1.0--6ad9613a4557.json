@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.quwentao2005/ssh-nexus",
   "name": "io.github.quwentao2005/ssh-nexus",
+  "displayName": "SSH Nexus",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "MCP server and web terminal for shared SSH sessions and reusable command sets.",
-  "license": "BSL-1.1",
-  "links": {
-    "repository": "https://pypi.org/project/ssh-nexus/"
-  },
-  "keywords": [
-    "SSH Nexus"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ssh-nexus",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server and web terminal for shared SSH sessions and reusable command sets.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ssh-nexus",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8e65a82c7b3ec291",
       "type": "registry",
-      "url": "https://pypi.org/project/ssh-nexus/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ssh-nexus",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.quwentao2005__ssh-nexus.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=293",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.quwentao2005/ssh-nexus"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

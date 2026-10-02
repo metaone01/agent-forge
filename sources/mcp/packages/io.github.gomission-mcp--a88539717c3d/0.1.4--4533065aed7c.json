@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.gomission/mcp",
   "name": "io.github.gomission/mcp",
+  "displayName": "Mission — Trust Graduation Gate",
   "version": "0.1.4",
-  "versionScheme": "semver",
-  "description": "Trust Graduation gate: Claude can do real work once Mission decides what it is allowed to do.",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/gomission/mcp",
-    "homepage": "https://claude.gomission.io",
-    "readme": "https://github.com/gomission/mcp#readme"
-  },
-  "keywords": [
-    "Mission — Trust Graduation Gate"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@gomission/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Trust Graduation gate: Claude can do real work once Mission decides what it is allowed to do.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@gomission/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://claude.gomission.io/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e1ab58652634517f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@gomission/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.4"
+    },
+    {
+      "id": "upstream-f67d9468cd71a2ef",
+      "type": "other",
+      "url": "https://claude.gomission.io/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://claude.gomission.io/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/gomission/mcp",
+    "homepage": "https://claude.gomission.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.gomission__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=206",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.gomission/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

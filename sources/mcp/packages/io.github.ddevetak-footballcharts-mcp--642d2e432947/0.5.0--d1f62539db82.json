@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ddevetak/footballcharts-mcp",
   "name": "io.github.ddevetak/footballcharts-mcp",
+  "displayName": "io.github.ddevetak/footballcharts-mcp",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "Tables, results, fixtures, goal timing, season projections: 93 football leagues incl. lower tiers",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ddevetak/footballcharts-mcp",
-    "homepage": "https://www.football-charts.com/developers",
-    "readme": "https://github.com/ddevetak/footballcharts-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "footballcharts-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Tables, results, fixtures, goal timing, season projections: 93 football leagues incl. lower tiers",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "footballcharts-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.football-charts.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-108a3e225163dfac",
       "type": "registry",
       "url": "https://www.npmjs.com/package/footballcharts-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.0"
+    },
+    {
+      "id": "upstream-fc5c136bc73a99a2",
+      "type": "other",
+      "url": "https://mcp.football-charts.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.football-charts.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ddevetak/footballcharts-mcp",
+    "homepage": "https://www.football-charts.com/developers"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ddevetak__footballcharts-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=192",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ddevetak/footballcharts-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

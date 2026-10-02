@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.online.mcp4mail/mcp4mail",
+  "name": "online.mcp4mail/mcp4mail",
+  "displayName": "mcp4mail",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your IMAP mailbox as an MCP server: read, search and (if you allow it) organize mail. Open source.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "online.mcp4mail/mcp4mail",
+    "remotes": [
+      {
+        "url": "https://mcp4mail.online/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a1d338cbd6304838",
+      "type": "other",
+      "url": "https://mcp4mail.online/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp4mail.online/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jchsoft/mcp4mail",
+    "homepage": "https://mcp4mail.online"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=370",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "online.mcp4mail/mcp4mail"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

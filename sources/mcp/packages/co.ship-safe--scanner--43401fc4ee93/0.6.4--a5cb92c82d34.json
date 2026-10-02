@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.ship-safe/scanner",
+  "name": "co.ship-safe/scanner",
+  "displayName": "ShipSafe — Independent security verification",
+  "version": "0.6.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Independent security review for AI-built apps: exposed secrets, broken auth, unsafe data access.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ship-safe/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ship-safe.co/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-574780e588b0a792",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@ship-safe/mcp",
+      "registry": "npm",
+      "version": "0.6.4"
+    },
+    {
+      "id": "upstream-7267c598bf0236df",
+      "type": "other",
+      "url": "https://ship-safe.co/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ship-safe.co/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ship-safe.co"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.ship-safe/scanner"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

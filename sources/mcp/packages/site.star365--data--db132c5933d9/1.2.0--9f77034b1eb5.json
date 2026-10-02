@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.site.star365/data",
+  "name": "site.star365/data",
+  "displayName": "Korea Benefits Eligibility",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Who qualifies for 10,956 Korean government benefits (보조금24). Plus public data and weather.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "site.star365/data",
+    "remotes": [
+      {
+        "url": "https://data.star365.site/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cc362939b60f2e35",
+      "type": "other",
+      "url": "https://data.star365.site/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://data.star365.site/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://data.star365.site/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "site.star365/data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

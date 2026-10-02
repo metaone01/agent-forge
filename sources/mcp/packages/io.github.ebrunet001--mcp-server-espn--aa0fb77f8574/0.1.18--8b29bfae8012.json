@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.ebrunet001/mcp-server-espn",
+  "name": "io.github.ebrunet001/mcp-server-espn",
+  "displayName": "io.github.ebrunet001/mcp-server-espn",
+  "version": "0.1.18",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time ESPN sports data: live scores, standings, boxscores, odds & stats for 25+ leagues",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.ebrunet001/mcp-server-espn",
+    "remotes": [
+      {
+        "url": "https://mrbridge--espn-mcp-server.apify.actor/mcp",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-56c38f15c1883c12",
+      "type": "other",
+      "url": "https://mrbridge--espn-mcp-server.apify.actor/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mrbridge--espn-mcp-server.apify.actor/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ebrunet001/mcp-server-espn"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=197",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ebrunet001/mcp-server-espn"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

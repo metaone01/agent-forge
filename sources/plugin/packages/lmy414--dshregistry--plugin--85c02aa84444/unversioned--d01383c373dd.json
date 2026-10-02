@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.85c02aa84444f9038cd73b39048c7a8e86c2da1377cb949a9388b82a4c9e1a64",
+  "name": "lmy414/dshregistry/plugin",
+  "displayName": "lmy414/dshregistry/plugin",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Plugin marketplace for DeepSeek Harness: browse plugins collected by the dshregistry index, install/uninstall with hot reload via profile cordis.patch.yml, with security warning and risk explanation",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "plugin/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/lmy414/dshregistry",
+    "readme": "https://github.com/lmy414/dshregistry#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/lmy414/dshregistry/tree/HEAD/plugin"
+    }
+  ],
+  "keywords": [
+    "marketplace",
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11013"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "lmy414/dshregistry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

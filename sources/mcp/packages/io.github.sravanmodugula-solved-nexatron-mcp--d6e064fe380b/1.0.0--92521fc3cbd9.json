@@ -2,50 +2,75 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sravanmodugula-solved/nexatron-mcp",
   "name": "io.github.sravanmodugula-solved/nexatron-mcp",
+  "displayName": "Nexatron",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Ask your enterprise data in plain English. Governed analytics over MCP, from dotSolved.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/sravanmodugula-solved/nexatron",
-    "homepage": "https://nexatron.io",
-    "readme": "https://github.com/sravanmodugula-solved/nexatron#readme"
-  },
-  "keywords": [
-    "Nexatron"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "nexatron-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Ask your enterprise data in plain English. Governed analytics over MCP, from dotSolved.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "nexatron-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.nexatron.io/api/v1/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.nexatron.io/api/v1/mcp/stream",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0c600ce2270ce89c",
       "type": "registry",
-      "url": "https://pypi.org/project/nexatron-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/nexatron-mcp",
+      "registry": "pypi",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-b1f0bd73f403f81a",
+      "type": "other",
+      "url": "https://api.nexatron.io/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.nexatron.io/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-dcd4e90d9870ee16",
+      "type": "other",
+      "url": "https://api.nexatron.io/api/v1/mcp/stream",
+      "install": {
+        "type": "api",
+        "url": "https://api.nexatron.io/api/v1/mcp/stream"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/sravanmodugula-solved/nexatron",
+    "homepage": "https://nexatron.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +83,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sravanmodugula-solved__nexatron-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=332",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sravanmodugula-solved/nexatron-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

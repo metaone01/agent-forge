@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.stagproject/sec-filings-mcp",
+  "name": "io.github.stagproject/sec-filings-mcp",
+  "displayName": "SEC EDGAR Filings MCP",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SEC EDGAR MCP: search, preview, purchase filings. x402 USDC on Polygon. xpay + Cloud Run upstream.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.stagproject/sec-filings-mcp",
+    "remotes": [
+      {
+        "url": "https://sec-edgar-filings.mcp.xpay.sh/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://sec-filings-mcp-1065601264332.us-central1.run.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-00d1c733ee100cf8",
+      "type": "other",
+      "url": "https://sec-edgar-filings.mcp.xpay.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://sec-edgar-filings.mcp.xpay.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e07def597207709d",
+      "type": "other",
+      "url": "https://sec-filings-mcp-1065601264332.us-central1.run.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://sec-filings-mcp-1065601264332.us-central1.run.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/stagproject/sec-filings-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=333",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stagproject/sec-filings-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

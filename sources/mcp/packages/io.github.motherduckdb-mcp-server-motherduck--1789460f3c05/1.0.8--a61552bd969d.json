@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.motherduckdb/mcp-server-motherduck",
   "name": "io.github.motherduckdb/mcp-server-motherduck",
+  "displayName": "io.github.motherduckdb/mcp-server-motherduck",
   "version": "1.0.8",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "SQL analytics and data engineering for AI Assistants and IDEs",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/motherduckdb/mcp-server-motherduck",
-    "readme": "https://github.com/motherduckdb/mcp-server-motherduck#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-server-motherduck",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-server-motherduck",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-84b4bb0b4efb26cc",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-server-motherduck/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-server-motherduck",
+      "registry": "pypi",
+      "version": "1.0.8"
     }
   ],
+  "links": {
+    "repository": "https://github.com/motherduckdb/mcp-server-motherduck"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.motherduckdb__mcp-server-motherduck.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=252",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.motherduckdb/mcp-server-motherduck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

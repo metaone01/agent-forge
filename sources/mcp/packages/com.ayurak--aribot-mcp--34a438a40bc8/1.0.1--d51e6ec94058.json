@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ayurak/aribot-mcp",
+  "name": "com.ayurak/aribot-mcp",
+  "displayName": "com.ayurak/aribot-mcp",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Threat modeling, code, API & cloud security, shadow-AI & compliance governance.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ayurak/aribot-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.aribot.ayurak.com/",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.aribot.ayurak.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6606d70082d90cf1",
+      "type": "other",
+      "url": "https://mcp.aribot.ayurak.com/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aribot.ayurak.com/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-af812d36b165587e",
+      "type": "other",
+      "url": "https://mcp.aribot.ayurak.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aribot.ayurak.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://api.aribot.ayurak.com/aribot/claude-connector"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ayurak/aribot-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

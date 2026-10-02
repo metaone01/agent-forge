@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.br.com.music360.app/mcp-server",
+  "name": "br.com.music360.app/mcp-server",
+  "displayName": "Music360 MCP",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "API do Music360 para agentes de IA - artistas, obras, fonogramas, contratos, shows, tarefas e mais",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "br.com.music360.app/mcp-server",
+    "remotes": [
+      {
+        "url": "https://app.music360.com.br/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fd95bebddd764fea",
+      "type": "other",
+      "url": "https://app.music360.com.br/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.music360.com.br/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/music360app/music360app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "br.com.music360.app/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

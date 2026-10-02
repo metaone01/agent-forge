@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Apegurus/web3agent",
   "name": "io.github.Apegurus/web3agent",
+  "displayName": "web3agent",
   "version": "0.6.2",
-  "versionScheme": "semver",
-  "description": "Web3 MCP proxy for AI agents: DeFi swaps, bridges, market data, wallets, and gated writes.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Apegurus/web3agent",
-    "homepage": "https://web3agent.fi",
-    "readme": "https://github.com/Apegurus/web3agent#readme"
-  },
-  "keywords": [
-    "web3agent"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "web3agent",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Web3 MCP proxy for AI agents: DeFi swaps, bridges, market data, wallets, and gated writes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "web3agent",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4155d21624764d8a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/web3agent",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Apegurus/web3agent",
+    "homepage": "https://web3agent.fi"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.apegurus__web3agent.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Apegurus/web3agent"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

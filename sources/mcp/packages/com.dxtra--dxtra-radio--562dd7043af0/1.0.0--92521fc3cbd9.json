@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.dxtra/dxtra-radio",
+  "name": "com.dxtra/dxtra-radio",
+  "displayName": "dxtra Radio — Frequency Database",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Radio frequency database: FM, AM, shortwave, TV, ham, weather, emergency alerts. 15+ countries.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.dxtra/dxtra-radio",
+    "remotes": [
+      {
+        "url": "https://dxtra.com/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9102e3c79612d6be",
+      "type": "other",
+      "url": "https://dxtra.com/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://dxtra.com/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://dxtra.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=45",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.dxtra/dxtra-radio"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

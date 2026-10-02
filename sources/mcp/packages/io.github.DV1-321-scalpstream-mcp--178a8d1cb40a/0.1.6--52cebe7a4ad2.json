@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.DV1-321/scalpstream-mcp",
   "name": "io.github.DV1-321/scalpstream-mcp",
+  "displayName": "ScalpStream",
   "version": "0.1.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Pay-per-call data over x402: air quality, border waits, fuel prices, market research.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/DV1-321/scalpstream-mcp",
-    "homepage": "https://scalpstream.com",
-    "readme": "https://github.com/DV1-321/scalpstream-mcp#readme"
-  },
-  "keywords": [
-    "ScalpStream"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/dv1-321/scalpstream-mcp:v0.1.6",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/dv1-321/scalpstream-mcp:v0.1.6",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/dv1-321/scalpstream-mcp",
-      "priority": 10,
+      "id": "upstream-031b925a3c0cb3bb",
+      "type": "oci",
+      "url": "https://ghcr.io/dv1-321/scalpstream-mcp:v0.1.6",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/DV1-321/scalpstream-mcp",
+    "homepage": "https://scalpstream.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dv1-321__scalpstream-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=122",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.DV1-321/scalpstream-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

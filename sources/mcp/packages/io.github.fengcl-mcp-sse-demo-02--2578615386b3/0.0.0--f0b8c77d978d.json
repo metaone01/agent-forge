@@ -2,45 +2,39 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.fengcl/mcp-sse-demo-02",
   "name": "io.github.fengcl/mcp-sse-demo-02",
+  "displayName": "io.github.fengcl/mcp-sse-demo-02",
   "version": "0.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Spring Boot MCP 服务器（示例占位描述），通过 GHCR 以 OCI 镜像发布至 MCP Registry。",
   "license": "unknown",
-  "links": {
-    "repository": "https://hub.docker.com/r/fengcl/mcp-sse-demo-02"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/fengcl/mcp-sse-demo-02:0.1.5",
-    "transport": "sse"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/fengcl/mcp-sse-demo-02:0.1.5",
+    "transport": "sse"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/fengcl/mcp-sse-demo-02",
-      "priority": 10,
+      "id": "upstream-c2813b2ef9fcf739",
+      "type": "oci",
+      "url": "https://ghcr.io/fengcl/mcp-sse-demo-02:0.1.5",
       "registry": "oci"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -53,6 +47,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fengcl__mcp-sse-demo-02.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=201",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fengcl/mcp-sse-demo-02"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

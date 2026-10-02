@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.82806190b432776fbbb8b9aafe4e42445319db995a201de6ff5af1b1bd0b15fa",
+  "name": "qihongmu/dsh-plugins/packages/scheduled-task/bundle",
+  "displayName": "qihongmu/dsh-plugins/packages/scheduled-task/bundle",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Aggregate install bundle for the scheduled-task plugin: pulls the host/remotes/client halves and mounts all three with a single `dsh plugin add`.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "packages/scheduled-task/bundle/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/qihongmu/dsh-plugins",
+    "readme": "https://github.com/qihongmu/dsh-plugins#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/qihongmu/dsh-plugins/tree/HEAD/packages/scheduled-task/bundle"
+    },
+    {
+      "id": "npm-1d9594cbc8c1",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@qihongmu/dsh-plugins-scheduled-task-bundle",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16312"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "qihongmu/dsh-plugins"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "11329"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

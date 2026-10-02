@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.tj-smith47/anodizer",
   "name": "io.github.tj-smith47/anodizer",
+  "displayName": "anodizer",
   "version": "0.28.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Rust release tooling — drop-in GoReleaser parity + Rust extras.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/tj-smith47/anodizer",
-    "homepage": "https://github.com/tj-smith47/anodizer",
-    "readme": "https://github.com/tj-smith47/anodizer#readme"
-  },
-  "keywords": [
-    "anodizer"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/tj-smith47/anodizer",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/tj-smith47/anodizer",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/tj-smith47/anodizer",
-      "priority": 10,
+      "id": "upstream-4593fc80ff05f555",
+      "type": "oci",
+      "url": "https://ghcr.io/tj-smith47/anodizer",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/tj-smith47/anodizer",
+    "homepage": "https://github.com/tj-smith47/anodizer"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tj-smith47__anodizer.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=341",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tj-smith47/anodizer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

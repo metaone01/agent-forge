@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.wingspan",
+  "name": "wingspan",
+  "displayName": "wingspanHQ/mcp-claude-plugin",
+  "version": "01f2b0806fc91d0550859a7f840db353d1edd4e9",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/wingspanHQ/mcp-claude-plugin",
+    "readme": "https://github.com/wingspanHQ/mcp-claude-plugin#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/wingspanHQ/mcp-claude-plugin",
+      "ref": "01f2b0806fc91d0550859a7f840db353d1edd4e9"
+    }
+  ],
+  "keywords": [],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": ".claude-plugin/marketplace.json",
+          "entry": "wingspan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

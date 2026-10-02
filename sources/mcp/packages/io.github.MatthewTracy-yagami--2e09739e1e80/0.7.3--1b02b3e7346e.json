@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MatthewTracy/yagami",
   "name": "io.github.MatthewTracy/yagami",
+  "displayName": "Yagami AI Context Firewall",
   "version": "0.7.3",
-  "versionScheme": "semver",
-  "description": "Govern model, retrieval, memory, and tool access for AI applications and agents.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/MatthewTracy/yagami",
-    "homepage": "https://matthewtracy.github.io/yagami/",
-    "readme": "https://github.com/MatthewTracy/yagami#readme"
-  },
-  "keywords": [
-    "Yagami AI Context Firewall"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "yagami",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "streamable-http"
-  },
+  "description": "Govern model, retrieval, memory, and tool access for AI applications and agents.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "yagami",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5ee21b37a932cd07",
       "type": "registry",
-      "url": "https://pypi.org/project/yagami/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/yagami",
+      "registry": "pypi",
+      "version": "0.7.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MatthewTracy/yagami",
+    "homepage": "https://matthewtracy.github.io/yagami/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.matthewtracy__yagami.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MatthewTracy/yagami"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

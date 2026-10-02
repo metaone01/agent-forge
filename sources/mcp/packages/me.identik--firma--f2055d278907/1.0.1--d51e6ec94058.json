@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.me.identik/firma",
+  "name": "me.identik/firma",
+  "displayName": "Identik Firma Digital",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Firma digital argentina (Ley 25.506) con certificados de certificador licenciado.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "me.identik/firma",
+    "remotes": [
+      {
+        "url": "https://firma.identik.me/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-155b94a9664e8e82",
+      "type": "other",
+      "url": "https://firma.identik.me/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://firma.identik.me/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Identik-me/identik-mcp",
+    "homepage": "https://identik.me"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "me.identik/firma"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

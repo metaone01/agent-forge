@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Ainode-tech/accounting-mcp",
+  "name": "io.github.Ainode-tech/accounting-mcp",
+  "displayName": "io.github.Ainode-tech/accounting-mcp",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "8 EU accounting (x402 USDC on Base): reconcile, VAT, invoicing. Free health.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Ainode-tech/accounting-mcp",
+    "remotes": [
+      {
+        "url": "https://xero.api.ainode.tech/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-dbd437b6f811f5ec",
+      "type": "other",
+      "url": "https://xero.api.ainode.tech/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://xero.api.ainode.tech/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=109",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Ainode-tech/accounting-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

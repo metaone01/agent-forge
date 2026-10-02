@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.b5a86d7cad0a3eba4b8d8303fa84bc9e0bc675de336f5e2dd820772e6b7dd982",
+  "name": "kuyueliuhun-ctrl/dsh-command-queue",
+  "displayName": "kuyueliuhun-ctrl/dsh-command-queue",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 插件：让 /compact 这类需要 agent 空闲的斜杠命令在忙碌时进入命令队列、空闲后自动执行（默认只排 compact，其余命令一律立即执行）；并在浏览器里以复刻原生队列的样式展示这份队列。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/kuyueliuhun-ctrl/dsh-command-queue",
+    "readme": "https://github.com/kuyueliuhun-ctrl/dsh-command-queue#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/kuyueliuhun-ctrl/dsh-command-queue"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15876"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15258"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

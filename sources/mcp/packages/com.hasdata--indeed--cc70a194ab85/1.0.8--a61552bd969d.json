@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.hasdata/indeed",
+  "name": "com.hasdata/indeed",
+  "displayName": "HasData Indeed",
+  "version": "1.0.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Indeed job listings by keyword and location, and full postings, as structured JSON.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@hasdata/indeed-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.hasdata.com/mcp?apis=indeed",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2a674d6757a9a0fb",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@hasdata/indeed-mcp",
+      "registry": "npm",
+      "version": "1.0.8"
+    },
+    {
+      "id": "upstream-fae58f96ff355306",
+      "type": "registry",
+      "url": "https://pypi.org/project/hasdata-indeed-mcp",
+      "registry": "pypi",
+      "version": "1.0.8"
+    },
+    {
+      "id": "upstream-1e9470b8958a4c44",
+      "type": "other",
+      "url": "https://mcp.hasdata.com/mcp?apis=indeed",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.hasdata.com/mcp?apis=indeed"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/HasData/indeed-mcp",
+    "homepage": "https://hasdata.com/apis/indeed-api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hasdata/indeed"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

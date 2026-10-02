@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.AIops-tools/container-host-aiops",
   "name": "io.github.AIops-tools/container-host-aiops",
+  "displayName": "Container Host AIops",
   "version": "0.11.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Governed Docker + Portainer container-host ops: reads, RCA analyses, guarded writes. 38 tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/AIops-tools/Container-Host-AIops",
-    "readme": "https://github.com/AIops-tools/Container-Host-AIops#readme"
-  },
-  "keywords": [
-    "Container Host AIops"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "container-host-aiops",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "container-host-aiops",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6002a63aa8f5a291",
       "type": "registry",
-      "url": "https://pypi.org/project/container-host-aiops/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/container-host-aiops",
+      "registry": "pypi",
+      "version": "0.11.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/AIops-tools/Container-Host-AIops"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aiops-tools__container-host-aiops.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=107",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AIops-tools/container-host-aiops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

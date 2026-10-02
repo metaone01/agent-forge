@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.skillsandagents/catalog-mcp",
+  "name": "co.skillsandagents/catalog-mcp",
+  "displayName": "co.skillsandagents/catalog-mcp",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and fetch skills from your org's Skills and Agents catalog. Bearer token required.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "co.skillsandagents/catalog-mcp",
+    "remotes": [
+      {
+        "url": "https://app.skillsandagents.co/catalog/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fbf35765760fe912",
+      "type": "other",
+      "url": "https://app.skillsandagents.co/catalog/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.skillsandagents.co/catalog/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/skills-agents-co/skills-and-agents-library",
+    "homepage": "https://skillsandagents.co"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.skillsandagents/catalog-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

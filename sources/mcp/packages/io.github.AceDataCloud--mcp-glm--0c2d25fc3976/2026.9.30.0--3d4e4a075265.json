@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AceDataCloud/mcp-glm",
+  "name": "io.github.AceDataCloud/mcp-glm",
+  "displayName": "io.github.AceDataCloud/mcp-glm",
+  "version": "2026.9.30.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for GLM chat completions using Zhipu AI models via AceDataCloud",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-glm",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://glm.mcp.acedata.cloud/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c37f04ec56ef1e01",
+      "type": "registry",
+      "url": "https://pypi.org/project/mcp-glm",
+      "registry": "pypi",
+      "version": "2026.9.30.0"
+    },
+    {
+      "id": "upstream-363219c2f7d0e88c",
+      "type": "other",
+      "url": "https://glm.mcp.acedata.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://glm.mcp.acedata.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AceDataCloud/GlmMCP",
+    "homepage": "https://glm.mcp.acedata.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AceDataCloud/mcp-glm"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

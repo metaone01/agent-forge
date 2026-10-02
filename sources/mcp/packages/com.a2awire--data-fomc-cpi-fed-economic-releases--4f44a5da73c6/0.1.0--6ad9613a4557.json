@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.a2awire/data-fomc-cpi-fed-economic-releases",
+  "name": "com.a2awire/data-fomc-cpi-fed-economic-releases",
+  "displayName": "US Economic Releases (CPI, Payrolls, Fed) — buy per-query in-session (fedwatch)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "CPI, payrolls, unemployment, Fed statements. $0.05/query, free testnet funds in-session.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.a2awire/data-fomc-cpi-fed-economic-releases",
+    "remotes": [
+      {
+        "url": "https://a2awire.com/mcp/data/fedwatch-us-economic-releases-index-b53e71/http",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-651dce42687da8ce",
+      "type": "other",
+      "url": "https://a2awire.com/mcp/data/fedwatch-us-economic-releases-index-b53e71/http",
+      "install": {
+        "type": "api",
+        "url": "https://a2awire.com/mcp/data/fedwatch-us-economic-releases-index-b53e71/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ee324/a2awire",
+    "homepage": "https://a2awire.com/data/fedwatch-us-economic-releases-index-b53e71"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=31",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.a2awire/data-fomc-cpi-fed-economic-releases"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

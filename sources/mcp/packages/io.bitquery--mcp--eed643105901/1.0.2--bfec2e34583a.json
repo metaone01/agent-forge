@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.bitquery/mcp",
+  "name": "io.bitquery/mcp",
+  "displayName": "Bitquery MCP Server",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted on-chain data for AI agents: DEX trades, OHLCV, top traders, fund tracing, address labels.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.bitquery/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.bitquery.io",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1341042d878fc994",
+      "type": "other",
+      "url": "https://mcp.bitquery.io",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.bitquery.io"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bitquery/mcp",
+    "homepage": "https://bitquery.io/products/bitquery-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=102",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.bitquery/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

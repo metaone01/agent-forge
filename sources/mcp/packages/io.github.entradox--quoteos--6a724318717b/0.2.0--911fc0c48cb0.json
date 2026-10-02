@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.entradox/quoteos",
+  "name": "io.github.entradox/quoteos",
+  "displayName": "QuoteOS",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-native insurance quoting protocol — sandbox, MCP + REST, eligibility pre-flight",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.entradox/quoteos",
+    "remotes": [
+      {
+        "url": "https://quoteos-api-production.up.railway.app/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2cbf7bece0ab3bf6",
+      "type": "other",
+      "url": "https://quoteos-api-production.up.railway.app/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://quoteos-api-production.up.railway.app/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/entradox/quoteos",
+    "homepage": "https://github.com/entradox/quoteos"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=198",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.entradox/quoteos"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

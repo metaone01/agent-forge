@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2c7091b76974c358b14b9e69a9262539054a3b1345d6e4054655876729a2ea9b",
+  "name": "Li-Mingshuang/dsh-secure-context-fix",
+  "displayName": "Li-Mingshuang/dsh-secure-context-fix",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Fix the DeepSeek Harness Web GUI over plain HTTP on a LAN: injects a crypto.randomUUID polyfill (getRandomValues-backed) before dsh bundle code runs. No official source changes needed.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Li-Mingshuang/dsh-secure-context-fix",
+    "readme": "https://github.com/Li-Mingshuang/dsh-secure-context-fix#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Li-Mingshuang/dsh-secure-context-fix"
+    }
+  ],
+  "keywords": [
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15921"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13716"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

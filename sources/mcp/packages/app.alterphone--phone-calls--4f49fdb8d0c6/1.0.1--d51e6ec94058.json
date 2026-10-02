@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.alterphone/phone-calls",
+  "name": "app.alterphone/phone-calls",
+  "displayName": "AlterPhone MCP",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Place real phone calls and hold spoken conversations on a user's behalf, billed per minute.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.alterphone/phone-calls",
+    "remotes": [
+      {
+        "url": "https://mcp.alterphone.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e32a80ec025a686c",
+      "type": "other",
+      "url": "https://mcp.alterphone.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.alterphone.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/marius-bardan/alterphone-mcp",
+    "homepage": "https://alterphone.app/llms.txt"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.alterphone/phone-calls"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

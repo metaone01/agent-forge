@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nassie256/ambient-context-mcp",
   "name": "io.github.nassie256/ambient-context-mcp",
+  "displayName": "Ambient Context MCP",
   "version": "0.7.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local Windows ambient context (presence, foreground app, battery) as privacy-gated MCP tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/nassie256/ambient-context-mcp",
-    "homepage": "https://github.com/nassie256/ambient-context-mcp",
-    "readme": "https://github.com/nassie256/ambient-context-mcp#readme"
-  },
-  "keywords": [
-    "Ambient Context MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/nassie256/ambient-context-mcp/releases/download/v0.7.1/ambient-context-mcp-v0.7.1.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/nassie256/ambient-context-mcp/releases/download/v0.7.1/ambient-context-mcp-v0.7.1.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-d375f51560c3f0eb",
+      "type": "archive",
       "url": "https://github.com/nassie256/ambient-context-mcp/releases/download/v0.7.1/ambient-context-mcp-v0.7.1.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.7.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nassie256/ambient-context-mcp",
+    "homepage": "https://github.com/nassie256/ambient-context-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nassie256__ambient-context-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=262",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nassie256/ambient-context-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.regulatoryai/sovereign-ai-act-mcp",
+  "name": "eu.regulatoryai/sovereign-ai-act-mcp",
+  "displayName": "Sovereign AI Act MCP",
+  "version": "1.4.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Classify any AI system under the EU AI Act: risk tier + binding Articles, verbatim from the law.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sovereign-ai-act-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.regulatoryai.eu/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0dd52fd42c4b0035",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/sovereign-ai-act-mcp",
+      "registry": "npm",
+      "version": "1.4.0"
+    },
+    {
+      "id": "upstream-1fc65918509a7b1b",
+      "type": "other",
+      "url": "https://www.regulatoryai.eu/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.regulatoryai.eu/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/saidbazyar/sovereign-ai-act-mcp",
+    "homepage": "https://www.regulatoryai.eu/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.regulatoryai/sovereign-ai-act-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

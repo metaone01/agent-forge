@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.uk.co.postio/postcode-address-validation",
   "name": "uk.co.postio/postcode-address-validation",
+  "displayName": "Postio — UK Address, Postcode, Email & Phone Validation",
   "version": "0.1.4",
-  "versionScheme": "semver",
-  "description": "Validate UK addresses, postcodes, emails and phone numbers — Royal Mail PAF, live SMTP and HLR.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/postio-uk/postio-integrations",
-    "homepage": "https://postio.co.uk/integrations/mcp",
-    "readme": "https://github.com/postio-uk/postio-integrations#readme"
-  },
-  "keywords": [
-    "Postio — UK Address, Postcode, Email & Phone Validation"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@postio/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Validate UK addresses, postcodes, emails and phone numbers — Royal Mail PAF, live SMTP and HLR.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@postio/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5a7afce9ed8f0354",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@postio/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/postio-uk/postio-integrations",
+    "homepage": "https://postio.co.uk/integrations/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\uk.co.postio__postcode-address-validation.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=380",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "uk.co.postio/postcode-address-validation"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.attractiontickets.mcp/products",
+  "name": "com.attractiontickets.mcp/products",
+  "displayName": "AttractionTickets Products MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time attraction ticket availability, pricing engine, and theme park catalog.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.attractiontickets.mcp/products",
+    "remotes": [
+      {
+        "url": "https://mcp.attractiontickets.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.attractiontickets.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-445fa9f63313e892",
+      "type": "other",
+      "url": "https://mcp.attractiontickets.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.attractiontickets.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-99220f0d16057aa6",
+      "type": "other",
+      "url": "https://mcp.attractiontickets.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.attractiontickets.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mcp.attractiontickets.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.attractiontickets.mcp/products"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

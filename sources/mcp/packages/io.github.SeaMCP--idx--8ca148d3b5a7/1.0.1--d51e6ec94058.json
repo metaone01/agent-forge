@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.SeaMCP/idx",
+  "name": "io.github.SeaMCP/idx",
+  "displayName": "IDX MCP - Indonesia Stock Exchange Trading Data",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Indonesia Stock Exchange data: listed companies, shareholders, boards and daily trading.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.SeaMCP/idx",
+    "remotes": [
+      {
+        "url": "https://seamcp.com/idx/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c584a5a4016f0889",
+      "type": "other",
+      "url": "https://seamcp.com/idx/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://seamcp.com/idx/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SeaMCP/idx-mcp",
+    "homepage": "https://seamcp.com/idx"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=152",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SeaMCP/idx"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

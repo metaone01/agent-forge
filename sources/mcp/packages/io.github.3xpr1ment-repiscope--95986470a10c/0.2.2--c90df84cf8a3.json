@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.3xpr1ment/repiscope",
   "name": "io.github.3xpr1ment/repiscope",
+  "displayName": "io.github.3xpr1ment/repiscope",
   "version": "0.2.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only MCP server: your agent sees all your sibling repos but structurally cannot touch them",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/3xpr1ment/repiscope",
-    "readme": "https://github.com/3xpr1ment/repiscope#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "repiscope",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "repiscope",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ef0cb97b269b25c4",
       "type": "registry",
-      "url": "https://pypi.org/project/repiscope/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/repiscope",
+      "registry": "pypi",
+      "version": "0.2.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/3xpr1ment/repiscope"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.3xpr1ment__repiscope.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=105",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.3xpr1ment/repiscope"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

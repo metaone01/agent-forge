@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.PLANIT-TECH/primamcp",
   "name": "io.github.PLANIT-TECH/primamcp",
+  "displayName": "PRIMAMCP",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Verified, citable German & EU law for any LLM. Daily updates from official sources, hosted in DE.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/PLANIT-TECH/primamcp",
-    "homepage": "https://mcp.planitprima.com",
-    "readme": "https://github.com/PLANIT-TECH/primamcp#readme"
-  },
-  "keywords": [
-    "PRIMAMCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@planit-tech/primamcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Verified, citable German & EU law for any LLM. Daily updates from official sources, hosted in DE.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@planit-tech/primamcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.planitprima.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-29f80ef135de3a3e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@planit-tech/primamcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-88dbb3c42c37ac8c",
+      "type": "other",
+      "url": "https://mcp.planitprima.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.planitprima.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/PLANIT-TECH/primamcp",
+    "homepage": "https://mcp.planitprima.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.planit-tech__primamcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=146",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.PLANIT-TECH/primamcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.dropwatchhq/agent-receipts",
+  "name": "com.dropwatchhq/agent-receipts",
+  "displayName": "Agent Receipts",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Issue & verify signed (ed25519), hash-chained, timestamped provenance receipts for agent actions.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.dropwatchhq/agent-receipts",
+    "remotes": [
+      {
+        "url": "https://agent-receipts.dropwatchhq.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-621eca5b4de2b2ad",
+      "type": "other",
+      "url": "https://agent-receipts.dropwatchhq.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent-receipts.dropwatchhq.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agent-receipts.dropwatchhq.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=44",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.dropwatchhq/agent-receipts"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

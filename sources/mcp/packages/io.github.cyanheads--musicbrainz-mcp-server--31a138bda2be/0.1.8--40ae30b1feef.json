@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cyanheads/musicbrainz-mcp-server",
+  "name": "io.github.cyanheads/musicbrainz-mcp-server",
+  "displayName": "io.github.cyanheads/musicbrainz-mcp-server",
+  "version": "0.1.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search MusicBrainz artists, releases, works, labels; resolve ISRC/ISWC/barcode; fetch cover art.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cyanheads/musicbrainz-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://musicbrainz.caseyjhand.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0c3476ce37772cea",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cyanheads/musicbrainz-mcp-server",
+      "registry": "npm",
+      "version": "0.1.8"
+    },
+    {
+      "id": "upstream-30860a9d966bd601",
+      "type": "other",
+      "url": "https://musicbrainz.caseyjhand.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://musicbrainz.caseyjhand.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cyanheads/musicbrainz-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=188",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cyanheads/musicbrainz-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

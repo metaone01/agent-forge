@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.richardwilkinson9/statlyte",
   "name": "io.github.richardwilkinson9/statlyte",
+  "displayName": "statlyte — live LLM pricing",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Live LLM pricing, context windows and model ids, read from each vendor's own page every 3 hours.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/richardwilkinson9/statlyte-data",
-    "homepage": "https://statlyte.com",
-    "readme": "https://github.com/richardwilkinson9/statlyte-data#readme"
-  },
-  "keywords": [
-    "statlyte — live LLM pricing"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "statlyte",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Live LLM pricing, context windows and model ids, read from each vendor's own page every 3 hours.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "statlyte",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4af21d335b3233d4",
       "type": "registry",
       "url": "https://www.npmjs.com/package/statlyte",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/richardwilkinson9/statlyte-data",
+    "homepage": "https://statlyte.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.richardwilkinson9__statlyte.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=296",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.richardwilkinson9/statlyte"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

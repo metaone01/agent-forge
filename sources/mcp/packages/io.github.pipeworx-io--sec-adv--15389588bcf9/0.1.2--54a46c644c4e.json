@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/sec-adv",
+  "name": "io.github.pipeworx-io/sec-adv",
+  "displayName": "Sec Adv",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SEC ADV / IAPD MCP — SEC Investment Adviser Public Disclosure (Form ADV) lookup",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/sec-adv",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/sec-adv/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ac9ca2f63851b72b",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/sec-adv/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/sec-adv/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-sec-adv",
+    "homepage": "https://pipeworx.io/packs/sec-adv"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=286",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/sec-adv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

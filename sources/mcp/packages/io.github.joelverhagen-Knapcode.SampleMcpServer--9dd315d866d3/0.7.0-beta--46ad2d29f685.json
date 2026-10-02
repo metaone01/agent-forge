@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.joelverhagen/Knapcode.SampleMcpServer",
   "name": "io.github.joelverhagen/Knapcode.SampleMcpServer",
+  "displayName": "io.github.joelverhagen/Knapcode.SampleMcpServer",
   "version": "0.7.0-beta",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "A sample MCP server using the MCP C# SDK. Generates random numbers and random weather.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/joelverhagen/Knapcode.SampleMcpServer.git",
-    "readme": "https://github.com/joelverhagen/Knapcode.SampleMcpServer.git#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "Knapcode.SampleMcpServer",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "Knapcode.SampleMcpServer",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-536ab0f29df74d78",
       "type": "registry",
       "url": "https://www.nuget.org/packages/Knapcode.SampleMcpServer",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "0.7.0-beta"
     }
   ],
+  "links": {
+    "repository": "https://github.com/joelverhagen/Knapcode.SampleMcpServer.git"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.joelverhagen__knapcode.samplemcpserver.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=220",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.joelverhagen/Knapcode.SampleMcpServer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

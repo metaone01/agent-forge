@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.LabForgeDev/copilot-memory-mcp",
   "name": "io.github.LabForgeDev/copilot-memory-mcp",
+  "displayName": "Copilot Memory MCP",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Persistent semantic memory for AI agents using local ChromaDB vector search. No cloud required.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/LabForgeDev/copilot-memory-mcp",
-    "readme": "https://github.com/LabForgeDev/copilot-memory-mcp#readme"
-  },
-  "keywords": [
-    "Copilot Memory MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/labforgedev/copilot-memory-mcp:1.0.0",
-    "transport": "sse"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/labforgedev/copilot-memory-mcp:1.0.0",
+    "transport": "sse"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/labforgedev/copilot-memory-mcp",
-      "priority": 10,
+      "id": "upstream-522751155af2f686",
+      "type": "oci",
+      "url": "https://ghcr.io/labforgedev/copilot-memory-mcp:1.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/LabForgeDev/copilot-memory-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.labforgedev__copilot-memory-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=138",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.LabForgeDev/copilot-memory-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

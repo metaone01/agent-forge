@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.nimcoffee/nimcoffee",
+  "name": "com.nimcoffee/nimcoffee",
+  "displayName": "NiMCoffee 新印象咖啡",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Order freshly self-roasted specialty coffee from NiMCoffee, a coffee roaster in Fuzhou, China.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.nimcoffee/nimcoffee",
+    "remotes": [
+      {
+        "url": "https://mcp.nimcoffee.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.nimcoffee.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bac65884b17f94a8",
+      "type": "other",
+      "url": "https://mcp.nimcoffee.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nimcoffee.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-0a940e472f81c886",
+      "type": "other",
+      "url": "https://mcp.nimcoffee.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nimcoffee.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://nimcoffee.com/open"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=65",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.nimcoffee/nimcoffee"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

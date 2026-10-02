@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.steledger/gateway",
+  "name": "com.steledger/gateway",
+  "displayName": "Steledger",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Durable identity and memory for AI agents, anchored on the Emercoin blockchain.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/steledger/mcp:latest",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.steledger.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9a761ce4c6d6fff3",
+      "type": "oci",
+      "url": "https://ghcr.io/steledger/mcp:latest",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-9894202b0a2e9bfe",
+      "type": "other",
+      "url": "https://api.steledger.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.steledger.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/steledger/steledger-gateway",
+    "homepage": "https://api.steledger.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=78",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.steledger/gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

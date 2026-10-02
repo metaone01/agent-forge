@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.steadywrk/mcp-dispatch",
+  "name": "app.steadywrk/mcp-dispatch",
+  "displayName": "STEADYWRK Field Service Dispatch",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Field service dispatch: instant quotes, tracked work orders, public evals. steadywrk.app",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.steadywrk/mcp-dispatch",
+    "remotes": [
+      {
+        "url": "https://steadywrk.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6cf73c8826739318",
+      "type": "other",
+      "url": "https://steadywrk.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://steadywrk.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://steadywrk.app/developers/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.steadywrk/mcp-dispatch"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

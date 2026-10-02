@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.a7d94b19216ee000605c80cd00812c60b4075fadf2679c32495d8678c73d8d64",
+  "name": "chaserchan/dsh-browser-harness",
+  "displayName": "chaserchan/dsh-browser-harness",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "浏览器控制插件：把 browser-use / browser-harness 的 Browser Harness 注册为 DSH 会话工具，让 agent 直接写 Python 驱动真实 Chrome（导航/点击/输入/取无障碍树/截图），支持独立专用浏览器与附着系统浏览器两种模式；配置 TypeSafe key 后条件启用 browser_autopilot（Jev 目标式自动化）。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/chaserchan/dsh-browser-harness",
+    "readme": "https://github.com/chaserchan/dsh-browser-harness#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/chaserchan/dsh-browser-harness"
+    },
+    {
+      "id": "npm-47f846c0e011",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-browser-harness",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15138"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15366"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-browser-harness"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

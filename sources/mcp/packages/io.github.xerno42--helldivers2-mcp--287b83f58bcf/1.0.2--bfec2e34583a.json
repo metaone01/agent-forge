@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.xerno42/helldivers2-mcp",
+  "name": "io.github.xerno42/helldivers2-mcp",
+  "displayName": "io.github.xerno42/helldivers2-mcp",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server exposing live Helldivers 2 galactic war data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "helldivers2-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.avengersofsuperearth.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5b59e124ccdb63fa",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/helldivers2-mcp",
+      "registry": "npm",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-45f36928d6d4c5d8",
+      "type": "oci",
+      "url": "https://docker.io/xerno42/helldivers2-mcp:1.0.2",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-013e88da213ce6e4",
+      "type": "other",
+      "url": "https://mcp.avengersofsuperearth.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.avengersofsuperearth.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/xerno42/helldivers2-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=352",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.xerno42/helldivers2-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

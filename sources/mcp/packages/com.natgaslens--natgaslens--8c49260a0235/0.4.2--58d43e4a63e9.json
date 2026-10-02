@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.natgaslens/natgaslens",
+  "name": "com.natgaslens/natgaslens",
+  "displayName": "NatGasLens — US Natural Gas & Henry Hub Data",
+  "version": "0.4.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "US natural gas for agents: LNG feedgas, outages, EIA storage, Henry Hub curve, COT, charts",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.natgaslens/natgaslens",
+    "remotes": [
+      {
+        "url": "https://mcp.natgaslens.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4c5bbfa5849e9c37",
+      "type": "other",
+      "url": "https://mcp.natgaslens.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.natgaslens.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://natgaslens.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.natgaslens/natgaslens"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

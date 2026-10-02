@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sonilo-ai/sonilo-mcp",
   "name": "io.github.sonilo-ai/sonilo-mcp",
+  "displayName": "Sonilo Music & Sound Effects",
   "version": "0.27.0",
-  "versionScheme": "semver",
-  "description": "Licensed soundtracks and sound effects matched to your video. Commercial use OK.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/sonilo-ai/sonilo-mcp",
-    "readme": "https://github.com/sonilo-ai/sonilo-mcp#readme"
-  },
-  "keywords": [
-    "Sonilo Music & Sound Effects"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sonilo-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Licensed soundtracks and sound effects matched to your video. Commercial use OK.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sonilo-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4ffaba9c1b9770df",
       "type": "registry",
-      "url": "https://pypi.org/project/sonilo-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sonilo-mcp",
+      "registry": "pypi",
+      "version": "0.27.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sonilo-ai/sonilo-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sonilo-ai__sonilo-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=331",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sonilo-ai/sonilo-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

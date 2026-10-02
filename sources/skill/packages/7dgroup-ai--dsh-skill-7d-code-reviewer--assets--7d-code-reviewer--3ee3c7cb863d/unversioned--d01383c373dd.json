@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.ea8e682cc15bad5c3056674c79f5ee9ef52a050c007cba24d3b11825abec745b",
+  "name": "7dgroup-ai/dsh-skill-7d-code-reviewer/assets/7d-code-reviewer",
+  "displayName": "7dgroup-ai/dsh-skill-7d-code-reviewer/assets/7d-code-reviewer",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "这是一个专业级的 DSH（DeepSeek Harness）代码审查技能插件，由 7DGroup 团队开发，专为 AI 辅助代码审查场景设计。基于 TypeScript + Cordis 开发，以组合包（bundle）形式安装，通过 ctx.skills 注册 7d-code-reviewer 技能：五步审查流程、严重/中等/轻微三级问题分级、四维度评分标准，文本摘要与 HTML 报告双输出。零核心改动——安装即启用，移除 bundle 行即卸载。",
+  "license": "MIT",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "assets/7d-code-reviewer/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer",
+    "readme": "https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer/blob/HEAD/assets/7d-code-reviewer/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer/tree/HEAD/assets/7d-code-reviewer"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "170"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

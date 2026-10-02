@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.dryow1/steel-brain",
+  "name": "io.github.dryow1/steel-brain",
+  "displayName": "Steel Brain",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Trade-verified steel grade properties, substitution verdicts, and mill-cert guidance for AI agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/dryow1/steel-brain:1.0.0",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.steelbrain.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c640ffc7f8575ded",
+      "type": "oci",
+      "url": "https://ghcr.io/dryow1/steel-brain:1.0.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-5e3c3eab07fca50a",
+      "type": "other",
+      "url": "https://api.steelbrain.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.steelbrain.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/dryow1/steel-brain",
+    "homepage": "https://api.steelbrain.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=196",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dryow1/steel-brain"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

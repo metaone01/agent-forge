@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cdnsteve/sugar",
   "name": "io.github.cdnsteve/sugar",
+  "displayName": "Sugar",
   "version": "3.4.2",
-  "versionScheme": "semver",
-  "description": "Autonomous AI development system with persistent task queue and background execution",
-  "license": "AGPL-3.0-or-later",
-  "links": {
-    "repository": "https://github.com/roboticforce/sugar",
-    "homepage": "https://github.com/roboticforce/sugar",
-    "readme": "https://github.com/roboticforce/sugar#readme"
-  },
-  "keywords": [
-    "Sugar"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sugarai",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Autonomous AI development system with persistent task queue and background execution",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sugarai",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-462a8386e306e7c4",
       "type": "registry",
-      "url": "https://pypi.org/project/sugarai/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sugarai",
+      "registry": "pypi",
+      "version": "3.4.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/roboticforce/sugar",
+    "homepage": "https://github.com/roboticforce/sugar"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cdnsteve__sugar.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=180",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cdnsteve/sugar"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

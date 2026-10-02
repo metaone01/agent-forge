@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Contentrain/contentrain",
+  "name": "io.github.Contentrain/contentrain",
+  "displayName": "Contentrain",
+  "version": "3.9.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Git-native content governance for AI agents — 27 deterministic MCP tools over stdio and HTTP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@contentrain/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://studio.contentrain.io/api/mcp/v1/{project_id}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f3db918b1e3fc6bb",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@contentrain/mcp",
+      "registry": "npm",
+      "version": "3.9.2"
+    },
+    {
+      "id": "upstream-9e213bf99dc279e3",
+      "type": "other",
+      "url": "https://studio.contentrain.io/api/mcp/v1/{project_id}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://studio.contentrain.io/api/mcp/v1/{project_id}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Contentrain/ai",
+    "homepage": "https://ai.contentrain.io/packages/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=120",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Contentrain/contentrain"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

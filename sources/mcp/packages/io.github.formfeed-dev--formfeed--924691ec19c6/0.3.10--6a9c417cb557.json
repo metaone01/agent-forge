@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.formfeed-dev/formfeed",
+  "name": "io.github.formfeed-dev/formfeed",
+  "displayName": "Formfeed",
+  "version": "0.3.10",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Render PDFs and images from templates, validate data and convert Office files to PDF.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@formfeed/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.formfeed.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.formfeed.dev/mcp/{workspace_id}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ecf544b832b822e3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@formfeed/mcp",
+      "registry": "npm",
+      "version": "0.3.10"
+    },
+    {
+      "id": "upstream-e10383cc8bf0a9c0",
+      "type": "other",
+      "url": "https://mcp.formfeed.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.formfeed.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-91bec15b05beb40c",
+      "type": "other",
+      "url": "https://mcp.formfeed.dev/mcp/{workspace_id}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.formfeed.dev/mcp/{workspace_id}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/formfeed-dev/formfeed",
+    "homepage": "https://docs.formfeed.dev/integrations/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.formfeed-dev/formfeed"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

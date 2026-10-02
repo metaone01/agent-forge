@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mrmaciej1/justfill-pdf-forms",
   "name": "io.github.mrmaciej1/justfill-pdf-forms",
+  "displayName": "JustFill PDF Form Automation",
   "version": "0.4.10",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Detect, review and fill existing PDF forms from JSON or Excel; reuse saved templates",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/mrmaciej1/justfill-mcp",
-    "homepage": "https://justfill.app/mcp?utm_source=mcp_registry&utm_medium=directory&utm_campaign=b2b_pdf_automation_2026q3&utm_content=server_listing",
-    "readme": "https://github.com/mrmaciej1/justfill-mcp#readme"
-  },
-  "keywords": [
-    "JustFill PDF Form Automation"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "justfill-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "justfill-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.justfill.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d1dfffae1b347c74",
       "type": "registry",
-      "url": "https://pypi.org/project/justfill-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/justfill-mcp",
+      "registry": "pypi",
+      "version": "0.4.10"
+    },
+    {
+      "id": "upstream-6aa0085d34661fca",
+      "type": "other",
+      "url": "https://api.justfill.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.justfill.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/mrmaciej1/justfill-mcp",
+    "homepage": "https://justfill.app/mcp?utm_source=mcp_registry&utm_medium=directory&utm_campaign=b2b_pdf_automation_2026q3&utm_content=server_listing"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mrmaciej1__justfill-pdf-forms.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=260",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mrmaciej1/justfill-pdf-forms"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

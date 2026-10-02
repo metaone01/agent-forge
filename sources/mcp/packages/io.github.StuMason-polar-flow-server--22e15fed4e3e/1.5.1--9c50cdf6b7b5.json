@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.StuMason/polar-flow-server",
   "name": "io.github.StuMason/polar-flow-server",
+  "displayName": "Polar Health Data (self-hosted)",
   "version": "1.5.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted Polar health analytics with a built-in MCP server: sleep, HRV, workouts, baselines.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/StuMason/polar-flow-server",
-    "homepage": "https://stumason.github.io/polar-flow-server/",
-    "readme": "https://github.com/StuMason/polar-flow-server#readme"
-  },
-  "keywords": [
-    "Polar Health Data (self-hosted)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/stumason/polar-flow-server:1.5.1",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/stumason/polar-flow-server:1.5.1",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/stumason/polar-flow-server",
-      "priority": 10,
+      "id": "upstream-8f8fcc53b35646e3",
+      "type": "oci",
+      "url": "https://docker.io/stumason/polar-flow-server:1.5.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/StuMason/polar-flow-server",
+    "homepage": "https://stumason.github.io/polar-flow-server/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.stumason__polar-flow-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=155",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.StuMason/polar-flow-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.es.beel/mcp",
+  "name": "es.beel/mcp",
+  "displayName": "BeeL",
+  "version": "0.9.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Spanish e-invoicing with VeriFactu (AEAT): issue invoices, manage customers, validate NIFs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@beel_es/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.beel.es/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8fc497652452dbab",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@beel_es/mcp",
+      "registry": "npm",
+      "version": "0.9.0"
+    },
+    {
+      "id": "upstream-21c3ed66f12780f1",
+      "type": "other",
+      "url": "https://mcp.beel.es/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.beel.es/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/beel-es/beel-mcp",
+    "homepage": "https://docs.beel.es/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "es.beel/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

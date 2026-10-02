@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.qmailing/mcp-server",
+  "name": "com.qmailing/mcp-server",
+  "displayName": "com.qmailing/mcp-server",
+  "version": "0.3.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI agents read & send email, manage mailboxes, domains and webhooks via the QMailing API.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@qmailing/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://qmailing.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5afe30bc67e78533",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@qmailing/mcp-server",
+      "registry": "npm",
+      "version": "0.3.5"
+    },
+    {
+      "id": "upstream-923f8a7dcf6e0fb8",
+      "type": "other",
+      "url": "https://qmailing.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://qmailing.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TheSameAbramovych/qmailing-mcp-server",
+    "homepage": "https://qmailing.com/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=71",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.qmailing/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

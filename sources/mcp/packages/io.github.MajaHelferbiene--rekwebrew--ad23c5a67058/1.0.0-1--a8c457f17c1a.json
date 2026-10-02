@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.MajaHelferbiene/rekwebrew",
+  "name": "io.github.MajaHelferbiene/rekwebrew",
+  "displayName": "Reuffel",
+  "version": "1.0.0-1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search for books and book-related products, with access to product and delivery details",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.MajaHelferbiene/rekwebrew",
+    "remotes": [
+      {
+        "url": "https://www.reuffel.de/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://www.reuffel.de/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fd7303785bc756f0",
+      "type": "other",
+      "url": "https://www.reuffel.de/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.reuffel.de/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-13cdac1c4d3aa5f1",
+      "type": "other",
+      "url": "https://www.reuffel.de/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://www.reuffel.de/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.reuffel.de"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MajaHelferbiene/rekwebrew"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

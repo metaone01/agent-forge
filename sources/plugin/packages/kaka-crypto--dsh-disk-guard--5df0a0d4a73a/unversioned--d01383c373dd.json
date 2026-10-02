@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.23dc2d18bced9deee56d5e3cb037923bfefd99deeeb86fd26ea3e66a571f8169",
+  "name": "kaka-crypto/dsh-disk-guard",
+  "displayName": "kaka-crypto/dsh-disk-guard",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "磁盘守护：把 DSH 的下载/产物/缓存/临时文件重定向到用户指定目录（默认自动挑剩余空间最大的非 C 盘），向每个会话注入『路径纪律』提示词，并提供 disk_guard 状态/清理/改目录工具——防止 C 盘爆炸。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/kaka-crypto/dsh-disk-guard",
+    "readme": "https://github.com/kaka-crypto/dsh-disk-guard#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/kaka-crypto/dsh-disk-guard"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12275"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/kaka-crypto__dsh-disk-guard.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12241"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

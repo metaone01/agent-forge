@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.zicron.claims/medical-chronology",
+  "name": "ai.zicron.claims/medical-chronology",
+  "displayName": "Zicron medical chronology",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Quote, request and run page-cited medical chronologies for law firms and nurse consultants.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.zicron.claims/medical-chronology",
+    "remotes": [
+      {
+        "url": "https://claims.zicron.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://claims.zicron.ai/agent/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5be36cc0c4a38089",
+      "type": "other",
+      "url": "https://claims.zicron.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://claims.zicron.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-83202502ac42dbcd",
+      "type": "other",
+      "url": "https://claims.zicron.ai/agent/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://claims.zicron.ai/agent/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://claims.zicron.ai/medical-chronology"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.zicron.claims/medical-chronology"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

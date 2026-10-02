@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.IvanMurzak/Unity-MCP",
   "name": "io.github.IvanMurzak/Unity-MCP",
+  "displayName": "io.github.IvanMurzak/Unity-MCP",
   "version": "0.17.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Make 3D games in Unity Engine with AI. MCP Server + Plugin for Unity Editor and Unity games.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/IvanMurzak/Unity-MCP",
-    "readme": "https://github.com/IvanMurzak/Unity-MCP#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/ivanmurzakdev/unity-mcp-server:0.17.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/ivanmurzakdev/unity-mcp-server:0.17.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/ivanmurzakdev/unity-mcp-server",
-      "priority": 10,
+      "id": "upstream-3034a019b97b7e4a",
+      "type": "oci",
+      "url": "https://docker.io/ivanmurzakdev/unity-mcp-server:0.17.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/IvanMurzak/Unity-MCP"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ivanmurzak__unity-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.IvanMurzak/Unity-MCP"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

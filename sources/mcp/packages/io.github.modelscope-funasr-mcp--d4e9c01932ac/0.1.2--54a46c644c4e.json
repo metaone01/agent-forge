@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.modelscope/funasr-mcp",
   "name": "io.github.modelscope/funasr-mcp",
+  "displayName": "FunASR",
   "version": "0.1.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Transcribe local audio with FunASR and SenseVoice using private, on-device inference.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/modelscope/FunASR",
-    "homepage": "https://github.com/modelscope/FunASR/tree/main/examples/mcp_server",
-    "readme": "https://github.com/modelscope/FunASR#readme"
-  },
-  "keywords": [
-    "FunASR"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/modelscope/funasr-mcp:0.1.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/modelscope/funasr-mcp:0.1.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/modelscope/funasr-mcp",
-      "priority": 10,
+      "id": "upstream-c97ef87e916024f3",
+      "type": "oci",
+      "url": "https://ghcr.io/modelscope/funasr-mcp:0.1.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/modelscope/FunASR",
+    "homepage": "https://github.com/modelscope/FunASR/tree/main/examples/mcp_server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.modelscope__funasr-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=251",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.modelscope/funasr-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

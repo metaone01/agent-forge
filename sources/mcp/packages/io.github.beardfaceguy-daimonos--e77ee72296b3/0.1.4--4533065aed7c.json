@@ -2,48 +2,66 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.beardfaceguy/daimonos",
   "name": "io.github.beardfaceguy/daimonos",
+  "displayName": "Daimonos",
   "version": "0.1.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Agent-optimized MCP server with structured JSON tools. 20-45% token savings.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/beardfaceguy/daimonos",
-    "readme": "https://github.com/beardfaceguy/daimonos#readme"
-  },
-  "keywords": [
-    "Daimonos"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/beardfaceguy/daimonos/releases/download/v0.1.4/daimonos-x86_64-linux.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/beardfaceguy/daimonos/releases/download/v0.1.4/daimonos-x86_64-linux.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-90c1456bdbeb6c83",
+      "type": "archive",
       "url": "https://github.com/beardfaceguy/daimonos/releases/download/v0.1.4/daimonos-x86_64-linux.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-b7bb0d6c6acda0dd",
+      "type": "archive",
+      "url": "https://github.com/beardfaceguy/daimonos/releases/download/v0.1.4/daimonos-aarch64-linux.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-05121e3847f8184b",
+      "type": "archive",
+      "url": "https://github.com/beardfaceguy/daimonos/releases/download/v0.1.4/daimonos-aarch64-macos.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-94d4ed3c54f5584d",
+      "type": "archive",
+      "url": "https://github.com/beardfaceguy/daimonos/releases/download/v0.1.4/daimonos-x86_64-macos.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-860c66d90b4824ac",
+      "type": "archive",
+      "url": "https://github.com/beardfaceguy/daimonos/releases/download/v0.1.4/daimonos-x86_64-linux-musl.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/beardfaceguy/daimonos"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +74,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.beardfaceguy__daimonos.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=175",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.beardfaceguy/daimonos"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

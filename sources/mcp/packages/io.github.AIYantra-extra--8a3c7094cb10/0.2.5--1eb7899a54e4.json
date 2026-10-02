@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.AIYantra/extra",
   "name": "io.github.AIYantra/extra",
+  "displayName": "EXTRA - Native Computer Use",
   "version": "0.2.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Flashless macOS & Windows native computer-use engine for AI vision, mouse & keyboard automation",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/AIYantra/extra",
-    "homepage": "https://extra.yantraos.com",
-    "readme": "https://github.com/AIYantra/extra#readme"
-  },
-  "keywords": [
-    "EXTRA - Native Computer Use"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "extra-desktop",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "extra-desktop",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d389e2250c7cb8e7",
       "type": "registry",
-      "url": "https://pypi.org/project/extra-desktop/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/extra-desktop",
+      "registry": "pypi",
+      "version": "0.2.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/AIYantra/extra",
+    "homepage": "https://extra.yantraos.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aiyantra__extra.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=107",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AIYantra/extra"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

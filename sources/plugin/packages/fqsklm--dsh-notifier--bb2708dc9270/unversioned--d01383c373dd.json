@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c21fbe9fb54fefb380e60ff4a6da9d47c494863eb0813c9d71e3b430a3942dfa",
+  "name": "fqsklm/dsh-notifier",
+  "displayName": "fqsklm/dsh-notifier",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 通知器：一轮对话结束、需要审批、或模型用 ask_user_question 问你要选哪个时，由 Chrome 扩展弹出系统通知并显示 DSH 抛出的原文（审批 = 回到对话 / 允许；提问 = 只留一个「回到对话」，选项回网页里选），不产生 PowerShell 闪窗",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/fqsklm/dsh-notifier",
+    "readme": "https://github.com/fqsklm/dsh-notifier#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/fqsklm/dsh-notifier"
+    }
+  ],
+  "keywords": [
+    "notifications",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15409"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

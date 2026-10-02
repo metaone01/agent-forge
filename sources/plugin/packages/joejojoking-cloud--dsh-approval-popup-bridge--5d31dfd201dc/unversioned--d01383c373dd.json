@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2c44a2fb02c044b68c76191ead584da799cc9d8321202dca7618e5d000c0a437",
+  "name": "joejojoking-cloud/dsh-approval-popup-bridge",
+  "displayName": "joejojoking-cloud/dsh-approval-popup-bridge",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH（DeepSeek Harness）全局提醒弹窗：宿主组合桥接插件 + Windows 毛玻璃弹窗应用。审批请求（kind=ask）、agent 输出完成（kind=done）、agent 提问（kind=question）时在主屏幕居中置顶弹出靛蓝毛玻璃提醒，附守护脚本自动拉起。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/joejojoking-cloud/dsh-approval-popup-bridge",
+    "readme": "https://github.com/joejojoking-cloud/dsh-approval-popup-bridge#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/joejojoking-cloud/dsh-approval-popup-bridge"
+    }
+  ],
+  "keywords": [
+    "safety",
+    "notifications"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "1172"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "joejojoking-cloud/dsh-approval-popup-bridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

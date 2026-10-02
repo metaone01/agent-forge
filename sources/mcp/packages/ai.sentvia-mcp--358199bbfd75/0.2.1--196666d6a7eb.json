@@ -2,48 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.ai.sentvia/mcp",
   "name": "ai.sentvia/mcp",
+  "displayName": "ai.sentvia/mcp",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Email for AI agents: inboxes, send/reply/forward, search, threads, webhooks — 21 SentVia tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/samuelar2/sentvia-mcp",
-    "homepage": "https://docs.sentvia.ai/guides/mcp",
-    "readme": "https://github.com/samuelar2/sentvia-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "sentvia-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Email for AI agents: inboxes, send/reply/forward, search, threads, webhooks — 21 SentVia tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sentvia-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1e20b4223e5c787f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/sentvia-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/samuelar2/sentvia-mcp",
+    "homepage": "https://docs.sentvia.ai/guides/mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.sentvia__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=12",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.sentvia/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

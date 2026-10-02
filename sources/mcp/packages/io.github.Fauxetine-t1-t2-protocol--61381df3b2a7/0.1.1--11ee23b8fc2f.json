@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Fauxetine/t1-t2-protocol",
   "name": "io.github.Fauxetine/t1-t2-protocol",
+  "displayName": "T1/T2 Protocol",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Caller-side T1/T2 heterogeneous validation MCP server. Stdlib-only Python.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Fauxetine/t1-t2-protocol",
-    "homepage": "https://registry.modelcontextprotocol.io/",
-    "readme": "https://github.com/Fauxetine/t1-t2-protocol#readme"
-  },
-  "keywords": [
-    "T1/T2 Protocol"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "t1-t2-protocol",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "t1-t2-protocol",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-860d26e029d99f42",
       "type": "registry",
-      "url": "https://pypi.org/project/t1-t2-protocol/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/t1-t2-protocol",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Fauxetine/t1-t2-protocol",
+    "homepage": "https://registry.modelcontextprotocol.io/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fauxetine__t1-t2-protocol.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=129",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Fauxetine/t1-t2-protocol"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

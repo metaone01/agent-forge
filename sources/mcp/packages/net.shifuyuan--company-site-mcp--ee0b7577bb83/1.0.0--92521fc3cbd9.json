@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.shifuyuan/company-site-mcp",
+  "name": "net.shifuyuan/company-site-mcp",
+  "displayName": "世福源供应链 · 企业官网开放数据 MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "海南世福源冻品火锅食材供应链官网开放数据：全站检索、企业概况、产品矩阵、成功案例、FAQ、招聘 6 个只读工具，API Key 官网自助申请。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.shifuyuan/company-site-mcp",
+    "remotes": [
+      {
+        "url": "https://gys.shifuyuan.net/api/mcp/v1/rpc",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0957dbcf6728e47f",
+      "type": "other",
+      "url": "https://gys.shifuyuan.net/api/mcp/v1/rpc",
+      "install": {
+        "type": "api",
+        "url": "https://gys.shifuyuan.net/api/mcp/v1/rpc"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://gys.shifuyuan.net/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.shifuyuan/company-site-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

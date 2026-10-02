@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.jp.ruletrade/mcp",
+  "name": "jp.ruletrade/mcp",
+  "displayName": "Rule Trade - Japanese equity verification layer",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verified Japanese equity studies: 50 anomalies, 26 indicators, 12 candlesticks, events, ETF decay.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "jp.ruletrade/mcp",
+    "remotes": [
+      {
+        "url": "https://ruletrade.jp/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ee70d228d53a5853",
+      "type": "other",
+      "url": "https://ruletrade.jp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ruletrade.jp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/oo12takemaru-create/stock-trading-",
+    "homepage": "https://ruletrade.jp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=363",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "jp.ruletrade/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

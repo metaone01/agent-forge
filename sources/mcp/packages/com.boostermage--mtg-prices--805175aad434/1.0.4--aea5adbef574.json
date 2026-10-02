@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.boostermage/mtg-prices",
+  "name": "com.boostermage/mtg-prices",
+  "displayName": "Boostermage MTG Prices",
+  "version": "1.0.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live MTG sealed product prices across UK retailers. Search, compare, track deals and price drops.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.boostermage/mtg-prices",
+    "remotes": [
+      {
+        "url": "https://mcp.boostermage.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.boostermage.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0f51132d92888d7c",
+      "type": "other",
+      "url": "https://mcp.boostermage.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.boostermage.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-671946ea02d0f5f9",
+      "type": "other",
+      "url": "https://mcp.boostermage.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.boostermage.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/fmacpro/boostermage"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=37",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.boostermage/mtg-prices"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.offlineprotocol/hosted",
+  "name": "com.offlineprotocol/hosted",
+  "displayName": "Offline Protocol (hosted)",
+  "version": "0.2.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Offline Protocol packages, workflows and integration guides over HTTPS. Read-only.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.offlineprotocol/hosted",
+    "remotes": [
+      {
+        "url": "https://mcp.offlineprotocol.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.offlineprotocol.com/public/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-21da0c08695ccfb0",
+      "type": "other",
+      "url": "https://mcp.offlineprotocol.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.offlineprotocol.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-0f8e99e6581201cb",
+      "type": "other",
+      "url": "https://mcp.offlineprotocol.com/public/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.offlineprotocol.com/public/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.offlineprotocol.com/docs/tools/overview"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=66",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.offlineprotocol/hosted"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

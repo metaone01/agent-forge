@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Copenhagen0x/solana-security-mcp",
   "name": "io.github.Copenhagen0x/solana-security-mcp",
+  "displayName": "Solana Security Standard",
   "version": "1.5.0",
-  "versionScheme": "semver",
-  "description": "Scan Solana/Anchor code against the Solana Security Standard and serve the ruleset to MCP clients.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Copenhagen0x/solana-security-standard",
-    "homepage": "https://github.com/Copenhagen0x/solana-security-standard",
-    "readme": "https://github.com/Copenhagen0x/solana-security-standard#readme"
-  },
-  "keywords": [
-    "Solana Security Standard"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@jelleo/solana-security-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Scan Solana/Anchor code against the Solana Security Standard and serve the ruleset to MCP clients.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@jelleo/solana-security-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c333777ebf79bbcc",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@jelleo/solana-security-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Copenhagen0x/solana-security-standard",
+    "homepage": "https://github.com/Copenhagen0x/solana-security-standard"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.copenhagen0x__solana-security-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=120",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Copenhagen0x/solana-security-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

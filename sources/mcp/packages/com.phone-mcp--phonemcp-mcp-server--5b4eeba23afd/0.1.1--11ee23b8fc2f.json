@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.phone-mcp/phonemcp-mcp-server",
+  "name": "com.phone-mcp/phonemcp-mcp-server",
+  "displayName": "PhoneMCP: AI-powered texts",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Send & receive texts using MCP. Use own phone! Get OTPs automate workflows Signup at phone-mcp.com",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.phone-mcp/phonemcp-mcp-server",
+    "remotes": [
+      {
+        "url": "https://phone-mcp.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d10931f43a814498",
+      "type": "other",
+      "url": "https://phone-mcp.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://phone-mcp.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.phone-mcp.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=69",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.phone-mcp/phonemcp-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

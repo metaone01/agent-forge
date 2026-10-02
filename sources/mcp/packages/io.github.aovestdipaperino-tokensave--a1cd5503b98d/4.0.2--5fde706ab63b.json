@@ -2,49 +2,65 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aovestdipaperino/tokensave",
   "name": "io.github.aovestdipaperino/tokensave",
+  "displayName": "TokenSave",
   "version": "4.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Code intelligence for 15+ languages: semantic graph queries instead of file reads. 37 MCP tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/aovestdipaperino/tokensave",
-    "homepage": "https://github.com/aovestdipaperino/tokensave",
-    "readme": "https://github.com/aovestdipaperino/tokensave#readme"
-  },
-  "keywords": [
-    "TokenSave"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/aovestdipaperino/tokensave/releases/download/v4.0.2/tokensave-v4.0.2-aarch64-macos.mcp.tar.gz",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/aovestdipaperino/tokensave/releases/download/v4.0.2/tokensave-v4.0.2-aarch64-macos.mcp.tar.gz",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-e4d8adbfd4afbc2c",
+      "type": "archive",
       "url": "https://github.com/aovestdipaperino/tokensave/releases/download/v4.0.2/tokensave-v4.0.2-aarch64-macos.mcp.tar.gz",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "4.0.2"
+    },
+    {
+      "id": "upstream-b5c696986e0b638b",
+      "type": "archive",
+      "url": "https://github.com/aovestdipaperino/tokensave/releases/download/v4.0.2/tokensave-v4.0.2-x86_64-linux.mcp.tar.gz",
+      "registry": "mcpb",
+      "version": "4.0.2"
+    },
+    {
+      "id": "upstream-fe888e659fac0265",
+      "type": "archive",
+      "url": "https://github.com/aovestdipaperino/tokensave/releases/download/v4.0.2/tokensave-v4.0.2-aarch64-linux.mcp.tar.gz",
+      "registry": "mcpb",
+      "version": "4.0.2"
+    },
+    {
+      "id": "upstream-a138fe0fcbc00ffb",
+      "type": "archive",
+      "url": "https://github.com/aovestdipaperino/tokensave/releases/download/v4.0.2/tokensave-v4.0.2-x86_64-windows.mcp.zip",
+      "registry": "mcpb",
+      "version": "4.0.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aovestdipaperino/tokensave",
+    "homepage": "https://github.com/aovestdipaperino/tokensave"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +73,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aovestdipaperino__tokensave.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=170",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aovestdipaperino/tokensave"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

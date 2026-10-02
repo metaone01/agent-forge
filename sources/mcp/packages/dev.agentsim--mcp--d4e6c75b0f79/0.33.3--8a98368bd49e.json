@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.agentsim/mcp",
+  "name": "dev.agentsim/mcp",
+  "displayName": "dev.agentsim/mcp",
+  "version": "0.33.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Control plane for agent auth walls. Connector 0 handles SMS OTP with US test numbers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.agentsim/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.agentsim.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ae1163dd69a4eb6b",
+      "type": "other",
+      "url": "https://mcp.agentsim.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.agentsim.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/agentsimdev/agentsim-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.agentsim/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

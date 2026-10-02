@@ -2,48 +2,102 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jpalepu/first100",
   "name": "io.github.jpalepu/first100",
+  "displayName": "io.github.jpalepu/first100",
   "version": "2.2.0",
-  "versionScheme": "semver",
-  "description": "Go-to-market tools for AI agents: publish and schedule posts, find customers, SEO, outreach.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/jpalepu/first100",
-    "homepage": "https://firsthundred.app",
-    "readme": "https://github.com/jpalepu/first100#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "first100-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Go-to-market tools for AI agents: publish and schedule posts, find customers, SEO, outreach.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "first100-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://firsthundred.app/api/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://firsthundred.app/api/mcp/core",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://firsthundred.app/api/mcp/seo",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://firsthundred.app/api/mcp/outreach",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5161681318b365c1",
       "type": "registry",
       "url": "https://www.npmjs.com/package/first100-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.2.0"
+    },
+    {
+      "id": "upstream-4d9371f0457bb652",
+      "type": "other",
+      "url": "https://firsthundred.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://firsthundred.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8322f499c225ac97",
+      "type": "other",
+      "url": "https://firsthundred.app/api/mcp/core",
+      "install": {
+        "type": "api",
+        "url": "https://firsthundred.app/api/mcp/core"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e0825812a05b567e",
+      "type": "other",
+      "url": "https://firsthundred.app/api/mcp/seo",
+      "install": {
+        "type": "api",
+        "url": "https://firsthundred.app/api/mcp/seo"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f7a1ec0fa99fd5e5",
+      "type": "other",
+      "url": "https://firsthundred.app/api/mcp/outreach",
+      "install": {
+        "type": "api",
+        "url": "https://firsthundred.app/api/mcp/outreach"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/jpalepu/first100",
+    "homepage": "https://firsthundred.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +110,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jpalepu__first100.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=221",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jpalepu/first100"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

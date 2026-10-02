@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.andrasfe/vulnicheck",
   "name": "io.github.andrasfe/vulnicheck",
+  "displayName": "io.github.andrasfe/vulnicheck",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "HTTP MCP Server for comprehensive Python vulnerability scanning and security analysis.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/andrasfe/vulnicheck",
-    "readme": "https://github.com/andrasfe/vulnicheck#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/andrasfe/vulnicheck:main",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/andrasfe/vulnicheck:main",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/andrasfe/vulnicheck",
-      "priority": 10,
+      "id": "upstream-d7f50c9e9baf611c",
+      "type": "oci",
+      "url": "https://docker.io/andrasfe/vulnicheck:main",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/andrasfe/vulnicheck"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.andrasfe__vulnicheck.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=169",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.andrasfe/vulnicheck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

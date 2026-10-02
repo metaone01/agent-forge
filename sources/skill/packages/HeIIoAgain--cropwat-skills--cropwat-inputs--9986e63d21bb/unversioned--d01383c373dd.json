@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.82470ae3171c2fded8f7ee6f9fd632f84aa10825c0632791f6e20b73fc5a470b",
+  "name": "HeIIoAgain/cropwat-skills/cropwat-inputs",
+  "displayName": "HeIIoAgain/cropwat-skills/cropwat-inputs",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "把 FAO CROPWAT 8.0 的完整流程自动化：从原始气象数据算 FAO-56 参考蒸散量，生成 .PEM/.CRM 输入文件，再批量测算作物需水量并输出结果 Excel。DeepSeek Harness 技能。",
+  "license": "NOASSERTION",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "cropwat-inputs/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/HeIIoAgain/cropwat-skills",
+    "readme": "https://github.com/HeIIoAgain/cropwat-skills/blob/HEAD/cropwat-inputs/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/HeIIoAgain/cropwat-skills/tree/HEAD/cropwat-inputs"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "597"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

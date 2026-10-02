@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cyanheads/wikipedia-mcp-server",
+  "name": "io.github.cyanheads/wikipedia-mcp-server",
+  "displayName": "io.github.cyanheads/wikipedia-mcp-server",
+  "version": "0.2.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search Wikipedia, read summaries and full text, target sections, find nearby pages, list languages.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cyanheads/wikipedia-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://wikipedia.caseyjhand.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3d6b4dd099eb7696",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cyanheads/wikipedia-mcp-server",
+      "registry": "npm",
+      "version": "0.2.5"
+    },
+    {
+      "id": "upstream-0c1f82ae30833fe6",
+      "type": "other",
+      "url": "https://wikipedia.caseyjhand.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://wikipedia.caseyjhand.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cyanheads/wikipedia-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=189",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cyanheads/wikipedia-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

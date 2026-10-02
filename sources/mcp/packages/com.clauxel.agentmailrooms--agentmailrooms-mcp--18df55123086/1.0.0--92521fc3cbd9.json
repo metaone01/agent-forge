@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.clauxel.agentmailrooms/agentmailrooms-mcp",
+  "name": "com.clauxel.agentmailrooms/agentmailrooms-mcp",
+  "displayName": "com.clauxel.agentmailrooms/agentmailrooms-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A paid remote MCP for OpenAI Codex agent coordination MCP, built to return verdicts, receipts, usage",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.clauxel.agentmailrooms/agentmailrooms-mcp",
+    "remotes": [
+      {
+        "url": "https://agentmailrooms.clauxel.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d59744c2d3511ffe",
+      "type": "other",
+      "url": "https://agentmailrooms.clauxel.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentmailrooms.clauxel.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/clauxel/agent-mail-rooms-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=40",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.clauxel.agentmailrooms/agentmailrooms-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

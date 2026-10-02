@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cool.footage/mcp-server",
+  "name": "cool.footage/mcp-server",
+  "displayName": "footage.cool: 4K Drone & Aerial Stock Footage",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and license 54,000+ drone, aerial, and ocean clips, mostly 4K, from filmmaker Phil Maher.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cool.footage/mcp-server",
+    "remotes": [
+      {
+        "url": "https://www.footage.cool/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-53c3f10b3dc63aec",
+      "type": "other",
+      "url": "https://www.footage.cool/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.footage.cool/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.footage.cool/for-ai-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=88",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cool.footage/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

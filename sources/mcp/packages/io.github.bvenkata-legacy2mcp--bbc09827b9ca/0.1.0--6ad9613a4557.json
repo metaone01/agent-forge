@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bvenkata/legacy2mcp",
   "name": "io.github.bvenkata/legacy2mcp",
+  "displayName": "legacy2mcp",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "Turn a legacy SOAP/WSDL service into a safe, typed, schema-validated, audit-logged MCP server",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/bvenkata/legacy2mcp",
-    "readme": "https://github.com/bvenkata/legacy2mcp#readme"
-  },
-  "keywords": [
-    "legacy2mcp"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "legacy2mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Turn a legacy SOAP/WSDL service into a safe, typed, schema-validated, audit-logged MCP server",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "legacy2mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fa9fc549420b622a",
       "type": "registry",
-      "url": "https://pypi.org/project/legacy2mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/legacy2mcp",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/bvenkata/legacy2mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bvenkata__legacy2mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=179",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bvenkata/legacy2mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

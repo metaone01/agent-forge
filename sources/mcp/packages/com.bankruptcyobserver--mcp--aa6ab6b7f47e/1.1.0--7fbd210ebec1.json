@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.bankruptcyobserver/mcp",
+  "name": "com.bankruptcyobserver/mcp",
+  "displayName": "Bankruptcy Observer",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "US business bankruptcy MCP: filings, dockets, documents, case summaries. Free tier + subscription.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.bankruptcyobserver/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.bankruptcyobserver.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-23b0a170247bd0f9",
+      "type": "other",
+      "url": "https://mcp.bankruptcyobserver.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.bankruptcyobserver.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jmtroller/mcp-documentation"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=36",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.bankruptcyobserver/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

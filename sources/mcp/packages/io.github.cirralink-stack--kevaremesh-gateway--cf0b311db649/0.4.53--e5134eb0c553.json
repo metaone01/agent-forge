@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cirralink-stack/kevaremesh-gateway",
+  "name": "io.github.cirralink-stack/kevaremesh-gateway",
+  "displayName": "KEVAREMESH AI Procurement Gateway",
+  "version": "0.4.53",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI procurement gateway: finds and auto-selects live x402 APIs; provider payments stay buyer-direct.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.cirralink-stack/kevaremesh-gateway",
+    "remotes": [
+      {
+        "url": "https://kevaremesh-web.vercel.app/api/x402/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6df5107382d1b47c",
+      "type": "other",
+      "url": "https://kevaremesh-web.vercel.app/api/x402/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://kevaremesh-web.vercel.app/api/x402/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cirralink-stack/cirralink",
+    "homepage": "https://kevaremesh-web.vercel.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=182",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cirralink-stack/kevaremesh-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

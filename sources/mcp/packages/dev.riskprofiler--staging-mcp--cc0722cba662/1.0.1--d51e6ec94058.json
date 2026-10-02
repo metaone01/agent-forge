@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.riskprofiler/staging-mcp",
+  "name": "dev.riskprofiler/staging-mcp",
+  "displayName": "dev.riskprofiler/staging-mcp",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "An MCP server that provides a hello tool",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.riskprofiler/staging-mcp",
+    "remotes": [
+      {
+        "url": "https://crp-staging-6721-api.riskprofiler.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-39b4715acaa518de",
+      "type": "other",
+      "url": "https://crp-staging-6721-api.riskprofiler.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://crp-staging-6721-api.riskprofiler.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=93",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.riskprofiler/staging-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

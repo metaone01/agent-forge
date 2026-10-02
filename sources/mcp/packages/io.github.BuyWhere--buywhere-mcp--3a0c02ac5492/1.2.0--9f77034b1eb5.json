@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.BuyWhere/buywhere-mcp",
+  "name": "io.github.BuyWhere/buywhere-mcp",
+  "displayName": "io.github.BuyWhere/buywhere-mcp",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-native product catalog: 300M+ products, 150,000+ stores, deliver_to ranking.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@buywhere/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.buywhere.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e6b1cd93942f02a4",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@buywhere/mcp-server",
+      "registry": "npm",
+      "version": "0.3.17"
+    },
+    {
+      "id": "upstream-b1f2238788e27192",
+      "type": "other",
+      "url": "https://api.buywhere.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.buywhere.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/BuyWhere/buywhere-mcp",
+    "homepage": "https://buywhere.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=115",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.BuyWhere/buywhere-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

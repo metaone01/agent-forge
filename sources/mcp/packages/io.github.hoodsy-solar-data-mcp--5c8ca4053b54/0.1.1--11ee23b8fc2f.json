@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.hoodsy/solar-data-mcp",
   "name": "io.github.hoodsy/solar-data-mcp",
+  "displayName": "Solar Data",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "US open solar data for agents: PVWatts production, tariffs & ROI, market data, forecasts. 18 tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/hoodsy/solar-data-mcp",
-    "homepage": "https://github.com/hoodsy/solar-data-mcp",
-    "readme": "https://github.com/hoodsy/solar-data-mcp#readme"
-  },
-  "keywords": [
-    "Solar Data"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "solar-data-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "solar-data-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-010734ac0d9c6e2f",
       "type": "registry",
-      "url": "https://pypi.org/project/solar-data-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/solar-data-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/hoodsy/solar-data-mcp",
+    "homepage": "https://github.com/hoodsy/solar-data-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.hoodsy__solar-data-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=210",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hoodsy/solar-data-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

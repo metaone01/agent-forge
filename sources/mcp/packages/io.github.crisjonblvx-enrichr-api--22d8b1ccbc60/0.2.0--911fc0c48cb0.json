@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.crisjonblvx/enrichr-api",
   "name": "io.github.crisjonblvx/enrichr-api",
+  "displayName": "Enrichr",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "50 billed utilities for AI agents. Get a free key at enrichrapi.dev (1,000 calls/month).",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/crisjonblvx/enrichrapi-mcp",
-    "homepage": "https://enrichrapi.dev",
-    "readme": "https://github.com/crisjonblvx/enrichrapi-mcp#readme"
-  },
-  "keywords": [
-    "Enrichr"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/crisjonblvx/enrichrapi-mcp/releases/download/v0.2.0/enrichrapi-mcp-0.2.0.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/crisjonblvx/enrichrapi-mcp/releases/download/v0.2.0/enrichrapi-mcp-0.2.0.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-f3df7dd06bd74bd7",
+      "type": "archive",
       "url": "https://github.com/crisjonblvx/enrichrapi-mcp/releases/download/v0.2.0/enrichrapi-mcp-0.2.0.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/crisjonblvx/enrichrapi-mcp",
+    "homepage": "https://enrichrapi.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.crisjonblvx__enrichr-api.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.crisjonblvx/enrichr-api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

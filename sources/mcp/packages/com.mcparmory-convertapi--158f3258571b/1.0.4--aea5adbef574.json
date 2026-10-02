@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcparmory/convertapi",
   "name": "com.mcparmory/convertapi",
+  "displayName": "com.mcparmory/convertapi",
   "version": "1.0.4",
-  "versionScheme": "semver",
-  "description": "Convert files across 500+ formats: documents, PDFs, and images",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/mcparmory/registry",
-    "readme": "https://github.com/mcparmory/registry#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcparmory-convertapi",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Convert files across 500+ formats: documents, PDFs, and images",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcparmory-convertapi",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6a5d34d5bbd0331e",
       "type": "registry",
-      "url": "https://pypi.org/project/mcparmory-convertapi/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcparmory-convertapi",
+      "registry": "pypi",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-72836c1be598f2eb",
+      "type": "oci",
+      "url": "https://ghcr.io/mcparmory/convertapi:1.0.4",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcparmory/registry"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcparmory__convertapi.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=61",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcparmory/convertapi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,48 +2,39 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pipik-roman/rowlite",
   "name": "io.github.pipik-roman/rowlite",
+  "displayName": "Rowlite MCP Server",
   "version": "0.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Go-based MCP server providing Markdown table file inspection and row-level operations.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/pipik-roman/rowlite/releases/download/v0.3.0/rowlite_0.3.0_linux_amd64.tar.gz?mcp=1",
-    "readme": "https://github.com/pipik-roman/rowlite/releases/download/v0.3.0/rowlite_0.3.0_linux_amd64.tar.gz?mcp=1#readme"
-  },
-  "keywords": [
-    "Rowlite MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/pipik-roman/rowlite/releases/download/v0.3.0/rowlite_0.3.0_linux_amd64.tar.gz?mcp=1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/pipik-roman/rowlite/releases/download/v0.3.0/rowlite_0.3.0_linux_amd64.tar.gz?mcp=1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-f644d35890ddd288",
+      "type": "archive",
       "url": "https://github.com/pipik-roman/rowlite/releases/download/v0.3.0/rowlite_0.3.0_linux_amd64.tar.gz?mcp=1",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +47,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pipik-roman__rowlite.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=290",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipik-roman/rowlite"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

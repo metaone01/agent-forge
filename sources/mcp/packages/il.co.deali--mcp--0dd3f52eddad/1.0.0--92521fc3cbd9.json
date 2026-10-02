@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.il.co.deali/mcp",
+  "name": "il.co.deali/mcp",
+  "displayName": "il.co.deali/mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP for deali.co.il: search Israeli AliExpress deals, products and Hebrew guides.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "il.co.deali/mcp",
+    "remotes": [
+      {
+        "url": "https://www.deali.co.il/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6143a8bec888b5aa",
+      "type": "other",
+      "url": "https://www.deali.co.il/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.deali.co.il/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.deali.co.il"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "il.co.deali/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

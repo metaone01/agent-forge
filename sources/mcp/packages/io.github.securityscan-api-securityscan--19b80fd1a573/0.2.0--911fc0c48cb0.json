@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.securityscan-api/securityscan",
   "name": "io.github.securityscan-api/securityscan",
+  "displayName": "io.github.securityscan-api/securityscan",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Security for AI agents: MCP audits, secret redaction, skill vetting, network scans, agent checkout.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/securityscan-api/securitystack-mcp",
-    "readme": "https://github.com/securityscan-api/securitystack-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "securityscan-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "securityscan-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b07a7f3ed2c4509c",
       "type": "registry",
-      "url": "https://pypi.org/project/securityscan-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/securityscan-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/securityscan-api/securitystack-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.securityscan-api__securityscan.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.securityscan-api/securityscan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

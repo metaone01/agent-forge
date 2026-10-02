@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.tibia/tibiawiki-mcp",
+  "name": "sh.tibia/tibiawiki-mcp",
+  "displayName": "sh.tibia/tibiawiki-mcp",
+  "version": "0.17.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "TibiaWiki knowledge base: attribute queries over creatures, items, NPCs, quests and spells",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@tibia.sh/tibiawiki-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.tibia.sh/wiki",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-754177ea663393f6",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@tibia.sh/tibiawiki-mcp",
+      "registry": "npm",
+      "version": "0.17.1"
+    },
+    {
+      "id": "upstream-f968564a8eb88d7b",
+      "type": "other",
+      "url": "https://mcp.tibia.sh/wiki",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tibia.sh/wiki"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/tibia-sh/tibiawiki-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.tibia/tibiawiki-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

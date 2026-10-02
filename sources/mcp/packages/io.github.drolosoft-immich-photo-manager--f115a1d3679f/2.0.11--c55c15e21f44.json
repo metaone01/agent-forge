@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.drolosoft/immich-photo-manager",
   "name": "io.github.drolosoft/immich-photo-manager",
+  "displayName": "Immich Photo Manager",
   "version": "2.0.11",
-  "versionScheme": "semver",
-  "description": "Photo management for self-hosted Immich: search, albums, duplicates, faces, PDF reports. 94 tools.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/drolosoft/immich-photo-manager",
-    "homepage": "https://github.com/drolosoft/immich-photo-manager",
-    "readme": "https://github.com/drolosoft/immich-photo-manager#readme"
-  },
-  "keywords": [
-    "Immich Photo Manager"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "immich-photo-manager",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Photo management for self-hosted Immich: search, albums, duplicates, faces, PDF reports. 94 tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "immich-photo-manager",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7b58050d91b31aba",
       "type": "registry",
-      "url": "https://pypi.org/project/immich-photo-manager/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/immich-photo-manager",
+      "registry": "pypi",
+      "version": "2.0.11"
+    },
+    {
+      "id": "upstream-5a37764afbf2dec4",
+      "type": "oci",
+      "url": "https://ghcr.io/drolosoft/immich-photo-manager:2.0.11",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/drolosoft/immich-photo-manager",
+    "homepage": "https://github.com/drolosoft/immich-photo-manager"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.drolosoft__immich-photo-manager.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=196",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.drolosoft/immich-photo-manager"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

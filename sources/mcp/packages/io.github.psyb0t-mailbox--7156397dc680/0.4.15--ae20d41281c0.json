@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.psyb0t/mailbox",
   "name": "io.github.psyb0t/mailbox",
+  "displayName": "Mailbox",
   "version": "0.4.15",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted MCP server for unified IMAP/SMTP mailbox access: read, list, and send email.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/psyb0t/docker-mailbox",
-    "readme": "https://github.com/psyb0t/docker-mailbox#readme"
-  },
-  "keywords": [
-    "Mailbox"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/psyb0t/mailbox:v0.4.15",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/psyb0t/mailbox:v0.4.15",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/psyb0t/mailbox",
-      "priority": 10,
+      "id": "upstream-80b7e14e3069bfb5",
+      "type": "oci",
+      "url": "https://docker.io/psyb0t/mailbox:v0.4.15",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/psyb0t/docker-mailbox"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.psyb0t__mailbox.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=292",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.psyb0t/mailbox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.isaacaskew/venunite-events",
+  "name": "io.github.isaacaskew/venunite-events",
+  "displayName": "VenuNite Events",
+  "version": "0.3.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Local US events: trivia, libraries, markets and gigs, with VenuNite links and ticket handoffs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "venunite-events",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.venunite.com/v1/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7fc450e09bd57a49",
+      "type": "registry",
+      "url": "https://pypi.org/project/venunite-events",
+      "registry": "pypi",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-24e06c83c08ff78e",
+      "type": "other",
+      "url": "https://mcp.venunite.com/v1/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.venunite.com/v1/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://venunite.com/developers/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=214",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.isaacaskew/venunite-events"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

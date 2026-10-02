@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.saascloud/cryptopulse",
+  "name": "ai.saascloud/cryptopulse",
+  "displayName": "CryptoPulse Data API",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pay-per-call crypto market intelligence for AI agents. USDC on Base via x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.saascloud/cryptopulse",
+    "remotes": [
+      {
+        "url": "https://cryptopulse.saascloud.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-24f30da9149a3ec8",
+      "type": "other",
+      "url": "https://cryptopulse.saascloud.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://cryptopulse.saascloud.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cryptopulse.saascloud.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=11",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.saascloud/cryptopulse"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

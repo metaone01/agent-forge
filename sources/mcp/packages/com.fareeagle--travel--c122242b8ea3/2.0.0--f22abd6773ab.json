@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.fareeagle/travel",
+  "name": "com.fareeagle/travel",
+  "displayName": "FareEagle Travel",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Flights, hotels, buses and holiday packages in India at live fares, plus visa help; pay on fareeagle",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.fareeagle/travel",
+    "remotes": [
+      {
+        "url": "https://www.fareeagle.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://www.fareeagle.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cf7428995c904e5d",
+      "type": "other",
+      "url": "https://www.fareeagle.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.fareeagle.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9b5d5fe3367afbc4",
+      "type": "other",
+      "url": "https://www.fareeagle.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://www.fareeagle.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.fareeagle.com/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=47",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.fareeagle/travel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.googleapis/genai-toolbox",
   "name": "io.github.googleapis/genai-toolbox",
+  "displayName": "MCP Toolbox for Databases",
   "version": "0.31.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP Toolbox for Databases enables your agent to connect to your database.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/googleapis/genai-toolbox",
-    "homepage": "https://github.com/googleapis/genai-toolbox",
-    "readme": "https://github.com/googleapis/genai-toolbox#readme"
-  },
-  "keywords": [
-    "MCP Toolbox for Databases"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:0.31.0",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:0.31.0",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/database-toolbox/toolbox/toolbox",
-      "priority": 10,
+      "id": "upstream-6b64d911eb11a848",
+      "type": "oci",
+      "url": "https://us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:0.31.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/googleapis/genai-toolbox",
+    "homepage": "https://github.com/googleapis/genai-toolbox"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.googleapis__genai-toolbox.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=206",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.googleapis/genai-toolbox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

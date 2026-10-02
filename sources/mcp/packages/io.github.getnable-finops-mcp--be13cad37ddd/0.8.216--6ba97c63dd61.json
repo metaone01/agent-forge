@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.getnable/finops-mcp",
   "name": "io.github.getnable/finops-mcp",
+  "displayName": "nable",
   "version": "0.8.216",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "See where your cloud and AI bills go, and spend less. Local-first, in your terminal or editor.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/getnable/finopsmcp",
-    "homepage": "https://getnable.com",
-    "readme": "https://github.com/getnable/finopsmcp#readme"
-  },
-  "keywords": [
-    "nable"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "finops-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "finops-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d9bca29eca6131d2",
       "type": "registry",
-      "url": "https://pypi.org/project/finops-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/finops-mcp",
+      "registry": "pypi",
+      "version": "0.8.216"
     }
   ],
+  "links": {
+    "repository": "https://github.com/getnable/finopsmcp",
+    "homepage": "https://getnable.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.getnable__finops-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=205",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.getnable/finops-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

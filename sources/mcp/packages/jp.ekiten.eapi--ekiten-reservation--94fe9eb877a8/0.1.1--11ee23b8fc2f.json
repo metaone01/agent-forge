@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.jp.ekiten.eapi/ekiten-reservation",
+  "name": "jp.ekiten.eapi/ekiten-reservation",
+  "displayName": "エキテン ネット予約",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "エキテン（日本全国のお店・施設の情報サイト）のネット予約を提供するMCPサーバー。オールジャンルの日本国内店舗・施設が対象。店舗検索・空き確認・予約登録・キャンセルに対応。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "jp.ekiten.eapi/ekiten-reservation",
+    "remotes": [
+      {
+        "url": "https://eapi.ekiten.jp/mcp/reservation",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c87c03c668bf1815",
+      "type": "other",
+      "url": "https://eapi.ekiten.jp/mcp/reservation",
+      "install": {
+        "type": "api",
+        "url": "https://eapi.ekiten.jp/mcp/reservation"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://eapi.ekiten.jp/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=363",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "jp.ekiten.eapi/ekiten-reservation"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

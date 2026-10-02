@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/bangladesh-payments-mcp",
+  "name": "app.wishpool/bangladesh-payments-mcp",
+  "displayName": "Bangladesh Payments (SSLCommerz — bKash / Nagad)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Bangladesh payments for AI agents — bKash / Nagad via SSLCommerz. Never holds funds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/bangladesh-payments-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-bd.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a9e107945f1ffeb5",
+      "type": "other",
+      "url": "https://mcp-bd.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-bd.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/bangladesh-payments-mcp",
+    "homepage": "https://github.com/junter1989k-ai/bangladesh-payments-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=22",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/bangladesh-payments-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,67 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.BenyD/haypile",
   "name": "io.github.BenyD/haypile",
+  "displayName": "Haypile",
   "version": "0.3.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Hybrid search over your local documents, with file and page citations. One binary, fully local.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/BenyD/haypile",
-    "homepage": "https://haypile.sh",
-    "readme": "https://github.com/BenyD/haypile#readme"
-  },
-  "keywords": [
-    "Haypile"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_arm64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_arm64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-8d965b5c20ebba6b",
+      "type": "archive",
       "url": "https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_arm64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-f7d170aab238506f",
+      "type": "archive",
+      "url": "https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-9ca48e8ce6ced5ed",
+      "type": "archive",
+      "url": "https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_linux_arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-b00bfcb3a5b28e18",
+      "type": "archive",
+      "url": "https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_linux_amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-784e9d1229a48897",
+      "type": "archive",
+      "url": "https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_windows_amd64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/BenyD/haypile",
+    "homepage": "https://haypile.sh"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +75,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.benyd__haypile.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=113",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.BenyD/haypile"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

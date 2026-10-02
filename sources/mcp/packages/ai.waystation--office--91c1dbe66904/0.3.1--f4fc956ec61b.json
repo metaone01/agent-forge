@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.waystation/office",
+  "name": "ai.waystation/office",
+  "displayName": "ai.waystation/office",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Create, edit, and collaborate on Office documents and spreadsheets.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.waystation/office",
+    "remotes": [
+      {
+        "url": "https://waystation.ai/office/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://waystation.ai/office/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d8453a3e76d92481",
+      "type": "other",
+      "url": "https://waystation.ai/office/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/office/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-1dedd82f56d19d69",
+      "type": "other",
+      "url": "https://waystation.ai/office/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/office/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/waystation-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.waystation/office"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

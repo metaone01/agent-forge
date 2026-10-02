@@ -2,49 +2,65 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ZaguanLabs/atlas-scout",
   "name": "io.github.ZaguanLabs/atlas-scout",
+  "displayName": "Atlas Scout",
   "version": "1.0.0-preview.29",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local, read-only structural code navigation and bounded dependency analysis for source repositories.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ZaguanLabs/atlas-scout-mcp",
-    "homepage": "https://atlasscout.dev/docs",
-    "readme": "https://github.com/ZaguanLabs/atlas-scout-mcp#readme"
-  },
-  "keywords": [
-    "Atlas Scout"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/ZaguanLabs/atlas-scout-mcp/releases/download/v1.0.0-preview.29/atlas-scout-mcp-1.0.0-preview.29-aarch64-apple-darwin.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/ZaguanLabs/atlas-scout-mcp/releases/download/v1.0.0-preview.29/atlas-scout-mcp-1.0.0-preview.29-aarch64-apple-darwin.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-8dda5f34d1fc4e2c",
+      "type": "archive",
       "url": "https://github.com/ZaguanLabs/atlas-scout-mcp/releases/download/v1.0.0-preview.29/atlas-scout-mcp-1.0.0-preview.29-aarch64-apple-darwin.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "1.0.0-preview.29"
+    },
+    {
+      "id": "upstream-22f44562d3259563",
+      "type": "archive",
+      "url": "https://github.com/ZaguanLabs/atlas-scout-mcp/releases/download/v1.0.0-preview.29/atlas-scout-mcp-1.0.0-preview.29-aarch64-unknown-linux-gnu.mcpb",
+      "registry": "mcpb",
+      "version": "1.0.0-preview.29"
+    },
+    {
+      "id": "upstream-d7f4b9c29454cbf8",
+      "type": "archive",
+      "url": "https://github.com/ZaguanLabs/atlas-scout-mcp/releases/download/v1.0.0-preview.29/atlas-scout-mcp-1.0.0-preview.29-x86_64-pc-windows-msvc.mcpb",
+      "registry": "mcpb",
+      "version": "1.0.0-preview.29"
+    },
+    {
+      "id": "upstream-27cd7d3f77a5a135",
+      "type": "archive",
+      "url": "https://github.com/ZaguanLabs/atlas-scout-mcp/releases/download/v1.0.0-preview.29/atlas-scout-mcp-1.0.0-preview.29-x86_64-unknown-linux-gnu.mcpb",
+      "registry": "mcpb",
+      "version": "1.0.0-preview.29"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ZaguanLabs/atlas-scout-mcp",
+    "homepage": "https://atlasscout.dev/docs"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +73,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.zaguanlabs__atlas-scout.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=163",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ZaguanLabs/atlas-scout"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

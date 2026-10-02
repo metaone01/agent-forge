@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.6ee8b1b57b7e0caf9bcb1fbc1e3e34915762c8280e78664aaa34edf8523f493f",
+  "name": "agent-mobile/dsh-speech",
+  "displayName": "agent-mobile/dsh-speech",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Speech capability plugin for the DeepSeek Harness (dsh) web host: a token-gated /s/api route family serving audio transcription (ASR) and synthesis (TTS) over configurable providers",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/agent-mobile/dsh-speech",
+    "readme": "https://github.com/agent-mobile/dsh-speech#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/agent-mobile/dsh-speech"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14099"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14001"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

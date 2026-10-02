@@ -2,48 +2,78 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Warmplane/warmplane",
   "name": "io.github.Warmplane/warmplane",
+  "displayName": "Warmplane",
   "version": "0.25.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local MCP control plane for persistent sessions and compact capability discovery.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Warmplane/warmplane",
-    "readme": "https://github.com/Warmplane/warmplane#readme"
-  },
-  "keywords": [
-    "Warmplane"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-aarch64-apple-darwin.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-aarch64-apple-darwin.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-41c39cf2eee4352c",
+      "type": "archive",
       "url": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-aarch64-apple-darwin.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.25.2"
+    },
+    {
+      "id": "upstream-f08806e2bea75424",
+      "type": "archive",
+      "url": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-aarch64-unknown-linux-gnu.mcpb",
+      "registry": "mcpb",
+      "version": "0.25.2"
+    },
+    {
+      "id": "upstream-9e1df6b590f9e384",
+      "type": "archive",
+      "url": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-aarch64-unknown-linux-musl.mcpb",
+      "registry": "mcpb",
+      "version": "0.25.2"
+    },
+    {
+      "id": "upstream-048c04c9fd487509",
+      "type": "archive",
+      "url": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-x86_64-apple-darwin.mcpb",
+      "registry": "mcpb",
+      "version": "0.25.2"
+    },
+    {
+      "id": "upstream-05053e2987350bf4",
+      "type": "archive",
+      "url": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-x86_64-unknown-linux-gnu.mcpb",
+      "registry": "mcpb",
+      "version": "0.25.2"
+    },
+    {
+      "id": "upstream-80b5f4c0738b2f95",
+      "type": "archive",
+      "url": "https://github.com/Warmplane/warmplane/releases/download/v0.25.2/warmplane-v0.25.2-x86_64-unknown-linux-musl.mcpb",
+      "registry": "mcpb",
+      "version": "0.25.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Warmplane/warmplane"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +86,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.warmplane__warmplane.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=160",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Warmplane/warmplane"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

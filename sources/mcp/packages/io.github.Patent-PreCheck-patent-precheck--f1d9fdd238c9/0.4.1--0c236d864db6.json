@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Patent-PreCheck/patent-precheck",
   "name": "io.github.Patent-PreCheck/patent-precheck",
+  "displayName": "Patent PreCheck",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "Keyless 12-tool patentability MCP: USPTO pillar scores, prior art, hosted at patentprecheck.com/mcp.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@patentprecheck/mcp",
-    "homepage": "https://patentprecheck.com/integrations"
-  },
-  "keywords": [
-    "Patent PreCheck"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@patentprecheck/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Keyless 12-tool patentability MCP: USPTO pillar scores, prior art, hosted at patentprecheck.com/mcp.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@patentprecheck/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://patentprecheck.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fbdc82f21607f11c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@patentprecheck/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.1"
+    },
+    {
+      "id": "upstream-2217a3103ff855eb",
+      "type": "other",
+      "url": "https://patentprecheck.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://patentprecheck.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://patentprecheck.com/integrations"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.patent-precheck__patent-precheck.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=147",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Patent-PreCheck/patent-precheck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

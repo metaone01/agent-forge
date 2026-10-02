@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2f2f376a99212a62a32d223578304734b61dd3a73b9357ecf513b4e5800e2548",
+  "name": "singei8/DSH-TOKEN-feiyong",
+  "displayName": "singei8/DSH-TOKEN-feiyong",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH（DeepSeek Harness）token 计费插件：内置官方价目表（DeepSeek 分高峰低谷，智谱 GLM 另计），逐笔计算花费（缓存命中 / 未命中 / 输出），含账户余额、单次与本对话统计；火山方舟 Agent Plan 等预付费套餐按官方 AFP 抵扣系数计量（每个模型系数不同，单次/本对话消耗 + 5小时/周/月剩余），侧边对话与子代理的花费并入所属主对话，数据本地持久化。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/singei8/DSH-TOKEN-feiyong",
+    "readme": "https://github.com/singei8/DSH-TOKEN-feiyong#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/singei8/DSH-TOKEN-feiyong"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16459"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14432"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

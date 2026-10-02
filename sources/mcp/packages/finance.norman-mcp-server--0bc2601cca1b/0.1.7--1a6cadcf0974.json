@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.finance.norman/mcp-server",
   "name": "finance.norman/mcp-server",
+  "displayName": "Norman MCP Server",
   "version": "0.1.7",
-  "versionScheme": "semver",
-  "description": "AI-powered bookkeeping and tax filing for entrepreneurs at the heart of the European economy.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/norman-finance/norman-mcp-server",
-    "readme": "https://github.com/norman-finance/norman-mcp-server#readme"
-  },
-  "keywords": [
-    "Norman MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "norman-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "AI-powered bookkeeping and tax filing for entrepreneurs at the heart of the European economy.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "norman-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.norman.finance/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2aa688bde772395c",
       "type": "registry",
-      "url": "https://pypi.org/project/norman-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/norman-mcp-server",
+      "registry": "pypi",
+      "version": "0.1.7"
+    },
+    {
+      "id": "upstream-e3747590ee3c9c48",
+      "type": "other",
+      "url": "https://mcp.norman.finance/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.norman.finance/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/norman-finance/norman-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\finance.norman__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "finance.norman/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

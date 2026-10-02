@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.makeaivideo/video-generator",
+  "name": "ai.makeaivideo/video-generator",
+  "displayName": "MakeAIVideo",
+  "version": "1.4.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Create AI videos (voiceover, scenes, captions, music) and post them to TikTok, Reels, Shorts and X.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@makeaivideo/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.makeaivideo.ai",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1bf0259a5d5219af",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@makeaivideo/mcp",
+      "registry": "npm",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-783bb7db775506f4",
+      "type": "other",
+      "url": "https://mcp.makeaivideo.ai",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.makeaivideo.ai"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/makeaivideo-ai/mcp",
+    "homepage": "https://makeaivideo.ai/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.makeaivideo/video-generator"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

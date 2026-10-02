@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Liyuan1992/rawmem",
   "name": "io.github.Liyuan1992/rawmem",
+  "displayName": "rawmem",
   "version": "0.7.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only MCP access to a local append-only evidence ledger for AI agent sessions.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Liyuan1992/rawmem",
-    "homepage": "https://github.com/Liyuan1992/rawmem",
-    "readme": "https://github.com/Liyuan1992/rawmem#readme"
-  },
-  "keywords": [
-    "rawmem"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Liyuan1992/rawmem/releases/download/v0.7.1/rawmem-0.7.1.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Liyuan1992/rawmem/releases/download/v0.7.1/rawmem-0.7.1.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1295914860/10683400-a29d-444e-b63e-45bab1881f37?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T11%3A18%3A10Z&rscd=attachment%3B+filename%3Drawmem-0.7.1.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T10%3A17%3A22Z&ske=2026-09-22T11%3A18%3A10Z&sks=b&skv=2018-11-09&sig=uftiajIA485j78rm%2FAY0hOIUg5lFG%2BD2KCCaZduUZlU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3Mjk4NywibmJmIjoxNzkwMDcyNjg3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-iWxloxY-Bnv1elTvjd539sP0B4XnT_scfM-yhdB3yE&response-content-disposition=attachment%3B%20filename%3Drawmem-0.7.1.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
-      "registry": "mcpb"
+      "id": "upstream-6db994fde39dfd08",
+      "type": "archive",
+      "url": "https://github.com/Liyuan1992/rawmem/releases/download/v0.7.1/rawmem-0.7.1.mcpb",
+      "registry": "mcpb",
+      "version": "0.7.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Liyuan1992/rawmem",
+    "homepage": "https://github.com/Liyuan1992/rawmem"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.liyuan1992__rawmem.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=139",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Liyuan1992/rawmem"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

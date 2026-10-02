@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.c2af410f91bc00f94af637ab0964b571efb86f0b9b037fb73c74163050d8f6c2",
+  "name": "AFAP/plugin-bastion-bridge-qizhi/skill/bastion-qizhi",
+  "displayName": "AFAP/plugin-bastion-bridge-qizhi/skill/bastion-qizhi",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "在 DeepSeek Harness 一键安装技能插件，让 AI 通过本地 RESTful API（HTTP/SSE/WebSocket）接管齐治堡垒机里的服务器；任何能发 HTTP 的 AI 均可接入。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "skill/bastion-qizhi/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/AFAP/plugin-bastion-bridge-qizhi",
+    "readme": "https://github.com/AFAP/plugin-bastion-bridge-qizhi/blob/HEAD/skill/bastion-qizhi/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/AFAP/plugin-bastion-bridge-qizhi/tree/HEAD/skill/bastion-qizhi"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14095"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "703"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

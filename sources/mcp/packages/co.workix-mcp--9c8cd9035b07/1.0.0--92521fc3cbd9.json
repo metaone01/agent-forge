@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.co.workix/mcp",
   "name": "co.workix/mcp",
+  "displayName": "Workix",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Remote jobs, freelance gigs, vacancies. 24 boards: Upwork, Freelancer, RemoteOK, hh.ru, Kwork.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/facetoplace/Workix",
-    "homepage": "https://workix.co/agent",
-    "readme": "https://github.com/facetoplace/Workix#readme"
-  },
-  "keywords": [
-    "Workix"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@workix/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@workix/mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-03e3751df917c913",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@workix/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/facetoplace/Workix",
+    "homepage": "https://workix.co/agent"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\co.workix__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.workix/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

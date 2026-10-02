@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/kalshi",
+  "name": "io.github.pipeworx-io/kalshi",
+  "displayName": "Kalshi",
+  "version": "0.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Kalshi MCP — US-regulated prediction-market data (no auth on public reads).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/kalshi",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/kalshi/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a1d39d43bcb19339",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/kalshi/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/kalshi/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-kalshi",
+    "homepage": "https://pipeworx.io/packs/kalshi"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=282",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/kalshi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

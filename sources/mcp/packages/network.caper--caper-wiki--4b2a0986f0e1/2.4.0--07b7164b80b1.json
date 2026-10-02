@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.caper/caper-wiki",
+  "name": "network.caper/caper-wiki",
+  "displayName": "Caper Wiki",
+  "version": "2.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read Caper's wiki and DAO on-chain data; launch a DAO, trade, and propose on Radix testnet.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "network.caper/caper-wiki",
+    "remotes": [
+      {
+        "url": "https://caper.network/api/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://caper.network/capers/{cashtag}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0ce42afb6fb91221",
+      "type": "other",
+      "url": "https://caper.network/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://caper.network/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-10f491ac2ecf0773",
+      "type": "other",
+      "url": "https://caper.network/capers/{cashtag}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://caper.network/capers/{cashtag}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://caper.network"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.caper/caper-wiki"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

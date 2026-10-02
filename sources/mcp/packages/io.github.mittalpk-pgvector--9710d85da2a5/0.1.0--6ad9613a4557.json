@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mittalpk/pgvector",
   "name": "io.github.mittalpk/pgvector",
+  "displayName": "pgvector",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Similarity search, hybrid search, and index management for pgvector-backed PostgreSQL tables",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/mittalpk/mcp-server-pgvector",
-    "readme": "https://github.com/mittalpk/mcp-server-pgvector#readme"
-  },
-  "keywords": [
-    "pgvector"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-server-pgvector",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-server-pgvector",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1e95e00acd6e601d",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-server-pgvector/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-server-pgvector",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mittalpk/mcp-server-pgvector"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mittalpk__pgvector.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=250",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mittalpk/pgvector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcparmory/contentful-management",
   "name": "com.mcparmory/contentful-management",
+  "displayName": "com.mcparmory/contentful-management",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "Create, update, and publish content across spaces and environments",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/mcparmory/registry",
-    "readme": "https://github.com/mcparmory/registry#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcparmory-contentful-management",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Create, update, and publish content across spaces and environments",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcparmory-contentful-management",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e243e9be0573fcfc",
       "type": "registry",
-      "url": "https://pypi.org/project/mcparmory-contentful-management/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcparmory-contentful-management",
+      "registry": "pypi",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-061b5aeb4dfccd8a",
+      "type": "oci",
+      "url": "https://ghcr.io/mcparmory/contentful-management:1.0.3",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcparmory/registry"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcparmory__contentful-management.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=61",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcparmory/contentful-management"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

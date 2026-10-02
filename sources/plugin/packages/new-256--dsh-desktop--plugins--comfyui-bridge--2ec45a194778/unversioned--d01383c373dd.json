@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2ec45a1947782d1d70646972da07ca0a83c684844155db74529f1bbb5a84de78",
+  "name": "new-256/dsh-desktop/plugins/comfyui-bridge",
+  "displayName": "new-256/dsh-desktop/plugins/comfyui-bridge",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH (DeepSeek Harness) ComfyUI 桥接插件：让 Agent 直接驱动本地/局域网 ComfyUI 生图生视频 — 8 个全局模型工具、预设工作流模板(txt2img/img2img/Wan/SVD/H3)、任意 API 工作流逃生舱、设备能力守卫、模型注册表断点续传下载、ComfyUI 一键安装评估。ComfyUI bridge plugin for DeepSeek",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "plugins/comfyui-bridge/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/new-256/dsh-desktop",
+    "readme": "https://github.com/new-256/dsh-desktop#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/new-256/dsh-desktop/tree/HEAD/plugins/comfyui-bridge"
+    },
+    {
+      "id": "npm-277b9aa2a484",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-comfyui-bridge",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16199"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-comfyui-bridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

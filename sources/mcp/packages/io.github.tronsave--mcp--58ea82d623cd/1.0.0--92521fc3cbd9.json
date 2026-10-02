@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.tronsave/mcp",
+  "name": "io.github.tronsave/mcp",
+  "displayName": "io.github.tronsave/mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Buy, sell & extend TRON ENERGY/BANDWIDTH on the TronSave market via typed MCP tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.tronsave/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.tronsave.io/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.tronsave.io/testnet/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5adfdf460a5d3e61",
+      "type": "other",
+      "url": "https://mcp.tronsave.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tronsave.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-fbed029e4850ef73",
+      "type": "other",
+      "url": "https://mcp.tronsave.io/testnet/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tronsave.io/testnet/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/tronsave/mcp",
+    "homepage": "https://docs.tronsave.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tronsave/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

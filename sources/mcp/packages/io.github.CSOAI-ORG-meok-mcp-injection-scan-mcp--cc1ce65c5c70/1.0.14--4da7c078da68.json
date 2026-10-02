@@ -2,48 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/meok-mcp-injection-scan-mcp",
   "name": "io.github.CSOAI-ORG/meok-mcp-injection-scan-mcp",
+  "displayName": "io.github.CSOAI-ORG/meok-mcp-injection-scan-mcp",
   "version": "1.0.14",
-  "versionScheme": "semver",
-  "description": "MCP injection / prompt-poisoning / SSRF scanner. 30+ canonical rules covering the April 2026",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/meok-mcp-injection-scan-mcp",
-    "homepage": "https://meok.ai/meok-mcp-injection-scan-mcp",
-    "readme": "https://github.com/CSOAI-ORG/meok-mcp-injection-scan-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "meok-mcp-injection-scan-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP injection / prompt-poisoning / SSRF scanner. 30+ canonical rules covering the April 2026",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "meok-mcp-injection-scan-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9ef9ca2c0c6ad1c7",
       "type": "registry",
-      "url": "https://pypi.org/project/meok-mcp-injection-scan-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/meok-mcp-injection-scan-mcp",
+      "registry": "pypi",
+      "version": "1.0.14"
     }
   ],
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/meok-mcp-injection-scan-mcp",
+    "homepage": "https://meok.ai/meok-mcp-injection-scan-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__meok-mcp-injection-scan-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=118",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/meok-mcp-injection-scan-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.rfsrisk/syri",
+  "name": "ai.rfsrisk/syri",
+  "displayName": "SYRI — Stablecoin Yield Risk Index",
+  "version": "2026.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "0-100 risk score for stablecoin yield venues (Aave, Morpho, Ondo, Ethena). Pay per call via x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.rfsrisk/syri",
+    "remotes": [
+      {
+        "url": "https://syri.rfsrisk.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ea7c81c1175c5a97",
+      "type": "other",
+      "url": "https://syri.rfsrisk.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://syri.rfsrisk.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://syri.rfsrisk.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=11",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.rfsrisk/syri"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

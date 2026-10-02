@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.ai-akari/agent-trust-receipt",
+  "name": "ai.ai-akari/agent-trust-receipt",
+  "displayName": "AIﾉアカリ☆ Agent Trust Receipt",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only Remote MCP for externally grounded AI agent trust receipts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.ai-akari/agent-trust-receipt",
+    "remotes": [
+      {
+        "url": "https://ai-akari.ai/mcp-trust",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-35b3d425e51ebc4f",
+      "type": "other",
+      "url": "https://ai-akari.ai/mcp-trust",
+      "install": {
+        "type": "api",
+        "url": "https://ai-akari.ai/mcp-trust"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AInoAKARI/AInoAKARI",
+    "homepage": "https://ai-akari.ai/.well-known/agent-trust.json"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=1",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.ai-akari/agent-trust-receipt"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.rctruta/sqlbenchdag",
   "name": "io.github.rctruta/sqlbenchdag",
+  "displayName": "SQL Benchmarks Lab",
   "version": "0.1.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Query pre-computed SQL engine benchmarks. Runs standalone, no server setup required.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/rctruta/sql-benchmarks-dagster",
-    "homepage": "https://github.com/rctruta/sql-benchmarks-dagster",
-    "readme": "https://github.com/rctruta/sql-benchmarks-dagster#readme"
-  },
-  "keywords": [
-    "SQL Benchmarks Lab"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sqlbenchdag",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sqlbenchdag",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-87b1d7e1f095f79d",
       "type": "registry",
-      "url": "https://pypi.org/project/sqlbenchdag/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sqlbenchdag",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/rctruta/sql-benchmarks-dagster",
+    "homepage": "https://github.com/rctruta/sql-benchmarks-dagster"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rctruta__sqlbenchdag.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=295",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rctruta/sqlbenchdag"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

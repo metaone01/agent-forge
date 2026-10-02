@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.oogunbiyi21/stats-compass",
   "name": "io.github.oogunbiyi21/stats-compass",
+  "displayName": "Stats Compass",
   "version": "0.3.28",
-  "versionScheme": "semver",
-  "description": "50+ pandas-powered tools for data loading, cleaning, visualization, and ML workflows",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/oogunbiyi21/stats-compass-mcp",
-    "readme": "https://github.com/oogunbiyi21/stats-compass-mcp#readme"
-  },
-  "keywords": [
-    "Stats Compass"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "stats-compass-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "50+ pandas-powered tools for data loading, cleaning, visualization, and ML workflows",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "stats-compass-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.statscompass.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-36743a6425544d49",
       "type": "registry",
-      "url": "https://pypi.org/project/stats-compass-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/stats-compass-mcp",
+      "registry": "pypi",
+      "version": "0.3.28"
+    },
+    {
+      "id": "upstream-e10a50aaafa4de7a",
+      "type": "other",
+      "url": "https://mcp.statscompass.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.statscompass.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/oogunbiyi21/stats-compass-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.oogunbiyi21__stats-compass.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.oogunbiyi21/stats-compass"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

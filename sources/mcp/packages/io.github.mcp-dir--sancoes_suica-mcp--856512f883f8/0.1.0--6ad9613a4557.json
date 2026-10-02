@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mcp-dir/sancoes_suica-mcp",
+  "name": "io.github.mcp-dir/sancoes_suica-mcp",
+  "displayName": "Sanções Suíça (SECO)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Checks whether a name is on Switzerland's international sanctions list (SECO), for compliance and AM",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mcp-dir/sancoes_suica-mcp",
+    "remotes": [
+      {
+        "url": "https://api.mcp.ai/p_sancoes_suica",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-551ccba500906ffb",
+      "type": "other",
+      "url": "https://api.mcp.ai/p_sancoes_suica",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcp.ai/p_sancoes_suica"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mcp-dir/sancoes_suica-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=243",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mcp-dir/sancoes_suica-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,67 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.getanyapi-com/anyapi",
   "name": "io.github.getanyapi-com/anyapi",
+  "displayName": "AnyAPI",
   "version": "0.1.5",
-  "versionScheme": "semver",
-  "description": "Hundreds of scraping & data APIs through one key. USD pay-per-request, normalized schemas, failover.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/getanyapi-com/mcp",
-    "homepage": "https://getanyapi.com",
-    "readme": "https://github.com/getanyapi-com/mcp#readme"
-  },
-  "keywords": [
-    "AnyAPI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "anyapi-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Hundreds of scraping & data APIs through one key. USD pay-per-request, normalized schemas, failover.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "anyapi-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.getanyapi.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c9d8a5928c5d7804",
       "type": "registry",
       "url": "https://www.npmjs.com/package/anyapi-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.5"
+    },
+    {
+      "id": "upstream-ec6a1e1d85dc050b",
+      "type": "oci",
+      "url": "https://ghcr.io/getanyapi-com/mcp:0.1.5",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-fb94c214a68b9b33",
+      "type": "other",
+      "url": "https://api.getanyapi.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.getanyapi.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/getanyapi-com/mcp",
+    "homepage": "https://getanyapi.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +75,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.getanyapi-com__anyapi.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=205",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.getanyapi-com/anyapi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

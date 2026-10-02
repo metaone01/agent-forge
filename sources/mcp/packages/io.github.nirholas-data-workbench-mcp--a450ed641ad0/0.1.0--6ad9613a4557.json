@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nirholas/data-workbench-mcp",
   "name": "io.github.nirholas/data-workbench-mcp",
+  "displayName": "Data Workbench",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "Pump.fun creator rewards, DexScreener pair search, crypto headlines, and USD candles.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/nirholas/data",
-    "homepage": "https://data-workbench-e3s.pages.dev",
-    "readme": "https://github.com/nirholas/data#readme"
-  },
-  "keywords": [
-    "Data Workbench"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@three-ws/data-workbench-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Pump.fun creator rewards, DexScreener pair search, crypto headlines, and USD candles.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@three-ws/data-workbench-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4c5cc8fd92b0ded3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@three-ws/data-workbench-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-b42445cea0605453",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/data-workbench-mcp",
+      "registry": "npm",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nirholas/data",
+    "homepage": "https://data-workbench-e3s.pages.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nirholas__data-workbench-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=264",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nirholas/data-workbench-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

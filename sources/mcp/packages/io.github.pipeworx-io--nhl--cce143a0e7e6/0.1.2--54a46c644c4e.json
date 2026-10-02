@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/nhl",
+  "name": "io.github.pipeworx-io/nhl",
+  "displayName": "Nhl",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "NHL MCP — live NHL data via the official NHL API",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/nhl",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/nhl/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b43cf0c340e1e068",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/nhl/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/nhl/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-nhl",
+    "homepage": "https://pipeworx.io/packs/nhl"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=283",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/nhl"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

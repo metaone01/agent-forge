@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.db5753b8c9ef5d200b2c7eaa1f962206a8ce1422be596cdbac9c5ba273407bc3",
+  "name": "studyzy/dsh-lazy-tools",
+  "displayName": "studyzy/dsh-lazy-tools",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "CodeBuddy-style deferred tool loading for DeepSeek Harness: keep tool schemas out of the model context until the model loads them on demand via tool_search / defer_execute_tool.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/studyzy/dsh-lazy-tools",
+    "readme": "https://github.com/studyzy/dsh-lazy-tools#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/studyzy/dsh-lazy-tools"
+    }
+  ],
+  "keywords": [
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "4933"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/repositories.csv",
+          "entry": "1081"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/verified-plugins.csv",
+          "entry": "905"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "6739"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "1691"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

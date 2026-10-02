@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/form5500",
+  "name": "io.github.pipeworx-io/form5500",
+  "displayName": "Form5500",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Form 5500 MCP — wraps the U.S. DOL/EBSA EFAST2 Form 5500 Search service",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/form5500",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/form5500/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2a1cb03f22916016",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/form5500/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/form5500/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-form5500",
+    "homepage": "https://pipeworx.io/packs/form5500"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=280",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/form5500"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

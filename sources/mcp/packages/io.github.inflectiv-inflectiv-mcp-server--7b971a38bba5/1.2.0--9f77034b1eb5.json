@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.inflectiv/inflectiv-mcp-server",
   "name": "io.github.inflectiv/inflectiv-mcp-server",
+  "displayName": "Inflectiv",
   "version": "1.2.0",
-  "versionScheme": "semver",
-  "description": "Search, build and manage Inflectiv datasets and AI agents, plus ChainAware on-chain intelligence.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/inflectiv/inflectiv-mcp-server",
-    "homepage": "https://app.inflectiv.ai",
-    "readme": "https://github.com/inflectiv/inflectiv-mcp-server#readme"
-  },
-  "keywords": [
-    "Inflectiv"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@inflectiv-ai/inflectiv-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search, build and manage Inflectiv datasets and AI agents, plus ChainAware on-chain intelligence.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@inflectiv-ai/inflectiv-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-25bf3f63c2fc7753",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@inflectiv-ai/inflectiv-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/inflectiv/inflectiv-mcp-server",
+    "homepage": "https://app.inflectiv.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.inflectiv__inflectiv-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=213",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.inflectiv/inflectiv-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

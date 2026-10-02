@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.moonlora/moonlora",
+  "name": "com.moonlora/moonlora",
+  "displayName": "Moonlora",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Moon phases, moon signs, full/new moon dates 1900-2100, moonrise/moonset for any coordinates.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.moonlora/moonlora",
+    "remotes": [
+      {
+        "url": "https://moonlora.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8ff51e4c8667eda6",
+      "type": "other",
+      "url": "https://moonlora.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://moonlora.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/LudvigCosma/moonlora-mcp",
+    "homepage": "https://moonlora.com/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.moonlora/moonlora"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

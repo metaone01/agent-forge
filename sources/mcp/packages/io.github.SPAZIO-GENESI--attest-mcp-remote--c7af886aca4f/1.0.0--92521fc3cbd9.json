@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.SPAZIO-GENESI/attest-mcp-remote",
+  "name": "io.github.SPAZIO-GENESI/attest-mcp-remote",
+  "displayName": "io.github.SPAZIO-GENESI/attest-mcp-remote",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Zero-install remote MCP server for proof-of-existence file attestation.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.SPAZIO-GENESI/attest-mcp-remote",
+    "remotes": [
+      {
+        "url": "https://attest-mcp-remote.it-e3f.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-aec49b82e48e10a7",
+      "type": "other",
+      "url": "https://attest-mcp-remote.it-e3f.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://attest-mcp-remote.it-e3f.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SPAZIO-GENESI/attest-mcp-remote",
+    "homepage": "https://attestazione.spaziogenesi.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=151",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SPAZIO-GENESI/attest-mcp-remote"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

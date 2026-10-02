@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.shiftyasan/mcp-server",
+  "name": "com.shiftyasan/mcp-server",
+  "displayName": "Shiftyasan Shift Scheduling",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Generate optimized work shift schedules from staffing demand, availability and fairness rules.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@shiftyasan/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.shiftyasan.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cb8928b906bd46d2",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@shiftyasan/mcp-server",
+      "registry": "npm",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-53f663a81d8f2b8d",
+      "type": "other",
+      "url": "https://api.shiftyasan.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.shiftyasan.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/shiftyasan/mcp-server",
+    "homepage": "https://api.shiftyasan.com/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=76",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.shiftyasan/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

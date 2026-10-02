@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.marcioyoshida/outage-me",
+  "name": "io.github.marcioyoshida/outage-me",
+  "displayName": "Outage.Me",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live cloud/SaaS outages, provider reliability and exploited CVEs from official status pages and CISA",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.marcioyoshida/outage-me",
+    "remotes": [
+      {
+        "url": "https://outage.me/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://outage.me/mcp/pro",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-178e1f95ba4ae9c8",
+      "type": "other",
+      "url": "https://outage.me/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://outage.me/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a02a5e04895f57bf",
+      "type": "other",
+      "url": "https://outage.me/mcp/pro",
+      "install": {
+        "type": "api",
+        "url": "https://outage.me/mcp/pro"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://outage.me"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=233",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.marcioyoshida/outage-me"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

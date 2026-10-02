@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ru.iipodpis/iipodpis",
+  "name": "ru.iipodpis/iipodpis",
+  "displayName": "ИИПодпись",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Подписание PDF, проверка контрагента по ИНН и риск-сканер договора. Подписывает человек, не агент.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ru.iipodpis/iipodpis",
+    "remotes": [
+      {
+        "url": "https://iipodpis.ru/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8addfc77453ce5c9",
+      "type": "other",
+      "url": "https://iipodpis.ru/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://iipodpis.ru/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mmmghenja/iipodpis-mcp",
+    "homepage": "https://iipodpis.ru/ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ru.iipodpis/iipodpis"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

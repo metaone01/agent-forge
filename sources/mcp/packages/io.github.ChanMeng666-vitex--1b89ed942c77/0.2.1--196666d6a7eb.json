@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ChanMeng666/vitex",
   "name": "io.github.ChanMeng666/vitex",
+  "displayName": "Vitex — AI Resume Generator",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Generate tailored, ATS-optimized resume PDFs and cover letters from a job description, over MCP.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ChanMeng666/easy-resume",
-    "homepage": "https://www.vitex.org.nz",
-    "readme": "https://github.com/ChanMeng666/easy-resume#readme"
-  },
-  "keywords": [
-    "Vitex — AI Resume Generator"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "vitex-cli",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate tailored, ATS-optimized resume PDFs and cover letters from a job description, over MCP.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "vitex-cli",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.vitex.org.nz/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a2c097b53d9eeacb",
       "type": "registry",
       "url": "https://www.npmjs.com/package/vitex-cli",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-42a9b88f2ef9a6fd",
+      "type": "other",
+      "url": "https://www.vitex.org.nz/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.vitex.org.nz/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ChanMeng666/easy-resume",
+    "homepage": "https://www.vitex.org.nz"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.chanmeng666__vitex.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=119",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ChanMeng666/vitex"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

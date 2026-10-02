@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.dynamicfeed/dynamic-feed",
+  "name": "ai.dynamicfeed/dynamic-feed",
+  "displayName": "ai.dynamicfeed/dynamic-feed",
+  "version": "0.8.7",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "94 keyless tools of live, verifiable data for AI: weather, hazards, space, CVEs. Ed25519-signed.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.dynamicfeed/dynamic-feed",
+    "remotes": [
+      {
+        "url": "https://dynamicfeed.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://dynamicfeed.ai/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ecef483416cdad85",
+      "type": "other",
+      "url": "https://dynamicfeed.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://dynamicfeed.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f84b7ded980f114e",
+      "type": "other",
+      "url": "https://dynamicfeed.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://dynamicfeed.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://dynamicfeed.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=4",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.dynamicfeed/dynamic-feed"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

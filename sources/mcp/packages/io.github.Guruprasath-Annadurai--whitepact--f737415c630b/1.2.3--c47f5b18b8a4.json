@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Guruprasath-Annadurai/whitepact",
+  "name": "io.github.Guruprasath-Annadurai/whitepact",
+  "displayName": "WhitePact",
+  "version": "1.2.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI governance MCP server: trust scoring, guardrails, bias/hallucination detection, compliance.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "rai-governance-platform",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://whitepact-mcp-http.onrender.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://whitepact-mcp-http.onrender.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ec7158bb99c58175",
+      "type": "registry",
+      "url": "https://pypi.org/project/rai-governance-platform",
+      "registry": "pypi",
+      "version": "1.2.2"
+    },
+    {
+      "id": "upstream-b207e5956502d775",
+      "type": "other",
+      "url": "https://whitepact-mcp-http.onrender.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://whitepact-mcp-http.onrender.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a14c8ba0abe1169e",
+      "type": "other",
+      "url": "https://whitepact-mcp-http.onrender.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://whitepact-mcp-http.onrender.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Guruprasath-Annadurai/Whitepact",
+    "homepage": "https://github.com/Guruprasath-Annadurai/Whitepact"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=132",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Guruprasath-Annadurai/whitepact"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

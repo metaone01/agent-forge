@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.anaconda/anaconda-mcp",
   "name": "io.github.anaconda/anaconda-mcp",
+  "displayName": "Anaconda MCP",
   "version": "1.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Beta conda env/package MCP server; requires conda, auth, and Beta Terms.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/anaconda/anaconda-mcp",
-    "homepage": "https://www.anaconda.com/docs/cli-reference/anaconda-mcp/getting-started",
-    "readme": "https://github.com/anaconda/anaconda-mcp#readme"
-  },
-  "keywords": [
-    "Anaconda MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/anaconda/anaconda-mcp/releases/download/mcpb-v1.1.1-ana-v0.2.2/anaconda-mcp.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/anaconda/anaconda-mcp/releases/download/mcpb-v1.1.1-ana-v0.2.2/anaconda-mcp.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-0501ec2e83bb0d9e",
+      "type": "archive",
       "url": "https://github.com/anaconda/anaconda-mcp/releases/download/mcpb-v1.1.1-ana-v0.2.2/anaconda-mcp.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/anaconda/anaconda-mcp",
+    "homepage": "https://www.anaconda.com/docs/cli-reference/anaconda-mcp/getting-started"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.anaconda__anaconda-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=169",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.anaconda/anaconda-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

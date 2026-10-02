@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.craigjmidwinter/katra",
   "name": "io.github.craigjmidwinter/katra",
+  "displayName": "katra",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "A committed markdown dev log and task graph that agents read and write over MCP.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/craigjmidwinter/katra",
-    "homepage": "https://midwinter.io/katra/",
-    "readme": "https://github.com/craigjmidwinter/katra#readme"
-  },
-  "keywords": [
-    "katra"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/craigjmidwinter/katra-mcp:0.1.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/craigjmidwinter/katra-mcp:0.1.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/craigjmidwinter/katra-mcp",
-      "priority": 10,
+      "id": "upstream-75e0f8eca3b8af5e",
+      "type": "oci",
+      "url": "https://ghcr.io/craigjmidwinter/katra-mcp:0.1.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/craigjmidwinter/katra",
+    "homepage": "https://midwinter.io/katra/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.craigjmidwinter__katra.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.craigjmidwinter/katra"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

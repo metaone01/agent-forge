@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.scalably/klaviyo-mcp",
   "name": "io.scalably/klaviyo-mcp",
+  "displayName": "Klaviyo MCP",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Klaviyo MCP: campaigns, flows, segments, metrics, reports, profiles across many accounts. 24 tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/scalably-io/klaviyo-mcp",
-    "homepage": "https://scalably.io/mcp/klaviyo-mcp",
-    "readme": "https://github.com/scalably-io/klaviyo-mcp#readme"
-  },
-  "keywords": [
-    "Klaviyo MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@scalably-io/klaviyo-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Klaviyo MCP: campaigns, flows, segments, metrics, reports, profiles across many accounts. 24 tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@scalably-io/klaviyo-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-54f6ca7ddfce298e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@scalably-io/klaviyo-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-72258ab1d37aab0d",
+      "type": "archive",
+      "url": "https://github.com/scalably-io/klaviyo-mcp/releases/download/v1.0.0/klaviyo-mcp.mcpb",
+      "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/scalably-io/klaviyo-mcp",
+    "homepage": "https://scalably.io/mcp/klaviyo-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.scalably__klaviyo-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=358",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.scalably/klaviyo-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

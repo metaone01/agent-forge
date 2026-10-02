@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.uk.co.trisys/mcp",
+  "name": "uk.co.trisys/mcp",
+  "displayName": "TriSys",
+  "version": "2026.5.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI-powered recruitment CRM — search candidates, companies, vacancies and placements.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "uk.co.trisys/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.trisys.co.uk/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.trisys.co.uk/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4f77d9fb1c325c41",
+      "type": "other",
+      "url": "https://mcp.trisys.co.uk/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.trisys.co.uk/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-90d5b6b9509e8fdb",
+      "type": "other",
+      "url": "https://mcp.trisys.co.uk/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.trisys.co.uk/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=381",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "uk.co.trisys/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

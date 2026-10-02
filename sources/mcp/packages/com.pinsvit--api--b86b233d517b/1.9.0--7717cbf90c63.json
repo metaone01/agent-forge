@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.pinsvit/api",
+  "name": "com.pinsvit/api",
+  "displayName": "Pinsvit",
+  "version": "1.9.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Small local businesses take bookings: find and book a place, run your own front desk, post nearby.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.pinsvit/api",
+    "remotes": [
+      {
+        "url": "https://pinsvit.com/api/v1/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://pinsvit.com/api/v1/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0b77e38bf8921570",
+      "type": "other",
+      "url": "https://pinsvit.com/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pinsvit.com/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-ed0699790efed762",
+      "type": "other",
+      "url": "https://pinsvit.com/api/v1/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://pinsvit.com/api/v1/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://pinsvit.com/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=69",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.pinsvit/api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

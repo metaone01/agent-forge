@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.williamcodes/speedrun-mcp",
   "name": "io.github.williamcodes/speedrun-mcp",
+  "displayName": "speedrun.com",
   "version": "0.3.4",
-  "versionScheme": "semver",
-  "description": "speedrun.com records, leaderboards (subcategories, ILs), players, PBs, moderation. No key needed.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/williamcodes/speedrun-mcp",
-    "homepage": "https://github.com/williamcodes/speedrun-mcp#readme",
-    "readme": "https://github.com/williamcodes/speedrun-mcp#readme"
-  },
-  "keywords": [
-    "speedrun.com"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "speedrun-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "speedrun.com records, leaderboards (subcategories, ILs), players, PBs, moderation. No key needed.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "speedrun-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-78f578117cfba13e",
       "type": "registry",
-      "url": "https://pypi.org/project/speedrun-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/speedrun-mcp",
+      "registry": "pypi",
+      "version": "0.3.4"
+    },
+    {
+      "id": "upstream-6332a90a25023e44",
+      "type": "archive",
+      "url": "https://github.com/williamcodes/speedrun-mcp/releases/download/v0.3.4/speedrun-mcp-0.3.4.mcpb",
+      "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/williamcodes/speedrun-mcp",
+    "homepage": "https://github.com/williamcodes/speedrun-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.williamcodes__speedrun-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=350",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.williamcodes/speedrun-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

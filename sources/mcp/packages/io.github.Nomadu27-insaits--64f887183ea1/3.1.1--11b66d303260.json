@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Nomadu27/insaits",
   "name": "io.github.Nomadu27/insaits",
+  "displayName": "InsAIts - AI Communication Security Monitor",
   "version": "3.1.1",
-  "versionScheme": "semver",
-  "description": "Runtime AI-to-AI security monitor. 23 anomaly types, OWASP MCP Top 10 coverage.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/Nomadu27/InsAIts",
-    "homepage": "https://github.com/Nomadu27/InsAIts#readme",
-    "readme": "https://github.com/Nomadu27/InsAIts#readme"
-  },
-  "keywords": [
-    "InsAIts - AI Communication Security Monitor"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "insa-its",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Runtime AI-to-AI security monitor. 23 anomaly types, OWASP MCP Top 10 coverage.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "insa-its",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4f3543492ae6f9d6",
       "type": "registry",
-      "url": "https://pypi.org/project/insa-its/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/insa-its",
+      "registry": "pypi",
+      "version": "3.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Nomadu27/InsAIts",
+    "homepage": "https://github.com/Nomadu27/InsAIts#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nomadu27__insaits.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Nomadu27/insaits"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

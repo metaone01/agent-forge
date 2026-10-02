@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.frase/mcp-server",
   "name": "io.frase/mcp-server",
+  "displayName": "Frase SEO",
   "version": "0.11.0",
-  "versionScheme": "semver",
-  "description": "SEO, GEO & AI Visibility — research, write, optimize, publish & monitor content. 121 tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/frase-io/mcp-server.git",
-    "homepage": "https://frase.io/agents",
-    "readme": "https://github.com/frase-io/mcp-server.git#readme"
-  },
-  "keywords": [
-    "Frase SEO"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@frase/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "SEO, GEO & AI Visibility — research, write, optimize, publish & monitor content. 121 tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@frase/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://next.frase.io/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e7560c5b59b84746",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@frase/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.11.0"
+    },
+    {
+      "id": "upstream-57ad1cb2fbe6aa24",
+      "type": "other",
+      "url": "https://next.frase.io/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://next.frase.io/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/frase-io/mcp-server.git",
+    "homepage": "https://frase.io/agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.frase__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=104",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.frase/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

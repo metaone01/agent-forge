@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.kaicalls/kaicalls",
+  "name": "com.kaicalls/kaicalls",
+  "displayName": "KaiCalls",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI phone secretary: place calls, read transcripts, list calls, agents, and stats.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.kaicalls/kaicalls",
+    "remotes": [
+      {
+        "url": "https://www.kaicalls.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ae8c926edf993225",
+      "type": "other",
+      "url": "https://www.kaicalls.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.kaicalls.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cgallic/kaicalls-mcp",
+    "homepage": "https://www.kaicalls.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=56",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.kaicalls/kaicalls"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

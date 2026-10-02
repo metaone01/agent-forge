@@ -2,46 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.com.cognivators/mcp-safeguard",
   "name": "com.cognivators/mcp-safeguard",
+  "displayName": "com.cognivators/mcp-safeguard",
   "version": "0.3.2",
-  "versionScheme": "semver",
-  "description": "MCP server security scanner: detects prompt injection, credential leaks, SSRF, tool poisoning.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://gitlab.com/anasmohiuddinsyed/mcp-safeguard"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-safeguard",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server security scanner: detects prompt injection, credential leaks, SSRF, tool poisoning.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-safeguard",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1ec762fdacd0fe63",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-safeguard/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-safeguard",
+      "registry": "pypi",
+      "version": "0.3.2"
     }
   ],
+  "links": {
+    "repository": "https://gitlab.com/anasmohiuddinsyed/mcp-safeguard"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.cognivators__mcp-safeguard.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=41",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.cognivators/mcp-safeguard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

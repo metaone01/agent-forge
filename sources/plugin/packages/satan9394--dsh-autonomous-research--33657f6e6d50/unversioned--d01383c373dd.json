@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.bb8f00ff686729fa0faf0e725b64fb33fc6da60a078daa675c637d39719557dc",
+  "name": "satan9394/dsh-autonomous-research",
+  "displayName": "satan9394/dsh-autonomous-research",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "自主研究 agent：给 AI agent 一个小而真实的 LLM 训练设置，让它过夜自主实验——改代码→固定 5 分钟训练→检查 val_bpb 是否改善→保留或丢弃→重复（约 12 实验/小时、一晚约 100 个）；单文件修改、program.md 超轻量 skill。受 karpathy/autoresearch（94k MIT）启发。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/satan9394/dsh-autonomous-research",
+    "readme": "https://github.com/satan9394/dsh-autonomous-research#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/satan9394/dsh-autonomous-research"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "knowledge"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "1394"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

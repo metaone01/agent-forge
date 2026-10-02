@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.bluetouff/l0g",
+  "name": "io.github.bluetouff/l0g",
+  "displayName": "l0g.fr Risk Intelligence",
+  "version": "1.24.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only macro risk analysis, evidence, signals, and source-backed research from l0g.fr.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.bluetouff/l0g",
+    "remotes": [
+      {
+        "url": "https://l0g.fr/api/mcp/compact",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://l0g.fr/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-333fd77722fa8c8f",
+      "type": "other",
+      "url": "https://l0g.fr/api/mcp/compact",
+      "install": {
+        "type": "api",
+        "url": "https://l0g.fr/api/mcp/compact"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-73aa026e7c5214a4",
+      "type": "other",
+      "url": "https://l0g.fr/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://l0g.fr/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bluetouff/l0g",
+    "homepage": "https://l0g.fr/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bluetouff/l0g"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.sumanaddanki/suma-memory",
+  "name": "io.github.sumanaddanki/suma-memory",
+  "displayName": "io.github.sumanaddanki/suma-memory",
+  "version": "1.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Persistent memory for Claude Code and Cursor. Stop re-explaining your project every session.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "suma-mcp-proxy",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://sumapro.quadframe.work/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-89f6c6be984d2ea3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/suma-mcp-proxy",
+      "registry": "npm",
+      "version": "1.4.0"
+    },
+    {
+      "id": "upstream-9d66304ca6636dcd",
+      "type": "other",
+      "url": "https://sumapro.quadframe.work/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://sumapro.quadframe.work/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sumanaddanki/suma-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sumanaddanki/suma-memory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

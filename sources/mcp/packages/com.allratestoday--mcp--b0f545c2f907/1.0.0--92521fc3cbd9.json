@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.allratestoday/mcp",
+  "name": "com.allratestoday/mcp",
+  "displayName": "AllRatesToday exchange rates (hosted)",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live FX + official central-bank rates, 110+ sources. Hosted, keyless, nothing to install.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.allratestoday/mcp",
+    "remotes": [
+      {
+        "url": "https://allratestoday.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bd140a4ce13f4148",
+      "type": "other",
+      "url": "https://allratestoday.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://allratestoday.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AllRates-Today/mcp-server",
+    "homepage": "https://allratestoday.com/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=33",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.allratestoday/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

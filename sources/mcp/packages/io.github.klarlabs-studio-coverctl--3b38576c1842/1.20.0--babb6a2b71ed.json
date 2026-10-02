@@ -2,46 +2,72 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.klarlabs-studio/coverctl",
   "name": "io.github.klarlabs-studio/coverctl",
+  "displayName": "io.github.klarlabs-studio/coverctl",
   "version": "1.20.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Go code coverage analysis tool with MCP server for AI-powered coverage workflows",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/klarlabs-studio/coverctl",
-    "readme": "https://github.com/klarlabs-studio/coverctl#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-darwin-arm64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-darwin-arm64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-e75a4d91dea60496",
+      "type": "archive",
       "url": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-darwin-arm64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-4c1485e083a48c5e",
+      "type": "archive",
+      "url": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-darwin-amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-a4321f08d62fe55f",
+      "type": "archive",
+      "url": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-linux-amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-8d7a8ff32517592d",
+      "type": "archive",
+      "url": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-linux-arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-3526b28a2c4edb9e",
+      "type": "archive",
+      "url": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-windows-amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-e42faf0bfc0f12e7",
+      "type": "archive",
+      "url": "https://github.com/klarlabs-studio/coverctl/releases/download/v1.20.0/coverctl-mcp-windows-arm64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/klarlabs-studio/coverctl"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +80,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.klarlabs-studio__coverctl.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=225",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.klarlabs-studio/coverctl"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.lxxmng/container-tracking",
+  "name": "io.github.lxxmng/container-tracking",
+  "displayName": "Container Tracking MCP",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "DCSA container tracking across 228 ocean carriers: live vessel positions, ETAs, demurrage alerts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.lxxmng/container-tracking",
+    "remotes": [
+      {
+        "url": "https://mcp.trackingmcp.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4e8f3dc25f3a0904",
+      "type": "other",
+      "url": "https://mcp.trackingmcp.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.trackingmcp.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/lxxmng/container-tracking-mcp",
+    "homepage": "https://trackingmcp.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=231",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.lxxmng/container-tracking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

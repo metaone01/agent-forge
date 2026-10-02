@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.email.deadsimple/dead-simple-email",
+  "name": "email.deadsimple/dead-simple-email",
+  "displayName": "Dead Simple Email",
+  "version": "0.2.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Give an agent its own inbox: send, receive, and pull signup codes from real email.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "deadsimple-email",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.deadsimple.email/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f14b52cbf97beb22",
+      "type": "registry",
+      "url": "https://pypi.org/project/deadsimple-email",
+      "registry": "pypi",
+      "version": "0.2.2"
+    },
+    {
+      "id": "upstream-06353a78a7b3cc8b",
+      "type": "oci",
+      "url": "https://ghcr.io/deadsimple-email/deadsimple-email:0.2.2",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-322ff9b52c990bb5",
+      "type": "other",
+      "url": "https://api.deadsimple.email/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.deadsimple.email/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/deadsimple-email/deadsimple-email",
+    "homepage": "https://deadsimple.email"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "email.deadsimple/dead-simple-email"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

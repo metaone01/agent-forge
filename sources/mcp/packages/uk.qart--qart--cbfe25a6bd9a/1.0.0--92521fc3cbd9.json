@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.uk.qart/qart",
+  "name": "uk.qart/qart",
+  "displayName": "qart.uk QR studio",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "qart.uk MCP server: resolve scanned codes, browse the free pool, and buy QR artwork.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "uk.qart/qart",
+    "remotes": [
+      {
+        "url": "https://qart.uk/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ad2002068fe6c975",
+      "type": "other",
+      "url": "https://qart.uk/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://qart.uk/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=381",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "uk.qart/qart"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

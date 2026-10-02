@@ -2,46 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.services.quantech/blockfill",
   "name": "services.quantech/blockfill",
+  "displayName": "services.quantech/blockfill",
   "version": "1.2.1",
-  "versionScheme": "semver",
-  "description": "Local-first crypto perp/spot execution (TWAP/maker) across 11 venues; keys stay on your machine.",
-  "license": "Proprietary",
-  "links": {
-    "repository": "https://gitlab.com/quantech-services-group/blockfill-agent-execution"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "blockfill",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Local-first crypto perp/spot execution (TWAP/maker) across 11 venues; keys stay on your machine.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "blockfill",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4508da33386ee4ef",
       "type": "registry",
-      "url": "https://pypi.org/project/blockfill/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/blockfill",
+      "registry": "pypi",
+      "version": "1.2.1"
     }
   ],
+  "links": {
+    "repository": "https://gitlab.com/quantech-services-group/blockfill-agent-execution"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\services.quantech__blockfill.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "services.quantech/blockfill"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jyswee/comiceditorial",
   "name": "io.github.jyswee/comiceditorial",
+  "displayName": "io.github.jyswee/comiceditorial",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Comic publishing for coding agents. Comics, chapters, AI panels, CBZ export. stdio + remote SSE.",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/jyswee/comiceditorial",
-    "homepage": "https://comiceditorial.com",
-    "readme": "https://github.com/jyswee/comiceditorial#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "comiceditorial",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Comic publishing for coding agents. Comics, chapters, AI panels, CBZ export. stdio + remote SSE.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "comiceditorial",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.comiceditorial.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1a94fbfb0e169221",
       "type": "registry",
       "url": "https://www.npmjs.com/package/comiceditorial",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-bfe41b44879832b3",
+      "type": "other",
+      "url": "https://mcp.comiceditorial.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.comiceditorial.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/jyswee/comiceditorial",
+    "homepage": "https://comiceditorial.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jyswee__comiceditorial.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=223",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jyswee/comiceditorial"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

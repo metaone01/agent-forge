@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.cg3/prior",
   "name": "io.cg3/prior",
+  "displayName": "io.cg3/prior",
   "version": "0.5.22",
-  "versionScheme": "semver",
-  "description": "Shared knowledge base for AI agents. Search and contribute solutions to technical problems.",
-  "license": "FSL-1.1-ALv2",
-  "links": {
-    "repository": "https://github.com/cg3-llc/prior_mcp",
-    "readme": "https://github.com/cg3-llc/prior_mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@cg3/prior-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Shared knowledge base for AI agents. Search and contribute solutions to technical problems.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cg3/prior-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.cg3.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d609c3f216542a07",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@cg3/prior-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.22"
+    },
+    {
+      "id": "upstream-8dc45b8856e3bc78",
+      "type": "other",
+      "url": "https://api.cg3.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.cg3.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/cg3-llc/prior_mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.cg3__prior.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.cg3/prior"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

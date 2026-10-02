@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.tech.finology/student-loan",
   "name": "tech.finology/student-loan",
+  "displayName": "Finology Student Loan Calculator",
   "version": "0.4.3",
-  "versionScheme": "semver",
-  "description": "Free, keyless federal student-loan math: RAP, IBR, ICR, PSLF. Logged+cited tier: verified-engine",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Finology-tech/finology-mcp",
-    "homepage": "https://finology.tech",
-    "readme": "https://github.com/Finology-tech/finology-mcp#readme"
-  },
-  "keywords": [
-    "Finology Student Loan Calculator"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@finology/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Free, keyless federal student-loan math: RAP, IBR, ICR, PSLF. Logged+cited tier: verified-engine",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@finology/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.finology.tech/free",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-11c2d79aa8547c09",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@finology/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.3"
+    },
+    {
+      "id": "upstream-1e35de4972b1a281",
+      "type": "other",
+      "url": "https://mcp.finology.tech/free",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.finology.tech/free"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Finology-tech/finology-mcp",
+    "homepage": "https://finology.tech"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\tech.finology__student-loan.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=377",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tech.finology/student-loan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

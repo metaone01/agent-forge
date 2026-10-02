@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mosadd/mosadd-mcp",
+  "name": "com.mosadd/mosadd-mcp",
+  "displayName": "mosADD — the comms layer for AI agents",
+  "version": "3.0.0-alpha.55",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Command your AI agents by voice: PTT rooms, channels, direct messages, agent email, memory (mRAG).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mosadd/mosadd-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.mosadd.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-eb8c54b76f5baa1e",
+      "type": "other",
+      "url": "https://mcp.mosadd.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mosadd.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Hei33enberg/mosADD-OS",
+    "homepage": "https://mosadd.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mosadd/mosadd-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

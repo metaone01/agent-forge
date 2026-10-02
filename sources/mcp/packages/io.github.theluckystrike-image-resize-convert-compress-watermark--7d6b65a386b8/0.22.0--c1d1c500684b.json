@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.theluckystrike/image-resize-convert-compress-watermark",
   "name": "io.github.theluckystrike/image-resize-convert-compress-watermark",
+  "displayName": "io.github.theluckystrike/image-resize-convert-compress-watermark",
   "version": "0.22.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Resize, convert, compress, crop, thumbnail and watermark images from your AI chat.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/theluckystrike/mcp-servers",
-    "homepage": "https://mcp.zovo.one/s/image",
-    "readme": "https://github.com/theluckystrike/mcp-servers#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/image.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/image.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/image",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-1184f71b52eb0815",
+      "type": "archive",
       "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/image.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.22.0"
+    },
+    {
+      "id": "upstream-638fac5af2d25010",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/image",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/image"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/image"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.theluckystrike__image-resize-convert-compress-watermark.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=339",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/image-resize-convert-compress-watermark"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

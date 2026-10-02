@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Arenukvern/flutter-mcp-toolkit",
   "name": "io.github.Arenukvern/flutter-mcp-toolkit",
+  "displayName": "Flutter MCP Toolkit",
   "version": "5.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Inspect and drive Flutter debug apps/games: semantic snapshots, search, and custom client tools",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Arenukvern/mcp_flutter",
-    "homepage": "https://docs.page/arenukvern/mcp_flutter",
-    "readme": "https://github.com/Arenukvern/mcp_flutter#readme"
-  },
-  "keywords": [
-    "Flutter MCP Toolkit"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/arenukvern/flutter-mcp-toolkit:5.1.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/arenukvern/flutter-mcp-toolkit:5.1.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/arenukvern/flutter-mcp-toolkit",
-      "priority": 10,
+      "id": "upstream-131421900a806ae0",
+      "type": "oci",
+      "url": "https://ghcr.io/arenukvern/flutter-mcp-toolkit:5.1.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Arenukvern/mcp_flutter",
+    "homepage": "https://docs.page/arenukvern/mcp_flutter"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.arenukvern__flutter-mcp-toolkit.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Arenukvern/flutter-mcp-toolkit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

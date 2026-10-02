@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.cnrcode/tillpad",
+  "name": "com.cnrcode/tillpad",
+  "displayName": "Tillpad",
+  "version": "0.1.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Bounded KVP, RAG search, and wipe receipts for agent jobs over remote MCP",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.cnrcode/tillpad",
+    "remotes": [
+      {
+        "url": "https://tillpad.cnrcode.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-89745878c30288f4",
+      "type": "other",
+      "url": "https://tillpad.cnrcode.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tillpad.cnrcode.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/CNR-Consulting/tillpad-mcp",
+    "homepage": "https://tillpad.cnrcode.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=41",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.cnrcode/tillpad"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

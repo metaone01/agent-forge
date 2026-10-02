@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.intesta/intesta-mcp",
   "name": "io.intesta/intesta-mcp",
+  "displayName": "Intesta — trust registry lookup",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "One-call trust check for any domain (A0-A4, verdict, signed) + fact passports; same tools as remote",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/agentlabbusiness/intesta-mcp",
-    "homepage": "https://intesta.io",
-    "readme": "https://github.com/agentlabbusiness/intesta-mcp#readme"
-  },
-  "keywords": [
-    "Intesta — trust registry lookup"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "intesta-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "One-call trust check for any domain (A0-A4, verdict, signed) + fact passports; same tools as remote",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "intesta-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-aef3da197eb2596e",
       "type": "registry",
-      "url": "https://pypi.org/project/intesta-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/intesta-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/agentlabbusiness/intesta-mcp",
+    "homepage": "https://intesta.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.intesta__intesta-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=356",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.intesta/intesta-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

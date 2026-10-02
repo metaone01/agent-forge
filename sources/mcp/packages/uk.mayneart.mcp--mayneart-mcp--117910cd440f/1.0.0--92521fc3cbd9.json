@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.uk.mayneart.mcp/mayneart-mcp",
+  "name": "uk.mayneart.mcp/mayneart-mcp",
+  "displayName": "Mayneart MCP Catalog",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live Mayneart MCP server exposing the dynamic SELLABLE catalog with x402 execution.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "uk.mayneart.mcp/mayneart-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.mayneart.uk/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e8df31957bdc4c61",
+      "type": "other",
+      "url": "https://mcp.mayneart.uk/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mayneart.uk/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=381",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "uk.mayneart.mcp/mayneart-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

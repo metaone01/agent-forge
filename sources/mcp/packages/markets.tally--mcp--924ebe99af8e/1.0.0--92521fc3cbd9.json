@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.markets.tally/mcp",
+  "name": "markets.tally/mcp",
+  "displayName": "markets.tally/mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The risk officer for AI-assisted trading: enforced exit rules, cooling-off, and public receipts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "markets.tally/mcp",
+    "remotes": [
+      {
+        "url": "https://tally.markets/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ced7fb94cdf83989",
+      "type": "other",
+      "url": "https://tally.markets/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tally.markets/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/worldclasstom/tally-mcp",
+    "homepage": "https://tally.markets"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "markets.tally/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

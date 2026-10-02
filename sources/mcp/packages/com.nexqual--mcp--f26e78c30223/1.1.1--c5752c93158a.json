@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.nexqual/mcp",
+  "name": "com.nexqual/mcp",
+  "displayName": "Nexqual",
+  "version": "1.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "US stock quotes, analyst targets, superinvestor 13F, insider buys and earnings from SEC filings",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.nexqual/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.nexqual.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6120d232d034e3a6",
+      "type": "other",
+      "url": "https://mcp.nexqual.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nexqual.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mcp.nexqual.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=65",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.nexqual/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

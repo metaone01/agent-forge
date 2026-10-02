@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.spoolis/mcp",
+  "name": "com.spoolis/mcp",
+  "displayName": "Spoolis",
+  "version": "0.1.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verify work against acceptance criteria; signed receipts attest what passed and was earned.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@spoolis/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://spoolis.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-11a5b376b548f22e",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@spoolis/mcp",
+      "registry": "npm",
+      "version": "0.1.5"
+    },
+    {
+      "id": "upstream-93e1eba772ac8292",
+      "type": "other",
+      "url": "https://spoolis.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://spoolis.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://spoolis.com/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=78",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.spoolis/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

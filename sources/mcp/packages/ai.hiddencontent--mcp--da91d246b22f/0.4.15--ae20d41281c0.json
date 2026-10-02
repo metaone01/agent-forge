@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.hiddencontent/mcp",
+  "name": "ai.hiddencontent/mcp",
+  "displayName": "HiddenContent",
+  "version": "0.4.15",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check a document for hidden text before your agent reads it. PDF, Office, RTF, HTML.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@hiddencontent/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.hiddencontent.ai/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3f584cf79e6fe722",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@hiddencontent/mcp",
+      "registry": "npm",
+      "version": "0.4.15"
+    },
+    {
+      "id": "upstream-45960812694a9273",
+      "type": "archive",
+      "url": "https://github.com/AeroSpark-ai/hiddencontent-mcp/releases/download/v0.4.15/hiddencontent.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-bc6f8dc358e9e354",
+      "type": "other",
+      "url": "https://api.hiddencontent.ai/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.hiddencontent.ai/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AeroSpark-ai/hidden-content-service",
+    "homepage": "https://hiddencontent.ai/start?ref=mcp-registry"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=7",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.hiddencontent/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

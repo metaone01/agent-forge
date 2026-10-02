@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.rccaoki-wq/license-guard",
   "name": "io.github.rccaoki-wq/license-guard",
+  "displayName": "LicenseGuard",
   "version": "1.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Check if a dependency's license obligates you, based on how you ship. npm, PyPI, Go.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/rccaoki-wq/license-guard",
-    "homepage": "https://license-guard.rcc-aoki.workers.dev",
-    "readme": "https://github.com/rccaoki-wq/license-guard#readme"
-  },
-  "keywords": [
-    "LicenseGuard"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/rccaoki-wq/license-guard:1.1.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/rccaoki-wq/license-guard:1.1.0",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://license-guard.rcc-aoki.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/rccaoki-wq/license-guard",
-      "priority": 10,
+      "id": "upstream-927b32017be11b64",
+      "type": "oci",
+      "url": "https://ghcr.io/rccaoki-wq/license-guard:1.1.0",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-54142facfeb4cde2",
+      "type": "other",
+      "url": "https://license-guard.rcc-aoki.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://license-guard.rcc-aoki.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/rccaoki-wq/license-guard",
+    "homepage": "https://license-guard.rcc-aoki.workers.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rccaoki-wq__license-guard.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=294",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rccaoki-wq/license-guard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alptekin/evolutiondb-memory",
   "name": "io.github.alptekin/evolutiondb-memory",
+  "displayName": "EvolutionDB Long-Term Memory",
   "version": "1.17.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Persistent long-term memory for Claude Desktop / Claude Code, backed by EvolutionDB.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/alptekin/evolutiondb",
-    "readme": "https://github.com/alptekin/evolutiondb#readme"
-  },
-  "keywords": [
-    "EvolutionDB Long-Term Memory"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-server-evolutiondb",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-server-evolutiondb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7cbae7b20f02cf96",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-server-evolutiondb/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-server-evolutiondb",
+      "registry": "pypi",
+      "version": "1.17.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/alptekin/evolutiondb"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alptekin__evolutiondb-memory.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alptekin/evolutiondb-memory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

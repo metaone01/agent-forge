@@ -2,49 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aahl/mcp-okx",
   "name": "io.github.aahl/mcp-okx",
+  "displayName": "OKX MCP Server",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "MCP Server for okx.com",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/aahl/mcp-okx",
-    "readme": "https://github.com/aahl/mcp-okx#readme"
-  },
-  "keywords": [
-    "OKX MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-okx",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP Server for okx.com",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-okx",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fb9eabdeaaa15492",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-okx/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-okx",
+      "registry": "pypi",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-da5cae3ab9d78c2d",
+      "type": "oci",
+      "url": "https://ghcr.io/aahl/mcp-okx:latest",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aahl/mcp-okx"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aahl__mcp-okx.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=164",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aahl/mcp-okx"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

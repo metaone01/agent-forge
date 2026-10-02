@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ni-c/healthchecks-mcp",
   "name": "io.github.ni-c/healthchecks-mcp",
+  "displayName": "Healthchecks",
   "version": "0.3.0",
-  "versionScheme": "semver",
-  "description": "Inspect, create and adjust Healthchecks cron and uptime checks, and read why one failed",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ni-c/healthchecks-mcp",
-    "homepage": "https://healthchecks-mcp.ni-c.de",
-    "readme": "https://github.com/ni-c/healthchecks-mcp#readme"
-  },
-  "keywords": [
-    "Healthchecks"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "healthchecks-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Inspect, create and adjust Healthchecks cron and uptime checks, and read why one failed",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "healthchecks-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-dc3d0f6649bf5ce4",
       "type": "registry",
       "url": "https://www.npmjs.com/package/healthchecks-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-282eb482730e07b6",
+      "type": "oci",
+      "url": "https://ghcr.io/ni-c/healthchecks-mcp:0.3.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ni-c/healthchecks-mcp",
+    "homepage": "https://healthchecks-mcp.ni-c.de"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ni-c__healthchecks-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ni-c/healthchecks-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

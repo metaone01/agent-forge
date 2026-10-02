@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.etherscan/etherscan-mcp",
+  "name": "io.etherscan/etherscan-mcp",
+  "displayName": "Etherscan",
+  "version": "2.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only Etherscan V2 blockchain data: balances, transactions, transfers, tokens, contracts, logs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.etherscan/etherscan-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-keyless.etherscan.io/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.etherscan.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f14ecc3491837294",
+      "type": "other",
+      "url": "https://mcp-keyless.etherscan.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-keyless.etherscan.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-860ff02c33853a25",
+      "type": "other",
+      "url": "https://mcp.etherscan.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.etherscan.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://docs.etherscan.io/build-with-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=104",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.etherscan/etherscan-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

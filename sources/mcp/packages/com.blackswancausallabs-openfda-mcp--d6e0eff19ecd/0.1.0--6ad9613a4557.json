@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.com.blackswancausallabs/openfda-mcp",
   "name": "com.blackswancausallabs/openfda-mcp",
+  "displayName": "openFDA Regulatory Metadata",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "Resolve FDA application numbers and product names to regulatory metadata (CDER, CBER, CDRH).",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/Black-Swan-Causal-Labs/openfda-mcp",
-    "readme": "https://github.com/Black-Swan-Causal-Labs/openfda-mcp#readme"
-  },
-  "keywords": [
-    "openFDA Regulatory Metadata"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "openfda-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Resolve FDA application numbers and product names to regulatory metadata (CDER, CBER, CDRH).",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "openfda-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3f2aaa23a242fa7e",
       "type": "registry",
-      "url": "https://pypi.org/project/openfda-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/openfda-mcp",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Black-Swan-Causal-Labs/openfda-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.blackswancausallabs__openfda-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=37",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.blackswancausallabs/openfda-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

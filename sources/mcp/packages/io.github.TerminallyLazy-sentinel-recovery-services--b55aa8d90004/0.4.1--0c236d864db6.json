@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.TerminallyLazy/sentinel-recovery-services",
   "name": "io.github.TerminallyLazy/sentinel-recovery-services",
+  "displayName": "Sentinel Payment Boundary Tools",
   "version": "0.4.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only payment-boundary preflights plus an unsubmitted public quote-request draft tool.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/TerminallyLazy/sentinel-recovery-support",
-    "homepage": "https://terminallylazy.github.io/sentinel-recovery-support/",
-    "readme": "https://github.com/TerminallyLazy/sentinel-recovery-support#readme"
-  },
-  "keywords": [
-    "Sentinel Payment Boundary Tools"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/TerminallyLazy/sentinel-recovery-support/releases/download/v0.4.1/sentinel-agent-payment-boundary-v0.4.1.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/TerminallyLazy/sentinel-recovery-support/releases/download/v0.4.1/sentinel-agent-payment-boundary-v0.4.1.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1295829629/01ead5d5-1f2a-4d92-a5a4-9f36c72e9b9c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T11%3A17%3A59Z&rscd=attachment%3B+filename%3Dsentinel-agent-payment-boundary-v0.4.1.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T10%3A17%3A26Z&ske=2026-09-22T11%3A17%3A59Z&sks=b&skv=2018-11-09&sig=7PLwfIbZOoWKNxnjwq2m4UOEACVcG3IqpeE8jJwsOos%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3MzUzMywibmJmIjoxNzkwMDczMjMzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.RBP0YeBsjOFEV1o4JlVZtUvDvSIwhg6KbhxW9lcE18M&response-content-disposition=attachment%3B%20filename%3Dsentinel-agent-payment-boundary-v0.4.1.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
-      "registry": "mcpb"
+      "id": "upstream-b669b8c2902b100e",
+      "type": "archive",
+      "url": "https://github.com/TerminallyLazy/sentinel-recovery-support/releases/download/v0.4.1/sentinel-agent-payment-boundary-v0.4.1.mcpb",
+      "registry": "mcpb",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/TerminallyLazy/sentinel-recovery-support",
+    "homepage": "https://terminallylazy.github.io/sentinel-recovery-support/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.terminallylazy__sentinel-recovery-services.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=156",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.TerminallyLazy/sentinel-recovery-services"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

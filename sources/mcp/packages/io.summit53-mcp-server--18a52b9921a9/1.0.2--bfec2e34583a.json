@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.summit53/mcp-server",
   "name": "io.summit53/mcp-server",
+  "displayName": "Summit53 Revenue Engine",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "Revenue Engine for scoped diagnosis, action planning, execution, and Figure-Eight value evidence.",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/Summit53/mcp-server",
-    "homepage": "https://www.summit53.com/founding-50?utm_source=mcp_registry&utm_medium=referral&utm_campaign=mcp_server",
-    "readme": "https://github.com/Summit53/mcp-server#readme"
-  },
-  "keywords": [
-    "Summit53 Revenue Engine"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@summit53/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Revenue Engine for scoped diagnosis, action planning, execution, and Figure-Eight value evidence.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@summit53/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.summit53.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9d013a3ab5b754bf",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@summit53/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-5ca99bec08d71590",
+      "type": "other",
+      "url": "https://api.summit53.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.summit53.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Summit53/mcp-server",
+    "homepage": "https://www.summit53.com/founding-50?utm_source=mcp_registry&utm_medium=referral&utm_campaign=mcp_server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.summit53__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=359",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.summit53/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

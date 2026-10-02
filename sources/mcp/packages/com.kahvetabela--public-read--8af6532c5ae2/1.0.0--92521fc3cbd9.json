@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.kahvetabela/public-read",
+  "name": "com.kahvetabela/public-read",
+  "displayName": "Kahve Tabela — Türkiye heritage, food & coast",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP tools for Turkey's heritage places, regional-food atlas, and Mavi Koy coastal atlas.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.kahvetabela/public-read",
+    "remotes": [
+      {
+        "url": "https://kahvetabela.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0e9c85bffcd2e27e",
+      "type": "other",
+      "url": "https://kahvetabela.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://kahvetabela.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://kahvetabela.com/llms.txt"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=56",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.kahvetabela/public-read"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

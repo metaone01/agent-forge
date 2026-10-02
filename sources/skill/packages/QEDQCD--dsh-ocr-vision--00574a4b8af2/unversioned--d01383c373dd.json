@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.68e84509db8e0f5772c2e557157b3c8c83d79c9d189611e6bcfce1338aa384ca",
+  "name": "QEDQCD/dsh-ocr-vision",
+  "displayName": "QEDQCD/dsh-ocr-vision",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "Model-facing ocr_image tool that runs local RapidOCR (via a Python subprocess) and returns image text as plain text, so text-only DeepSeek models can read images",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/QEDQCD/dsh-ocr-vision",
+    "readme": "https://github.com/QEDQCD/dsh-ocr-vision/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/QEDQCD/dsh-ocr-vision"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6101"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.volunteerreminder/mcp",
+  "name": "com.volunteerreminder/mcp",
+  "displayName": "VolunteerReminder",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Import a volunteer roster and preview shifts. Test-mode until a human enables live SMS.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.volunteerreminder/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.volunteerreminder.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-16740d004c60f290",
+      "type": "other",
+      "url": "https://mcp.volunteerreminder.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.volunteerreminder.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/talltimbersgroup/VolunteerReminder",
+    "homepage": "https://volunteerreminder.com/docs/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=85",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.volunteerreminder/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

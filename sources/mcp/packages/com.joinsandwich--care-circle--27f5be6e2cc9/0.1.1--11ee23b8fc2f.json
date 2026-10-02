@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.joinsandwich/care-circle",
+  "name": "com.joinsandwich/care-circle",
+  "displayName": "Sandwich Care Circle",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Authenticated MCP for a user's care circle: read CareEvents, list loved ones, inspect workspace.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.joinsandwich/care-circle",
+    "remotes": [
+      {
+        "url": "https://app.joinsandwich.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-397e7ec112cb9967",
+      "type": "other",
+      "url": "https://app.joinsandwich.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.joinsandwich.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Terahertz-Inc/sandwich-public",
+    "homepage": "https://app.joinsandwich.com/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=56",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.joinsandwich/care-circle"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

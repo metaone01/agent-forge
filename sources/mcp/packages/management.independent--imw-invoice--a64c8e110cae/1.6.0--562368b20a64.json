@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.management.independent/imw-invoice",
+  "name": "management.independent/imw-invoice",
+  "displayName": "IMW Invoice",
+  "version": "1.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Invoicing, time tracking, and billing for freelancers and small firms, run in plain language.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "management.independent/imw-invoice",
+    "remotes": [
+      {
+        "url": "https://invoice.independent.management/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fe5b90920448f662",
+      "type": "other",
+      "url": "https://invoice.independent.management/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://invoice.independent.management/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.independent.management/ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "management.independent/imw-invoice"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

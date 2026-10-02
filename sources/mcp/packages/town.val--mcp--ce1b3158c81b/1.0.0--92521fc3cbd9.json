@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.town.val/mcp",
+  "name": "town.val/mcp",
+  "displayName": "Val Town",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Deploy serverless TypeScript on Val Town: HTTP vals, cron, SQLite, email, OAuth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "town.val/mcp",
+    "remotes": [
+      {
+        "url": "https://api.val.town/v3/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0c4924a69345a298",
+      "type": "other",
+      "url": "https://api.val.town/v3/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.val.town/v3/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/val-town/plugins",
+    "homepage": "https://val.town"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=378",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "town.val/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

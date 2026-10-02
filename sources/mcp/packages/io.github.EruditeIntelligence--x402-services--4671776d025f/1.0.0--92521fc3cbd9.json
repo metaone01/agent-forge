@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.EruditeIntelligence/x402-services",
+  "name": "io.github.EruditeIntelligence/x402-services",
+  "displayName": "Erudite Intelligence x402 Services",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "80 paid MCP tools via x402 USDC micropayments. Crypto data, web scraping, auditing, and more.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.EruditeIntelligence/x402-services",
+    "remotes": [
+      {
+        "url": "https://mcp.eruditepay.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.eruditepay.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a73456f51c1cd16f",
+      "type": "other",
+      "url": "https://mcp.eruditepay.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.eruditepay.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-6ddb5493c92a7dea",
+      "type": "other",
+      "url": "https://mcp.eruditepay.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.eruditepay.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/EruditeIntelligence/x402-mcp-server",
+    "homepage": "https://mcp.eruditepay.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=125",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.EruditeIntelligence/x402-services"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

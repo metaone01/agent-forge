@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.dataquoll/data-api",
+  "name": "io.dataquoll/data-api",
+  "displayName": "DataQuoll",
+  "version": "1.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Australian public data as MCP tools: incidents, gauges, declarations, industry calendars, archive.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.dataquoll/data-api",
+    "remotes": [
+      {
+        "url": "https://dataquoll.io/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cb5a58f54d5b5497",
+      "type": "other",
+      "url": "https://dataquoll.io/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://dataquoll.io/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://dataquoll.io/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.dataquoll/data-api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

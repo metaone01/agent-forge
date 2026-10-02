@@ -2,49 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.yuna0x0/hackmd-mcp",
   "name": "io.github.yuna0x0/hackmd-mcp",
+  "displayName": "HackMD",
   "version": "1.5.7",
-  "versionScheme": "semver",
-  "description": "A Model Context Protocol server for integrating HackMD's note-taking platform with AI assistants.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/yuna0x0/hackmd-mcp",
-    "readme": "https://github.com/yuna0x0/hackmd-mcp#readme"
-  },
-  "keywords": [
-    "HackMD"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "hackmd-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A Model Context Protocol server for integrating HackMD's note-taking platform with AI assistants.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "hackmd-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9aced8b17aadedf0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/hackmd-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.5.7"
+    },
+    {
+      "id": "upstream-1df4959d60449815",
+      "type": "oci",
+      "url": "https://ghcr.io/yuna0x0/hackmd-mcp:1.5.7",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-c69bd5aae8278227",
+      "type": "archive",
+      "url": "https://github.com/yuna0x0/hackmd-mcp/releases/download/v1.5.7/hackmd-mcp-1.5.7.mcpb",
+      "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/yuna0x0/hackmd-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yuna0x0__hackmd-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=354",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yuna0x0/hackmd-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

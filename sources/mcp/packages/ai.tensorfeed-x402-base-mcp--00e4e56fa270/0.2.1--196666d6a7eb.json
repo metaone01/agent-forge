@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.ai.tensorfeed/x402-base-mcp",
   "name": "ai.tensorfeed/x402-base-mcp",
+  "displayName": "TensorFeed x402 Base Reader",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Read-only Base mainnet reader. Verifies x402 payment settlements + AFTA federation status.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/RipperMercs/tensorfeed-x402-base-mcp",
-    "homepage": "https://tensorfeed.ai/x402",
-    "readme": "https://github.com/RipperMercs/tensorfeed-x402-base-mcp#readme"
-  },
-  "keywords": [
-    "TensorFeed x402 Base Reader"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@tensorfeed/x402-base-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Read-only Base mainnet reader. Verifies x402 payment settlements + AFTA federation status.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@tensorfeed/x402-base-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6d96958722a16e21",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@tensorfeed/x402-base-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/RipperMercs/tensorfeed-x402-base-mcp",
+    "homepage": "https://tensorfeed.ai/x402"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.tensorfeed__x402-base-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=15",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.tensorfeed/x402-base-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

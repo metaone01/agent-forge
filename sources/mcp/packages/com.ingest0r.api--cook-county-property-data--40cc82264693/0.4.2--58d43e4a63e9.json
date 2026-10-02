@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ingest0r.api/cook-county-property-data",
+  "name": "com.ingest0r.api/cook-county-property-data",
+  "displayName": "Cook County / Chicago Property Data (free tier, no wallet needed)",
+  "version": "0.4.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cook County / Chicago property by address or PIN: sales, permits, assessments, comps. 25 free/day.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ingest0r.api/cook-county-property-data",
+    "remotes": [
+      {
+        "url": "https://api.ingest0r.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1e1331bb93dac232",
+      "type": "other",
+      "url": "https://api.ingest0r.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.ingest0r.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://api.ingest0r.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=55",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ingest0r.api/cook-county-property-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

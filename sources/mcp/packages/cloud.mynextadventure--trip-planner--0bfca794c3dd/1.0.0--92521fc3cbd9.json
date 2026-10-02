@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.mynextadventure/trip-planner",
+  "name": "cloud.mynextadventure/trip-planner",
+  "displayName": "My Next Adventure",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Create trips, compare variants side by side, and add accommodation, transport and event options.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cloud.mynextadventure/trip-planner",
+    "remotes": [
+      {
+        "url": "https://mcp.mynextadventure.cloud/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.mynextadventure.cloud/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9a5e31b3f01bfd36",
+      "type": "other",
+      "url": "https://mcp.mynextadventure.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mynextadventure.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-5de4e70f66ca8575",
+      "type": "other",
+      "url": "https://mcp.mynextadventure.cloud/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mynextadventure.cloud/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/MantaCodeDevs/mcp-mynextadventure",
+    "homepage": "https://mynextadventure.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cloud.mynextadventure/trip-planner"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

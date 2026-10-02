@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.agenticemail/mcp",
+  "name": "dev.agenticemail/mcp",
+  "displayName": "AgenticEmail",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted email for AI agents: create inboxes, send, receive, and reply over MCP with scoped API keys",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.agenticemail/mcp",
+    "remotes": [
+      {
+        "url": "https://api.agenticemail.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f9752676b000da52",
+      "type": "other",
+      "url": "https://api.agenticemail.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.agenticemail.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agenticemail.dev/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.agenticemail/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.so.linkup.mcp/linkup-mcp-server",
+  "name": "so.linkup.mcp/linkup-mcp-server",
+  "displayName": "Linkup",
+  "version": "0.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search the web in real time to get trustworthy, source-backed answers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "so.linkup.mcp/linkup-mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.linkup.so",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.linkup.so",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3656dc9746acb14f",
+      "type": "other",
+      "url": "https://mcp.linkup.so",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.linkup.so"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-15e1fa4c747b713c",
+      "type": "other",
+      "url": "https://mcp.linkup.so",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.linkup.so"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://linkup.so"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "so.linkup.mcp/linkup-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

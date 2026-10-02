@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AceDataCloud/mcp-aichat",
+  "name": "io.github.AceDataCloud/mcp-aichat",
+  "displayName": "io.github.AceDataCloud/mcp-aichat",
+  "version": "2026.9.30.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for AI dialogue using various LLM models via AceDataCloud",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-aichat",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://aichat.mcp.acedata.cloud/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8f634086a391be90",
+      "type": "registry",
+      "url": "https://pypi.org/project/mcp-aichat",
+      "registry": "pypi",
+      "version": "2026.9.30.2"
+    },
+    {
+      "id": "upstream-0a6b08ebdb4f6e57",
+      "type": "other",
+      "url": "https://aichat.mcp.acedata.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://aichat.mcp.acedata.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AceDataCloud/AiChatMCP",
+    "homepage": "https://aichat.mcp.acedata.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AceDataCloud/mcp-aichat"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Grinv/mal-mcp",
   "name": "io.github.Grinv/mal-mcp",
+  "displayName": "MAL MCP Server",
   "version": "0.10.0",
-  "versionScheme": "semver",
-  "description": "MyAnimeList MCP server: Tenrai-powered reads plus official MAL personal-list management.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Grinv/mal-mcp",
-    "readme": "https://github.com/Grinv/mal-mcp#readme"
-  },
-  "keywords": [
-    "MAL MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mal-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MyAnimeList MCP server: Tenrai-powered reads plus official MAL personal-list management.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mal-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-74ad3bb628ae4f9b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mal-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.10.0"
+    },
+    {
+      "id": "upstream-81cdee9458af0e9a",
+      "type": "archive",
+      "url": "https://github.com/Grinv/mal-mcp/releases/download/v0.10.0/mal-mcp.mcpb",
+      "registry": "mcpb",
+      "version": "0.10.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Grinv/mal-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.grinv__mal-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=132",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Grinv/mal-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

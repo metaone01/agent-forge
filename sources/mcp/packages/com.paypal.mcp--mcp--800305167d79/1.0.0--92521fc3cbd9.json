@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.paypal.mcp/mcp",
+  "name": "com.paypal.mcp/mcp",
+  "displayName": "com.paypal.mcp/mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "PayPal MCP server provides access to PayPal services and operations for AI assistants",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.paypal.mcp/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.paypal.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.paypal.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-14bd08f941fbd414",
+      "type": "other",
+      "url": "https://mcp.paypal.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.paypal.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-df3a7269f8abb7f1",
+      "type": "other",
+      "url": "https://mcp.paypal.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.paypal.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=68",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.paypal.mcp/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

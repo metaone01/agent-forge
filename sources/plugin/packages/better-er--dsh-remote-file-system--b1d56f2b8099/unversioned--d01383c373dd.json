@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.4bf6e90e41b8c3bae594c8390cce45d8e8f1532fa47be6f1607388bb5b3dc134",
+  "name": "better-er/dsh-remote-file-system",
+  "displayName": "better-er/dsh-remote-file-system",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "「DSH·远程文件系统」：提供模型可见的远程文件工具 read_remote、write_remote、edit_remote，经 ssh 读写远程主机文件。write_remote 只允许新建，绝无覆写分支；文件后端 RemoteFileSystem 不继承 FileSystem，仅借用 @deepseek-ai/dsh-fs 的类型词表与 FsError。标准可安装的 dsh host 插件。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/better-er/dsh-remote-file-system",
+    "readme": "https://github.com/better-er/dsh-remote-file-system#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/better-er/dsh-remote-file-system"
+    },
+    {
+      "id": "npm-df3a3c611627",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-remote-file-system",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13800"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14766"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-remote-file-system"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

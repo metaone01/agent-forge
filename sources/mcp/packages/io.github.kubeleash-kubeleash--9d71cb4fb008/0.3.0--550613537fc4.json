@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kubeleash/kubeleash",
   "name": "io.github.kubeleash/kubeleash",
+  "displayName": "io.github.kubeleash/kubeleash",
   "version": "0.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Kubernetes MCP server with RBAC-style, context-scoped guardrails for AI agents.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/kubeleash/kubeleash",
-    "readme": "https://github.com/kubeleash/kubeleash#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/kubeleash/kubeleash:0.3.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/kubeleash/kubeleash:0.3.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/kubeleash/kubeleash",
-      "priority": 10,
+      "id": "upstream-03d08ac713457597",
+      "type": "oci",
+      "url": "https://ghcr.io/kubeleash/kubeleash:0.3.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kubeleash/kubeleash"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kubeleash__kubeleash.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kubeleash/kubeleash"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

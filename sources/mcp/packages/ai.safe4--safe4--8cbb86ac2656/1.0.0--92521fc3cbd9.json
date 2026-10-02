@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.safe4/safe4",
+  "name": "ai.safe4/safe4",
+  "displayName": "ai.safe4/safe4",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Tests an AI agent's purchase against the task it was given. Paid per call in USDC via x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.safe4/safe4",
+    "remotes": [
+      {
+        "url": "https://api.safe4.ai/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3c210a4ed8ac36d4",
+      "type": "other",
+      "url": "https://api.safe4.ai/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://api.safe4.ai/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Safe4AI/safe4-mcp",
+    "homepage": "https://api.safe4.ai/docs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=11",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.safe4/safe4"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

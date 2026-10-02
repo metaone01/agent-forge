@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mercadosclaro-eng/payguard",
+  "name": "io.github.mercadosclaro-eng/payguard",
+  "displayName": "Varyntiq",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pre-payment checks for AI agents: x402 quotes, untrusted prompts and audit receipts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mercadosclaro-eng/payguard",
+    "remotes": [
+      {
+        "url": "https://payguard-production-abfe.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5fd9911d4d657c0d",
+      "type": "other",
+      "url": "https://payguard-production-abfe.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://payguard-production-abfe.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=248",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mercadosclaro-eng/payguard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

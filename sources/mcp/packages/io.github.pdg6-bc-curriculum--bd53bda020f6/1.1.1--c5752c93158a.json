@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pdg6/bc-curriculum",
   "name": "io.github.pdg6/bc-curriculum",
+  "displayName": "BC Curriculum",
   "version": "1.1.1",
-  "versionScheme": "semver",
-  "description": "Query the full BC K-12 curriculum: Big Ideas, Competencies, Content, and more.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/pdg6/bc-curriculum-mcp-server",
-    "readme": "https://github.com/pdg6/bc-curriculum-mcp-server#readme"
-  },
-  "keywords": [
-    "BC Curriculum"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "bc-curriculum-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Query the full BC K-12 curriculum: Big Ideas, Competencies, Content, and more.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "bc-curriculum-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://bc-curriculum-mcp.fly.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a60ba14d65d5b05f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/bc-curriculum-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.1"
+    },
+    {
+      "id": "upstream-0fc5206e74f2ffd3",
+      "type": "other",
+      "url": "https://bc-curriculum-mcp.fly.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bc-curriculum-mcp.fly.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/pdg6/bc-curriculum-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pdg6__bc-curriculum.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=271",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pdg6/bc-curriculum"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

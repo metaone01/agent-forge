@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.lightnow-ai/lightnow-proxy",
   "name": "io.github.lightnow-ai/lightnow-proxy",
+  "displayName": "LightNow MCP Proxy",
   "version": "1.9.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Connect your AI clients to your MCP servers—securely managed in one place.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/lightnow-ai/lightnow-proxy",
-    "homepage": "https://docs.lightnow.ai/getting-started/sync-mcp-clients/",
-    "readme": "https://github.com/lightnow-ai/lightnow-proxy#readme"
-  },
-  "keywords": [
-    "LightNow MCP Proxy"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "lightnow-proxy",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "lightnow-proxy",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b042ac2505cc965b",
       "type": "registry",
-      "url": "https://pypi.org/project/lightnow-proxy/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/lightnow-proxy",
+      "registry": "pypi",
+      "version": "1.9.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/lightnow-ai/lightnow-proxy",
+    "homepage": "https://docs.lightnow.ai/getting-started/sync-mcp-clients/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.lightnow-ai__lightnow-proxy.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=229",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.lightnow-ai/lightnow-proxy"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

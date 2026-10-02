@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.md.eureka/eureka",
+  "name": "md.eureka/eureka",
+  "displayName": "Eureka EHR",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The Eureka EHR as MCP tools: patients, schedule, notes, messages, billing, and orders.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "md.eureka/eureka",
+    "remotes": [
+      {
+        "url": "https://api.eureka.md/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3fbc9c75b836de74",
+      "type": "other",
+      "url": "https://api.eureka.md/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.eureka.md/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://eureka.md/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "md.eureka/eureka"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

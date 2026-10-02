@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.pikasim/pikasim",
+  "name": "com.pikasim/pikasim",
+  "displayName": "PikaSim",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Anonymous eSIMs, phone numbers, and SMS codes in 190+ countries. Crypto-paid; agents self-onboard.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.pikasim/pikasim",
+    "remotes": [
+      {
+        "url": "https://pikasim.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://pikasim.com/mcp/wallet",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ad3d3ed47f723f44",
+      "type": "other",
+      "url": "https://pikasim.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pikasim.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-7812b84ededf1ce9",
+      "type": "other",
+      "url": "https://pikasim.com/mcp/wallet",
+      "install": {
+        "type": "api",
+        "url": "https://pikasim.com/mcp/wallet"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/codebruinc/pikasim-mcp",
+    "homepage": "https://pikasim.com/agentic-esim?utm_source=mcp_registry"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=69",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.pikasim/pikasim"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

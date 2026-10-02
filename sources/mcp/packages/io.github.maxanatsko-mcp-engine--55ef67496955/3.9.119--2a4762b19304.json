@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.maxanatsko/mcp-engine",
   "name": "io.github.maxanatsko/mcp-engine",
+  "displayName": "SemanticOps MCP (for Power BI)",
   "version": "3.9.119",
-  "versionScheme": "semver",
-  "description": "Power BI MCP server (Supports Windows and macOS)",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/maxanatsko/mcp-engine-public",
-    "homepage": "https://www.semanticops.dev",
-    "readme": "https://github.com/maxanatsko/mcp-engine-public#readme"
-  },
-  "keywords": [
-    "SemanticOps MCP (for Power BI)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-engine",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Power BI MCP server (Supports Windows and macOS)",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-engine",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-97fb783b85cf5850",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-engine",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.9.119"
     }
   ],
+  "links": {
+    "repository": "https://github.com/maxanatsko/mcp-engine-public",
+    "homepage": "https://www.semanticops.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.maxanatsko__mcp-engine.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=235",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.maxanatsko/mcp-engine"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

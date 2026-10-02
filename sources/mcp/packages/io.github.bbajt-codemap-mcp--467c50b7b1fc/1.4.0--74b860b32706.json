@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bbajt/codemap-mcp",
   "name": "io.github.bbajt/codemap-mcp",
+  "displayName": "CodeMap",
   "version": "1.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Roslyn-powered MCP server for C#/VB.NET. Query symbols, call graphs, and facts. 90%+ token savings.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/bbajt/csharp-code-map",
-    "readme": "https://github.com/bbajt/csharp-code-map#readme"
-  },
-  "keywords": [
-    "CodeMap"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "codemap-mcp",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "codemap-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a7000aa6b65e41cf",
       "type": "registry",
       "url": "https://www.nuget.org/packages/codemap-mcp",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "1.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/bbajt/csharp-code-map"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bbajt__codemap-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=175",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bbajt/codemap-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

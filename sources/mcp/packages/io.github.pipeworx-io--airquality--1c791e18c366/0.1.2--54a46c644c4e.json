@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/airquality",
+  "name": "io.github.pipeworx-io/airquality",
+  "displayName": "Airquality",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Air Quality MCP — wraps air-quality-api.open-meteo.com (free, no auth)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/airquality",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/airquality/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d6fe12706eec8b77",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/airquality/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/airquality/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-airquality",
+    "homepage": "https://pipeworx.io/packs/airquality"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=273",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/airquality"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.dev.futur-panda/laguarde",
   "name": "dev.futur-panda/laguarde",
+  "displayName": "Laguarde",
   "version": "0.3.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hostable policy control plane for AI coding agents.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/FuturPanda/laguarde",
-    "homepage": "https://www.futur-panda.dev/laguarde/docs",
-    "readme": "https://github.com/FuturPanda/laguarde#readme"
-  },
-  "keywords": [
-    "Laguarde"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "laguarde-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "laguarde-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-86c334e5a125fd2c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/laguarde-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/FuturPanda/laguarde",
+    "homepage": "https://www.futur-panda.dev/laguarde/docs"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.futur-panda__laguarde.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=91",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.futur-panda/laguarde"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

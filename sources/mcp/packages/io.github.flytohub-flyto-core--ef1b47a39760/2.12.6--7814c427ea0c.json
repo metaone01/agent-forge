@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.flytohub/flyto-core",
   "name": "io.github.flytohub/flyto-core",
+  "displayName": "Flyto Core",
   "version": "2.12.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Execution engine for AI agents. 412 modules: browser, file, Docker, data, crypto.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/flytohub/flyto-core",
-    "readme": "https://github.com/flytohub/flyto-core#readme"
-  },
-  "keywords": [
-    "Flyto Core"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "flyto-core",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "flyto-core",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4ca1854d39bf4b80",
       "type": "registry",
-      "url": "https://pypi.org/project/flyto-core/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/flyto-core",
+      "registry": "pypi",
+      "version": "2.12.6"
     }
   ],
+  "links": {
+    "repository": "https://github.com/flytohub/flyto-core"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.flytohub__flyto-core.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.flytohub/flyto-core"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.amitesh-m/wealthville",
   "name": "io.github.amitesh-m/wealthville",
+  "displayName": "Wealthville",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "Solana + EVM liquidity-pool scores: Enter/Hold/Exit verdicts and 0-100 Wealthville Score.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/amitesh-m/wealthville-integrations",
-    "homepage": "https://wealthville.net/mcp",
-    "readme": "https://github.com/amitesh-m/wealthville-integrations#readme"
-  },
-  "keywords": [
-    "Wealthville"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@wealthville/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Solana + EVM liquidity-pool scores: Enter/Hold/Exit verdicts and 0-100 Wealthville Score.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@wealthville/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://wealthville.net/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-68de0aceff618c5a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@wealthville/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-6c6a7df5e00541cd",
+      "type": "other",
+      "url": "https://wealthville.net/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://wealthville.net/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/amitesh-m/wealthville-integrations",
+    "homepage": "https://wealthville.net/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.amitesh-m__wealthville.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=169",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.amitesh-m/wealthville"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.WYRE-AI/salesbuildr-mcp",
   "name": "io.github.WYRE-AI/salesbuildr-mcp",
+  "displayName": "SalesBuildr",
   "version": "1.5.8",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for SalesBuildr — quoting and sales workflows for MSPs.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/WYRE-AI/salesbuildr-mcp",
-    "homepage": "https://github.com/WYRE-AI/salesbuildr-mcp",
-    "readme": "https://github.com/WYRE-AI/salesbuildr-mcp#readme"
-  },
-  "keywords": [
-    "SalesBuildr"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-ai/salesbuildr-mcp:v1.5.8",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-ai/salesbuildr-mcp:v1.5.8",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-ai/salesbuildr-mcp",
-      "priority": 10,
+      "id": "upstream-c537366a176604ac",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-ai/salesbuildr-mcp:v1.5.8",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/WYRE-AI/salesbuildr-mcp",
+    "homepage": "https://github.com/WYRE-AI/salesbuildr-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-ai__salesbuildr-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=160",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.WYRE-AI/salesbuildr-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.pxl8/records",
+  "name": "io.pxl8/records",
+  "displayName": "PXL8 verified fight records",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verified fight records for AI assistants: look up a fighter or fight card, cite the pxl8.io page.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.pxl8/records",
+    "remotes": [
+      {
+        "url": "https://api.pxl8.io/sports-data/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a25fd36f839c2eac",
+      "type": "other",
+      "url": "https://api.pxl8.io/sports-data/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.pxl8.io/sports-data/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://pxl8.io/ai-lookup"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=358",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.pxl8/records"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

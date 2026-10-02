@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.YUZU-Hub/wiring-diagram-mcp",
   "name": "io.github.YUZU-Hub/wiring-diagram-mcp",
+  "displayName": "VoltPlan Wiring Diagrams",
   "version": "0.2.2",
-  "versionScheme": "semver",
-  "description": "Generate 12V/24V/48V wiring diagrams and size wires, fuses, batteries, solar, and inverters.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/YUZU-Hub/wiring-diagram-mcp",
-    "homepage": "https://voltplan.app",
-    "readme": "https://github.com/YUZU-Hub/wiring-diagram-mcp#readme"
-  },
-  "keywords": [
-    "VoltPlan Wiring Diagrams"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "wiring-diagram-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate 12V/24V/48V wiring diagrams and size wires, fuses, batteries, solar, and inverters.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "wiring-diagram-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.voltplan.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0f89ecc55e39e75b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/wiring-diagram-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.2"
+    },
+    {
+      "id": "upstream-29f2f9f2c72cdbb0",
+      "type": "other",
+      "url": "https://mcp.voltplan.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.voltplan.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/YUZU-Hub/wiring-diagram-mcp",
+    "homepage": "https://voltplan.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yuzu-hub__wiring-diagram-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=162",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.YUZU-Hub/wiring-diagram-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

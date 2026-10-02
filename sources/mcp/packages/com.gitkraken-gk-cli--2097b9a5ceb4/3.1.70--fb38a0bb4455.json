@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.com.gitkraken/gk-cli",
   "name": "com.gitkraken/gk-cli",
+  "displayName": "com.gitkraken/gk-cli",
   "version": "3.1.70",
-  "versionScheme": "semver",
-  "description": "The GitKraken MCP Server for managing repos, PRs, issues across GitHub, GitLab, Bitbucket and more.",
-  "license": "CC-BY-3.0-US",
-  "links": {
-    "repository": "https://github.com/gitkraken/gk-cli",
-    "readme": "https://github.com/gitkraken/gk-cli#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@gitkraken/gk",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "The GitKraken MCP Server for managing repos, PRs, issues across GitHub, GitLab, Bitbucket and more.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@gitkraken/gk",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b936778ba168f84a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@gitkraken/gk",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.1.70"
     }
   ],
+  "links": {
+    "repository": "https://github.com/gitkraken/gk-cli"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.gitkraken__gk-cli.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=51",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.gitkraken/gk-cli"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

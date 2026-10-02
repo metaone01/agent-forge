@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sebastienrousseau/iso20022-readiness-suite-mcp",
   "name": "io.github.sebastienrousseau/iso20022-readiness-suite-mcp",
+  "displayName": "io.github.sebastienrousseau/iso20022-readiness-suite-mcp",
   "version": "0.0.5",
-  "versionScheme": "semver",
-  "description": "Orchestration MCP server: ISO 20022 readiness scoring, remediation, bank-response simulation.",
-  "license": "Apache-2.0 OR MIT",
-  "links": {
-    "repository": "https://github.com/sebastienrousseau/iso20022-readiness-suite-mcp",
-    "readme": "https://github.com/sebastienrousseau/iso20022-readiness-suite-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "iso20022-readiness-suite-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Orchestration MCP server: ISO 20022 readiness scoring, remediation, bank-response simulation.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "iso20022-readiness-suite-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-acab51da3c35b273",
       "type": "registry",
-      "url": "https://pypi.org/project/iso20022-readiness-suite-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/iso20022-readiness-suite-mcp",
+      "registry": "pypi",
+      "version": "0.0.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sebastienrousseau/iso20022-readiness-suite-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sebastienrousseau__iso20022-readiness-suite-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sebastienrousseau/iso20022-readiness-suite-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

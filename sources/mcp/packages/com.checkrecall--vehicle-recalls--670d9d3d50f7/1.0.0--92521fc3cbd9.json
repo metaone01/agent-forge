@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.checkrecall/vehicle-recalls",
+  "name": "com.checkrecall/vehicle-recalls",
+  "displayName": "RecallChecker — Vehicle Safety Recalls",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check U.S. NHTSA vehicle safety recall campaigns by make, model, and year. Live official data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.checkrecall/vehicle-recalls",
+    "remotes": [
+      {
+        "url": "https://mcp.checkrecall.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4ba44ea397a615ae",
+      "type": "other",
+      "url": "https://mcp.checkrecall.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.checkrecall.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ollo12-prog/recallchecker",
+    "homepage": "https://checkrecall.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=39",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.checkrecall/vehicle-recalls"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

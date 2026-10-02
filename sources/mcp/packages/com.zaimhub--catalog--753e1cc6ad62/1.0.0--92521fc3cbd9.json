@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.zaimhub/catalog",
+  "name": "com.zaimhub/catalog",
+  "displayName": "com.zaimhub/catalog",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only catalog of Russian MFOs: loan terms, Bank of Russia registry data, ratings, reviews.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.zaimhub/catalog",
+    "remotes": [
+      {
+        "url": "https://zaimhub.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e6d48246b08c5acb",
+      "type": "other",
+      "url": "https://zaimhub.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://zaimhub.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/alexandrrzk-ctrl/zaimhub-mcp",
+    "homepage": "https://zaimhub.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=88",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.zaimhub/catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

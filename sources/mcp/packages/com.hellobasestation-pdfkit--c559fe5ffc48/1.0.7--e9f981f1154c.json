@@ -2,48 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.com.hellobasestation/pdfkit",
   "name": "com.hellobasestation/pdfkit",
+  "displayName": "PDF Kit",
   "version": "1.0.7",
-  "versionScheme": "semver",
-  "description": "AI-powered PDF tools: fill forms via natural language",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/pdfkit-mcp"
-  },
-  "keywords": [
-    "PDF Kit"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "pdfkit-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AI-powered PDF tools: fill forms via natural language",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "pdfkit-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.hellobasestation.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b6d2fc7d1e019b81",
       "type": "registry",
       "url": "https://www.npmjs.com/package/pdfkit-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.7"
+    },
+    {
+      "id": "upstream-988c36a81aff8d5f",
+      "type": "other",
+      "url": "https://mcp.hellobasestation.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.hellobasestation.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.hellobasestation__pdfkit.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hellobasestation/pdfkit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

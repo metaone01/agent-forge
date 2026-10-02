@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.yangzichao/mcp-server-overleaf",
   "name": "io.github.yangzichao/mcp-server-overleaf",
+  "displayName": "Overleaf",
   "version": "0.3.4",
-  "versionScheme": "semver",
-  "description": "Read and edit Overleaf papers from any AI client. Edits can arrive as tracked-change suggestions.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/yangzichao/mcp-server-overleaf",
-    "homepage": "https://github.com/yangzichao/mcp-server-overleaf#readme",
-    "readme": "https://github.com/yangzichao/mcp-server-overleaf#readme"
-  },
-  "keywords": [
-    "Overleaf"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-server-overleaf",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Read and edit Overleaf papers from any AI client. Edits can arrive as tracked-change suggestions.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-server-overleaf",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-59b102e32ecca5ed",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-server-overleaf",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.4"
+    },
+    {
+      "id": "upstream-ef0d8501c7899663",
+      "type": "archive",
+      "url": "https://github.com/yangzichao/mcp-server-overleaf/releases/download/v0.3.4/mcp-server-overleaf-0.3.4.mcpb",
+      "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/yangzichao/mcp-server-overleaf",
+    "homepage": "https://github.com/yangzichao/mcp-server-overleaf#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yangzichao__mcp-server-overleaf.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yangzichao/mcp-server-overleaf"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,67 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.quality-network/finedata-mcp",
   "name": "io.github.quality-network/finedata-mcp",
+  "displayName": "FineData",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "FineData web scraping MCP — JavaScript rendering, captcha solving, markdown for AI agents",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/quality-network/finedata-mcp",
-    "homepage": "https://finedata.ai/mcp/",
-    "readme": "https://github.com/quality-network/finedata-mcp#readme"
-  },
-  "keywords": [
-    "FineData"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "finedata-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "FineData web scraping MCP — JavaScript rendering, captcha solving, markdown for AI agents",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "finedata-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.finedata.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-78ce4657400e033f",
       "type": "registry",
-      "url": "https://pypi.org/project/finedata-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/finedata-mcp",
+      "registry": "pypi",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-de559c53041db051",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@finedata/mcp-server",
+      "registry": "npm",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-fe74629b98b715c8",
+      "type": "other",
+      "url": "https://mcp.finedata.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.finedata.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/quality-network/finedata-mcp",
+    "homepage": "https://finedata.ai/mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +75,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.quality-network__finedata-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=293",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.quality-network/finedata-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

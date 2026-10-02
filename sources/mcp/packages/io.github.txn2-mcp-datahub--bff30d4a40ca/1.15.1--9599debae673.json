@@ -2,46 +2,54 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.txn2/mcp-datahub",
   "name": "io.github.txn2/mcp-datahub",
+  "displayName": "io.github.txn2/mcp-datahub",
   "version": "1.15.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for DataHub data catalogs. Discover datasets, explore lineage, and access metadata.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/txn2/mcp-datahub",
-    "readme": "https://github.com/txn2/mcp-datahub#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/txn2/mcp-datahub/releases/download/v1.15.1/mcp-datahub_1.15.1_darwin_arm64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/txn2/mcp-datahub/releases/download/v1.15.1/mcp-datahub_1.15.1_darwin_arm64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-c6da328c2dfce7cf",
+      "type": "archive",
       "url": "https://github.com/txn2/mcp-datahub/releases/download/v1.15.1/mcp-datahub_1.15.1_darwin_arm64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-0dcf76baf325f8ff",
+      "type": "archive",
+      "url": "https://github.com/txn2/mcp-datahub/releases/download/v1.15.1/mcp-datahub_1.15.1_darwin_amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-99bff356bca2a3a8",
+      "type": "archive",
+      "url": "https://github.com/txn2/mcp-datahub/releases/download/v1.15.1/mcp-datahub_1.15.1_windows_amd64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/txn2/mcp-datahub"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +62,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.txn2__mcp-datahub.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.txn2/mcp-datahub"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

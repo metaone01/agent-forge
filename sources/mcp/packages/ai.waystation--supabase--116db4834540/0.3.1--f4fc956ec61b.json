@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.waystation/supabase",
+  "name": "ai.waystation/supabase",
+  "displayName": "ai.waystation/supabase",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connect to your Supabase database to query data and schemas.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.waystation/supabase",
+    "remotes": [
+      {
+        "url": "https://waystation.ai/supabase/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://waystation.ai/supabase/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cde46a5bcfb15335",
+      "type": "other",
+      "url": "https://waystation.ai/supabase/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/supabase/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f3754e79cc14e5f2",
+      "type": "other",
+      "url": "https://waystation.ai/supabase/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/supabase/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/waystation-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.waystation/supabase"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

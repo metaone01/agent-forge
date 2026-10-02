@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ch.antevo/executive",
+  "name": "ch.antevo/executive",
+  "displayName": "Antevo Executive Brief",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Market and world intelligence — the daily editorial read, risk radar and dated archive.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ch.antevo/executive",
+    "remotes": [
+      {
+        "url": "https://api.antevo.ch/mcp/executive/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.antevo.ch/mcp/executive/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d4d03a7f741cfbc3",
+      "type": "other",
+      "url": "https://api.antevo.ch/mcp/executive/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.antevo.ch/mcp/executive/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-fd5e4131587b9e34",
+      "type": "other",
+      "url": "https://api.antevo.ch/mcp/executive/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.antevo.ch/mcp/executive/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://antevo.ch/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ch.antevo/executive"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

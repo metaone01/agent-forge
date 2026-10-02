@@ -2,48 +2,72 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vernonstinebaker/webdav-mcp",
   "name": "io.github.vernonstinebaker/webdav-mcp",
+  "displayName": "WebDAV MCP",
   "version": "1.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Zero-dependency WebDAV MCP server — single static binary, no Node.js or Python. 8 tools via stdio.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/vernonstinebaker/webdav-mcp",
-    "readme": "https://github.com/vernonstinebaker/webdav-mcp#readme"
-  },
-  "keywords": [
-    "WebDAV MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-macos-arm64",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-macos-arm64",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-2d25d6619267dab3",
+      "type": "archive",
       "url": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-macos-arm64",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-aea573b6946b6557",
+      "type": "archive",
+      "url": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-macos-x86_64",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-57da3b3a55335ac0",
+      "type": "archive",
+      "url": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-linux-x86_64",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-4bf78e0284350659",
+      "type": "archive",
+      "url": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-linux-arm64",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-302a093324c9f9c6",
+      "type": "archive",
+      "url": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-linux-armv7",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-a67be7bab2178814",
+      "type": "archive",
+      "url": "https://github.com/vernonstinebaker/webdav-mcp/releases/download/v1.1.1/webdav-mcp-windows-x86_64.exe",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/vernonstinebaker/webdav-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +80,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vernonstinebaker__webdav-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=346",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vernonstinebaker/webdav-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

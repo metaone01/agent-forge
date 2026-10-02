@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.nevadaautoquotes/insurance",
+  "name": "com.nevadaautoquotes/insurance",
+  "displayName": "Nevada Insurance",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Auto insurance prices for Nevada drivers, from rates the state publishes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.nevadaautoquotes/insurance",
+    "remotes": [
+      {
+        "url": "https://nevadaautoquotes.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-98018eb3ed6bfd98",
+      "type": "other",
+      "url": "https://nevadaautoquotes.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://nevadaautoquotes.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=65",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.nevadaautoquotes/insurance"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

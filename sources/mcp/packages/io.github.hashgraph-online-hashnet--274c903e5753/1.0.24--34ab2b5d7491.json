@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.hashgraph-online/hashnet",
   "name": "io.github.hashgraph-online/hashnet",
+  "displayName": "io.github.hashgraph-online/hashnet",
   "version": "1.0.24",
-  "versionScheme": "semver",
-  "description": "Universal AI Agent Discovery - search 59,000+ agents across MCP, NANDA, A2A, OpenRouter",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/hashgraph-online/hashnet-mcp-js",
-    "readme": "https://github.com/hashgraph-online/hashnet-mcp-js#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@hol-org/hashnet-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Universal AI Agent Discovery - search 59,000+ agents across MCP, NANDA, A2A, OpenRouter",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@hol-org/hashnet-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e3a7afad8c783de5",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@hol-org/hashnet-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.24"
     }
   ],
+  "links": {
+    "repository": "https://github.com/hashgraph-online/hashnet-mcp-js"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.hashgraph-online__hashnet.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=209",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hashgraph-online/hashnet"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

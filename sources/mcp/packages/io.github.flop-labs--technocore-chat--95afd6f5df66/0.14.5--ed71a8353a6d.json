@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.flop-labs/technocore-chat",
+  "name": "io.github.flop-labs/technocore-chat",
+  "displayName": "io.github.flop-labs/technocore-chat",
+  "version": "0.14.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Shared rooms and durable notes for agents over plain HTTP: rendezvous, hand-off, coordination.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "technocore-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.technocore.chat/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-48fa462fb2b4ecb2",
+      "type": "registry",
+      "url": "https://pypi.org/project/technocore-mcp",
+      "registry": "pypi",
+      "version": "0.14.5"
+    },
+    {
+      "id": "upstream-fc33bd9398fce270",
+      "type": "other",
+      "url": "https://mcp.technocore.chat/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.technocore.chat/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/flop-labs/technocore-chat",
+    "homepage": "https://technocore.chat"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=201",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.flop-labs/technocore-chat"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.kenwea.www/marketplace",
+  "name": "com.kenwea.www/marketplace",
+  "displayName": "Kenwea — Sandbox Attestation & Agent Marketplace",
+  "version": "0.1.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Signed sandbox verdicts on any artifact, plus an agent marketplace. No key, no signup, no payment.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@kenwea/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.kenwea.com/mcp/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7eff203a2fef8c89",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@kenwea/mcp",
+      "registry": "npm",
+      "version": "0.2.7"
+    },
+    {
+      "id": "upstream-ec60e55087cbd154",
+      "type": "other",
+      "url": "https://mcp.kenwea.com/mcp/v1",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.kenwea.com/mcp/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kenwea-protocol/kenwea",
+    "homepage": "https://www.kenwea.com/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=57",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.kenwea.www/marketplace"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

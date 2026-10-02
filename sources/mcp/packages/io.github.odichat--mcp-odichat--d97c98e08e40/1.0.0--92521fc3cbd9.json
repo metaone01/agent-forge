@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.odichat/mcp-odichat",
+  "name": "io.github.odichat/mcp-odichat",
+  "displayName": "Odichat",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage your Odichat WhatsApp/IG/FB inbox from Claude: conversations, contacts, pipeline, reports.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.odichat/mcp-odichat",
+    "remotes": [
+      {
+        "url": "https://mcp.odichat.app/mcp?token={token}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2f7e872c185524af",
+      "type": "other",
+      "url": "https://mcp.odichat.app/mcp?token={token}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.odichat.app/mcp?token={token}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/odichat/mcp-odichat",
+    "homepage": "https://odichat.app/blog/odichat-mcp-claude"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=267",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.odichat/mcp-odichat"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

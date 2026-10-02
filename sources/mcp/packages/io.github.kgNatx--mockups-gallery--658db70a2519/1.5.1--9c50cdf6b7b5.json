@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.kgNatx/mockups-gallery",
+  "name": "io.github.kgNatx/mockups-gallery",
+  "displayName": "Mockups Gallery",
+  "version": "1.5.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Self-hosted gallery for AI-generated mockups. MCP interface; token-efficient curl uploads.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/kgnatx/mockups-mpc:1.5.1",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://{host}/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://{host}/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a1a01a7224065c97",
+      "type": "oci",
+      "url": "https://ghcr.io/kgnatx/mockups-mpc:1.5.1",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-4e6e0bd17dbf64ec",
+      "type": "other",
+      "url": "https://{host}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{host}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-6933dad2161ef6ba",
+      "type": "other",
+      "url": "https://{host}/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://{host}/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kgNatx/mockups-mpc"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=224",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kgNatx/mockups-gallery"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

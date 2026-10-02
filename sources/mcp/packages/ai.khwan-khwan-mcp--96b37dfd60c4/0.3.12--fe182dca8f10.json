@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.ai.khwan/khwan-mcp",
   "name": "ai.khwan/khwan-mcp",
+  "displayName": "Khwan",
   "version": "0.3.12",
-  "versionScheme": "semver",
-  "description": "Durable AI memory: recall distilled facts in a later session or subagent, and remember new ones.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/khwanlabs/khwan-mcp",
-    "homepage": "https://khwan.ai",
-    "readme": "https://github.com/khwanlabs/khwan-mcp#readme"
-  },
-  "keywords": [
-    "Khwan"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "khwan-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Durable AI memory: recall distilled facts in a later session or subagent, and remember new ones.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "khwan-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.khwan.ai/mcp/{core}/{user}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c57f0832353868f5",
       "type": "registry",
-      "url": "https://pypi.org/project/khwan-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/khwan-mcp",
+      "registry": "pypi",
+      "version": "0.3.12"
+    },
+    {
+      "id": "upstream-10034dd2e1e0e55d",
+      "type": "other",
+      "url": "https://mcp.khwan.ai/mcp/{core}/{user}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.khwan.ai/mcp/{core}/{user}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/khwanlabs/khwan-mcp",
+    "homepage": "https://khwan.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.khwan__khwan-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=7",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.khwan/khwan-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

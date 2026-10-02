@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.85cb322aa0aefadb0c13afdbd89054192c1976c4d65cd524d652668091caa0cc",
+  "name": "htfc786/dsh-awake",
+  "displayName": "htfc786/dsh-awake",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 防休眠插件（守夜人）：agent 任务执行期间阻止操作系统休眠，任务结束后恢复；方式子系统（systemd-inhibit / GNOME gsettings / caffeinate / pmset / PowerShell / powercfg）+ 浏览器 Wake Lock + 一键更新",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/htfc786/dsh-awake",
+    "readme": "https://github.com/htfc786/dsh-awake#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/htfc786/dsh-awake"
+    },
+    {
+      "id": "npm-e2929189b4ad",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-awake",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "1408"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "5997"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "8666"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "5762"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

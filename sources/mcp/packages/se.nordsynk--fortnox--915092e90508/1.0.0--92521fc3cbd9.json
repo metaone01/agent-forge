@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.se.nordsynk/fortnox",
+  "name": "se.nordsynk/fortnox",
+  "displayName": "Nordsynk — Fortnox MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted MCP server for Fortnox. Connect Claude, ChatGPT, Cursor to live Fortnox via OAuth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "se.nordsynk/fortnox",
+    "remotes": [
+      {
+        "url": "https://mcp.nordsynk.se/",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.nordsynk.se/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d3cebcde816621da",
+      "type": "other",
+      "url": "https://mcp.nordsynk.se/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nordsynk.se/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-5c3cdd70e8007a65",
+      "type": "other",
+      "url": "https://mcp.nordsynk.se/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nordsynk.se/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://nordsynk.se/fortnox-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "se.nordsynk/fortnox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

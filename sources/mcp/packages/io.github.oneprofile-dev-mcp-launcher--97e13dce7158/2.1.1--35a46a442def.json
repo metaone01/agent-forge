@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.oneprofile-dev/mcp-launcher",
   "name": "io.github.oneprofile-dev/mcp-launcher",
+  "displayName": "io.github.oneprofile-dev/mcp-launcher",
   "version": "2.1.1",
-  "versionScheme": "semver",
-  "description": "Single MCP hub: discover, add, audit, and govern MCP servers across every AI client.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/oneprofile-dev/mcp-launcher",
-    "readme": "https://github.com/oneprofile-dev/mcp-launcher#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "curatedmcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Single MCP hub: discover, add, audit, and govern MCP servers across every AI client.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "curatedmcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-39c1c1583c1b6087",
       "type": "registry",
       "url": "https://www.npmjs.com/package/curatedmcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/oneprofile-dev/mcp-launcher"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.oneprofile-dev__mcp-launcher.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.oneprofile-dev/mcp-launcher"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

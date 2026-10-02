@@ -2,48 +2,86 @@
   "schemaVersion": 2,
   "id": "mcp.com.savvly/savvly",
   "name": "com.savvly/savvly",
+  "displayName": "com.savvly/savvly",
   "version": "1.0.93",
-  "versionScheme": "semver",
-  "description": "Savvly MCP: query fund data, model projections, and compare against alternative retirement products.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/Savvly/savvly-mcp",
-    "homepage": "https://savvly.com",
-    "readme": "https://github.com/Savvly/savvly-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@savvly/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Savvly MCP: query fund data, model projections, and compare against alternative retirement products.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@savvly/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.savvly.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1c5bdef6a4511696",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@savvly/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.93"
+    },
+    {
+      "id": "upstream-8b92f87c7dea0dcc",
+      "type": "registry",
+      "url": "https://pypi.org/project/savvly-mcp-server",
+      "registry": "pypi",
+      "version": "1.0.93"
+    },
+    {
+      "id": "upstream-64adc3e4f5fde012",
+      "type": "registry",
+      "url": "https://www.nuget.org/packages/Savvly.McpServer",
+      "registry": "nuget",
+      "version": "1.0.93"
+    },
+    {
+      "id": "upstream-20d6fd7e71f2178b",
+      "type": "oci",
+      "url": "https://ghcr.io/savvly/savvly-mcp-server:1.0.93",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-5e4897537b18fbda",
+      "type": "archive",
+      "url": "https://github.com/Savvly/savvly-mcp/releases/download/v1.0.93/savvly-mcp-server.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-a560c2157cfb31e7",
+      "type": "other",
+      "url": "https://api.savvly.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.savvly.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Savvly/savvly-mcp",
+    "homepage": "https://savvly.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +94,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.savvly__savvly.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=74",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.savvly/savvly"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.agent-control/agent-control",
+  "name": "net.agent-control/agent-control",
+  "displayName": "Agent Control — Agent Meter",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Can I pay this address? ok·new·warn·sink. Buy looks_20 $0.20 or look $0.10. No inbox.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.agent-control/agent-control",
+    "remotes": [
+      {
+        "url": "https://agent-control.net/api/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-49c79ab3b0c26787",
+      "type": "other",
+      "url": "https://agent-control.net/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent-control.net/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Cobra-bit-prog/agent-guard",
+    "homepage": "https://agent-control.net"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.agent-control/agent-control"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

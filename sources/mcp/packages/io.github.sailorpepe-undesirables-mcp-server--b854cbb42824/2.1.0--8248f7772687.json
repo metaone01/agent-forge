@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sailorpepe/undesirables-mcp-server",
   "name": "io.github.sailorpepe/undesirables-mcp-server",
+  "displayName": "The Undesirables TCG Oracle",
   "version": "2.1.0",
-  "versionScheme": "semver",
-  "description": "TCG oracle: calibrated prices & risk, AI grading, loan terms, fantasy souls - proven on-chain. 23 to",
-  "license": "BSL-1.1",
-  "links": {
-    "repository": "https://github.com/sailorpepe/undesirables-mcp-server",
-    "homepage": "https://oracle.the-undesirables.com",
-    "readme": "https://github.com/sailorpepe/undesirables-mcp-server#readme"
-  },
-  "keywords": [
-    "The Undesirables TCG Oracle"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "undesirables-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "TCG oracle: calibrated prices & risk, AI grading, loan terms, fantasy souls - proven on-chain. 23 to",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "undesirables-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.the-undesirables.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-800cf1a1ba6e6aab",
       "type": "registry",
-      "url": "https://pypi.org/project/undesirables-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/undesirables-mcp-server",
+      "registry": "pypi",
+      "version": "2.1.0"
+    },
+    {
+      "id": "upstream-961c84299e094788",
+      "type": "other",
+      "url": "https://mcp.the-undesirables.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.the-undesirables.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/sailorpepe/undesirables-mcp-server",
+    "homepage": "https://oracle.the-undesirables.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sailorpepe__undesirables-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=324",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sailorpepe/undesirables-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

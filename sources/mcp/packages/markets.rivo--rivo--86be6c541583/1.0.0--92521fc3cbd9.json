@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.markets.rivo/rivo",
+  "name": "markets.rivo/rivo",
+  "displayName": "Rivo: Polymarket & Kalshi",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Polymarket & Kalshi whale trades, ranked traders, backtesting and Autopilot. $15/mo.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "markets.rivo/rivo",
+    "remotes": [
+      {
+        "url": "https://api.rivo.markets/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-416ff61f92e2f490",
+      "type": "other",
+      "url": "https://api.rivo.markets/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.rivo.markets/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://rivo.markets"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "markets.rivo/rivo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

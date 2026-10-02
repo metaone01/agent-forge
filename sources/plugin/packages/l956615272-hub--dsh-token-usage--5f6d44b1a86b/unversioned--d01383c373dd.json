@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.f6e8c7cce4e89c809d6528e5fb36db5f3efe4b03bb11dbe638f354acd1e8ebc0",
+  "name": "l956615272-hub/dsh-token-usage",
+  "displayName": "l956615272-hub/dsh-token-usage",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "统计本机全部 DSH 会话的历史 token 总消耗，按 message.id 去重，支持按天/模型/Provider/项目分组。Global token-usage totals across all DSH conversations.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/l956615272-hub/dsh-token-usage",
+    "readme": "https://github.com/l956615272-hub/dsh-token-usage#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/l956615272-hub/dsh-token-usage"
+    },
+    {
+      "id": "npm-7ead4c79cbf8",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@liuguangzhe/dsh-token-usage",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14411"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/l956615272-hub__dsh-token-usage.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14359"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "@liuguangzhe/dsh-token-usage"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

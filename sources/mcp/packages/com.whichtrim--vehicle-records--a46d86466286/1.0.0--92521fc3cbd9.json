@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.whichtrim/vehicle-records",
+  "name": "com.whichtrim/vehicle-records",
+  "displayName": "WhichTrim vehicle records",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "US vehicle recalls, complaints, EPA figures, VIN decode and trouble codes, with sources.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.whichtrim/vehicle-records",
+    "remotes": [
+      {
+        "url": "https://whichtrim.com/portal/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c171d63f74f37928",
+      "type": "other",
+      "url": "https://whichtrim.com/portal/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://whichtrim.com/portal/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://whichtrim.com/developers/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=86",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.whichtrim/vehicle-records"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.live.nodrix/nodrix",
+  "name": "live.nodrix/nodrix",
+  "displayName": "nodrix",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read live and historical IoT telemetry and actuate ESP32/Arduino hardware from a backend you host.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "live.nodrix/nodrix",
+    "remotes": [
+      {
+        "url": "https://{host}/v1/mcp/oauth",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://{host}/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b9d3ae04d5431693",
+      "type": "other",
+      "url": "https://{host}/v1/mcp/oauth",
+      "install": {
+        "type": "api",
+        "url": "https://{host}/v1/mcp/oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e849d073c78bc588",
+      "type": "other",
+      "url": "https://{host}/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{host}/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/decoded-cipher/nodrix",
+    "homepage": "https://nodrix.live"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "live.nodrix/nodrix"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

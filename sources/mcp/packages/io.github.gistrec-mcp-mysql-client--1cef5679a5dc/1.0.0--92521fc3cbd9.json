@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.gistrec/mcp-mysql-client",
   "name": "io.github.gistrec/mcp-mysql-client",
+  "displayName": "MySQL MCP",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "MCP server for one MySQL database: schema, read-only queries and guarded writes.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/gistrec/mcp-mysql-client",
-    "homepage": "https://github.com/gistrec/mcp-mysql-client#readme",
-    "readme": "https://github.com/gistrec/mcp-mysql-client#readme"
-  },
-  "keywords": [
-    "MySQL MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-mysql-client",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for one MySQL database: schema, read-only queries and guarded writes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-mysql-client",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9edc502e3d7e63cd",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-mysql-client",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/gistrec/mcp-mysql-client",
+    "homepage": "https://github.com/gistrec/mcp-mysql-client#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.gistrec__mcp-mysql-client.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=206",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.gistrec/mcp-mysql-client"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,46 +2,46 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sophotechlabs/kube-lint-mcp",
   "name": "io.github.sophotechlabs/kube-lint-mcp",
+  "displayName": "io.github.sophotechlabs/kube-lint-mcp",
   "version": "0.8.9",
-  "versionScheme": "semver",
-  "description": "Validate Kubernetes manifests, Helm charts, Kustomize overlays, and FluxCD resources",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://pypi.org/project/kube-lint-mcp/"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "kube-lint-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Validate Kubernetes manifests, Helm charts, Kustomize overlays, and FluxCD resources",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "kube-lint-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b1e73d8823fe23b7",
       "type": "registry",
-      "url": "https://pypi.org/project/kube-lint-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/kube-lint-mcp",
+      "registry": "pypi",
+      "version": "0.8.9"
+    },
+    {
+      "id": "upstream-d62ec6cbb8d750a4",
+      "type": "oci",
+      "url": "https://ghcr.io/sophotechlabs/kube-lint-mcp:0.8.9",
+      "registry": "oci"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +54,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sophotechlabs__kube-lint-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=331",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sophotechlabs/kube-lint-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

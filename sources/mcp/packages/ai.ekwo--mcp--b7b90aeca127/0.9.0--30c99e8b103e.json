@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.ekwo/mcp",
+  "name": "ai.ekwo/mcp",
+  "displayName": "Ekwo OS — open source accounting: ledger, invoices and VAT on your own Supabase or Postgres",
+  "version": "0.9.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Double-entry books an agent keeps as the user: invoices, VAT returns, 107 country packs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ekwo-ai/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.ekwo.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ab98f3f17b74b924",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@ekwo-ai/mcp",
+      "registry": "npm",
+      "version": "0.9.0"
+    },
+    {
+      "id": "upstream-e0f073d5c8128a16",
+      "type": "other",
+      "url": "https://mcp.ekwo.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ekwo.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Ekwo-ai/ekwo-os",
+    "homepage": "https://ekwo.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=5",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.ekwo/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

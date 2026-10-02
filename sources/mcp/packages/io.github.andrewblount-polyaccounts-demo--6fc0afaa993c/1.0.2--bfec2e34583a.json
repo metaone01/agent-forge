@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.andrewblount/polyaccounts-demo",
   "name": "io.github.andrewblount/polyaccounts-demo",
+  "displayName": "PolyAccounts synthetic accounting demo",
   "version": "1.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Synthetic accounting MCP demo with exact balances and ledger evidence. No account or API key.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/andrewblount/polyaccounts-agent-kit",
-    "homepage": "https://polyaccounts.com/demo",
-    "readme": "https://github.com/andrewblount/polyaccounts-agent-kit#readme"
-  },
-  "keywords": [
-    "PolyAccounts synthetic accounting demo"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/andrewblount/polyaccounts-agent-kit/releases/download/v1.0.2/polyaccounts-demo.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/andrewblount/polyaccounts-agent-kit/releases/download/v1.0.2/polyaccounts-demo.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-c483b6d3071824ef",
+      "type": "archive",
       "url": "https://github.com/andrewblount/polyaccounts-agent-kit/releases/download/v1.0.2/polyaccounts-demo.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "1.0.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/andrewblount/polyaccounts-agent-kit",
+    "homepage": "https://polyaccounts.com/demo"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.andrewblount__polyaccounts-demo.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=169",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.andrewblount/polyaccounts-demo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

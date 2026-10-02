@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nyuchi/mukoko-news",
   "name": "io.github.nyuchi/mukoko-news",
+  "displayName": "Mukoko News",
   "version": "1.2.0",
-  "versionScheme": "semver",
-  "description": "Pan-African news & analytics for Zimbabwe and 15 African countries: briefings and trends.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/nyuchi/mukoko-news",
-    "homepage": "https://news.mukoko.com",
-    "readme": "https://github.com/nyuchi/mukoko-news#readme"
-  },
-  "keywords": [
-    "Mukoko News"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@nyuchi/mukoko-news-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Pan-African news & analytics for Zimbabwe and 15 African countries: briefings and trends.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@nyuchi/mukoko-news-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://news.mukoko.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1a35c559f8f4e04a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@nyuchi/mukoko-news-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-8e642561ca40f84f",
+      "type": "other",
+      "url": "https://news.mukoko.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://news.mukoko.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/nyuchi/mukoko-news",
+    "homepage": "https://news.mukoko.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nyuchi__mukoko-news.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=266",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nyuchi/mukoko-news"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

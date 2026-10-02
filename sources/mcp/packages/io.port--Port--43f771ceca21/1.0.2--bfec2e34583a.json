@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.port/Port",
+  "name": "io.port/Port",
+  "displayName": "io.port/Port",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Port.io mcp server",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.port/Port",
+    "remotes": [
+      {
+        "url": "https://mcp.port.io/v1",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.us.port.io/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3a59d297e8bcffca",
+      "type": "other",
+      "url": "https://mcp.port.io/v1",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.port.io/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-38860ef0618780bf",
+      "type": "other",
+      "url": "https://mcp.us.port.io/v1",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.us.port.io/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/port-labs/remote-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=358",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.port/Port"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

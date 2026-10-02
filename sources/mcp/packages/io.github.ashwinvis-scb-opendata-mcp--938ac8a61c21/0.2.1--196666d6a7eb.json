@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ashwinvis/scb-opendata-mcp",
   "name": "io.github.ashwinvis/scb-opendata-mcp",
+  "displayName": "io.github.ashwinvis/scb-opendata-mcp",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Statistics Sweden’s open data made available as an MCP server, using Python and FastMCP",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ashwinvis/scb-opendata-mcp",
-    "readme": "https://github.com/ashwinvis/scb-opendata-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "scb-opendata-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Statistics Sweden’s open data made available as an MCP server, using Python and FastMCP",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "scb-opendata-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6126b9573819e158",
       "type": "registry",
-      "url": "https://pypi.org/project/scb-opendata-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/scb-opendata-mcp",
+      "registry": "pypi",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ashwinvis/scb-opendata-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ashwinvis__scb-opendata-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=172",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ashwinvis/scb-opendata-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

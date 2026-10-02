@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.0xpi.sdsentry/sds-lookup",
+  "name": "com.0xpi.sdsentry/sds-lookup",
+  "displayName": "SDSentry — SDS Lookup & OSHA HazCom",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free safety data sheet (SDS) lookup by product name, plus an OSHA HazCom readiness check.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.0xpi.sdsentry/sds-lookup",
+    "remotes": [
+      {
+        "url": "https://sdsentry.0xpi.com/mcp-sds",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fe0b6af98f414222",
+      "type": "other",
+      "url": "https://sdsentry.0xpi.com/mcp-sds",
+      "install": {
+        "type": "api",
+        "url": "https://sdsentry.0xpi.com/mcp-sds"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.0xpi.sdsentry/sds-lookup"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

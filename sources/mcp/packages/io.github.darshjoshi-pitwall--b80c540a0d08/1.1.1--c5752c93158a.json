@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.darshjoshi/pitwall",
   "name": "io.github.darshjoshi/pitwall",
+  "displayName": "Pitwall — F1 Data for Claude",
   "version": "1.1.1",
-  "versionScheme": "semver",
-  "description": "F1 race engineer for Claude — 79 tools for live timing, telemetry, strategy, and 75 years of history",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/darshjoshi/pitwall",
-    "homepage": "https://github.com/darshjoshi/pitwall",
-    "readme": "https://github.com/darshjoshi/pitwall#readme"
-  },
-  "keywords": [
-    "Pitwall — F1 Data for Claude"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "f1pitwall",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "F1 race engineer for Claude — 79 tools for live timing, telemetry, strategy, and 75 years of history",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "f1pitwall",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c38db0899caaa6b6",
       "type": "registry",
-      "url": "https://pypi.org/project/f1pitwall/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/f1pitwall",
+      "registry": "pypi",
+      "version": "1.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/darshjoshi/pitwall",
+    "homepage": "https://github.com/darshjoshi/pitwall"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.darshjoshi__pitwall.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=191",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.darshjoshi/pitwall"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

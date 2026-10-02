@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.PascaleBeier/hitkeep",
+  "name": "io.github.PascaleBeier/hitkeep",
+  "displayName": "HitKeep",
+  "version": "2.14.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Stateless 2026-07-28 read-only MCP server for aggregate HitKeep analytics and official docs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.PascaleBeier/hitkeep",
+    "remotes": [
+      {
+        "url": "https://{hitkeep_host}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4b65a0a2f2771a09",
+      "type": "other",
+      "url": "https://{hitkeep_host}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{hitkeep_host}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pascalebeier/hitkeep",
+    "homepage": "https://hitkeep.com/use-cases/read-only-mcp-server-web-analytics/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=146",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.PascaleBeier/hitkeep"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

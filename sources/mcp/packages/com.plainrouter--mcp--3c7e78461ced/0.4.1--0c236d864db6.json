@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.plainrouter/mcp",
+  "name": "com.plainrouter/mcp",
+  "displayName": "Plainrouter",
+  "version": "0.4.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Meta Ads MCP: read ad accounts and signal health; propose governed changes under Ask or Full.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.plainrouter/mcp",
+    "remotes": [
+      {
+        "url": "https://plainrouter.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://plainrouter.com/mcp/sandbox",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d96d636ebb963ec2",
+      "type": "other",
+      "url": "https://plainrouter.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://plainrouter.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-167adfbcc83d57ee",
+      "type": "other",
+      "url": "https://plainrouter.com/mcp/sandbox",
+      "install": {
+        "type": "api",
+        "url": "https://plainrouter.com/mcp/sandbox"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://plainrouter.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=69",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.plainrouter/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

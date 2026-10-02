@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jgaethle10/aliev",
+  "name": "io.github.jgaethle10/aliev",
+  "displayName": "RIVET / AliEV EV Charging Site Intelligence",
+  "version": "1.0.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Start with analyze_ev_site(address) for a free, source-backed EV charging opportunity screen.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.jgaethle10/aliev",
+    "remotes": [
+      {
+        "url": "https://aliev.base44.app/functions/alievMcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-77560d98805082e8",
+      "type": "other",
+      "url": "https://aliev.base44.app/functions/alievMcp",
+      "install": {
+        "type": "api",
+        "url": "https://aliev.base44.app/functions/alievMcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jgaethle10/forge-operator",
+    "homepage": "https://aliev.base44.app/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=218",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jgaethle10/aliev"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

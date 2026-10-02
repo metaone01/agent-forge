@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.hcompai/hai-agents",
+  "name": "io.github.hcompai/hai-agents",
+  "displayName": "Computer-Use Agents API",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Run and manage H Company's Computer-Use Agents from any MCP client.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.hcompai/hai-agents",
+    "remotes": [
+      {
+        "url": "https://agp.hcompany.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agp.eu.hcompany.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-24c7095d9123970a",
+      "type": "other",
+      "url": "https://agp.hcompany.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agp.hcompany.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-bb784cd8d350bb67",
+      "type": "other",
+      "url": "https://agp.eu.hcompany.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agp.eu.hcompany.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hcompai/hai-agents-python",
+    "homepage": "https://hub.hcompany.ai/computer-use-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=209",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hcompai/hai-agents"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

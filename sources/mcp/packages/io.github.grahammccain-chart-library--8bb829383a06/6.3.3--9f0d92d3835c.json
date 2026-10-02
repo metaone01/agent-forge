@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.grahammccain/chart-library",
   "name": "io.github.grahammccain/chart-library",
+  "displayName": "Chart Library — Market-state research",
   "version": "6.3.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Market memory for AI: historical states, published studies and source evidence.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/grahammccain/chart-library-mcp",
-    "readme": "https://github.com/grahammccain/chart-library-mcp#readme"
-  },
-  "keywords": [
-    "Chart Library — Market-state research"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "chartlibrary-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "chartlibrary-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://chartlibrary.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2502395315510017",
       "type": "registry",
-      "url": "https://pypi.org/project/chartlibrary-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/chartlibrary-mcp",
+      "registry": "pypi",
+      "version": "6.3.3"
+    },
+    {
+      "id": "upstream-3d444a6c40993e8c",
+      "type": "other",
+      "url": "https://chartlibrary.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://chartlibrary.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/grahammccain/chart-library-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.grahammccain__chart-library.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=207",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.grahammccain/chart-library"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,79 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.FerhatDundar/github-mcp-connector",
   "name": "io.github.FerhatDundar/github-mcp-connector",
+  "displayName": "io.github.FerhatDundar/github-mcp-connector",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for GitHub: repos, files, issues, PRs, search. Single Go binary.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/FerhatDundar/github-mcp-connector",
-    "homepage": "https://github.com/FerhatDundar/github-mcp-connector#readme",
-    "readme": "https://github.com/FerhatDundar/github-mcp-connector#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-darwin-arm64.zip",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-darwin-arm64.zip",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-75349c32be6cc9e6",
+      "type": "archive",
       "url": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-darwin-arm64.zip",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-2e82c62fbf9bd4d8",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-darwin-amd64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-d77f02aa319db4e5",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-linux-amd64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-57ea91801d138e45",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-linux-arm64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-901c67bbadbb6662",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-windows-amd64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-3e1a690d99c786c5",
+      "type": "archive",
+      "url": "https://github.com/FerhatDundar/github-mcp-connector/releases/download/v0.1.1/github-mcp-connector-plugin-v0.1.1-windows-arm64.zip",
+      "registry": "mcpb",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/FerhatDundar/github-mcp-connector",
+    "homepage": "https://github.com/FerhatDundar/github-mcp-connector#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +87,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ferhatdundar__github-mcp-connector.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=129",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.FerhatDundar/github-mcp-connector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

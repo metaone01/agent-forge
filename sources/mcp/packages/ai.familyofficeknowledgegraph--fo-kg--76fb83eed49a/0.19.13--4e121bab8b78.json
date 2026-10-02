@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.familyofficeknowledgegraph/fo-kg",
+  "name": "ai.familyofficeknowledgegraph/fo-kg",
+  "displayName": "Family Office Knowledge Graph",
+  "version": "0.19.13",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Family Office Knowledge Graph: read-only MCP door over the public record. Agentic KG Holdings.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.familyofficeknowledgegraph/fo-kg",
+    "remotes": [
+      {
+        "url": "https://mcp.familyofficeknowledgegraph.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3c18341bd4acaf38",
+      "type": "other",
+      "url": "https://mcp.familyofficeknowledgegraph.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.familyofficeknowledgegraph.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Agentic-Private-Office/fo-kg-door",
+    "homepage": "https://familyofficeknowledgegraph.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=5",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.familyofficeknowledgegraph/fo-kg"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.sh.objekt/mcp-upload",
   "name": "sh.objekt/mcp-upload",
+  "displayName": "sh.objekt/mcp-upload",
   "version": "0.1.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Public file storage for AI agents. Upload files and get a permalink back.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/0xLighthouse/objekt-mcp-upload",
-    "readme": "https://github.com/0xLighthouse/objekt-mcp-upload#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@objekt.sh/mcp-upload",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@objekt.sh/mcp-upload",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-98810bb1d2edcba2",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@objekt.sh/mcp-upload",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/0xLighthouse/objekt-mcp-upload"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\sh.objekt__mcp-upload.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.objekt/mcp-upload"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.bykaranteli/mcp",
+  "name": "com.bykaranteli/mcp",
+  "displayName": "com.bykaranteli/mcp",
+  "version": "0.31.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Crypto derivatives data: funding, OI, liquidations, options, ETF flows. Free account key required.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "bykaranteli-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.bykaranteli.com/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-32bb645cadabdc75",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/bykaranteli-mcp",
+      "registry": "npm",
+      "version": "0.31.0"
+    },
+    {
+      "id": "upstream-8506223b7e45f315",
+      "type": "other",
+      "url": "https://mcp.bykaranteli.com/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.bykaranteli.com/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bykarantelicom/bykaranteli-mcp",
+    "homepage": "https://bykaranteli.com/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=38",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.bykaranteli/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

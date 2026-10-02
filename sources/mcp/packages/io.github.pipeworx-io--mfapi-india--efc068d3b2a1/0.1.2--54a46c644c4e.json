@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/mfapi-india",
+  "name": "io.github.pipeworx-io/mfapi-india",
+  "displayName": "Mfapi India",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MFAPI.in MCP — Indian mutual-fund NAV (net asset value) data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/mfapi-india",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/mfapi-india/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-67c809a581927e0b",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/mfapi-india/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/mfapi-india/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-mfapi-india",
+    "homepage": "https://pipeworx.io/packs/mfapi-india"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=283",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/mfapi-india"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

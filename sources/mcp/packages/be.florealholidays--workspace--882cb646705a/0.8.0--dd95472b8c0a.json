@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.be.florealholidays/workspace",
+  "name": "be.florealholidays/workspace",
+  "displayName": "be.florealholidays/workspace",
+  "version": "0.8.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Floreal Holidays Belgium: live prices and availability; staff run M&E dossiers, day sheets, tasks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "be.florealholidays/workspace",
+    "remotes": [
+      {
+        "url": "https://mcp.florealholidays.be/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5fe6ce6f06b52e9d",
+      "type": "other",
+      "url": "https://mcp.florealholidays.be/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.florealholidays.be/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/devliegerwout/FlorealSystem"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "be.florealholidays/workspace"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

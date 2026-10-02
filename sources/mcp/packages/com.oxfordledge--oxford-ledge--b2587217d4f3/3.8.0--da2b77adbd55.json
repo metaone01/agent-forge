@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.oxfordledge/oxford-ledge",
+  "name": "com.oxfordledge/oxford-ledge",
+  "displayName": "Oxford Ledge",
+  "version": "3.8.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Ask your assistant; it reads the public record: SEC filings, 13F, insider trades, BDC loans.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "oxford-ledge-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.oxfordledge.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-336b9ee5c2047441",
+      "type": "registry",
+      "url": "https://pypi.org/project/oxford-ledge-mcp",
+      "registry": "pypi",
+      "version": "3.8.0"
+    },
+    {
+      "id": "upstream-ca38ae41abd30e6a",
+      "type": "other",
+      "url": "https://www.oxfordledge.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.oxfordledge.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hs902/oxford-ledge-mcp",
+    "homepage": "https://www.oxfordledge.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=67",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.oxfordledge/oxford-ledge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

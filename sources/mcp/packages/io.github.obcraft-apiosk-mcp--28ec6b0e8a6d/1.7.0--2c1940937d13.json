@@ -2,50 +2,67 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.obcraft/apiosk-mcp",
   "name": "io.github.obcraft/apiosk-mcp",
+  "displayName": "Apiosk Connect",
   "version": "1.7.0",
-  "versionScheme": "semver",
-  "description": "Discover, pay for, execute, and publish APIs through Apiosk.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/obcraft/apiosk-mcp",
-    "homepage": "https://apiosk.com",
-    "readme": "https://github.com/obcraft/apiosk-mcp#readme"
-  },
-  "keywords": [
-    "Apiosk Connect"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@apiosk/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Discover, pay for, execute, and publish APIs through Apiosk.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@apiosk/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.apiosk.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-01af5c0934661e13",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@apiosk/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.7.0"
+    },
+    {
+      "id": "upstream-23b52315bdeb82ca",
+      "type": "registry",
+      "url": "https://pypi.org/project/apiosk-mcp",
+      "registry": "pypi",
+      "version": "1.7.0"
+    },
+    {
+      "id": "upstream-615fdc8b47fc20db",
+      "type": "other",
+      "url": "https://mcp.apiosk.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.apiosk.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/obcraft/apiosk-mcp",
+    "homepage": "https://apiosk.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +75,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.obcraft__apiosk-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=266",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.obcraft/apiosk-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

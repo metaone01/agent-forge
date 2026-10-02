@@ -2,49 +2,79 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Sentinel-Gate/sentinelgate",
   "name": "io.github.Sentinel-Gate/sentinelgate",
+  "displayName": "SentinelGate",
   "version": "2.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Open-source MCP proxy for AI agent access control with CEL policies, RBAC, and audit.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Sentinel-Gate/Sentinelgate",
-    "homepage": "https://www.sentinelgate.co.uk",
-    "readme": "https://github.com/Sentinel-Gate/Sentinelgate#readme"
-  },
-  "keywords": [
-    "SentinelGate"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_darwin_arm64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_darwin_arm64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-d0e16e61783780d8",
+      "type": "archive",
       "url": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_darwin_arm64.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "2.0.0"
+    },
+    {
+      "id": "upstream-ff7a4ddc3ac1910a",
+      "type": "archive",
+      "url": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_darwin_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.0"
+    },
+    {
+      "id": "upstream-48382546f03aeee4",
+      "type": "archive",
+      "url": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_linux_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.0"
+    },
+    {
+      "id": "upstream-c015f8482eb047f2",
+      "type": "archive",
+      "url": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_linux_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.0"
+    },
+    {
+      "id": "upstream-c3a3813c27f64afd",
+      "type": "archive",
+      "url": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_windows_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.0"
+    },
+    {
+      "id": "upstream-8af544fbb432378e",
+      "type": "archive",
+      "url": "https://github.com/Sentinel-Gate/Sentinelgate/releases/download/v2.0/sentinelgate_windows_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Sentinel-Gate/Sentinelgate",
+    "homepage": "https://www.sentinelgate.co.uk"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +87,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sentinel-gate__sentinelgate.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=152",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Sentinel-Gate/sentinelgate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.eba1b111a7b4d7bdc0b399835e4e157f94b1b12a672bf11de2dd535942718a44",
+  "name": "xiaohuang-zaianlian/dsh-code-scan",
+  "displayName": "xiaohuang-zaianlian/dsh-code-scan",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 插件：为 Agent 增加 code_scan 工具，用 semgrep 扫描代码并输出按文件/行号/严重级别分组的中文报告",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/xiaohuang-zaianlian/dsh-code-scan",
+    "readme": "https://github.com/xiaohuang-zaianlian/dsh-code-scan#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/xiaohuang-zaianlian/dsh-code-scan"
+    },
+    {
+      "id": "npm-476a6bbd84ba",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-code-scan",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "2325"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "7329"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "6680"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-code-scan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.4caaa6d94c9b9a349048bbf8d4ac9146a0f53db91ad6aca5ccabe86751bb90a9",
+  "name": "ShineBreaker/dsh-agenote",
+  "displayName": "ShineBreaker/dsh-agenote",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 的 agenote 集成插件：会话开始注入知识库健康度、turn 结束检测完成信号并转交 agenote-review 流程，外加 /agenote-summarize|curate|health 斜杠命令。行为规范由 agenote-skills 定义，插件只做事件触发与命令快捷入口。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/ShineBreaker/dsh-agenote",
+    "readme": "https://github.com/ShineBreaker/dsh-agenote#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ShineBreaker/dsh-agenote"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "knowledge"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16441"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "857"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/candidates.json",
+          "entry": "857"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16287"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

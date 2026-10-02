@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pinchwork/pinchwork-mcp",
+  "name": "io.github.pinchwork/pinchwork-mcp",
+  "displayName": "Pinchwork MCP Server",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for Pinchwork - an agent-to-agent task marketplace with credits-based economy",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pinchwork/pinchwork-mcp",
+    "remotes": [
+      {
+        "url": "https://api.pinchwork.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b6b5c792963eddf7",
+      "type": "other",
+      "url": "https://api.pinchwork.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.pinchwork.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/anneschuth/pinchwork",
+    "homepage": "https://pinchwork.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=272",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pinchwork/pinchwork-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.sourcemill/au-towing-legality",
+  "name": "ai.sourcemill/au-towing-legality",
+  "displayName": "Australian Towing Legality Check",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Legal towing check for ~46 AU vehicles — compliant/marginal/illegal + the binding constraint.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.sourcemill/au-towing-legality",
+    "remotes": [
+      {
+        "url": "https://towing.sourcemill.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-73813bb32b0c39de",
+      "type": "other",
+      "url": "https://towing.sourcemill.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://towing.sourcemill.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://towing.sourcemill.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=14",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.sourcemill/au-towing-legality"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.linkedmash/linkedmash",
   "name": "io.github.linkedmash/linkedmash",
+  "displayName": "LinkedMash",
   "version": "1.2.0",
-  "versionScheme": "semver",
-  "description": "Search, label and export your LinkedIn saved posts, then draft, schedule and publish from them.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/linkedmash/linkedmash",
-    "homepage": "https://www.linkedmash.com/for-ai-agents",
-    "readme": "https://github.com/linkedmash/linkedmash#readme"
-  },
-  "keywords": [
-    "LinkedMash"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@linkedmash/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search, label and export your LinkedIn saved posts, then draft, schedule and publish from them.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@linkedmash/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.linkedmash.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4531d128eee3cf3f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@linkedmash/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-624b7f3a7a16780a",
+      "type": "other",
+      "url": "https://mcp.linkedmash.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.linkedmash.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/linkedmash/linkedmash",
+    "homepage": "https://www.linkedmash.com/for-ai-agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.linkedmash__linkedmash.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=229",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.linkedmash/linkedmash"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

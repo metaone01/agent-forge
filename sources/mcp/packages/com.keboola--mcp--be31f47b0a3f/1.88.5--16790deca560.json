@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.keboola/mcp",
+  "name": "com.keboola/mcp",
+  "displayName": "com.keboola/mcp",
+  "version": "1.88.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connect your AI assistants to Keboola and expose your data, transformations, SQL queries, ...",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "keboola-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.us-east4.gcp.keboola.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-09b695a890557464",
+      "type": "registry",
+      "url": "https://pypi.org/project/keboola-mcp-server",
+      "registry": "pypi",
+      "version": "1.88.5"
+    },
+    {
+      "id": "upstream-307afc69280a1c1e",
+      "type": "other",
+      "url": "https://mcp.us-east4.gcp.keboola.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.us-east4.gcp.keboola.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/keboola/mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=57",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.keboola/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

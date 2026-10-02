@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.optionsanalysissuite/options-analysis-suite-mcp",
+  "name": "com.optionsanalysissuite/options-analysis-suite-mcp",
+  "displayName": "Options Analysis Suite",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Options analytics: 17 pricing models, 17 Greeks, GEX, IV, 23 screeners, unusual, dark pool, max pain",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.optionsanalysissuite/options-analysis-suite-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.optionsanalysissuite.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-eec0167b496e3674",
+      "type": "other",
+      "url": "https://mcp.optionsanalysissuite.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.optionsanalysissuite.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Options-Analysis-Suite/options-analysis-suite-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=67",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.optionsanalysissuite/options-analysis-suite-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.blbestate/site-mcp",
+  "name": "com.blbestate/site-mcp",
+  "displayName": "Black Label Real Estate Website MCP",
+  "version": "2026.09.15",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and read public Black Label Real Estate pages with source URLs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.blbestate/site-mcp",
+    "remotes": [
+      {
+        "url": "https://blbestate.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1f2fd1f23de7ee45",
+      "type": "other",
+      "url": "https://blbestate.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://blbestate.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://blbestate.com/connect"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=37",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.blbestate/site-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bdog720/oraclarr",
   "name": "io.github.bdog720/oraclarr",
+  "displayName": "Oraclarr",
   "version": "1.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only diagnostic MCP server for a self-hosted arr stack (Sonarr, Radarr, Prowlarr & more).",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/bdog720/oraclarr",
-    "homepage": "https://github.com/bdog720/oraclarr",
-    "readme": "https://github.com/bdog720/oraclarr#readme"
-  },
-  "keywords": [
-    "Oraclarr"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "oraclarr-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "oraclarr-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c45b424010e5d455",
       "type": "registry",
-      "url": "https://pypi.org/project/oraclarr-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/oraclarr-mcp",
+      "registry": "pypi",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/bdog720/oraclarr",
+    "homepage": "https://github.com/bdog720/oraclarr"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bdog720__oraclarr.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=175",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bdog720/oraclarr"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

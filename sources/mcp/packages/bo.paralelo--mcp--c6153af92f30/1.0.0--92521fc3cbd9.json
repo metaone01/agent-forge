@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.bo.paralelo/mcp",
+  "name": "bo.paralelo/mcp",
+  "displayName": "paralelo.bo — Bolivia parallel-dollar exchange rate",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time + historical Bolivia parallel-market USD/BOB rate. P2P-aggregated. Free, CC-BY 4.0.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "bo.paralelo/mcp",
+    "remotes": [
+      {
+        "url": "https://paralelo.bo/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-847cb7c83b3fcaee",
+      "type": "other",
+      "url": "https://paralelo.bo/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://paralelo.bo/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://paralelo.bo"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "bo.paralelo/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

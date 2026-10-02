@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alimbenhelal-pro/alm-xpp-mcp",
   "name": "io.github.alimbenhelal-pro/alm-xpp-mcp",
+  "displayName": "ALM X++ MCP Server",
   "version": "1.5.1",
-  "versionScheme": "semver",
-  "description": "D365 F&O: 90 AI tools over 200K+ objects, 25M+ cross-refs, 24M+ label translations.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/alimbenhelal-pro/ALM-XPP-MCP",
-    "homepage": "https://www.almxpp.com",
-    "readme": "https://github.com/alimbenhelal-pro/ALM-XPP-MCP#readme"
-  },
-  "keywords": [
-    "ALM X++ MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "almxppmcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "D365 F&O: 90 AI tools over 200K+ objects, 25M+ cross-refs, 24M+ label translations.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "almxppmcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.almxpp.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-787c51707aa14482",
       "type": "registry",
       "url": "https://www.npmjs.com/package/almxppmcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.5.1"
+    },
+    {
+      "id": "upstream-91ea95b35fddbd09",
+      "type": "other",
+      "url": "https://api.almxpp.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.almxpp.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/alimbenhelal-pro/ALM-XPP-MCP",
+    "homepage": "https://www.almxpp.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alimbenhelal-pro__alm-xpp-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alimbenhelal-pro/alm-xpp-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

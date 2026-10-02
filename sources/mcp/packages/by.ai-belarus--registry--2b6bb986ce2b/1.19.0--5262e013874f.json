@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.by.ai-belarus/registry",
+  "name": "by.ai-belarus/registry",
+  "displayName": "AI-BELARUS — Belarus business registry",
+  "version": "1.19.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Belarusian companies by UNP: state registry answers with source and sha256 for every fact.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "by.ai-belarus/registry",
+    "remotes": [
+      {
+        "url": "https://ai-belarus.by/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0455ce478ad8c3e2",
+      "type": "other",
+      "url": "https://ai-belarus.by/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ai-belarus.by/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ai-belarus.by/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "by.ai-belarus/registry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

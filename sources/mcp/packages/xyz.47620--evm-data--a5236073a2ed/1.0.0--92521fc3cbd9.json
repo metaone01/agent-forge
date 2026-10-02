@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.xyz.47620/evm-data",
+  "name": "xyz.47620/evm-data",
+  "displayName": "47620 Base + Polygon Data API",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pay-per-call Base and Polygon onchain data over x402 for AI agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "47620-evm-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://47620.xyz/mcp/evm",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ae1c3242593ffb25",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/47620-evm-mcp",
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-8f25a74f4fb8765e",
+      "type": "other",
+      "url": "https://47620.xyz/mcp/evm",
+      "install": {
+        "type": "api",
+        "url": "https://47620.xyz/mcp/evm"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/fito311/evm-data-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.47620/evm-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

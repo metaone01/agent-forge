@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mrz1880/mcp-keycloak-admin",
   "name": "io.github.mrz1880/mcp-keycloak-admin",
+  "displayName": "Keycloak Admin",
   "version": "0.2.3",
-  "versionScheme": "semver",
-  "description": "Administer Keycloak via its Admin REST API: users, roles, clients, groups, IdP, events.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mrz1880/mcp-keycloak-admin",
-    "readme": "https://github.com/mrz1880/mcp-keycloak-admin#readme"
-  },
-  "keywords": [
-    "Keycloak Admin"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-keycloak-admin",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Administer Keycloak via its Admin REST API: users, roles, clients, groups, IdP, events.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-keycloak-admin",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d165098420cbef0c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-keycloak-admin",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mrz1880/mcp-keycloak-admin"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mrz1880__mcp-keycloak-admin.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=260",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mrz1880/mcp-keycloak-admin"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

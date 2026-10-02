@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.build.arca.mcp/arca-mcp-server",
+  "name": "build.arca.mcp/arca-mcp-server",
+  "displayName": "Arca",
+  "version": "0.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Arca is a private data vault where your AI stores your structured data, semantic memory and skills.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "build.arca.mcp/arca-mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.arca.build",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.arca.build",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-277f08b02d42820a",
+      "type": "other",
+      "url": "https://mcp.arca.build",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.arca.build"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-61ed861dd9559a15",
+      "type": "other",
+      "url": "https://mcp.arca.build",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.arca.build"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://arca.build"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "build.arca.mcp/arca-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

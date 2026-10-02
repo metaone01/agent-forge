@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.rootly/mcp-server",
   "name": "com.rootly/mcp-server",
+  "displayName": "Rootly",
   "version": "2.2.4",
-  "versionScheme": "semver",
-  "description": "Incident management, on-call scheduling, and intelligent analysis powered by Rootly.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/Rootly-AI-Labs/Rootly-MCP-server",
-    "readme": "https://github.com/Rootly-AI-Labs/Rootly-MCP-server#readme"
-  },
-  "keywords": [
-    "Rootly"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "rootly-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Incident management, on-call scheduling, and intelligent analysis powered by Rootly.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "rootly-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.rootly.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-decc1352e13b8996",
       "type": "registry",
-      "url": "https://pypi.org/project/rootly-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/rootly-mcp-server",
+      "registry": "pypi",
+      "version": "2.2.4"
+    },
+    {
+      "id": "upstream-65cb9ae570d77c61",
+      "type": "other",
+      "url": "https://mcp.rootly.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.rootly.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Rootly-AI-Labs/Rootly-MCP-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.rootly__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=73",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.rootly/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

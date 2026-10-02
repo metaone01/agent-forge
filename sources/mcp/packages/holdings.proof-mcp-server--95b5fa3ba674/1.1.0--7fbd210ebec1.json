@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.holdings.proof/mcp-server",
   "name": "holdings.proof/mcp-server",
+  "displayName": "Proof Holdings",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "One API, all things verified — control, delegation, human approval, anti-impersonation.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ProofHoldings/mcp-server",
-    "homepage": "https://proof.holdings",
-    "readme": "https://github.com/ProofHoldings/mcp-server#readme"
-  },
-  "keywords": [
-    "Proof Holdings"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@proof-holdings/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "One API, all things verified — control, delegation, human approval, anti-impersonation.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@proof-holdings/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.proof.holdings/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1a5654142c050f00",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@proof-holdings/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-c0d50da2081950bc",
+      "type": "other",
+      "url": "https://api.proof.holdings/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.proof.holdings/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ProofHoldings/mcp-server",
+    "homepage": "https://proof.holdings"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\holdings.proof__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "holdings.proof/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

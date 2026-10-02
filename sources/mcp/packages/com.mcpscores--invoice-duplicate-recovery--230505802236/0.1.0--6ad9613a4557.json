@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mcpscores/invoice-duplicate-recovery",
+  "name": "com.mcpscores/invoice-duplicate-recovery",
+  "displayName": "Invoice Duplicate Recovery",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Computes exact overpayments across caller-supplied approved invoices, payments, and recorded cred...",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mcpscores/invoice-duplicate-recovery",
+    "remotes": [
+      {
+        "url": "https://mcp-factory.bowling-anthony.workers.dev/invoice-duplicate-recovery/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-100598a842ff76c7",
+      "type": "other",
+      "url": "https://mcp-factory.bowling-anthony.workers.dev/invoice-duplicate-recovery/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-factory.bowling-anthony.workers.dev/invoice-duplicate-recovery/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mcp-factory.bowling-anthony.workers.dev/invoice-duplicate-recovery"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpscores/invoice-duplicate-recovery"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.redditapis/redditapis-mcp",
+  "name": "io.github.redditapis/redditapis-mcp",
+  "displayName": "RedditAPIs",
+  "version": "0.8.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Reddit API as MCP tools: search, subreddits, posts, comments, users, monitors, webhooks, feedback.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "redditapis-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.redditapis.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a6d38577d959ef27",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/redditapis-mcp",
+      "registry": "npm",
+      "version": "0.8.1"
+    },
+    {
+      "id": "upstream-6ca0b11bacb9122e",
+      "type": "other",
+      "url": "https://api.redditapis.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.redditapis.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/redditapis/redditapis-mcp",
+    "homepage": "https://www.redditapis.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=295",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.redditapis/redditapis-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

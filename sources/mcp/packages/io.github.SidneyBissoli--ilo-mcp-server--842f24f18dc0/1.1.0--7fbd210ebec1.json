@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.SidneyBissoli/ilo-mcp-server",
+  "name": "io.github.SidneyBissoli/ilo-mcp-server",
+  "displayName": "ILO Labour Statistics (ILOSTAT): unemployment, wages, informality",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Labour market data from the ILO (ILOSTAT) by country, year, sex and age, with provenance.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "ilo-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ilo.sidneybissoli.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-22150a6a93ac149d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/ilo-mcp-server",
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-40e9eb0f8b5512cd",
+      "type": "other",
+      "url": "https://ilo.sidneybissoli.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ilo.sidneybissoli.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SidneyBissoli/ilo-mcp-server",
+    "homepage": "https://ilo.sidneybissoli.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=153",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SidneyBissoli/ilo-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

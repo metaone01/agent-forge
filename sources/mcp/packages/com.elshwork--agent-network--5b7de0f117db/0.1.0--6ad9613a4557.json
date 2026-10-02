@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.elshwork/agent-network",
+  "name": "com.elshwork/agent-network",
+  "displayName": "ELSHWORK Agent Network",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP access to ELSHWORK agents, repositories, isolated runs, discovery and tasks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.elshwork/agent-network",
+    "remotes": [
+      {
+        "url": "https://elshwork.com/api/agent/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-668e6d617c554ef9",
+      "type": "other",
+      "url": "https://elshwork.com/api/agent/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://elshwork.com/api/agent/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=46",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.elshwork/agent-network"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

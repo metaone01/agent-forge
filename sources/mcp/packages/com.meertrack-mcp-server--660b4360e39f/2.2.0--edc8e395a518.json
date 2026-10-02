@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.meertrack/mcp-server",
   "name": "com.meertrack/mcp-server",
+  "displayName": "Meertrack",
   "version": "2.2.0",
-  "versionScheme": "semver",
-  "description": "Competitive intelligence - track what competitors ship each week. 8 tools, 3 prompt workflows.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/meertrack/meertrack-mcp",
-    "homepage": "https://meertrack.com",
-    "readme": "https://github.com/meertrack/meertrack-mcp#readme"
-  },
-  "keywords": [
-    "Meertrack"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@meertrack/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Competitive intelligence - track what competitors ship each week. 8 tools, 3 prompt workflows.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@meertrack/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.meertrack.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f15eb34b5b793022",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@meertrack/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.2.0"
+    },
+    {
+      "id": "upstream-3d2de12f88f5b8d8",
+      "type": "other",
+      "url": "https://mcp.meertrack.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.meertrack.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/meertrack/meertrack-mcp",
+    "homepage": "https://meertrack.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.meertrack__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.meertrack/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

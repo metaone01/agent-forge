@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.local-mcp/local-mcp",
+  "name": "com.local-mcp/local-mcp",
+  "displayName": "Local MCP",
+  "version": "3.0.416",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Mac & Windows: let ChatGPT, Claude & Cursor use your email, calendar, iMessage, Teams, files. Free.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "local-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://local-mcp.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1497a7f7d6d31831",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/local-mcp",
+      "registry": "npm",
+      "version": "3.0.416"
+    },
+    {
+      "id": "upstream-9f51ac248719f55a",
+      "type": "other",
+      "url": "https://local-mcp.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://local-mcp.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/lanchuske/local-mcp-releases",
+    "homepage": "https://local-mcp.com/connect?ref=registry-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=58",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.local-mcp/local-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

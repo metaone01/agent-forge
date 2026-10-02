@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jamjet-labs/engram-server",
   "name": "io.github.jamjet-labs/engram-server",
+  "displayName": "io.github.jamjet-labs/engram-server",
   "version": "0.5.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Durable memory for AI agents: fact extraction, hybrid retrieval, temporal graph. SQLite/Postgres.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/jamjet-labs/jamjet",
-    "homepage": "https://java-ai-memory.dev",
-    "readme": "https://github.com/jamjet-labs/jamjet#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/jamjet-labs/engram-server:0.5.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/jamjet-labs/engram-server:0.5.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/jamjet-labs/engram-server",
-      "priority": 10,
+      "id": "upstream-b567cd04e4a96405",
+      "type": "oci",
+      "url": "https://ghcr.io/jamjet-labs/engram-server:0.5.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/jamjet-labs/jamjet",
+    "homepage": "https://java-ai-memory.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jamjet-labs__engram-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=216",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jamjet-labs/engram-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcparmory/google-drive",
   "name": "com.mcparmory/google-drive",
+  "displayName": "com.mcparmory/google-drive",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "Manage files, folders, permissions, and collaborative content in Google Drive",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/mcparmory/registry",
-    "readme": "https://github.com/mcparmory/registry#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcparmory-google-drive",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Manage files, folders, permissions, and collaborative content in Google Drive",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcparmory-google-drive",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-098f4c783e597525",
       "type": "registry",
-      "url": "https://pypi.org/project/mcparmory-google-drive/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcparmory-google-drive",
+      "registry": "pypi",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-b87d00bc8a0caa69",
+      "type": "oci",
+      "url": "https://ghcr.io/mcparmory/google-drive:1.0.2",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcparmory/registry"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcparmory__google-drive.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=61",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcparmory/google-drive"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

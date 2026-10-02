@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.com.aiinfradecoded/mcp-anvil",
   "name": "com.aiinfradecoded/mcp-anvil",
+  "displayName": "MCP Anvil",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Local MCP gateway daemon: route, audit, and inspect MCP servers from one config.",
-  "license": "Commercial — see LICENSE.md",
-  "links": {
-    "repository": "https://pypi.org/project/mcp-anvil/"
-  },
-  "keywords": [
-    "MCP Anvil"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-anvil",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Local MCP gateway daemon: route, audit, and inspect MCP servers from one config.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-anvil",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f9da2f29667d98fa",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-anvil/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-anvil",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.aiinfradecoded__mcp-anvil.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=33",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.aiinfradecoded/mcp-anvil"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

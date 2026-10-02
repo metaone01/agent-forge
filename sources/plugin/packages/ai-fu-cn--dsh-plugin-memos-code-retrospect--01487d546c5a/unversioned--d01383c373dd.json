@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.15e39ee1fc8c07bf249a59f0fda80397fe59ca26c030e2bf4e695e5c440d2ba0",
+  "name": "ai-fu-cn/dsh-plugin-memos-code-retrospect",
+  "displayName": "ai-fu-cn/dsh-plugin-memos-code-retrospect",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "订阅 turn/end 对本轮完整对话做 LLM 蒸馏（被否决方案/踩坑记录/工程约束），打 type:rejected_solution 标签写入 MemOS；编码任务时对 rejected_solution 记忆做检索权重提升。复用 MemOS 向量检索、归档淘汰、生命周期能力。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/ai-fu-cn/dsh-plugin-memos-code-retrospect",
+    "readme": "https://github.com/ai-fu-cn/dsh-plugin-memos-code-retrospect#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ai-fu-cn/dsh-plugin-memos-code-retrospect"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6994"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/ai-fu-cn__dsh-plugin-memos-code-retrospect.yml"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "7808"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "ai-fu-cn/dsh-plugin-memos-code-retrospect"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "11210"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

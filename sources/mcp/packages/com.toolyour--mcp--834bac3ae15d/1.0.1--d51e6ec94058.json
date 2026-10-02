@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.toolyour/mcp",
+  "name": "com.toolyour/mcp",
+  "displayName": "ToolYour",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP: plan, run, verify for SEO/security/ship-gate. Same REST API key; 500 free credits/month.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.toolyour/mcp",
+    "remotes": [
+      {
+        "url": "https://api.toolyour.com/mcp/http",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.toolyour.com/mcp",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-270597a8f82591ee",
+      "type": "other",
+      "url": "https://api.toolyour.com/mcp/http",
+      "install": {
+        "type": "api",
+        "url": "https://api.toolyour.com/mcp/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-7dcb619ac6dfbbcc",
+      "type": "other",
+      "url": "https://api.toolyour.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.toolyour.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AbdulWahabRaza123/toolyour-mcp",
+    "homepage": "https://www.toolyour.com/developers/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=82",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.toolyour/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

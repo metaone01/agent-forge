@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.dintak/dintak-mcp-gateway",
+  "name": "com.dintak/dintak-mcp-gateway",
+  "displayName": "com.dintak/dintak-mcp-gateway",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Semantic job search, posting, and apply for Dintak, with resume-to-job match scoring.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.dintak/dintak-mcp-gateway",
+    "remotes": [
+      {
+        "url": "https://mcp.dintak.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-15ca244e35f1d100",
+      "type": "other",
+      "url": "https://mcp.dintak.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.dintak.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/qtpgitadmin/dintak-mcp-gateway",
+    "homepage": "https://www.dintak.com/mcp-docs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=44",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.dintak/dintak-mcp-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

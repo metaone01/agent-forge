@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.869biz.data-vending/data-vending-mcp",
+  "name": "com.869biz.data-vending/data-vending-mcp",
+  "displayName": "Data Vending MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "x402 dataset vending for AI agents: list, preview, quote, purchase, needs intake, and consultation.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.869biz.data-vending/data-vending-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.data-vending.869biz.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c254b7d3612a93a8",
+      "type": "other",
+      "url": "https://mcp.data-vending.869biz.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.data-vending.869biz.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=30",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.869biz.data-vending/data-vending-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

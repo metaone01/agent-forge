@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.at.vorausgedacht/mcp",
+  "name": "at.vorausgedacht/mcp",
+  "displayName": "vorausgedacht.at",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Edelmetallkurse, MarktWache, gemeinfreie Bücher, unverbindlicher Rückruf-Service aus Österreich",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "at.vorausgedacht/mcp",
+    "remotes": [
+      {
+        "url": "https://vorausgedacht.at/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f8b4432dc09b0a4f",
+      "type": "other",
+      "url": "https://vorausgedacht.at/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://vorausgedacht.at/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://vorausgedacht.at/ki/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "at.vorausgedacht/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

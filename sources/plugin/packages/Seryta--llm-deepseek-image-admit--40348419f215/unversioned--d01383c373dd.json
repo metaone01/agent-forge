@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.7d1e3af2275118b02ae7b4a7511f2beada57288cfbd870ad33f5adcd60862baa",
+  "name": "Seryta/llm-deepseek-image-admit",
+  "displayName": "Seryta/llm-deepseek-image-admit",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 插件:接管 DeepSeek 官方 provider 路由并补 image 输入模态声明,让图片消息通过 apiproxy 准入预检(实际图片由 image-bridge 等插件在 agent/pre-step 转成文字)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Seryta/llm-deepseek-image-admit",
+    "readme": "https://github.com/Seryta/llm-deepseek-image-admit#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Seryta/llm-deepseek-image-admit"
+    }
+  ],
+  "keywords": [
+    "models",
+    "vision"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11285"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "9766"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "1350"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

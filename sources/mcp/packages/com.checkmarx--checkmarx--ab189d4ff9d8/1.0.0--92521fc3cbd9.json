@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.checkmarx/checkmarx",
+  "name": "com.checkmarx/checkmarx",
+  "displayName": "com.checkmarx/checkmarx",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official Checkmarx MCP Server",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.checkmarx/checkmarx",
+    "remotes": [
+      {
+        "url": "https://{cxone_base_url}/api/security-mcp/mcp/{tenant_id}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-82c4186b7d7c2f57",
+      "type": "other",
+      "url": "https://{cxone_base_url}/api/security-mcp/mcp/{tenant_id}",
+      "install": {
+        "type": "api",
+        "url": "https://{cxone_base_url}/api/security-mcp/mcp/{tenant_id}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Checkmarx/cx-agentic-ai",
+    "homepage": "https://docs.checkmarx.com/en/34965-659697-1-mcp-server---interacting-with-checkmarx-one-via-ai-assistant.html"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=39",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.checkmarx/checkmarx"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

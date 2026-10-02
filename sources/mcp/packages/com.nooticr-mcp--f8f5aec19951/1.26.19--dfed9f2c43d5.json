@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.nooticr/mcp",
   "name": "com.nooticr/mcp",
+  "displayName": "Nooticr",
   "version": "1.26.19",
-  "versionScheme": "semver",
-  "description": "Social intelligence for 10 networks: read posts and trends, monitor brand mentions, then create.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Nooticr/nooticr-mcp",
-    "homepage": "https://mcp.nooticr.com",
-    "readme": "https://github.com/Nooticr/nooticr-mcp#readme"
-  },
-  "keywords": [
-    "Nooticr"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@nooticr/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Social intelligence for 10 networks: read posts and trends, monitor brand mentions, then create.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@nooticr/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.nooticr.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-25f9f259455d30ba",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@nooticr/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.26.19"
+    },
+    {
+      "id": "upstream-181d9268fed6ea80",
+      "type": "other",
+      "url": "https://mcp.nooticr.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nooticr.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Nooticr/nooticr-mcp",
+    "homepage": "https://mcp.nooticr.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.nooticr__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=65",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.nooticr/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MariusAure/needhuman-mcp",
   "name": "io.github.MariusAure/needhuman-mcp",
+  "displayName": "NeedHuman",
   "version": "0.3.2",
-  "versionScheme": "semver",
-  "description": "Human-as-a-Service for AI agents. Delegate tasks that need a real human, get results via API.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/MariusAure/needhuman-mcp",
-    "homepage": "https://needhuman.ai",
-    "readme": "https://github.com/MariusAure/needhuman-mcp#readme"
-  },
-  "keywords": [
-    "NeedHuman"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@needhuman/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Human-as-a-Service for AI agents. Delegate tasks that need a real human, get results via API.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@needhuman/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://needhuman.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a872c0d4477824c0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@needhuman/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.2"
+    },
+    {
+      "id": "upstream-ab87703d1bc16d7d",
+      "type": "other",
+      "url": "https://needhuman.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://needhuman.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/MariusAure/needhuman-mcp",
+    "homepage": "https://needhuman.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mariusaure__needhuman-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MariusAure/needhuman-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

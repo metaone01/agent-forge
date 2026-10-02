@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SamuelMoraesF/mcp-organizze",
   "name": "io.github.SamuelMoraesF/mcp-organizze",
+  "displayName": "io.github.SamuelMoraesF/mcp-organizze",
   "version": "0.1.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP para integração com o gestor financeiro Organizze. Crie transações, consulte saldos e metas.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/SamuelMoraesF/mcp-organizze",
-    "readme": "https://github.com/SamuelMoraesF/mcp-organizze#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-organizze",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-organizze",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8e0c9419fb61de90",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-organizze/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-organizze",
+      "registry": "pypi",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-f4527dc16cf28fd3",
+      "type": "oci",
+      "url": "https://samuelmoraesf/mcp-organizze",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/SamuelMoraesF/mcp-organizze"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.samuelmoraesf__mcp-organizze.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=151",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SamuelMoraesF/mcp-organizze"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

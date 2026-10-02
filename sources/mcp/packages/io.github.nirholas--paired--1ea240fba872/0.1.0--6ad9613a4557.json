@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.nirholas/paired",
+  "name": "io.github.nirholas/paired",
+  "displayName": "paired.exchange",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Launch coins quoted in tokenized stocks on Robinhood Chain; the user signs at a launch link.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "paired-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://paired.exchange/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-34e65069ce0ad5c3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/paired-mcp",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-e4749406876bc317",
+      "type": "other",
+      "url": "https://paired.exchange/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://paired.exchange/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/nirholas/paired.exchange"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=265",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nirholas/paired"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

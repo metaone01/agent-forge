@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.danielenricocahall/lorcana-mcp",
   "name": "io.github.danielenricocahall/lorcana-mcp",
+  "displayName": "Disney Lorcana MCP",
   "version": "2.5.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Disney Lorcana TCG: card search, deck validation, stats, and deck import/export",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/danielenricocahall/lorcana-mcp",
-    "homepage": "https://github.com/danielenricocahall/lorcana-mcp",
-    "readme": "https://github.com/danielenricocahall/lorcana-mcp#readme"
-  },
-  "keywords": [
-    "Disney Lorcana MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "lorcana-cards-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "lorcana-cards-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6734e3c847dd2fa0",
       "type": "registry",
-      "url": "https://pypi.org/project/lorcana-cards-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/lorcana-cards-mcp",
+      "registry": "pypi",
+      "version": "2.5.1"
+    },
+    {
+      "id": "upstream-1644a4f22b21bcc2",
+      "type": "oci",
+      "url": "https://ghcr.io/danielenricocahall/lorcana-mcp:2.5.1",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/danielenricocahall/lorcana-mcp",
+    "homepage": "https://github.com/danielenricocahall/lorcana-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.danielenricocahall__lorcana-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=190",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.danielenricocahall/lorcana-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

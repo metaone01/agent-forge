@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jmrplens/gitlab-mcp-server",
+  "name": "io.github.jmrplens/gitlab-mcp-server",
+  "displayName": "GitLab MCP Server",
+  "version": "3.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Go MCP server for GitLab: 2 dynamic tools reach 1000+ REST/GraphQL actions. Free/CE, no paid tier.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v3.1.0/gitlab-mcp-server.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.jmrp.io/gitlab",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7800d242def2eb55",
+      "type": "archive",
+      "url": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v3.1.0/gitlab-mcp-server.mcpb",
+      "registry": "mcpb",
+      "version": "3.1.0"
+    },
+    {
+      "id": "upstream-a793b78cd2e0fe15",
+      "type": "oci",
+      "url": "https://ghcr.io/jmrplens/gitlab-mcp-server:3.1.0@sha256:87e483299a2663a7a5d4d28679859b0c7fba2b1a421b7de2652441a569d4a2fc",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-0b0c0e21eca69123",
+      "type": "oci",
+      "url": "https://docker.io/jmrplens/gitlab-mcp-server:3.1.0@sha256:87e483299a2663a7a5d4d28679859b0c7fba2b1a421b7de2652441a569d4a2fc",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-7ef01dff44d8cc51",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@jmrp.io/gitlab-mcp-server",
+      "registry": "npm",
+      "version": "3.1.0"
+    },
+    {
+      "id": "upstream-1a6ca5a2e4613409",
+      "type": "registry",
+      "url": "https://pypi.org/project/jmrplens-gitlab-mcp-server",
+      "registry": "pypi",
+      "version": "3.1.0"
+    },
+    {
+      "id": "upstream-efded4de16e5e3db",
+      "type": "registry",
+      "url": "https://www.nuget.org/packages/gitlab-mcp-server",
+      "registry": "nuget",
+      "version": "3.1.0"
+    },
+    {
+      "id": "upstream-60ca0aa5c420a878",
+      "type": "other",
+      "url": "https://mcp.jmrp.io/gitlab",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.jmrp.io/gitlab"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jmrplens/gitlab-mcp-server",
+    "homepage": "https://jmrp.io/docs/gitlab-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=218",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jmrplens/gitlab-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

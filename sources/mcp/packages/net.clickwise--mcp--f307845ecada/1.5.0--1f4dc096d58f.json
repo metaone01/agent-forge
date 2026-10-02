@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.clickwise/mcp",
+  "name": "net.clickwise/mcp",
+  "displayName": "Clickwise Affiliate Network",
+  "version": "1.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "GTIN product search, tracked affiliate links, programs and deals. OAuth sign-in for your account.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.clickwise/mcp",
+    "remotes": [
+      {
+        "url": "https://partners.clickwise.net/api/v1/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://partners.clickwise.net/api/v1/mcp/account",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b20a96718662a506",
+      "type": "other",
+      "url": "https://partners.clickwise.net/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://partners.clickwise.net/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-ee4e19804aad14d1",
+      "type": "other",
+      "url": "https://partners.clickwise.net/api/v1/mcp/account",
+      "install": {
+        "type": "api",
+        "url": "https://partners.clickwise.net/api/v1/mcp/account"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/softdevfz/clickwise-api",
+    "homepage": "https://partners.clickwise.net/developers/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=367",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.clickwise/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

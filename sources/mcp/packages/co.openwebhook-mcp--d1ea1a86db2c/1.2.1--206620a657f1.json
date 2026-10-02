@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.co.openwebhook/mcp",
   "name": "co.openwebhook/mcp",
+  "displayName": "OpenWebhook",
   "version": "1.2.1",
-  "versionScheme": "semver",
-  "description": "Inspect webhooks from Cursor or Claude. No account needed. Pro adds permanent slugs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/davidlg/openwebhook",
-    "homepage": "https://openwebhook.co/guides/test-webhooks-cursor-claude-mcp",
-    "readme": "https://github.com/davidlg/openwebhook#readme"
-  },
-  "keywords": [
-    "OpenWebhook"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "openwebhook",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Inspect webhooks from Cursor or Claude. No account needed. Pro adds permanent slugs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "openwebhook",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7c06b4348748fd1c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/openwebhook",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/davidlg/openwebhook",
+    "homepage": "https://openwebhook.co/guides/test-webhooks-cursor-claude-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\co.openwebhook__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=28",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.openwebhook/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

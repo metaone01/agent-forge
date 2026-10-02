@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.scriptgrain/scriptgrain",
+  "name": "com.scriptgrain/scriptgrain",
+  "displayName": "ScriptGrain",
+  "version": "1.21.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your writing voice measured across 45 attributes; drafts in that voice, scored against it.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.scriptgrain/scriptgrain",
+    "remotes": [
+      {
+        "url": "https://mcp.scriptgrain.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.scriptgrain.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-88e223ade6e965ba",
+      "type": "other",
+      "url": "https://mcp.scriptgrain.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.scriptgrain.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-76aabbd545f215a9",
+      "type": "other",
+      "url": "https://mcp.scriptgrain.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.scriptgrain.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/StovBuilds/scriptgrain-mcp",
+    "homepage": "https://scriptgrain.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=75",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.scriptgrain/scriptgrain"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.iwe-org/iwe",
   "name": "io.github.iwe-org/iwe",
+  "displayName": "IWE",
   "version": "0.24.2",
-  "versionScheme": "semver",
-  "description": "Markdown knowledge base as agent memory. Runs against the notes directory it is started in.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/iwe-org/iwe",
-    "homepage": "https://iwe.md",
-    "readme": "https://github.com/iwe-org/iwe#readme"
-  },
-  "keywords": [
-    "IWE"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@iwe-org/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Markdown knowledge base as agent memory. Runs against the notes directory it is started in.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@iwe-org/mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-65b9134e9b35d100",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@iwe-org/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.24.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/iwe-org/iwe",
+    "homepage": "https://iwe.md"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.iwe-org__iwe.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=215",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.iwe-org/iwe"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

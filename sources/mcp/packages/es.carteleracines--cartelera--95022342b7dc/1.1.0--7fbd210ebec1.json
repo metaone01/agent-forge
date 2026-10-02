@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.es.carteleracines/cartelera",
+  "name": "es.carteleracines/cartelera",
+  "displayName": "CarteleraCines.es",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cartelera de España: películas, cines, sesiones, recomendaciones y enlaces de compra.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "es.carteleracines/cartelera",
+    "remotes": [
+      {
+        "url": "https://www.carteleracines.es/mcp_server.php",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fdc230a854ba9ec7",
+      "type": "other",
+      "url": "https://www.carteleracines.es/mcp_server.php",
+      "install": {
+        "type": "api",
+        "url": "https://www.carteleracines.es/mcp_server.php"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/surferkoala/cartelera-cines",
+    "homepage": "https://www.carteleracines.es/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "es.carteleracines/cartelera"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

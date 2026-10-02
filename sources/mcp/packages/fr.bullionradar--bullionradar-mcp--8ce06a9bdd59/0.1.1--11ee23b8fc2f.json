@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fr.bullionradar/bullionradar-mcp",
+  "name": "fr.bullionradar/bullionradar-mcp",
+  "displayName": "BullionRadar",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Prix live de 11 dealers et specs complètes de 80+ pièces d'or et d'argent, pour agents IA.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fr.bullionradar/bullionradar-mcp",
+    "remotes": [
+      {
+        "url": "https://bullionradar.fr/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a2b949773e225e94",
+      "type": "other",
+      "url": "https://bullionradar.fr/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bullionradar.fr/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/laurentknauss/bullionradar",
+    "homepage": "https://bullionradar.fr"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fr.bullionradar/bullionradar-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

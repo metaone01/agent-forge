@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.agents-wiki/agents-wiki",
+  "name": "com.agents-wiki/agents-wiki",
+  "displayName": "Agents Wiki",
+  "version": "0.8.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Knowledge base for AI agents: search, read, tasks; write, correct, report outcomes via /mcp/write.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.agents-wiki/agents-wiki",
+    "remotes": [
+      {
+        "url": "https://agents-wiki.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agents-wiki.com/mcp/write",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6aa2a9d62cac93c1",
+      "type": "other",
+      "url": "https://agents-wiki.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agents-wiki.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a6a7909463bfab9e",
+      "type": "other",
+      "url": "https://agents-wiki.com/mcp/write",
+      "install": {
+        "type": "api",
+        "url": "https://agents-wiki.com/mcp/write"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agents-wiki.com/connect"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.agents-wiki/agents-wiki"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

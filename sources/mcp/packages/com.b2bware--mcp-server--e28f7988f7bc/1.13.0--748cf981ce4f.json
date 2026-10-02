@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.b2bware/mcp-server",
+  "name": "com.b2bware/mcp-server",
+  "displayName": "com.b2bware/mcp-server",
+  "version": "1.13.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "B2Bware MCP server — access products, orders and customers from Cursor, Claude, Windsurf and more.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.b2bware/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.b2bware.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.b2bware.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-42740639943eea81",
+      "type": "other",
+      "url": "https://mcp.b2bware.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.b2bware.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e204d4ed176f933e",
+      "type": "other",
+      "url": "https://mcp.b2bware.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.b2bware.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.b2bware/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

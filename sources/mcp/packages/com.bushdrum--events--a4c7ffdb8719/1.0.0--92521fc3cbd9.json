@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.bushdrum/events",
+  "name": "com.bushdrum/events",
+  "displayName": "Bushdrum Events",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "City-scoped Bushdrum event search for agents with list_cities and search_events.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.bushdrum/events",
+    "remotes": [
+      {
+        "url": "https://bushdrum.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://bushdrum.com/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b5cb19c1824da56a",
+      "type": "other",
+      "url": "https://bushdrum.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bushdrum.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-acf82b5146f09b86",
+      "type": "other",
+      "url": "https://bushdrum.com/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://bushdrum.com/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://bushdrum.com/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=38",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.bushdrum/events"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.zapxlabs/veyra",
+  "name": "io.github.zapxlabs/veyra",
+  "displayName": "Veyra",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Give AI agents a wallet with a spending limit. Non-custodial USDC on Base, server-enforced limits.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "veyra-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://veyra.money/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-81f08def40c519ca",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/veyra-mcp",
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-71558615e5d78663",
+      "type": "other",
+      "url": "https://veyra.money/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://veyra.money/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/zapxlabs/veyra-mcp",
+    "homepage": "https://veyra.money"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=354",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.zapxlabs/veyra"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

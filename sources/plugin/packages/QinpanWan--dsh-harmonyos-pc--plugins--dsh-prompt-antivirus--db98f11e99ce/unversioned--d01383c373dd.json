@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.938eac23648f325469762fa8b9d3924c67f9a402bd11c578731d820bcaf7c575",
+  "name": "QinpanWan/dsh-harmonyos-pc/plugins/dsh-prompt-antivirus",
+  "displayName": "QinpanWan/dsh-harmonyos-pc/plugins/dsh-prompt-antivirus",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "全局提示注入 / 上下文病毒（context virus）防御插件：tools/pre-execute 扫工具参数、tools/post-execute 扫工具结果、agent/pre-step 扫进入模型前的消息并注入金丝雀守卫、llm/stream 出站消毒；支持 block / quarantine / monitor 三模式、磁盘化可演进病毒库（学习/导入/导出）与审计日志。纯 JS",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "plugins/dsh-prompt-antivirus/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/QinpanWan/dsh-harmonyos-pc",
+    "readme": "https://github.com/QinpanWan/dsh-harmonyos-pc#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/QinpanWan/dsh-harmonyos-pc/tree/HEAD/plugins/dsh-prompt-antivirus"
+    }
+  ],
+  "keywords": [
+    "observability",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13643"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "QinpanWan/dsh-harmonyos-pc"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

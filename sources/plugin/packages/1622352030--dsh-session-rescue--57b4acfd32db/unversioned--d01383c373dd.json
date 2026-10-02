@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.57f223b93479f26402de05626dca91e4d4645b9663d207b283075eb953489d1e",
+  "name": "1622352030/dsh-session-rescue",
+  "displayName": "1622352030/dsh-session-rescue",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Prevents the DeepSeek Harness cold-start turn stall: after a restart or session load the first turn can block forever while the token meter synchronously replays the whole session log; this plugin",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/1622352030/dsh-session-rescue",
+    "readme": "https://github.com/1622352030/dsh-session-rescue#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/1622352030/dsh-session-rescue"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "observability"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14899"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16042"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

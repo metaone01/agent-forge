@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.com.mendapi/mendapi",
   "name": "com.mendapi/mendapi",
+  "displayName": "mendapi",
   "version": "0.5.6",
-  "versionScheme": "semver",
-  "description": "Detect API breaking changes, scan your codebase for impact, and draft the fix. Runs locally.",
-  "license": "AGPL-3.0-only",
-  "links": {
-    "repository": "https://github.com/mendapi/mendapi",
-    "homepage": "https://mendapi.com",
-    "readme": "https://github.com/mendapi/mendapi#readme"
-  },
-  "keywords": [
-    "mendapi"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mendapi",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Detect API breaking changes, scan your codebase for impact, and draft the fix. Runs locally.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mendapi",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-868ba17bbcbdf1de",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mendapi",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.6"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mendapi/mendapi",
+    "homepage": "https://mendapi.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mendapi__mendapi.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mendapi/mendapi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

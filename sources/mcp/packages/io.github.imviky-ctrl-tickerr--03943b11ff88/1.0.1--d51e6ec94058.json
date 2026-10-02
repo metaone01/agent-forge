@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.imviky-ctrl/tickerr",
   "name": "io.github.imviky-ctrl/tickerr",
+  "displayName": "io.github.imviky-ctrl/tickerr",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Live status, API pricing and rate limits for ChatGPT, Claude, Gemini, Cursor and 42+ AI tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/imviky-ctrl/tickerr-mcp",
-    "readme": "https://github.com/imviky-ctrl/tickerr-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "tickerr-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Live status, API pricing and rate limits for ChatGPT, Claude, Gemini, Cursor and 42+ AI tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "tickerr-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://tickerr.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a7a6f5704f2d0eca",
       "type": "registry",
       "url": "https://www.npmjs.com/package/tickerr-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-01e66446aa816776",
+      "type": "other",
+      "url": "https://tickerr.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tickerr.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/imviky-ctrl/tickerr-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.imviky-ctrl__tickerr.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=213",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.imviky-ctrl/tickerr"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.zezeron/tweetsave-mcp",
   "name": "io.github.zezeron/tweetsave-mcp",
+  "displayName": "io.github.zezeron/tweetsave-mcp",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "Twitter/X analysis without token waste. Fetch tweets, download media. No API key.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/zezeron/tweetsave-mcp",
-    "readme": "https://github.com/zezeron/tweetsave-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "tweetsave-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Twitter/X analysis without token waste. Fetch tweets, download media. No API key.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "tweetsave-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.tweetsave.org/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6d1d3b14545292be",
       "type": "registry",
       "url": "https://www.npmjs.com/package/tweetsave-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-00735966a966feeb",
+      "type": "other",
+      "url": "https://mcp.tweetsave.org/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tweetsave.org/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/zezeron/tweetsave-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.zezeron__tweetsave-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=355",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.zezeron/tweetsave-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.LunarPerovskite/docalyze",
   "name": "io.github.LunarPerovskite/docalyze",
+  "displayName": "io.github.LunarPerovskite/docalyze",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Read and analyze local documents (PDF, Excel, CSV, Word, PowerPoint, images). No API keys needed.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/LunarPerovskite/docalyze-mcp-server",
-    "readme": "https://github.com/LunarPerovskite/docalyze-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "docalyze-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Read and analyze local documents (PDF, Excel, CSV, Word, PowerPoint, images). No API keys needed.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "docalyze-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9b32f31528aa4fc2",
       "type": "registry",
-      "url": "https://pypi.org/project/docalyze-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/docalyze-mcp-server",
+      "registry": "pypi",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-a43791e430e236e2",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/docalyze-mcp-server",
+      "registry": "npm",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/LunarPerovskite/docalyze-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.lunarperovskite__docalyze.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=140",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.LunarPerovskite/docalyze"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

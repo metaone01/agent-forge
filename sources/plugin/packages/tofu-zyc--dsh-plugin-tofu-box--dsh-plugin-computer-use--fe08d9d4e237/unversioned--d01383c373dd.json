@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.fe08d9d4e237bc71013141e892966d88342619aefb91a0f21832b2fd15f5fd7d",
+  "name": "tofu-zyc/dsh-plugin-tofu-box/dsh-plugin-computer-use",
+  "displayName": "tofu-zyc/dsh-plugin-tofu-box/dsh-plugin-computer-use",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "computer-use v2.4：基于 Cua Driver 进程内 SDK 的跨平台桌面操作。13 个工具（截图/窗口列表/缩放/光标/移动/点击/拖拽/滚动/输入/按键/打开应用/连续动作/等待）。v2.4 修「宿主闲置后窗口/应用枚举静默变空」：全部驱动调用统一挂命名 session（查询也不例外），session 卡死按 end→start→重试→重建运行时分级自愈",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "dsh-plugin-computer-use/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/tofu-zyc/dsh-plugin-tofu-box",
+    "readme": "https://github.com/tofu-zyc/dsh-plugin-tofu-box#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/tofu-zyc/dsh-plugin-tofu-box/tree/HEAD/dsh-plugin-computer-use"
+    },
+    {
+      "id": "npm-dd494d3d32ef",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-plugin-computer-use",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "devtools"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16571"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14943"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-plugin-mcp-ui"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "tofu-box"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

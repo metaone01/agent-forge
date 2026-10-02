@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.edithatogo/healthpoint-rs",
   "name": "io.github.edithatogo/healthpoint-rs",
+  "displayName": "healthpoint-rs",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only MCP server for licensed Healthpoint HL7 FHIR API access.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/edithatogo/healthpoint-rs",
-    "readme": "https://github.com/edithatogo/healthpoint-rs#readme"
-  },
-  "keywords": [
-    "healthpoint-rs"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/edithatogo/healthpoint-mcp:0.1.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/edithatogo/healthpoint-mcp:0.1.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/edithatogo/healthpoint-mcp",
-      "priority": 10,
+      "id": "upstream-19d3b157de64cbf5",
+      "type": "oci",
+      "url": "https://ghcr.io/edithatogo/healthpoint-mcp:0.1.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/edithatogo/healthpoint-rs"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.edithatogo__healthpoint-rs.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=197",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.edithatogo/healthpoint-rs"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

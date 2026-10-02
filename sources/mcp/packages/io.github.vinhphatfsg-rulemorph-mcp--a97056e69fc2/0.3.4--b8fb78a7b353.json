@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vinhphatfsg/rulemorph-mcp",
   "name": "io.github.vinhphatfsg/rulemorph-mcp",
+  "displayName": "Rulemorph MCP Server",
   "version": "0.3.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for CSV/JSON data transformation using YAML rules",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/vinhphatfsg/rulemorph",
-    "readme": "https://github.com/vinhphatfsg/rulemorph#readme"
-  },
-  "keywords": [
-    "Rulemorph MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/vinhphatfsg/rulemorph/releases/download/v0.3.4/rulemorph-mcp-v0.3.4-aarch64-apple-darwin.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/vinhphatfsg/rulemorph/releases/download/v0.3.4/rulemorph-mcp-v0.3.4-aarch64-apple-darwin.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-a2a119401527fa0b",
+      "type": "archive",
       "url": "https://github.com/vinhphatfsg/rulemorph/releases/download/v0.3.4/rulemorph-mcp-v0.3.4-aarch64-apple-darwin.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-2dc91a1f2c413a08",
+      "type": "archive",
+      "url": "https://github.com/vinhphatfsg/rulemorph/releases/download/v0.3.4/rulemorph-mcp-v0.3.4-x86_64-apple-darwin.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-3ba3aa2aabae1b13",
+      "type": "archive",
+      "url": "https://github.com/vinhphatfsg/rulemorph/releases/download/v0.3.4/rulemorph-mcp-v0.3.4-x86_64-unknown-linux-gnu.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-edc5e7f3ff32215d",
+      "type": "archive",
+      "url": "https://github.com/vinhphatfsg/rulemorph/releases/download/v0.3.4/rulemorph-mcp-v0.3.4-x86_64-pc-windows-msvc.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/vinhphatfsg/rulemorph"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vinhphatfsg__rulemorph-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=347",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vinhphatfsg/rulemorph-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sseshachala/agent-booster",
   "name": "io.github.sseshachala/agent-booster",
+  "displayName": "Agent Booster",
   "version": "0.6.4",
-  "versionScheme": "semver",
-  "description": "Cut AI agent token costs 5-15x — routes only relevant code symbols instead of full files.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/sseshachala/agent-booster",
-    "readme": "https://github.com/sseshachala/agent-booster#readme"
-  },
-  "keywords": [
-    "Agent Booster"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "agent-booster",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Cut AI agent token costs 5-15x — routes only relevant code symbols instead of full files.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "agent-booster",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-13cd551380125cac",
       "type": "registry",
-      "url": "https://pypi.org/project/agent-booster/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/agent-booster",
+      "registry": "pypi",
+      "version": "0.6.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sseshachala/agent-booster"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sseshachala__agent-booster.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=333",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sseshachala/agent-booster"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

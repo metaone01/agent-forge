@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.xyz.yault/aesp",
   "name": "xyz.yault/aesp",
+  "displayName": "Yault AESP",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Crypto payments for the agent economy — policy-gated vault operations under human control",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/ya-xyz/aesp",
-    "homepage": "https://yault.xyz",
-    "readme": "https://github.com/ya-xyz/aesp#readme"
-  },
-  "keywords": [
-    "Yault AESP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@yault/aesp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Crypto payments for the agent economy — policy-gated vault operations under human control",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@yault/aesp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d3d10ad4d3b3d440",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@yault/aesp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ya-xyz/aesp",
+    "homepage": "https://yault.xyz"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\xyz.yault__aesp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=383",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.yault/aesp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.charmshots/mcp-server",
   "name": "io.github.charmshots/mcp-server",
+  "displayName": "io.github.charmshots/mcp-server",
   "version": "1.2.1",
-  "versionScheme": "semver",
-  "description": "Read-only MCP connector for Charmshots photoshoots, photo metadata and owner-authenticated links.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/charmshots/mcp-server",
-    "readme": "https://github.com/charmshots/mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "charmshots-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Read-only MCP connector for Charmshots photoshoots, photo metadata and owner-authenticated links.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "charmshots-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.charmshots.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4a195c141ca68076",
       "type": "registry",
       "url": "https://www.npmjs.com/package/charmshots-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.1"
+    },
+    {
+      "id": "upstream-014a374541f26e4a",
+      "type": "other",
+      "url": "https://mcp.charmshots.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.charmshots.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/charmshots/mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.charmshots__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=181",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.charmshots/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

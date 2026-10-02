@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.peoplecanbuild/mcp",
+  "name": "com.peoplecanbuild/mcp",
+  "displayName": "People Can Build",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Exhibition stand builder, Poznań/EU: company facts, reference projects, design-fee estimate, RFQ",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.peoplecanbuild/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.peoplecanbuild.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.peoplecanbuild.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0b1ac918f52f852a",
+      "type": "other",
+      "url": "https://mcp.peoplecanbuild.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.peoplecanbuild.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-ef091da985ddf74c",
+      "type": "other",
+      "url": "https://mcp.peoplecanbuild.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.peoplecanbuild.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.peoplecanbuild.com/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=68",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.peoplecanbuild/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

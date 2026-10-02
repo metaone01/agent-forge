@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.canopyapi/mcp",
+  "name": "co.canopyapi/mcp",
+  "displayName": "Canopy API",
+  "version": "2.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Amazon product API & MCP server: search, prices, reviews, sellers, deals, and ASIN lookup by Canopy.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "co.canopyapi/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.canopyapi.co/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-43549618167ed847",
+      "type": "other",
+      "url": "https://mcp.canopyapi.co/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.canopyapi.co/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/canopy-api/canopy-api-mcp",
+    "homepage": "https://www.canopyapi.co/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.canopyapi/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

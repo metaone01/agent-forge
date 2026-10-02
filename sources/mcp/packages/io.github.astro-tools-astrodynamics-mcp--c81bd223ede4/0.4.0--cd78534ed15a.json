@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.astro-tools/astrodynamics-mcp",
   "name": "io.github.astro-tools/astrodynamics-mcp",
+  "displayName": "astrodynamics-mcp",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Astrodynamics MCP server: TLE/SGP4, Lambert, access windows, porkchop, B-plane targeting.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/astro-tools/astrodynamics-mcp",
-    "readme": "https://github.com/astro-tools/astrodynamics-mcp#readme"
-  },
-  "keywords": [
-    "astrodynamics-mcp"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "astrodynamics-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Astrodynamics MCP server: TLE/SGP4, Lambert, access windows, porkchop, B-plane targeting.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "astrodynamics-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5ee68bd6bc06f948",
       "type": "registry",
-      "url": "https://pypi.org/project/astrodynamics-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/astrodynamics-mcp",
+      "registry": "pypi",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/astro-tools/astrodynamics-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.astro-tools__astrodynamics-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=173",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.astro-tools/astrodynamics-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

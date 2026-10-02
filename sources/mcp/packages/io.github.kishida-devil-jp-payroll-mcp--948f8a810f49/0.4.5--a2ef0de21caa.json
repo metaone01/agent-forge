@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kishida-devil/jp-payroll-mcp",
   "name": "io.github.kishida-devil/jp-payroll-mcp",
+  "displayName": "日本の給与・社会保険・労働法",
   "version": "0.4.5",
-  "versionScheme": "semver",
-  "description": "Japan payroll & social insurance. 日本の給与計算・社会保険。47都道府県の料率、源泉所得税、割増賃金、有給、標準報酬月額の改定、最低賃金。根拠の条文つき。",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/kishida-devil/jp-payroll-mcp",
-    "readme": "https://github.com/kishida-devil/jp-payroll-mcp#readme"
-  },
-  "keywords": [
-    "日本の給与・社会保険・労働法"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "jp-payroll-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Japan payroll & social insurance. 日本の給与計算・社会保険。47都道府県の料率、源泉所得税、割増賃金、有給、標準報酬月額の改定、最低賃金。根拠の条文つき。",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "jp-payroll-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://japan-payroll-api.tsumugi.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a9dfb81a0e2a9802",
       "type": "registry",
       "url": "https://www.npmjs.com/package/jp-payroll-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.5"
+    },
+    {
+      "id": "upstream-4dd1a7d7f9090166",
+      "type": "other",
+      "url": "https://japan-payroll-api.tsumugi.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://japan-payroll-api.tsumugi.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/kishida-devil/jp-payroll-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kishida-devil__jp-payroll-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=225",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kishida-devil/jp-payroll-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

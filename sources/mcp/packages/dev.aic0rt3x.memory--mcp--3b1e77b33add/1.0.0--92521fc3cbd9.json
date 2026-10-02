@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.aic0rt3x.memory/mcp",
+  "name": "dev.aic0rt3x.memory/mcp",
+  "displayName": "AI Cortex Storage",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Persistent cloud memory for AI agents. Store and search key-value memories across sessions.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.aic0rt3x.memory/mcp",
+    "remotes": [
+      {
+        "url": "https://memory.aic0rt3x.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d7bee087a9c9eab7",
+      "type": "other",
+      "url": "https://memory.aic0rt3x.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://memory.aic0rt3x.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=89",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.aic0rt3x.memory/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

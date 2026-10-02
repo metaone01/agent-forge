@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.57026dcccc9888c47a3477465fe10fb20a55bba4fd495cce10cec354e85c0560",
+  "name": "subfocusx/utm-auto-compact",
+  "displayName": "subfocusx/utm-auto-compact",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Automatically trigger DSH context compaction at an absolute surface-token threshold (unlike the default 0.8 window ratio): retry loop until under maxTokens, per-agent cooldown, idle grace, dry-run",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/subfocusx/utm-auto-compact",
+    "readme": "https://github.com/subfocusx/utm-auto-compact#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/subfocusx/utm-auto-compact"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11840"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

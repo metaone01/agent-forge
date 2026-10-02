@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nveil-ai/nveil",
   "name": "io.github.nveil-ai/nveil",
+  "displayName": "NVEIL",
   "version": "1.3.0",
-  "versionScheme": "semver",
-  "description": "Data processing and visualization toolkit — 50+ chart types, raw data stays local.",
-  "license": "AGPL-3.0-or-later",
-  "links": {
-    "repository": "https://github.com/nveil-ai/nveil-toolkit",
-    "homepage": "https://nveil.com",
-    "readme": "https://github.com/nveil-ai/nveil-toolkit#readme"
-  },
-  "keywords": [
-    "NVEIL"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "nveil",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Data processing and visualization toolkit — 50+ chart types, raw data stays local.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "nveil",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e9c3d2fcf96d6f6f",
       "type": "registry",
-      "url": "https://pypi.org/project/nveil/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/nveil",
+      "registry": "pypi",
+      "version": "1.3.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nveil-ai/nveil-toolkit",
+    "homepage": "https://nveil.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nveil-ai__nveil.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=266",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nveil-ai/nveil"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.whataplan.api/whataplan-mcp",
+  "name": "net.whataplan.api/whataplan-mcp",
+  "displayName": "What a Plan! — MCP Server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Descubre eventos en España: filtra por texto, categoría, ubicación, precio y fecha. 38 categorías.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.whataplan.api/whataplan-mcp",
+    "remotes": [
+      {
+        "url": "https://api.whataplan.net/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b807da5619a26d40",
+      "type": "other",
+      "url": "https://api.whataplan.net/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.whataplan.net/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jovealtrabajo/wap-backend"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.whataplan.api/whataplan-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

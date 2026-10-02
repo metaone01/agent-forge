@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.domdomegg/time-mcp-nuget",
   "name": "io.github.domdomegg/time-mcp-nuget",
+  "displayName": "Time MCP Server",
   "version": "1.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Get the current UTC time in RFC 3339 format.",
   "license": "unknown",
-  "links": {
-    "repository": "https://www.nuget.org/packages/TimeMcpServer"
-  },
-  "keywords": [
-    "Time MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "TimeMcpServer",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "TimeMcpServer",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-475c8f091076d1b3",
       "type": "registry",
       "url": "https://www.nuget.org/packages/TimeMcpServer",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "1.1.1"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.domdomegg__time-mcp-nuget.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=195",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.domdomegg/time-mcp-nuget"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ilyautov/moysklad-mcp-ru",
   "name": "io.github.ilyautov/moysklad-mcp-ru",
+  "displayName": "MoySklad MCP (RU)",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MoySklad JSON API 1.2 in your AI assistant — schema-driven, safety-gated document writes.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ilyautov/moysklad-mcp-ru",
-    "homepage": "https://moysklad-mcp-ru.aifrontier.tech",
-    "readme": "https://github.com/ilyautov/moysklad-mcp-ru#readme"
-  },
-  "keywords": [
-    "MoySklad MCP (RU)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "moysklad-mcp-ru",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "moysklad-mcp-ru",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0645ebba1ae3b403",
       "type": "registry",
-      "url": "https://pypi.org/project/moysklad-mcp-ru/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/moysklad-mcp-ru",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ilyautov/moysklad-mcp-ru",
+    "homepage": "https://moysklad-mcp-ru.aifrontier.tech"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ilyautov__moysklad-mcp-ru.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=212",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ilyautov/moysklad-mcp-ru"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

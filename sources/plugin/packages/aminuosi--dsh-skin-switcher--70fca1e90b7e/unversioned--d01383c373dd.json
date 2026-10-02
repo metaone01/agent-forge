@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c4e7aedbcc0a063320994af5dc63c123c41e9019b92ec6f01645808b0af1e75d",
+  "name": "aminuosi/dsh-skin-switcher",
+  "displayName": "aminuosi/dsh-skin-switcher",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Settings skin switcher for the dsh web GUI: lists installed skins (bundles shipping skin.json), lets the user pick one, and applies it on the next page refresh through the profile patch layer's live reload",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/aminuosi/dsh-skin-switcher",
+    "readme": "https://github.com/aminuosi/dsh-skin-switcher#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/aminuosi/dsh-skin-switcher"
+    }
+  ],
+  "keywords": [],
+  "subtype": "skin",
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-themes",
+          "revision": "4cd8edf3ee3aad99dec2cdd41c29ec656cb62da0",
+          "path": "data/themes.json",
+          "entry": "340"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.capability/physical-capability-cloud",
+  "name": "network.capability/physical-capability-cloud",
+  "displayName": "Physical Capability Cloud",
+  "version": "2.19.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Discover, hire, and verify real-world physical capability through MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "network.capability/physical-capability-cloud",
+    "remotes": [
+      {
+        "url": "https://capability.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bbf9d807d81f8051",
+      "type": "other",
+      "url": "https://capability.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://capability.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/LamaSu/physical-capability-cloud",
+    "homepage": "https://capability.network"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.capability/physical-capability-cloud"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

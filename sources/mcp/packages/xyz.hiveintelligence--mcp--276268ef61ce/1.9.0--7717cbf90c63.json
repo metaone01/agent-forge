@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.xyz.hiveintelligence/mcp",
+  "name": "xyz.hiveintelligence/mcp",
+  "displayName": "Hive Intelligence MCP",
+  "version": "1.9.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Evidence-backed crypto due diligence with sources, freshness, and a runtime receipt on every call.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "hive-intelligence",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.hiveintelligence.xyz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9ac3f75d487960be",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/hive-intelligence",
+      "registry": "npm",
+      "version": "1.9.0"
+    },
+    {
+      "id": "upstream-d77de49e96f34bf4",
+      "type": "other",
+      "url": "https://mcp.hiveintelligence.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.hiveintelligence.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hive-intel/hive-sdk",
+    "homepage": "https://hiveintelligence.xyz"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=383",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.hiveintelligence/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

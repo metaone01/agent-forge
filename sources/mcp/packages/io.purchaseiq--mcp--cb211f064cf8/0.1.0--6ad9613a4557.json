@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.purchaseiq/mcp",
+  "name": "io.purchaseiq/mcp",
+  "displayName": "io.purchaseiq/mcp",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pre-purchase trust checks for AI agents: recalls, scam signals, proceed/caution/avoid verdict.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.purchaseiq/mcp",
+    "remotes": [
+      {
+        "url": "https://purchaseiq.io/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bc0d5cb71f8507b9",
+      "type": "other",
+      "url": "https://purchaseiq.io/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://purchaseiq.io/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mrgoodie/purchaseiq-mcp",
+    "homepage": "https://purchaseiq.io/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=358",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.purchaseiq/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

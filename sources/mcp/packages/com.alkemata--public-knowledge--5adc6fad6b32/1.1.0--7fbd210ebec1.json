@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.alkemata/public-knowledge",
+  "name": "com.alkemata/public-knowledge",
+  "displayName": "Alkemata Public Knowledge",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and retrieve published Alkemata articles, pages, and guidance through a read-only MCP server.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.alkemata/public-knowledge",
+    "remotes": [
+      {
+        "url": "https://alkemata.com/wp-json/mcp/alkemata-public",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-859d0b9fbe466461",
+      "type": "other",
+      "url": "https://alkemata.com/wp-json/mcp/alkemata-public",
+      "install": {
+        "type": "api",
+        "url": "https://alkemata.com/wp-json/mcp/alkemata-public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=33",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.alkemata/public-knowledge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.iridite/bing-search-free",
   "name": "io.github.iridite/bing-search-free",
+  "displayName": "Bing Search (Free)",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Free Bing search MCP server - No API key required",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/iridite/bing-search-mcp",
-    "readme": "https://github.com/iridite/bing-search-mcp#readme"
-  },
-  "keywords": [
-    "Bing Search (Free)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-bing-scraper",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Free Bing search MCP server - No API key required",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-bing-scraper",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-66cfd00ef38a502c",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-bing-scraper/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-bing-scraper",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/iridite/bing-search-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.iridite__bing-search-free.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=214",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.iridite/bing-search-free"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

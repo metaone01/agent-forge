@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.milemarker.lp/mcp",
+  "name": "co.milemarker.lp/mcp",
+  "displayName": "Milemarker MCP Server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI-native interface to Milemarker: query AUM & positions, manage advisors, run platform workflows.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "co.milemarker.lp/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.milemarker.co/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-583a22e07f8b1496",
+      "type": "other",
+      "url": "https://mcp.milemarker.co/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.milemarker.co/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://milemarker.co"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=28",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.milemarker.lp/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

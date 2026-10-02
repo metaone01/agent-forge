@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Shreyas-Profile/cron-mcp",
+  "name": "io.github.Shreyas-Profile/cron-mcp",
+  "displayName": "io.github.Shreyas-Profile/cron-mcp",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cron-as-a-service MCP. Schedule prompts; when the cron fires we POST to your callback URL.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Shreyas-Profile/cron-mcp",
+    "remotes": [
+      {
+        "url": "https://cron.regiq.in/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0fede15a60de8a9f",
+      "type": "other",
+      "url": "https://cron.regiq.in/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://cron.regiq.in/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/globalion/cron-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=153",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Shreyas-Profile/cron-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.echosaw/mcp-server",
   "name": "com.echosaw/mcp-server",
+  "displayName": "com.echosaw/mcp-server",
   "version": "2.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Media intelligence analysis for audio, video, and images via the Echosaw MCP server.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Orange-Sky-Software-Inc/echosaw-com",
-    "readme": "https://github.com/Orange-Sky-Software-Inc/echosaw-com#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@echosaw/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@echosaw/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.echosaw.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8087b90bb7cb810c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@echosaw/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.1.0"
+    },
+    {
+      "id": "upstream-03f5bde0411058a3",
+      "type": "other",
+      "url": "https://mcp.echosaw.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.echosaw.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Orange-Sky-Software-Inc/echosaw-com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.echosaw__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=45",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.echosaw/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

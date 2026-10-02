@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.dev.pricetrack/pricetrack",
   "name": "dev.pricetrack/pricetrack",
+  "displayName": "PriceTrack",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "Live SaaS pricing: current plans, verified price changes, and comparisons for 33,000+ products.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/PriceTrack-dev/pricetrack-mcp",
-    "homepage": "https://pricetrack.dev/mcp",
-    "readme": "https://github.com/PriceTrack-dev/pricetrack-mcp#readme"
-  },
-  "keywords": [
-    "PriceTrack"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@pricetrack/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Live SaaS pricing: current plans, verified price changes, and comparisons for 33,000+ products.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pricetrack/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://pricetrack.dev/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2c0a94de46126703",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@pricetrack/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-26154f926c25ec92",
+      "type": "other",
+      "url": "https://pricetrack.dev/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pricetrack.dev/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/PriceTrack-dev/pricetrack-mcp",
+    "homepage": "https://pricetrack.dev/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.pricetrack__pricetrack.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=93",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.pricetrack/pricetrack"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

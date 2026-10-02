@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.waystation/monday",
+  "name": "ai.waystation/monday",
+  "displayName": "ai.waystation/monday",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Access and manage your Monday.com boards, items, and updates seamlessly",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.waystation/monday",
+    "remotes": [
+      {
+        "url": "https://waystation.ai/monday/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://waystation.ai/monday/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-27b9bad59269a63a",
+      "type": "other",
+      "url": "https://waystation.ai/monday/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/monday/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-39d3d9a321f66022",
+      "type": "other",
+      "url": "https://waystation.ai/monday/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/monday/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/waystation-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.waystation/monday"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

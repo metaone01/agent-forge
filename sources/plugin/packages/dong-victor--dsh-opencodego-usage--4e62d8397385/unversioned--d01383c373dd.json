@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c58d364fe11705e9699b34e0fb92bc32effef9c75c8717d90702c7a6bc10662a",
+  "name": "dong-victor/dsh-opencodego-usage",
+  "displayName": "dong-victor/dsh-opencodego-usage",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "opencode Go 套餐余额查看插件（DSH Web GUI）：侧边栏直接显示 rolling(5小时)/weekly(周)/monthly(余额) 三档用量进度条、百分比与重置时间，60s 自动刷新，无需点击；点击打开详情面板（倒计时、状态徽章、端点/密钥信息）；agent 工具 opencode_go_balance 可直接回答套餐用量。密钥默认取 llm-pi-ai 的",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/dong-victor/dsh-opencodego-usage",
+    "readme": "https://github.com/dong-victor/dsh-opencodego-usage#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/dong-victor/dsh-opencodego-usage"
+    },
+    {
+      "id": "npm-9ea515fb6c12",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@dong-victor/dsh-opencodego-usage",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6256"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "8242"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "1614"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

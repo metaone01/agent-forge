@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vuluu2k/webcake-landing-mcp",
   "name": "io.github.vuluu2k/webcake-landing-mcp",
+  "displayName": "Webcake Landing",
   "version": "1.5.2",
-  "versionScheme": "semver",
-  "description": "Build, validate, and persist Webcake landing-page source JSON: element schemas plus AI usage hints.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/vuluu2k/webcake-landing-mcp",
-    "homepage": "https://github.com/vuluu2k/webcake-landing-mcp#readme",
-    "readme": "https://github.com/vuluu2k/webcake-landing-mcp#readme"
-  },
-  "keywords": [
-    "Webcake Landing"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "webcake-landing-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Build, validate, and persist Webcake landing-page source JSON: element schemas plus AI usage hints.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "webcake-landing-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.toolvn.io.vn/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7636c6114187cb9a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/webcake-landing-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.5.2"
+    },
+    {
+      "id": "upstream-efd5146544526e1a",
+      "type": "other",
+      "url": "https://mcp.toolvn.io.vn/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.toolvn.io.vn/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/vuluu2k/webcake-landing-mcp",
+    "homepage": "https://github.com/vuluu2k/webcake-landing-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vuluu2k__webcake-landing-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=348",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vuluu2k/webcake-landing-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

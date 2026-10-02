@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.wishpool/nigeria-invoice-mcp",
+  "name": "app.wishpool/nigeria-invoice-mcp",
+  "displayName": "Nigeria Invoices (FIRS / NRS MBS e-invoicing IRN)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Nigeria FIRS/NRS MBS e-invoicing for AI agents - validate, sign, confirm invoices (IRN + QR).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.wishpool/nigeria-invoice-mcp",
+    "remotes": [
+      {
+        "url": "https://inv-ng.wishpool.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-db88939d1c2282d8",
+      "type": "other",
+      "url": "https://inv-ng.wishpool.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://inv-ng.wishpool.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/junter1989k-ai/nigeria-invoice-mcp",
+    "homepage": "https://github.com/junter1989k-ai/nigeria-invoice-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=23",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.wishpool/nigeria-invoice-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

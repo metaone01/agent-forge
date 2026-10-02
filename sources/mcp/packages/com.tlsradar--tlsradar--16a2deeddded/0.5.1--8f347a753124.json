@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.tlsradar/tlsradar",
+  "name": "com.tlsradar/tlsradar",
+  "displayName": "TLS Radar",
+  "version": "0.5.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SSL/TLS scanning, free Let's Encrypt issuance, and certificate-expiry monitoring.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.tlsradar/tlsradar",
+    "remotes": [
+      {
+        "url": "https://tlsradar.com/api/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-80a306aa02c466f0",
+      "type": "other",
+      "url": "https://tlsradar.com/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tlsradar.com/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TLS-Radar/tlsradar-claude-plugin",
+    "homepage": "https://tlsradar.com/cli"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=82",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.tlsradar/tlsradar"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ecovanmove/booking",
+  "name": "com.ecovanmove/booking",
+  "displayName": "Eco Van Move Booking",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Moving estimates, box rentals, and delivery in BC. Requires Eco Van Move account (OAuth or token).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ecovanmove/booking",
+    "remotes": [
+      {
+        "url": "https://ecovanmove.com/mcp/booking",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7c2fc4132f114266",
+      "type": "other",
+      "url": "https://ecovanmove.com/mcp/booking",
+      "install": {
+        "type": "api",
+        "url": "https://ecovanmove.com/mcp/booking"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/farid-trip2/ecovanmove",
+    "homepage": "https://ecovanmove.com/account/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=45",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ecovanmove/booking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

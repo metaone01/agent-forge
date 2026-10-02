@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/ca-dmv",
+  "name": "io.github.pipeworx-io/ca-dmv",
+  "displayName": "Ca Dmv",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "California DMV MCP — registered vehicles and EV adoption by ZIP code, field offices,",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/ca-dmv",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/ca-dmv/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a11aef1cf28ed561",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/ca-dmv/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/ca-dmv/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-ca-dmv",
+    "homepage": "https://pipeworx.io/packs/ca-dmv"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=275",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/ca-dmv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

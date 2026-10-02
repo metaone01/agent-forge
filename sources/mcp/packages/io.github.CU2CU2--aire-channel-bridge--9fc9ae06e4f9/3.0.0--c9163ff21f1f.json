@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.CU2CU2/aire-channel-bridge",
+  "name": "io.github.CU2CU2/aire-channel-bridge",
+  "displayName": "AIRE Channel Bridge",
+  "version": "3.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI-powered credit union discovery MCP server. Find rates, check eligibility, and open accounts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.CU2CU2/aire-channel-bridge",
+    "remotes": [
+      {
+        "url": "https://aire-mcp-server.yellowwater-f52799b2.eastus2.azurecontainerapps.io/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2578cd110ba69698",
+      "type": "other",
+      "url": "https://aire-mcp-server.yellowwater-f52799b2.eastus2.azurecontainerapps.io/sse",
+      "install": {
+        "type": "api",
+        "url": "https://aire-mcp-server.yellowwater-f52799b2.eastus2.azurecontainerapps.io/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/credit-union-2-0-llc/aire-channel-bridge"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=119",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CU2CU2/aire-channel-bridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

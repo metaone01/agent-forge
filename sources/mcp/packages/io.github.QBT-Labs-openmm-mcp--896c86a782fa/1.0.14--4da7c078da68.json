@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.QBT-Labs/openmm-mcp",
   "name": "io.github.QBT-Labs/openmm-mcp",
+  "displayName": "io.github.QBT-Labs/openmm-mcp",
   "version": "1.0.14",
-  "versionScheme": "semver",
-  "description": "MCP server for OpenMM — exposes market data, account, trading, and strategy tools to AI agents",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/QBT-Labs/openmm-mcp",
-    "readme": "https://github.com/QBT-Labs/openmm-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@qbtlabs/openmm-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for OpenMM — exposes market data, account, trading, and strategy tools to AI agents",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@qbtlabs/openmm-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.openmm.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-81c700df7e2d7fee",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@qbtlabs/openmm-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.14"
+    },
+    {
+      "id": "upstream-438ad88b960087b4",
+      "type": "other",
+      "url": "https://mcp.openmm.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.openmm.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/QBT-Labs/openmm-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.qbt-labs__openmm-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=148",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.QBT-Labs/openmm-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

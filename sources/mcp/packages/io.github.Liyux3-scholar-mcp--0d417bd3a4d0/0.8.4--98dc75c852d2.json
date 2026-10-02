@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Liyux3/scholar-mcp",
   "name": "io.github.Liyux3/scholar-mcp",
+  "displayName": "Scholar MCP",
   "version": "0.8.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Federated academic search, citation traversal, persistent PDF download, and temporary reading.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Liyux3/scholar-mcp",
-    "readme": "https://github.com/Liyux3/scholar-mcp#readme"
-  },
-  "keywords": [
-    "Scholar MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "scholar-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "scholar-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3efbff2c20df4fad",
       "type": "registry",
-      "url": "https://pypi.org/project/scholar-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/scholar-mcp",
+      "registry": "pypi",
+      "version": "0.8.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Liyux3/scholar-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.liyux3__scholar-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=139",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Liyux3/scholar-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.RezaSoleymanifar/vintage",
   "name": "io.github.RezaSoleymanifar/vintage",
+  "displayName": "Vintage",
   "version": "0.9.0",
-  "versionScheme": "semver",
-  "description": "Free financial data from eleven sources behind six verbs, point-in-time where the source allows.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/RezaSoleymanifar/vintage",
-    "homepage": "https://github.com/RezaSoleymanifar/vintage",
-    "readme": "https://github.com/RezaSoleymanifar/vintage#readme"
-  },
-  "keywords": [
-    "Vintage"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "vintage-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Free financial data from eleven sources behind six verbs, point-in-time where the source allows.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "vintage-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e3da92c63bfcbc62",
       "type": "registry",
-      "url": "https://pypi.org/project/vintage-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/vintage-mcp",
+      "registry": "pypi",
+      "version": "0.9.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/RezaSoleymanifar/vintage",
+    "homepage": "https://github.com/RezaSoleymanifar/vintage"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rezasoleymanifar__vintage.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=149",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.RezaSoleymanifar/vintage"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

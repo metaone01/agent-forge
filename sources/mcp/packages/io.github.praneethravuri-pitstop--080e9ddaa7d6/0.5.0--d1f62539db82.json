@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.praneethravuri/pitstop",
   "name": "io.github.praneethravuri/pitstop",
+  "displayName": "io.github.praneethravuri/pitstop",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "F1 MCP server: live timing, telemetry, standings, news, and a queryable 1950-present database.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/praneethravuri/pitstop",
-    "readme": "https://github.com/praneethravuri/pitstop#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "pitstop-f1",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "F1 MCP server: live timing, telemetry, standings, news, and a queryable 1950-present database.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "pitstop-f1",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4c8cc9c58c96ac0b",
       "type": "registry",
-      "url": "https://pypi.org/project/pitstop-f1/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/pitstop-f1",
+      "registry": "pypi",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/praneethravuri/pitstop"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.praneethravuri__pitstop.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=291",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.praneethravuri/pitstop"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

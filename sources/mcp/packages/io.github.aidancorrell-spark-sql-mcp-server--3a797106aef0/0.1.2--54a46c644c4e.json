@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aidancorrell/spark-sql-mcp-server",
   "name": "io.github.aidancorrell/spark-sql-mcp-server",
+  "displayName": "Spark SQL",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Query Spark SQL clusters via Thrift/HiveServer2. Works with Spark, EMR, Hive, Impala.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/aidancorrell/spark-sql-mcp-server",
-    "readme": "https://github.com/aidancorrell/spark-sql-mcp-server#readme"
-  },
-  "keywords": [
-    "Spark SQL"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "spark-sql-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Query Spark SQL clusters via Thrift/HiveServer2. Works with Spark, EMR, Hive, Impala.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "spark-sql-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-433f191ae0757bcc",
       "type": "registry",
-      "url": "https://pypi.org/project/spark-sql-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/spark-sql-mcp-server",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aidancorrell/spark-sql-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aidancorrell__spark-sql-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=166",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aidancorrell/spark-sql-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

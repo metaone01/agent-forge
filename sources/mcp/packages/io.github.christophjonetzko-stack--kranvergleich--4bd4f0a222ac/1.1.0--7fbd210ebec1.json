@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.christophjonetzko-stack/kranvergleich",
+  "name": "io.github.christophjonetzko-stack/kranvergleich",
+  "displayName": "KranVergleich Kranvermietung (DE/AT)",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Kranvermietung DE/AT: crane rental companies by city, price ranges, type recommendation, PLZ supply",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.christophjonetzko-stack/kranvergleich",
+    "remotes": [
+      {
+        "url": "https://mcp-kranvergleich.onrender.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp-kranvergleich.onrender.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d01b814a01800891",
+      "type": "other",
+      "url": "https://mcp-kranvergleich.onrender.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-kranvergleich.onrender.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-ec51254f6977d34e",
+      "type": "other",
+      "url": "https://mcp-kranvergleich.onrender.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-kranvergleich.onrender.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/christophjonetzko-stack/mcp-kranvergleich",
+    "homepage": "https://kranvergleich.de"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=182",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.christophjonetzko-stack/kranvergleich"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

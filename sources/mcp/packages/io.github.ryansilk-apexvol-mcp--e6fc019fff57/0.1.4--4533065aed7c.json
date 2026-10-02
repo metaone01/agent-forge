@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ryansilk/apexvol-mcp",
   "name": "io.github.ryansilk/apexvol-mcp",
+  "displayName": "ApexVol Options Analytics",
   "version": "0.1.4",
-  "versionScheme": "semver",
-  "description": "Options analytics for AI assistants: chains, IV rank, VRP, Greeks, GEX, expected moves, screeners.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ryansilk/apexvol-mcp",
-    "homepage": "https://apexvol.com/learn/claude-options-data-mcp",
-    "readme": "https://github.com/ryansilk/apexvol-mcp#readme"
-  },
-  "keywords": [
-    "ApexVol Options Analytics"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "apexvol-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Options analytics for AI assistants: chains, IV rank, VRP, Greeks, GEX, expected moves, screeners.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "apexvol-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://apexvol.com/mcp-server",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4db765a0dd313cc6",
       "type": "registry",
-      "url": "https://pypi.org/project/apexvol-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/apexvol-mcp",
+      "registry": "pypi",
+      "version": "0.1.4"
+    },
+    {
+      "id": "upstream-c0f827a00572485a",
+      "type": "other",
+      "url": "https://apexvol.com/mcp-server",
+      "install": {
+        "type": "api",
+        "url": "https://apexvol.com/mcp-server"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ryansilk/apexvol-mcp",
+    "homepage": "https://apexvol.com/learn/claude-options-data-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ryansilk__apexvol-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=299",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ryansilk/apexvol-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

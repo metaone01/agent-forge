@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.run402/mcp",
+  "name": "com.run402/mcp",
+  "displayName": "Run402",
+  "version": "4.104.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "x402 pay-per-call infra for agents: $0.03 image generation, Postgres, auth, storage, functions.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "run402-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.run402.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-700e0242ba38d036",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/run402-mcp",
+      "registry": "npm",
+      "version": "4.104.2"
+    },
+    {
+      "id": "upstream-024fbd0c1b3500c1",
+      "type": "other",
+      "url": "https://mcp.run402.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.run402.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kychee-com/run402",
+    "homepage": "https://run402.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=74",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.run402/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

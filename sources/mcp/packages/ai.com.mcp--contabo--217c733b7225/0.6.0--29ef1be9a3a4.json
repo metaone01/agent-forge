@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.com.mcp/contabo",
+  "name": "ai.com.mcp/contabo",
+  "displayName": "Contabo (VPS) MCP Server",
+  "version": "0.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Contabo API (v1.0.0) as MCP tools for cloud provisioning, and management. Powered by HAPI MCP server",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.com.mcp/contabo",
+    "remotes": [
+      {
+        "url": "https://contabo.run.mcp.com.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b89753f4c963cf52",
+      "type": "other",
+      "url": "https://contabo.run.mcp.com.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://contabo.run.mcp.com.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/la-rebelion/hapimcp",
+    "homepage": "https://run.mcp.com.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.com.mcp/contabo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

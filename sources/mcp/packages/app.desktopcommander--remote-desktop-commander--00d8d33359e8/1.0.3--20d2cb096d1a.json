@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.desktopcommander/remote-desktop-commander",
+  "name": "app.desktopcommander/remote-desktop-commander",
+  "displayName": "Remote Desktop Commander",
+  "version": "1.0.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted MCP server connecting claude.ai, ChatGPT and other AI apps to your own computer",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.desktopcommander/remote-desktop-commander",
+    "remotes": [
+      {
+        "url": "https://mcp.desktopcommander.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-15bdd9b926ef68aa",
+      "type": "other",
+      "url": "https://mcp.desktopcommander.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.desktopcommander.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/desktop-commander/remote-desktop-commander",
+    "homepage": "https://mcp.desktopcommander.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=18",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.desktopcommander/remote-desktop-commander"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

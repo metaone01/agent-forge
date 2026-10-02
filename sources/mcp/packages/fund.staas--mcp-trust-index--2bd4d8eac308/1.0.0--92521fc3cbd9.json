@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fund.staas/mcp-trust-index",
+  "name": "fund.staas/mcp-trust-index",
+  "displayName": "MCP Trust Index",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Curated, trust-first index of vetted MCP servers — scored tiers, monthly re-verified. Read-only.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fund.staas/mcp-trust-index",
+    "remotes": [
+      {
+        "url": "https://staas.fund/mcp/server",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2a080443a2981d14",
+      "type": "other",
+      "url": "https://staas.fund/mcp/server",
+      "install": {
+        "type": "api",
+        "url": "https://staas.fund/mcp/server"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/agilepeter/staasfund",
+    "homepage": "https://staas.fund/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fund.staas/mcp-trust-index"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

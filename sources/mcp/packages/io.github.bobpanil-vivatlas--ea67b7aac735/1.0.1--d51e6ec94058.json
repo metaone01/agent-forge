@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bobpanil/vivatlas",
   "name": "io.github.bobpanil/vivatlas",
+  "displayName": "VIVATLAS",
   "version": "1.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted catalogue of your skills, agents and MCP servers, searchable by meaning over MCP",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/bobpanil/VIVATLAS",
-    "homepage": "https://github.com/bobpanil/VIVATLAS",
-    "readme": "https://github.com/bobpanil/VIVATLAS#readme"
-  },
-  "keywords": [
-    "VIVATLAS"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/bobpanil/vivatlas:1.0.1",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/bobpanil/vivatlas:1.0.1",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/bobpanil/vivatlas",
-      "priority": 10,
+      "id": "upstream-155cdbb1375ac5d1",
+      "type": "oci",
+      "url": "https://ghcr.io/bobpanil/vivatlas:1.0.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/bobpanil/VIVATLAS",
+    "homepage": "https://github.com/bobpanil/VIVATLAS"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bobpanil__vivatlas.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bobpanil/vivatlas"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

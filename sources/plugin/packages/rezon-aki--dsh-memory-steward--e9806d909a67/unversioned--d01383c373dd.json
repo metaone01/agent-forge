@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.d09a19e6390f22085b81b9b2f5c1699d30c8f51f861bb7de5f2d8b2c37fb004f",
+  "name": "rezon-aki/dsh-memory-steward",
+  "displayName": "rezon-aki/dsh-memory-steward",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "记忆管家：为 dsh-memory-evolve 补上记忆入库之后的生命周期闭环——预算看门狗、整理到期提醒、待审批队列与审批 Tab、带备份执行。只读观测记忆文件，写入一律回调 memory-evolve 官方 HTTP API。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/rezon-aki/dsh-memory-steward",
+    "readme": "https://github.com/rezon-aki/dsh-memory-steward#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/rezon-aki/dsh-memory-steward"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16362"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15448"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

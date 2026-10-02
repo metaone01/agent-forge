@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.findimitrov/fintel-discovery",
+  "name": "io.github.findimitrov/fintel-discovery",
+  "displayName": "Fintel Discovery — Financial Intelligence for AI Agents",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Delivers public regulatory and market data from 11 key sources such as FINRA, SEC, Census, FRED",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.findimitrov/fintel-discovery",
+    "remotes": [
+      {
+        "url": "https://ai.fin-discovery.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1ae02ff90392d117",
+      "type": "other",
+      "url": "https://ai.fin-discovery.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ai.fin-discovery.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=201",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.findimitrov/fintel-discovery"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

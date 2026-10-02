@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.copperline-labs/rendex-mcp",
   "name": "io.github.copperline-labs/rendex-mcp",
+  "displayName": "Rendex: Rendering API for Images, PDFs & Content Extraction",
   "version": "1.8.2",
-  "versionScheme": "semver",
-  "description": "Render HTML, Markdown, or URLs to images, PDF, or branded artifacts; extract and watch pages.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/copperline-labs/rendex-mcp",
-    "homepage": "https://rendex.dev",
-    "readme": "https://github.com/copperline-labs/rendex-mcp#readme"
-  },
-  "keywords": [
-    "Rendex: Rendering API for Images, PDFs & Content Extraction"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@copperline/rendex-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Render HTML, Markdown, or URLs to images, PDF, or branded artifacts; extract and watch pages.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@copperline/rendex-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.rendex.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a7f4ababe114c64c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@copperline/rendex-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.8.2"
+    },
+    {
+      "id": "upstream-c4606c11961d0571",
+      "type": "other",
+      "url": "https://mcp.rendex.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.rendex.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/copperline-labs/rendex-mcp",
+    "homepage": "https://rendex.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.copperline-labs__rendex-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.copperline-labs/rendex-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

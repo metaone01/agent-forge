@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.theservicemarketingguys/audit",
+  "name": "com.theservicemarketingguys/audit",
+  "displayName": "The Service Marketing Guys Audit",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only audit of any local service business, Open Service Profile conformance first.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.theservicemarketingguys/audit",
+    "remotes": [
+      {
+        "url": "https://www.theservicemarketingguys.com/api/audit-mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-149ea4a91abcb7bd",
+      "type": "other",
+      "url": "https://www.theservicemarketingguys.com/api/audit-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.theservicemarketingguys.com/api/audit-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/buildmodus/open-service-profile",
+    "homepage": "https://www.theservicemarketingguys.com/standards/open-service-profile/v0.1"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=81",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.theservicemarketingguys/audit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

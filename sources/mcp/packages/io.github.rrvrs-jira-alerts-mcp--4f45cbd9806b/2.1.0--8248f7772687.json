@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.rrvrs/jira-alerts-mcp",
   "name": "io.github.rrvrs/jira-alerts-mcp",
+  "displayName": "Jira Alerts (JSM Operations)",
   "version": "2.1.0",
-  "versionScheme": "semver",
-  "description": "MCP server for Jira Service Management Operations — alerts, on-call schedules and responders",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/rrvrs/jira-alerts-mcp",
-    "homepage": "https://github.com/rrvrs/jira-alerts-mcp#readme",
-    "readme": "https://github.com/rrvrs/jira-alerts-mcp#readme"
-  },
-  "keywords": [
-    "Jira Alerts (JSM Operations)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "jira-alerts-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Jira Service Management Operations — alerts, on-call schedules and responders",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "jira-alerts-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5ce74589e6d15c3c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/jira-alerts-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/rrvrs/jira-alerts-mcp",
+    "homepage": "https://github.com/rrvrs/jira-alerts-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rrvrs__jira-alerts-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=298",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rrvrs/jira-alerts-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

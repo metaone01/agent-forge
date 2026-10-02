@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.olyport/fbi-crime",
+  "name": "com.olyport/fbi-crime",
+  "displayName": "FBI Crime Data",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Crime estimates by type, state arrest data, and national crime trends from the FBI UCR",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.olyport/fbi-crime",
+    "remotes": [
+      {
+        "url": "https://mcp.olyport.com/fbi-crime/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b6a017b61810a743",
+      "type": "other",
+      "url": "https://mcp.olyport.com/fbi-crime/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.olyport.com/fbi-crime/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://olyport.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=66",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.olyport/fbi-crime"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

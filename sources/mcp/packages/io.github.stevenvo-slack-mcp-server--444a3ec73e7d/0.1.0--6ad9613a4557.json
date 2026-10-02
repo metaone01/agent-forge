@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.stevenvo/slack-mcp-server",
   "name": "io.github.stevenvo/slack-mcp-server",
+  "displayName": "io.github.stevenvo/slack-mcp-server",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "Read Slack conversations, threads, user info, and search messages from your MCP client.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/stevenvo/slack-mcp-server",
-    "readme": "https://github.com/stevenvo/slack-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "slack-mcp-server-v2",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Read Slack conversations, threads, user info, and search messages from your MCP client.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "slack-mcp-server-v2",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-feb51ad2d8b6ff50",
       "type": "registry",
-      "url": "https://pypi.org/project/slack-mcp-server-v2/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/slack-mcp-server-v2",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/stevenvo/slack-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.stevenvo__slack-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stevenvo/slack-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

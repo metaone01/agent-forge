@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.charity-verify-admin/charityverify-mcp",
   "name": "io.github.charity-verify-admin/charityverify-mcp",
+  "displayName": "CharityVerify",
   "version": "1.0.4",
-  "versionScheme": "semver",
-  "description": "Look up trust grades, donor verdicts, and analysis for 138,000+ Canadian charities.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/charity-verify-admin/charity-verify-engine.git",
-    "homepage": "https://charityverify.ca",
-    "readme": "https://github.com/charity-verify-admin/charity-verify-engine.git#readme"
-  },
-  "keywords": [
-    "CharityVerify"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "charityverify-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Look up trust grades, donor verdicts, and analysis for 138,000+ Canadian charities.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "charityverify-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f9c99e2a1eb91723",
       "type": "registry",
       "url": "https://www.npmjs.com/package/charityverify-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/charity-verify-admin/charity-verify-engine.git",
+    "homepage": "https://charityverify.ca"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.charity-verify-admin__charityverify-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=181",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.charity-verify-admin/charityverify-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

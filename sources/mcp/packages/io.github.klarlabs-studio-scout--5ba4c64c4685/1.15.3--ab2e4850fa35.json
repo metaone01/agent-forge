@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.klarlabs-studio/scout",
   "name": "io.github.klarlabs-studio/scout",
+  "displayName": "Scout",
   "version": "1.15.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Browser automation MCP server with 84 tools. Pure CDP, DOM diffing, vision hybrid.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/klarlabs-studio/scout",
-    "readme": "https://github.com/klarlabs-studio/scout#readme"
-  },
-  "keywords": [
-    "Scout"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/klarlabs-studio/scout:1.15.3",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/klarlabs-studio/scout:1.15.3",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/klarlabs-studio/scout",
-      "priority": 10,
+      "id": "upstream-7aeda3a1407335ef",
+      "type": "oci",
+      "url": "https://ghcr.io/klarlabs-studio/scout:1.15.3",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/klarlabs-studio/scout"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.klarlabs-studio__scout.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=225",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.klarlabs-studio/scout"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

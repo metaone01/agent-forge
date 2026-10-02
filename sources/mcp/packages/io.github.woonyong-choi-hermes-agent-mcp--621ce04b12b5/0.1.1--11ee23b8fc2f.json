@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.woonyong-choi/hermes-agent-mcp",
   "name": "io.github.woonyong-choi/hermes-agent-mcp",
+  "displayName": "io.github.woonyong-choi/hermes-agent-mcp",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Operate a local Hermes Agent install over stdio: tasks, cron, config, gateway, doctor. No network.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/woonyong-choi/hermes-agent-mcp",
-    "readme": "https://github.com/woonyong-choi/hermes-agent-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "hermes-agent-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Operate a local Hermes Agent install over stdio: tasks, cron, config, gateway, doctor. No network.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "hermes-agent-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-889240ad99d05e00",
       "type": "registry",
-      "url": "https://pypi.org/project/hermes-agent-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/hermes-agent-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/woonyong-choi/hermes-agent-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.woonyong-choi__hermes-agent-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=350",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.woonyong-choi/hermes-agent-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

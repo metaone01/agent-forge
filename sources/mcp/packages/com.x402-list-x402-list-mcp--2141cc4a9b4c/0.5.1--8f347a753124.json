@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.x402-list/x402-list-mcp",
   "name": "com.x402-list/x402-list-mcp",
+  "displayName": "com.x402-list/x402-list-mcp",
   "version": "0.5.1",
-  "versionScheme": "semver",
-  "description": "Find and vet x402 payment APIs before your agent pays one: uptime, price, on-chain volume.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mcccsm/x402-list-mcp",
-    "homepage": "https://x402-list.com",
-    "readme": "https://github.com/mcccsm/x402-list-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "x402-list-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Find and vet x402 payment APIs before your agent pays one: uptime, price, on-chain volume.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "x402-list-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.x402-list.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d76a0a1201fb4859",
       "type": "registry",
       "url": "https://www.npmjs.com/package/x402-list-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.1"
+    },
+    {
+      "id": "upstream-27b8cc38b4ccc559",
+      "type": "other",
+      "url": "https://mcp.x402-list.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.x402-list.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcccsm/x402-list-mcp",
+    "homepage": "https://x402-list.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.x402-list__x402-list-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=87",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.x402-list/x402-list-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.YGao2005/scholar-feed-mcp",
   "name": "io.github.YGao2005/scholar-feed-mcp",
+  "displayName": "Scholar Feed",
   "version": "3.20.0",
-  "versionScheme": "semver",
-  "description": "Rank CS/AI/ML papers by citations, forecast impact, or code adoption; trace 23.2M citation edges.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/YGao2005/scholar-feed-mcp",
-    "homepage": "https://www.scholarfeed.org",
-    "readme": "https://github.com/YGao2005/scholar-feed-mcp#readme"
-  },
-  "keywords": [
-    "Scholar Feed"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "scholar-feed-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Rank CS/AI/ML papers by citations, forecast impact, or code adoption; trace 23.2M citation edges.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "scholar-feed-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.scholarfeed.org/mcp?src=mcp-registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0ba9f49df38090a1",
       "type": "registry",
       "url": "https://www.npmjs.com/package/scholar-feed-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.20.0"
+    },
+    {
+      "id": "upstream-6c3e8c6aec54280b",
+      "type": "other",
+      "url": "https://mcp.scholarfeed.org/mcp?src=mcp-registry",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.scholarfeed.org/mcp?src=mcp-registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/YGao2005/scholar-feed-mcp",
+    "homepage": "https://www.scholarfeed.org"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ygao2005__scholar-feed-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=162",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.YGao2005/scholar-feed-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

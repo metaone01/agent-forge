@@ -2,50 +2,126 @@
   "schemaVersion": 2,
   "id": "mcp.com.postman/postman-mcp-server",
   "name": "com.postman/postman-mcp-server",
+  "displayName": "Postman MCP Server",
   "version": "2.13.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Give your AI agents trusted access to the full Postman platform.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/postmanlabs/postman-mcp-server",
-    "homepage": "https://www.postman.com/product/mcp-server/",
-    "readme": "https://github.com/postmanlabs/postman-mcp-server#readme"
-  },
-  "keywords": [
-    "Postman MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@postman/postman-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@postman/postman-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.postman.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.postman.com/minimal",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.eu.postman.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.eu.postman.com/minimal",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ab71c0d786365592",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@postman/postman-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.13.0"
+    },
+    {
+      "id": "upstream-81093cc898634402",
+      "type": "archive",
+      "url": "https://github.com/postmanlabs/postman-mcp-server/releases/download/v2.13.0/postman-mcp-server-minimal.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-83c590bdbfc3fe9f",
+      "type": "archive",
+      "url": "https://github.com/postmanlabs/postman-mcp-server/releases/download/v2.13.0/postman-mcp-server-full.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-737f853ad813d881",
+      "type": "archive",
+      "url": "https://github.com/postmanlabs/postman-mcp-server/releases/download/v2.13.0/postman-mcp-server-code.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-8fb0e28953f87166",
+      "type": "archive",
+      "url": "https://github.com/postmanlabs/postman-mcp-server/releases/download/v2.13.0/postman-mcp-server-learn.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-b1358458ca5c1584",
+      "type": "other",
+      "url": "https://mcp.postman.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.postman.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-3dc369c8c8774e20",
+      "type": "other",
+      "url": "https://mcp.postman.com/minimal",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.postman.com/minimal"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9e2410dc9387e3c1",
+      "type": "other",
+      "url": "https://mcp.eu.postman.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.eu.postman.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-98e26b51ba56a7cf",
+      "type": "other",
+      "url": "https://mcp.eu.postman.com/minimal",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.eu.postman.com/minimal"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/postmanlabs/postman-mcp-server",
+    "homepage": "https://www.postman.com/product/mcp-server/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +134,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.postman__postman-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=69",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.postman/postman-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

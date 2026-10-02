@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.smplkit/mcp",
+  "name": "com.smplkit/mcp",
+  "displayName": "smplkit MCP Server",
+  "version": "0.10.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Operate smplkit from your agent: feature flags, config, logging, audit, and scheduled jobs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.smplkit/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.smplkit.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ce970c4c90d31775",
+      "type": "other",
+      "url": "https://mcp.smplkit.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.smplkit.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/smplkit/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.smplkit/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

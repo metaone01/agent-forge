@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.FalsifyLab/falsifylab-alpha-mcp",
   "name": "io.github.FalsifyLab/falsifylab-alpha-mcp",
+  "displayName": "FalsifyLab Alpha",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Live DeFi yield, HL vaults, SEC insider/8-K, macro tape, ETF flows, airdrops, Polymarket whales.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/FalsifyLab/falsifylab-alpha-mcp",
-    "homepage": "https://falsifylab.com/pro",
-    "readme": "https://github.com/FalsifyLab/falsifylab-alpha-mcp#readme"
-  },
-  "keywords": [
-    "FalsifyLab Alpha"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "falsifylab-alpha-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Live DeFi yield, HL vaults, SEC insider/8-K, macro tape, ETF flows, airdrops, Polymarket whales.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "falsifylab-alpha-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f706b5519783bbbc",
       "type": "registry",
-      "url": "https://pypi.org/project/falsifylab-alpha-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/falsifylab-alpha-mcp",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/FalsifyLab/falsifylab-alpha-mcp",
+    "homepage": "https://falsifylab.com/pro"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.falsifylab__falsifylab-alpha-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=129",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.FalsifyLab/falsifylab-alpha-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

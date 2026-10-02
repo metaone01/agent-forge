@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.tylerscomic-lab/broker-advisor-check-mcp",
+  "name": "io.github.tylerscomic-lab/broker-advisor-check-mcp",
+  "displayName": "FINRA Broker & Advisor Check",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Vet US financial advisors and firms from live FINRA BrokerCheck records with ranked red flags.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.tylerscomic-lab/broker-advisor-check-mcp",
+    "remotes": [
+      {
+        "url": "https://broker-advisor-check-mcp.mcpize.run/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b73a1e39f5797f9c",
+      "type": "other",
+      "url": "https://broker-advisor-check-mcp.mcpize.run/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://broker-advisor-check-mcp.mcpize.run/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/tylerscomic-lab/broker-advisor-check-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tylerscomic-lab/broker-advisor-check-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

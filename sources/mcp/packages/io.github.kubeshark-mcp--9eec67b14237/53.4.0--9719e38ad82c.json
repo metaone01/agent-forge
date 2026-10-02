@@ -2,46 +2,66 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kubeshark/mcp",
   "name": "io.github.kubeshark/mcp",
+  "displayName": "io.github.kubeshark/mcp",
   "version": "53.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Real-time Kubernetes network traffic visibility and API analysis for HTTP, gRPC, Redis, Kafka, DNS.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/kubeshark/kubeshark",
-    "readme": "https://github.com/kubeshark/kubeshark#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/kubeshark/kubeshark/releases/download/v53.4.0/kubeshark-mcp_darwin_arm64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/kubeshark/kubeshark/releases/download/v53.4.0/kubeshark-mcp_darwin_arm64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-a5aa0eabaa9cc7ec",
+      "type": "archive",
       "url": "https://github.com/kubeshark/kubeshark/releases/download/v53.4.0/kubeshark-mcp_darwin_arm64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-e203ba20ba667310",
+      "type": "archive",
+      "url": "https://github.com/kubeshark/kubeshark/releases/download/v53.4.0/kubeshark-mcp_darwin_amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-c733e62fd12408b9",
+      "type": "archive",
+      "url": "https://github.com/kubeshark/kubeshark/releases/download/v53.4.0/kubeshark-mcp_linux_arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-8a80218e5f716f5f",
+      "type": "archive",
+      "url": "https://github.com/kubeshark/kubeshark/releases/download/v53.4.0/kubeshark-mcp_linux_amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-f5d290d454065cda",
+      "type": "archive",
+      "url": "https://github.com/kubeshark/kubeshark/releases/download/v53.4.0/kubeshark-mcp_windows_amd64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kubeshark/kubeshark"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +74,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kubeshark__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kubeshark/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

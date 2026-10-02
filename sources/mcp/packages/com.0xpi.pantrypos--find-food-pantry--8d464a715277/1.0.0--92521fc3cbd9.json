@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.0xpi.pantrypos/find-food-pantry",
+  "name": "com.0xpi.pantrypos/find-food-pantry",
+  "displayName": "PantryPOS — Food Pantry Finder",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Find a food pantry near a US location (ZIP or City, ST) from ~17,000 pantries. Free.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.0xpi.pantrypos/find-food-pantry",
+    "remotes": [
+      {
+        "url": "https://pantrypos.0xpi.com/mcp-pantry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a4b5a23c959fbabd",
+      "type": "other",
+      "url": "https://pantrypos.0xpi.com/mcp-pantry",
+      "install": {
+        "type": "api",
+        "url": "https://pantrypos.0xpi.com/mcp-pantry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=29",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.0xpi.pantrypos/find-food-pantry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

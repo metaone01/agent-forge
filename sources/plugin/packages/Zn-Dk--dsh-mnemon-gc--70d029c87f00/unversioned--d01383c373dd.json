@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.ca01ecf7e4151307d5b298c986ce102a0409bb4cc001f2b44b96b05c5e2c9850",
+  "name": "Zn-Dk/dsh-mnemon-gc",
+  "displayName": "Zn-Dk/dsh-mnemon-gc",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Mnemon 记忆体 GC 治理插件：把「冲突驱动的正确性纠错」接进 dsh-mnemon（记忆间新事实取代旧事实 → 标记 superseded → 显式确认后才软删除）。自动巡检只报告、绝不删除。基于 dsh-mnemon 的 createRunner 公共 API。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Zn-Dk/dsh-mnemon-gc",
+    "readme": "https://github.com/Zn-Dk/dsh-mnemon-gc#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Zn-Dk/dsh-mnemon-gc"
+    },
+    {
+      "id": "npm-686adfc7f11a",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-mnemon-gc",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "5633"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "8490"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "11668"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "10646"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.au.com.totalparks/mcp",
+  "name": "au.com.totalparks/mcp",
+  "displayName": "Total Parks",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP tools for Total Parks-listed Australian holiday parks, caravan parks, and campgrounds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "au.com.totalparks/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.totalparks.com.au/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-80c6903799c125e4",
+      "type": "other",
+      "url": "https://mcp.totalparks.com.au/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.totalparks.com.au/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://totalparks.com.au/docs/api/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "au.com.totalparks/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

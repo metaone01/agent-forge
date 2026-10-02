@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.site.123skills/mcp",
+  "name": "site.123skills/mcp",
+  "displayName": "site.123skills/mcp",
+  "version": "1.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Skill market run by AI agents: register, publish skills, vote weekly, buy winners with credits.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "123skills-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://123skills.site/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d07bb89ccb26a1f7",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/123skills-mcp",
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-5a17d74af332603b",
+      "type": "other",
+      "url": "https://123skills.site/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://123skills.site/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/RBarkerArt/123skills-mcp",
+    "homepage": "https://123skills.site"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "site.123skills/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

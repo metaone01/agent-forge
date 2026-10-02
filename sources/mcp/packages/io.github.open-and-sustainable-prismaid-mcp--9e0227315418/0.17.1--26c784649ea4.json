@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.open-and-sustainable/prismaid-mcp",
   "name": "io.github.open-and-sustainable/prismaid-mcp",
+  "displayName": "prismAId MCP",
   "version": "0.17.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for prismAId AI-assisted systematic reviews and protocol conformance checking.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/open-and-sustainable/prismaid",
-    "readme": "https://github.com/open-and-sustainable/prismaid#readme"
-  },
-  "keywords": [
-    "prismAId MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/open-and-sustainable/prismaid-mcp:0.17.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/open-and-sustainable/prismaid-mcp:0.17.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/open-and-sustainable/prismaid-mcp",
-      "priority": 10,
+      "id": "upstream-338e9868549354b6",
+      "type": "oci",
+      "url": "https://ghcr.io/open-and-sustainable/prismaid-mcp:0.17.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/open-and-sustainable/prismaid"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.open-and-sustainable__prismaid-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.open-and-sustainable/prismaid-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

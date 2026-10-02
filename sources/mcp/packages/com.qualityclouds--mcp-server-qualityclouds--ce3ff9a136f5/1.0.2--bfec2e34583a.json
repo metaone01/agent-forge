@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.qualityclouds/mcp-server-qualityclouds",
+  "name": "com.qualityclouds/mcp-server-qualityclouds",
+  "displayName": "LiveCheck AI",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Secure MCP runtime server for scanning and autofixing code issues",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.qualityclouds/mcp-server-qualityclouds",
+    "remotes": [
+      {
+        "url": "https://mcp.qualityclouds.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.qualityclouds.com/mcp",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5ef08f56d4bbc7a6",
+      "type": "other",
+      "url": "https://mcp.qualityclouds.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.qualityclouds.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-6799a7fc9dee3705",
+      "type": "other",
+      "url": "https://mcp.qualityclouds.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.qualityclouds.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/qualityclouds/qualityclouds"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=71",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.qualityclouds/mcp-server-qualityclouds"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

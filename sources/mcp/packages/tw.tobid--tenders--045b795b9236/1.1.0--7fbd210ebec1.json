@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.tw.tobid/tenders",
+  "name": "tw.tobid/tenders",
+  "displayName": "tw.tobid/tenders",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Taiwan government tenders: 14M+ notices, vendor/agency intel, forecasts, committees, debarment list.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "tw.tobid/tenders",
+    "remotes": [
+      {
+        "url": "https://api.tobid.tw/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-dc3e1aec9fda4a9f",
+      "type": "other",
+      "url": "https://api.tobid.tw/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.tobid.tw/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://tobid.tw/guide/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=379",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tw.tobid/tenders"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

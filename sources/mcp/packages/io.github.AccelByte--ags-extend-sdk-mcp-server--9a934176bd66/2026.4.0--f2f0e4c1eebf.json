@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AccelByte/ags-extend-sdk-mcp-server",
+  "name": "io.github.AccelByte/ags-extend-sdk-mcp-server",
+  "displayName": "io.github.AccelByte/ags-extend-sdk-mcp-server",
+  "version": "2026.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Searchable AccelByte Extend SDK reference (C#, Go, Java, Python) for AI coding assistants",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.AccelByte/ags-extend-sdk-mcp-server",
+    "remotes": [
+      {
+        "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/extend-mcp/{language}",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://{private_cloud_url}/extend-mcp/{language}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6b68e0a1e2d071d5",
+      "type": "other",
+      "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/extend-mcp/{language}",
+      "install": {
+        "type": "api",
+        "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/extend-mcp/{language}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-31360283fa63ff7a",
+      "type": "other",
+      "url": "https://{private_cloud_url}/extend-mcp/{language}",
+      "install": {
+        "type": "api",
+        "url": "https://{private_cloud_url}/extend-mcp/{language}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AccelByte/ags-extend-sdk-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AccelByte/ags-extend-sdk-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

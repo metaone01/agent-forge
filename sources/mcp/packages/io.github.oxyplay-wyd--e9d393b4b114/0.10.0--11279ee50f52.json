@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.oxyplay/wyd",
   "name": "io.github.oxyplay/wyd",
+  "displayName": "wyd",
   "version": "0.10.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local runtime provenance for coding agents. Inspect sessions and explain which one owns a process.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/oxyplay/wyd",
-    "homepage": "https://wyd.sh",
-    "readme": "https://github.com/oxyplay/wyd#readme"
-  },
-  "keywords": [
-    "wyd"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "cargo",
-    "identifier": "wyd",
-    "registryBaseUrl": "https://crates.io/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "cargo",
+    "identifier": "wyd",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a30f33e47c707d6e",
       "type": "registry",
       "url": "https://crates.io/crates/wyd",
-      "priority": 10,
-      "registry": "cargo"
+      "registry": "cargo",
+      "version": "0.10.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/oxyplay/wyd",
+    "homepage": "https://wyd.sh"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.oxyplay__wyd.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=269",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.oxyplay/wyd"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

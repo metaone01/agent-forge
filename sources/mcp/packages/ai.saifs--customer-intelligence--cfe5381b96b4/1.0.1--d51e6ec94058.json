@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.saifs/customer-intelligence",
+  "name": "ai.saifs/customer-intelligence",
+  "displayName": "Customer Intelligence & Segmentation",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Analyze customer data to make segmentation and predict which customer to focus on for more sales.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.saifs/customer-intelligence",
+    "remotes": [
+      {
+        "url": "https://customer-tiering-mcp-latest.saifs.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-80c3b72caade2290",
+      "type": "other",
+      "url": "https://customer-tiering-mcp-latest.saifs.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://customer-tiering-mcp-latest.saifs.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://saifs.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=11",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.saifs/customer-intelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

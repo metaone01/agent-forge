@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.com.granoflow/mcp-server",
   "name": "com.granoflow/mcp-server",
+  "displayName": "Granoflow",
   "version": "0.1.16",
-  "versionScheme": "semver",
-  "description": "Connect MCP-capable AI agents to local Granoflow tasks, reviews, cards, imports, and work memory.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/granoflow/granoflow-mcp-server",
-    "homepage": "https://github.com/granoflow/granoflow-mcp-server#readme",
-    "readme": "https://github.com/granoflow/granoflow-mcp-server#readme"
-  },
-  "keywords": [
-    "Granoflow"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@granoflow/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Connect MCP-capable AI agents to local Granoflow tasks, reviews, cards, imports, and work memory.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@granoflow/mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-531068dd80b4219f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@granoflow/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.16"
     }
   ],
+  "links": {
+    "repository": "https://github.com/granoflow/granoflow-mcp-server",
+    "homepage": "https://github.com/granoflow/granoflow-mcp-server#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.granoflow__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=52",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.granoflow/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

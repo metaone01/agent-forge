@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/meok-mcp-hardening-mcp",
   "name": "io.github.CSOAI-ORG/meok-mcp-hardening-mcp",
+  "displayName": "io.github.CSOAI-ORG/meok-mcp-hardening-mcp",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "MEOK MCP Hardening MCP — automated security red-team for any MCP server. Maps OWASP LLM Top 10",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/meok-mcp-hardening-mcp",
-    "readme": "https://github.com/CSOAI-ORG/meok-mcp-hardening-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "meok-mcp-hardening-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MEOK MCP Hardening MCP — automated security red-team for any MCP server. Maps OWASP LLM Top 10",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "meok-mcp-hardening-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/dev/meok-mcp-hardening",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f83ce4d5854d40fe",
       "type": "registry",
-      "url": "https://pypi.org/project/meok-mcp-hardening-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/meok-mcp-hardening-mcp",
+      "registry": "pypi",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-0844570a29ede1e4",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/dev/meok-mcp-hardening",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/dev/meok-mcp-hardening"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/meok-mcp-hardening-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__meok-mcp-hardening-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=118",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/meok-mcp-hardening-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

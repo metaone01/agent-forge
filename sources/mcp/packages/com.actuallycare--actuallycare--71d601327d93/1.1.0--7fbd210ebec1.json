@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.actuallycare/actuallycare",
+  "name": "com.actuallycare/actuallycare",
+  "displayName": "ActuallyCare",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-estate platform for agents: escrows, listings, clients, leads, and commissions. OAuth login.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.actuallycare/actuallycare",
+    "remotes": [
+      {
+        "url": "https://mcp.actuallycare.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.actuallycare.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-08c9024aae2e9e12",
+      "type": "other",
+      "url": "https://mcp.actuallycare.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.actuallycare.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-35d5d214687226cb",
+      "type": "other",
+      "url": "https://mcp.actuallycare.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.actuallycare.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://docs.actuallycare.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=31",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.actuallycare/actuallycare"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

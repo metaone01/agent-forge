@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MnemeHQ/mneme",
   "name": "io.github.MnemeHQ/mneme",
+  "displayName": "Mneme Decision MCP",
   "version": "0.9.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local MCP server for architectural decisions, traceability, and non-authoritative proposals.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/MnemeHQ/mneme",
-    "homepage": "https://mnemehq.com/integrations/mcp/",
-    "readme": "https://github.com/MnemeHQ/mneme#readme"
-  },
-  "keywords": [
-    "Mneme Decision MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mneme-hq",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mneme-hq",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-abc1ff094152d414",
       "type": "registry",
-      "url": "https://pypi.org/project/mneme-hq/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mneme-hq",
+      "registry": "pypi",
+      "version": "0.9.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MnemeHQ/mneme",
+    "homepage": "https://mnemehq.com/integrations/mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mnemehq__mneme.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=142",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MnemeHQ/mneme"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

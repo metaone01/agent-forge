@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.dev.astrocal/mcp-server",
   "name": "dev.astrocal/mcp-server",
+  "displayName": "Astrocal",
   "version": "0.1.6",
-  "versionScheme": "semver",
-  "description": "AI-native scheduling: check availability, book meetings, cancel and reschedule via MCP",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/astrocal-dev/mcp-server",
-    "homepage": "https://astrocal.dev",
-    "readme": "https://github.com/astrocal-dev/mcp-server#readme"
-  },
-  "keywords": [
-    "Astrocal"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@astrocal/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AI-native scheduling: check availability, book meetings, cancel and reschedule via MCP",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@astrocal/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.astrocal.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-099ff8668ea01f00",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@astrocal/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.6"
+    },
+    {
+      "id": "upstream-326de6781e9e4f3d",
+      "type": "other",
+      "url": "https://api.astrocal.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.astrocal.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/astrocal-dev/mcp-server",
+    "homepage": "https://astrocal.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.astrocal__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=90",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.astrocal/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

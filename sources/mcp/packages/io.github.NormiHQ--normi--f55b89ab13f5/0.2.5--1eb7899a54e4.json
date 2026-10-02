@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.NormiHQ/normi",
+  "name": "io.github.NormiHQ/normi",
+  "displayName": "io.github.NormiHQ/normi",
+  "version": "0.2.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "French property market data — 17M+ DVF sales, 22M+ DPE energy ratings, 20M+ building records.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@normi/mcp-dvf",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.normi.fr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-17a2b546f73ecf90",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@normi/mcp-dvf",
+      "registry": "npm",
+      "version": "0.2.5"
+    },
+    {
+      "id": "upstream-d11debd885eb4047",
+      "type": "other",
+      "url": "https://mcp.normi.fr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.normi.fr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/NormiHQ/Normi",
+    "homepage": "https://normi.fr/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.NormiHQ/normi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pgEdge/postgres-mcp",
   "name": "io.github.pgEdge/postgres-mcp",
+  "displayName": "io.github.pgEdge/postgres-mcp",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Enterprise PostgreSQL MCP server with NL queries, hybrid search (pgvector+BM25), and web UI",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/pgEdge/pgedge-postgres-mcp",
-    "readme": "https://github.com/pgEdge/pgedge-postgres-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/pgedge/postgres-mcp:latest",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/pgedge/postgres-mcp:latest",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/pgedge/postgres-mcp",
-      "priority": 10,
+      "id": "upstream-a70f9c0f8d2b95f2",
+      "type": "oci",
+      "url": "https://ghcr.io/pgedge/postgres-mcp:latest",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/pgEdge/pgedge-postgres-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pgedge__postgres-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=272",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pgEdge/postgres-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

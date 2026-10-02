@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.singularitybpjade/balance-engine",
   "name": "io.github.singularitybpjade/balance-engine",
+  "displayName": "Nonlinear Calendar",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Nonlinear Calendar: this year’s months fold onto the previous 12 years. No key to try.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/singularitybpjade/balance-engine",
-    "homepage": "https://balance-engine.vercel.app/stories/agent-mcp.html",
-    "readme": "https://github.com/singularitybpjade/balance-engine#readme"
-  },
-  "keywords": [
-    "Nonlinear Calendar"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "balance-engine-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Nonlinear Calendar: this year’s months fold onto the previous 12 years. No key to try.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "balance-engine-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://balance-engine.vercel.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d7a5128c65dece0a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/balance-engine-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-872ed8d58486dab3",
+      "type": "other",
+      "url": "https://balance-engine.vercel.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://balance-engine.vercel.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/singularitybpjade/balance-engine",
+    "homepage": "https://balance-engine.vercel.app/stories/agent-mcp.html"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.singularitybpjade__balance-engine.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=329",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.singularitybpjade/balance-engine"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

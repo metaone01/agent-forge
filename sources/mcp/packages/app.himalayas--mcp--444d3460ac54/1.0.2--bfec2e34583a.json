@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.himalayas/mcp",
+  "name": "app.himalayas/mcp",
+  "displayName": "Himalayas Remote Jobs",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and post remote jobs, browse companies, check salaries, and find talent on Himalayas.app",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.himalayas/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.himalayas.app/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.himalayas.app/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-147d5e3f04822b00",
+      "type": "other",
+      "url": "https://mcp.himalayas.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.himalayas.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-469b84127c9f7675",
+      "type": "other",
+      "url": "https://mcp.himalayas.app/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.himalayas.app/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Himalayas-App/himalayas-mcp",
+    "homepage": "https://himalayas.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=19",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.himalayas/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

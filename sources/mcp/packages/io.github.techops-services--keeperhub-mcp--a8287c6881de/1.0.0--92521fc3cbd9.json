@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.techops-services/keeperhub-mcp",
+  "name": "io.github.techops-services/keeperhub-mcp",
+  "displayName": "io.github.techops-services/keeperhub-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for KeeperHub blockchain workflow automation",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.techops-services/keeperhub-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.keeperhub.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-44c96ded211830a8",
+      "type": "other",
+      "url": "https://mcp.keeperhub.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.keeperhub.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/techops-services/keeperhub-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=336",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.techops-services/keeperhub-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.884815422af4748557ce285579ef173a890ab0323fc5f4576a7d85c37c343505",
+  "name": "having5548/dsh-backup",
+  "displayName": "having5548/dsh-backup",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 备份与恢复插件：在 Web UI 设置里新增「备份与恢复」页，把全部工作区、完整对话（会话文件字节级复制）、附件、设置与 dsh-mnemon 记忆数据导出为一个 ZIP 备份包，并可预检后合并 / 覆盖导入。会话内容全程不解包不改写，任何 dsh 会话格式代际（v0–v3+）都可携带，harness 升级后可正常导入，dsh-mnemon",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/having5548/dsh-backup",
+    "readme": "https://github.com/having5548/dsh-backup#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/having5548/dsh-backup"
+    },
+    {
+      "id": "npm-ca99ea12eccd",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@having5548/dsh-backup",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15542"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16172"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "@having5548/dsh-backup"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alphaonedev/ai-memory",
   "name": "io.github.alphaonedev/ai-memory",
+  "displayName": "io.github.alphaonedev/ai-memory",
   "version": "0.5.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Persistent memory for any AI — zero token cost until recall",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/alphaonedev/ai-memory-mcp",
-    "homepage": "https://alphaonedev.github.io/ai-memory-mcp/",
-    "readme": "https://github.com/alphaonedev/ai-memory-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/alphaonedev/ai-memory:0.5.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/alphaonedev/ai-memory:0.5.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/alphaonedev/ai-memory",
-      "priority": 10,
+      "id": "upstream-0d31d8380b3011e2",
+      "type": "oci",
+      "url": "https://ghcr.io/alphaonedev/ai-memory:0.5.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/alphaonedev/ai-memory-mcp",
+    "homepage": "https://alphaonedev.github.io/ai-memory-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alphaonedev__ai-memory.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alphaonedev/ai-memory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

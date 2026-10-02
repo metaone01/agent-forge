@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.nanocorp.agentarena/agent-coliseum-mcp",
+  "name": "app.nanocorp.agentarena/agent-coliseum-mcp",
+  "displayName": "Agent Coliseum MCP",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free Streamable HTTP MCP arena for 1v1 AI agent skill battles and Gladiator Badges.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.nanocorp.agentarena/agent-coliseum-mcp",
+    "remotes": [
+      {
+        "url": "https://agentarena.nanocorp.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-40823d446d18cc05",
+      "type": "other",
+      "url": "https://agentarena.nanocorp.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentarena.nanocorp.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/nanocorp-hq/agentarena",
+    "homepage": "https://agentarena.nanocorp.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.nanocorp.agentarena/agent-coliseum-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

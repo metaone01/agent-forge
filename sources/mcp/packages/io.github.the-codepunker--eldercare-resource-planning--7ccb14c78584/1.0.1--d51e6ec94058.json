@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.the-codepunker/eldercare-resource-planning",
+  "name": "io.github.the-codepunker/eldercare-resource-planning",
+  "displayName": "Eldercare Resource Planning MCP Server",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Evaluates Medicaid long-term care eligibility and spend-down rules for all 50 US states.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.the-codepunker/eldercare-resource-planning",
+    "remotes": [
+      {
+        "url": "https://mcp.eldercareresourceplanning.org/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5a315079198b34cb",
+      "type": "other",
+      "url": "https://mcp.eldercareresourceplanning.org/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.eldercareresourceplanning.org/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=337",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.the-codepunker/eldercare-resource-planning"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

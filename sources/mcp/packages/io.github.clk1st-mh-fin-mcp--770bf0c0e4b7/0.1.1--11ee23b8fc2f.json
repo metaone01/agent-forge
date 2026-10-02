@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.clk1st/mh-fin-mcp",
   "name": "io.github.clk1st/mh-fin-mcp",
+  "displayName": "MetricHub Quant - A股量化数据",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "China A-Share quantitative data: 5000+ stocks, 13 factors, daily market & limit-up analysis.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/clk1st/mh-fin-mcp",
-    "readme": "https://github.com/clk1st/mh-fin-mcp#readme"
-  },
-  "keywords": [
-    "MetricHub Quant - A股量化数据"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mh-fin-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mh-fin-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.quant.metrichub.app/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c9aecc24a9fad0f6",
       "type": "registry",
-      "url": "https://pypi.org/project/mh-fin-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mh-fin-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-b462fe71d917eebb",
+      "type": "other",
+      "url": "https://api.quant.metrichub.app/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.quant.metrichub.app/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/clk1st/mh-fin-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.clk1st__mh-fin-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=183",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.clk1st/mh-fin-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

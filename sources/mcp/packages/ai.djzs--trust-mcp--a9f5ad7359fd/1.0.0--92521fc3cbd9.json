@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.djzs/trust-mcp",
+  "name": "ai.djzs/trust-mcp",
+  "displayName": "DJZS Trust MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Deterministic pre-execution audit for trading agents. PASS/WAIT/FAIL, reproducible verdict_hash.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.djzs/trust-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.djzs.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2e7669d8e9483ae5",
+      "type": "other",
+      "url": "https://mcp.djzs.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.djzs.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SIFR0-dev/djzs-AI",
+    "homepage": "https://djzs.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=4",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.djzs/trust-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

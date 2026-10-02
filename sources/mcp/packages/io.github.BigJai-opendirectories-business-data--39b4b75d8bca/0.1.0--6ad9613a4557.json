@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.BigJai/opendirectories-business-data",
   "name": "io.github.BigJai/opendirectories-business-data",
+  "displayName": "io.github.BigJai/opendirectories-business-data",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "Search 12M+ verified businesses across 10 countries via government registers.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/BigJai/opendirectories-mcp",
-    "readme": "https://github.com/BigJai/opendirectories-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "opendirectories-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Search 12M+ verified businesses across 10 countries via government registers.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "opendirectories-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://secure-wave--opendirectories-business-data.apify.actor/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-aa0cedd989f79d11",
       "type": "registry",
-      "url": "https://pypi.org/project/opendirectories-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/opendirectories-mcp",
+      "registry": "pypi",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-e46fd350d335fd4d",
+      "type": "other",
+      "url": "https://secure-wave--opendirectories-business-data.apify.actor/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://secure-wave--opendirectories-business-data.apify.actor/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/BigJai/opendirectories-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bigjai__opendirectories-business-data.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=113",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.BigJai/opendirectories-business-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aranajhonny/vlk-core",
   "name": "io.github.aranajhonny/vlk-core",
+  "displayName": "Vlk MemAct",
   "version": "0.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Stateful memory for AI agents. Temporal awareness, error loop detection, and preventive constraints.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/aranajhonny/vlk",
-    "readme": "https://github.com/aranajhonny/vlk#readme"
-  },
-  "keywords": [
-    "Vlk MemAct"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/aranajhonny/vlk/releases/download/v0.3.0/vlk-core-x86_64-unknown-linux-gnu.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/aranajhonny/vlk/releases/download/v0.3.0/vlk-core-x86_64-unknown-linux-gnu.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-d6ae5f8ff60a4925",
+      "type": "archive",
       "url": "https://github.com/aranajhonny/vlk/releases/download/v0.3.0/vlk-core-x86_64-unknown-linux-gnu.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aranajhonny/vlk"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aranajhonny__vlk-core.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=171",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aranajhonny/vlk-core"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

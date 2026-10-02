@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.hu.ablakarajanlat/nyilaszaro-mcp",
+  "name": "hu.ablakarajanlat/nyilaszaro-mcp",
+  "displayName": "ablakarajanlat.hu Nyílászáró MCP",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Egyedi méretű műanyag ablak árbecslés (kalkulált ár), raktárkészlet és ajánlatkérés.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "hu.ablakarajanlat/nyilaszaro-mcp",
+    "remotes": [
+      {
+        "url": "https://ablakarajanlat.hu/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0c25e63e6781faa5",
+      "type": "other",
+      "url": "https://ablakarajanlat.hu/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ablakarajanlat.hu/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ablakarajanlat.hu"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "hu.ablakarajanlat/nyilaszaro-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

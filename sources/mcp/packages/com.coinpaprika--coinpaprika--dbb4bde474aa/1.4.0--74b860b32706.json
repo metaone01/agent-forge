@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.coinpaprika/coinpaprika",
+  "name": "com.coinpaprika/coinpaprika",
+  "displayName": "CoinPaprika",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time crypto market data: prices, tickers, exchanges, OHLCV candles, and metadata.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.coinpaprika/coinpaprika",
+    "remotes": [
+      {
+        "url": "https://mcp.coinpaprika.com/streamable-http",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.coinpaprika.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c64bf33b6966dc4e",
+      "type": "other",
+      "url": "https://mcp.coinpaprika.com/streamable-http",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.coinpaprika.com/streamable-http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-3a53051f2b8787fb",
+      "type": "other",
+      "url": "https://mcp.coinpaprika.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.coinpaprika.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/coinpaprika/coinpaprika-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=41",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.coinpaprika/coinpaprika"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

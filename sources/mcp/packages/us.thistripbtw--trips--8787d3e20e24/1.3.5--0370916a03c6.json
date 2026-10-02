@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.us.thistripbtw/trips",
+  "name": "us.thistripbtw/trips",
+  "displayName": "us.thistripbtw/trips",
+  "version": "1.3.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hand someone a complete trip as a private, editable map link. No account, no API key, no card.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "thistripbtw-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://thistripbtw.us/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ca32f6418eded8ac",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/thistripbtw-mcp",
+      "registry": "npm",
+      "version": "1.3.5"
+    },
+    {
+      "id": "upstream-3cb10d11a7699411",
+      "type": "other",
+      "url": "https://thistripbtw.us/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://thistripbtw.us/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/peterbartsch/thistripbtw-mcp",
+    "homepage": "https://thistripbtw.us/for-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=381",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "us.thistripbtw/trips"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

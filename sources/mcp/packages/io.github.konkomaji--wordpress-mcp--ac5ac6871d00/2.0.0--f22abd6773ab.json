@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.konkomaji/wordpress-mcp",
+  "name": "io.github.konkomaji/wordpress-mcp",
+  "displayName": "WordPress MCP",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Talk to your WordPress site: content, SEO, WooCommerce, page builders, media and speed, with undo.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.konkomaji/wordpress-mcp",
+    "remotes": [
+      {
+        "url": "https://{site}/wp-json/wp-mcp/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d53e058a1f1bd1eb",
+      "type": "other",
+      "url": "https://{site}/wp-json/wp-mcp/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{site}/wp-json/wp-mcp/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/konkomaji/wordpress-mcp",
+    "homepage": "https://github.com/konkomaji/wordpress-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=225",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.konkomaji/wordpress-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

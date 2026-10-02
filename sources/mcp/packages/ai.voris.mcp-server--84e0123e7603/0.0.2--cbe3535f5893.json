@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.ai.voris.mcp/server",
   "name": "ai.voris.mcp/server",
+  "displayName": "Voris",
   "version": "0.0.2",
-  "versionScheme": "semver",
-  "description": "Voris privacy-native web analytics for AI agents: query metrics & citations, scaffold tracking.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Rocket-Venture-Labs/voris-mcp",
-    "homepage": "https://docs.voris.ai",
-    "readme": "https://github.com/Rocket-Venture-Labs/voris-mcp#readme"
-  },
-  "keywords": [
-    "Voris"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@voris-ai/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Voris privacy-native web analytics for AI agents: query metrics & citations, scaffold tracking.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@voris-ai/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fa928ff86a481c41",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@voris-ai/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.0.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Rocket-Venture-Labs/voris-mcp",
+    "homepage": "https://docs.voris.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.voris.mcp__server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.voris.mcp/server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.artifacta/mcp",
+  "name": "io.artifacta/mcp",
+  "displayName": "io.artifacta/mcp",
+  "version": "1.0.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Artifact store for AI agents. Hosted OAuth at mcp.artifacta.io/mcp; local stdio via npm/PyPI.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@artifacta-mcp/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.artifacta.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1ce3a24339d9b664",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@artifacta-mcp/mcp",
+      "registry": "npm",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-fb63d7f86b384e9e",
+      "type": "registry",
+      "url": "https://pypi.org/project/artifacta-mcp",
+      "registry": "pypi",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-d7c13184bf2e548d",
+      "type": "other",
+      "url": "https://mcp.artifacta.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.artifacta.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SagaPeak/artifacta-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=102",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.artifacta/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

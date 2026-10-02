@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aistoragedepot-admin/aistoragedepot-mcp",
   "name": "io.github.aistoragedepot-admin/aistoragedepot-mcp",
+  "displayName": "AIStorageDepot",
   "version": "0.6.7",
-  "versionScheme": "semver",
-  "description": "Prompt, rules, skills & docs library over MCP. No token = read-only sample of the public library.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/AIStorageDepot/aistoragedepot-mcp",
-    "homepage": "https://www.aistoragedepot.com",
-    "readme": "https://github.com/AIStorageDepot/aistoragedepot-mcp#readme"
-  },
-  "keywords": [
-    "AIStorageDepot"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@aistoragedepot/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Prompt, rules, skills & docs library over MCP. No token = read-only sample of the public library.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@aistoragedepot/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c69e7a65f2ec0983",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@aistoragedepot/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.7"
     }
   ],
+  "links": {
+    "repository": "https://github.com/AIStorageDepot/aistoragedepot-mcp",
+    "homepage": "https://www.aistoragedepot.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aistoragedepot-admin__aistoragedepot-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=167",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aistoragedepot-admin/aistoragedepot-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

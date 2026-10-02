@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/meok-mcp-test-mcp",
   "name": "io.github.CSOAI-ORG/meok-mcp-test-mcp",
+  "displayName": "io.github.CSOAI-ORG/meok-mcp-test-mcp",
   "version": "1.0.5",
-  "versionScheme": "semver",
-  "description": "MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/meok-mcp-test-mcp",
-    "readme": "https://github.com/CSOAI-ORG/meok-mcp-test-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "meok-mcp-test-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MEOK MCP Test MCP — golden-file + schema-drift + tool-failure tests for any MCP server. Drop-in",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "meok-mcp-test-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/dev/meok-mcp-test",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5b9e7d8c95483d32",
       "type": "registry",
-      "url": "https://pypi.org/project/meok-mcp-test-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/meok-mcp-test-mcp",
+      "registry": "pypi",
+      "version": "1.0.5"
+    },
+    {
+      "id": "upstream-40fda95d2093b43b",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/dev/meok-mcp-test",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/dev/meok-mcp-test"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/meok-mcp-test-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__meok-mcp-test-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=118",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/meok-mcp-test-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

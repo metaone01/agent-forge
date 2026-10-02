@@ -33,6 +33,12 @@ The stable schema namespace is:
 
 Package types are `mcp`, `plugin`, `skill`, `general`, and `bundle`. `generalDetails.toolType` and `agentUse` describe a general Agent tool without creating another first-class type. Ordinary system or language packages are out of scope. Registries such as npm, PyPI, Cargo, and OCI may appear in `mcpDetails` or `distributions`; they are not metadata categories.
 
+Package `id` is globally unique across categories; versions of one package share that id. Identical names in different categories are allowed, but names must be unique within a category. Consumers must use `id` for dependency/member references and include source, Agent, type, and name in lookup/cache keys. Generated filenames preserve case distinctions on Windows using hashes.
+
+`general` describes an independently usable Agent tool, not an unknown type. All-types search includes it; exact MCP/Plugin/Skill filters do not. Agent-specific search includes a general tool only through an explicit `targets` association. An unknown compatibility range is not proof of host support.
+
+Community collection evidence and classification decisions are in [the import report](docs/community-import-2026-10-02.md).
+
 ## Link availability
 
 `checksum` and `signature` fields are recorded claims or supplied materials. They do not establish trust or safety.
@@ -67,9 +73,12 @@ Examples for each category, an index, and an advisory are in `examples/`.
 Run all contract tests and repository validation:
 
 ```sh
-uv run --with jsonschema --with referencing python -m unittest discover -s tests -v
+uv sync
+uv run python -m unittest discover -s tests -v
 uv run tools/validate.py --all
 ```
+
+The dedicated project environment is `.venv/`; dependencies are declared in `pyproject.toml` and pinned by `uv.lock`. Collection reads upstream metadata without installing or executing upstream projects. `uv run tools/import_community.py` previews cached collection results; add `--apply` to write canonical records and indexes.
 
 Validate one document against a chosen schema:
 

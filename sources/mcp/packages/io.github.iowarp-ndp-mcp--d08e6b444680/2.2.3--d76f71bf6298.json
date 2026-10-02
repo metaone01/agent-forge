@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.iowarp/ndp-mcp",
   "name": "io.github.iowarp/ndp-mcp",
+  "displayName": "CLIO Ndp",
   "version": "2.2.3",
-  "versionScheme": "semver",
-  "description": "National Data Platform (NDP) MCP server for searching and discovering datasets across multiple...",
-  "license": "BSD-3-Clause",
-  "links": {
-    "repository": "https://github.com/iowarp/clio-kit",
-    "readme": "https://github.com/iowarp/clio-kit#readme"
-  },
-  "keywords": [
-    "CLIO Ndp"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "clio-kit",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "National Data Platform (NDP) MCP server for searching and discovering datasets across multiple...",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "clio-kit",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6fae921c1b635216",
       "type": "registry",
-      "url": "https://pypi.org/project/clio-kit/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/clio-kit",
+      "registry": "pypi",
+      "version": "2.2.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/iowarp/clio-kit"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.iowarp__ndp-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=214",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.iowarp/ndp-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

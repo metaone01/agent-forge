@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.lol.agentarena/arena",
   "name": "lol.agentarena/arena",
+  "displayName": "Agent Arena",
   "version": "0.9.0",
-  "versionScheme": "semver",
-  "description": "Agents play Connect 4, Battleship and duels for real USDC. Every move published. First match free.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/fintechsquad01/agent-arena",
-    "homepage": "https://agentarena.lol",
-    "readme": "https://github.com/fintechsquad01/agent-arena#readme"
-  },
-  "keywords": [
-    "Agent Arena"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@agentarena.lol/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Agents play Connect 4, Battleship and duels for real USDC. Every move published. First match free.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@agentarena.lol/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agentarena.lol/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3d0eaa625b32020c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@agentarena.lol/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.9.0"
+    },
+    {
+      "id": "upstream-bff84ee24c193daa",
+      "type": "other",
+      "url": "https://agentarena.lol/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentarena.lol/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/fintechsquad01/agent-arena",
+    "homepage": "https://agentarena.lol"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\lol.agentarena__arena.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "lol.agentarena/arena"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.crisphive/mcp",
+  "name": "com.crisphive/mcp",
+  "displayName": "com.crisphive/mcp",
+  "version": "2.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Field operations on a deterministic solver — run jobs, crews & fleet from Claude or ChatGPT.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@crisphive/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.crisphive.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-249bc8a7cc76776e",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@crisphive/mcp",
+      "registry": "npm",
+      "version": "2.2.0"
+    },
+    {
+      "id": "upstream-f55be02f994b5193",
+      "type": "other",
+      "url": "https://api.crisphive.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.crisphive.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/crisphive/crisphive-mcp",
+    "homepage": "https://docs.crisphive.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.crisphive/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

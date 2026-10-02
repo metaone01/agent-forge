@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.5c049a87fac2bb70a9e92c32af5029e361c61632daafc9a88da51f1399e011d0",
+  "name": "Ink-dark/dsh-adversarial-review-preset/skills/adversarial-review",
+  "displayName": "Ink-dark/dsh-adversarial-review-preset/skills/adversarial-review",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "DeepSeek Harness agent preset for adversarial review: presumes the artifact is wrong, demands a citable authority and file:line for every finding, refuses to edit tests to pass, and asks before changing anything.DeepSeek Harness「对抗式审查」Agent 预设：预设被审查对象是错的，每条结论必须给出权威依据与文件行号；严禁改测试让其通过，修改任何文件前先征求同意。",
+  "license": "MIT",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "skills/adversarial-review/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/Ink-dark/dsh-adversarial-review-preset",
+    "readme": "https://github.com/Ink-dark/dsh-adversarial-review-preset/blob/HEAD/skills/adversarial-review/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Ink-dark/dsh-adversarial-review-preset/tree/HEAD/skills/adversarial-review"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "639"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

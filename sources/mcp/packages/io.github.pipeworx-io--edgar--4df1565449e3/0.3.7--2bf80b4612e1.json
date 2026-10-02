@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/edgar",
+  "name": "io.github.pipeworx-io/edgar",
+  "displayName": "Edgar",
+  "version": "0.3.7",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "EDGAR MCP — SEC EDGAR public APIs (free, no auth)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/edgar",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/edgar/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-daf1108848a35a5d",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/edgar/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/edgar/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-edgar",
+    "homepage": "https://pipeworx.io/packs/edgar"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=278",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/edgar"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

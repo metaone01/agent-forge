@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.de.bergsonne-allgaeu/booking",
+  "name": "de.bergsonne-allgaeu/booking",
+  "displayName": "Hotel Bergsonne Allgäu Booking",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live availability, prices and bookings for Hotel Bergsonne Allgäu in Sonthofen, Germany.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "de.bergsonne-allgaeu/booking",
+    "remotes": [
+      {
+        "url": "https://bergsonne-allgaeu.de/api/booking-mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-714bce01ab4defc6",
+      "type": "other",
+      "url": "https://bergsonne-allgaeu.de/api/booking-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bergsonne-allgaeu.de/api/booking-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://bergsonne-allgaeu.de/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=88",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "de.bergsonne-allgaeu/booking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

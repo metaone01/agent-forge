@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mcpsmiths/tracehub-mcp",
   "name": "io.github.mcpsmiths/tracehub-mcp",
+  "displayName": "io.github.mcpsmiths/tracehub-mcp",
   "version": "0.12.2",
-  "versionScheme": "semver",
-  "description": "Query OTel traces across Jaeger, Tempo, Traceloop, Datadog, Sentry, X-Ray, New Relic, Honeycomb.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/mcpsmiths/tracehub-mcp",
-    "readme": "https://github.com/mcpsmiths/tracehub-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "tracehub-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Query OTel traces across Jaeger, Tempo, Traceloop, Datadog, Sentry, X-Ray, New Relic, Honeycomb.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "tracehub-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-432922d686470954",
       "type": "registry",
-      "url": "https://pypi.org/project/tracehub-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/tracehub-mcp",
+      "registry": "pypi",
+      "version": "0.12.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mcpsmiths/tracehub-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mcpsmiths__tracehub-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=247",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mcpsmiths/tracehub-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

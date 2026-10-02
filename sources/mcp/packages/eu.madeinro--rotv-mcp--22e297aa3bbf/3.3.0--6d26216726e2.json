@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.madeinro/rotv-mcp",
+  "name": "eu.madeinro/rotv-mcp",
+  "displayName": "eu.madeinro/rotv-mcp",
+  "version": "3.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Romanian TV guide MCP: live listings, prime time, search, recommendations, MCP Apps tonight card.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "eu.madeinro/rotv-mcp",
+    "remotes": [
+      {
+        "url": "https://tv.madeinro.eu/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9ba62ac32098cfea",
+      "type": "other",
+      "url": "https://tv.madeinro.eu/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tv.madeinro.eu/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/marian5070/rotv.mcp",
+    "homepage": "https://tv.madeinro.eu"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.madeinro/rotv-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

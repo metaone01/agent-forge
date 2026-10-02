@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.akbaraziz/conduitai",
   "name": "io.github.akbaraziz/conduitai",
+  "displayName": "conduitAI",
   "version": "1.299.1",
-  "versionScheme": "semver",
-  "description": "Search, browse, and install MCP servers, agents, skills, and plugins from conduitAI.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/akbaraziz/conduitai-bolt",
-    "homepage": "https://conduitai.app",
-    "readme": "https://github.com/akbaraziz/conduitai-bolt#readme"
-  },
-  "keywords": [
-    "conduitAI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@conduitai-app/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search, browse, and install MCP servers, agents, skills, and plugins from conduitAI.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@conduitai-app/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3b590db646a48d9a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@conduitai-app/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.299.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/akbaraziz/conduitai-bolt",
+    "homepage": "https://conduitai.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.akbaraziz__conduitai.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=167",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.akbaraziz/conduitai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

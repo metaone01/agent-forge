@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vitaliemiron/cookidoo-mcp",
   "name": "io.github.vitaliemiron/cookidoo-mcp",
+  "displayName": "Cookidoo MCP",
   "version": "1.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Create, translate, and plan Cookidoo recipes with guided Thermomix actions and shopping lists.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/vitaliemiron/cookidoo-mcp",
-    "homepage": "https://vitaliemiron.github.io/cookidoo-mcp/",
-    "readme": "https://github.com/vitaliemiron/cookidoo-mcp#readme"
-  },
-  "keywords": [
-    "Cookidoo MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "cookidoo-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "cookidoo-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4b72a40fcdbf2ac2",
       "type": "registry",
-      "url": "https://pypi.org/project/cookidoo-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/cookidoo-mcp",
+      "registry": "pypi",
+      "version": "1.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/vitaliemiron/cookidoo-mcp",
+    "homepage": "https://vitaliemiron.github.io/cookidoo-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vitaliemiron__cookidoo-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=347",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vitaliemiron/cookidoo-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

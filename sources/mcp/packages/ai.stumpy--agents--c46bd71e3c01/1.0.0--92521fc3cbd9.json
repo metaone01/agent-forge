@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.stumpy/agents",
+  "name": "ai.stumpy/agents",
+  "displayName": "Stumpy",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Persistent AI agents that run 24/7 in your Slack, Telegram, SMS, or email.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.stumpy/agents",
+    "remotes": [
+      {
+        "url": "https://stumpy.ai/mcp/message",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://stumpy.ai/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fbd41e58d65c3f7b",
+      "type": "other",
+      "url": "https://stumpy.ai/mcp/message",
+      "install": {
+        "type": "api",
+        "url": "https://stumpy.ai/mcp/message"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-93fc1bc77500fe73",
+      "type": "other",
+      "url": "https://stumpy.ai/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://stumpy.ai/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://stumpy.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=15",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.stumpy/agents"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

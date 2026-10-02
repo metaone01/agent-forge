@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jsilets/twscrape-twitter-mcp",
   "name": "io.github.jsilets/twscrape-twitter-mcp",
+  "displayName": "twscrape Twitter/X (read-only)",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Read-only X/Twitter MCP: posts, threads, replies, search via twscrape. No API key.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/jsilets/twscrape-twitter-mcp",
-    "readme": "https://github.com/jsilets/twscrape-twitter-mcp#readme"
-  },
-  "keywords": [
-    "twscrape Twitter/X (read-only)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "twscrape-twitter-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Read-only X/Twitter MCP: posts, threads, replies, search via twscrape. No API key.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "twscrape-twitter-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4a8b02091910402e",
       "type": "registry",
-      "url": "https://pypi.org/project/twscrape-twitter-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/twscrape-twitter-mcp",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/jsilets/twscrape-twitter-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jsilets__twscrape-twitter-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=222",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jsilets/twscrape-twitter-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

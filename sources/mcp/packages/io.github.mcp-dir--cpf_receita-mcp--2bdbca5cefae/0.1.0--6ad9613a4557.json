@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mcp-dir/cpf_receita-mcp",
+  "name": "io.github.mcp-dir/cpf_receita-mcp",
+  "displayName": "Cadastro PF + Receita Federal",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Registration data for an individual with the Federal Revenue status, from a CPF. Platform-hosted, no",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mcp-dir/cpf_receita-mcp",
+    "remotes": [
+      {
+        "url": "https://api.mcp.ai/p_cpf_receita",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-71dcb225c3e5b576",
+      "type": "other",
+      "url": "https://api.mcp.ai/p_cpf_receita",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcp.ai/p_cpf_receita"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mcp-dir/cpf_receita-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=237",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mcp-dir/cpf_receita-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

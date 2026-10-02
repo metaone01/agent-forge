@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.hotker/hotker",
+  "name": "ai.hotker/hotker",
+  "displayName": "HOTKER 핫커 | 한국 상품·휴대폰 성지 구매가 AI",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "한국 상품·휴대폰 검증 조건 검색과 총비용·약정 반환금·결합할인 참고 계산. 출처·누락 조건을 제공하는 무인증·읽기 전용 MCP입니다.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.hotker/hotker",
+    "remotes": [
+      {
+        "url": "https://hotker.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-61a380244cd7b3dd",
+      "type": "other",
+      "url": "https://hotker.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://hotker.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/c2bcom10-ship-it/hotker",
+    "homepage": "https://hotker.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=7",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.hotker/hotker"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c514ddb0b86b41d8ce5c4a78d8372d724d42606693113a387edc224062b6b03c",
+  "name": "kaelorvyn/dsh-mobile/plugin",
+  "displayName": "kaelorvyn/dsh-mobile/plugin",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "把 DeepSeek Harness 装进手机：扫码即连、免密码，电脑上可查看并逐台收回手机访问权限。含 dsh-pocket 魔改版插件 (GPL-2.0) 与 Android App。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "plugin/cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/kaelorvyn/dsh-mobile",
+    "readme": "https://github.com/kaelorvyn/dsh-mobile#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/kaelorvyn/dsh-mobile/tree/HEAD/plugin"
+    }
+  ],
+  "keywords": [
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15817"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

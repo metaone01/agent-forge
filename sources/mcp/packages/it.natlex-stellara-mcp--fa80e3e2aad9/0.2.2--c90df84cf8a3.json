@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.it.natlex/stellara-mcp",
   "name": "it.natlex/stellara-mcp",
+  "displayName": "it.natlex/stellara-mcp",
   "version": "0.2.2",
-  "versionScheme": "semver",
-  "description": "Swiss Ephemeris for AI agents: exact natal charts, transits, synastry and birth-place resolution",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mihnin/stellara-mcp",
-    "homepage": "https://stellara.natlex.it/#api",
-    "readme": "https://github.com/mihnin/stellara-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "stellara-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Swiss Ephemeris for AI agents: exact natal charts, transits, synastry and birth-place resolution",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "stellara-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.stellara.natlex.it/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4502eb9ce1201ad5",
       "type": "registry",
       "url": "https://www.npmjs.com/package/stellara-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.2"
+    },
+    {
+      "id": "upstream-dca41881afbef293",
+      "type": "other",
+      "url": "https://mcp.stellara.natlex.it/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.stellara.natlex.it/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/mihnin/stellara-mcp",
+    "homepage": "https://stellara.natlex.it/#api"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\it.natlex__stellara-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=363",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "it.natlex/stellara-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

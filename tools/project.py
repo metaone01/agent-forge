@@ -21,6 +21,11 @@ from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import quote
 
+try:
+    from tools.identity import identity_errors
+except ModuleNotFoundError:
+    from identity import identity_errors
+
 ROOT = Path(__file__).resolve().parents[1]
 TYPES = ("mcp", "plugin", "skill", "general", "bundle")
 DEFAULT_BASE_URL = "https://metaone01.github.io/agent-forge/data"
@@ -142,7 +147,10 @@ def eligible(record: dict[str, Any], cutoff: datetime, include_undated: bool) ->
 
 
 def projected_record_path(name: str, version: str) -> str:
-    return f"packages/{safe_component(name)}/{safe_component(version)}.json"
+    # Hashes preserve distinct upstream casing on case-insensitive filesystems.
+    name_suffix = hashlib.sha256(name.encode("utf-8")).hexdigest()[:12]
+    version_suffix = hashlib.sha256(version.encode("utf-8")).hexdigest()[:12]
+    return f"packages/{safe_component(name)}--{name_suffix}/{safe_component(version)}--{version_suffix}.json"
 
 
 def build_projection(
@@ -156,8 +164,19 @@ def build_projection(
 ) -> dict[str, Any]:
     projections: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     source_templates = {category: source_template(input_root, category) for category in TYPES}
+    preferred_versions = {}
+    for category in TYPES:
+        index_path = input_root / "sources" / category / "index.json"
+        if index_path.exists():
+            preferred_versions[category] = {
+                name: entry["latest"] for name, entry in load(index_path).get("packages", {}).items()
+            }
     warnings: list[str] = []
-    for path, record in iter_records(input_root):
+    canonical = list(iter_records(input_root))
+    conflicts = identity_errors((str(path), record) for path, record in canonical)
+    if conflicts:
+        raise ValueError("; ".join(conflicts))
+    for path, record in canonical:
         timestamp = record_time(record)
         if timestamp is None:
             warnings.append(f"undated canonical record included: {path.relative_to(input_root)}")
@@ -207,6 +226,9 @@ def build_projection(
         manifest_bytes = dump(source_dir / "source.json", template)
 
         package_entries: dict[str, dict[str, Any]] = {}
+        available_versions: dict[str, set[str]] = defaultdict(set)
+        for record in records:
+            available_versions[record["name"]].add(record["version"])
         for record in records:
             name = record["name"]
             version = record["version"]
@@ -217,14 +239,26 @@ def build_projection(
                 {"latest": version, "versions": [], "path": rel_path},
             )
             entry["versions"].append(version)
-            entry["path"] = rel_path
             entry["recordRevision"] = revision
-            entry["subtype"] = record.get("subtype")
-            entry["checksum"] = {"sha256": sha256_bytes(package_bytes)}
-            # Keep the highest lexical version as a deterministic fallback;
-            # consumers should apply versionScheme-aware ordering when needed.
-            if str(version) > str(entry["latest"]):
+            preferred = preferred_versions.get(package_type, {}).get(name)
+            # Honor the upstream latest designation only when this projection
+            # includes that version; retain a deterministic fallback otherwise.
+            if preferred in available_versions[name]:
+                entry["latest"] = preferred
+            elif str(version) > str(entry["latest"]):
                 entry["latest"] = version
+            if version == entry["latest"]:
+                entry.update(
+                    path=rel_path,
+                    id=record["id"],
+                    summary=record["description"],
+                    keywords=record.get("keywords", []),
+                    subtype=record.get("subtype"),
+                    searchText=" ".join(str(record.get(field, "")) for field in (
+                        "name", "displayName", "description", "keywords", "facets", "customFacets", "generalDetails"
+                    )).lower(),
+                    checksum={"sha256": sha256_bytes(package_bytes)},
+                )
             all_packages.append({"agentId": agent_id, "type": package_type, **record})
             agent_counts[agent_id]["versions"] += 1
             agent_counts[agent_id]["packages"] += 1
@@ -339,7 +373,7 @@ def make_dashboard(records: list[dict[str, Any]], revision: str, generated_at: d
         "counts": {
             "records": len(records),
             "versions": len(records),
-            "packages": len({(record.get("id"), record.get("name")) for record in records}),
+            "packages": len({record.get("id") for record in records}),
             "bundles": sum(1 for record in records if record.get("type") == "bundle"),
             "bundleMembers": bundle_members,
             "knownCompatibilityTargets": known,

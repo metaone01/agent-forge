@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.ssemble/mcp-server",
   "name": "com.ssemble/mcp-server",
+  "displayName": "Ssemble AI Clipping",
   "version": "1.1.3",
-  "versionScheme": "semver",
-  "description": "Create AI-powered short-form video clips from YouTube videos. Supports webhook callbacks.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ssembleinc/ssemble-mcp-server",
-    "homepage": "https://www.ssemble.com/mcp",
-    "readme": "https://github.com/ssembleinc/ssemble-mcp-server#readme"
-  },
-  "keywords": [
-    "Ssemble AI Clipping"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@ssemble/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Create AI-powered short-form video clips from YouTube videos. Supports webhook callbacks.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ssemble/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.ssemble.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-db3e12fb67c3c562",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@ssemble/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.3"
+    },
+    {
+      "id": "upstream-f252471e92aa2665",
+      "type": "other",
+      "url": "https://mcp.ssemble.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ssemble.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ssembleinc/ssemble-mcp-server",
+    "homepage": "https://www.ssemble.com/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.ssemble__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=78",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ssemble/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

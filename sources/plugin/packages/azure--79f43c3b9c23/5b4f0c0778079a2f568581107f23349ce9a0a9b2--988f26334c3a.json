@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.azure",
+  "name": "azure",
+  "displayName": "microsoft/azure-skills",
+  "version": "5b4f0c0778079a2f568581107f23349ce9a0a9b2",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Transform Claude into an Azure expert. This plugin integrates the Azure MCP server and specialized Azure skills to move beyond generic advice. It enables Claude to perform real-world tasks: listing resources, validating deployments, diagnosing infrastructure issues, and optimizing costs across 50+ Azure services.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/microsoft/azure-skills",
+    "readme": "https://github.com/microsoft/azure-skills#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/microsoft/azure-skills",
+      "ref": "5b4f0c0778079a2f568581107f23349ce9a0a9b2"
+    }
+  ],
+  "keywords": [],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": ".claude-plugin/marketplace.json",
+          "entry": "azure"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

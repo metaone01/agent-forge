@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.APProj/warn-mcp",
+  "name": "io.github.APProj/warn-mcp",
+  "displayName": "io.github.APProj/warn-mcp",
+  "version": "0.2.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search 61,428+ US WARN Act layoff notices: 48 states, 1988-today, daily. Bundle needs no API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/APVentureEngine/warn-mcp/releases/download/v0.2.6/warn-mcp.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mQpACuIiQcnwK93JY.apify.actor/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-faa2b37dacc39706",
+      "type": "archive",
+      "url": "https://github.com/APVentureEngine/warn-mcp/releases/download/v0.2.6/warn-mcp.mcpb",
+      "registry": "mcpb",
+      "version": "0.2.6"
+    },
+    {
+      "id": "upstream-724e53c8f656cac7",
+      "type": "other",
+      "url": "https://mQpACuIiQcnwK93JY.apify.actor/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mQpACuIiQcnwK93JY.apify.actor/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/APVentureEngine/warn-mcp",
+    "homepage": "https://approjects-warn-act-notices.static.hf.space/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=107",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.APProj/warn-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

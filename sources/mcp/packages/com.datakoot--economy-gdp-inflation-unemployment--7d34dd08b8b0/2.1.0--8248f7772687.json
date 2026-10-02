@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.datakoot/economy-gdp-inflation-unemployment",
+  "name": "com.datakoot/economy-gdp-inflation-unemployment",
+  "displayName": "Economy Intel MCP",
+  "version": "2.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Macro data for AI agents: GDP, inflation, unemployment and more (World Bank, US BLS). No keys.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.datakoot/economy-gdp-inflation-unemployment",
+    "remotes": [
+      {
+        "url": "https://economy.datakoot.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-15952ccefc9accbb",
+      "type": "other",
+      "url": "https://economy.datakoot.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://economy.datakoot.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/datakoot/economy-intel-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=43",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.datakoot/economy-gdp-inflation-unemployment"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

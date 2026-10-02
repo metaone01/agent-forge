@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.cb66faa3f535852756ee96329c42de8b5c054a166136df6c7778b6072a7a413b",
+  "name": "IcyCreme/resume-reviser",
+  "displayName": "IcyCreme/resume-reviser",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "一个运行在 DSH（DeepSeek Harness）技能系统中的\"简历修改专家\"。把\"资深 HR + 简历优化教练\"的工作流整包做成技能：HR 级诊断 → 针对性改写 → 参考版式 Word + 一页 PDF → 岗位推荐与录取概率区间 → 提升方案 → 模拟面试，全程以 state.md 持久化，跨会话可续接。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/IcyCreme/resume-reviser",
+    "readme": "https://github.com/IcyCreme/resume-reviser/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/IcyCreme/resume-reviser"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12216"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "596"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

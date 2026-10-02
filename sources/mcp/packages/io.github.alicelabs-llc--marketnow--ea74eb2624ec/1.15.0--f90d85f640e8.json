@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.alicelabs-llc/marketnow",
+  "name": "io.github.alicelabs-llc/marketnow",
+  "displayName": "MarketNow",
+  "version": "1.15.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verify AI agent credentials, translate 9 formats, check scam domains, search 68k+ MCP servers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "marketnow-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://marketnow.site/api/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4f205c83a9812b72",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/marketnow-mcp",
+      "registry": "npm",
+      "version": "1.15.0"
+    },
+    {
+      "id": "upstream-b6a7f815831d4915",
+      "type": "other",
+      "url": "https://marketnow.site/api/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://marketnow.site/api/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/alicelabs-llc/MARKETNOW",
+    "homepage": "https://marketnow.site"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alicelabs-llc/marketnow"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

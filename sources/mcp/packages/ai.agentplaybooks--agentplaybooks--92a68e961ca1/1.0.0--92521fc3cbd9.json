@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.agentplaybooks/agentplaybooks",
+  "name": "ai.agentplaybooks/agentplaybooks",
+  "displayName": "AgentPlaybooks",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage portable AI agent playbooks, Agent Skills, MCP configurations, personas, and memory.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.agentplaybooks/agentplaybooks",
+    "remotes": [
+      {
+        "url": "https://agentplaybooks.ai/api/mcp/manage",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-02859284c5a0bdbe",
+      "type": "other",
+      "url": "https://agentplaybooks.ai/api/mcp/manage",
+      "install": {
+        "type": "api",
+        "url": "https://agentplaybooks.ai/api/mcp/manage"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/matebenyovszky/agentplaybooks",
+    "homepage": "https://agentplaybooks.ai"
+  },
+  "lifecycle": {
+    "status": "deprecated"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=1",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.agentplaybooks/agentplaybooks"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

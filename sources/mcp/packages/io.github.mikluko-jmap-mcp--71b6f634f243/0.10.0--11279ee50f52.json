@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mikluko/jmap-mcp",
   "name": "io.github.mikluko/jmap-mcp",
+  "displayName": "JMAP Email",
   "version": "0.10.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Email management via JMAP — mailboxes, messages, identities, and Sieve scripts",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/mikluko/jmap-mcp",
-    "readme": "https://github.com/mikluko/jmap-mcp#readme"
-  },
-  "keywords": [
-    "JMAP Email"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/mikluko/jmap-mcp:0.10.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/mikluko/jmap-mcp:0.10.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/mikluko/jmap-mcp",
-      "priority": 10,
+      "id": "upstream-a0d0c12e0569ad64",
+      "type": "oci",
+      "url": "https://ghcr.io/mikluko/jmap-mcp:0.10.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mikluko/jmap-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mikluko__jmap-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=249",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mikluko/jmap-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

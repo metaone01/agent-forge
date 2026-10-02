@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.a4276ab3318629918a34aa91aaea829980ce1197be46b0e96f22deff708cbaa3",
+  "name": "Niobium-41-nb/dsh-restart",
+  "displayName": "Niobium-41-nb/dsh-restart",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Out-of-process restart supervisor for DeepSeek Harness: a small control agent on its own port restarts dsh, rolls the profile configuration back to the last known-good snapshot when the new boot",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Niobium-41-nb/dsh-restart",
+    "readme": "https://github.com/Niobium-41-nb/dsh-restart#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Niobium-41-nb/dsh-restart"
+    }
+  ],
+  "keywords": [
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14557"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

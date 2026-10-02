@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.chat.prowl/prowl-mcp",
+  "name": "chat.prowl/prowl-mcp",
+  "displayName": "Prowl MCP",
+  "version": "1.7.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-world market data for AI agents: 444 pay-per-call tools (SEO, ads, social, trends, finance)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "chat.prowl/prowl-mcp",
+    "remotes": [
+      {
+        "url": "https://prowl.chat/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-732a7c343f8f3175",
+      "type": "other",
+      "url": "https://prowl.chat/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://prowl.chat/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "chat.prowl/prowl-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

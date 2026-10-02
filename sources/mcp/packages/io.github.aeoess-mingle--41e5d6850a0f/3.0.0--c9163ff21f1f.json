@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aeoess/mingle",
   "name": "io.github.aeoess/mingle",
+  "displayName": "Mingle — Agent-Native Connection Protocol",
   "version": "3.0.0",
-  "versionScheme": "semver",
-  "description": "Meet the people you're looking for. Your agent composes, you approve. Nothing scores or ranks you.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/aeoess/mingle-mcp",
-    "homepage": "https://aeoess.com/mingle",
-    "readme": "https://github.com/aeoess/mingle-mcp#readme"
-  },
-  "keywords": [
-    "Mingle — Agent-Native Connection Protocol"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mingle-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Meet the people you're looking for. Your agent composes, you approve. Nothing scores or ranks you.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mingle-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-48871186d4c75ea9",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mingle-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aeoess/mingle-mcp",
+    "homepage": "https://aeoess.com/mingle"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aeoess__mingle.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=165",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aeoess/mingle"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

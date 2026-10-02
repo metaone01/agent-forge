@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ink.utilia/solana-preflight",
+  "name": "ink.utilia/solana-preflight",
+  "displayName": "Utilia Solana Transaction Evidence",
+  "version": "0.5.8-1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Solana transaction diagnosis, simulation, token-risk evidence, and priority fees via x402 USDC.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "utilia-solana-agent",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.utilia.ink/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.utilia.ink/base/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e6a4e2af906d5911",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/utilia-solana-agent",
+      "registry": "npm",
+      "version": "0.5.8"
+    },
+    {
+      "id": "upstream-c61da626adad766d",
+      "type": "other",
+      "url": "https://api.utilia.ink/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.utilia.ink/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-7e44673f368a3749",
+      "type": "other",
+      "url": "https://api.utilia.ink/base/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.utilia.ink/base/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mohamedkuch/utilia-solana-agent",
+    "homepage": "https://utilia.ink/solana-transaction-support"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ink.utilia/solana-preflight"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.08728e2244491b49c11dd5353ba5af6013e0fa00ef76a82964a429eb703c4b27",
+  "name": "wumu-366/dsh-notify",
+  "displayName": "wumu-366/dsh-notify",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 通知插件：设置页「通知」分区。任务完成 / 需要回答问题 / 权限审核 / 任务失败 四类事件的声音提醒（内置 6 种 Web Audio 合成音效 + 自定义音频）与企业微信群机器人、飞书自定义机器人（支持加签）消息推送。推送由宿主进程（Node fetch）代发，不受浏览器 CORS 限制。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/wumu-366/dsh-notify",
+    "readme": "https://github.com/wumu-366/dsh-notify#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/wumu-366/dsh-notify"
+    },
+    {
+      "id": "npm-9030fc656057",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-notify-hub",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "notifications",
+    "channels"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6027"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "7281"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "7856"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-notify-hub"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

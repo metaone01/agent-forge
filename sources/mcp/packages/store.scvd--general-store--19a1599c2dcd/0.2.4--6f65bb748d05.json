@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.store.scvd/general-store",
+  "name": "store.scvd/general-store",
+  "displayName": "SCVD General Store",
+  "version": "0.2.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Evidence observatory: x402/MPP inspection, signed receipt checks and settlement attestations.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "store.scvd/general-store",
+    "remotes": [
+      {
+        "url": "https://scvd.store/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-24d78be161af62c1",
+      "type": "other",
+      "url": "https://scvd.store/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://scvd.store/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/seancrecord/scvd-general-store-repo",
+    "homepage": "https://scvd.store"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=377",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "store.scvd/general-store"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

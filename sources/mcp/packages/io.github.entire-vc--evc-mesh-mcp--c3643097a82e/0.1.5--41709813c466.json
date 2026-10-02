@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.entire-vc/evc-mesh-mcp",
+  "name": "io.github.entire-vc/evc-mesh-mcp",
+  "displayName": "io.github.entire-vc/evc-mesh-mcp",
+  "version": "0.1.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Tasks, comments, shared memory and handoffs for teams of people and AI agents, over MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/entire-vc/evc-mesh-mcp:0.1.5",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mesh.entire.host/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mesh.entire.host/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d8c072587028c56a",
+      "type": "oci",
+      "url": "https://ghcr.io/entire-vc/evc-mesh-mcp:0.1.5",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-e6387376ad1a2bce",
+      "type": "archive",
+      "url": "https://github.com/entire-vc/evc-mesh-mcp/releases/download/v0.1.5/evc-mesh-mcp-0.1.5.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-b153fc755e2aa5c2",
+      "type": "other",
+      "url": "https://mesh.entire.host/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mesh.entire.host/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-1d5a7adf6d1a52f8",
+      "type": "other",
+      "url": "https://mesh.entire.host/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mesh.entire.host/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/entire-vc/evc-mesh-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=198",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.entire-vc/evc-mesh-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

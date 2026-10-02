@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.d-khomenko/clipboard-history-mcp",
   "name": "io.github.d-khomenko/clipboard-history-mcp",
+  "displayName": "Clipboard History MCP",
   "version": "0.5.0-alpha.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Your clipboard, but Claude can read it. Type-classified, secret-encrypted. macOS + Linux.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/d-khomenko/clipboard-history-mcp",
-    "readme": "https://github.com/d-khomenko/clipboard-history-mcp#readme"
-  },
-  "keywords": [
-    "Clipboard History MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/d-khomenko/clipboard-history-mcp/releases/download/v0.5.0-alpha.0/clipboard-history-mcp.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/d-khomenko/clipboard-history-mcp/releases/download/v0.5.0-alpha.0/clipboard-history-mcp.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-d16cea39ba1d37a4",
+      "type": "archive",
       "url": "https://github.com/d-khomenko/clipboard-history-mcp/releases/download/v0.5.0-alpha.0/clipboard-history-mcp.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/d-khomenko/clipboard-history-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.d-khomenko__clipboard-history-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=189",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.d-khomenko/clipboard-history-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

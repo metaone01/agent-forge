@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.BJCorg/marbellareport",
+  "name": "io.github.BJCorg/marbellareport",
+  "displayName": "io.github.BJCorg/marbellareport",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Independent real estate market data for Marbella's 28 sub-areas.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.BJCorg/marbellareport",
+    "remotes": [
+      {
+        "url": "https://marbellareport-mcp-production.up.railway.app/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f121bea7a10aacbd",
+      "type": "other",
+      "url": "https://marbellareport-mcp-production.up.railway.app/sse",
+      "install": {
+        "type": "api",
+        "url": "https://marbellareport-mcp-production.up.railway.app/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=112",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.BJCorg/marbellareport"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

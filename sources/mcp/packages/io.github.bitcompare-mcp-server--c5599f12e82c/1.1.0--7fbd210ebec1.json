@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bitcompare/mcp-server",
   "name": "io.github.bitcompare/mcp-server",
+  "displayName": "io.github.bitcompare/mcp-server",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "Crypto yield data for AI agents: lending, savings, staking, borrowing & stablecoin rates. 18 tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/bitcompare/services",
-    "homepage": "https://bitcompare.net/mcp",
-    "readme": "https://github.com/bitcompare/services#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@bitcompare/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Crypto yield data for AI agents: lending, savings, staking, borrowing & stablecoin rates. 18 tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@bitcompare/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.bitcompare.net/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4a4e8d246a104bd0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@bitcompare/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-c996986decfe1c3e",
+      "type": "other",
+      "url": "https://api.bitcompare.net/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.bitcompare.net/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/bitcompare/services",
+    "homepage": "https://bitcompare.net/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bitcompare__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bitcompare/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

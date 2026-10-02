@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.dappros/ethora-mcp-server",
+  "name": "io.github.dappros/ethora-mcp-server",
+  "displayName": "io.github.dappros/ethora-mcp-server",
+  "version": "26.9.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Ethora chat platform MCP: apps, users, rooms, AI agents, chat widgets. Hosted or stdio.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ethora/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.chat.ethora.com/mcp/oauth",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.chat.ethora.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8bbb55863628c3f0",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@ethora/mcp-server",
+      "registry": "npm",
+      "version": "26.9.5"
+    },
+    {
+      "id": "upstream-0a9b60d9d16e81f3",
+      "type": "other",
+      "url": "https://mcp.chat.ethora.com/mcp/oauth",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.chat.ethora.com/mcp/oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-1b61232d40a98077",
+      "type": "other",
+      "url": "https://mcp.chat.ethora.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.chat.ethora.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/dappros/ethora-mcp-server",
+    "homepage": "https://ethora.com/ai-sdk/mcp-server/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=190",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dappros/ethora-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

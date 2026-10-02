@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.ai.dxpert/mcp",
   "name": "ai.dxpert/mcp",
+  "displayName": "dxpert.ai — industrial AI-readiness & UNS agents",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Industrial AI-readiness diagnostics, UNS design, and UNS agents for MCP clients.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/dxpert-ai/dxpert-mcp",
-    "homepage": "https://dxpert.ai",
-    "readme": "https://github.com/dxpert-ai/dxpert-mcp#readme"
-  },
-  "keywords": [
-    "dxpert.ai — industrial AI-readiness & UNS agents"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@dxpert/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Industrial AI-readiness diagnostics, UNS design, and UNS agents for MCP clients.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@dxpert/mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ce372053e15c5035",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@dxpert/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dxpert-ai/dxpert-mcp",
+    "homepage": "https://dxpert.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.dxpert__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=4",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.dxpert/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

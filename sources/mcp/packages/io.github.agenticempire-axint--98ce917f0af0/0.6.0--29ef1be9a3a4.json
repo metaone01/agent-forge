@@ -2,49 +2,66 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.agenticempire/axint",
   "name": "io.github.agenticempire/axint",
+  "displayName": "Axint",
   "version": "0.6.0",
-  "versionScheme": "semver",
-  "description": "Proof and repair for Apple coding agents: validate Swift, run Xcode evidence, and repair failures.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/agenticempire/axint",
-    "readme": "https://github.com/agenticempire/axint#readme"
-  },
-  "keywords": [
-    "Axint"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@axint/compiler",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Proof and repair for Apple coding agents: validate Swift, run Xcode evidence, and repair failures.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@axint/compiler",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.axint.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3d00e7b741974b1f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@axint/compiler",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.0"
+    },
+    {
+      "id": "upstream-1e266b1cafbea402",
+      "type": "registry",
+      "url": "https://pypi.org/project/axint",
+      "registry": "pypi",
+      "version": "0.6.0"
+    },
+    {
+      "id": "upstream-fe93988c3537f616",
+      "type": "other",
+      "url": "https://mcp.axint.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.axint.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/agenticempire/axint"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +74,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.agenticempire__axint.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=166",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.agenticempire/axint"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

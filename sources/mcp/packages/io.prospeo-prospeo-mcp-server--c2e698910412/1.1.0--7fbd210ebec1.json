@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.prospeo/prospeo-mcp-server",
   "name": "io.prospeo/prospeo-mcp-server",
+  "displayName": "io.prospeo/prospeo-mcp-server",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "Prospeo: Find, search, and enrich people and companies with verified emails and mobile numbers.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/prospeo-v2/prospeo-mcp-server",
-    "readme": "https://github.com/prospeo-v2/prospeo-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@prospeo/prospeo-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Prospeo: Find, search, and enrich people and companies with verified emails and mobile numbers.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@prospeo/prospeo-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.prospeo.io",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bd36e12b87087e86",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@prospeo/prospeo-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-bba2511cabe18d4d",
+      "type": "other",
+      "url": "https://mcp.prospeo.io",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.prospeo.io"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/prospeo-v2/prospeo-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.prospeo__prospeo-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=358",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.prospeo/prospeo-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

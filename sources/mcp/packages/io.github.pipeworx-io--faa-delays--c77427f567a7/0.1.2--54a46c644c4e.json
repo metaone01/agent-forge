@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/faa-delays",
+  "name": "io.github.pipeworx-io/faa-delays",
+  "displayName": "Faa Delays",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "FAA Delays MCP — live US airport operational status (FAA, free, no auth).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/faa-delays",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/faa-delays/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1927656038c11c98",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/faa-delays/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/faa-delays/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-faa-delays",
+    "homepage": "https://pipeworx.io/packs/faa-delays"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=279",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/faa-delays"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

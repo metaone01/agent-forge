@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.true-alter/mcp-ollama",
   "name": "io.github.true-alter/mcp-ollama",
+  "displayName": "~alter mcp-ollama",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Wraps local Ollama models so bulk generation runs on your own hardware, not a paid API.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/true-alter/mcp-ollama",
-    "homepage": "https://github.com/true-alter/mcp-ollama#readme",
-    "readme": "https://github.com/true-alter/mcp-ollama#readme"
-  },
-  "keywords": [
-    "~alter mcp-ollama"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@truealter/mcp-ollama",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Wraps local Ollama models so bulk generation runs on your own hardware, not a paid API.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@truealter/mcp-ollama",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8cff7f9e68060a11",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@truealter/mcp-ollama",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/true-alter/mcp-ollama",
+    "homepage": "https://github.com/true-alter/mcp-ollama#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.true-alter__mcp-ollama.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.true-alter/mcp-ollama"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.oddsockets/remote-mcp",
+  "name": "ai.oddsockets/remote-mcp",
+  "displayName": "ai.oddsockets/remote-mcp",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-first real-time messaging over MCP: self-provision channels, publish, history, presence.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.oddsockets/remote-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.oddsockets.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.oddsockets.ai/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ba719262589f1f3d",
+      "type": "other",
+      "url": "https://mcp.oddsockets.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.oddsockets.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e287b9dcc37f94da",
+      "type": "other",
+      "url": "https://mcp.oddsockets.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.oddsockets.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jyswee/oddsockets",
+    "homepage": "https://oddsockets.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=9",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.oddsockets/remote-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

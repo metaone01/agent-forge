@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.workers.mattskowronis.agent-contract-proof/verify-agent-contract",
+  "name": "dev.workers.mattskowronis.agent-contract-proof/verify-agent-contract",
+  "displayName": "Agent Contract Proof",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verify an agent's advertised route, price, payment details, and schemas against its live endpoint.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.workers.mattskowronis.agent-contract-proof/verify-agent-contract",
+    "remotes": [
+      {
+        "url": "https://agent-contract-proof.mattskowronis.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c01f5e43b683de84",
+      "type": "other",
+      "url": "https://agent-contract-proof.mattskowronis.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent-contract-proof.mattskowronis.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://skowronworks.com/agent-tools/agent-contract-proof/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=95",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.workers.mattskowronis.agent-contract-proof/verify-agent-contract"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

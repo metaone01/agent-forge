@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.demovela/mcp-server",
   "name": "io.github.demovela/mcp-server",
+  "displayName": "io.github.demovela/mcp-server",
   "version": "1.2.1",
-  "versionScheme": "semver",
-  "description": "MCP connector for Demovela video libraries, render status, templates and reviewable video briefs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/demovela/mcp-server",
-    "readme": "https://github.com/demovela/mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "demovela-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP connector for Demovela video libraries, render status, templates and reviewable video briefs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "demovela-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.demovela.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-71f48f8acb83bc01",
       "type": "registry",
       "url": "https://www.npmjs.com/package/demovela-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.1"
+    },
+    {
+      "id": "upstream-61056861821e0061",
+      "type": "other",
+      "url": "https://mcp.demovela.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.demovela.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/demovela/mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.demovela__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=192",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.demovela/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

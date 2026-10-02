@@ -2,49 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mafzaal/d365fo-client",
   "name": "io.github.mafzaal/d365fo-client",
+  "displayName": "D365FO MCP Server",
   "version": "0.3.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "A community-driven Microsoft Dynamics 365 Finance & Operations MCP server",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/mafzaal/d365fo-client",
-    "readme": "https://github.com/mafzaal/d365fo-client#readme"
-  },
-  "keywords": [
-    "D365FO MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "d365fo-client",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "d365fo-client",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1abb22ed6aeec6fc",
       "type": "registry",
-      "url": "https://pypi.org/project/d365fo-client/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/d365fo-client",
+      "registry": "pypi",
+      "version": "0.3.6"
+    },
+    {
+      "id": "upstream-66e2d5da8b1526ac",
+      "type": "oci",
+      "url": "https://ghcr.io/mafzaal/d365fo-client:0.3.6",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mafzaal/d365fo-client"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mafzaal__d365fo-client.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=231",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mafzaal/d365fo-client"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

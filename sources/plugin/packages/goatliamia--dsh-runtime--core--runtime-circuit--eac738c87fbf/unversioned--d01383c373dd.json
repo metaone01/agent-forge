@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.eac738c87fbff9536f3789da693f1cbaf102b93fe71cdcc3c78dcef9b13ef6e8",
+  "name": "goatliamia/dsh-runtime/core/runtime-circuit",
+  "displayName": "goatliamia/dsh-runtime/core/runtime-circuit",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Policy layer (consumer of dsh-runtime-progress): stalled x N -> circuit -> guard deny. Semantics: repeated failure with NO effect progress (execution=failed, effect=stalled), evidenced by the",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "core/runtime-circuit/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/goatliamia/dsh-runtime",
+    "readme": "https://github.com/goatliamia/dsh-runtime#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/goatliamia/dsh-runtime/tree/HEAD/core/runtime-circuit"
+    }
+  ],
+  "keywords": [
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12992"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

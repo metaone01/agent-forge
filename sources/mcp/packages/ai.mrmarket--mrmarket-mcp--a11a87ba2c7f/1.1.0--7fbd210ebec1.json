@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.mrmarket/mrmarket-mcp",
+  "name": "ai.mrmarket/mrmarket-mcp",
+  "displayName": "mrmarket.ai",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Analytical engine for US-listed equities: screens, rankings, and event studies in plain English.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.mrmarket/mrmarket-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.mrmarket.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7825d704d94ef8a9",
+      "type": "other",
+      "url": "https://mcp.mrmarket.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mrmarket.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/codinghaven/mrmarket-mcp",
+    "homepage": "https://mrmarket.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=9",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.mrmarket/mrmarket-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

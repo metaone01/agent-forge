@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nicholasglazer/gnosis",
   "name": "io.github.nicholasglazer/gnosis",
+  "displayName": "Gnosis MCP",
   "version": "0.17.5",
-  "versionScheme": "semver",
-  "description": "Zero-config MCP server for searchable documentation. SQLite or PostgreSQL.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/nicholasglazer/gnosis-mcp",
-    "readme": "https://github.com/nicholasglazer/gnosis-mcp#readme"
-  },
-  "keywords": [
-    "Gnosis MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "gnosis-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Zero-config MCP server for searchable documentation. SQLite or PostgreSQL.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "gnosis-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7755cbf9a435c1d5",
       "type": "registry",
-      "url": "https://pypi.org/project/gnosis-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/gnosis-mcp",
+      "registry": "pypi",
+      "version": "0.17.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nicholasglazer/gnosis-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nicholasglazer__gnosis.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nicholasglazer/gnosis"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Osyanne/osu-mcp",
   "name": "io.github.Osyanne/osu-mcp",
+  "displayName": "osu! MCP",
   "version": "0.1.4",
-  "versionScheme": "semver",
-  "description": "MCP server exposing the osu! API v2: player stats, scores, beatmap search, rankings.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Osyanne/osu-mcp",
-    "readme": "https://github.com/Osyanne/osu-mcp#readme"
-  },
-  "keywords": [
-    "osu! MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "osu-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server exposing the osu! API v2: player stats, scores, beatmap search, rankings.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "osu-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9ad771ea6a996bfb",
       "type": "registry",
-      "url": "https://pypi.org/project/osu-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/osu-mcp",
+      "registry": "pypi",
+      "version": "0.1.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Osyanne/osu-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.osyanne__osu-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=146",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Osyanne/osu-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

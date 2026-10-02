@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.dev.cz-agents/eu-registry",
   "name": "dev.cz-agents/eu-registry",
+  "displayName": "dev.cz-agents/eu-registry",
   "version": "0.7.0",
-  "versionScheme": "semver",
-  "description": "EU company registry lookup across 16 countries incl. Sweden Bolagsverket.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/martinhavel/cz-agents-mcp",
-    "homepage": "https://cz-agents.dev",
-    "readme": "https://github.com/martinhavel/cz-agents-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@czagents/eu-registry",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "EU company registry lookup across 16 countries incl. Sweden Bolagsverket.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@czagents/eu-registry",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://eu-registry.cz-agents.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d7a92b2f65653980",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@czagents/eu-registry",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.7.0"
+    },
+    {
+      "id": "upstream-b2d738ff2f65093f",
+      "type": "other",
+      "url": "https://eu-registry.cz-agents.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://eu-registry.cz-agents.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/martinhavel/cz-agents-mcp",
+    "homepage": "https://cz-agents.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.cz-agents__eu-registry.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=90",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.cz-agents/eu-registry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

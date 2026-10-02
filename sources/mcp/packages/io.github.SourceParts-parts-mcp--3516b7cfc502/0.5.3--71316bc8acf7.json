@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SourceParts/parts-mcp",
   "name": "io.github.SourceParts/parts-mcp",
+  "displayName": "Source Parts",
   "version": "0.5.3",
-  "versionScheme": "semver",
-  "description": "Electronic component sourcing, BOM management, and PCB design workflows.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/SourceParts/parts-mcp",
-    "homepage": "https://source.parts",
-    "readme": "https://github.com/SourceParts/parts-mcp#readme"
-  },
-  "keywords": [
-    "Source Parts"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "parts-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Electronic component sourcing, BOM management, and PCB design workflows.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "parts-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.source.parts/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f23ef08cf6fccb64",
       "type": "registry",
-      "url": "https://pypi.org/project/parts-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/parts-mcp",
+      "registry": "pypi",
+      "version": "0.5.3"
+    },
+    {
+      "id": "upstream-95a751e046707f59",
+      "type": "other",
+      "url": "https://mcp.source.parts/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.source.parts/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/SourceParts/parts-mcp",
+    "homepage": "https://source.parts"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sourceparts__parts-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=154",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SourceParts/parts-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

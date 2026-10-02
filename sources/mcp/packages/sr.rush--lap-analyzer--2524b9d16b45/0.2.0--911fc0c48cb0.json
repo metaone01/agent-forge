@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sr.rush/lap-analyzer",
+  "name": "sr.rush/lap-analyzer",
+  "displayName": "Rush SR Lap Analyzer",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Analyze AiM RaceStudio lap data: lap times, compare laps, time loss, compare two sessions.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sr.rush/lap-analyzer",
+    "remotes": [
+      {
+        "url": "https://laps.mcp.rush.sr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7d48edef0ab729ca",
+      "type": "other",
+      "url": "https://laps.mcp.rush.sr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://laps.mcp.rush.sr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Rush-Auto-Works/llm-plugins",
+    "homepage": "https://rushautoworks.com/rush-sr/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sr.rush/lap-analyzer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.sentimentfx/market-sentiment",
+  "name": "org.sentimentfx/market-sentiment",
+  "displayName": "SentimentFX",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "FinBERT news sentiment and price history for 42 crypto, FX, stock, ETF and commodity tickers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.sentimentfx/market-sentiment",
+    "remotes": [
+      {
+        "url": "https://api.sentimentfx.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0318e970c1d8362b",
+      "type": "other",
+      "url": "https://api.sentimentfx.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.sentimentfx.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/shaelegowski7/crypto-sentiment",
+    "homepage": "https://developers.sentimentfx.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.sentimentfx/market-sentiment"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

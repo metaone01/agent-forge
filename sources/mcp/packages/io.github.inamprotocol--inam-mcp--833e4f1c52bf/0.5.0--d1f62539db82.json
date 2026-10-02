@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.inamprotocol/inam-mcp",
+  "name": "io.github.inamprotocol/inam-mcp",
+  "displayName": "io.github.inamprotocol/inam-mcp",
+  "version": "0.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check an agent's INAM reputation before trusting it, and sign a receipt when work is done.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "inam-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.inamprotocol.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8e0dbaebba83cd57",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/inam-mcp",
+      "registry": "npm",
+      "version": "0.5.0"
+    },
+    {
+      "id": "upstream-8b244459e3422774",
+      "type": "other",
+      "url": "https://api.inamprotocol.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.inamprotocol.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/inamprotocol/inam-protocol",
+    "homepage": "https://inamprotocol.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=213",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.inamprotocol/inam-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

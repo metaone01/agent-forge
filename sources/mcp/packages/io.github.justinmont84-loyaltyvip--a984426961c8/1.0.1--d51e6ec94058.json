@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.justinmont84/loyaltyvip",
   "name": "io.github.justinmont84/loyaltyvip",
+  "displayName": "io.github.justinmont84/loyaltyvip",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "U.S. casino directory + a player's loyalty data, comps, tiers, and gambling tax docs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/movaMedia-Inc/loyaltyvip-js",
-    "homepage": "https://loyaltyvip.com/developers",
-    "readme": "https://github.com/movaMedia-Inc/loyaltyvip-js#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@loyaltyvip/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "U.S. casino directory + a player's loyalty data, comps, tiers, and gambling tax docs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@loyaltyvip/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://loyaltyvip.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5c5ec05148b4776a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@loyaltyvip/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-a0f0aacb60774a90",
+      "type": "other",
+      "url": "https://loyaltyvip.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://loyaltyvip.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/movaMedia-Inc/loyaltyvip-js",
+    "homepage": "https://loyaltyvip.com/developers"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.justinmont84__loyaltyvip.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=222",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.justinmont84/loyaltyvip"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

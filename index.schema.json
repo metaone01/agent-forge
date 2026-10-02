@@ -39,6 +39,10 @@
         "path": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$", "description": "POSIX path to a package record relative to the source base URL." },
         "checksum": { "$ref": "package.schema.json#/$defs/checksum" },
         "recordRevision": { "$ref": "#/$defs/revision", "description": "Optional revision of the package record." },
+        "id": { "$ref": "package.schema.json#/$defs/identifier", "description": "Global package identity, distinct from the source-local name." },
+        "summary": { "type": "string", "maxLength": 4000, "description": "Description copied from the latest package record for search." },
+        "keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "searchText": { "type": "string", "description": "Generated search text; does not change package type or compatibility." },
         "subtype": { "type": ["string", "null"], "minLength": 1, "description": "Administrator-defined subtype copied into this projection; null means no subtype." }
       }
     }

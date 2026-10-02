@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/agent-orchestrator-mcp",
   "name": "io.github.CSOAI-ORG/agent-orchestrator-mcp",
+  "displayName": "io.github.CSOAI-ORG/agent-orchestrator-mcp",
   "version": "1.0.12",
-  "versionScheme": "semver",
-  "description": "Agent Orchestrator MCP Server by MEOK AI Labs",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/agent-orchestrator-mcp",
-    "readme": "https://github.com/CSOAI-ORG/agent-orchestrator-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "agent-orchestrator-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Agent Orchestrator MCP Server by MEOK AI Labs",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "agent-orchestrator-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/a2a/orchestrator",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-437f12f52dc4387b",
       "type": "registry",
-      "url": "https://pypi.org/project/agent-orchestrator-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/agent-orchestrator-mcp",
+      "registry": "pypi",
+      "version": "1.0.12"
+    },
+    {
+      "id": "upstream-0e2ef49015b45387",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/a2a/orchestrator",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/a2a/orchestrator"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/agent-orchestrator-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__agent-orchestrator-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=115",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/agent-orchestrator-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

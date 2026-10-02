@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.microsoft/esrp-oss-mcp-test",
+  "name": "com.microsoft/esrp-oss-mcp-test",
+  "displayName": "com.microsoft/esrp-oss-mcp-test",
+  "version": "26.930.134449",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The ESRP OSS MCP server exposes tools to discover & validate trusted Microsoft OSS Packages.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@microsoft/esrp-release-test-integration",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://esrp-mcp-server-test-{env}.azurewebsites.net/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cee1f82199496613",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@microsoft/esrp-release-test-integration",
+      "registry": "npm",
+      "version": "26.226.151853"
+    },
+    {
+      "id": "upstream-c8faaf860244b7c4",
+      "type": "registry",
+      "url": "https://pypi.org/project/esrp_release_test",
+      "registry": "pypi",
+      "version": "26.226.153828"
+    },
+    {
+      "id": "upstream-41dbdc5964c1c240",
+      "type": "registry",
+      "url": "https://www.nuget.org/packages/sravanism.oss.mcp.server",
+      "registry": "nuget",
+      "version": "0.0.3"
+    },
+    {
+      "id": "upstream-a10f53f981e3a61b",
+      "type": "oci",
+      "url": "https://docker.io/sravanmsft/esrp-oss-mcp-test:mcpserver",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-c224efd18fa9b70f",
+      "type": "archive",
+      "url": "https://github.com/esrp-test/winget-esrp-ppe/releases/download/v0.0.2/com.microsoftesrp-oss-mcp-test.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-180fca5ef62481f3",
+      "type": "other",
+      "url": "https://esrp-mcp-server-test-{env}.azurewebsites.net/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://esrp-mcp-server-test-{env}.azurewebsites.net/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sravanism/esrp-oss-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.microsoft/esrp-oss-mcp-test"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

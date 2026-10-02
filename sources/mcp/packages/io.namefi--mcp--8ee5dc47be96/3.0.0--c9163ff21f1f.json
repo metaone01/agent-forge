@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.namefi/mcp",
+  "name": "io.namefi/mcp",
+  "displayName": "Namefi",
+  "version": "3.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search, buy, and manage domains, DNS records, orders, and NFSC balance on Namefi.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.namefi/mcp",
+    "remotes": [
+      {
+        "url": "https://api.namefi.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-feb4fde512b8e392",
+      "type": "other",
+      "url": "https://api.namefi.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.namefi.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://namefi.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=357",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.namefi/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

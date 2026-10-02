@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.STR-Consulting/pacer-mcp",
   "name": "io.github.STR-Consulting/pacer-mcp",
+  "displayName": "io.github.STR-Consulting/pacer-mcp",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Pacer revenue-management API as MCP tools: portfolios, pacing, market metrics, Guesty, briefs.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/STR-Consulting/mcp",
-    "readme": "https://github.com/STR-Consulting/mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/str-consulting/pacer-mcp:1.0.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/str-consulting/pacer-mcp:1.0.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/str-consulting/pacer-mcp",
-      "priority": 10,
+      "id": "upstream-e8c2f5b2d5ef18d3",
+      "type": "oci",
+      "url": "https://ghcr.io/str-consulting/pacer-mcp:1.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/STR-Consulting/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.str-consulting__pacer-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=151",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.STR-Consulting/pacer-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

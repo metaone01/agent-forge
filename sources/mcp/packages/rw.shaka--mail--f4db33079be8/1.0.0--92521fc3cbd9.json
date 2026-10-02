@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.rw.shaka/mail",
+  "name": "rw.shaka/mail",
+  "displayName": "Shaka",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Company email for Rwanda. Read and send mail from a Shaka mailbox over OAuth or an API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "rw.shaka/mail",
+    "remotes": [
+      {
+        "url": "https://mail.shaka.rw/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-929a45a2db5349d4",
+      "type": "other",
+      "url": "https://mail.shaka.rw/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mail.shaka.rw/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/leocode09/shaka",
+    "homepage": "https://shaka.rw/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "rw.shaka/mail"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

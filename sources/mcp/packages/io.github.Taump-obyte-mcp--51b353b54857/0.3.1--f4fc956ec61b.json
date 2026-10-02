@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Taump/obyte-mcp",
   "name": "io.github.Taump/obyte-mcp",
+  "displayName": "Obyte MCP",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "Query Obyte mainnet and testnet: balances, units, autonomous agents, AA state, dry runs, tokens.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Taump/obyte-mcp",
-    "homepage": "https://github.com/Taump/obyte-mcp",
-    "readme": "https://github.com/Taump/obyte-mcp#readme"
-  },
-  "keywords": [
-    "Obyte MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "obyte-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Query Obyte mainnet and testnet: balances, units, autonomous agents, AA state, dry runs, tokens.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "obyte-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-efcf50696ee8c073",
       "type": "registry",
       "url": "https://www.npmjs.com/package/obyte-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Taump/obyte-mcp",
+    "homepage": "https://github.com/Taump/obyte-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.taump__obyte-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=156",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Taump/obyte-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

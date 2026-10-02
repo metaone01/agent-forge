@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.BK927/overwatch-aio",
   "name": "io.github.BK927/overwatch-aio",
+  "displayName": "Overwatch 2 Data MCP Server",
   "version": "0.3.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Overwatch 2 MCP for hero meta, public player stats, replays, patch notes, and OWCS Korea.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/BK927/overwatch-aio",
-    "homepage": "https://github.com/BK927/overwatch-aio",
-    "readme": "https://github.com/BK927/overwatch-aio#readme"
-  },
-  "keywords": [
-    "Overwatch 2 Data MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/BK927/overwatch-aio/releases/download/v0.3.2/overwatch-aio-0.3.2.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/BK927/overwatch-aio/releases/download/v0.3.2/overwatch-aio-0.3.2.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-5a97e9b09c18edbf",
+      "type": "archive",
       "url": "https://github.com/BK927/overwatch-aio/releases/download/v0.3.2/overwatch-aio-0.3.2.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/BK927/overwatch-aio",
+    "homepage": "https://github.com/BK927/overwatch-aio"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bk927__overwatch-aio.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=112",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.BK927/overwatch-aio"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bleedmode/dearuser",
   "name": "io.github.bleedmode/dearuser",
+  "displayName": "Dear User",
   "version": "1.0.20",
-  "versionScheme": "semver",
-  "description": "Tells you how you and your Claude agent actually work together. Local-only, no API keys.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/bleedmode/dearuser",
-    "homepage": "https://dearuser.ai",
-    "readme": "https://github.com/bleedmode/dearuser#readme"
-  },
-  "keywords": [
-    "Dear User"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@poisedhq/dearuser-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Tells you how you and your Claude agent actually work together. Local-only, no API keys.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@poisedhq/dearuser-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-183ab94875354d31",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@poisedhq/dearuser-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.20"
     }
   ],
+  "links": {
+    "repository": "https://github.com/bleedmode/dearuser",
+    "homepage": "https://dearuser.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bleedmode__dearuser.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bleedmode/dearuser"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

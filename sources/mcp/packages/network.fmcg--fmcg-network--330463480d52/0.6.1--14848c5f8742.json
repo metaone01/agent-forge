@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.fmcg/fmcg-network",
+  "name": "network.fmcg/fmcg-network",
+  "displayName": "fmcg.network",
+  "version": "0.6.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "USDA FoodData Central nutrient lookup, FDA recall watch, EU FMCG labelling via remote MCP",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "network.fmcg/fmcg-network",
+    "remotes": [
+      {
+        "url": "https://mcp.fmcg.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cde5e8b6f042b372",
+      "type": "other",
+      "url": "https://mcp.fmcg.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.fmcg.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://fmcg.network"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.fmcg/fmcg-network"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

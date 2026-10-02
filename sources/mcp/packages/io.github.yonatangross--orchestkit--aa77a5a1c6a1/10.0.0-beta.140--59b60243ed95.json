@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.yonatangross/orchestkit",
+  "name": "io.github.yonatangross/orchestkit",
+  "displayName": "OrchestKit Docs MCP",
+  "version": "10.0.0-beta.140",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP server for the OrchestKit docs: full-text search + Markdown fetch. No auth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/yonatangross/orchestkit-docs-mcp:10.0.0-beta.140",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://orchestkit.yonyon.ai/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7598503f6bef0041",
+      "type": "oci",
+      "url": "https://ghcr.io/yonatangross/orchestkit-docs-mcp:10.0.0-beta.140",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-3422346082b0b891",
+      "type": "other",
+      "url": "https://orchestkit.yonyon.ai/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://orchestkit.yonyon.ai/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/yonatangross/orchestkit",
+    "homepage": "https://orchestkit.yonyon.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yonatangross/orchestkit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

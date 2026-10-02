@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.kaiv/dns-check",
+  "name": "ai.kaiv/dns-check",
+  "displayName": "ai.kaiv/dns-check",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live DNS lookups for agents: A/MX/TXT/SPF/CNAME/PTR with TTLs and DNSSEC, via Google Public DNS.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.kaiv/dns-check",
+    "remotes": [
+      {
+        "url": "https://api.kaiv.ai/api/bridge/mcp/dns-check-e159a722",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-728c40a600a9bef2",
+      "type": "other",
+      "url": "https://api.kaiv.ai/api/bridge/mcp/dns-check-e159a722",
+      "install": {
+        "type": "api",
+        "url": "https://api.kaiv.ai/api/bridge/mcp/dns-check-e159a722"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=7",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.kaiv/dns-check"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

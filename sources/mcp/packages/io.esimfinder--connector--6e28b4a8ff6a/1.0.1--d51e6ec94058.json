@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.esimfinder/connector",
+  "name": "io.esimfinder/connector",
+  "displayName": "eSIM Finder",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Find, compare & buy travel eSIMs for 190+ countries + a 12-month Travel Pass. 40 currencies.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.esimfinder/connector",
+    "remotes": [
+      {
+        "url": "https://mcp.esimfinder.io/api/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-46b6cef084ed22af",
+      "type": "other",
+      "url": "https://mcp.esimfinder.io/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.esimfinder.io/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://esimfinder.io/connector"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=104",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.esimfinder/connector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

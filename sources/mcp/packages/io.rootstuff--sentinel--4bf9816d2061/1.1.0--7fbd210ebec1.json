@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.rootstuff/sentinel",
+  "name": "io.rootstuff/sentinel",
+  "displayName": "io.rootstuff/sentinel",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Uptime, SSL, DNS and domain monitoring you can talk to from Claude or any MCP client.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.rootstuff/sentinel",
+    "remotes": [
+      {
+        "url": "https://sentinel.rootstuff.io/mcp/sentinel-oauth",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://sentinel.rootstuff.io/mcp/sentinel",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-38263c036d6bd2a0",
+      "type": "other",
+      "url": "https://sentinel.rootstuff.io/mcp/sentinel-oauth",
+      "install": {
+        "type": "api",
+        "url": "https://sentinel.rootstuff.io/mcp/sentinel-oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-02c56a9c93d7eba7",
+      "type": "other",
+      "url": "https://sentinel.rootstuff.io/mcp/sentinel",
+      "install": {
+        "type": "api",
+        "url": "https://sentinel.rootstuff.io/mcp/sentinel"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rootstuff/sentinel-mcp",
+    "homepage": "https://sentinel.rootstuff.io/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=358",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.rootstuff/sentinel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

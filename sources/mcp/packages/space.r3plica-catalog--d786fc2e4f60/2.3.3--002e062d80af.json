@@ -2,50 +2,74 @@
   "schemaVersion": 2,
   "id": "mcp.space.r3plica/catalog",
   "name": "space.r3plica/catalog",
+  "displayName": "R3PLICA AI Connector",
   "version": "2.3.3",
-  "versionScheme": "semver",
-  "description": "Catalog of certified digital replicas from premium design brands, for any MCP-compatible AI agent.",
-  "license": "Proprietary",
-  "links": {
-    "repository": "https://github.com/R3PLICAsrl/r3-cli",
-    "homepage": "https://www.r3plica.space/integrations/mcp",
-    "readme": "https://github.com/R3PLICAsrl/r3-cli#readme"
-  },
-  "keywords": [
-    "R3PLICA AI Connector"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "r3plica",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Catalog of certified digital replicas from premium design brands, for any MCP-compatible AI agent.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "r3plica",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.r3plica.space/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.r3plica.space/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ac2359dccd75c8e4",
       "type": "registry",
       "url": "https://www.npmjs.com/package/r3plica",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.3.3"
+    },
+    {
+      "id": "upstream-dcfd07ff633887b2",
+      "type": "other",
+      "url": "https://mcp.r3plica.space/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.r3plica.space/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-be0cc3040acb0e0f",
+      "type": "other",
+      "url": "https://mcp.r3plica.space/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.r3plica.space/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/R3PLICAsrl/r3-cli",
+    "homepage": "https://www.r3plica.space/integrations/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +82,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\space.r3plica__catalog.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "space.r3plica/catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

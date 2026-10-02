@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.CSOAI-ORG/meok-ap2-mandate-mcp",
+  "name": "io.github.CSOAI-ORG/meok-ap2-mandate-mcp",
+  "displayName": "io.github.CSOAI-ORG/meok-ap2-mandate-mcp",
+  "version": "1.0.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MEOK Google AP2 Mandate MCP — issue + verify + revoke signed user-side spend authorisations for",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "meok-ap2-mandate-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/a2a/ap2-mandate",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2b46810e83079d64",
+      "type": "registry",
+      "url": "https://pypi.org/project/meok-ap2-mandate-mcp",
+      "registry": "pypi",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-fd7ae6027280bce5",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/a2a/ap2-mandate",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/a2a/ap2-mandate"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/meok-ap2-mandate-mcp"
+  },
+  "lifecycle": {
+    "status": "deprecated"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=117",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/meok-ap2-mandate-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

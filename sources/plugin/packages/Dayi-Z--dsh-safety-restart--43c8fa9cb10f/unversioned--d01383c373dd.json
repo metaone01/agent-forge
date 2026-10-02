@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.7313d004bfaa94c0c56d8fbb44d2adb27b906858ef152a69378ca5d27ddb9e2e",
+  "name": "Dayi-Z/dsh-safety-restart",
+  "displayName": "Dayi-Z/dsh-safety-restart",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 的安全无感重启：agent 可以自己重启宿主并接着干，但重启前必须过四道闸（重启循环熔断、有别的会话在跑就拒绝、profile bundle 解析不了就拒绝、拿不到可靠的拉起手段就拒绝），重启后原会话自动接续。桌面端走 Electron app.relaunch()，web/CLI 端走 detached helper。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Dayi-Z/dsh-safety-restart",
+    "readme": "https://github.com/Dayi-Z/dsh-safety-restart#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Dayi-Z/dsh-safety-restart"
+    }
+  ],
+  "keywords": [
+    "terminal",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15257"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14509"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

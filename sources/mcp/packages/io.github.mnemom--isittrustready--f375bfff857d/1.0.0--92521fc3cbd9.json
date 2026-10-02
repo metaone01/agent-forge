@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mnemom/isittrustready",
+  "name": "io.github.mnemom/isittrustready",
+  "displayName": "Is It Trust Ready — agent-trust-readiness scanner",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Scan any website or MCP server for agent-trust-readiness; returns a signed, verifiable scorecard.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mnemom/isittrustready",
+    "remotes": [
+      {
+        "url": "https://api.isittrustready.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fbc5651e9e2be5a3",
+      "type": "other",
+      "url": "https://api.isittrustready.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.isittrustready.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mnemom/mcp",
+    "homepage": "https://www.isittrustready.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=251",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mnemom/isittrustready"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

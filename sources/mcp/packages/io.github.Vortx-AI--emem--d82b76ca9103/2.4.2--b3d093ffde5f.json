@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Vortx-AI/emem",
+  "name": "io.github.Vortx-AI/emem",
+  "displayName": "emem, the verifiable memory protocol for the physical world",
+  "version": "2.4.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Shared memory for AI agents. One address per fact, one signature you check. No key to read.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/vortx-ai/emem:latest",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://emem.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d6cbdb84da59b5a1",
+      "type": "oci",
+      "url": "https://ghcr.io/vortx-ai/emem:latest",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-5682d60e1e742ea6",
+      "type": "other",
+      "url": "https://emem.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://emem.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Vortx-AI/emem",
+    "homepage": "https://emem.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=159",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Vortx-AI/emem"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

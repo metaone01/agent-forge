@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.atomsai/pyai",
   "name": "io.github.atomsai/pyai",
+  "displayName": "PyAI Voice AI",
   "version": "0.3.3",
-  "versionScheme": "semver",
-  "description": "Speech, transcription, voice agents, Trace, Recap, dubbing and narration with browser OAuth.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/atomsai/pyai-platform-backend",
-    "homepage": "https://pyai.com/mcp",
-    "readme": "https://github.com/atomsai/pyai-platform-backend#readme"
-  },
-  "keywords": [
-    "PyAI Voice AI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@pyai/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Speech, transcription, voice agents, Trace, Recap, dubbing and narration with browser OAuth.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pyai/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.pyai.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1a4d367a2f9a7fa8",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@pyai/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.3"
+    },
+    {
+      "id": "upstream-8522c9298970140c",
+      "type": "other",
+      "url": "https://api.pyai.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.pyai.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/atomsai/pyai-platform-backend",
+    "homepage": "https://pyai.com/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.atomsai__pyai.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=173",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.atomsai/pyai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

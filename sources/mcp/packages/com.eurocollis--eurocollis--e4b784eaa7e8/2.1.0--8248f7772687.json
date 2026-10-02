@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.eurocollis/eurocollis",
+  "name": "com.eurocollis/eurocollis",
+  "displayName": "com.eurocollis/eurocollis",
+  "version": "2.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only logistics data for Morocco-Europe shipping: quotes, couriers, tracking and customs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.eurocollis/eurocollis",
+    "remotes": [
+      {
+        "url": "https://api.eurocollis.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8e1a95f3fe56e0e7",
+      "type": "other",
+      "url": "https://api.eurocollis.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.eurocollis.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.eurocollis.com/developers/mcp-docs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=47",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.eurocollis/eurocollis"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

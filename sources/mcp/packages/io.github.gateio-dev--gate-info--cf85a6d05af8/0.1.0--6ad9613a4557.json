@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.gateio-dev/gate-info",
+  "name": "io.github.gateio-dev/gate-info",
+  "displayName": "Gate Info MCP",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Gate info MCP for coin discovery, market snapshots, technical analysis, and on-chain data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.gateio-dev/gate-info",
+    "remotes": [
+      {
+        "url": "https://api.gatemcp.ai/mcp/info",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-892247905098157f",
+      "type": "other",
+      "url": "https://api.gatemcp.ai/mcp/info",
+      "install": {
+        "type": "api",
+        "url": "https://api.gatemcp.ai/mcp/info"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/gate/gate-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=204",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.gateio-dev/gate-info"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.lol.metamuse/wallet",
   "name": "lol.metamuse/wallet",
+  "displayName": "lol.metamuse/wallet",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "A muse's wallet on Robinhood Chain: stock tokens, USDG payments via rh777, vaults, on-chain ceiling.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/metamuse-mcp",
-    "homepage": "https://metamuse.lol/mcp/"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "metamuse-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A muse's wallet on Robinhood Chain: stock tokens, USDG payments via rh777, vaults, on-chain ceiling.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "metamuse-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.metamuse.lol/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-93c11b026a59b90c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/metamuse-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-b4c725b7cf33b2b4",
+      "type": "other",
+      "url": "https://api.metamuse.lol/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.metamuse.lol/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://metamuse.lol/mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\lol.metamuse__wallet.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "lol.metamuse/wallet"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

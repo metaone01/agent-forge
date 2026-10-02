@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.e-vignettes/vignette-id",
+  "name": "eu.e-vignettes/vignette-id",
+  "displayName": "eu.e-vignettes/vignette-id",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "European motorway vignette catalogue: covered countries, each country's toll rules, today's prices.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "eu.e-vignettes/vignette-id",
+    "remotes": [
+      {
+        "url": "https://e-vignettes.eu/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.vignette.id/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-aa6107fbcc42331d",
+      "type": "other",
+      "url": "https://e-vignettes.eu/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://e-vignettes.eu/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9ccf6b31157a81f8",
+      "type": "other",
+      "url": "https://api.vignette.id/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.vignette.id/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://e-vignettes.eu/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.e-vignettes/vignette-id"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

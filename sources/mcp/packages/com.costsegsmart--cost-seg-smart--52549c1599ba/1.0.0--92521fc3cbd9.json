@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.costsegsmart/cost-seg-smart",
+  "name": "com.costsegsmart/cost-seg-smart",
+  "displayName": "com.costsegsmart/cost-seg-smart",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cost segregation study pricing and Year-1 depreciation/tax-savings estimates for US properties.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.costsegsmart/cost-seg-smart",
+    "remotes": [
+      {
+        "url": "https://costsegsmart.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7af5bb599a81be9c",
+      "type": "other",
+      "url": "https://costsegsmart.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://costsegsmart.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jonhersh/cost-seg-smart-mcp",
+    "homepage": "https://costsegsmart.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.costsegsmart/cost-seg-smart"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

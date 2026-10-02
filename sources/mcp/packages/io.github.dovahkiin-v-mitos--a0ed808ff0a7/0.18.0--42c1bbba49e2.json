@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dovahkiin-v/mitos",
   "name": "io.github.dovahkiin-v/mitos",
+  "displayName": "Mitos",
   "version": "0.18.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Architectural decision memory for LLM-native workflows — markdown for humans, a graph for agents.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/dovahkiin-v/mitos",
-    "readme": "https://github.com/dovahkiin-v/mitos#readme"
-  },
-  "keywords": [
-    "Mitos"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mitos-adr",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mitos-adr",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0b57395a0cf3321e",
       "type": "registry",
-      "url": "https://pypi.org/project/mitos-adr/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mitos-adr",
+      "registry": "pypi",
+      "version": "0.18.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dovahkiin-v/mitos"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dovahkiin-v__mitos.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=195",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dovahkiin-v/mitos"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

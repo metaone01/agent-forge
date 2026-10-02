@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.saybanet/sayba-skill-market",
   "name": "io.github.saybanet/sayba-skill-market",
+  "displayName": "Sayba Skill Market",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Discover, invoke, publish, and rate AI Agent skills on Sayba platform",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/saybanet/sayba-skill-mcp-server",
-    "homepage": "https://ai.sayba.com",
-    "readme": "https://github.com/saybanet/sayba-skill-mcp-server#readme"
-  },
-  "keywords": [
-    "Sayba Skill Market"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "sayba-skill-market",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Discover, invoke, publish, and rate AI Agent skills on Sayba platform",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sayba-skill-market",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6957f8d4118e995f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/sayba-skill-market",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/saybanet/sayba-skill-mcp-server",
+    "homepage": "https://ai.sayba.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.saybanet__sayba-skill-market.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=325",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.saybanet/sayba-skill-market"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

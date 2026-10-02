@@ -2,50 +2,52 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ondeinference/onde-cli",
   "name": "io.github.ondeinference/onde-cli",
+  "displayName": "Onde Inference CLI",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "Manage your Onde Inference account and models: apps, model catalog, fine-tuned GGUF deploys.",
-  "license": "MIT OR Apache-2.0",
-  "links": {
-    "repository": "https://github.com/ondeinference/onde-cli",
-    "homepage": "https://ondeinference.com/cli",
-    "readme": "https://github.com/ondeinference/onde-cli#readme"
-  },
-  "keywords": [
-    "Onde Inference CLI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@ondeinference/cli",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Manage your Onde Inference account and models: apps, model catalog, fine-tuned GGUF deploys.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ondeinference/cli",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5069ca905ddcd34f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@ondeinference/cli",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.1"
+    },
+    {
+      "id": "upstream-341a7506dfd4bb8a",
+      "type": "registry",
+      "url": "https://www.nuget.org/packages/Onde.Cli",
+      "registry": "nuget",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ondeinference/onde-cli",
+    "homepage": "https://ondeinference.com/cli"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +60,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ondeinference__onde-cli.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ondeinference/onde-cli"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

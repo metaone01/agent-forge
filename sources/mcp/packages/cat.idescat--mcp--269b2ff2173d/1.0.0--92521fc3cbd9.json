@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cat.idescat/mcp",
+  "name": "cat.idescat/mcp",
+  "displayName": "Idescat MCP Server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query official statistics of Catalonia (Idescat): tables, metadata and JSON-stat data via MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cat.idescat/mcp",
+    "remotes": [
+      {
+        "url": "https://api.idescat.cat/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-87182e5e02f12a90",
+      "type": "other",
+      "url": "https://api.idescat.cat/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.idescat.cat/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/idescat/mcp",
+    "homepage": "https://www.idescat.cat/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cat.idescat/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.rustok-org/rustok-wallet",
   "name": "io.github.rustok-org/rustok-wallet",
+  "displayName": "io.github.rustok-org/rustok-wallet",
   "version": "0.4.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-custody Ethereum agent wallet (MCP/stdio). Keys stay in a local Docker volume.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/rustok-org/mcp",
-    "homepage": "https://github.com/rustok-org/mcp",
-    "readme": "https://github.com/rustok-org/mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/rustok-org/rustok-wallet:v0.4.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/rustok-org/rustok-wallet:v0.4.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/rustok-org/rustok-wallet",
-      "priority": 10,
+      "id": "upstream-3d1d648daa40af08",
+      "type": "oci",
+      "url": "https://ghcr.io/rustok-org/rustok-wallet:v0.4.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/rustok-org/mcp",
+    "homepage": "https://github.com/rustok-org/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rustok-org__rustok-wallet.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=299",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rustok-org/rustok-wallet"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

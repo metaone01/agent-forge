@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Sensie-agents/vibecheck",
   "name": "io.github.Sensie-agents/vibecheck",
+  "displayName": "SomaCheck Vibecheck",
   "version": "0.6.18",
-  "versionScheme": "semver",
-  "description": "SomaCheck returns proposition-specific Aligned or Unaligned plus model confidence.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@somacheck/vibecheck",
-    "homepage": "https://somacheck.com/docs/hosted-mcp"
-  },
-  "keywords": [
-    "SomaCheck Vibecheck"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@somacheck/vibecheck",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "SomaCheck returns proposition-specific Aligned or Unaligned plus model confidence.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@somacheck/vibecheck",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.somacheck.com/functions/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d0e4d8ace8e92ec4",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@somacheck/vibecheck",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.18"
+    },
+    {
+      "id": "upstream-62c08e22b44cba17",
+      "type": "other",
+      "url": "https://mcp.somacheck.com/functions/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.somacheck.com/functions/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://somacheck.com/docs/hosted-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sensie-agents__vibecheck.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=152",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Sensie-agents/vibecheck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

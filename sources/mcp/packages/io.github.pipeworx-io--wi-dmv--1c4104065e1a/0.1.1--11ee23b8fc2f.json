@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/wi-dmv",
+  "name": "io.github.pipeworx-io/wi-dmv",
+  "displayName": "Wi Dmv",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Wisconsin DMV MCP — every WisDOT DMV customer service center, with the services each",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/wi-dmv",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/wi-dmv/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f130a46f6c0766bd",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/wi-dmv/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/wi-dmv/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-wi-dmv",
+    "homepage": "https://pipeworx.io/packs/wi-dmv"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=289",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/wi-dmv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

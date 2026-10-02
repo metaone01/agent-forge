@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.KhizarShabir1/portfolio-signals",
+  "name": "io.github.KhizarShabir1/portfolio-signals",
+  "displayName": "io.github.KhizarShabir1/portfolio-signals",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time stock quotes and technical signals: RSI, MACD, SMA crossovers via Yahoo Finance.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "portfolio-signals-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://portfolio-signals-mcp.fly.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4de71ffe050e4ca6",
+      "type": "registry",
+      "url": "https://pypi.org/project/portfolio-signals-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-87148d415e1c0c89",
+      "type": "other",
+      "url": "https://portfolio-signals-mcp.fly.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://portfolio-signals-mcp.fly.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/KhizarShabir1/portfolio-signals-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=137",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.KhizarShabir1/portfolio-signals"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

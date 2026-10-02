@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.email.palisade/palisade",
+  "name": "email.palisade/palisade",
+  "displayName": "Palisade",
+  "version": "1.0.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Monitor and manage email authentication (SPF, DKIM, DMARC, MTA-STS, BIMI) for your domains.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@palisadeemail/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.palisade.email/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bf83bce81bc90ae2",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@palisadeemail/mcp",
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-259758d39684e0b3",
+      "type": "other",
+      "url": "https://api.palisade.email/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.palisade.email/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/palisadeemail/palisade-mcp",
+    "homepage": "https://www.palisade.email/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "email.palisade/palisade"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

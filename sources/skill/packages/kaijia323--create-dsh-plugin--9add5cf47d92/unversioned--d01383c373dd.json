@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.2e598ea7a3caac32ccadf06eaeeec1e2a8a8da8b8e1f9691363f745d9a9a1cfd",
+  "name": "kaijia323/create-dsh-plugin",
+  "displayName": "kaijia323/create-dsh-plugin",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "创建、开发、调试、打包 DeepSeek Harness（DSH）插件的 AI 技能。覆盖插件开发的完整流程：最小可加载插件、工具（tool）、事件监听、服务（service）、LLM 适配器（adapter）、插件配置，以及 cordis.yml / cordis.patch.yml 覆盖层编写、`dsh web --patch` 本地调试和 bundle 打包发布。基于官方文档编写，附可运行的",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/kaijia323/create-dsh-plugin",
+    "readme": "https://github.com/kaijia323/create-dsh-plugin/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/kaijia323/create-dsh-plugin"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "280"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.slshults/shakespeare-monologues",
+  "name": "io.github.slshults/shakespeare-monologues",
+  "displayName": "Shakespeare's Monologues",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search Shakespeare monologues, plays, paraphrases and summaries from shakespeare-monologues.org",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "shakespeare-monologues-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.shakespeare-monologues.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9cde97102b0ec71e",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/shakespeare-monologues-mcp",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-d1b67e0ddb06144c",
+      "type": "other",
+      "url": "https://mcp.shakespeare-monologues.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.shakespeare-monologues.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/slshults/shakespeare-monologues-mcp",
+    "homepage": "https://www.shakespeare-monologues.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=330",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.slshults/shakespeare-monologues"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

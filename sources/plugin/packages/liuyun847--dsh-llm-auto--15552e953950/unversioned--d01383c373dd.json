@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.b129977bd38b8042ab5f02bc76cfae9581a705b53f1acaeac9203b2585d00510",
+  "name": "liuyun847/dsh-llm-auto",
+  "displayName": "liuyun847/dsh-llm-auto",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 宿主插件:注册一个 `auto` 模型路由,内部按配置的有序链依次尝试多条「provider + model」;某条在**产出任何内容之前**失败时,先按官方同款策略在该路由内原地重试(瞬时错误白名单,默认 5 次),重试耗尽才静默切下一条,对上层表现为一个普通模型;并可用 compactWindow 把自动压缩点钉在指定 token 数附近。0.4.0 起自带浏览器半侧:插件页该",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/liuyun847/dsh-llm-auto",
+    "readme": "https://github.com/liuyun847/dsh-llm-auto#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/liuyun847/dsh-llm-auto"
+    }
+  ],
+  "keywords": [
+    "models",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15964"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15954"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

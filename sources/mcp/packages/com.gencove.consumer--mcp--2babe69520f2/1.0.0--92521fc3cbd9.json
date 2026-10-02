@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.gencove.consumer/mcp",
+  "name": "com.gencove.consumer/mcp",
+  "displayName": "com.gencove.consumer/mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Gencove consumer genomics: profile, kit status, ancestry, PRS, raw data. Requires Gencove auth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.gencove.consumer/mcp",
+    "remotes": [
+      {
+        "url": "https://consumer.gencove.com/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-36b3549942712697",
+      "type": "other",
+      "url": "https://consumer.gencove.com/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://consumer.gencove.com/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://consumer.gencove.com/developer/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=50",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.gencove.consumer/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

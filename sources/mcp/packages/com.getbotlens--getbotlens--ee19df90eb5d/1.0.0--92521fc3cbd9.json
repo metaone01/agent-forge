@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.getbotlens/getbotlens",
+  "name": "com.getbotlens/getbotlens",
+  "displayName": "BotLens AI Gateway",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP gateway for getbotlens.com: articles, search and full text. Read-only, no auth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.getbotlens/getbotlens",
+    "remotes": [
+      {
+        "url": "https://getbotlens.mcp.getbotlens.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-57d5bf5943ff7860",
+      "type": "other",
+      "url": "https://getbotlens.mcp.getbotlens.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://getbotlens.mcp.getbotlens.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://getbotlens.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=50",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.getbotlens/getbotlens"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

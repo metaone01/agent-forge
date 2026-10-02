@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.templated-io/mcp-server-templated",
   "name": "io.github.templated-io/mcp-server-templated",
+  "displayName": "Templated",
   "version": "1.7.1",
-  "versionScheme": "semver",
-  "description": "Generate images, videos and PDFs from templates. Manage templates, folders, uploads and fonts.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/templated-io/mcp-server-templated",
-    "homepage": "https://templated.io",
-    "readme": "https://github.com/templated-io/mcp-server-templated#readme"
-  },
-  "keywords": [
-    "Templated"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-server-templated",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate images, videos and PDFs from templates. Manage templates, folders, uploads and fonts.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-server-templated",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.templated.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9682332299cf23ae",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-server-templated",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.7.1"
+    },
+    {
+      "id": "upstream-a5ad139fb3cb0c8f",
+      "type": "other",
+      "url": "https://mcp.templated.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.templated.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/templated-io/mcp-server-templated",
+    "homepage": "https://templated.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.templated-io__mcp-server-templated.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=336",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.templated-io/mcp-server-templated"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

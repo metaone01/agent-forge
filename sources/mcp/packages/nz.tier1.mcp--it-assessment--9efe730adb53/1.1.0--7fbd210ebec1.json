@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.nz.tier1.mcp/it-assessment",
+  "name": "nz.tier1.mcp/it-assessment",
+  "displayName": "Tier1 IT Assessment",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only IT Health Check, domain security, recommendations, pricing, and draft enquiries.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "nz.tier1.mcp/it-assessment",
+    "remotes": [
+      {
+        "url": "https://mcp.tier1.nz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e5f9c9bec82fdd3b",
+      "type": "other",
+      "url": "https://mcp.tier1.nz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tier1.nz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://tier1.nz/resources/it-health-check/#mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "nz.tier1.mcp/it-assessment"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.XFuel-Lab/xfuel-mcp",
   "name": "io.github.XFuel-Lab/xfuel-mcp",
+  "displayName": "XFuel",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Submit AI inference to XFuel, pay per task (USDC via x402 or TFUEL), fetch/verify ZK proofs.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/XFuel-Lab/xfuel-protocol",
-    "homepage": "https://github.com/XFuel-Lab/xfuel-protocol/tree/main/xfuel-mcp#readme",
-    "readme": "https://github.com/XFuel-Lab/xfuel-protocol#readme"
-  },
-  "keywords": [
-    "XFuel"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "xfuel-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Submit AI inference to XFuel, pay per task (USDC via x402 or TFUEL), fetch/verify ZK proofs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "xfuel-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6b4b00be392cd19c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/xfuel-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/XFuel-Lab/xfuel-protocol",
+    "homepage": "https://github.com/XFuel-Lab/xfuel-protocol/tree/main/xfuel-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.xfuel-lab__xfuel-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=162",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.XFuel-Lab/xfuel-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

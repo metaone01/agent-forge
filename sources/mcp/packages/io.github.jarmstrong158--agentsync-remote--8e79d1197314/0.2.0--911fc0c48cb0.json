@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jarmstrong158/agentsync-remote",
+  "name": "io.github.jarmstrong158/agentsync-remote",
+  "displayName": "agentsync (remote)",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cloudflare Worker remote transport for agentsync. MCP 2026-07-28, dual-era, stateless.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.jarmstrong158/agentsync-remote",
+    "remotes": [
+      {
+        "url": "https://agentsync-remote.{account}.workers.dev/mcp/{token}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5b8b4257a39a8e41",
+      "type": "other",
+      "url": "https://agentsync-remote.{account}.workers.dev/mcp/{token}",
+      "install": {
+        "type": "api",
+        "url": "https://agentsync-remote.{account}.workers.dev/mcp/{token}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jarmstrong158/agentsync-remote"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=216",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jarmstrong158/agentsync-remote"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.city.close/close-api",
+  "name": "city.close/close-api",
+  "displayName": "Close API",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Walk, bike, and transit travel times from every US census block to nearby amenities.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "city.close/close-api",
+    "remotes": [
+      {
+        "url": "https://mcp.close.city/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3194b30e16d2d5d1",
+      "type": "other",
+      "url": "https://mcp.close.city/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.close.city/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/henryspatialanalysis/wtm.api",
+    "homepage": "https://docs.close.city/ai/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "city.close/close-api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

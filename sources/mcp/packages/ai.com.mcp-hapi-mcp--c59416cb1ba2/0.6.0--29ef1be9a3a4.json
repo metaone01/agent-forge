@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.ai.com.mcp/hapi-mcp",
   "name": "ai.com.mcp/hapi-mcp",
+  "displayName": "HAPI MCP Server",
   "version": "0.6.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "HAPI MCP server: Dynamically exposes OpenAPI REST APIs as MCP tools for AI assistants",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/larebelion/hapimcp",
-    "homepage": "https://docs.mcp.com.ai/components/hapi-server/hapi-cli",
-    "readme": "https://github.com/larebelion/hapimcp#readme"
-  },
-  "keywords": [
-    "HAPI MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/hapimcp/hapi-cli:0.6.0",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/hapimcp/hapi-cli:0.6.0",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/v2/repositories/hapimcp/hapi-cli/",
-      "priority": 10,
+      "id": "upstream-f6bbb9b644e52393",
+      "type": "oci",
+      "url": "https://docker.io/hapimcp/hapi-cli:0.6.0",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-4049df5ab2869da9",
+      "type": "other",
+      "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/larebelion/hapimcp",
+    "homepage": "https://docs.mcp.com.ai/components/hapi-server/hapi-cli"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.com.mcp__hapi-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.com.mcp/hapi-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

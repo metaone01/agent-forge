@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ipogrid/ipogrid",
+  "name": "com.ipogrid/ipogrid",
+  "displayName": "IPOGrid IPO Calendar & Filing Research",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "IPO calendar, SEC filings, deal terms, and IPO news research via the IPOGrid MCP server.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ipogrid/ipogrid",
+    "remotes": [
+      {
+        "url": "https://ipogrid.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-624493a123d75566",
+      "type": "other",
+      "url": "https://ipogrid.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ipogrid.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=55",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ipogrid/ipogrid"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

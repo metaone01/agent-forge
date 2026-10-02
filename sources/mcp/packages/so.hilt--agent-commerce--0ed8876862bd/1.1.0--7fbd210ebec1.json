@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.so.hilt/agent-commerce",
+  "name": "so.hilt/agent-commerce",
+  "displayName": "Hilt Pay Agent Commerce",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "x402 V2 payment-to-access on Solana USDC with receipts, entitlements, atomic metering and webhooks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "so.hilt/agent-commerce",
+    "remotes": [
+      {
+        "url": "https://api.hilt.so/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-35ef406c471b93e5",
+      "type": "other",
+      "url": "https://api.hilt.so/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.hilt.so/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "so.hilt/agent-commerce"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

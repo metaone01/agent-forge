@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.senolsahan037-oss/loom",
   "name": "io.github.senolsahan037-oss/loom",
+  "displayName": "Loom by SubverseLab",
   "version": "0.4.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Reads your own Ableton projects and writes MIDI, chains and markers into a running Live set.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/senolsahan037-oss/loom",
-    "homepage": "https://subverselab.com/loom",
-    "readme": "https://github.com/senolsahan037-oss/loom#readme"
-  },
-  "keywords": [
-    "Loom by SubverseLab"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/senolsahan037-oss/loom/releases/download/v0.4.4/loom-0.4.4.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/senolsahan037-oss/loom/releases/download/v0.4.4/loom-0.4.4.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-28c061e333ab9c6f",
+      "type": "archive",
       "url": "https://github.com/senolsahan037-oss/loom/releases/download/v0.4.4/loom-0.4.4.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.4.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/senolsahan037-oss/loom",
+    "homepage": "https://subverselab.com/loom"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.senolsahan037-oss__loom.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=327",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.senolsahan037-oss/loom"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

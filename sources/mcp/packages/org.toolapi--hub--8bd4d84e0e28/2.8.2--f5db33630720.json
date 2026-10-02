@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.toolapi/hub",
+  "name": "org.toolapi/hub",
+  "displayName": "ToolAPI",
+  "version": "2.8.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free public MCP for AI agents — 193 tools, 44 workflows. No API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.toolapi/hub",
+    "remotes": [
+      {
+        "url": "https://toolapi.org/sse",
+        "transport": "sse"
+      },
+      {
+        "url": "https://toolapi.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9fd6cf17cbec51c9",
+      "type": "other",
+      "url": "https://toolapi.org/sse",
+      "install": {
+        "type": "api",
+        "url": "https://toolapi.org/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8ffe350dca237c65",
+      "type": "other",
+      "url": "https://toolapi.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://toolapi.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/baohuiwb/toolapi",
+    "homepage": "https://toolapi.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.toolapi/hub"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

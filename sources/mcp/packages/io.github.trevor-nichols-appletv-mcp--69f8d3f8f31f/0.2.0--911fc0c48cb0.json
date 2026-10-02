@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.trevor-nichols/appletv-mcp",
   "name": "io.github.trevor-nichols/appletv-mcp",
+  "displayName": "Apple TV MCP",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local MCP server for semantic Apple TV control with optional screenshots.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/trevor-nichols/appletv-mcp",
-    "homepage": "https://github.com/trevor-nichols/appletv-mcp",
-    "readme": "https://github.com/trevor-nichols/appletv-mcp#readme"
-  },
-  "keywords": [
-    "Apple TV MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "appletv-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "appletv-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0948cbb831c3c04a",
       "type": "registry",
-      "url": "https://pypi.org/project/appletv-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/appletv-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/trevor-nichols/appletv-mcp",
+    "homepage": "https://github.com/trevor-nichols/appletv-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.trevor-nichols__appletv-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=342",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.trevor-nichols/appletv-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.white-hat-lab/agent-toolkit",
   "name": "io.github.white-hat-lab/agent-toolkit",
+  "displayName": "io.github.white-hat-lab/agent-toolkit",
   "version": "0.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Pay-per-call developer utilities and npm supply-chain security tools for coding agents, over x402.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/white-hat-lab/agent-toolkit-mcp",
-    "readme": "https://github.com/white-hat-lab/agent-toolkit-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "agent-toolkit-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agent-toolkit-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6c15da071d7daf55",
       "type": "registry",
       "url": "https://www.npmjs.com/package/agent-toolkit-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/white-hat-lab/agent-toolkit-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.white-hat-lab__agent-toolkit.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=350",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.white-hat-lab/agent-toolkit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

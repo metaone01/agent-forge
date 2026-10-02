@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dcondrey/misterdev",
   "name": "io.github.dcondrey/misterdev",
+  "displayName": "io.github.dcondrey/misterdev",
   "version": "0.6.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Autonomous LLM build orchestrator that plans, edits, and verifies code across languages.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/dcondrey/misterdev",
-    "readme": "https://github.com/dcondrey/misterdev#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "misterdev",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "misterdev",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ec661ba1c4e9bc40",
       "type": "registry",
-      "url": "https://pypi.org/project/misterdev/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/misterdev",
+      "registry": "pypi",
+      "version": "0.6.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dcondrey/misterdev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dcondrey__misterdev.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=192",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dcondrey/misterdev"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

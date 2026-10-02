@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.9d363938f6107289854cc076c81191f7d1f99776a077127c9eb5adc1cdd9e79b",
+  "name": "polaris-smart/dsh-agent-mailbox",
+  "displayName": "polaris-smart/dsh-agent-mailbox",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "dsh (DeepSeek Harness) 跨 agent 信箱插件：让 dsh 会话内的 agent 通过 agent-mailbox 与本机其他 agent（Claude Code / OpenCode / Hermes…）互发消息、收任务卡、卡动即唤醒。零 npm 依赖，Node 22 即装即用。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/polaris-smart/dsh-agent-mailbox",
+    "readme": "https://github.com/polaris-smart/dsh-agent-mailbox#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/polaris-smart/dsh-agent-mailbox"
+    },
+    {
+      "id": "npm-33911e24bb65",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-agent-mailbox",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "interop",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14589"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14955"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-agent-mailbox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.markmnl/fmsg-mcp",
+  "name": "io.github.markmnl/fmsg-mcp",
+  "displayName": "fmsg",
+  "version": "0.2.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Federated messaging with your fmsg hosting provider. Connect with OAuth or an API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@markmnl/fmsg-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://{oauth_mcp_endpoint}",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://{api_key_mcp_endpoint}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-071f2a205809f4e4",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@markmnl/fmsg-mcp",
+      "registry": "npm",
+      "version": "0.2.3"
+    },
+    {
+      "id": "upstream-2c3b2a9b5e675dd0",
+      "type": "other",
+      "url": "https://{oauth_mcp_endpoint}",
+      "install": {
+        "type": "api",
+        "url": "https://{oauth_mcp_endpoint}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-403d0a02508e1be5",
+      "type": "other",
+      "url": "https://{api_key_mcp_endpoint}",
+      "install": {
+        "type": "api",
+        "url": "https://{api_key_mcp_endpoint}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/markmnl/fmsg-mcp",
+    "homepage": "https://github.com/markmnl/fmsg-mcp#readme"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=233",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.markmnl/fmsg-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,46 +2,66 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Apoth3osis-ai/agent-payment-mcp",
   "name": "io.github.Apoth3osis-ai/agent-payment-mcp",
+  "displayName": "io.github.Apoth3osis-ai/agent-payment-mcp",
   "version": "1.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Secure MCP router providing access to AgentPMT's pay-per-use AI tools marketplace.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Apoth3osis-ai/agent-payment-mcp",
-    "readme": "https://github.com/Apoth3osis-ai/agent-payment-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Apoth3osis-ai/agent-payment-mcp/releases/download/v1.1.0/agent-payment-router-linux-amd64",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Apoth3osis-ai/agent-payment-mcp/releases/download/v1.1.0/agent-payment-router-linux-amd64",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-1800b21e2405f917",
+      "type": "archive",
       "url": "https://github.com/Apoth3osis-ai/agent-payment-mcp/releases/download/v1.1.0/agent-payment-router-linux-amd64",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-b46bbcb6456a2794",
+      "type": "archive",
+      "url": "https://github.com/Apoth3osis-ai/agent-payment-mcp/releases/download/v1.1.0/agent-payment-router-darwin-amd64",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-9b7013d7c7433c5f",
+      "type": "archive",
+      "url": "https://github.com/Apoth3osis-ai/agent-payment-mcp/releases/download/v1.1.0/agent-payment-router-darwin-arm64",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-e4f03d8c223aef47",
+      "type": "archive",
+      "url": "https://github.com/Apoth3osis-ai/agent-payment-mcp/releases/download/v1.1.0/agent-payment-router-windows-amd64.exe",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-dbe276c0aa2330a2",
+      "type": "archive",
+      "url": "https://github.com/Apoth3osis-ai/agent-payment-mcp/releases/download/v1.1.0/agent-payment-router-linux-arm64",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Apoth3osis-ai/agent-payment-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +74,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.apoth3osis-ai__agent-payment-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Apoth3osis-ai/agent-payment-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wyre-technology/avanan-mcp",
   "name": "io.github.wyre-technology/avanan-mcp",
+  "displayName": "Avanan",
   "version": "2.2.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Check Point Harmony Email & Collaboration (Avanan) email security.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/wyre-technology/avanan-mcp",
-    "homepage": "https://github.com/wyre-technology/avanan-mcp",
-    "readme": "https://github.com/wyre-technology/avanan-mcp#readme"
-  },
-  "keywords": [
-    "Avanan"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-technology/avanan-mcp:v2.2.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-technology/avanan-mcp:v2.2.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-technology/avanan-mcp",
-      "priority": 10,
+      "id": "upstream-6dc2152c9a0c7d57",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-technology/avanan-mcp:v2.2.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wyre-technology/avanan-mcp",
+    "homepage": "https://github.com/wyre-technology/avanan-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-technology__avanan-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=351",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wyre-technology/avanan-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

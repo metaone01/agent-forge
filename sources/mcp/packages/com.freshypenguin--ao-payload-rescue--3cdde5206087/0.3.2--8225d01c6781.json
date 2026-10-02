@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.freshypenguin/ao-payload-rescue",
+  "name": "com.freshypenguin/ao-payload-rescue",
+  "displayName": "Austin Oaks Payload Rescue",
+  "version": "0.3.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Repair malformed JSON that fails a schema. Deterministic only; refuses to guess; signed receipt.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.freshypenguin/ao-payload-rescue",
+    "remotes": [
+      {
+        "url": "https://ao-payload-rescue-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3ca01a5f44d4aba8",
+      "type": "other",
+      "url": "https://ao-payload-rescue-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ao-payload-rescue-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ao-payload-rescue-production.up.railway.app/mcp/info"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=49",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.freshypenguin/ao-payload-rescue"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

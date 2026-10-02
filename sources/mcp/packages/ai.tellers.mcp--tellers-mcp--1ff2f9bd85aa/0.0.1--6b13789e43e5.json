@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.tellers.mcp/tellers-mcp",
+  "name": "ai.tellers.mcp/tellers-mcp",
+  "displayName": "Tellers.AI",
+  "version": "0.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "This MCP lets your agent edit your videos, generate voiceovers, AI clips, titles, motion, music, etc",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.tellers.mcp/tellers-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.tellers.ai",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.tellers.ai",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-80b07e7afdfcb82c",
+      "type": "other",
+      "url": "https://mcp.tellers.ai",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tellers.ai"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-cb6d4fa8cbb2218a",
+      "type": "other",
+      "url": "https://mcp.tellers.ai",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tellers.ai"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://tellers.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=15",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.tellers.mcp/tellers-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

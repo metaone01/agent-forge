@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.61219568de798af9f4353ce2ee7480616fb1beef9d1da8ca5af3361ac2c34e5b",
+  "name": "zhanxin-xu/dsh-sandbox-escalation-prompt",
+  "displayName": "zhanxin-xu/dsh-sandbox-escalation-prompt",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 插件：向系统提示词注入 sandbox_permissions 升级纪律（仅在当前沙箱模式确实不够、且需要更高权限时才请求升级；不得申请同级权限，justification 只随真实升级一起出现）。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/zhanxin-xu/dsh-sandbox-escalation-prompt",
+    "readme": "https://github.com/zhanxin-xu/dsh-sandbox-escalation-prompt#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/zhanxin-xu/dsh-sandbox-escalation-prompt"
+    }
+  ],
+  "keywords": [
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16995"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

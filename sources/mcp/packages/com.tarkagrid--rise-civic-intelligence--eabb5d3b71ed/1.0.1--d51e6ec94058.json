@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.tarkagrid/rise-civic-intelligence",
+  "name": "com.tarkagrid/rise-civic-intelligence",
+  "displayName": "TarkaGrid Civic Intelligence",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Civic data MCP: flood zones, 311 density, census for real addresses (Montgomery AL, Baltimore MD).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.tarkagrid/rise-civic-intelligence",
+    "remotes": [
+      {
+        "url": "https://mcp.tarkagrid.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.tarkagrid.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5c36a967b19be157",
+      "type": "other",
+      "url": "https://mcp.tarkagrid.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tarkagrid.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-35b2ee3fe79e27fb",
+      "type": "other",
+      "url": "https://mcp.tarkagrid.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tarkagrid.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=80",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.tarkagrid/rise-civic-intelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

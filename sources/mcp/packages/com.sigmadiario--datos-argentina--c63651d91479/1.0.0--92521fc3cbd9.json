@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.sigmadiario/datos-argentina",
+  "name": "com.sigmadiario/datos-argentina",
+  "displayName": "SigmaDiario — Datos de Argentina",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live Argentina data: dolar rates, quiniela and lotteries, holidays, river levels, inflation, news.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.sigmadiario/datos-argentina",
+    "remotes": [
+      {
+        "url": "https://sigmadiario.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-dda09ee8fb71a472",
+      "type": "other",
+      "url": "https://sigmadiario.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://sigmadiario.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://sigmadiario.com/desarrolladores"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=76",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.sigmadiario/datos-argentina"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

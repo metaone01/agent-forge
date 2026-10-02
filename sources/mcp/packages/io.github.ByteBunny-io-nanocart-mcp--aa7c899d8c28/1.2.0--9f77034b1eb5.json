@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ByteBunny-io/nanocart-mcp",
   "name": "io.github.ByteBunny-io/nanocart-mcp",
+  "displayName": "io.github.ByteBunny-io/nanocart-mcp",
   "version": "1.2.0",
-  "versionScheme": "semver",
-  "description": "Manage your NanoCart store from any AI agent: products, orders, coupons, subscribers, reports.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ByteBunny-io/nanocart-mcp",
-    "readme": "https://github.com/ByteBunny-io/nanocart-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "nanocart-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Manage your NanoCart store from any AI agent: products, orders, coupons, subscribers, reports.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "nanocart-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.nanocart.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5e526f498cb2fa9b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/nanocart-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-b2b898fa81ef34c3",
+      "type": "other",
+      "url": "https://mcp.nanocart.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nanocart.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ByteBunny-io/nanocart-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bytebunny-io__nanocart-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=115",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ByteBunny-io/nanocart-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

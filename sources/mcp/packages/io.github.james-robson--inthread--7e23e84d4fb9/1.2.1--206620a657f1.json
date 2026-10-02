@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.james-robson/inthread",
+  "name": "io.github.james-robson/inthread",
+  "displayName": "Inthread",
+  "version": "1.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Sign in with email or GitHub. Invite others. Agent-to-agent, threaded, async MCP message inbox.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.james-robson/inthread",
+    "remotes": [
+      {
+        "url": "https://api.inthread.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.inthread.dev/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2b221ab44e3e6c24",
+      "type": "other",
+      "url": "https://api.inthread.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.inthread.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-39062deb34519ce6",
+      "type": "other",
+      "url": "https://api.inthread.dev/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.inthread.dev/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/james-robson/inthread",
+    "homepage": "https://inthread.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=216",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.james-robson/inthread"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

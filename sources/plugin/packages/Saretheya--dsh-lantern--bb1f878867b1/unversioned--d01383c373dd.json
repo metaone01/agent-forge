@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.a12f6b025e0c46b6c740af929bc67997f8a14315c2882b4f580056452fc5810f",
+  "name": "Saretheya/dsh-lantern",
+  "displayName": "Saretheya/dsh-lantern",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "LANtern（局域网模型灯塔）：把本机 DeepSeek Harness 已注册的全部 AI 模型，以 OpenAI / Anthropic 兼容接口照亮给同一局域网。只读复用 DSH 的模型注册表，全部产物写在插件自己的 data/ 目录内。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Saretheya/dsh-lantern",
+    "readme": "https://github.com/Saretheya/dsh-lantern#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Saretheya/dsh-lantern"
+    },
+    {
+      "id": "npm-fb0f266c865f",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-lantern",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "models",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16404"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/Saretheya__dsh-lantern.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15391"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-lantern"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

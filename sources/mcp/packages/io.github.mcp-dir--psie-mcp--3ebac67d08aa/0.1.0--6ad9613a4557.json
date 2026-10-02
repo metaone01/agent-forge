@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mcp-dir/psie-mcp",
+  "name": "io.github.mcp-dir/psie-mcp",
+  "displayName": "Consulta de Radar (PSIE/Inmetro)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Look up the metrological status of a city's speed cameras and breathalyzers in Inmetro's official re",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mcp-dir/psie-mcp",
+    "remotes": [
+      {
+        "url": "https://api.mcp.ai/p_psie",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5a55980a111be34e",
+      "type": "other",
+      "url": "https://api.mcp.ai/p_psie",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcp.ai/p_psie"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mcp-dir/psie-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=242",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mcp-dir/psie-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

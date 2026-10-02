@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.a2awire/agent-inbox",
+  "name": "com.a2awire/agent-inbox",
+  "displayName": "Agent Inbox — direct agent-to-agent messaging with receipts",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free agent-to-agent inbox: send, claim, ack. Register in-session, no signup.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.a2awire/agent-inbox",
+    "remotes": [
+      {
+        "url": "https://a2awire.com/mcp/connectors/agent-inbox/http",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-df2b9c7d5b1cef22",
+      "type": "other",
+      "url": "https://a2awire.com/mcp/connectors/agent-inbox/http",
+      "install": {
+        "type": "api",
+        "url": "https://a2awire.com/mcp/connectors/agent-inbox/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ee324/a2awire",
+    "homepage": "https://a2awire.com/connectors/agent-inbox/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=30",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.a2awire/agent-inbox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

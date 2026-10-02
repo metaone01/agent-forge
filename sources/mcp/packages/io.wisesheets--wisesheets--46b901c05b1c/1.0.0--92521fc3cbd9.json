@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.wisesheets/wisesheets",
+  "name": "io.wisesheets/wisesheets",
+  "displayName": "Wisesheets Financial Data",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Financial statements, metrics, dividends, and price data for public companies.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.wisesheets/wisesheets",
+    "remotes": [
+      {
+        "url": "https://mcp.wisesheets.io/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4063df1e5b9c47e6",
+      "type": "other",
+      "url": "https://mcp.wisesheets.io/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.wisesheets.io/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=363",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.wisesheets/wisesheets"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

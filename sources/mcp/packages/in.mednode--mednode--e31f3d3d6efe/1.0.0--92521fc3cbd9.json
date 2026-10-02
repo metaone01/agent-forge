@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.in.mednode/mednode",
+  "name": "in.mednode/mednode",
+  "displayName": "in.mednode/mednode",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your MedNode health vault in your AI assistant — records, summaries, labs, appointments.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "in.mednode/mednode",
+    "remotes": [
+      {
+        "url": "https://mcp.mednode.in/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f35f11bf652e2abc",
+      "type": "other",
+      "url": "https://mcp.mednode.in/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mednode.in/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mednode.in/connect-ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "in.mednode/mednode"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

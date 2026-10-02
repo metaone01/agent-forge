@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.com.scrapeer/mcp-server",
   "name": "com.scrapeer/mcp-server",
+  "displayName": "Scrapeer",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Run Scrapeer visual web-scraping flows from AI agents.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Scrapeer/scrapeer-mcp-server",
-    "homepage": "https://www.scrapeer.com",
-    "readme": "https://github.com/Scrapeer/scrapeer-mcp-server#readme"
-  },
-  "keywords": [
-    "Scrapeer"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@scrapeer/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Run Scrapeer visual web-scraping flows from AI agents.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@scrapeer/mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-817765e9adfe47a6",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@scrapeer/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Scrapeer/scrapeer-mcp-server",
+    "homepage": "https://www.scrapeer.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.scrapeer__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=75",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.scrapeer/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

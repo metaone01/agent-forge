@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.spshkar84/madb-memory",
   "name": "io.github.spshkar84/madb-memory",
+  "displayName": "MADB — Agent Memory Database",
   "version": "0.2.10",
-  "versionScheme": "semver",
-  "description": "Durable causal memory for AI agents — semantic recall, causal lineage, and skills. Local-first.",
-  "license": "Meta-Agents.AI Proprietary License v1.0",
-  "links": {
-    "repository": "https://github.com/spshkar84/madb-meta-agents-db",
-    "readme": "https://github.com/spshkar84/madb-meta-agents-db#readme"
-  },
-  "keywords": [
-    "MADB — Agent Memory Database"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "madb-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Durable causal memory for AI agents — semantic recall, causal lineage, and skills. Local-first.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "madb-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1fece28608b64c80",
       "type": "registry",
-      "url": "https://pypi.org/project/madb-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/madb-mcp-server",
+      "registry": "pypi",
+      "version": "0.2.10"
     }
   ],
+  "links": {
+    "repository": "https://github.com/spshkar84/madb-meta-agents-db"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.spshkar84__madb-memory.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=332",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.spshkar84/madb-memory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

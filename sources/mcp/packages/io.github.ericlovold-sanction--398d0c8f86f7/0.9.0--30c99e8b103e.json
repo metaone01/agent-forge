@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ericlovold/sanction",
   "name": "io.github.ericlovold/sanction",
+  "displayName": "Sanction",
   "version": "0.9.0",
-  "versionScheme": "semver",
-  "description": "The wallet an AI agent carries — mandate, budget, vault, and audit. Counterparties verify first.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ericlovold/sanction",
-    "homepage": "https://getsanction.com",
-    "readme": "https://github.com/ericlovold/sanction#readme"
-  },
-  "keywords": [
-    "Sanction"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "sanction-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "The wallet an AI agent carries — mandate, budget, vault, and audit. Counterparties verify first.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sanction-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c6d3a85a7d466806",
       "type": "registry",
       "url": "https://www.npmjs.com/package/sanction-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.9.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ericlovold/sanction",
+    "homepage": "https://getsanction.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ericlovold__sanction.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=199",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ericlovold/sanction"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.agentnexus/agent-nexus",
+  "name": "app.agentnexus/agent-nexus",
+  "displayName": "Agent Nexus",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "180+ tested APIs, MCP servers and CLIs your agent can call. Self-service key in one call.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.agentnexus/agent-nexus",
+    "remotes": [
+      {
+        "url": "https://agentnexus.app/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agentnexus.app/api/public/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a1f0c82300d0285f",
+      "type": "other",
+      "url": "https://agentnexus.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentnexus.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-62355d2ed6d9f013",
+      "type": "other",
+      "url": "https://agentnexus.app/api/public/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentnexus.app/api/public/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agentnexus.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.agentnexus/agent-nexus"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

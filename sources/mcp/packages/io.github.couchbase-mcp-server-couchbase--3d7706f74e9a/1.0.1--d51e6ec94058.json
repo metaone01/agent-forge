@@ -2,48 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.couchbase/mcp-server-couchbase",
   "name": "io.github.couchbase/mcp-server-couchbase",
+  "displayName": "io.github.couchbase/mcp-server-couchbase",
   "version": "1.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Couchbase MCP Server - Enable AI agents to connect to and interact with Couchbase clusters.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/couchbase/mcp-server-couchbase",
-    "homepage": "https://mcp-server.couchbase.com/",
-    "readme": "https://github.com/couchbase/mcp-server-couchbase#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "couchbase-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "couchbase-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f494721de1a262bb",
       "type": "registry",
-      "url": "https://pypi.org/project/couchbase-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/couchbase-mcp-server",
+      "registry": "pypi",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-6e2fe55dc3fa9675",
+      "type": "oci",
+      "url": "https://docker.io/couchbase/mcp-server:1.0.1",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/couchbase/mcp-server-couchbase",
+    "homepage": "https://mcp-server.couchbase.com/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.couchbase__mcp-server-couchbase.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.couchbase/mcp-server-couchbase"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

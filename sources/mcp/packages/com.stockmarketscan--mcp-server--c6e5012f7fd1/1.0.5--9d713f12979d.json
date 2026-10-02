@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.stockmarketscan/mcp-server",
+  "name": "com.stockmarketscan/mcp-server",
+  "displayName": "StockMarketScan",
+  "version": "1.0.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "18 tools for US stock screeners, chart patterns, options flow signals and equities research.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.stockmarketscan/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.stockmarketscan.com/mcp",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9b69ae0670eacc2a",
+      "type": "other",
+      "url": "https://mcp.stockmarketscan.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.stockmarketscan.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/stockmarketscan/mcp-server",
+    "homepage": "https://stockmarketscan.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=78",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.stockmarketscan/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

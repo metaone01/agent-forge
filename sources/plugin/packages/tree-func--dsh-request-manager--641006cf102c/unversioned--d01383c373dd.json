@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.72a9fb9acbf4a0e6e266182a88dadf440ba0dbc80e7901aa1f04f1500165df72",
+  "name": "tree-func/dsh-request-manager",
+  "displayName": "tree-func/dsh-request-manager",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "请求管理插件（bundle）：按全局配置管理 Agent→LLM 请求——「请求额外间隔」（每个请求发送前固定多等 N 毫秒，0=不介入）、重试次数覆盖（留空=沿用 provider 默认）、拦截「请求失败」（终态失败后挂起等待人工决议：重试原地重发同一请求 / 放弃按原生路径终结）。入口为会话头部 utilities 槽位的「请求管理」按钮；设置跨会话全局生效，按值决定是否介入；界面跟随",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/tree-func/dsh-request-manager",
+    "readme": "https://github.com/tree-func/dsh-request-manager#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/tree-func/dsh-request-manager"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "8021"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "7002"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "10042"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "10267"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

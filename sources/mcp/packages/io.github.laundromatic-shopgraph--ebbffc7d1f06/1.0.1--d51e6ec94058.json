@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.laundromatic/shopgraph",
   "name": "io.github.laundromatic/shopgraph",
+  "displayName": "io.github.laundromatic/shopgraph",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Clean product data from any URL. Schema.org + AI extraction. 200 free calls/month.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/laundromatic/shopgraph",
-    "readme": "https://github.com/laundromatic/shopgraph#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "shopgraph",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "streamable-http"
-  },
+  "description": "Clean product data from any URL. Schema.org + AI extraction. 200 free calls/month.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "shopgraph",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://shopgraph.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cd222ddf1693e2ef",
       "type": "registry",
       "url": "https://www.npmjs.com/package/shopgraph",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-0187a21f9fddb8fe",
+      "type": "other",
+      "url": "https://shopgraph.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://shopgraph.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/laundromatic/shopgraph"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.laundromatic__shopgraph.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=227",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.laundromatic/shopgraph"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

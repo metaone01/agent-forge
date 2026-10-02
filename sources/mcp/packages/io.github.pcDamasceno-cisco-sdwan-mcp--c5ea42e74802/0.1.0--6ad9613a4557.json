@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pcDamasceno/cisco-sdwan-mcp",
   "name": "io.github.pcDamasceno/cisco-sdwan-mcp",
+  "displayName": "Cisco SD-WAN MCP Server",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "MCP server for Cisco Catalyst SD-WAN (vManage): fabric inventory, device health, alarms, policies.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/pcDamasceno/cisco-sdwan-mcp",
-    "homepage": "https://github.com/pcDamasceno/cisco-sdwan-mcp#readme",
-    "readme": "https://github.com/pcDamasceno/cisco-sdwan-mcp#readme"
-  },
-  "keywords": [
-    "Cisco SD-WAN MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "cisco-sdwan-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Cisco Catalyst SD-WAN (vManage): fabric inventory, device health, alarms, policies.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "cisco-sdwan-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c9dfb1f52e76f31d",
       "type": "registry",
-      "url": "https://pypi.org/project/cisco-sdwan-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/cisco-sdwan-mcp",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/pcDamasceno/cisco-sdwan-mcp",
+    "homepage": "https://github.com/pcDamasceno/cisco-sdwan-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pcdamasceno__cisco-sdwan-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=271",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pcDamasceno/cisco-sdwan-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

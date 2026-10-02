@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kevynf/akbridge",
   "name": "io.github.kevynf/akbridge",
+  "displayName": "AKBridge",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Search and call AKShare financial data interfaces through three routed MCP tools",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/kevynf/akbridge",
-    "readme": "https://github.com/kevynf/akbridge#readme"
-  },
-  "keywords": [
-    "AKBridge"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "akbridge",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Search and call AKShare financial data interfaces through three routed MCP tools",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "akbridge",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-31b004dd4e3ca147",
       "type": "registry",
-      "url": "https://pypi.org/project/akbridge/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/akbridge",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kevynf/akbridge"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kevynf__akbridge.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=224",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kevynf/akbridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

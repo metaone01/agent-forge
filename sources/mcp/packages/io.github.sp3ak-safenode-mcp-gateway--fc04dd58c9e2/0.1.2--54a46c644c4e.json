@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sp3ak/safenode-mcp-gateway",
   "name": "io.github.sp3ak/safenode-mcp-gateway",
+  "displayName": "SafeNode MCP Gateway",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Policy proxy for MCP tool calls. A denied call never reaches the downstream server.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/sp3ak/safenode-mcp-gateway",
-    "homepage": "https://safenode.tech",
-    "readme": "https://github.com/sp3ak/safenode-mcp-gateway#readme"
-  },
-  "keywords": [
-    "SafeNode MCP Gateway"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "safenode-mcp-gateway",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Policy proxy for MCP tool calls. A denied call never reaches the downstream server.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "safenode-mcp-gateway",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e1d3bce5f5e6a597",
       "type": "registry",
       "url": "https://www.npmjs.com/package/safenode-mcp-gateway",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sp3ak/safenode-mcp-gateway",
+    "homepage": "https://safenode.tech"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sp3ak__safenode-mcp-gateway.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=331",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sp3ak/safenode-mcp-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

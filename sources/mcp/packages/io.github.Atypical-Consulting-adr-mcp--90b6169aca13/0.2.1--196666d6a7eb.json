@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Atypical-Consulting/adr-mcp",
   "name": "io.github.Atypical-Consulting/adr-mcp",
+  "displayName": "AdrMcp",
   "version": "0.2.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Architectural Decision Records: navigate, author, validate, link, and analyze them.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Atypical-Consulting/AdrMcp",
-    "homepage": "https://atypical-consulting.github.io/AdrMcp/",
-    "readme": "https://github.com/Atypical-Consulting/AdrMcp#readme"
-  },
-  "keywords": [
-    "AdrMcp"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "AdrMcp",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "AdrMcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-643c3466434322c2",
       "type": "registry",
       "url": "https://www.nuget.org/packages/AdrMcp",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Atypical-Consulting/AdrMcp",
+    "homepage": "https://atypical-consulting.github.io/AdrMcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.atypical-consulting__adr-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=112",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Atypical-Consulting/adr-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

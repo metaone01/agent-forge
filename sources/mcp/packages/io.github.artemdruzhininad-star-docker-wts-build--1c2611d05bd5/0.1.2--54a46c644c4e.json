@@ -2,46 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.artemdruzhininad-star/docker-wts-build",
   "name": "io.github.artemdruzhininad-star/docker-wts-build",
+  "displayName": "io.github.artemdruzhininad-star/docker-wts-build",
   "version": "0.1.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Schedule Docker builds via Windows Task Scheduler — survives VS Code terminal timeouts",
   "license": "unknown",
-  "links": {
-    "repository": "https://pypi.org/project/docker-wts-build/"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "docker-wts-build",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "docker-wts-build",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5f1942084801116c",
       "type": "registry",
-      "url": "https://pypi.org/project/docker-wts-build/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/docker-wts-build",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.artemdruzhininad-star__docker-wts-build.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=172",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.artemdruzhininad-star/docker-wts-build"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.niftypm/mcp-server",
+  "name": "com.niftypm/mcp-server",
+  "displayName": "com.niftypm/mcp-server",
+  "version": "0.8.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Nifty's MCP server — exposes tasks, projects, messages, and files as tools for AI agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.niftypm/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.niftypm.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4dab3b7369549096",
+      "type": "other",
+      "url": "https://mcp.niftypm.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.niftypm.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=65",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.niftypm/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

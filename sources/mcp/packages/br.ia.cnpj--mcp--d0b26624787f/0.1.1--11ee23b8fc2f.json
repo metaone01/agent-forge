@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.br.ia.cnpj/mcp",
+  "name": "br.ia.cnpj/mcp",
+  "displayName": "cnpj.ia.br",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Empresas do Brasil (CNPJ): consulta por CNPJ, busca por filtros e uso da conta.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "br.ia.cnpj/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.cnpj.ia.br",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4a50e36828e98328",
+      "type": "other",
+      "url": "https://mcp.cnpj.ia.br",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cnpj.ia.br"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Atmosphere-Technologies/atmosphere_app",
+    "homepage": "https://cnpj.ia.br/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "br.ia.cnpj/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

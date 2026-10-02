@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.flyfish-dev/word-ai",
   "name": "io.github.flyfish-dev/word-ai",
+  "displayName": "Word AI",
   "version": "0.8.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Structure-preserving Word DOCX editing MCP server and Office.js bridge for AI agents.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/flyfish-dev/word-ai",
-    "readme": "https://github.com/flyfish-dev/word-ai#readme"
-  },
-  "keywords": [
-    "Word AI"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/flyfish-dev/word-ai/releases/download/v0.8.6/word-ai-0.8.6.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/flyfish-dev/word-ai/releases/download/v0.8.6/word-ai-0.8.6.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-35942f3c7fb59f74",
+      "type": "archive",
       "url": "https://github.com/flyfish-dev/word-ai/releases/download/v0.8.6/word-ai-0.8.6.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/flyfish-dev/word-ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.flyfish-dev__word-ai.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.flyfish-dev/word-ai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

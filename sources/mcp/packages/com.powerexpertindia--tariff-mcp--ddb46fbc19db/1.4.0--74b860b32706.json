@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.powerexpertindia/tariff-mcp",
+  "name": "com.powerexpertindia/tariff-mcp",
+  "displayName": "Power Expert India Regulatory Tariff MCP",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Indian electricity tariff and bill-verification MCP with fail-closed regulatory execution.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.powerexpertindia/tariff-mcp",
+    "remotes": [
+      {
+        "url": "https://powerexpertindia.com/api/mcp/index.php",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c63dce508b373c25",
+      "type": "other",
+      "url": "https://powerexpertindia.com/api/mcp/index.php",
+      "install": {
+        "type": "api",
+        "url": "https://powerexpertindia.com/api/mcp/index.php"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://powerexpertindia.com/api/#mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=70",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.powerexpertindia/tariff-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

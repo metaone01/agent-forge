@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.rowb.septic-log/maintenance",
+  "name": "app.rowb.septic-log/maintenance",
+  "displayName": "app.rowb.septic-log/maintenance",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Septic maintenance record: log inspections and pump-outs; next due date under EPA intervals. No AI.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.rowb.septic-log/maintenance",
+    "remotes": [
+      {
+        "url": "https://septic-log.rowb.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f51fdad4ea7b7bae",
+      "type": "other",
+      "url": "https://septic-log.rowb.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://septic-log.rowb.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.rowb.septic-log/maintenance"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

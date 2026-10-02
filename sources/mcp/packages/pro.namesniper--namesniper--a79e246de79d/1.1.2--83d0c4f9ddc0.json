@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pro.namesniper/namesniper",
+  "name": "pro.namesniper/namesniper",
+  "displayName": "NameSniper",
+  "version": "1.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Monitor taken usernames and get alerted when they drop, plus handle, domain, and trademark checks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "namesniper-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://namesniper.pro/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0f7b0cbc3f1222a0",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/namesniper-mcp",
+      "registry": "npm",
+      "version": "1.1.2"
+    },
+    {
+      "id": "upstream-b451f459588ca112",
+      "type": "other",
+      "url": "https://namesniper.pro/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://namesniper.pro/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/NameSniperPro/NameSniper-MCP",
+    "homepage": "https://namesniper.pro"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pro.namesniper/namesniper"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

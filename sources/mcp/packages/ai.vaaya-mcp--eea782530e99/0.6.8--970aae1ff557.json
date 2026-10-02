@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.ai.vaaya/mcp",
   "name": "ai.vaaya/mcp",
+  "displayName": "Vaaya",
   "version": "0.6.8",
-  "versionScheme": "semver",
-  "description": "Paid APIs and tokenized shares for agents. Prepaid funding, including authorized Instinct checkout.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/vaaya-ai/vaaya-mcp",
-    "homepage": "https://vaaya.ai",
-    "readme": "https://github.com/vaaya-ai/vaaya-mcp#readme"
-  },
-  "keywords": [
-    "Vaaya"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@vaaya/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Paid APIs and tokenized shares for agents. Prepaid funding, including authorized Instinct checkout.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@vaaya/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://vaaya.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ddc9aeb8c37f79b3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@vaaya/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.8"
+    },
+    {
+      "id": "upstream-9fc7abeb3a105a11",
+      "type": "other",
+      "url": "https://vaaya.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://vaaya.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/vaaya-ai/vaaya-mcp",
+    "homepage": "https://vaaya.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.vaaya__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.vaaya/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

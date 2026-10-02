@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fr.boncourant/boncourant",
+  "name": "fr.boncourant/boncourant",
+  "displayName": "Boncourant",
+  "version": "1.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Optimiseur et auditeur d'électricité en France : tarifs, contrats, puissance et PPA.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fr.boncourant/boncourant",
+    "remotes": [
+      {
+        "url": "https://boncourant.fr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-dfce6b49b90a55cc",
+      "type": "other",
+      "url": "https://boncourant.fr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://boncourant.fr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://boncourant.fr/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fr.boncourant/boncourant"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

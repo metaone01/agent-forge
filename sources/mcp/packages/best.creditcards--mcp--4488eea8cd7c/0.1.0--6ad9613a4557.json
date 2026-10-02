@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.best.creditcards/mcp",
+  "name": "best.creditcards/mcp",
+  "displayName": "creditcards.best",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search, compare and estimate rewards across US credit cards. Verified fees, APRs and bonuses.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "best.creditcards/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.creditcards.best",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://creditcards.best/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bf2a09f81c6fa615",
+      "type": "other",
+      "url": "https://mcp.creditcards.best",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.creditcards.best"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-2d367003caf79de3",
+      "type": "other",
+      "url": "https://creditcards.best/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://creditcards.best/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://creditcards.best/mcp-info"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "best.creditcards/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

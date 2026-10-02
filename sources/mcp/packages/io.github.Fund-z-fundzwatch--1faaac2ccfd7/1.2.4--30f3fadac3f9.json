@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Fund-z/fundzwatch",
   "name": "io.github.Fund-z/fundzwatch",
+  "displayName": "Fundz",
   "version": "1.2.4",
-  "versionScheme": "semver",
-  "description": "Funding rounds, exec moves, UCC liens and Form 5500 plans. 7 tools need no API key.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Fund-z/fundzwatch-mcp",
-    "homepage": "https://fundzwatch.ai",
-    "readme": "https://github.com/Fund-z/fundzwatch-mcp#readme"
-  },
-  "keywords": [
-    "Fundz"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@fundzwatch/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Funding rounds, exec moves, UCC liens and Form 5500 plans. 7 tools need no API key.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@fundzwatch/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.fundz.net",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1908be498c390b67",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@fundzwatch/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.4"
+    },
+    {
+      "id": "upstream-747e2fbcf45b2f4f",
+      "type": "other",
+      "url": "https://mcp.fundz.net",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.fundz.net"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Fund-z/fundzwatch-mcp",
+    "homepage": "https://fundzwatch.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fund-z__fundzwatch.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=130",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Fund-z/fundzwatch"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,57 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.containers/kubernetes-mcp-server",
   "name": "io.github.containers/kubernetes-mcp-server",
+  "displayName": "io.github.containers/kubernetes-mcp-server",
   "version": "0.0.67",
-  "versionScheme": "semver",
-  "description": "A Model Context Protocol (MCP) server for Kubernetes and OpenShift",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/containers/kubernetes-mcp-server",
-    "readme": "https://github.com/containers/kubernetes-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "kubernetes-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A Model Context Protocol (MCP) server for Kubernetes and OpenShift",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "kubernetes-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8a9d61808b454940",
       "type": "registry",
       "url": "https://www.npmjs.com/package/kubernetes-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.0.67"
+    },
+    {
+      "id": "upstream-0bcb41eb741be3aa",
+      "type": "registry",
+      "url": "https://pypi.org/project/kubernetes-mcp-server",
+      "registry": "pypi",
+      "version": "0.0.67"
+    },
+    {
+      "id": "upstream-989e596b85ba1508",
+      "type": "oci",
+      "url": "https://ghcr.io/containers/kubernetes-mcp-server:v0.0.67",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/containers/kubernetes-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +65,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.containers__kubernetes-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.containers/kubernetes-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,85 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Role1776/mcp-x",
   "name": "io.github.Role1776/mcp-x",
+  "displayName": "X (Twitter)",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Search, read and publish X posts and manage users, lists and media via the X API v2.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Role1776/mcp-x",
-    "homepage": "https://github.com/Role1776/mcp-x#readme",
-    "readme": "https://github.com/Role1776/mcp-x#readme"
-  },
-  "keywords": [
-    "X (Twitter)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/role1776/mcp-x:0.1.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/role1776/mcp-x:0.1.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/role1776/mcp-x",
-      "priority": 10,
+      "id": "upstream-2e10a451efde7230",
+      "type": "oci",
+      "url": "https://ghcr.io/role1776/mcp-x:0.1.1",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-fc6d603af49e2112",
+      "type": "archive",
+      "url": "https://github.com/Role1776/mcp-x/releases/download/v0.1.1/mcp-x_0.1.1_darwin_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-7c37ea7fc71cb053",
+      "type": "archive",
+      "url": "https://github.com/Role1776/mcp-x/releases/download/v0.1.1/mcp-x_0.1.1_darwin_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-a6c5964cb1b279b9",
+      "type": "archive",
+      "url": "https://github.com/Role1776/mcp-x/releases/download/v0.1.1/mcp-x_0.1.1_linux_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-d616f7c547a42f7f",
+      "type": "archive",
+      "url": "https://github.com/Role1776/mcp-x/releases/download/v0.1.1/mcp-x_0.1.1_linux_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-63c3cd062b871e1c",
+      "type": "archive",
+      "url": "https://github.com/Role1776/mcp-x/releases/download/v0.1.1/mcp-x_0.1.1_windows_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-3dcfc10b09d2ee7e",
+      "type": "archive",
+      "url": "https://github.com/Role1776/mcp-x/releases/download/v0.1.1/mcp-x_0.1.1_windows_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Role1776/mcp-x",
+    "homepage": "https://github.com/Role1776/mcp-x#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +93,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.role1776__mcp-x.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=150",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Role1776/mcp-x"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

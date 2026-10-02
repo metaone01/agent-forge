@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fyi.iwant/iwant",
+  "name": "fyi.iwant/iwant",
+  "displayName": "iwant.fyi - shop, price-check and keep looking",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "No key needed. Search real products and live dealer inventory, price-check, keep standing wants.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fyi.iwant/iwant",
+    "remotes": [
+      {
+        "url": "https://iwant.fyi/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-34a0be8eb3d7e580",
+      "type": "other",
+      "url": "https://iwant.fyi/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://iwant.fyi/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/staugs/iwantfyi-spec",
+    "homepage": "https://iwant.fyi"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fyi.iwant/iwant"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

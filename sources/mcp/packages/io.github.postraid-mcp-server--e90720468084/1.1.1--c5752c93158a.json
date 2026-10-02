@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.postraid/mcp-server",
   "name": "io.github.postraid/mcp-server",
+  "displayName": "io.github.postraid/mcp-server",
   "version": "1.1.1",
-  "versionScheme": "semver",
-  "description": "MCP connector for Postraid brands, saved social content and editable carousel drafts for review.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/postraid/mcp-server",
-    "readme": "https://github.com/postraid/mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "postraid-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP connector for Postraid brands, saved social content and editable carousel drafts for review.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "postraid-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.postraid.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-58580a4222976700",
       "type": "registry",
       "url": "https://www.npmjs.com/package/postraid-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.1"
+    },
+    {
+      "id": "upstream-87efd3253169e785",
+      "type": "other",
+      "url": "https://mcp.postraid.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.postraid.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/postraid/mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.postraid__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=291",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.postraid/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

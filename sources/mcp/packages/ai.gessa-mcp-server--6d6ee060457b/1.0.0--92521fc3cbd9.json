@@ -2,49 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.ai.gessa/mcp-server",
   "name": "ai.gessa/mcp-server",
+  "displayName": "Gessa: game asset generation for AI agents",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Generate game-ready 3D models, textures, and audio from natural language, over MCP.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@gessa/mcp-server",
-    "homepage": "https://gessa.ai/assets/for-agents/"
-  },
-  "keywords": [
-    "Gessa: game asset generation for AI agents"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@gessa/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate game-ready 3D models, textures, and audio from natural language, over MCP.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@gessa/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.gessa.ai/mcp/rpc",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-47b14a1aa3ad5bb1",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@gessa/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-1c19339cf552b7b0",
+      "type": "other",
+      "url": "https://api.gessa.ai/mcp/rpc",
+      "install": {
+        "type": "api",
+        "url": "https://api.gessa.ai/mcp/rpc"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://gessa.ai/assets/for-agents/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.gessa__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=5",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.gessa/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

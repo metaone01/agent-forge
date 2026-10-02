@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.qso-graph/qsp-mcp",
   "name": "io.github.qso-graph/qsp-mcp",
+  "displayName": "io.github.qso-graph/qsp-mcp",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "QSP — relay MCP tools to any OpenAI-compatible local LLM (llama.cpp, Ollama, vLLM)",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/qso-graph/qsp-mcp",
-    "readme": "https://github.com/qso-graph/qsp-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "qsp-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "QSP — relay MCP tools to any OpenAI-compatible local LLM (llama.cpp, Ollama, vLLM)",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "qsp-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-32ce923822d05f2c",
       "type": "registry",
-      "url": "https://pypi.org/project/qsp-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/qsp-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/qso-graph/qsp-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.qso-graph__qsp-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=293",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.qso-graph/qsp-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

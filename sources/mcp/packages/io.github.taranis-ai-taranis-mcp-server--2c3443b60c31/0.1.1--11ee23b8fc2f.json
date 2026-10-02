@@ -2,49 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.taranis-ai/taranis-mcp-server",
   "name": "io.github.taranis-ai/taranis-mcp-server",
+  "displayName": "Taranis AI",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Search stories and discover OSINT sources in Taranis AI.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/taranis-ai/taranis-mcp-server",
-    "readme": "https://github.com/taranis-ai/taranis-mcp-server#readme"
-  },
-  "keywords": [
-    "Taranis AI"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "taranis-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "taranis-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4b1d378875bff8d3",
       "type": "registry",
-      "url": "https://pypi.org/project/taranis-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/taranis-mcp-server",
+      "registry": "pypi",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-a687866331fd5db7",
+      "type": "oci",
+      "url": "https://ghcr.io/taranis-ai/taranis-mcp-server:0.1.1",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/taranis-ai/taranis-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.taranis-ai__taranis-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=336",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.taranis-ai/taranis-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

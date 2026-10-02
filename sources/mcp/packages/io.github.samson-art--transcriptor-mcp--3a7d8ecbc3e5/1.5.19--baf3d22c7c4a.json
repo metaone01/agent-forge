@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.samson-art/transcriptor-mcp",
+  "name": "io.github.samson-art/transcriptor-mcp",
+  "displayName": "Transcriptor MCP",
+  "version": "1.5.19",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Fetch transcripts, subtitles, chapters, metadata and frames from YouTube and 10+ video platforms",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/artsamsonov/transcriptor-mcp:1.5.19",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://transcriptor.gateway.mcpal.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-90d73c8ea842999b",
+      "type": "oci",
+      "url": "https://docker.io/artsamsonov/transcriptor-mcp:1.5.19",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-3a2cfece3775284e",
+      "type": "other",
+      "url": "https://transcriptor.gateway.mcpal.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://transcriptor.gateway.mcpal.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/samson-art/transcriptor-mcp",
+    "homepage": "https://transcriptor-mcp.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=324",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.samson-art/transcriptor-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

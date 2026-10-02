@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.calvinling2021-star/synapse-geo",
   "name": "io.github.calvinling2021-star/synapse-geo",
+  "displayName": "Synapse — GEO Growth Layer",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Lints + auto-fixes how AI coding agents discover any new product. 24 rules, 6 tools, score 0-100.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/calvinling2021-star/synapse",
-    "homepage": "https://runsynapse.dev",
-    "readme": "https://github.com/calvinling2021-star/synapse#readme"
-  },
-  "keywords": [
-    "Synapse — GEO Growth Layer"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@calvin8miles/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Lints + auto-fixes how AI coding agents discover any new product. 24 rules, 6 tools, score 0-100.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@calvin8miles/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://runsynapse.dev/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c844c3d3d8b3f80b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@calvin8miles/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-3bf5465e23cd9b28",
+      "type": "other",
+      "url": "https://runsynapse.dev/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://runsynapse.dev/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/calvinling2021-star/synapse",
+    "homepage": "https://runsynapse.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.calvinling2021-star__synapse-geo.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=179",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.calvinling2021-star/synapse-geo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

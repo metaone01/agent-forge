@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.frogeye-ai/mcp",
+  "name": "io.github.frogeye-ai/mcp",
+  "displayName": "Frogeye Security Scanner",
+  "version": "1.5.18",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Zero-config MCP security scanner for AI-generated apps. 25K+ vulnerability patterns.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.frogeye-ai/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.frogeye.ai/sse",
+        "transport": "sse"
+      },
+      {
+        "url": "https://mcp.frogeye.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d9a0efa54e3634fa",
+      "type": "other",
+      "url": "https://mcp.frogeye.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.frogeye.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-06c2b3cde41e6ac1",
+      "type": "other",
+      "url": "https://mcp.frogeye.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.frogeye.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/frogeye-ai/mcp",
+    "homepage": "https://frogeye.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=203",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.frogeye-ai/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

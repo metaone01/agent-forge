@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.moira-mcp/moira",
   "name": "io.github.moira-mcp/moira",
+  "displayName": "Moira",
   "version": "0.3.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Agent Workflow Engine — multi-step MCP workflows with per-step directives and validation.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/moira-mcp/moira",
-    "homepage": "https://github.com/moira-mcp/moira#readme",
-    "readme": "https://github.com/moira-mcp/moira#readme"
-  },
-  "keywords": [
-    "Moira"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/moira-mcp/moira:0.3.4",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/moira-mcp/moira:0.3.4",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/moira-mcp/moira",
-      "priority": 10,
+      "id": "upstream-a329dc0fbdec09c9",
+      "type": "oci",
+      "url": "https://ghcr.io/moira-mcp/moira:0.3.4",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/moira-mcp/moira",
+    "homepage": "https://github.com/moira-mcp/moira#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.moira-mcp__moira.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=251",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.moira-mcp/moira"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

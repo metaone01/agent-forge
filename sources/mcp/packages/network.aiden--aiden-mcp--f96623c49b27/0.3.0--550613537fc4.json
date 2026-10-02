@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.aiden/aiden-mcp",
+  "name": "network.aiden/aiden-mcp",
+  "displayName": "AIDEN",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Look up AI agents on Robinhood Chain: ERC-8004 identity, feedback and USDG-backed trust scores.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "aiden-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.aiden.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d749af758172ba47",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/aiden-mcp",
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-5ee243c24b63308b",
+      "type": "other",
+      "url": "https://mcp.aiden.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aiden.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/aiden-network/aiden-mcp",
+    "homepage": "https://aiden.network/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.aiden/aiden-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

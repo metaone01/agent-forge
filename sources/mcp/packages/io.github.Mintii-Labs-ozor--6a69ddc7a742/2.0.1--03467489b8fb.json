@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Mintii-Labs/ozor",
   "name": "io.github.Mintii-Labs/ozor",
+  "displayName": "io.github.Mintii-Labs/ozor",
   "version": "2.0.1",
-  "versionScheme": "semver",
-  "description": "Generate AI videos from a prompt or document (PDF/PPTX/DOCX/URL) and export shareable MP4s.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Mintii-Labs/ozor-MCP",
-    "readme": "https://github.com/Mintii-Labs/ozor-MCP#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "ozor-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate AI videos from a prompt or document (PDF/PPTX/DOCX/URL) and export shareable MP4s.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "ozor-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.ozor.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e708850cd790a1c7",
       "type": "registry",
       "url": "https://www.npmjs.com/package/ozor-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.0.1"
+    },
+    {
+      "id": "upstream-e529712d93efa5ae",
+      "type": "other",
+      "url": "https://mcp.ozor.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ozor.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Mintii-Labs/ozor-MCP"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mintii-labs__ozor.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=142",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Mintii-Labs/ozor"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

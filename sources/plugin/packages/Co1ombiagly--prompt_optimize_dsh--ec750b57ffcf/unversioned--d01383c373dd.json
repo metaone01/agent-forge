@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.def32c36fd2886b00a00b93f86f405b712eaf56800f41719b531eb6cf26a87b3",
+  "name": "Co1ombiagly/prompt_optimize_dsh",
+  "displayName": "Co1ombiagly/prompt_optimize_dsh",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "AI 提示词优化器 DSH 插件：/optimize 命令 + optimize_prompt 工具，按《提示词工程师规范》把口语化需求转为结构化提示词；上下文感知锚定、结果自动填入 harness 输入框（复用 DSH ctx.llm 模型路由，零密钥自管）",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Co1ombiagly/prompt_optimize_dsh",
+    "readme": "https://github.com/Co1ombiagly/prompt_optimize_dsh#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Co1ombiagly/prompt_optimize_dsh"
+    }
+  ],
+  "keywords": [
+    "models",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11582"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "Co1ombiagly/prompt_optimize_dsh"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12725"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

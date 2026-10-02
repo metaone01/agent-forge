@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.4de8e3370521173e9e91d8125817b41d5a68562c00cf4ec0eea5db6a89d411d7",
+  "name": "FleetingEcho/dsh-handoff",
+  "displayName": "FleetingEcho/dsh-handoff",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Self-maintaining handoff.md per working directory + git branch for DeepSeek Harness, stored under ~/.agent/agent-handoff (shared with pi-handoff).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/FleetingEcho/dsh-handoff",
+    "readme": "https://github.com/FleetingEcho/dsh-handoff#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/FleetingEcho/dsh-handoff"
+    }
+  ],
+  "keywords": [
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "4283"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/FleetingEcho__dsh-handoff.yml"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.smklog/parcel-shipping-rates",
+  "name": "com.smklog/parcel-shipping-rates",
+  "displayName": "SMKlog Parcel Shipping Rates",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live USPS, UPS, FedEx and DHL rates from the US: domestic, Canada, UK, Germany, Australia. No scale.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.smklog/parcel-shipping-rates",
+    "remotes": [
+      {
+        "url": "https://quote-api.smklog.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bce6de29057c3f1b",
+      "type": "other",
+      "url": "https://quote-api.smklog.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://quote-api.smklog.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/smklog/parcel-shipping-rates-mcp",
+    "homepage": "https://smklog.com/api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.smklog/parcel-shipping-rates"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

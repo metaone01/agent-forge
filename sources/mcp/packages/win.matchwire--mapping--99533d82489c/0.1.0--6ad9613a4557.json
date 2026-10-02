@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.win.matchwire/mapping",
+  "name": "win.matchwire/mapping",
+  "displayName": "matchwire.win — Mapped Prediction Markets (Kalshi, Polymarket, Predict.fun)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "One row per game, matched across Kalshi, Polymarket US/Intl and Predict.fun. Mapping only.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "win.matchwire/mapping",
+    "remotes": [
+      {
+        "url": "https://api.matchwire.win/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-dfeded84fc881ee9",
+      "type": "other",
+      "url": "https://api.matchwire.win/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.matchwire.win/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/MatchWire-Win/matchwire-sdk",
+    "homepage": "https://matchwire.win"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "win.matchwire/mapping"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

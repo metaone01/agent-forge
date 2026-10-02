@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.KrystalUnity/kvc-mcp",
   "name": "io.github.KrystalUnity/kvc-mcp",
+  "displayName": "Krystal Voice Caller",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Drive a Krystal Voice Caller tenant from Claude, Cursor, or any MCP-aware agent.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/KrystalUnity/kvc-mcp",
-    "homepage": "https://krystalunity.com/voice/krystal-caller",
-    "readme": "https://github.com/KrystalUnity/kvc-mcp#readme"
-  },
-  "keywords": [
-    "Krystal Voice Caller"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "kvc-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Drive a Krystal Voice Caller tenant from Claude, Cursor, or any MCP-aware agent.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "kvc-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d6a57d4ef29c76da",
       "type": "registry",
-      "url": "https://pypi.org/project/kvc-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/kvc-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/KrystalUnity/kvc-mcp",
+    "homepage": "https://krystalunity.com/voice/krystal-caller"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.krystalunity__kvc-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=138",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.KrystalUnity/kvc-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

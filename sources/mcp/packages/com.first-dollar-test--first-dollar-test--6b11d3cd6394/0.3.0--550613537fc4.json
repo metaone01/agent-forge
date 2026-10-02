@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.first-dollar-test/first-dollar-test",
+  "name": "com.first-dollar-test/first-dollar-test",
+  "displayName": "First Dollar Test",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Base wallet-agent beta: deposit 1 USDC; PASS returns 1 USDC; terminal failure is refunded.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.first-dollar-test/first-dollar-test",
+    "remotes": [
+      {
+        "url": "https://api.first-dollar-test.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-df2127b033b91530",
+      "type": "other",
+      "url": "https://api.first-dollar-test.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.first-dollar-test.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://first-dollar-test.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=48",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.first-dollar-test/first-dollar-test"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

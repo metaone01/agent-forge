@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.selflabbs/filings-intel-mcp",
+  "name": "io.github.selflabbs/filings-intel-mcp",
+  "displayName": "Filings Intel MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SEC EDGAR filings for AI agents: company lookup, filings, financials, insider trades. No keys.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.selflabbs/filings-intel-mcp",
+    "remotes": [
+      {
+        "url": "https://filings.selflabbs.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-acc5d2ba7c704c3a",
+      "type": "other",
+      "url": "https://filings.selflabbs.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://filings.selflabbs.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/selflabbs/filings-intel-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.selflabbs/filings-intel-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

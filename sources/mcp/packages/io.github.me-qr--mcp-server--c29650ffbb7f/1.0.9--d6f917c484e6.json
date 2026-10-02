@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.me-qr/mcp-server",
+  "name": "io.github.me-qr/mcp-server",
+  "displayName": "ME-QR MCP Server",
+  "version": "1.0.9",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Create and manage QR codes on me-qr.com from AI clients like Claude and ChatGPT.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.me-qr/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.me-qr.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a51615bb2443c00f",
+      "type": "other",
+      "url": "https://mcp.me-qr.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.me-qr.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/me-qr/me-qr-mcp-server",
+    "homepage": "https://me-qr.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=247",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.me-qr/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

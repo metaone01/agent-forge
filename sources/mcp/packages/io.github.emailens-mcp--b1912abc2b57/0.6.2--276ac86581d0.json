@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.emailens/mcp",
   "name": "io.github.emailens/mcp",
+  "displayName": "Emailens MCP",
   "version": "0.6.2",
-  "versionScheme": "semver",
-  "description": "Analyze, audit, fix and diff HTML, MJML, Maizzle and React Email across 21 email clients.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/emailens/mcp",
-    "homepage": "https://emailens.dev/mcp",
-    "readme": "https://github.com/emailens/mcp#readme"
-  },
-  "keywords": [
-    "Emailens MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@emailens/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Analyze, audit, fix and diff HTML, MJML, Maizzle and React Email across 21 email clients.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@emailens/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://emailens.dev/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bbc570315b66d5a5",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@emailens/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.2"
+    },
+    {
+      "id": "upstream-6f1e5a4d713d5654",
+      "type": "other",
+      "url": "https://emailens.dev/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://emailens.dev/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/emailens/mcp",
+    "homepage": "https://emailens.dev/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.emailens__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=198",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.emailens/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

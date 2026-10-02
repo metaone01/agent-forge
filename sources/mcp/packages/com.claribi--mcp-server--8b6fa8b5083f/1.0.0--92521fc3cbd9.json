@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.claribi/mcp-server",
+  "name": "com.claribi/mcp-server",
+  "displayName": "clariBI",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI business intelligence: sign up, ingest data, run analyses, generate reports from any MCP client.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.claribi/mcp-server",
+    "remotes": [
+      {
+        "url": "https://claribi.com/mcp/v1/",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://claribi.com/mcp/v1/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4ba2608b389ca5ea",
+      "type": "other",
+      "url": "https://claribi.com/mcp/v1/",
+      "install": {
+        "type": "api",
+        "url": "https://claribi.com/mcp/v1/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e453cb780e0445a6",
+      "type": "other",
+      "url": "https://claribi.com/mcp/v1/sse",
+      "install": {
+        "type": "api",
+        "url": "https://claribi.com/mcp/v1/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ICS-cz/Claribi",
+    "homepage": "https://claribi.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=39",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.claribi/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

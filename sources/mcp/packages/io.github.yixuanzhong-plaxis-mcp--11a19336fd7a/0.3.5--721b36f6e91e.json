@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.yixuanzhong/plaxis-mcp",
   "name": "io.github.yixuanzhong/plaxis-mcp",
+  "displayName": "PLAXIS",
   "version": "0.3.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Windows-local MCP server for PLAXIS 2D Remote Scripting: geometry, staged construction, results.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/yixuanzhong/PLAXIS-MCP",
-    "homepage": "https://github.com/yixuanzhong/PLAXIS-MCP#readme",
-    "readme": "https://github.com/yixuanzhong/PLAXIS-MCP#readme"
-  },
-  "keywords": [
-    "PLAXIS"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "plaxis-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "plaxis-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3517f68f9b96655b",
       "type": "registry",
-      "url": "https://pypi.org/project/plaxis-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/plaxis-mcp",
+      "registry": "pypi",
+      "version": "0.3.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/yixuanzhong/PLAXIS-MCP",
+    "homepage": "https://github.com/yixuanzhong/PLAXIS-MCP#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yixuanzhong__plaxis-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yixuanzhong/plaxis-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

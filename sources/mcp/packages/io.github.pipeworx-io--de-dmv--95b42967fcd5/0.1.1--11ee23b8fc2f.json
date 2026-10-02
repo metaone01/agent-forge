@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/de-dmv",
+  "name": "io.github.pipeworx-io/de-dmv",
+  "displayName": "De Dmv",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Delaware DMV MCP — registered vehicles by fuel type, EV adoption, the state's electric",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/de-dmv",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/de-dmv/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cb3bc7bdbca62fb3",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/de-dmv/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/de-dmv/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-de-dmv",
+    "homepage": "https://pipeworx.io/packs/de-dmv"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=278",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/de-dmv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

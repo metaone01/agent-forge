@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Izyuusya/japan-data-mcp",
   "name": "io.github.Izyuusya/japan-data-mcp",
+  "displayName": "io.github.Izyuusya/japan-data-mcp",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "日本の公的データ（統計・法人・不動産）にAIからアクセスするMCPサーバー。e-Stat統計API・法人番号Web-API・不動産情報ライブラリAPIの3API統合。全国約1,700市区町村対応。",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/Izyuusya/japan-data-mcp",
-    "readme": "https://github.com/Izyuusya/japan-data-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "japan-data-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "日本の公的データ（統計・法人・不動産）にAIからアクセスするMCPサーバー。e-Stat統計API・法人番号Web-API・不動産情報ライブラリAPIの3API統合。全国約1,700市区町村対応。",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "japan-data-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9abdb43a9dce2609",
       "type": "registry",
-      "url": "https://pypi.org/project/japan-data-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/japan-data-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Izyuusya/japan-data-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.izyuusya__japan-data-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Izyuusya/japan-data-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

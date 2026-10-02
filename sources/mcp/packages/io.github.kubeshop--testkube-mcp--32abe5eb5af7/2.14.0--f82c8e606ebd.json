@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.kubeshop/testkube-mcp",
+  "name": "io.github.kubeshop/testkube-mcp",
+  "displayName": "io.github.kubeshop/testkube-mcp",
+  "version": "2.14.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for Testkube - Manage test workflows, executions, and artifacts via AI assistants",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/kubeshop/mcp-server:2.14.0",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.testkube.io/organizations/{organization_id}/environments/{environment_id}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f77b6094749a71cf",
+      "type": "oci",
+      "url": "https://docker.io/kubeshop/mcp-server:2.14.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-f8fe0c39f7bb5eb7",
+      "type": "other",
+      "url": "https://api.testkube.io/organizations/{organization_id}/environments/{environment_id}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.testkube.io/organizations/{organization_id}/environments/{environment_id}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kubeshop/testkube"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kubeshop/testkube-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

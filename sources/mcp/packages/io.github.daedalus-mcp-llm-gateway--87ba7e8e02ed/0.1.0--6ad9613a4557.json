@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.daedalus/mcp-llm-gateway",
   "name": "io.github.daedalus/mcp-llm-gateway",
+  "displayName": "io.github.daedalus/mcp-llm-gateway",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "MCP-compatible LLM gateway that proxies completion requests.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/daedalus/mcp-llm-gateway",
-    "readme": "https://github.com/daedalus/mcp-llm-gateway#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-llm-gateway",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP-compatible LLM gateway that proxies completion requests.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-llm-gateway",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-92be273912e3c7a2",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-llm-gateway/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-llm-gateway",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/daedalus/mcp-llm-gateway"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.daedalus__mcp-llm-gateway.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=189",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.daedalus/mcp-llm-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

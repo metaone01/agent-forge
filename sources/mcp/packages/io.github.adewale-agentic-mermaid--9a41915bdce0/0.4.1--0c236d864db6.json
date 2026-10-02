@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.adewale/agentic-mermaid",
   "name": "io.github.adewale/agentic-mermaid",
+  "displayName": "Agentic Mermaid",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "Render, verify, describe, and safely edit Mermaid diagrams through MCP.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/adewale/agentic-mermaid",
-    "homepage": "https://agentic-mermaid.dev/",
-    "readme": "https://github.com/adewale/agentic-mermaid#readme"
-  },
-  "keywords": [
-    "Agentic Mermaid"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "agentic-mermaid",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Render, verify, describe, and safely edit Mermaid diagrams through MCP.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agentic-mermaid",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agentic-mermaid.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0f868db2fbf6e92a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/agentic-mermaid",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.1"
+    },
+    {
+      "id": "upstream-04b7ed27472834c8",
+      "type": "other",
+      "url": "https://agentic-mermaid.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentic-mermaid.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/adewale/agentic-mermaid",
+    "homepage": "https://agentic-mermaid.dev/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.adewale__agentic-mermaid.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=165",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.adewale/agentic-mermaid"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

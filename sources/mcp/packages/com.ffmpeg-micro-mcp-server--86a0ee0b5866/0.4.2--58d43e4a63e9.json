@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.ffmpeg-micro/mcp-server",
   "name": "com.ffmpeg-micro/mcp-server",
+  "displayName": "com.ffmpeg-micro/mcp-server",
   "version": "0.4.2",
-  "versionScheme": "semver",
-  "description": "MCP server for the FFmpeg Micro video transcoding API — create, monitor, download transcodes.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/javidjamae/ffmpeg-micro-mcp",
-    "homepage": "https://ffmpeg-micro.com",
-    "readme": "https://github.com/javidjamae/ffmpeg-micro-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@ffmpeg-micro/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for the FFmpeg Micro video transcoding API — create, monitor, download transcodes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ffmpeg-micro/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.ffmpeg-micro.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-71b7bfc147ef6a0c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@ffmpeg-micro/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.2"
+    },
+    {
+      "id": "upstream-891102fa78be1192",
+      "type": "other",
+      "url": "https://mcp.ffmpeg-micro.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ffmpeg-micro.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/javidjamae/ffmpeg-micro-mcp",
+    "homepage": "https://ffmpeg-micro.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.ffmpeg-micro__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=48",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ffmpeg-micro/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

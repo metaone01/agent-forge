@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.tech.kaiku/kaiku",
+  "name": "tech.kaiku/kaiku",
+  "displayName": "Kaiku",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Issue tracker and wiki for teams and their agents: find, file and update issues, write pages.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "tech.kaiku/kaiku",
+    "remotes": [
+      {
+        "url": "https://app.kaiku.tech/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.kaiku.tech/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://{workspace}.kaiku.tech/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0c40ba25211576b3",
+      "type": "other",
+      "url": "https://app.kaiku.tech/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.kaiku.tech/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-da3714eca07c8fc1",
+      "type": "other",
+      "url": "https://mcp.kaiku.tech/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.kaiku.tech/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9259db629e92dbb7",
+      "type": "other",
+      "url": "https://{workspace}.kaiku.tech/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{workspace}.kaiku.tech/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://kaiku.tech/en/docs/mcp?utm_source=mcp-registry"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=377",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tech.kaiku/kaiku"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

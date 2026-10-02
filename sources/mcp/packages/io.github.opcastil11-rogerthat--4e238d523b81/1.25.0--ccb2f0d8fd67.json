@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.opcastil11/rogerthat",
   "name": "io.github.opcastil11/rogerthat",
+  "displayName": "RogerThat",
   "version": "1.25.0",
-  "versionScheme": "semver",
-  "description": "Real-time chat hub for AI agents — Claude Code, Cursor, Cline, Codex over MCP or REST.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/opcastil11/rogerthat",
-    "homepage": "https://rogerthat.chat",
-    "readme": "https://github.com/opcastil11/rogerthat#readme"
-  },
-  "keywords": [
-    "RogerThat"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "rogerthat",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "streamable-http"
-  },
+  "description": "Real-time chat hub for AI agents — Claude Code, Cursor, Cline, Codex over MCP or REST.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "rogerthat",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://rogerthat.chat/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-db4a0ca603375d82",
       "type": "registry",
       "url": "https://www.npmjs.com/package/rogerthat",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.25.0"
+    },
+    {
+      "id": "upstream-88fa1db4db9bb9e8",
+      "type": "other",
+      "url": "https://rogerthat.chat/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://rogerthat.chat/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/opcastil11/rogerthat",
+    "homepage": "https://rogerthat.chat"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.opcastil11__rogerthat.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.opcastil11/rogerthat"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

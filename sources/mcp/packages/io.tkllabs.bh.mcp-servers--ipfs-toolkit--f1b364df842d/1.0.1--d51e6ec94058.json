@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.tkllabs.bh.mcp-servers/ipfs-toolkit",
+  "name": "io.tkllabs.bh.mcp-servers/ipfs-toolkit",
+  "displayName": "io.tkllabs.bh.mcp-servers/ipfs-toolkit",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Store, retrieve, and pin encrypted files on IPFS via MCP tools for AI agents and workflows",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.tkllabs.bh.mcp-servers/ipfs-toolkit",
+    "remotes": [
+      {
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ipfs-mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ipfs-sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a40444360b507614",
+      "type": "other",
+      "url": "https://mcp-servers.bh.tkllabs.io:9780/ipfs-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ipfs-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-913c51d2ebf943df",
+      "type": "other",
+      "url": "https://mcp-servers.bh.tkllabs.io:9780/ipfs-sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ipfs-sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/teckel-mcp-servers/ipfs-toolkit"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=360",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.tkllabs.bh.mcp-servers/ipfs-toolkit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cmendezs/mcp-invoicenow-sg",
   "name": "io.github.cmendezs/mcp-invoicenow-sg",
+  "displayName": "io.github.cmendezs/mcp-invoicenow-sg",
   "version": "0.3.3",
-  "versionScheme": "semver",
-  "description": "MCP server for Singapore electronic invoicing (InvoiceNow)",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/cmendezs/mcp-invoicenow-sg",
-    "readme": "https://github.com/cmendezs/mcp-invoicenow-sg#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-invoicenow-sg",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Singapore electronic invoicing (InvoiceNow)",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-invoicenow-sg",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4a097c0cb76bef0f",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-invoicenow-sg/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-invoicenow-sg",
+      "registry": "pypi",
+      "version": "0.3.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/cmendezs/mcp-invoicenow-sg"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cmendezs__mcp-invoicenow-sg.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=183",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cmendezs/mcp-invoicenow-sg"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

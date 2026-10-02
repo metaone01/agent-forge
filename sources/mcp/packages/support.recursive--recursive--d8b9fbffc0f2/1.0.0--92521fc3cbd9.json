@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.support.recursive/recursive",
+  "name": "support.recursive/recursive",
+  "displayName": "Recursive Support Oracle",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI support agent platform for small businesses. Query pricing, features, and examples.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "support.recursive/recursive",
+    "remotes": [
+      {
+        "url": "https://recursive.support/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4b86d6ce01b3751a",
+      "type": "other",
+      "url": "https://recursive.support/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://recursive.support/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/codereclaimers/support-bot",
+    "homepage": "https://recursive.support"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=377",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "support.recursive/recursive"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

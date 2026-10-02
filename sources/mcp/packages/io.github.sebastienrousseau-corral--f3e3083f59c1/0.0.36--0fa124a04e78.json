@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sebastienrousseau/corral",
   "name": "io.github.sebastienrousseau/corral",
+  "displayName": "Corral",
   "version": "0.0.36",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Search code and symbols across every clone in your Corral workspace. Zero network calls.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/sebastienrousseau/corral",
-    "homepage": "https://doc.corrallib.com",
-    "readme": "https://github.com/sebastienrousseau/corral#readme"
-  },
-  "keywords": [
-    "Corral"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/sebastienrousseau/corral:0.0.36",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/sebastienrousseau/corral:0.0.36",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/sebastienrousseau/corral",
-      "priority": 10,
+      "id": "upstream-0fe90b7445cf4c98",
+      "type": "oci",
+      "url": "https://ghcr.io/sebastienrousseau/corral:0.0.36",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sebastienrousseau/corral",
+    "homepage": "https://doc.corrallib.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sebastienrousseau__corral.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sebastienrousseau/corral"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

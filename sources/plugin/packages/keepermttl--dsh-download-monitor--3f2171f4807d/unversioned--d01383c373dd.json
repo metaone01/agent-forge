@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.4c300ef0193da12d0fd15ebc860226ed2f4cac838e08afa9946951fd2aa8655e",
+  "name": "keepermttl/dsh-download-monitor",
+  "displayName": "keepermttl/dsh-download-monitor",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH Web GUI 下载监控插件：manifest 注册下载任务，host 半区采样（目录字节/进程存活/日志正则）+ 状态机（完成/失败/停滞/用户停止），shell.overlay 悬浮窗（可拖拽、进行中/历史分区、一键停止），完成/停滞/失败经 session.prompt 唤醒 agent，批次合并历史留痕。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/keepermttl/dsh-download-monitor",
+    "readme": "https://github.com/keepermttl/dsh-download-monitor#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/keepermttl/dsh-download-monitor"
+    }
+  ],
+  "keywords": [
+    "observability",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "3363"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/repositories.csv",
+          "entry": "954"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/verified-plugins.csv",
+          "entry": "666"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "keepermttl/dsh-download-monitor"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

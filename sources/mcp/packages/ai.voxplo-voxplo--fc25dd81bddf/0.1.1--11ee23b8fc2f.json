@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.ai.voxplo/voxplo",
   "name": "ai.voxplo/voxplo",
+  "displayName": "Voxplo",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Give AI agents a phone: outbound AI calls that return a summary, transcript, and extracted fields.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/voxplo-mcp",
-    "homepage": "https://voxplo.ai"
-  },
-  "keywords": [
-    "Voxplo"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "voxplo-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Give AI agents a phone: outbound AI calls that return a summary, transcript, and extracted fields.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "voxplo-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.voxplo.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e04b7fac48556311",
       "type": "registry",
       "url": "https://www.npmjs.com/package/voxplo-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-4670bae1c8c30ea9",
+      "type": "other",
+      "url": "https://mcp.voxplo.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.voxplo.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://voxplo.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.voxplo__voxplo.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.voxplo/voxplo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

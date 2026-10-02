@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.RolloutsAI/mails-agent-email",
   "name": "io.github.RolloutsAI/mails-agent-email",
+  "displayName": "Mails.ai — Agent Email",
   "version": "0.2.9",
-  "versionScheme": "semver",
-  "description": "A real inbox for AI agents: send, receive and thread email, behind a prompt-injection firewall.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@mailsai/mcp-server",
-    "homepage": "https://mails.ai"
-  },
-  "keywords": [
-    "Mails.ai — Agent Email"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@mailsai/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A real inbox for AI agents: send, receive and thread email, behind a prompt-injection firewall.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@mailsai/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6fe7e23114e2ebe0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@mailsai/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.9"
     }
   ],
+  "links": {
+    "homepage": "https://mails.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.rolloutsai__mails-agent-email.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=150",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.RolloutsAI/mails-agent-email"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

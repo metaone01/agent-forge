@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.1ea86870a63f569259b7e908f8aae35663b9f149983ad0ff2c5f31fbb269ccc8",
+  "name": "better-er/dsh-pause",
+  "displayName": "better-er/dsh-pause",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH Web 暂停插件：agent 完成一轮工具交互、正要发出下一次模型请求之前暂停，保持 composer 输入框可用，人类以回车/发送放行并可携带补充文字；此暂停不打断任何在途 API 调用，模型上下文始终完整、无感知。纯插件自包含，不改 DSH 源码。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/better-er/dsh-pause",
+    "readme": "https://github.com/better-er/dsh-pause#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/better-er/dsh-pause"
+    },
+    {
+      "id": "npm-0c837ac61b7b",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-pause",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13508"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/repositories.csv",
+          "entry": "2780"
+        },
+        {
+          "repository": "cccakeee/awesome-dsh-plugins",
+          "revision": "9a568253bdc74c36f7017bc4c14ce21b1b690dc5",
+          "path": "data/verified-plugins.csv",
+          "entry": "2040"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "better-er/dsh-pause"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13959"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-pause"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

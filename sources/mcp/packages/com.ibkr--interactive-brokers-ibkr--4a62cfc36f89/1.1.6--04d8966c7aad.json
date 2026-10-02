@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ibkr/interactive-brokers-ibkr",
+  "name": "com.ibkr/interactive-brokers-ibkr",
+  "displayName": "Interactive Brokers (IBKR)",
+  "version": "1.1.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Analyze global markets and manage your portfolio",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ibkr/interactive-brokers-ibkr",
+    "remotes": [
+      {
+        "url": "https://api.ibkr.com/v1/api/mcp-public",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3b31885d91a9d222",
+      "type": "other",
+      "url": "https://api.ibkr.com/v1/api/mcp-public",
+      "install": {
+        "type": "api",
+        "url": "https://api.ibkr.com/v1/api/mcp-public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.interactivebrokers.com/en/trading/ai-integrations.php"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=54",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ibkr/interactive-brokers-ibkr"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

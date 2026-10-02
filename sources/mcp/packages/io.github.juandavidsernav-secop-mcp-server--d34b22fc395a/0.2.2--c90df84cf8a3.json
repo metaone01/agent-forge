@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.juandavidsernav/secop-mcp-server",
   "name": "io.github.juandavidsernav/secop-mcp-server",
+  "displayName": "io.github.juandavidsernav/secop-mcp-server",
   "version": "0.2.2",
-  "versionScheme": "semver",
-  "description": "Consulta contratación pública de Colombia (SECOP I y II) desde datos.gov.co",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/juandavidsernav/secop-mcp-server",
-    "readme": "https://github.com/juandavidsernav/secop-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "secop-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Consulta contratación pública de Colombia (SECOP I y II) desde datos.gov.co",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "secop-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b9760742b0221fe7",
       "type": "registry",
-      "url": "https://pypi.org/project/secop-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/secop-mcp-server",
+      "registry": "pypi",
+      "version": "0.2.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/juandavidsernav/secop-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.juandavidsernav__secop-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=222",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.juandavidsernav/secop-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

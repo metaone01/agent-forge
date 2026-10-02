@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.getaegis/aegis",
   "name": "io.github.getaegis/aegis",
+  "displayName": "io.github.getaegis/aegis",
   "version": "1.0.5",
-  "versionScheme": "semver",
-  "description": "Credential isolation for AI agents. Inject secrets at the network boundary.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/getaegis/aegis",
-    "readme": "https://github.com/getaegis/aegis#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@getaegis/cli",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Credential isolation for AI agents. Inject secrets at the network boundary.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@getaegis/cli",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e92aa143f37a89a0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@getaegis/cli",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/getaegis/aegis"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.getaegis__aegis.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=205",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.getaegis/aegis"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

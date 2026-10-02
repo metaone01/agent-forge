@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.OzorOwn/frostbyte",
   "name": "io.github.OzorOwn/frostbyte",
+  "displayName": "io.github.OzorOwn/frostbyte",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server giving AI agents access to 40+ APIs: geo, crypto, screenshots, DNS, and more",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/OzorOwn/frostbyte-mcp",
-    "readme": "https://github.com/OzorOwn/frostbyte-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/ozorown/frostbyte-mcp:latest",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/ozorown/frostbyte-mcp:latest",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/ozorown/frostbyte-mcp",
-      "priority": 10,
+      "id": "upstream-5653025ddb5d5b5a",
+      "type": "oci",
+      "url": "https://ghcr.io/ozorown/frostbyte-mcp:latest",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/OzorOwn/frostbyte-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ozorown__frostbyte.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=146",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.OzorOwn/frostbyte"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

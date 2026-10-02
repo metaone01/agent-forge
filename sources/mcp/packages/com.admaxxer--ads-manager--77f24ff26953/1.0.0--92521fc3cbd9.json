@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.admaxxer/ads-manager",
+  "name": "com.admaxxer/ads-manager",
+  "displayName": "Admaxxer",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI-powered DTC analytics & ads manager for Meta + Google",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.admaxxer/ads-manager",
+    "remotes": [
+      {
+        "url": "https://admaxxer.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://admaxxer.com/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4baafb2b129dac55",
+      "type": "other",
+      "url": "https://admaxxer.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://admaxxer.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-224cbfe6e2922a12",
+      "type": "other",
+      "url": "https://admaxxer.com/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://admaxxer.com/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/fortuneflick/Admaxxercom"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=31",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.admaxxer/ads-manager"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

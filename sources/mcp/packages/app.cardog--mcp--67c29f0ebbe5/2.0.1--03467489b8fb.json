@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.cardog/mcp",
+  "name": "app.cardog/mcp",
+  "displayName": "Cardog",
+  "version": "2.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "VIN decode, Canadian listings, market quotes, TC+NHTSA recalls. Full API: https://cardog.app/docs.md",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.cardog/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.cardog.io/mcp?api_key={api_key}",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.cardog.io/sse?api_key={api_key}",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c1d6d84513997b63",
+      "type": "other",
+      "url": "https://mcp.cardog.io/mcp?api_key={api_key}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cardog.io/mcp?api_key={api_key}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-6718296b891e9712",
+      "type": "other",
+      "url": "https://mcp.cardog.io/sse?api_key={api_key}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cardog.io/sse?api_key={api_key}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cardog-ai/mcp-server",
+    "homepage": "https://cardog.app/docs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=18",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.cardog/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

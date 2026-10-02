@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.ivanstan/tle-satellite",
+  "name": "io.github.ivanstan/tle-satellite",
+  "displayName": "TLE Satellite Tracker",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Access TLE orbital data for thousands of satellites including ISS, Starlink, and Hubble.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.ivanstan/tle-satellite",
+    "remotes": [
+      {
+        "url": "https://tle.ivanstanojevic.me/mcp",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-543daf4dcc5e0670",
+      "type": "other",
+      "url": "https://tle.ivanstanojevic.me/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tle.ivanstanojevic.me/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ivanstan/tle-api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=215",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ivanstan/tle-satellite"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

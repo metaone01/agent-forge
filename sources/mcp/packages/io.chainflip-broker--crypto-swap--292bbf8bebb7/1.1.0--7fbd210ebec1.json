@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.chainflip-broker/crypto-swap",
+  "name": "io.chainflip-broker/crypto-swap",
+  "displayName": "Chainflip Broker as a Service",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Native cross-chain swaps: Bitcoin, Ethereum, Solana, Polkadot, Tron, Arbitrum. Quote, swap, track.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.chainflip-broker/crypto-swap",
+    "remotes": [
+      {
+        "url": "https://chainflip-broker.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0b571a0f5e78933a",
+      "type": "other",
+      "url": "https://chainflip-broker.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://chainflip-broker.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/CumpsD/broker-as-a-service",
+    "homepage": "https://chainflip-broker.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.chainflip-broker/crypto-swap"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

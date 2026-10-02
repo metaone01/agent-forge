@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.morluto/rea",
   "name": "io.github.morluto/rea",
+  "displayName": "REA",
   "version": "3.1.0",
-  "versionScheme": "semver",
-  "description": "Reverse engineer anything from your terminal or agent with one CLI and MCP server.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/morluto/rea",
-    "homepage": "https://github.com/morluto/rea",
-    "readme": "https://github.com/morluto/rea#readme"
-  },
-  "keywords": [
-    "REA"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "rea-agents",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Reverse engineer anything from your terminal or agent with one CLI and MCP server.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "rea-agents",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b9a35b8bbb5ffb6c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/rea-agents",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/morluto/rea",
+    "homepage": "https://github.com/morluto/rea"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.morluto__rea.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=252",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.morluto/rea"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

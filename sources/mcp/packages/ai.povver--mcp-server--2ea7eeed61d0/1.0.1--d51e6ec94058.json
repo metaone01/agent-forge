@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.povver/mcp-server",
+  "name": "ai.povver/mcp-server",
+  "displayName": "Povver — Strength Training",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your strength-training data for any AI assistant: workouts, progress, muscle volume, routines.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.povver/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.povver.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d782d57e85a08084",
+      "type": "other",
+      "url": "https://mcp.povver.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.povver.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bvatech/povver-mcp",
+    "homepage": "https://mcp.povver.ai/?utm_source=mcp_registry&utm_medium=referral&utm_campaign=mcp_directory"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=10",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.povver/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

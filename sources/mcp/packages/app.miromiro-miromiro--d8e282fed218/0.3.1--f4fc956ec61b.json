@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.app.miromiro/miromiro",
   "name": "app.miromiro/miromiro",
+  "displayName": "app.miromiro/miromiro",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "Turn any live website into brand colors, fonts, design tokens, SVGs, Lottie and paste-ready code.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/SoraiaBarroso/miromiro-mcp",
-    "readme": "https://github.com/SoraiaBarroso/miromiro-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "miromiro-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Turn any live website into brand colors, fonts, design tokens, SVGs, Lottie and paste-ready code.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "miromiro-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://miromiro.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0b0eac995e67929a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/miromiro-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-8fb9f585d68a0ae7",
+      "type": "other",
+      "url": "https://miromiro.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://miromiro.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/SoraiaBarroso/miromiro-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\app.miromiro__miromiro.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.miromiro/miromiro"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

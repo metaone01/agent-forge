@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.llmse/mcp",
+  "name": "ai.llmse/mcp",
+  "displayName": "ai.llmse/mcp",
+  "version": "1.3.12",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Public MCP server for the LLM Search Engine",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.llmse/mcp",
+    "remotes": [
+      {
+        "url": "https://llmse.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e60181bcc7f63d0f",
+      "type": "other",
+      "url": "https://llmse.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://llmse.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.llmse/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.grupoanesthy-spec/json-repair-mcp",
   "name": "io.github.grupoanesthy-spec/json-repair-mcp",
+  "displayName": "io.github.grupoanesthy-spec/json-repair-mcp",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Repairs malformed JSON from LLM output, validated against a schema. Paid per call via Stripe.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/grupoanesthy-spec/json-repair-api",
-    "readme": "https://github.com/grupoanesthy-spec/json-repair-api#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "json-repair-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Repairs malformed JSON from LLM output, validated against a schema. Paid per call via Stripe.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "json-repair-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c9fe5466ea05e952",
       "type": "registry",
       "url": "https://www.npmjs.com/package/json-repair-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/grupoanesthy-spec/json-repair-api"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.grupoanesthy-spec__json-repair-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=207",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.grupoanesthy-spec/json-repair-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

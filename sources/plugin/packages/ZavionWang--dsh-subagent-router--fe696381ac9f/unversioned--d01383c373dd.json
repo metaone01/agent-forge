@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0bcef192a5ac21b397ae78c31fb779aba3bcaa4cff098fb513e634d5aa4c91f6",
+  "name": "ZavionWang/dsh-subagent-router",
+  "displayName": "ZavionWang/dsh-subagent-router",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "dsh 子代理 LLM 路由隔离插件：让 subagent/subagent_fork 自动走独立 provider/model，防烧主渠道额度。含一键注入与验证工具。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/ZavionWang/dsh-subagent-router",
+    "readme": "https://github.com/ZavionWang/dsh-subagent-router#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ZavionWang/dsh-subagent-router"
+    }
+  ],
+  "keywords": [
+    "models",
+    "usage"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "9153"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

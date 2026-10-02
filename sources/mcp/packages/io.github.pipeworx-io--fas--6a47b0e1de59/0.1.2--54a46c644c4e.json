@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/fas",
+  "name": "io.github.pipeworx-io/fas",
+  "displayName": "Fas",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "FAS MCP — USDA Foreign Agricultural Service (trade & global production data)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/fas",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/fas/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-078ec8f48fea8bf8",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/fas/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/fas/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-fas",
+    "homepage": "https://pipeworx.io/packs/fas"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=279",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/fas"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

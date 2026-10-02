@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ovrsea.mcp/customer-mcp",
+  "name": "com.ovrsea.mcp/customer-mcp",
+  "displayName": "OVRSEA Shipments",
+  "version": "0.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query your OVRSEA freight: shipments, quotations, documents, tasks, and reporting analytics.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ovrsea.mcp/customer-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.ovrsea.com",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.ovrsea.com",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-153b4d1f419d60fe",
+      "type": "other",
+      "url": "https://mcp.ovrsea.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ovrsea.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-2575197d44b6e450",
+      "type": "other",
+      "url": "https://mcp.ovrsea.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ovrsea.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.ovrsea.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=67",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ovrsea.mcp/customer-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.ai.dinglebear/synapse",
   "name": "ai.dinglebear/synapse",
+  "displayName": "Synapse RMCP",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Host, Docker, Compose, SSH, logs, ZFS, and file operations over MCP and CLI.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/dinglebear-ai/synapse",
-    "homepage": "https://github.com/dinglebear-ai/synapse",
-    "readme": "https://github.com/dinglebear-ai/synapse#readme"
-  },
-  "keywords": [
-    "Synapse RMCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@dinglebear/synapse",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Host, Docker, Compose, SSH, logs, ZFS, and file operations over MCP and CLI.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@dinglebear/synapse",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c6ef68bf2a76e8b6",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@dinglebear/synapse",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dinglebear-ai/synapse",
+    "homepage": "https://github.com/dinglebear-ai/synapse"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.dinglebear__synapse.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=4",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.dinglebear/synapse"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.jithox/eu-energy-label-preflight",
+  "name": "com.jithox/eu-energy-label-preflight",
+  "displayName": "Jithox EU Energy Label Preflight",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only EU energy-label preflight: supplier-declared EPREL records. Evidence, not advice.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.jithox/eu-energy-label-preflight",
+    "remotes": [
+      {
+        "url": "https://energy.mcp.jithox.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fa98ec6d03deecae",
+      "type": "other",
+      "url": "https://energy.mcp.jithox.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://energy.mcp.jithox.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://energy.mcp.jithox.com/docs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=55",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.jithox/eu-energy-label-preflight"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

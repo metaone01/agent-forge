@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.aneduaim/untap-mcp",
+  "name": "io.github.aneduaim/untap-mcp",
+  "displayName": "Untap",
+  "version": "1.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check UK Delay Repay, UK261 flights and TfL refunds. Save claims and check commutes on request.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.aneduaim/untap-mcp",
+    "remotes": [
+      {
+        "url": "https://untap.money/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d92ba94d52dcfcda",
+      "type": "other",
+      "url": "https://untap.money/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://untap.money/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/aneduaim/untap-mcp",
+    "homepage": "https://untap.money/connect"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=170",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aneduaim/untap-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

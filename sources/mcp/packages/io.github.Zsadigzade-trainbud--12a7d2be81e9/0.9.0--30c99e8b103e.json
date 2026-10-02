@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Zsadigzade/trainbud",
   "name": "io.github.Zsadigzade/trainbud",
+  "displayName": "TrainBud",
   "version": "0.9.0",
-  "versionScheme": "semver",
-  "description": "Talk to your own fitness data. Findings computed in code against your own 28-day baselines.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Zsadigzade/trainbud",
-    "homepage": "https://github.com/Zsadigzade/trainbud#readme",
-    "readme": "https://github.com/Zsadigzade/trainbud#readme"
-  },
-  "keywords": [
-    "TrainBud"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "trainbud",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Talk to your own fitness data. Findings computed in code against your own 28-day baselines.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "trainbud",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ece581b6f097bff3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/trainbud",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.9.0"
+    },
+    {
+      "id": "upstream-2e49995cf2e92cb7",
+      "type": "oci",
+      "url": "https://ghcr.io/zsadigzade/trainbud:0.9.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Zsadigzade/trainbud",
+    "homepage": "https://github.com/Zsadigzade/trainbud#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.zsadigzade__trainbud.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=163",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Zsadigzade/trainbud"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

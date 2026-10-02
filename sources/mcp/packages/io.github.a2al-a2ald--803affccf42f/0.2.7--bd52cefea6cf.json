@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.a2al/a2ald",
   "name": "io.github.a2al/a2ald",
+  "displayName": "A2AL Daemon",
   "version": "0.2.7",
-  "versionScheme": "semver",
-  "description": "Makes any AI agent globally reachable and discoverable—no cloud, domain, or port forwarding needed.",
-  "license": "MPL-2.0",
-  "links": {
-    "repository": "https://github.com/a2al/a2al",
-    "readme": "https://github.com/a2al/a2al#readme"
-  },
-  "keywords": [
-    "A2AL Daemon"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "a2ald",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Makes any AI agent globally reachable and discoverable—no cloud, domain, or port forwarding needed.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "a2ald",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d4b2c1cee10b6c25",
       "type": "registry",
       "url": "https://www.npmjs.com/package/a2ald",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.7"
     }
   ],
+  "links": {
+    "repository": "https://github.com/a2al/a2al"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.a2al__a2ald.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=164",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.a2al/a2ald"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

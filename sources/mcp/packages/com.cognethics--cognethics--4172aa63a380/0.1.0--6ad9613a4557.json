@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.cognethics/cognethics",
+  "name": "com.cognethics/cognethics",
+  "displayName": "Cognethics",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Multi-tenant business platform — 6,000+ RBAC-gated MCP tools across finance, ops, docs, agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.cognethics/cognethics",
+    "remotes": [
+      {
+        "url": "https://{tenant}.cognethics.com/api/mcp/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://{tenant}.cognethics.com/api/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-eb60747b3128b7df",
+      "type": "other",
+      "url": "https://{tenant}.cognethics.com/api/mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{tenant}.cognethics.com/api/mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-de9979cd71ad7a7e",
+      "type": "other",
+      "url": "https://{tenant}.cognethics.com/api/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://{tenant}.cognethics.com/api/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://developers.cognethics.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=41",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.cognethics/cognethics"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

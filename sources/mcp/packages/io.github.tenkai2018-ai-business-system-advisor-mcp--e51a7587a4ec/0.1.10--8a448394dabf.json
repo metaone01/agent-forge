@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.tenkai2018/ai-business-system-advisor-mcp",
   "name": "io.github.tenkai2018/ai-business-system-advisor-mcp",
+  "displayName": "AI Business System Advisor",
   "version": "0.1.10",
-  "versionScheme": "semver",
-  "description": "Find the safest first AI workflow before investing in AI agents or automation.",
-  "license": "SEE LICENSE IN LICENSE.md",
-  "links": {
-    "repository": "https://github.com/tenkai2018/ai-business-system-advisor-mcp",
-    "readme": "https://github.com/tenkai2018/ai-business-system-advisor-mcp#readme"
-  },
-  "keywords": [
-    "AI Business System Advisor"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "ai-business-system-advisor-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Find the safest first AI workflow before investing in AI agents or automation.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "ai-business-system-advisor-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.prodxsolution.com/ai-business-system-advisor/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4c2ceda13c3fc86e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/ai-business-system-advisor-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.10"
+    },
+    {
+      "id": "upstream-f2d00e4ff90d0cb9",
+      "type": "other",
+      "url": "https://mcp.prodxsolution.com/ai-business-system-advisor/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.prodxsolution.com/ai-business-system-advisor/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/tenkai2018/ai-business-system-advisor-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tenkai2018__ai-business-system-advisor-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=337",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.tenkai2018/ai-business-system-advisor-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

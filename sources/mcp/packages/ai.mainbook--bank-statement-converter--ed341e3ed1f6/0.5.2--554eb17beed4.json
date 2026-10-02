@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.mainbook/bank-statement-converter",
+  "name": "ai.mainbook/bank-statement-converter",
+  "displayName": "MainBook Bank Statement Converter",
+  "version": "0.5.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Convert PDF bank statements to checked Excel, CSV or JSON with balance validation.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mainbook-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.mainbook.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6abd8a0dbaf7315e",
+      "type": "registry",
+      "url": "https://pypi.org/project/mainbook-mcp",
+      "registry": "pypi",
+      "version": "0.5.1"
+    },
+    {
+      "id": "upstream-b7bb914d398e557c",
+      "type": "other",
+      "url": "https://mcp.mainbook.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mainbook.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/human-beyond/mainbook-mcp",
+    "homepage": "https://mainbook.ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.mainbook/bank-statement-converter"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

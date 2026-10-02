@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.helixar/mcp",
+  "name": "ai.helixar/mcp",
+  "displayName": "Helixar Security",
+  "version": "0.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Security tools for AI agents: scan MCP servers, validate HDP delegation chains, audit releases.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.helixar/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.helixar.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-258f4f306985da0a",
+      "type": "other",
+      "url": "https://mcp.helixar.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.helixar.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Helixar-AI/helixar-mcp",
+    "homepage": "https://helixar.ai/connect"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=7",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.helixar/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cn.pianam.mcp/hot-trending-mcp",
+  "name": "cn.pianam.mcp/hot-trending-mcp",
+  "displayName": "China Hot Trending MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server aggregating hot-search boards from 8 Chinese platforms (Weibo, Zhihu, Bilibili, Douyin).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cn.pianam.mcp/hot-trending-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.pianam.cn/hot-mcp/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-68f36b8618fc6258",
+      "type": "other",
+      "url": "https://mcp.pianam.cn/hot-mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pianam.cn/hot-mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/boy-373/hot-trending-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cn.pianam.mcp/hot-trending-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

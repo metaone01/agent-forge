@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.sumoffice/office",
   "name": "com.sumoffice/office",
+  "displayName": "SumOffice — real Word and Excel for agents",
   "version": "0.3.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Real Word and Excel for agents: open your .docx/.xlsm, read, propose, apply, get it back intact.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/SumOfficeApp/sumoffice-mcp",
-    "homepage": "https://sumoffice.com/mcp",
-    "readme": "https://github.com/SumOfficeApp/sumoffice-mcp#readme"
-  },
-  "keywords": [
-    "SumOffice — real Word and Excel for agents"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/hissih/sumoffice-mcp:0.3.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/hissih/sumoffice-mcp:0.3.1",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://view.sumoffice.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/hissih/sumoffice-mcp",
-      "priority": 10,
+      "id": "upstream-dc2da8d2f406f9fa",
+      "type": "oci",
+      "url": "https://docker.io/hissih/sumoffice-mcp:0.3.1",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-6cb48821611565d2",
+      "type": "other",
+      "url": "https://view.sumoffice.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://view.sumoffice.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/SumOfficeApp/sumoffice-mcp",
+    "homepage": "https://sumoffice.com/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.sumoffice__office.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=79",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.sumoffice/office"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

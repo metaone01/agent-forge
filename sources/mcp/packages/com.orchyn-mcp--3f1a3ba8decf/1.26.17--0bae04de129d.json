@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.orchyn/mcp",
   "name": "com.orchyn/mcp",
+  "displayName": "Orchyn",
   "version": "1.26.17",
-  "versionScheme": "semver",
-  "description": "Social intelligence for 8 networks: read posts, creators and trends, then create from them.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/orchynX/mcp",
-    "homepage": "https://mcp.orchyn.com",
-    "readme": "https://github.com/orchynX/mcp#readme"
-  },
-  "keywords": [
-    "Orchyn"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@orchyn/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Social intelligence for 8 networks: read posts, creators and trends, then create from them.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@orchyn/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.orchyn.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-12928ee2dd338fdf",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@orchyn/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.26.17"
+    },
+    {
+      "id": "upstream-a342f9f17318ca40",
+      "type": "other",
+      "url": "https://mcp.orchyn.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.orchyn.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/orchynX/mcp",
+    "homepage": "https://mcp.orchyn.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.orchyn__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=67",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.orchyn/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

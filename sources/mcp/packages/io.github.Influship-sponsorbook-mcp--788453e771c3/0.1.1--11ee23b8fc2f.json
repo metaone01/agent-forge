@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Influship/sponsorbook-mcp",
   "name": "io.github.Influship/sponsorbook-mcp",
+  "displayName": "Sponsorbook",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Research YouTube sponsors, inspect sponsorship evidence, and manage brand lists with Sponsorbook.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Influship/sponsorbook-mcp",
-    "readme": "https://github.com/Influship/sponsorbook-mcp#readme"
-  },
-  "keywords": [
-    "Sponsorbook"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@sponsorbook/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Research YouTube sponsors, inspect sponsorship evidence, and manage brand lists with Sponsorbook.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@sponsorbook/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://app.sponsorbook.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-30be3eab9b06e70d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@sponsorbook/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-c49f7c9cb24f5823",
+      "type": "other",
+      "url": "https://app.sponsorbook.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.sponsorbook.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Influship/sponsorbook-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.influship__sponsorbook-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Influship/sponsorbook-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

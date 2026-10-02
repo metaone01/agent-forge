@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wmarceau/ticket-discovery",
   "name": "io.github.wmarceau/ticket-discovery",
+  "displayName": "io.github.wmarceau/ticket-discovery",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Search and compare concert ticket prices across platforms",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/wmarceau/ticket-discovery-mcp",
-    "readme": "https://github.com/wmarceau/ticket-discovery-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ticket-discovery-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Search and compare concert ticket prices across platforms",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ticket-discovery-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b26db025ebee00a7",
       "type": "registry",
-      "url": "https://pypi.org/project/ticket-discovery-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ticket-discovery-mcp",
+      "registry": "pypi",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wmarceau/ticket-discovery-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wmarceau__ticket-discovery.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=350",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wmarceau/ticket-discovery"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

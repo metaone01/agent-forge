@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.isdaniel/mcp_weather_server",
   "name": "io.github.isdaniel/mcp_weather_server",
+  "displayName": "Weather MCP Server",
   "version": "0.6.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "providing weather information, air quality data, and timezone utilities using the Open-Meteo API.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/isdaniel/mcp_weather_server",
-    "readme": "https://github.com/isdaniel/mcp_weather_server#readme"
-  },
-  "keywords": [
-    "Weather MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-weather-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-weather-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7631ca5c2edee8ca",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-weather-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-weather-server",
+      "registry": "pypi",
+      "version": "0.6.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/isdaniel/mcp_weather_server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.isdaniel__mcp_weather_server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=214",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.isdaniel/mcp_weather_server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

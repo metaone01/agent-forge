@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.layers/mcp",
+  "name": "io.github.layers/mcp",
+  "displayName": "Layers Marketing MCP",
+  "version": "2.1.16",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Give your agent marketing superpowers: research, renders, delivery, paid campaigns, measurement.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@layers/cli",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.layers.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6453a915ad3ee3c3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@layers/cli",
+      "registry": "npm",
+      "version": "2.1.15"
+    },
+    {
+      "id": "upstream-d3e2403da6fccaaf",
+      "type": "other",
+      "url": "https://mcp.layers.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.layers.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/layers/mcp",
+    "homepage": "https://growth.layers.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=227",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.layers/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

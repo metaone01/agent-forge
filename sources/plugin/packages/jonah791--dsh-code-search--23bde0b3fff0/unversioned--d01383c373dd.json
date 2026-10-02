@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.8e777e33ef6ba152b29ce380af516d07b6c40e5522ed5fc76f003786aa94a671",
+  "name": "jonah791/dsh-code-search",
+  "displayName": "jonah791/dsh-code-search",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "本地代码/文件智能检索：封装系统 rg（ripgrep），默认排除 node_modules/.pnpm/dist 等噪音；5 个视角——code_search（文本）+ code_locate（文件）+ code_symbols（结构地图）+ code_impact（引用面/影响分析）+ code_test_gate（测试闸门：git 改动 → 该跑哪些测试）",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/jonah791/dsh-code-search",
+    "readme": "https://github.com/jonah791/dsh-code-search#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/jonah791/dsh-code-search"
+    },
+    {
+      "id": "npm-5546eedcbb6f",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-code-search",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "knowledge",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15777"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13892"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

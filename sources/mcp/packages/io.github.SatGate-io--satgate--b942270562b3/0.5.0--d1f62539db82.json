@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.SatGate-io/satgate",
+  "name": "io.github.SatGate-io/satgate",
+  "displayName": "SatGate – Economic Firewall for AI Agents",
+  "version": "0.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Budget, payment and audit controls for AI agent API calls and MCP tool calls.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "satgate-mcp-bridge",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://satgate-mcp-saas.fly.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-eeda961fe611622f",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/satgate-mcp-bridge",
+      "registry": "npm",
+      "version": "1.0.5"
+    },
+    {
+      "id": "upstream-467fc39ed6527853",
+      "type": "other",
+      "url": "https://satgate-mcp-saas.fly.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://satgate-mcp-saas.fly.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SatGate-io/satgate",
+    "homepage": "https://satgate.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=152",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SatGate-io/satgate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

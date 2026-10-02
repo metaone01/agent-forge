@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.dchub/mcp-server",
+  "name": "cloud.dchub/mcp-server",
+  "displayName": "DC Hub — Data Center Site Selection & Colocation: Electricity, Power Grid, Gas, Fiber",
+  "version": "2.12.24",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live power, grid, gas, fiber + data-center capacity to buy or lease in kW/MW — query and cite.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cloud.dchub/mcp-server",
+    "remotes": [
+      {
+        "url": "https://dchub.cloud/mcp/registry",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://dchub.cloud/mcp/claude",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://dchub.cloud/mcp/grok",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3402f6d65c99b188",
+      "type": "other",
+      "url": "https://dchub.cloud/mcp/registry",
+      "install": {
+        "type": "api",
+        "url": "https://dchub.cloud/mcp/registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-c2bdf4ba781405b5",
+      "type": "other",
+      "url": "https://dchub.cloud/mcp/claude",
+      "install": {
+        "type": "api",
+        "url": "https://dchub.cloud/mcp/claude"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-96c058a608cdabb9",
+      "type": "other",
+      "url": "https://dchub.cloud/mcp/grok",
+      "install": {
+        "type": "api",
+        "url": "https://dchub.cloud/mcp/grok"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/azmartone67/dchub-mcp-server",
+    "homepage": "https://dchub.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cloud.dchub/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.a202-protocol/a202-mcp",
   "name": "io.github.a202-protocol/a202-mcp",
+  "displayName": "A202",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Verifiable agreements for agent-led commerce: mandates, obligations, evidence, transaction records.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/a202-protocol/a202",
-    "homepage": "https://a202.org",
-    "readme": "https://github.com/a202-protocol/a202#readme"
-  },
-  "keywords": [
-    "A202"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/a202-protocol/a202-mcp:0.1.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/a202-protocol/a202-mcp:0.1.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/a202-protocol/a202-mcp",
-      "priority": 10,
+      "id": "upstream-c35faed7e5f2df8f",
+      "type": "oci",
+      "url": "https://ghcr.io/a202-protocol/a202-mcp:0.1.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/a202-protocol/a202",
+    "homepage": "https://a202.org"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.a202-protocol__a202-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=164",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.a202-protocol/a202-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

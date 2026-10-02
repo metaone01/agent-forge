@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.care.fysio/discovery",
+  "name": "care.fysio/discovery",
+  "displayName": "fysio.care clinic discovery",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Discover Swedish MSK clinics on fysio.care: search clinics, services, and open appointment times.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "care.fysio/discovery",
+    "remotes": [
+      {
+        "url": "https://fysio.care/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6b8a8c15725f410e",
+      "type": "other",
+      "url": "https://fysio.care/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fysio.care/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Fysio-care/fysio-care",
+    "homepage": "https://fysio.care/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "care.fysio/discovery"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

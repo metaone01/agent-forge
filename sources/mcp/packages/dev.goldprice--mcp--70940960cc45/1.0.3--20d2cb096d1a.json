@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.goldprice/mcp",
+  "name": "dev.goldprice/mcp",
+  "displayName": "goldprice.dev",
+  "version": "1.0.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Gold/silver/copper spot & futures, per-country dealer prices, options-implied probability surface.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.goldprice/mcp",
+    "remotes": [
+      {
+        "url": "https://api.goldprice.dev/v1/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e89c656128c32257",
+      "type": "other",
+      "url": "https://api.goldprice.dev/v1/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://api.goldprice.dev/v1/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://goldprice.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=91",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.goldprice/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

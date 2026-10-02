@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.eloedge/prediction-market-data",
+  "name": "com.eloedge/prediction-market-data",
+  "displayName": "EloEdge Data: prediction-market and price history",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SQL over 2.2B rows: settled Kalshi and Polymarket markets, 1-second crypto prices, sports and more.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.eloedge/prediction-market-data",
+    "remotes": [
+      {
+        "url": "https://eloedge.com/api/mcp-data/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2d60517ff57e2ed1",
+      "type": "other",
+      "url": "https://eloedge.com/api/mcp-data/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://eloedge.com/api/mcp-data/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://eloedge.com/data"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=46",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.eloedge/prediction-market-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.imoldyoung/e-invoice",
+  "name": "io.github.imoldyoung/e-invoice",
+  "displayName": "AI 开票助手 · 电子发票开具",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "对话式开具电子发票（数电票）：第一步免费生成发票草稿（自动校验税号、税率并算税），第二步确认开票（需 App Key，按张计费），支持开票记录查询。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.imoldyoung/e-invoice",
+    "remotes": [
+      {
+        "url": "https://e-invoice-mcp.601096790.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-54ae7caf6b6dea3a",
+      "type": "other",
+      "url": "https://e-invoice-mcp.601096790.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://e-invoice-mcp.601096790.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=213",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.imoldyoung/e-invoice"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

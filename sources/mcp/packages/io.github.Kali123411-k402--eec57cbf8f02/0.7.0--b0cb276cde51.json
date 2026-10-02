@@ -2,46 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Kali123411/k402",
   "name": "io.github.Kali123411/k402",
+  "displayName": "io.github.Kali123411/k402",
   "version": "0.7.0",
-  "versionScheme": "semver",
-  "description": "Agent-payable APIs on Kaspa: LLMs, chain data, covenants, zk proofs — pay per call, no API key",
-  "license": "MIT",
-  "links": {
-    "repository": "https://pypi.org/project/k402-mcp/"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "k402-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Agent-payable APIs on Kaspa: LLMs, chain data, covenants, zk proofs — pay per call, no API key",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "k402-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://x402-compute.68cxgfyr0.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-aea3667ab176ad8d",
       "type": "registry",
-      "url": "https://pypi.org/project/k402-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/k402-mcp",
+      "registry": "pypi",
+      "version": "0.7.0"
+    },
+    {
+      "id": "upstream-53088f1719c95ff3",
+      "type": "other",
+      "url": "https://x402-compute.68cxgfyr0.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://x402-compute.68cxgfyr0.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kali123411__k402.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=137",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Kali123411/k402"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

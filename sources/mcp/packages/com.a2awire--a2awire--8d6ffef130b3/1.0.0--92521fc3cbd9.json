@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.a2awire/a2awire",
+  "name": "com.a2awire/a2awire",
+  "displayName": "A2AWire",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Escrow, reputation, and payments for agent-to-agent commerce. Non-custodial USDC/Base L2.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.a2awire/a2awire",
+    "remotes": [
+      {
+        "url": "https://a2awire.com/mcp/http",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://a2awire.com/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c0f15c51e8ee602e",
+      "type": "other",
+      "url": "https://a2awire.com/mcp/http",
+      "install": {
+        "type": "api",
+        "url": "https://a2awire.com/mcp/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-85db764ce8513e84",
+      "type": "other",
+      "url": "https://a2awire.com/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://a2awire.com/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ee324/a2awire"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=30",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.a2awire/a2awire"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

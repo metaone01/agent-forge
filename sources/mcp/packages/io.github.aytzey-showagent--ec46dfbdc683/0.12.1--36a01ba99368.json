@@ -2,49 +2,72 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aytzey/showagent",
   "name": "io.github.aytzey/showagent",
+  "displayName": "showagent",
   "version": "0.12.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Search, resume and convert AI coding sessions (Claude Code, Codex, Gemini, OpenCode, Pi) over MCP.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/aytzey/showagent",
-    "homepage": "https://github.com/aytzey/showagent#install",
-    "readme": "https://github.com/aytzey/showagent#readme"
-  },
-  "keywords": [
-    "showagent"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/aytzey/showagent/releases/download/v0.12.1/showagent_v0.12.1_linux_amd64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/aytzey/showagent/releases/download/v0.12.1/showagent_v0.12.1_linux_amd64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-4d5683aca3949b3d",
+      "type": "archive",
       "url": "https://github.com/aytzey/showagent/releases/download/v0.12.1/showagent_v0.12.1_linux_amd64.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.12.1"
+    },
+    {
+      "id": "upstream-2f770854807257f0",
+      "type": "archive",
+      "url": "https://github.com/aytzey/showagent/releases/download/v0.12.1/showagent_v0.12.1_linux_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "0.12.1"
+    },
+    {
+      "id": "upstream-7fb7642be9a111ec",
+      "type": "archive",
+      "url": "https://github.com/aytzey/showagent/releases/download/v0.12.1/showagent_v0.12.1_darwin_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "0.12.1"
+    },
+    {
+      "id": "upstream-fdc1bac635a5fda4",
+      "type": "archive",
+      "url": "https://github.com/aytzey/showagent/releases/download/v0.12.1/showagent_v0.12.1_darwin_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "0.12.1"
+    },
+    {
+      "id": "upstream-9172e1b31570518f",
+      "type": "archive",
+      "url": "https://github.com/aytzey/showagent/releases/download/v0.12.1/showagent_v0.12.1_windows_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "0.12.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aytzey/showagent",
+    "homepage": "https://github.com/aytzey/showagent#install"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +80,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aytzey__showagent.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=174",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aytzey/showagent"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

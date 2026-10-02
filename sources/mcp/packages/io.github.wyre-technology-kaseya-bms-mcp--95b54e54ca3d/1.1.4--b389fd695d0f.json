@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wyre-technology/kaseya-bms-mcp",
   "name": "io.github.wyre-technology/kaseya-bms-mcp",
+  "displayName": "Kaseya BMS",
   "version": "1.1.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Kaseya BMS PSA — tickets, accounts, time entries, contracts.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/wyre-technology/kaseya-bms-mcp",
-    "homepage": "https://github.com/wyre-technology/kaseya-bms-mcp",
-    "readme": "https://github.com/wyre-technology/kaseya-bms-mcp#readme"
-  },
-  "keywords": [
-    "Kaseya BMS"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-technology/kaseya-bms-mcp:v1.1.4",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-technology/kaseya-bms-mcp:v1.1.4",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-technology/kaseya-bms-mcp",
-      "priority": 10,
+      "id": "upstream-224e08ffda392bc3",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-technology/kaseya-bms-mcp:v1.1.4",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wyre-technology/kaseya-bms-mcp",
+    "homepage": "https://github.com/wyre-technology/kaseya-bms-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-technology__kaseya-bms-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=351",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wyre-technology/kaseya-bms-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

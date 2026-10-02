@@ -2,50 +2,80 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.deficlow/hyperstore-mcp",
   "name": "io.github.deficlow/hyperstore-mcp",
+  "displayName": "HyperStore",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Search and inspect 6,500+ curated AI apps from the HyperStore directory.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/deficlow/HyperStore-MCP",
-    "homepage": "https://store.hypergpt.ai",
-    "readme": "https://github.com/deficlow/HyperStore-MCP#readme"
-  },
-  "keywords": [
-    "HyperStore"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "hyperstore-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Search and inspect 6,500+ curated AI apps from the HyperStore directory.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "hyperstore-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.store.hypergpt.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.store.hypergpt.ai/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-13a12244fdc5a8c3",
       "type": "registry",
-      "url": "https://pypi.org/project/hyperstore-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/hyperstore-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-d9fb92714277ccc2",
+      "type": "oci",
+      "url": "https://ghcr.io/deficlow/hyperstore-mcp:0.1.1",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-fe20e8e8fbd91d1d",
+      "type": "other",
+      "url": "https://mcp.store.hypergpt.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.store.hypergpt.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-caa563fbc92c678d",
+      "type": "other",
+      "url": "https://mcp.store.hypergpt.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.store.hypergpt.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/deficlow/HyperStore-MCP",
+    "homepage": "https://store.hypergpt.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +88,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.deficlow__hyperstore-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=192",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.deficlow/hyperstore-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

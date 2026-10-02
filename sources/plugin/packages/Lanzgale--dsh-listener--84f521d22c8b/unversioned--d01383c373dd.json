@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.a21ee32a1fd5cf8ac6fa5c9d497756de4d4f02658024205c8cbfb45297e0156e",
+  "name": "Lanzgale/dsh-listener",
+  "displayName": "Lanzgale/dsh-listener",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "安全版本地语音输入插件 for DeepSeek Harness:输入框右侧麦克风按钮,录音后经同源宿主代理转写(本地 SenseVoice-Small INT8 ONNX,音频不出网)。后端仅绑定 127.0.0.1 + 随机 token,无 CORS,模型 sha256 校验。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Lanzgale/dsh-listener",
+    "readme": "https://github.com/Lanzgale/dsh-listener#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Lanzgale/dsh-listener"
+    }
+  ],
+  "keywords": [
+    "models",
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12290"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12756"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

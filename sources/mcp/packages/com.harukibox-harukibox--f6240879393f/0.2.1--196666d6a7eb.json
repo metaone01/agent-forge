@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.harukibox/harukibox",
   "name": "com.harukibox/harukibox",
+  "displayName": "harukibox",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Run a Japan proxy-buying business from your AI: inventory, orders, buyers, shipping fee split.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/cosmopig/harukibox-agent",
-    "homepage": "https://harukibox.com/agent",
-    "readme": "https://github.com/cosmopig/harukibox-agent#readme"
-  },
-  "keywords": [
-    "harukibox"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@harukibox/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Run a Japan proxy-buying business from your AI: inventory, orders, buyers, shipping fee split.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@harukibox/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://harukibox.com/api/agent/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-75c64aac725ae75c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@harukibox/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-109667f60d23fc19",
+      "type": "other",
+      "url": "https://harukibox.com/api/agent/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://harukibox.com/api/agent/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/cosmopig/harukibox-agent",
+    "homepage": "https://harukibox.com/agent"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.harukibox__harukibox.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.harukibox/harukibox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

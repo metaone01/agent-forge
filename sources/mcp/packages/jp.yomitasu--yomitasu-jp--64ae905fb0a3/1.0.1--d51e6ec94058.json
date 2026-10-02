@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.jp.yomitasu/yomitasu-jp",
+  "name": "jp.yomitasu/yomitasu-jp",
+  "displayName": "ヨミタス",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "サイトのページを読み込んで、AI アプリがつなげる形（MCP サーバー）にして配信する無料のサービスです。（yomitasu.jp の内容を検索して答える。ヨミタス経由）",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "jp.yomitasu/yomitasu-jp",
+    "remotes": [
+      {
+        "url": "https://mcp.yomitasu.jp/s/yomitasu-jp/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ab23466e147d65d5",
+      "type": "other",
+      "url": "https://mcp.yomitasu.jp/s/yomitasu-jp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.yomitasu.jp/s/yomitasu-jp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.yomitasu.jp/sites/yomitasu-jp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=364",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "jp.yomitasu/yomitasu-jp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

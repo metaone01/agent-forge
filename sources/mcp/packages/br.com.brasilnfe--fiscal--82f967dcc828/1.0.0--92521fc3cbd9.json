@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.br.com.brasilnfe/fiscal",
+  "name": "br.com.brasilnfe/fiscal",
+  "displayName": "br.com.brasilnfe/fiscal",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Brazilian fiscal MCP server - issue NF-e, NFC-e, NFS-e, CT-e, MDF-e and DC-e via SEFAZ.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "br.com.brasilnfe/fiscal",
+    "remotes": [
+      {
+        "url": "https://api.brasilnfe.com.br/services/Mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6c50fc2a6239fe62",
+      "type": "other",
+      "url": "https://api.brasilnfe.com.br/services/Mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.brasilnfe.com.br/services/Mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/BrasilNFe/brasilnfe-mcp",
+    "homepage": "https://www.brasilnfe.com.br/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "br.com.brasilnfe/fiscal"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

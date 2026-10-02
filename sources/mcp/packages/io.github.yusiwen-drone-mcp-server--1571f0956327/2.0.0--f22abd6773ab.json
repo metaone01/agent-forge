@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.yusiwen/drone-mcp-server",
   "name": "io.github.yusiwen/drone-mcp-server",
+  "displayName": "Drone CI/CD MCP Server",
   "version": "2.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Drone CI/CD: 45 tools for builds, repos, secrets, users and templates",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/yusiwen/drone-mcp-server",
-    "readme": "https://github.com/yusiwen/drone-mcp-server#readme"
-  },
-  "keywords": [
-    "Drone CI/CD MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/yusiwen/drone-mcp-server:2.0.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/yusiwen/drone-mcp-server:2.0.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/yusiwen/drone-mcp-server",
-      "priority": 10,
+      "id": "upstream-d5f552fa320c89a7",
+      "type": "oci",
+      "url": "https://ghcr.io/yusiwen/drone-mcp-server:2.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/yusiwen/drone-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yusiwen__drone-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=354",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yusiwen/drone-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

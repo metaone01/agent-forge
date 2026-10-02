@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.tools.engram/engram",
+  "name": "tools.engram/engram",
+  "displayName": "Engram",
+  "version": "0.4.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Memory for AI agent teams across tools, sessions, repositories, and teammates.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "engram-tools",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.engram.tools/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-da2b836f6c3de106",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/engram-tools",
+      "registry": "npm",
+      "version": "0.4.4"
+    },
+    {
+      "id": "upstream-a410364db6a084cb",
+      "type": "other",
+      "url": "https://api.engram.tools/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.engram.tools/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/emrevarol/engram-mcp",
+    "homepage": "https://engram.tools/en/agent"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=378",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tools.engram/engram"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

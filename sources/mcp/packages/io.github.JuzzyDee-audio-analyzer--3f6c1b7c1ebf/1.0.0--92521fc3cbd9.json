@@ -2,46 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.JuzzyDee/audio-analyzer",
   "name": "io.github.JuzzyDee/audio-analyzer",
+  "displayName": "io.github.JuzzyDee/audio-analyzer",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Gives LLMs ears. Spectral, harmonic, rhythm, stereo, and structural audio analysis.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/JuzzyDee/audio-analyzer-rs",
-    "readme": "https://github.com/JuzzyDee/audio-analyzer-rs#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/JuzzyDee/audio-analyzer-rs/releases/download/v1.0.0/audio-analyzer-darwin-arm64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/JuzzyDee/audio-analyzer-rs/releases/download/v1.0.0/audio-analyzer-darwin-arm64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-7a70e721f6033e26",
+      "type": "archive",
       "url": "https://github.com/JuzzyDee/audio-analyzer-rs/releases/download/v1.0.0/audio-analyzer-darwin-arm64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-ec50bc0f50631dfc",
+      "type": "archive",
+      "url": "https://github.com/JuzzyDee/audio-analyzer-rs/releases/download/v1.0.0/audio-analyzer-darwin-x64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-b7232126c04640cf",
+      "type": "archive",
+      "url": "https://github.com/JuzzyDee/audio-analyzer-rs/releases/download/v1.0.0/audio-analyzer-linux-x64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-32037e9e5365f2a4",
+      "type": "archive",
+      "url": "https://github.com/JuzzyDee/audio-analyzer-rs/releases/download/v1.0.0/audio-analyzer-win32-x64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/JuzzyDee/audio-analyzer-rs"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.juzzydee__audio-analyzer.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=136",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.JuzzyDee/audio-analyzer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

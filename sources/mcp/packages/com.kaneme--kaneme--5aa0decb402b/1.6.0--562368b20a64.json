@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.kaneme/kaneme",
+  "name": "com.kaneme/kaneme",
+  "displayName": "Kaneme — Your writing identity, measured and portable",
+  "version": "1.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Build a voice from your own texts, measure whether a text still sounds like you, then write in it.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.kaneme/kaneme",
+    "remotes": [
+      {
+        "url": "https://kaneme.com/api/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://kaneme.com/api/mcp/public",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ff821f1b1b789764",
+      "type": "other",
+      "url": "https://kaneme.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://kaneme.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-00a5d3fe8c28a1ed",
+      "type": "other",
+      "url": "https://kaneme.com/api/mcp/public",
+      "install": {
+        "type": "api",
+        "url": "https://kaneme.com/api/mcp/public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://kaneme.com/developers/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=56",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.kaneme/kaneme"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

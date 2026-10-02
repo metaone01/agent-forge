@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0bbd808af1e99a7bb4f4cdc543035634da8e1b4c7d4de3e97e9442a3d2292e75",
+  "name": "dong-victor/dsh-mcphub",
+  "displayName": "dong-victor/dsh-mcphub",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "MCPHub 桥接插件（DSH Web GUI）：把本地 MCPHub（http://localhost:3000，@samanhappy/mcphub）聚合暴露的全部 MCP server 工具桥接进 DSH。宿主侧以 MCP Streamable HTTP 客户端连接 MCPHub 聚合端点 /mcp（或 /mcp/<group> 分组端点），把发现到的工具以",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/dong-victor/dsh-mcphub",
+    "readme": "https://github.com/dong-victor/dsh-mcphub#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/dong-victor/dsh-mcphub"
+    },
+    {
+      "id": "npm-206eb52551c4",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@dong-victor/dsh-mcphub",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "5381"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "5142"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "2719"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

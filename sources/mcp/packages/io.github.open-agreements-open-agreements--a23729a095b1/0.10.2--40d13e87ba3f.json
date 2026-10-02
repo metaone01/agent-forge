@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.open-agreements/open-agreements",
   "name": "io.github.open-agreements/open-agreements",
+  "displayName": "Open Agreements",
   "version": "0.10.2",
-  "versionScheme": "semver",
-  "description": "Fill standard legal agreement templates (NDAs, SAFEs, NVCA docs, employment) as DOCX files.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/open-agreements/open-agreements",
-    "homepage": "https://openagreements.org",
-    "readme": "https://github.com/open-agreements/open-agreements#readme"
-  },
-  "keywords": [
-    "Open Agreements"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@open-agreements/contract-templates-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Fill standard legal agreement templates (NDAs, SAFEs, NVCA docs, employment) as DOCX files.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@open-agreements/contract-templates-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://openagreements.org/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3bed0421ce4d4934",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@open-agreements/contract-templates-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.10.2"
+    },
+    {
+      "id": "upstream-0fb826261118ce87",
+      "type": "other",
+      "url": "https://openagreements.org/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://openagreements.org/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/open-agreements/open-agreements",
+    "homepage": "https://openagreements.org"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.open-agreements__open-agreements.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.open-agreements/open-agreements"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

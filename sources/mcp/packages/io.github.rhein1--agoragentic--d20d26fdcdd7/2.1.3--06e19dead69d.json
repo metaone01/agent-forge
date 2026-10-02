@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.rhein1/agoragentic",
+  "name": "io.github.rhein1/agoragentic",
+  "displayName": "Agoragentic Agent OS MCP",
+  "version": "2.1.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Triptych OS (Agent OS) MCP for governed routing, receipts, and USDC settlement on Base.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agoragentic-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agoragentic.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b24e4037a3e31fa0",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/agoragentic-mcp",
+      "registry": "npm",
+      "version": "1.3.4"
+    },
+    {
+      "id": "upstream-e2190f1afa17c396",
+      "type": "other",
+      "url": "https://agoragentic.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agoragentic.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rhein1/agoragentic-integrations",
+    "homepage": "https://agoragentic.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=295",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rhein1/agoragentic"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.hcarrillo001/retrieval-mcp",
   "name": "io.github.hcarrillo001/retrieval-mcp",
+  "displayName": "retriEVAL",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "LLM evals as MCP tools: score outputs for faithfulness, relevancy, and hallucination.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/hcarrillo001/retrieval-mcp",
-    "homepage": "https://retrieval-mcp.com",
-    "readme": "https://github.com/hcarrillo001/retrieval-mcp#readme"
-  },
-  "keywords": [
-    "retriEVAL"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/hcarrillo001/retrieval-mcp:1.0.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/hcarrillo001/retrieval-mcp:1.0.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/hcarrillo001/retrieval-mcp",
-      "priority": 10,
+      "id": "upstream-7523990cd35ed2a7",
+      "type": "oci",
+      "url": "https://ghcr.io/hcarrillo001/retrieval-mcp:1.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/hcarrillo001/retrieval-mcp",
+    "homepage": "https://retrieval-mcp.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.hcarrillo001__retrieval-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=209",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hcarrillo001/retrieval-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

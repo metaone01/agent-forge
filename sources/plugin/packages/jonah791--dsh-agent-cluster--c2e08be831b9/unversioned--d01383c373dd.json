@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0babe9e2f4696105ab0067f1b22c0b3e52fad169bbb78be0acab40993a21b87d",
+  "name": "jonah791/dsh-agent-cluster",
+  "displayName": "jonah791/dsh-agent-cluster",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 多实例通讯底座：本机（或共享盘）上多个 DSH 实例之间的去中心化消息总线 + 在线名册 + 点对点/广播消息，收到消息注入本实例会话交给 agent 处理。用于搭建多智能体工作台。v0.2.0 起带「重启收自己的尸」：同主机同 profile 的死前身心跳/状态在启动时清扫（保守判活，未知不删）。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/jonah791/dsh-agent-cluster",
+    "readme": "https://github.com/jonah791/dsh-agent-cluster#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/jonah791/dsh-agent-cluster"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15763"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14870"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

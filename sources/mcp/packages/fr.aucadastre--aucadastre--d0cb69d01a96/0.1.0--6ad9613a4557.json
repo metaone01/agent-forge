@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fr.aucadastre/aucadastre",
+  "name": "fr.aucadastre/aucadastre",
+  "displayName": "Aucadastre",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A French address, all public facts: parcel, zoning, risks, permits, sales, energy labels. No key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fr.aucadastre/aucadastre",
+    "remotes": [
+      {
+        "url": "https://aucadastre.fr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-20b39916a9de48b7",
+      "type": "other",
+      "url": "https://aucadastre.fr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://aucadastre.fr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://aucadastre.fr/api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fr.aucadastre/aucadastre"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

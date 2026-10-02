@@ -1,0 +1,111 @@
+# DSH 搜索发现清单
+
+发现日期：2026-10-02（Asia/Shanghai）。查询入口：[GitHub `awesome-dsh` 搜索](https://api.github.com/search/repositories?q=awesome-dsh&per_page=100)。
+
+平台报告 99 个命中，已保存 99 个仓库身份；`incomplete_results=false`。这是一组搜索命中，包含推荐目录、单个插件、转载、迁移占位和周边项目，不是 99 个已确认的数据源，也不代表发现了所有社区目录。
+
+已详细调查的来源与数量见 [主盘点文档](../../source-inventory-2026-10-02.md)。其他条目仅作为下轮扩展的候选，当前未统计数据量。
+
+| 仓库 | 本轮进度 |
+| --- | --- |
+| [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 已调查，数量和口径见主文档 |
+| [beancookie/awesome-dsh-plugin](https://github.com/beancookie/awesome-dsh-plugin) | 已调查，数量和口径见主文档 |
+| [bruc3van/awesome-dsh-plugin](https://github.com/bruc3van/awesome-dsh-plugin) | 已调查，数量和口径见主文档 |
+| [Alex-Yanggg/awesome-DSH-plugin](https://github.com/Alex-Yanggg/awesome-DSH-plugin) | 搜索发现，未展开统计 |
+| [kejixiaoliang/awesome-dsh-plugins](https://github.com/kejixiaoliang/awesome-dsh-plugins) | 已调查，数量和口径见主文档 |
+| [dshworks/awesome-dsh-plugins](https://github.com/dshworks/awesome-dsh-plugins) | 已调查，数量和口径见主文档 |
+| [cccakeee/awesome-dsh-plugins](https://github.com/cccakeee/awesome-dsh-plugins) | 已调查，数量和口径见主文档 |
+| [awesome-deepseekharness/awesome-deepseek-harness](https://github.com/awesome-deepseekharness/awesome-deepseek-harness) | 已调查，数量和口径见主文档 |
+| [billLiao/awesome-dsh-plugin](https://github.com/billLiao/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [white0dew/awesome-dsh-plugins](https://github.com/white0dew/awesome-dsh-plugins) | 已调查，数量和口径见主文档 |
+| [diegosouzapw/awesome-omni-dsh-plugins](https://github.com/diegosouzapw/awesome-omni-dsh-plugins) | 搜索发现，未展开统计 |
+| [Herdeny/awesome-dsh-plugins-2026](https://github.com/Herdeny/awesome-dsh-plugins-2026) | 搜索发现，未展开统计 |
+| [ZeroPointRepo/awesome-dsh-plugins](https://github.com/ZeroPointRepo/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [DshMarketPlace/awesome-dsh-plugin](https://github.com/DshMarketPlace/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [oslook/awesome-dsh-plugins](https://github.com/oslook/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) | 搜索发现，未展开统计 |
+| [Anil-matcha/awesome-dsh-plugin](https://github.com/Anil-matcha/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [GordenSun/awesome-dsh-plugins](https://github.com/GordenSun/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [dataelement/awesome-dsh-workbench](https://github.com/dataelement/awesome-dsh-workbench) | 已调查，数量和口径见主文档 |
+| [hackerFish/awesome-dsh-skills](https://github.com/hackerFish/awesome-dsh-skills) | 已调查，数量和口径见主文档 |
+| [yzfly/awesome-dsh-skills](https://github.com/yzfly/awesome-dsh-skills) | 已调查，数量和口径见主文档 |
+| [the-beating-light-of-the-nail/awesome-dsh-plugin-stock](https://github.com/the-beating-light-of-the-nail/awesome-dsh-plugin-stock) | 已调查，数量和口径见主文档 |
+| [uyq/awesome-dsh](https://github.com/uyq/awesome-dsh) | 搜索发现，未展开统计 |
+| [lai-133/dsh-integration](https://github.com/lai-133/dsh-integration) | 搜索发现，未展开统计 |
+| [YYTbit/awesome-dsh-bridges](https://github.com/YYTbit/awesome-dsh-bridges) | 已调查，数量和口径见主文档 |
+| [kingselyjoe/awesome-dsh-list](https://github.com/kingselyjoe/awesome-dsh-list) | 已调查，数量和口径见主文档 |
+| [leavestring/awesome-dsh-background-plugin](https://github.com/leavestring/awesome-dsh-background-plugin) | 搜索发现，未展开统计 |
+| [kingselyjoe/awesome-legal-dsh](https://github.com/kingselyjoe/awesome-legal-dsh) | 搜索发现，未展开统计 |
+| [the-beating-light-of-the-nail/awesome-dsh-tavern](https://github.com/the-beating-light-of-the-nail/awesome-dsh-tavern) | 搜索发现，未展开统计 |
+| [zhiwehu/awesome_dsh_skills](https://github.com/zhiwehu/awesome_dsh_skills) | 已调查，数量和口径见主文档 |
+| [web-casa/Awesome-DeepSeek-Harness-Plugins](https://github.com/web-casa/Awesome-DeepSeek-Harness-Plugins) | 搜索发现，未展开统计 |
+| [dshoneys/awesome-dshoneys](https://github.com/dshoneys/awesome-dshoneys) | 搜索发现，未展开统计 |
+| [arkyu2077/awesome-dsh-plugin](https://github.com/arkyu2077/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [jqueryscript/awesome-dsh-plugins](https://github.com/jqueryscript/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [dshworks/awesome-dsh-themes](https://github.com/dshworks/awesome-dsh-themes) | 已调查，数量和口径见主文档 |
+| [Awesome-AI-Pedia/Awesome-DSH-Pet](https://github.com/Awesome-AI-Pedia/Awesome-DSH-Pet) | 搜索发现，未展开统计 |
+| [DSH-APP/awesome-dsha-plugins](https://github.com/DSH-APP/awesome-dsha-plugins) | 搜索发现，未展开统计 |
+| [dongsheng123132/awesome-dsh-plugins](https://github.com/dongsheng123132/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [dorisaimpatient855/awesome-dsh-plugin](https://github.com/dorisaimpatient855/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [Ycet/dsh-awesome-hud](https://github.com/Ycet/dsh-awesome-hud) | 搜索发现，未展开统计 |
+| [wgd753/awesome-dsh-plugin](https://github.com/wgd753/awesome-dsh-plugin) | 已调查，数量和口径见主文档 |
+| [Jaylor-Wang/dsh-awesome-agent-preset](https://github.com/Jaylor-Wang/dsh-awesome-agent-preset) | 搜索发现，未展开统计 |
+| [awesome-dsh-plugins/awesome-dsh-plugins](https://github.com/awesome-dsh-plugins/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [uni-medical/awesome-dsh-med-plugin-web-homepage](https://github.com/uni-medical/awesome-dsh-med-plugin-web-homepage) | 搜索发现，未展开统计 |
+| [anynews88/awesome-dsh-plugin](https://github.com/anynews88/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [weekitmo/oh-my-dsh-plugins](https://github.com/weekitmo/oh-my-dsh-plugins) | 搜索发现，未展开统计 |
+| [dshceo/awesome-dsh](https://github.com/dshceo/awesome-dsh) | 搜索发现，未展开统计 |
+| [cooljser/dsh-plugin-portal](https://github.com/cooljser/dsh-plugin-portal) | 搜索发现，未展开统计 |
+| [guobinmengxiang-rgb/awesome-dsh](https://github.com/guobinmengxiang-rgb/awesome-dsh) | 搜索发现，未展开统计 |
+| [stakeswky/awesome-dsh](https://github.com/stakeswky/awesome-dsh) | 搜索发现，未展开统计 |
+| [bhzhangsun/awesome-dsh](https://github.com/bhzhangsun/awesome-dsh) | 搜索发现，未展开统计 |
+| [JNLXG/awesome-dsh-plugins](https://github.com/JNLXG/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [anonymous99-Rise/awesome-dsh-zotero](https://github.com/anonymous99-Rise/awesome-dsh-zotero) | 搜索发现，未展开统计 |
+| [kankezhiyan/dsh-awesome-fonts](https://github.com/kankezhiyan/dsh-awesome-fonts) | 搜索发现，未展开统计 |
+| [LiuRJ99/awesome-dsh-plugins](https://github.com/LiuRJ99/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [Nitrogen216/awesome-dsh-mods](https://github.com/Nitrogen216/awesome-dsh-mods) | 搜索发现，未展开统计 |
+| [ZeroPointRepo/awesome-dsh-usecases](https://github.com/ZeroPointRepo/awesome-dsh-usecases) | 搜索发现，未展开统计 |
+| [BadLemon5267/awesome-dsh-desktop](https://github.com/BadLemon5267/awesome-dsh-desktop) | 搜索发现，未展开统计 |
+| [1ovezy/awesome-dsh-plugin](https://github.com/1ovezy/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [coolbat/awesome-dsh-plugins](https://github.com/coolbat/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [zzylanmengqingchuan/awesome-dsh-plugins](https://github.com/zzylanmengqingchuan/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [ukinch605/awesome-dsh-hub](https://github.com/ukinch605/awesome-dsh-hub) | 搜索发现，未展开统计 |
+| [fjzzwxp/awesome-dsh-plugins](https://github.com/fjzzwxp/awesome-dsh-plugins) | 已调查，数量和口径见主文档 |
+| [vibe-any/awesome-dsh-plugins](https://github.com/vibe-any/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [fuchao2pku/awesome-dsh-experts](https://github.com/fuchao2pku/awesome-dsh-experts) | 搜索发现，未展开统计 |
+| [xinglunxu76-star/awesome-dsh-plugin](https://github.com/xinglunxu76-star/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [hunziZzzy/awesome-dsh-plugin](https://github.com/hunziZzzy/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [hackerFish/awesome-dsh-presets](https://github.com/hackerFish/awesome-dsh-presets) | 已调查，数量和口径见主文档 |
+| [clawhome/awesome-dsh-resources](https://github.com/clawhome/awesome-dsh-resources) | 搜索发现，未展开统计 |
+| [JeeFH/awesome-dsh-zh](https://github.com/JeeFH/awesome-dsh-zh) | 搜索发现，未展开统计 |
+| [wuyan19/awesome-dsh-plugins](https://github.com/wuyan19/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [ryasrk/dsh-awesome-skills](https://github.com/ryasrk/dsh-awesome-skills) | 搜索发现，未展开统计 |
+| [Zhidao-Lab-OSS/awesome-dsh-plugins](https://github.com/Zhidao-Lab-OSS/awesome-dsh-plugins) | 搜索发现，未展开统计 |
+| [Ardythrunresistant2575/awesome-dsh-plugin](https://github.com/Ardythrunresistant2575/awesome-dsh-plugin) | 搜索发现，未展开统计 |
+| [Renakoni/awesome-dsh-themes](https://github.com/Renakoni/awesome-dsh-themes) | 已调查，数量和口径见主文档 |
+| [zoahdev/dsh-plugin-search](https://github.com/zoahdev/dsh-plugin-search) | 搜索发现，未展开统计 |
+| [ZeroPointRepo/awesome-dsh-usecases-zh](https://github.com/ZeroPointRepo/awesome-dsh-usecases-zh) | 搜索发现，未展开统计 |
+| [Toshuntamed/awesome-dsh-plugin.com](https://github.com/Toshuntamed/awesome-dsh-plugin.com) | 搜索发现，未展开统计 |
+| [hotpot-labs/awesome-dsh-industry-plugins](https://github.com/hotpot-labs/awesome-dsh-industry-plugins) | 搜索发现，未展开统计 |
+| [WSK-build/awesome-dsh-mobile-plugins](https://github.com/WSK-build/awesome-dsh-mobile-plugins) | 搜索发现，未展开统计 |
+| [Kazusa1085/dsh-awesome-model-setting](https://github.com/Kazusa1085/dsh-awesome-model-setting) | 搜索发现，未展开统计 |
+| [Awesome-AI-Pedia/Awesome-DSH-Lark-Auth](https://github.com/Awesome-AI-Pedia/Awesome-DSH-Lark-Auth) | 搜索发现，未展开统计 |
+| [vclike/dsh-find-plugin](https://github.com/vclike/dsh-find-plugin) | 搜索发现，未展开统计 |
+| [xinglunxu76-star/awesome-dsh-plugin-deepseek-harness-](https://github.com/xinglunxu76-star/awesome-dsh-plugin-deepseek-harness-) | 搜索发现，未展开统计 |
+| [Jesse-njx/dsh-plugin-manager-registry](https://github.com/Jesse-njx/dsh-plugin-manager-registry) | 搜索发现，未展开统计 |
+| [omdsh-dev/dsh-container](https://github.com/omdsh-dev/dsh-container) | 搜索发现，未展开统计 |
+| [jiang4wqy/dsh-dejaview](https://github.com/jiang4wqy/dsh-dejaview) | 搜索发现，未展开统计 |
+| [white-sand-grand/dsh-plugin-doctor](https://github.com/white-sand-grand/dsh-plugin-doctor) | 搜索发现，未展开统计 |
+| [Jesse-njx/dsh-plugin-manager](https://github.com/Jesse-njx/dsh-plugin-manager) | 搜索发现，未展开统计 |
+| [dabaicai001/star-dsh-desktop](https://github.com/dabaicai001/star-dsh-desktop) | 搜索发现，未展开统计 |
+| [dshworks/dshthemes](https://github.com/dshworks/dshthemes) | 搜索发现，未展开统计 |
+| [web-casa/awesome-cordis-plugins](https://github.com/web-casa/awesome-cordis-plugins) | 已调查，数量和口径见主文档 |
+| [863683348/dsh-trend-radar](https://github.com/863683348/dsh-trend-radar) | 搜索发现，未展开统计 |
+| [joeyefengying/dsh-plugin-market](https://github.com/joeyefengying/dsh-plugin-market) | 搜索发现，未展开统计 |
+| [ljsysfurryACE/dsh-agentframe-suite](https://github.com/ljsysfurryACE/dsh-agentframe-suite) | 搜索发现，未展开统计 |
+| [SongYuhui14/dsh-publisher](https://github.com/SongYuhui14/dsh-publisher) | 搜索发现，未展开统计 |
+| [ReachGa0/dsh-desktop](https://github.com/ReachGa0/dsh-desktop) | 搜索发现，未展开统计 |
+| [LeeGuanWei-a/dsh-arch-advisor](https://github.com/LeeGuanWei-a/dsh-arch-advisor) | 搜索发现，未展开统计 |
+| [LeeGuanWei-a/dsh-arch-advisor-offline](https://github.com/LeeGuanWei-a/dsh-arch-advisor-offline) | 搜索发现，未展开统计 |
+
+数据依据：[discovery.json](discovery.json)。

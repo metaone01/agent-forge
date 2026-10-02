@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.curie/commerce",
+  "name": "co.curie/commerce",
+  "displayName": "Curie Commerce",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search, compare in 3D, and buy products from 5.6M+ Shopify stores. Free tier; Pro adds checkout.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "co.curie/commerce",
+    "remotes": [
+      {
+        "url": "https://chat.curie.app/api/mcp/global",
+        "transport": "sse"
+      },
+      {
+        "url": "https://chat.curie.app/api/mcp/{shop_id}",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a7e1e7d7c7346649",
+      "type": "other",
+      "url": "https://chat.curie.app/api/mcp/global",
+      "install": {
+        "type": "api",
+        "url": "https://chat.curie.app/api/mcp/global"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-78f2ac39e6360d5c",
+      "type": "other",
+      "url": "https://chat.curie.app/api/mcp/{shop_id}",
+      "install": {
+        "type": "api",
+        "url": "https://chat.curie.app/api/mcp/{shop_id}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/curievision/curie-shopify-app",
+    "homepage": "https://chat.curie.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=28",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.curie/commerce"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

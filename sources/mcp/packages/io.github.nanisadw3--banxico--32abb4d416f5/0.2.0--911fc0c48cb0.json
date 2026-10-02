@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.nanisadw3/banxico",
+  "name": "io.github.nanisadw3/banxico",
+  "displayName": "Banxico (Banco de México)",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Mexico's official economic data from Banxico: USD/MXN, inflation, UDIS, TIIE and reserves.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-banxico",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://banxico-mcp.duckdns.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7df62c9f36c916e2",
+      "type": "registry",
+      "url": "https://pypi.org/project/mcp-banxico",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-291b28cac2c6ad6c",
+      "type": "other",
+      "url": "https://banxico-mcp.duckdns.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://banxico-mcp.duckdns.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/nanisadw3/mcp-banxico"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=262",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nanisadw3/banxico"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.jittee/splitbill",
   "name": "com.jittee/splitbill",
+  "displayName": "com.jittee/splitbill",
   "version": "1.0.7",
-  "versionScheme": "semver",
-  "description": "Split bills and collect payments through PayNow (Singapore) from your AI. MCP server for SplitBill.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/JojoYay/splitbill-mcp",
-    "readme": "https://github.com/JojoYay/splitbill-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "splitbill-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Split bills and collect payments through PayNow (Singapore) from your AI. MCP server for SplitBill.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "splitbill-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://jittee.com/mcp/splitbill",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-798134a9f49034cd",
       "type": "registry",
       "url": "https://www.npmjs.com/package/splitbill-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.7"
+    },
+    {
+      "id": "upstream-1508e58a5a75b0e3",
+      "type": "other",
+      "url": "https://jittee.com/mcp/splitbill",
+      "install": {
+        "type": "api",
+        "url": "https://jittee.com/mcp/splitbill"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/JojoYay/splitbill-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.jittee__splitbill.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=56",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.jittee/splitbill"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

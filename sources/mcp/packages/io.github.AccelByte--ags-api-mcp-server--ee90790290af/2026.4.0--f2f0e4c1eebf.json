@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AccelByte/ags-api-mcp-server",
+  "name": "io.github.AccelByte/ags-api-mcp-server",
+  "displayName": "AGS API",
+  "version": "2026.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Stateless MCP server for AccelByte Gaming Services APIs with OpenAPI integration",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.AccelByte/ags-api-mcp-server",
+    "remotes": [
+      {
+        "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/mcp/{studio}-{game}",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://{private_cloud_url}/mcp/{namespace}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-921b864d84863b14",
+      "type": "other",
+      "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/mcp/{studio}-{game}",
+      "install": {
+        "type": "api",
+        "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/mcp/{studio}-{game}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-00bc523ef7c4de99",
+      "type": "other",
+      "url": "https://{private_cloud_url}/mcp/{namespace}",
+      "install": {
+        "type": "api",
+        "url": "https://{private_cloud_url}/mcp/{namespace}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AccelByte/ags-api-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AccelByte/ags-api-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

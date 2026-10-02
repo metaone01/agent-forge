@@ -2,49 +2,65 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cloudinary/asset-management-mcp",
   "name": "io.github.cloudinary/asset-management-mcp",
+  "displayName": "Cloudinary Asset Management",
   "version": "0.8.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Upload, organize, search, and transform images, videos, and files with AI-powered tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/cloudinary/asset-management-mcp",
-    "readme": "https://github.com/cloudinary/asset-management-mcp#readme"
-  },
-  "keywords": [
-    "Cloudinary Asset Management"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@cloudinary/asset-management-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cloudinary/asset-management-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://asset-management.mcp.cloudinary.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9f886986c68f9c42",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@cloudinary/asset-management-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.8.1"
+    },
+    {
+      "id": "upstream-a8ec6577df7bd328",
+      "type": "oci",
+      "url": "https://docker.io/cloudinary/asset-management-mcp:0.8.1",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-c58f714d7304fcb3",
+      "type": "other",
+      "url": "https://asset-management.mcp.cloudinary.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://asset-management.mcp.cloudinary.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/cloudinary/asset-management-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +73,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cloudinary__asset-management-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=183",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cloudinary/asset-management-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

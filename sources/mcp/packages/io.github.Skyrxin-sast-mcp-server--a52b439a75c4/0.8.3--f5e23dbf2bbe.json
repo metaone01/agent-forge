@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Skyrxin/sast-mcp-server",
   "name": "io.github.Skyrxin/sast-mcp-server",
+  "displayName": "SAST MCP Server",
   "version": "0.8.3",
-  "versionScheme": "semver",
-  "description": "11-scanner SAST/DAST MCP server with closed-loop remediation, SBOM/SARIF, and CI integrations",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Skyrxin/sast-mcp-server",
-    "homepage": "https://github.com/Skyrxin/sast-mcp-server#readme",
-    "readme": "https://github.com/Skyrxin/sast-mcp-server#readme"
-  },
-  "keywords": [
-    "SAST MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sast-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "11-scanner SAST/DAST MCP server with closed-loop remediation, SBOM/SARIF, and CI integrations",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sast-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1e7284a6e2a5dd0b",
       "type": "registry",
-      "url": "https://pypi.org/project/sast-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sast-mcp-server",
+      "registry": "pypi",
+      "version": "0.8.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Skyrxin/sast-mcp-server",
+    "homepage": "https://github.com/Skyrxin/sast-mcp-server#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.skyrxin__sast-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=154",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Skyrxin/sast-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

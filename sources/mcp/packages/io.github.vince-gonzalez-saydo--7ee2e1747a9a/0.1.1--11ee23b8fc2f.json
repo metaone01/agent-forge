@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vince-gonzalez/saydo",
   "name": "io.github.vince-gonzalez/saydo",
+  "displayName": "SayDo",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Does the tool do what it says? Conformance receipts for MCP servers, and unknown when unchecked.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/vince-gonzalez/saydo",
-    "homepage": "https://github.com/vince-gonzalez/saydo",
-    "readme": "https://github.com/vince-gonzalez/saydo#readme"
-  },
-  "keywords": [
-    "SayDo"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "saydo",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "saydo",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b8ed54fa6a003dc2",
       "type": "registry",
-      "url": "https://pypi.org/project/saydo/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/saydo",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/vince-gonzalez/saydo",
+    "homepage": "https://github.com/vince-gonzalez/saydo"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vince-gonzalez__saydo.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=347",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vince-gonzalez/saydo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

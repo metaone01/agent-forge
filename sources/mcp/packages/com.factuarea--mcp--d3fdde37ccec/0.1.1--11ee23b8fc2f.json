@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.factuarea/mcp",
+  "name": "com.factuarea/mcp",
+  "displayName": "Factuarea",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Spanish invoicing with VeriFactu (AEAT): invoices, quotes, contacts, products, taxes and filings.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@factuarea/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.factuarea.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8cd728b3b6f01664",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@factuarea/mcp",
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-823105007ebf9eca",
+      "type": "other",
+      "url": "https://mcp.factuarea.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.factuarea.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/factuarea/factuarea-mcp",
+    "homepage": "https://docs.factuarea.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=47",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.factuarea/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

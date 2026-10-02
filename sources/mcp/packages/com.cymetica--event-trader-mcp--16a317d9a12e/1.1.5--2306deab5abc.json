@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.cymetica/event-trader-mcp",
+  "name": "com.cymetica/event-trader-mcp",
+  "displayName": "EventTrader MCP",
+  "version": "1.1.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI prediction market trading — real-time data, CLOB exchange, Prop Desk, 40+ tools",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "cymetica-eventtrader-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://cymetica.com/mcp/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fe939418a0c48c0a",
+      "type": "registry",
+      "url": "https://pypi.org/project/cymetica-eventtrader-mcp",
+      "registry": "pypi",
+      "version": "1.1.5"
+    },
+    {
+      "id": "upstream-5b1f30fc32486ff1",
+      "type": "other",
+      "url": "https://cymetica.com/mcp/v1",
+      "install": {
+        "type": "api",
+        "url": "https://cymetica.com/mcp/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cymetica.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.cymetica/event-trader-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

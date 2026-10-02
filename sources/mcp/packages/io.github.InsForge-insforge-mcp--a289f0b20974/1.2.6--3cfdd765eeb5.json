@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.InsForge/insforge-mcp",
   "name": "io.github.InsForge/insforge-mcp",
+  "displayName": "InsForge",
   "version": "1.2.6",
-  "versionScheme": "semver",
-  "description": "MCP server for InsForge BaaS — database, storage, edge functions, and deployments",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/InsForge/insforge-mcp",
-    "readme": "https://github.com/InsForge/insforge-mcp#readme"
-  },
-  "keywords": [
-    "InsForge"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@insforge/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for InsForge BaaS — database, storage, edge functions, and deployments",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@insforge/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.insforge.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-efcd54ede168d479",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@insforge/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.6"
+    },
+    {
+      "id": "upstream-72ffc6d2db5230ce",
+      "type": "other",
+      "url": "https://mcp.insforge.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.insforge.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/InsForge/insforge-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.insforge__insforge-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=134",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.InsForge/insforge-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.vip.esim-global/esim-catalog",
+  "name": "vip.esim-global/esim-catalog",
+  "displayName": "eSIM-Global.VIP eSIM Catalog",
+  "version": "2.0.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Find prepaid travel eSIM plans for 200+ destinations with live prices, specs and a buy link.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "vip.esim-global/esim-catalog",
+    "remotes": [
+      {
+        "url": "https://esim-global.vip/esimshop/wp-json/esimglobal/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-21d97d42e5a92ce3",
+      "type": "other",
+      "url": "https://esim-global.vip/esimshop/wp-json/esimglobal/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://esim-global.vip/esimshop/wp-json/esimglobal/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://esim-global.vip"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "vip.esim-global/esim-catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

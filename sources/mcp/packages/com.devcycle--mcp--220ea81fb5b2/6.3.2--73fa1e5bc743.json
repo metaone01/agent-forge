@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.devcycle/mcp",
+  "name": "com.devcycle/mcp",
+  "displayName": "com.devcycle/mcp",
+  "version": "6.3.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "DevCycle MCP server for feature flag management",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.devcycle/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.devcycle.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.devcycle.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5a7191ee459a7354",
+      "type": "other",
+      "url": "https://mcp.devcycle.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.devcycle.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b0e8b63214e95892",
+      "type": "other",
+      "url": "https://mcp.devcycle.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.devcycle.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/DevCycleHQ/cli",
+    "homepage": "https://docs.devcycle.com/cli-mcp/mcp-getting-started"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=44",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.devcycle/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

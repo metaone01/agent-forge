@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.searchapi/mcp",
+  "name": "io.searchapi/mcp",
+  "displayName": "io.searchapi/mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Give AI assistants access to real-time search data through SearchApi.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.searchapi/mcp",
+    "remotes": [
+      {
+        "url": "https://www.searchapi.io/mcp?token={api_token}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1a6a3a242fa42116",
+      "type": "other",
+      "url": "https://www.searchapi.io/mcp?token={api_token}",
+      "install": {
+        "type": "api",
+        "url": "https://www.searchapi.io/mcp?token={api_token}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/searchapi/searchapi-mcp",
+    "homepage": "https://www.searchapi.io/integrations/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=359",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.searchapi/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.oceanmodeling/coops-mcp",
   "name": "io.github.oceanmodeling/coops-mcp",
+  "displayName": "NOAA CO-OPS MCP Server",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "NOAA CO-OPS tides, water levels, currents, and meteorological data",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/oceanmodeling/ocean-mcp",
-    "readme": "https://github.com/oceanmodeling/ocean-mcp#readme"
-  },
-  "keywords": [
-    "NOAA CO-OPS MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "coops-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "NOAA CO-OPS tides, water levels, currents, and meteorological data",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "coops-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-09ffffe4d365d904",
       "type": "registry",
-      "url": "https://pypi.org/project/coops-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/coops-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/oceanmodeling/ocean-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.oceanmodeling__coops-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=266",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.oceanmodeling/coops-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

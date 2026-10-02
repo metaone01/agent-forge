@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MatthewSherlin/mushroomdb",
   "name": "io.github.MatthewSherlin/mushroomdb",
+  "displayName": "io.github.MatthewSherlin/mushroomdb",
   "version": "0.1.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Embedded graph database for agents: declare association rules once, edges maintain themselves.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/MatthewSherlin/mushroomdb",
-    "readme": "https://github.com/MatthewSherlin/mushroomdb#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "cargo",
-    "identifier": "mushroomdb-cli",
-    "registryBaseUrl": "https://crates.io/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "cargo",
+    "identifier": "mushroomdb-cli",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b8ecce60101b8311",
       "type": "registry",
       "url": "https://crates.io/crates/mushroomdb-cli",
-      "priority": 10,
-      "registry": "cargo"
+      "registry": "cargo",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MatthewSherlin/mushroomdb"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.matthewsherlin__mushroomdb.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MatthewSherlin/mushroomdb"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

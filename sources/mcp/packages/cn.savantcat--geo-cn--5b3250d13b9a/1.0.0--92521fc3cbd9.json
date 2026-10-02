@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cn.savantcat/geo-cn",
+  "name": "cn.savantcat/geo-cn",
+  "displayName": "中文 AI 可引用性（GEO/AEO）体检",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "中文站能否被豆包/DeepSeek/文心/Kimi 抓取、读懂、引用：可引用性审计、信源池占位探测、五大指标测量、修复计划",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cn.savantcat/geo-cn",
+    "remotes": [
+      {
+        "url": "https://savantcat.cn/mcp-geo",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0cb514d0a7921830",
+      "type": "other",
+      "url": "https://savantcat.cn/mcp-geo",
+      "install": {
+        "type": "api",
+        "url": "https://savantcat.cn/mcp-geo"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/savantcat/mcp-geo-cn",
+    "homepage": "https://savantcat.cn/mcp-geo.html"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cn.savantcat/geo-cn"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

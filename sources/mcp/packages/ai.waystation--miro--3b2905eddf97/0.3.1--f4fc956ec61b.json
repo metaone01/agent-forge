@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.waystation/miro",
+  "name": "ai.waystation/miro",
+  "displayName": "ai.waystation/miro",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Collaborate on visual boards with your team using Miro integration.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.waystation/miro",
+    "remotes": [
+      {
+        "url": "https://waystation.ai/miro/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://waystation.ai/miro/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-44612f9791149245",
+      "type": "other",
+      "url": "https://waystation.ai/miro/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/miro/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b7747a8b6f3adf7c",
+      "type": "other",
+      "url": "https://waystation.ai/miro/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/miro/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/waystation-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.waystation/miro"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

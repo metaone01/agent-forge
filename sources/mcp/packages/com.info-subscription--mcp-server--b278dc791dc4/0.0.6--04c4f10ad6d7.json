@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.info-subscription/mcp-server",
+  "name": "com.info-subscription/mcp-server",
+  "displayName": "INFO-Subscription",
+  "version": "0.0.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Exposes tools for querying subscriptions and billing data from the INFO-Subscription platform",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "Infosoft.Info.Subscription.Mcp.LocalServer",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://s4mcp-prod.azurewebsites.net/{tenantId}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-894002be0b80d42a",
+      "type": "registry",
+      "url": "https://www.nuget.org/packages/Infosoft.Info.Subscription.Mcp.LocalServer",
+      "registry": "nuget",
+      "version": "2026.9.15.2"
+    },
+    {
+      "id": "upstream-f0d630f243fcc078",
+      "type": "other",
+      "url": "https://s4mcp-prod.azurewebsites.net/{tenantId}",
+      "install": {
+        "type": "api",
+        "url": "https://s4mcp-prod.azurewebsites.net/{tenantId}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=55",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.info-subscription/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

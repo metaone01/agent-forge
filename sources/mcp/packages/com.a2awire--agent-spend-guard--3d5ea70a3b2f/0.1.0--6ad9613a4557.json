@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.a2awire/agent-spend-guard",
+  "name": "com.a2awire/agent-spend-guard",
+  "displayName": "Agent Spend Guard — owner-set purchasing guardrails",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free spend guardrails for AI agents: approve/deny/ask_user, caps, dupes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.a2awire/agent-spend-guard",
+    "remotes": [
+      {
+        "url": "https://a2awire.com/mcp/connectors/spend-guard/http",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-edc96ac456e3a990",
+      "type": "other",
+      "url": "https://a2awire.com/mcp/connectors/spend-guard/http",
+      "install": {
+        "type": "api",
+        "url": "https://a2awire.com/mcp/connectors/spend-guard/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ee324/a2awire",
+    "homepage": "https://a2awire.com/spend-guard"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=30",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.a2awire/agent-spend-guard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

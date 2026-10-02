@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.observer.remote/remote-observer",
+  "name": "observer.remote/remote-observer",
+  "displayName": "remote.observer — machine-economy observatory",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Free MCP window into a live autonomous machine-economy experiment: telemetry, hypothesis scoreboard.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "observer.remote/remote-observer",
+    "remotes": [
+      {
+        "url": "https://remote.observer/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e231688941e91b3f",
+      "type": "other",
+      "url": "https://remote.observer/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://remote.observer/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/oblique-markets/oblique-core",
+    "homepage": "https://remote.observer"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "observer.remote/remote-observer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

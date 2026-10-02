@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.xyz.twzrd.intel/twzrd-agent-intel",
+  "name": "xyz.twzrd.intel/twzrd-agent-intel",
+  "displayName": "TWZRD Agent Intelligence",
+  "version": "1.0.12",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pre-spend trust for AI agents that buy: check x402 services and product listings before paying.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "twzrd-agent-intel",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://intel.twzrd.xyz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1d7de04676452c19",
+      "type": "registry",
+      "url": "https://pypi.org/project/twzrd-agent-intel",
+      "registry": "pypi",
+      "version": "0.5.11"
+    },
+    {
+      "id": "upstream-ee3562b0825e5803",
+      "type": "other",
+      "url": "https://intel.twzrd.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://intel.twzrd.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/twzrd-sol/twzrd-trust",
+    "homepage": "https://intel.twzrd.xyz"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=383",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.twzrd.intel/twzrd-agent-intel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.twitr/twitr",
+  "name": "sh.twitr/twitr",
+  "displayName": "twitr.sh",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "X/Twitter reads, search, monitors and posting. Pay-per-call in USDC — no signup, no API keys.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.twitr/twitr",
+    "remotes": [
+      {
+        "url": "https://twitr.sh/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1cd492087653fafa",
+      "type": "other",
+      "url": "https://twitr.sh/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://twitr.sh/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/lnvestor/twitr-skills",
+    "homepage": "https://twitr.sh"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.twitr/twitr"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

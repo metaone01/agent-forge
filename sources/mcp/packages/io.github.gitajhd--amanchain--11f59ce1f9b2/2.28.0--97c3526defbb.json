@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.gitajhd/amanchain",
+  "name": "io.github.gitajhd/amanchain",
+  "displayName": "io.github.gitajhd/amanchain",
+  "version": "2.28.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AmanChain: quantum-resistant x402 payments. Remote MCP, 50 paid services. USDC on Base or AMAN.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.gitajhd/amanchain",
+    "remotes": [
+      {
+        "url": "https://amanchain-relay.gitajhd.workers.dev/api/mcp?net=mainnet",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-682b4ae07309d3b3",
+      "type": "other",
+      "url": "https://amanchain-relay.gitajhd.workers.dev/api/mcp?net=mainnet",
+      "install": {
+        "type": "api",
+        "url": "https://amanchain-relay.gitajhd.workers.dev/api/mcp?net=mainnet"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/gitajhd/amanchain"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=206",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.gitajhd/amanchain"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.cc8df5ce894adcb074f83b1ed0b6ba503277d52202419ec3c1a89e8ad91c202f",
+  "name": "QinpanWan/dsh-prompt-antivirus",
+  "displayName": "QinpanWan/dsh-prompt-antivirus",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "全局提示注入 / 上下文病毒（context virus）防御插件：tools/pre-execute 扫工具参数、tools/post-execute 扫工具结果、agent/pre-step 扫进入模型前的消息并注入金丝雀守卫、llm/stream 出站消毒；支持 block / quarantine / monitor 三模式、磁盘化可演进病毒库（学习/导入/导出）与审计日志。纯 JS",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/QinpanWan/dsh-prompt-antivirus",
+    "readme": "https://github.com/QinpanWan/dsh-prompt-antivirus#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/QinpanWan/dsh-prompt-antivirus"
+    }
+  ],
+  "keywords": [
+    "observability",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "7601"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/QinpanWan__dsh-prompt-antivirus.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12988"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

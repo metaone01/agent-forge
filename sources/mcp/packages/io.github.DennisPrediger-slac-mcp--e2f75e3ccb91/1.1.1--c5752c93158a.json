@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.DennisPrediger/slac-mcp",
   "name": "io.github.DennisPrediger/slac-mcp",
+  "displayName": "io.github.DennisPrediger/slac-mcp",
   "version": "1.1.1",
-  "versionScheme": "semver",
-  "description": "MCP server exposing SLAC (Simple Logic & Arithmetic Compiler) as tools for LLM agents",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/DennisPrediger/SLAC-MCP",
-    "readme": "https://github.com/DennisPrediger/SLAC-MCP#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "slac-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server exposing SLAC (Simple Logic & Arithmetic Compiler) as tools for LLM agents",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "slac-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c8b188aabc098ce9",
       "type": "registry",
       "url": "https://www.npmjs.com/package/slac-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/DennisPrediger/SLAC-MCP"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dennisprediger__slac-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=123",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.DennisPrediger/slac-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

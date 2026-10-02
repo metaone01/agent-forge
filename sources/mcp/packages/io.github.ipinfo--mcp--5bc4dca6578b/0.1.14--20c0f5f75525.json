@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.ipinfo/mcp",
+  "name": "io.github.ipinfo/mcp",
+  "displayName": "IPinfo",
+  "version": "0.1.14",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official IPinfo MCP Server - IP intelligence tools for AI assistants",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ipinfo-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.ipinfo.io/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f66d5318acdca9bb",
+      "type": "registry",
+      "url": "https://pypi.org/project/ipinfo-mcp-server",
+      "registry": "pypi",
+      "version": "0.1.14"
+    },
+    {
+      "id": "upstream-224cdc63fc206929",
+      "type": "other",
+      "url": "https://mcp.ipinfo.io/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ipinfo.io/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ipinfo/mcp",
+    "homepage": "https://ipinfo.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=214",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ipinfo/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

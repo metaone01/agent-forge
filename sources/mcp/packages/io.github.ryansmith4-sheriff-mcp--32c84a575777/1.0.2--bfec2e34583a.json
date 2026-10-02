@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ryansmith4/sheriff-mcp",
   "name": "io.github.ryansmith4/sheriff-mcp",
+  "displayName": "Sheriff",
   "version": "1.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for fixing static analysis issues from SARIF reports with AI agents",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ryansmith4/sheriff-mcp",
-    "homepage": "https://github.com/ryansmith4/sheriff-mcp#installation",
-    "readme": "https://github.com/ryansmith4/sheriff-mcp#readme"
-  },
-  "keywords": [
-    "Sheriff"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/ryansmith4/sheriff-mcp:1.0.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/ryansmith4/sheriff-mcp:1.0.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/ryansmith4/sheriff-mcp",
-      "priority": 10,
+      "id": "upstream-488da346930bab3a",
+      "type": "oci",
+      "url": "https://ghcr.io/ryansmith4/sheriff-mcp:1.0.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ryansmith4/sheriff-mcp",
+    "homepage": "https://github.com/ryansmith4/sheriff-mcp#installation"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ryansmith4__sheriff-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=299",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ryansmith4/sheriff-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

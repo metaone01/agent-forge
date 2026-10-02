@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jtalk22/slack-mcp-server",
   "name": "io.github.jtalk22/slack-mcp-server",
+  "displayName": "Slack MCP Server",
   "version": "5.0.0",
-  "versionScheme": "semver",
-  "description": "Catch up on Slack without reading it. Unreads, threads, search. Browser-session or hosted OAuth.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/jtalk22/slack-mcp-server",
-    "homepage": "https://mcp.revasserlabs.com",
-    "readme": "https://github.com/jtalk22/slack-mcp-server#readme"
-  },
-  "keywords": [
-    "Slack MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@jtalk22/slack-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Catch up on Slack without reading it. Unreads, threads, search. Browser-session or hosted OAuth.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@jtalk22/slack-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.revasserlabs.com/oauth/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a028d1f1ce766f34",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@jtalk22/slack-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "5.0.0"
+    },
+    {
+      "id": "upstream-897a876ca844e8dd",
+      "type": "other",
+      "url": "https://mcp.revasserlabs.com/oauth/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.revasserlabs.com/oauth/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/jtalk22/slack-mcp-server",
+    "homepage": "https://mcp.revasserlabs.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jtalk22__slack-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=222",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jtalk22/slack-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

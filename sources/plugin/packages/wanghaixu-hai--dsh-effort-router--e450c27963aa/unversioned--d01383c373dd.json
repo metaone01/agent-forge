@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.7cadd9e9d5c54e0390f90a39cd05cd10e257baf9fd134d3d53b02dc3ec488336",
+  "name": "wanghaixu-hai/dsh-effort-router",
+  "displayName": "wanghaixu-hai/dsh-effort-router",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH Effort Router（模型分流）：按每一轮请求的难度自动选择模型与思考强度——简单问题走便宜快模型，难题才叫强模型。规则判定零 token，灰区交给一次小模型裁定，图片档强度随难度升降（low/high/max）。每轮请求级覆盖，不改你的会话选择与默认模型。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "cordis.patch.yml",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/wanghaixu-hai/dsh-effort-router",
+    "readme": "https://github.com/wanghaixu-hai/dsh-effort-router#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/wanghaixu-hai/dsh-effort-router"
+    }
+  ],
+  "keywords": [
+    "models",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16698"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14297"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

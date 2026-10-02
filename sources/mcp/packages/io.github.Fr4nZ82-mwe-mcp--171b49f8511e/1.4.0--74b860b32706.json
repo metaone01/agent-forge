@@ -2,49 +2,58 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Fr4nZ82/mwe-mcp",
   "name": "io.github.Fr4nZ82/mwe-mcp",
+  "displayName": "mwe-mcp — Memory Wiki Engine",
   "version": "1.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted multi-user memory for AI agents: a human-readable Markdown wiki with per-fragment ACL.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Fr4nZ82/mwe-mcp",
-    "homepage": "https://github.com/Fr4nZ82/mwe-mcp",
-    "readme": "https://github.com/Fr4nZ82/mwe-mcp#readme"
-  },
-  "keywords": [
-    "mwe-mcp — Memory Wiki Engine"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Fr4nZ82/mwe-mcp/releases/download/v1.4.0/mwe-mcp-v1.4.0-x86_64-unknown-linux-gnu.tar.gz",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Fr4nZ82/mwe-mcp/releases/download/v1.4.0/mwe-mcp-v1.4.0-x86_64-unknown-linux-gnu.tar.gz",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-82a77a409fb47d40",
+      "type": "archive",
       "url": "https://github.com/Fr4nZ82/mwe-mcp/releases/download/v1.4.0/mwe-mcp-v1.4.0-x86_64-unknown-linux-gnu.tar.gz",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "1.4.0"
+    },
+    {
+      "id": "upstream-bcff23658a17b098",
+      "type": "archive",
+      "url": "https://github.com/Fr4nZ82/mwe-mcp/releases/download/v1.4.0/mwe-mcp-v1.4.0-aarch64-apple-darwin.tar.gz",
+      "registry": "mcpb",
+      "version": "1.4.0"
+    },
+    {
+      "id": "upstream-4542abb43ffbb55c",
+      "type": "archive",
+      "url": "https://github.com/Fr4nZ82/mwe-mcp/releases/download/v1.4.0/mwe-mcp-v1.4.0-x86_64-pc-windows-msvc.zip",
+      "registry": "mcpb",
+      "version": "1.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Fr4nZ82/mwe-mcp",
+    "homepage": "https://github.com/Fr4nZ82/mwe-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +66,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fr4nz82__mwe-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=130",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Fr4nZ82/mwe-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.vruum/mcp",
+  "name": "ai.vruum/mcp",
+  "displayName": "ai.vruum/mcp",
+  "version": "0.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Vruum AI revenue platform — outbound, deals, pipeline & CRM automation over one MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@vruum/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.vruum.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4c960b1f9fa5d0f7",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@vruum/mcp",
+      "registry": "npm",
+      "version": "0.6.0"
+    },
+    {
+      "id": "upstream-f2834d9a4c56b64e",
+      "type": "other",
+      "url": "https://api.vruum.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.vruum.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/vruum-gtm/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.vruum/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

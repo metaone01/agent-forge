@@ -2,49 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.site.aeon-labs/stratify",
   "name": "site.aeon-labs/stratify",
+  "displayName": "Stratify",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Backtest NIFTY option strategies on real 1-minute data, with an honest out-of-sample panel.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/stratify-mcp",
-    "homepage": "https://stratify.aeon-labs.site"
-  },
-  "keywords": [
-    "Stratify"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "stratify-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Backtest NIFTY option strategies on real 1-minute data, with an honest out-of-sample panel.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "stratify-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://stratify-mcp.aeon-labs.site/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-70a5471e5b734e5c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/stratify-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-1f7e865d9ed5493e",
+      "type": "other",
+      "url": "https://stratify-mcp.aeon-labs.site/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://stratify-mcp.aeon-labs.site/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://stratify.aeon-labs.site"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\site.aeon-labs__stratify.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "site.aeon-labs/stratify"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

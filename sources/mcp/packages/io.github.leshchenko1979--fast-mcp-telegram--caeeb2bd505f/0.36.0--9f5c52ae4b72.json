@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.leshchenko1979/fast-mcp-telegram",
+  "name": "io.github.leshchenko1979/fast-mcp-telegram",
+  "displayName": "io.github.leshchenko1979/fast-mcp-telegram",
+  "version": "0.36.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Multi-tenant Telegram gateway for AI agents — HTTP+stdio, 8 tools, MTProto User API",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "fast-mcp-telegram",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://tg-mcp.l1979.ru/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1f434f2789779fa8",
+      "type": "registry",
+      "url": "https://pypi.org/project/fast-mcp-telegram",
+      "registry": "pypi",
+      "version": "0.35.0"
+    },
+    {
+      "id": "upstream-624d8e6498b5ce9f",
+      "type": "other",
+      "url": "https://tg-mcp.l1979.ru/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tg-mcp.l1979.ru/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/leshchenko1979/fast-mcp-telegram",
+    "homepage": "https://github.com/leshchenko1979/fast-mcp-telegram"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=228",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.leshchenko1979/fast-mcp-telegram"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.x402score/counterparty-score",
+  "name": "org.x402score/counterparty-score",
+  "displayName": "x402 Counterparty Score",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Trust scores for x402 sellers: wash-trading, real buyers, verdict. $0.02/score via x402 on Base.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.x402score/counterparty-score",
+    "remotes": [
+      {
+        "url": "https://x402score.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e5c16a551ed20efa",
+      "type": "other",
+      "url": "https://x402score.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://x402score.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://x402score.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.x402score/counterparty-score"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

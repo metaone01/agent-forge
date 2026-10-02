@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.com.soapnoteapi/soapnoteapi-mcp",
   "name": "com.soapnoteapi/soapnoteapi-mcp",
+  "displayName": "SOAPNoteAPI",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Generate clinical SOAP notes, billing codes, and visit summaries from transcripts or audio.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/soapnoteaicom/soapnoteapi-mcp",
-    "homepage": "https://www.soapnoteapi.com",
-    "readme": "https://github.com/soapnoteaicom/soapnoteapi-mcp#readme"
-  },
-  "keywords": [
-    "SOAPNoteAPI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "soapnoteapi-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate clinical SOAP notes, billing codes, and visit summaries from transcripts or audio.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "soapnoteapi-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0bf5651ef58c42be",
       "type": "registry",
       "url": "https://www.npmjs.com/package/soapnoteapi-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/soapnoteaicom/soapnoteapi-mcp",
+    "homepage": "https://www.soapnoteapi.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.soapnoteapi__soapnoteapi-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.soapnoteapi/soapnoteapi-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

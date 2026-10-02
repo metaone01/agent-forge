@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c26d0622c5d696c217d8791d4b12ee8cf06f532ee73ba86b5ec69353d5420245",
+  "name": "lnabc03/bright-drift/packages/dsh-adapter",
+  "displayName": "lnabc03/bright-drift/packages/dsh-adapter",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Workspace drift awareness for DeepSeek Harness agents: detects external/user file changes and injects them into the agent context at step boundaries.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "packages/dsh-adapter/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/lnabc03/bright-drift",
+    "readme": "https://github.com/lnabc03/bright-drift#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/lnabc03/bright-drift/tree/HEAD/packages/dsh-adapter"
+    },
+    {
+      "id": "npm-7b5e1d2d6b15",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/bright-drift",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12317"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13003"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "bright-drift"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

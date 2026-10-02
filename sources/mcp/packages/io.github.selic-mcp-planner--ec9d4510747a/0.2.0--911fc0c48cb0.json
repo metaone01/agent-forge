@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.selic/mcp-planner",
   "name": "io.github.selic/mcp-planner",
+  "displayName": "Microsoft Planner",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Microsoft Planner MCP server — plans, buckets, tasks via Microsoft Graph, ETags handled",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/selic/mcp-planner",
-    "homepage": "https://github.com/selic/mcp-planner#readme",
-    "readme": "https://github.com/selic/mcp-planner#readme"
-  },
-  "keywords": [
-    "Microsoft Planner"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-planner",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Microsoft Planner MCP server — plans, buckets, tasks via Microsoft Graph, ETags handled",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-planner",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-528010a72db71e5a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-planner",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/selic/mcp-planner",
+    "homepage": "https://github.com/selic/mcp-planner#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.selic__mcp-planner.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.selic/mcp-planner"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

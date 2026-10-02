@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.eltociear/skill-audit-mcp",
+  "name": "io.github.eltociear/skill-audit-mcp",
+  "displayName": "io.github.eltociear/skill-audit-mcp",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server: static security scanner for MCP servers, agent skills & plugins. 17 attack patterns.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/eltociear/skill-audit-mcp:mcp-1.2.0",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://eltociear-skill-audit.hf.space/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2832d30c765931f8",
+      "type": "oci",
+      "url": "https://ghcr.io/eltociear/skill-audit-mcp:mcp-1.2.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-df899ba232a34079",
+      "type": "other",
+      "url": "https://eltociear-skill-audit.hf.space/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://eltociear-skill-audit.hf.space/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/eltociear/skill-audit-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=198",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.eltociear/skill-audit-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

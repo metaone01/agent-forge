@@ -2,46 +2,46 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.APonkratov/ya-yandex-wiki-mcp",
   "name": "io.github.APonkratov/ya-yandex-wiki-mcp",
+  "displayName": "io.github.APonkratov/ya-yandex-wiki-mcp",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Yet Another Yandex Wiki MCP Server.",
   "license": "unknown",
-  "links": {
-    "repository": "https://pypi.org/project/ya-yandex-wiki-mcp/"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ya-yandex-wiki-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ya-yandex-wiki-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b810433dc1dace1b",
       "type": "registry",
-      "url": "https://pypi.org/project/ya-yandex-wiki-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ya-yandex-wiki-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-9231482efea3d0e0",
+      "type": "oci",
+      "url": "https://ghcr.io/aponkratov/ya-yandex-wiki-mcp:0.2.0",
+      "registry": "oci"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +54,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aponkratov__ya-yandex-wiki-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=107",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.APonkratov/ya-yandex-wiki-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

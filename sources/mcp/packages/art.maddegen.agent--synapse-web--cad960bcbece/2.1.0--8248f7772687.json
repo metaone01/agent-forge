@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.art.maddegen.agent/synapse-web",
+  "name": "art.maddegen.agent/synapse-web",
+  "displayName": "MAD Synapse · Web & Research",
+  "version": "2.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read the web (page text, DNS, WHOIS, TLS, uptime) + research (Wikipedia, arXiv, GitHub, packages).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "art.maddegen.agent/synapse-web",
+    "remotes": [
+      {
+        "url": "https://agent.maddegen.art/hub/mcp/web",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cccfbcf37087a6a0",
+      "type": "other",
+      "url": "https://agent.maddegen.art/hub/mcp/web",
+      "install": {
+        "type": "api",
+        "url": "https://agent.maddegen.art/hub/mcp/web"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agent.maddegen.art/hub"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "art.maddegen.agent/synapse-web"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

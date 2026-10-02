@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.cre8techdev/mini-pricer-mcp",
+  "name": "com.cre8techdev/mini-pricer-mcp",
+  "displayName": "Lenderprice Mini Pricer MCP",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for mortgage rate pricing and mini pricer management via the Lenderprice API",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.cre8techdev/mini-pricer-mcp",
+    "remotes": [
+      {
+        "url": "https://mp-mcp.cre8techdev.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d619af12b4ae4158",
+      "type": "other",
+      "url": "https://mp-mcp.cre8techdev.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mp-mcp.cre8techdev.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.cre8techdev/mini-pricer-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

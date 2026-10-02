@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.stevecrates489-commits/tokcalc",
+  "name": "io.github.stevecrates489-commits/tokcalc",
+  "displayName": "tokcalc MCP Server",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "LLM serving capacity planner: VRAM, KV cache, GPU topology, latency, and cost.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@tokcalc/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://tokcalc.vercel.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-45a70504b9ad2bb9",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@tokcalc/mcp-server",
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-2228dd97887867f6",
+      "type": "other",
+      "url": "https://tokcalc.vercel.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tokcalc.vercel.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/stevecrates489-commits/tokcalc"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stevecrates489-commits/tokcalc"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.edjacarmona-cmd/ekopump-mcp",
+  "name": "io.github.edjacarmona-cmd/ekopump-mcp",
+  "displayName": "EkoPump",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time fuel prices, alerts, and cheapest gas stations across 38+ countries.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.edjacarmona-cmd/ekopump-mcp",
+    "remotes": [
+      {
+        "url": "https://ekopump.es/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4877e047516704a9",
+      "type": "other",
+      "url": "https://ekopump.es/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ekopump.es/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/CatalaBytes/EkoPump"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=197",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.edjacarmona-cmd/ekopump-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

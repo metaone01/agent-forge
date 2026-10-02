@@ -2,49 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.egoughnour/curate-ipsum",
   "name": "io.github.egoughnour/curate-ipsum",
+  "displayName": "Curate-Ipsum",
   "version": "2.5.1",
-  "versionScheme": "semver",
-  "description": "Code synthesis through belief revision, mutation testing, and verification",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/egoughnour/curate-ipsum",
-    "readme": "https://github.com/egoughnour/curate-ipsum#readme"
-  },
-  "keywords": [
-    "Curate-Ipsum"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "curate-ipsum",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Code synthesis through belief revision, mutation testing, and verification",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "curate-ipsum",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5246089cc7b8e0db",
       "type": "registry",
-      "url": "https://pypi.org/project/curate-ipsum/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/curate-ipsum",
+      "registry": "pypi",
+      "version": "2.5.1"
+    },
+    {
+      "id": "upstream-6875d500c56b5ef1",
+      "type": "archive",
+      "url": "https://github.com/egoughnour/curate-ipsum/releases/download/v2.5.1/curate-ipsum.mcpb",
+      "registry": "mcpb",
+      "version": "2.5.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/egoughnour/curate-ipsum"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.egoughnour__curate-ipsum.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=197",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.egoughnour/curate-ipsum"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

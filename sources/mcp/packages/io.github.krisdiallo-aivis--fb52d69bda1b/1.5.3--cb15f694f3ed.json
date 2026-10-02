@@ -2,49 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.krisdiallo/aivis",
   "name": "io.github.krisdiallo/aivis",
+  "displayName": "AI Visibility Checker",
   "version": "1.5.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "AI visibility checker: GPTBot vs OAI-SearchBot, robots.txt audit, raw-HTML schema. 165 crawlers.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/krisdiallo/ecom-agent",
-    "homepage": "https://krisdiallo.github.io/ecom-agent/ai-visibility-study.html",
-    "readme": "https://github.com/krisdiallo/ecom-agent#readme"
-  },
-  "keywords": [
-    "AI Visibility Checker"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/krisdiallo/ecom-agent/releases/download/v1.5.3/aivis.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/krisdiallo/ecom-agent/releases/download/v1.5.3/aivis.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-5146d258abb72f9b",
+      "type": "archive",
       "url": "https://github.com/krisdiallo/ecom-agent/releases/download/v1.5.3/aivis.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "1.5.3"
+    },
+    {
+      "id": "upstream-802bdef9205c3bb5",
+      "type": "oci",
+      "url": "https://ghcr.io/krisdiallo/aivis:1.5.3",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/krisdiallo/ecom-agent",
+    "homepage": "https://krisdiallo.github.io/ecom-agent/ai-visibility-study.html"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.krisdiallo__aivis.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.krisdiallo/aivis"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

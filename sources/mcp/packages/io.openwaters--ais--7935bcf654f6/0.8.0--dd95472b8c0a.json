@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.openwaters/ais",
+  "name": "io.openwaters/ais",
+  "displayName": "Open Waters AIS",
+  "version": "0.8.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live AIS vessel positions by MMSI, name, area, or radius, plus coverage. No sign-in, no key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.openwaters/ais",
+    "remotes": [
+      {
+        "url": "https://ais.openwaters.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-98a6ae1ddc2acfcc",
+      "type": "other",
+      "url": "https://ais.openwaters.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ais.openwaters.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/openwatersio/aiscast",
+    "homepage": "https://openwaters.io/ais/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=358",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.openwaters/ais"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

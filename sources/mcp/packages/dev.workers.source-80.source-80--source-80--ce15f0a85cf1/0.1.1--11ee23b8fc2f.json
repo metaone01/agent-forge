@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.workers.source-80.source-80/source-80",
+  "name": "dev.workers.source-80.source-80/source-80",
+  "displayName": "SOURCE/80 Discovery",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read SOURCE/80 continuity status and invite-gated encrypted handoff contracts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.workers.source-80.source-80/source-80",
+    "remotes": [
+      {
+        "url": "https://source-80.source-80.workers.dev/mcp?entry=mcp_registry_v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-16e40a46d262ee60",
+      "type": "other",
+      "url": "https://source-80.source-80.workers.dev/mcp?entry=mcp_registry_v1",
+      "install": {
+        "type": "api",
+        "url": "https://source-80.source-80.workers.dev/mcp?entry=mcp_registry_v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://source-80.source-80.workers.dev/.well-known/source80.json"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.workers.source-80.source-80/source-80"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

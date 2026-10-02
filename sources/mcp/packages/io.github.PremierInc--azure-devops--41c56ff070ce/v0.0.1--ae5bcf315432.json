@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.PremierInc/azure-devops",
+  "name": "io.github.PremierInc/azure-devops",
+  "displayName": "Azure DevOps (ADO)",
+  "version": "v0.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The MCP server for Azure DevOps, bringing the power of Azure DevOps directly to your agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.PremierInc/azure-devops",
+    "remotes": [
+      {
+        "url": "https://mcp.dev.azure.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9c792c92f497a283",
+      "type": "other",
+      "url": "https://mcp.dev.azure.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.dev.azure.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/microsoft/azure-devops-mcp",
+    "homepage": "https://learn.microsoft.com/en-us/azure/devops/mcp-server/mcp-server-overview"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=147",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.PremierInc/azure-devops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

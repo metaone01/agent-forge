@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.wattstreet/grid",
+  "name": "net.wattstreet/grid",
+  "displayName": "Watt Street — US grid, interconnection queue and data center power",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "How long to get grid power in any US county. 39,173 filings, 1,574 counties, dated sources.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.wattstreet/grid",
+    "remotes": [
+      {
+        "url": "https://api.wattstreet.net/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f5d99a2f0d5f740e",
+      "type": "other",
+      "url": "https://api.wattstreet.net/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.wattstreet.net/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://wattstreet.net"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.wattstreet/grid"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.major/porkbun",
   "name": "io.github.major/porkbun",
+  "displayName": "Porkbun DNS 🐷",
   "version": "1.1.2",
-  "versionScheme": "semver",
-  "description": "Manage DNS records, domains, DNSSEC, SSL certificates via MCP",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/major/porkbun-mcp",
-    "readme": "https://github.com/major/porkbun-mcp#readme"
-  },
-  "keywords": [
-    "Porkbun DNS 🐷"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "porkbun-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Manage DNS records, domains, DNSSEC, SSL certificates via MCP",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "porkbun-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-580a9756143d2352",
       "type": "registry",
-      "url": "https://pypi.org/project/porkbun-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/porkbun-mcp",
+      "registry": "pypi",
+      "version": "1.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/major/porkbun-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.major__porkbun.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=231",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.major/porkbun"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

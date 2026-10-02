@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.5419a05199fb81817dbe2e55b7c0c6424723d3c830badb5bb02c19463f26d65e",
+  "name": "Archaofan/dsh-notify-relay",
+  "displayName": "Archaofan/dsh-notify-relay",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 通知中继：把任务完成/失败/待审批等生命周期事件经过去重、免打扰、摘要合批的规则中枢，外联到 Bark/Server酱/Telegram/企业微信/飞书/钉钉/ntfy/通用 webhook。失败自动重试且重启不丢。严重度分级（Bark level/call、ntfy Priority、钉钉 isAtAll）、单通道熔断、抖动退避、外联自检告警。零运行时依赖。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Archaofan/dsh-notify-relay",
+    "readme": "https://github.com/Archaofan/dsh-notify-relay#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Archaofan/dsh-notify-relay"
+    }
+  ],
+  "keywords": [
+    "channels",
+    "notifications"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15013"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/Archaofan__dsh-notify-relay.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16065"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

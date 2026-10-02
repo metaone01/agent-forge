@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.tradeit/mcp",
+  "name": "app.tradeit/mcp",
+  "displayName": "Trade It",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Trade stock, crypto, and options on Robinhood, ETrade, Webull, Charles Schwab, Coinbase, or Kraken.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.tradeit/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.tradeit.app/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.tradeit.app/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-694a37fbc1ff7790",
+      "type": "other",
+      "url": "https://mcp.tradeit.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tradeit.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8dd6d43455428448",
+      "type": "other",
+      "url": "https://mcp.tradeit.app/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tradeit.app/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/trade-it-inc/trade-it-mcp",
+    "homepage": "https://tradeit.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=22",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.tradeit/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

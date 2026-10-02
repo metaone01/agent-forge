@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.vote.andre/elections",
+  "name": "vote.andre/elections",
+  "displayName": "André — Analyse électorale française",
+  "version": "1.28.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Résultats des élections françaises 1999-2026 par bureau de vote, socio-démo INSEE et cartes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "vote.andre/elections",
+    "remotes": [
+      {
+        "url": "https://mcp.andre.vote/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9ff1827deb324dcb",
+      "type": "other",
+      "url": "https://mcp.andre.vote/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.andre.vote/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/joelgombin/andre-mcp",
+    "homepage": "https://andre.vote"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "vote.andre/elections"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

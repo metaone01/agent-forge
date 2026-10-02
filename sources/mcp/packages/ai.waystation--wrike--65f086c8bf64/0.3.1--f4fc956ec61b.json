@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.waystation/wrike",
+  "name": "ai.waystation/wrike",
+  "displayName": "ai.waystation/wrike",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage projects, tasks, and workflows with Wrike project management.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.waystation/wrike",
+    "remotes": [
+      {
+        "url": "https://waystation.ai/wrike/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://waystation.ai/wrike/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c7ece6b776dfee24",
+      "type": "other",
+      "url": "https://waystation.ai/wrike/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/wrike/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-621c2b4afb068034",
+      "type": "other",
+      "url": "https://waystation.ai/wrike/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/wrike/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/waystation-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.waystation/wrike"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

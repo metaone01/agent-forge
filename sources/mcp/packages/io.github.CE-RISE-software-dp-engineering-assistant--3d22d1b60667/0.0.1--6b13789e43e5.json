@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CE-RISE-software/dp-engineering-assistant",
   "name": "io.github.CE-RISE-software/dp-engineering-assistant",
+  "displayName": "CE-RISE Digital Passport Engineering Assistant",
   "version": "0.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Helps plan and reuse CE-RISE Digital Passport components, models, and deployment assets.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/CE-RISE-software/dp-engineering-assistant",
-    "readme": "https://github.com/CE-RISE-software/dp-engineering-assistant#readme"
-  },
-  "keywords": [
-    "CE-RISE Digital Passport Engineering Assistant"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/ce-rise-software/dp-engineering-assistant-mcp:0.0.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/ce-rise-software/dp-engineering-assistant-mcp:0.0.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/ce-rise-software/dp-engineering-assistant-mcp",
-      "priority": 10,
+      "id": "upstream-f8f8fba0817f8327",
+      "type": "oci",
+      "url": "https://ghcr.io/ce-rise-software/dp-engineering-assistant-mcp:0.0.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/CE-RISE-software/dp-engineering-assistant"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ce-rise-software__dp-engineering-assistant.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=115",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CE-RISE-software/dp-engineering-assistant"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

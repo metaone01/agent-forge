@@ -2,47 +2,79 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kOlapsis/gofact",
   "name": "io.github.kOlapsis/gofact",
+  "displayName": "io.github.kOlapsis/gofact",
   "version": "1.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Creates compliant French e-invoices locally: Factur-X PDF/A-3 with EN 16931 CII XML, legal numbering",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/kOlapsis/gofact",
-    "homepage": "https://gofact.kolapsis.com/",
-    "readme": "https://github.com/kOlapsis/gofact#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_darwin_amd64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_darwin_amd64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-f8885c44d9146831",
+      "type": "archive",
       "url": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_darwin_amd64.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-e990774aa0c28961",
+      "type": "archive",
+      "url": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_darwin_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-8ad87a76b5afb78b",
+      "type": "archive",
+      "url": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_linux_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-1b3534b761836439",
+      "type": "archive",
+      "url": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_linux_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-d1ade37c438de8d1",
+      "type": "archive",
+      "url": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_windows_amd64.mcpb",
+      "registry": "mcpb",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-19cb6f6f4c97cb84",
+      "type": "archive",
+      "url": "https://github.com/kOlapsis/gofact/releases/download/v1.2.0/gofact-mcp_1.2.0_windows_arm64.mcpb",
+      "registry": "mcpb",
+      "version": "1.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kOlapsis/gofact",
+    "homepage": "https://gofact.kolapsis.com/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +87,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kolapsis__gofact.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=223",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kOlapsis/gofact"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

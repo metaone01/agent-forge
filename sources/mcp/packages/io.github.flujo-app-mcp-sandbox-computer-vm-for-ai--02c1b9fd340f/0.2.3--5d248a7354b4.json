@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.flujo-app/mcp-sandbox-computer-vm-for-ai",
   "name": "io.github.flujo-app/mcp-sandbox-computer-vm-for-ai",
+  "displayName": "MCP Sandbox Computer VM for AI",
   "version": "0.2.3",
-  "versionScheme": "semver",
-  "description": "Named Docker and Fly Machine sandbox computers with an interactive MCP App dashboard.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/flujo-app/mcp-sandbox-computer-vm-for-ai",
-    "readme": "https://github.com/flujo-app/mcp-sandbox-computer-vm-for-ai#readme"
-  },
-  "keywords": [
-    "MCP Sandbox Computer VM for AI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-sandbox-computer-vm-for-ai",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Named Docker and Fly Machine sandbox computers with an interactive MCP App dashboard.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-sandbox-computer-vm-for-ai",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0d7cfc93fdb4fa63",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-sandbox-computer-vm-for-ai/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-sandbox-computer-vm-for-ai",
+      "registry": "pypi",
+      "version": "0.2.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/flujo-app/mcp-sandbox-computer-vm-for-ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.flujo-app__mcp-sandbox-computer-vm-for-ai.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.flujo-app/mcp-sandbox-computer-vm-for-ai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

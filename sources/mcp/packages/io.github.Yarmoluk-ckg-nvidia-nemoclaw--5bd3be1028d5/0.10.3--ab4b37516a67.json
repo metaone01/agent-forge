@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Yarmoluk/ckg-nvidia-nemoclaw",
   "name": "io.github.Yarmoluk/ckg-nvidia-nemoclaw",
+  "displayName": "NVIDIA NemoClaw CKG",
   "version": "0.10.3",
-  "versionScheme": "semver",
-  "description": "NVIDIA NemoClaw knowledge graph — 55 nodes, F1 0.576 (+269% vs RAG), 11x fewer tokens. MCP-native.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Yarmoluk/ckg-nvidia-nemoclaw",
-    "readme": "https://github.com/Yarmoluk/ckg-nvidia-nemoclaw#readme"
-  },
-  "keywords": [
-    "NVIDIA NemoClaw CKG"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ckg-nvidia-nemoclaw",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "NVIDIA NemoClaw knowledge graph — 55 nodes, F1 0.576 (+269% vs RAG), 11x fewer tokens. MCP-native.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ckg-nvidia-nemoclaw",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ckg-nvidia-nemoclaw.onrender.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-88b82a9b17890dbe",
       "type": "registry",
-      "url": "https://pypi.org/project/ckg-nvidia-nemoclaw/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ckg-nvidia-nemoclaw",
+      "registry": "pypi",
+      "version": "0.10.3"
+    },
+    {
+      "id": "upstream-22594922924aee2f",
+      "type": "other",
+      "url": "https://ckg-nvidia-nemoclaw.onrender.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ckg-nvidia-nemoclaw.onrender.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Yarmoluk/ckg-nvidia-nemoclaw"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yarmoluk__ckg-nvidia-nemoclaw.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=163",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Yarmoluk/ckg-nvidia-nemoclaw"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,67 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.opus-pro/opusclip",
   "name": "io.github.opus-pro/opusclip",
+  "displayName": "OpusClip",
   "version": "0.3.0",
-  "versionScheme": "semver",
-  "description": "Turn long videos into AI-curated short clips: caption, reframe, thumbnail, schedule, and publish.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/opus-pro/opusclip-mcp",
-    "homepage": "https://help.opus.pro/api-reference/agent-setup",
-    "readme": "https://github.com/opus-pro/opusclip-mcp#readme"
-  },
-  "keywords": [
-    "OpusClip"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@opusclip/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Turn long videos into AI-curated short clips: caption, reframe, thumbnail, schedule, and publish.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@opusclip/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.opus.pro/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8177be05dcf53b64",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@opusclip/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-63728b6bba9fd105",
+      "type": "registry",
+      "url": "https://pypi.org/project/opusclip-mcp",
+      "registry": "pypi",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-459a57b1434f5c43",
+      "type": "other",
+      "url": "https://mcp.opus.pro/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.opus.pro/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/opus-pro/opusclip-mcp",
+    "homepage": "https://help.opus.pro/api-reference/agent-setup"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +75,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.opus-pro__opusclip.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.opus-pro/opusclip"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

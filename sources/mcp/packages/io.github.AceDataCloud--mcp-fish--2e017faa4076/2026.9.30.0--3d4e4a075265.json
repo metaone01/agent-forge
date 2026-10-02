@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AceDataCloud/mcp-fish",
+  "name": "io.github.AceDataCloud/mcp-fish",
+  "displayName": "io.github.AceDataCloud/mcp-fish",
+  "version": "2026.9.30.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server exposing the AceDataCloud Fish Audio API (text-to-speech with voice conditioning)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-fish",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://fish.mcp.acedata.cloud/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-06f37f5931c7e669",
+      "type": "registry",
+      "url": "https://pypi.org/project/mcp-fish",
+      "registry": "pypi",
+      "version": "2026.9.30.0"
+    },
+    {
+      "id": "upstream-ed760ec026b9deee",
+      "type": "other",
+      "url": "https://fish.mcp.acedata.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fish.mcp.acedata.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AceDataCloud/FishMCP",
+    "homepage": "https://fish.mcp.acedata.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AceDataCloud/mcp-fish"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

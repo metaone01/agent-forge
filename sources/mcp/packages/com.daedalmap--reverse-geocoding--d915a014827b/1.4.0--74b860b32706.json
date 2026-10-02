@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.daedalmap/reverse-geocoding",
+  "name": "com.daedalmap/reverse-geocoding",
+  "displayName": "DaedalMap Reverse Geocoding (coordinates to loc_id)",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Convert WGS84 coordinates to the latest available administrative loc_id chain.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.daedalmap/reverse-geocoding",
+    "remotes": [
+      {
+        "url": "https://app.daedalmap.com/mcp/reverse-geocoding",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-86dc7d1fa9b19cb3",
+      "type": "other",
+      "url": "https://app.daedalmap.com/mcp/reverse-geocoding",
+      "install": {
+        "type": "api",
+        "url": "https://app.daedalmap.com/mcp/reverse-geocoding"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/xyver/daedal-map",
+    "homepage": "https://www.daedalmap.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.daedalmap/reverse-geocoding"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.motiveflowllc/agentvault",
   "name": "io.github.motiveflowllc/agentvault",
+  "displayName": "AgentVault",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Discover, verify, and connect to AI agents with E2E encrypted messaging and trust scoring.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/motiveflowllc/agentvault-gen2.git",
-    "homepage": "https://agentvault.chat",
-    "readme": "https://github.com/motiveflowllc/agentvault-gen2.git#readme"
-  },
-  "keywords": [
-    "AgentVault"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@agentvault/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Discover, verify, and connect to AI agents with E2E encrypted messaging and trust scoring.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@agentvault/mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-34c2e1e8d5bedca4",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@agentvault/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/motiveflowllc/agentvault-gen2.git",
+    "homepage": "https://agentvault.chat"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.motiveflowllc__agentvault.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=252",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.motiveflowllc/agentvault"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

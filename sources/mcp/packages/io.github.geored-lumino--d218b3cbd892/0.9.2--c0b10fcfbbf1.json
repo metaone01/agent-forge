@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.geored/lumino",
   "name": "io.github.geored/lumino",
+  "displayName": "Lumino MCP Server",
   "version": "0.9.2",
-  "versionScheme": "semver",
-  "description": "AI-powered SRE observability for Kubernetes/OpenShift with 40+ Tekton debugging tools",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/spre-sre/lumino-mcp-server",
-    "homepage": "https://github.com/spre-sre/lumino-mcp-server",
-    "readme": "https://github.com/spre-sre/lumino-mcp-server#readme"
-  },
-  "keywords": [
-    "Lumino MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "lumino-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "AI-powered SRE observability for Kubernetes/OpenShift with 40+ Tekton debugging tools",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "lumino-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d8e9022f6c5b6a3e",
       "type": "registry",
-      "url": "https://pypi.org/project/lumino-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/lumino-mcp-server",
+      "registry": "pypi",
+      "version": "0.9.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/spre-sre/lumino-mcp-server",
+    "homepage": "https://github.com/spre-sre/lumino-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.geored__lumino.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=205",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.geored/lumino"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

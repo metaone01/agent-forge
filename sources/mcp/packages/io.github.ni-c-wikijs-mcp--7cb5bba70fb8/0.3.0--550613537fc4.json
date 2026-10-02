@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ni-c/wikijs-mcp",
   "name": "io.github.ni-c/wikijs-mcp",
+  "displayName": "Wiki.js",
   "version": "0.3.0",
-  "versionScheme": "semver",
-  "description": "Search, read and edit Wiki.js pages, and manage its assets, users, groups and comments",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ni-c/wikijs-mcp",
-    "homepage": "https://wikijs-mcp.ni-c.de",
-    "readme": "https://github.com/ni-c/wikijs-mcp#readme"
-  },
-  "keywords": [
-    "Wiki.js"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@ni-c/wikijs-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search, read and edit Wiki.js pages, and manage its assets, users, groups and comments",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ni-c/wikijs-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0087269a1af2c5b4",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@ni-c/wikijs-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-be33771afd40a741",
+      "type": "oci",
+      "url": "https://ghcr.io/ni-c/wikijs-mcp:0.3.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ni-c/wikijs-mcp",
+    "homepage": "https://wikijs-mcp.ni-c.de"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ni-c__wikijs-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ni-c/wikijs-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

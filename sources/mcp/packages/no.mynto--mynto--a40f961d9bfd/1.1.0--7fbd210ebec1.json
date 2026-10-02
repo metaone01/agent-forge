@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.no.mynto/mynto",
+  "name": "no.mynto/mynto",
+  "displayName": "Mynto — AI-regnskapsfører for norske selskaper",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Norsk regnskap i Claude: bokføring, MVA, lønn og Altinn — spør på vanlig norsk.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "no.mynto/mynto",
+    "remotes": [
+      {
+        "url": "https://api.mynto.no/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-aacdbf8844cd0bdd",
+      "type": "other",
+      "url": "https://api.mynto.no/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.mynto.no/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.mynto.no"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "no.mynto/mynto"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

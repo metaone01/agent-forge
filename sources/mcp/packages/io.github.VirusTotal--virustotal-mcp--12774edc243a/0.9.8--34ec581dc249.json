@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.VirusTotal/virustotal-mcp",
+  "name": "io.github.VirusTotal/virustotal-mcp",
+  "displayName": "VirusTotal",
+  "version": "0.9.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official VirusTotal MCP server: threat reports, file and URL submissions, and analysis recovery.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "vt-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ai.virustotal.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3e6245faa26b1071",
+      "type": "registry",
+      "url": "https://pypi.org/project/vt-mcp",
+      "registry": "pypi",
+      "version": "0.9.8"
+    },
+    {
+      "id": "upstream-7575046e403daab7",
+      "type": "other",
+      "url": "https://ai.virustotal.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ai.virustotal.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/VirusTotal/virustotal-mcp",
+    "homepage": "https://ai.virustotal.com/connect/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=159",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.VirusTotal/virustotal-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

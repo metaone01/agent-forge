@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.verirouteintel/lookup",
+  "name": "com.verirouteintel/lookup",
+  "displayName": "com.verirouteintel/lookup",
+  "version": "1.2.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Is this number safe to call or text right now? Live carrier, CNAM, spam and SMS checks for agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "veriroute-intel-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://verirouteintel.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-42ca6777231f61f8",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/veriroute-intel-mcp",
+      "registry": "npm",
+      "version": "1.2.2"
+    },
+    {
+      "id": "upstream-65ae062a31164044",
+      "type": "other",
+      "url": "https://verirouteintel.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://verirouteintel.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/verirouteintel/veriroute-intel-mcp",
+    "homepage": "https://verirouteintel.com/api-docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=85",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.verirouteintel/lookup"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

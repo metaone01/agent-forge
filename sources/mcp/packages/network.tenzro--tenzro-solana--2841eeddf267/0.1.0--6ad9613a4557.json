@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.tenzro/tenzro-solana",
+  "name": "network.tenzro/tenzro-solana",
+  "displayName": "Tenzro Solana MCP",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Solana MCP: Jupiter swaps, SPL transfers, Metaplex NFTs, Bonfida SNS, slot/TPS, staking.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "network.tenzro/tenzro-solana",
+    "remotes": [
+      {
+        "url": "https://solana-mcp.tenzro.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f59dbd6af2f79d77",
+      "type": "other",
+      "url": "https://solana-mcp.tenzro.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://solana-mcp.tenzro.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/tenzro/tenzro-network",
+    "homepage": "https://tenzro.network/mcp/tenzro-solana"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.tenzro/tenzro-solana"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

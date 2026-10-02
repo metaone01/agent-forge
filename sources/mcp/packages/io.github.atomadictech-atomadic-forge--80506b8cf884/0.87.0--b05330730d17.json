@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.atomadictech/atomadic-forge",
   "name": "io.github.atomadictech/atomadic-forge",
+  "displayName": "Atomadic Forge",
   "version": "0.87.0",
-  "versionScheme": "semver",
-  "description": "Architecture compiler for AI code. 11 tools, 92 actions, 872 Lean4 proofs, 100/100 self-cert.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/atomadictech/atomadic-forge",
-    "homepage": "https://forge.atomadic.tech",
-    "readme": "https://github.com/atomadictech/atomadic-forge#readme"
-  },
-  "keywords": [
-    "Atomadic Forge"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "atomadic-forge",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Architecture compiler for AI code. 11 tools, 92 actions, 872 Lean4 proofs, 100/100 self-cert.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "atomadic-forge",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://forge.atomadic.tech/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a171523640637164",
       "type": "registry",
-      "url": "https://pypi.org/project/atomadic-forge/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/atomadic-forge",
+      "registry": "pypi",
+      "version": "0.87.0"
+    },
+    {
+      "id": "upstream-b5d3e37263416390",
+      "type": "other",
+      "url": "https://forge.atomadic.tech/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://forge.atomadic.tech/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/atomadictech/atomadic-forge",
+    "homepage": "https://forge.atomadic.tech"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.atomadictech__atomadic-forge.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=173",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.atomadictech/atomadic-forge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

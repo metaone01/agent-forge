@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.theluckystrike/timesheets",
+  "name": "io.github.theluckystrike/timesheets",
+  "displayName": "io.github.theluckystrike/timesheets",
+  "version": "0.21.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Track billable time from your AI chat: timers, entries, reports, CSV export. All data stays local.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.21.0/time-tracker.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/timesheets",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-61b7e90375372f84",
+      "type": "archive",
+      "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.21.0/time-tracker.mcpb",
+      "registry": "mcpb",
+      "version": "0.21.0"
+    },
+    {
+      "id": "upstream-a480944d79b24c1d",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/timesheets",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/timesheets"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/time-tracker"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=340",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/timesheets"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

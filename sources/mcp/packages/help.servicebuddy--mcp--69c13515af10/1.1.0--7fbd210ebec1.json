@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.help.servicebuddy/mcp",
+  "name": "help.servicebuddy/mcp",
+  "displayName": "ServiceBuddy Auto Repair Savings & Quote Auditor",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Auto repair quote auditor, labor price benchmarks, and service deals for any US ZIP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "help.servicebuddy/mcp",
+    "remotes": [
+      {
+        "url": "https://www.servicebuddy.help/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fae7343ce5df4a82",
+      "type": "other",
+      "url": "https://www.servicebuddy.help/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.servicebuddy.help/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/piers-fawkes/service-buddy",
+    "homepage": "https://www.servicebuddy.help"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "help.servicebuddy/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

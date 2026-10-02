@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mhajder/ghostfolio-mcp",
   "name": "io.github.mhajder/ghostfolio-mcp",
+  "displayName": "Ghostfolio MCP",
   "version": "1.7.0",
-  "versionScheme": "semver",
-  "description": "MCP server for Ghostfolio portfolio management and financial data access",
-  "license": "GNU Affero General Public License v3 or later (AGPLv3+)",
-  "links": {
-    "repository": "https://github.com/mhajder/ghostfolio-mcp",
-    "homepage": "https://github.com/mhajder/ghostfolio-mcp",
-    "readme": "https://github.com/mhajder/ghostfolio-mcp#readme"
-  },
-  "keywords": [
-    "Ghostfolio MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ghostfolio-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Ghostfolio portfolio management and financial data access",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ghostfolio-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c72e2117032b61ac",
       "type": "registry",
-      "url": "https://pypi.org/project/ghostfolio-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ghostfolio-mcp",
+      "registry": "pypi",
+      "version": "1.7.0"
+    },
+    {
+      "id": "upstream-eb8b393589311b57",
+      "type": "oci",
+      "url": "https://ghcr.io/mhajder/ghostfolio-mcp:1.7.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mhajder/ghostfolio-mcp",
+    "homepage": "https://github.com/mhajder/ghostfolio-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mhajder__ghostfolio-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=248",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mhajder/ghostfolio-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alondmnt/joplin-mcp",
   "name": "io.github.alondmnt/joplin-mcp",
+  "displayName": "Joplin MCP Server",
   "version": "0.10.0",
-  "versionScheme": "semver",
-  "description": "FastMCP server exposing Joplin notes, notebooks, tags, and imports.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/alondmnt/joplin-mcp",
-    "readme": "https://github.com/alondmnt/joplin-mcp#readme"
-  },
-  "keywords": [
-    "Joplin MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "joplin-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "FastMCP server exposing Joplin notes, notebooks, tags, and imports.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "joplin-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6e3765ae62f4fa87",
       "type": "registry",
-      "url": "https://pypi.org/project/joplin-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/joplin-mcp",
+      "registry": "pypi",
+      "version": "0.10.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/alondmnt/joplin-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alondmnt__joplin-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alondmnt/joplin-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

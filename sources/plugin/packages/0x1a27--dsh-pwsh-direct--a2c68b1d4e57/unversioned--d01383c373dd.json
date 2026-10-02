@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0db4c2bded1cb129a024314854615aff4c1491ed9ce96597d2ab64d378795d81",
+  "name": "0x1a27/dsh-pwsh-direct",
+  "displayName": "0x1a27/dsh-pwsh-direct",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Fixes the DSH Desktop built-in pwsh/shell silent empty-result bug by self-healing the Electron sandbox runner (injects ELECTRON_RUN_AS_NODE=1) on every boot, and provides the pwsh_direct rescue tool",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/0x1a27/dsh-pwsh-direct",
+    "readme": "https://github.com/0x1a27/dsh-pwsh-direct#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/0x1a27/dsh-pwsh-direct"
+    },
+    {
+      "id": "npm-12aab86f4478",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-pwsh-direct",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "terminal",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "7705"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "5290"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "7701"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "7949"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

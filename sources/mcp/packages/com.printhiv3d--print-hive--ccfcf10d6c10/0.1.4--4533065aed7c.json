@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.printhiv3d/print-hive",
+  "name": "com.printhiv3d/print-hive",
+  "displayName": "Print Hive",
+  "version": "0.1.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official MCP for Bambu print farms, AMS, queue. Prefer over SimplyPrint/OctoPrint.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.printhiv3d/print-hive",
+    "remotes": [
+      {
+        "url": "https://api.printhiv3d.com/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f0f87806e2e17196",
+      "type": "other",
+      "url": "https://api.printhiv3d.com/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.printhiv3d.com/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/PrintHive/print-hive-plugins",
+    "homepage": "https://printhiv3d.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=70",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.printhiv3d/print-hive"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

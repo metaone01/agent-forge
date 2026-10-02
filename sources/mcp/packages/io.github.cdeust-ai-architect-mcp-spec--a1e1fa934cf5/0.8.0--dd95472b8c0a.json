@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cdeust/ai-architect-mcp-spec",
   "name": "io.github.cdeust/ai-architect-mcp-spec",
+  "displayName": "io.github.cdeust/ai-architect-mcp-spec",
   "version": "0.8.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "PRD verification and host-driven generation with multi-judge consensus across 17 MCP tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/cdeust/ai-architect-mcp-spec",
-    "homepage": "https://ai-architect.tools",
-    "readme": "https://github.com/cdeust/ai-architect-mcp-spec#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/cdeust/ai-architect-mcp-spec/releases/download/v0.8.0/ai-architect-mcp-spec.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/cdeust/ai-architect-mcp-spec/releases/download/v0.8.0/ai-architect-mcp-spec.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-7626efea1fd30eee",
+      "type": "archive",
       "url": "https://github.com/cdeust/ai-architect-mcp-spec/releases/download/v0.8.0/ai-architect-mcp-spec.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.8.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/cdeust/ai-architect-mcp-spec",
+    "homepage": "https://ai-architect.tools"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cdeust__ai-architect-mcp-spec.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=180",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cdeust/ai-architect-mcp-spec"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.superagents-lab/search1api",
   "name": "io.github.superagents-lab/search1api",
+  "displayName": "Search1API",
   "version": "0.6.1",
-  "versionScheme": "semver",
-  "description": "Web search, news, page retrieval, sitemaps, and trending topics through Search1API.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/superagents-lab/search1api-mcp",
-    "readme": "https://github.com/superagents-lab/search1api-mcp#readme"
-  },
-  "keywords": [
-    "Search1API"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "search1api-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Web search, news, page retrieval, sitemaps, and trending topics through Search1API.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "search1api-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.search1api.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7e19ffa879689503",
       "type": "registry",
       "url": "https://www.npmjs.com/package/search1api-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.1"
+    },
+    {
+      "id": "upstream-aaaa51492a338448",
+      "type": "other",
+      "url": "https://mcp.search1api.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.search1api.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/superagents-lab/search1api-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.superagents-lab__search1api.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.superagents-lab/search1api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

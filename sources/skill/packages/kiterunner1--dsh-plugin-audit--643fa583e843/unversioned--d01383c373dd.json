@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.f5c786c50c585706abd31aab74ca130811a68be1e527a9753a23082ee18133a8",
+  "name": "kiterunner1/dsh-plugin-audit",
+  "displayName": "kiterunner1/dsh-plugin-audit",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "Agent Skill for DeepSeek Harness (DSH)：装第三方插件前的静态安全审计 —— 扫出 eval、patch 层 !!js、安装期脚本、开机自启、凭据复制、出网域名与提示词注入面。Audit third-party DSH plugins before installing. Works with DSH, Claude Code, Codex, Cursor &",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/kiterunner1/dsh-plugin-audit",
+    "readme": "https://github.com/kiterunner1/dsh-plugin-audit/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/kiterunner1/dsh-plugin-audit"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15858"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "848"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

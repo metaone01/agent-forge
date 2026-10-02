@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.312d20b603d6f9758ddb17fbae32594dd27dea057b6745b738f13f0269a07fd1",
+  "name": "Casually/dsh-plug-skills",
+  "displayName": "Casually/dsh-plug-skills",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 的 Skills 管理器：在 设置 → 插件 → Skills 标签页中发现 GitHub 上的 Agent Skills 仓库（SKILL.md 技能包，topic:agent-skills / dsh-skill / claude-skills），查看详情后一键安装 / 移除。技能装入 $DSH_HOME/skills，skill-filesystem",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Casually/dsh-plug-skills",
+    "readme": "https://github.com/Casually/dsh-plug-skills#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Casually/dsh-plug-skills"
+    },
+    {
+      "id": "npm-c70343cfef6d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-plug-skills",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6568"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "4893"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "10459"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-plug-skills"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

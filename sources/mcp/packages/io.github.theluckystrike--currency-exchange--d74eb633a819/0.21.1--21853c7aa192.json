@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.theluckystrike/currency-exchange",
+  "name": "io.github.theluckystrike/currency-exchange",
+  "displayName": "io.github.theluckystrike/currency-exchange",
+  "version": "0.21.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Convert currencies on the daily European Central Bank reference rates. No API key, no signup.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.21.0/currency.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/currency-exchange",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d31e08d0ef1b7a3f",
+      "type": "archive",
+      "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.21.0/currency.mcpb",
+      "registry": "mcpb",
+      "version": "0.21.0"
+    },
+    {
+      "id": "upstream-f77fa43366ff1e0b",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/currency-exchange",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/currency-exchange"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/currency"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=338",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/currency-exchange"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

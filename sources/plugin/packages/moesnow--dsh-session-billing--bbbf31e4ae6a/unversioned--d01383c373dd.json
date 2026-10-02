@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.de96ea2ba0eca5af2b3db43715f506c4afb17668c456cd3a129689b72a158836",
+  "name": "moesnow/dsh-session-billing",
+  "displayName": "moesnow/dsh-session-billing",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Per-session LLM cost meter for the DeepSeek Harness Web UI: folds provider usage into uncached input / cache read / cache write / output per model and prices it against DeepSeek and Xiaomi MiMo",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/moesnow/dsh-session-billing",
+    "readme": "https://github.com/moesnow/dsh-session-billing#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/moesnow/dsh-session-billing"
+    },
+    {
+      "id": "npm-7b00a9ce64c3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-session-billing",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16138"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16010"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-session-billing"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

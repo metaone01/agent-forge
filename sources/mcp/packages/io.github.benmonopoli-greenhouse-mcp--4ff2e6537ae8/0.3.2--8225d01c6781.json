@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.benmonopoli/greenhouse-mcp",
   "name": "io.github.benmonopoli/greenhouse-mcp",
+  "displayName": "Greenhouse MCP",
   "version": "0.3.2",
-  "versionScheme": "semver",
-  "description": "Production-ready MCP server for Greenhouse with 175 tools for recruiting teams",
-  "license": "MIT",
-  "links": {
-    "repository": "https://pypi.org/project/open-greenhouse-mcp/"
-  },
-  "keywords": [
-    "Greenhouse MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "open-greenhouse-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Production-ready MCP server for Greenhouse with 175 tools for recruiting teams",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "open-greenhouse-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-251f2edfa928b90b",
       "type": "registry",
-      "url": "https://pypi.org/project/open-greenhouse-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/open-greenhouse-mcp",
+      "registry": "pypi",
+      "version": "0.3.2"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.benmonopoli__greenhouse-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=176",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.benmonopoli/greenhouse-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

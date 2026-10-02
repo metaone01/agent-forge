@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.srift/srift",
+  "name": "app.srift/srift",
+  "displayName": "SRIFT",
+  "version": "4.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Decentralized P2P file transfer + encrypted chat for AI agents. Military-grade AES-256. No accounts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "srift-transfer",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://srift.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e37af381e422a51d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/srift-transfer",
+      "registry": "npm",
+      "version": "4.3.0"
+    },
+    {
+      "id": "upstream-587455d641c5f780",
+      "type": "registry",
+      "url": "https://pypi.org/project/srift",
+      "registry": "pypi",
+      "version": "4.3.0"
+    },
+    {
+      "id": "upstream-eefd974d53eaf7bc",
+      "type": "other",
+      "url": "https://srift.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://srift.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/srivardhan113/SRIFT-Open_Source",
+    "homepage": "https://srift.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.srift/srift"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

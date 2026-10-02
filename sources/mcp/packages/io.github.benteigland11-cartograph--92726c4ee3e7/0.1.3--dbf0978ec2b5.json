@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.benteigland11/cartograph",
   "name": "io.github.benteigland11/cartograph",
+  "displayName": "Cartograph",
   "version": "0.1.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local-first reusable implementation registry for AI agents and versioned widgets.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/benteigland11/cartograph-mcp",
-    "readme": "https://github.com/benteigland11/cartograph-mcp#readme"
-  },
-  "keywords": [
-    "Cartograph"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "cartograph-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "cartograph-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c2d13d959b131cfb",
       "type": "registry",
-      "url": "https://pypi.org/project/cartograph-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/cartograph-mcp",
+      "registry": "pypi",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/benteigland11/cartograph-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.benteigland11__cartograph.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=176",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.benteigland11/cartograph"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

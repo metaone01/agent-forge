@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.edholofy/eyepup",
   "name": "io.github.edholofy/eyepup",
+  "displayName": "io.github.edholofy/eyepup",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Agentic visitor analytics — five tools that hand the next CRO fix to your coding agent.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/edholofy/agentic-analytics",
-    "homepage": "https://eyepup.com/mcp-analytics",
-    "readme": "https://github.com/edholofy/agentic-analytics#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "eyepup-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Agentic visitor analytics — five tools that hand the next CRO fix to your coding agent.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "eyepup-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://eyepup.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-71324aef310a4915",
       "type": "registry",
       "url": "https://www.npmjs.com/package/eyepup-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-a6037fcfaad46804",
+      "type": "other",
+      "url": "https://eyepup.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://eyepup.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/edholofy/agentic-analytics",
+    "homepage": "https://eyepup.com/mcp-analytics"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.edholofy__eyepup.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=197",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.edholofy/eyepup"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

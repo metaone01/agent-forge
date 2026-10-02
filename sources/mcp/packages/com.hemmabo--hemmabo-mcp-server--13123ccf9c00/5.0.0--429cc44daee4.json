@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.hemmabo/hemmabo-mcp-server",
+  "name": "com.hemmabo/hemmabo-mcp-server",
+  "displayName": "HemmaBo Host Booking Engine",
+  "version": "5.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "6 runtime tools: 2 HemmaBo tools, 2 host onboarding tools, and 2 VRP verification tools. Not an OTA.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.hemmabo/hemmabo-mcp-server",
+    "remotes": [
+      {
+        "url": "https://www.hemmabo.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b32fe340ceb28a70",
+      "type": "other",
+      "url": "https://www.hemmabo.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.hemmabo.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/HemmaBo-se/hemmabo-mcp-server",
+    "homepage": "https://www.hemmabo.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=53",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.hemmabo/hemmabo-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

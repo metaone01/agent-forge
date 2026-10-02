@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.AnthonyPuggs/ausecon-mcp-server",
   "name": "io.github.AnthonyPuggs/ausecon-mcp-server",
+  "displayName": "Australian Economic Data (ABS, RBA & APRA)",
   "version": "1.14.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Australian economic data from the ABS, RBA, and APRA: CPI, GDP, cash rate, labour, and more.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/AnthonyPuggs/ausecon-mcp-server",
-    "readme": "https://github.com/AnthonyPuggs/ausecon-mcp-server#readme"
-  },
-  "keywords": [
-    "Australian Economic Data (ABS, RBA & APRA)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ausecon-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ausecon-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.auseconmcp.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-94e1266551d6a21d",
       "type": "registry",
-      "url": "https://pypi.org/project/ausecon-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ausecon-mcp-server",
+      "registry": "pypi",
+      "version": "1.14.5"
+    },
+    {
+      "id": "upstream-fde5da3fb2e7c131",
+      "type": "other",
+      "url": "https://mcp.auseconmcp.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.auseconmcp.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/AnthonyPuggs/ausecon-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.anthonypuggs__ausecon-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AnthonyPuggs/ausecon-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

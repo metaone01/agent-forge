@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.info.storiesig/instagram-mcp",
+  "name": "info.storiesig/instagram-mcp",
+  "displayName": "StoriesIG Instagram MCP Server",
+  "version": "1.0.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "View and download public Instagram posts, reels, stories, highlights, followers, comments, no login",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "info.storiesig/instagram-mcp",
+    "remotes": [
+      {
+        "url": "https://api-wh.storiesig.info/instagram/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-acbd9b1d0b048e7f",
+      "type": "other",
+      "url": "https://api-wh.storiesig.info/instagram/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api-wh.storiesig.info/instagram/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/storiesig-info/instagram-mcp",
+    "homepage": "https://storiesig.info/en/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "info.storiesig/instagram-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

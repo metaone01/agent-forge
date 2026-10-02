@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.training.stats/garmin",
+  "name": "training.stats/garmin",
+  "displayName": "Garmin & Strava for Claude and ChatGPT",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only Garmin and Strava data for your AI: activities, sleep, HRV, readiness, training load.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "training.stats/garmin",
+    "remotes": [
+      {
+        "url": "https://stats.training/mcp/{mcp_key}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-af2ae84c60abf23d",
+      "type": "other",
+      "url": "https://stats.training/mcp/{mcp_key}",
+      "install": {
+        "type": "api",
+        "url": "https://stats.training/mcp/{mcp_key}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://stats.training/garmin-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=378",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "training.stats/garmin"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

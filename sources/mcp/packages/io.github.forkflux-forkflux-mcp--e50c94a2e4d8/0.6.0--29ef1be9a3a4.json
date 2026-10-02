@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.forkflux/forkflux-mcp",
   "name": "io.github.forkflux/forkflux-mcp",
+  "displayName": "io.github.forkflux/forkflux-mcp",
   "version": "0.6.0",
-  "versionScheme": "semver",
-  "description": "Self-hosted multi-agent collaboration and audit layer for AI-assisted engineering teams",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/forkflux/forkflux",
-    "readme": "https://github.com/forkflux/forkflux#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "forkflux-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Self-hosted multi-agent collaboration and audit layer for AI-assisted engineering teams",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "forkflux-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-98f5c36dca7d6f1c",
       "type": "registry",
-      "url": "https://pypi.org/project/forkflux-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/forkflux-mcp",
+      "registry": "pypi",
+      "version": "0.6.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/forkflux/forkflux"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.forkflux__forkflux-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.forkflux/forkflux-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

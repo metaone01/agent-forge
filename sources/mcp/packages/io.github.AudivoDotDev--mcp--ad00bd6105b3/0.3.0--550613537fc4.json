@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AudivoDotDev/mcp",
+  "name": "io.github.AudivoDotDev/mcp",
+  "displayName": "Audivo",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Podcast transcripts: send an episode link and get the transcript back, a page at a time.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@audivo/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.audivo.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-88c29472a647ed1e",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@audivo/mcp",
+      "registry": "npm",
+      "version": "0.3.0"
+    },
+    {
+      "id": "upstream-db2f62bc2de6bd48",
+      "type": "other",
+      "url": "https://api.audivo.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.audivo.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AudivoDotDev/mcp",
+    "homepage": "https://docs.audivo.dev/mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=112",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AudivoDotDev/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

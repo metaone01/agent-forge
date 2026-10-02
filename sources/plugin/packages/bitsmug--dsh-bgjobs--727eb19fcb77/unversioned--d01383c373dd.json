@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0e986f8a11c4b56e5dcdc5cb97bd25d4ac95bf1c861b5194c6b3f07f17c137ad",
+  "name": "bitsmug/dsh-bgjobs",
+  "displayName": "bitsmug/dsh-bgjobs",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "独立于 DSH 进程的后台任务（schtasks 托管）：bgjob_submit/bgjob_status 工具、网页「后台任务监控」实时面板、可选完成后通知创建者 agent（notify 参数）；支持可选 dsh 沙箱（read-only/workspace-write）约束后台任务文件效果。关 DSH/关终端不影响任务运行。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/bitsmug/dsh-bgjobs",
+    "readme": "https://github.com/bitsmug/dsh-bgjobs#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/bitsmug/dsh-bgjobs"
+    },
+    {
+      "id": "npm-5be760ec532b",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/bgjobs",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "notifications",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13096"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/bitsmug__dsh-bgjobs.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13380"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "bgjobs"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.createprints/createprints",
+  "name": "ai.createprints/createprints",
+  "displayName": "Create Prints",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Generate AI artwork and order physical wall-art prints through conversation.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.createprints/createprints",
+    "remotes": [
+      {
+        "url": "https://mcp.createprints.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.createprints.ai/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d8b5095e28afb474",
+      "type": "other",
+      "url": "https://mcp.createprints.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.createprints.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-68f3fff082834df8",
+      "type": "other",
+      "url": "https://mcp.createprints.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.createprints.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.createprints.ai/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=4",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.createprints/createprints"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

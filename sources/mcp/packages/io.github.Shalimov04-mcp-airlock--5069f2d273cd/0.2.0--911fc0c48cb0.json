@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Shalimov04/mcp-airlock",
   "name": "io.github.Shalimov04/mcp-airlock",
+  "displayName": "mcp-airlock",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Governance proxy for MCP servers: allowlist, forced dry run, human confirmation, blast radius, audit",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Shalimov04/mcp-airlock",
-    "readme": "https://github.com/Shalimov04/mcp-airlock#readme"
-  },
-  "keywords": [
-    "mcp-airlock"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-airlock",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-airlock",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cb09d055dde419cd",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-airlock/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-airlock",
+      "registry": "pypi",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Shalimov04/mcp-airlock"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.shalimov04__mcp-airlock.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=153",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Shalimov04/mcp-airlock"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

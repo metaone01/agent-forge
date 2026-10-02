@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Dreiev/l2calendar-mcp",
   "name": "io.github.Dreiev/l2calendar-mcp",
+  "displayName": "L2 Calendar",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Query Lineage 2 private server openings by chronicle through the public L2 Calendar API.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Dreiev/l2calendar-mcp",
-    "homepage": "https://l2calendar.com",
-    "readme": "https://github.com/Dreiev/l2calendar-mcp#readme"
-  },
-  "keywords": [
-    "L2 Calendar"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "l2calendar-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Query Lineage 2 private server openings by chronicle through the public L2 Calendar API.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "l2calendar-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2e0de600d2a72f46",
       "type": "registry",
       "url": "https://www.npmjs.com/package/l2calendar-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Dreiev/l2calendar-mcp",
+    "homepage": "https://l2calendar.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dreiev__l2calendar-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=124",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Dreiev/l2calendar-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

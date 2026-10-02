@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.fetcher.twitter/mcp",
+  "name": "sh.fetcher.twitter/mcp",
+  "displayName": "Twitter / X data for agents",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "15 Twitter / X endpoints. Pay per call in USDC via x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "sh.fetcher.twitter/mcp",
+    "remotes": [
+      {
+        "url": "https://twitter.fetcher.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c77396f2c2422355",
+      "type": "other",
+      "url": "https://twitter.fetcher.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://twitter.fetcher.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://twitter.fetcher.sh"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.fetcher.twitter/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

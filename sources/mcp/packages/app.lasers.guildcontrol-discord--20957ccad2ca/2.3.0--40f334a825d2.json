@@ -2,50 +2,57 @@
   "schemaVersion": 2,
   "id": "mcp.app.lasers.guildcontrol/discord",
   "name": "app.lasers.guildcontrol/discord",
+  "displayName": "GuildControl MCP",
   "version": "2.3.0",
-  "versionScheme": "semver",
-  "description": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration",
-  "license": "AGPL-3.0-only",
-  "links": {
-    "repository": "https://github.com/j-256/guildcontrol",
-    "homepage": "https://docs.guildcontrol.lasers.app",
-    "readme": "https://github.com/j-256/guildcontrol#readme"
-  },
-  "keywords": [
-    "GuildControl MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "guildctl",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Safety-first MCP server for Discord with privacy-safe reads, audits, and reviewed administration",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "guildctl",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7d674568c9e783cb",
       "type": "registry",
       "url": "https://www.npmjs.com/package/guildctl",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.3.0"
+    },
+    {
+      "id": "upstream-5e0fb6db953c5240",
+      "type": "oci",
+      "url": "https://ghcr.io/j-256/guildcontrol:2.3.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-f806995457cfec86",
+      "type": "archive",
+      "url": "https://github.com/j-256/guildcontrol/releases/download/v2.3.0/guildcontrol-2.3.0.mcpb",
+      "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/j-256/guildcontrol",
+    "homepage": "https://docs.guildcontrol.lasers.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +65,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\app.lasers.guildcontrol__discord.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=19",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.lasers.guildcontrol/discord"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.BackBond/agent-scan",
   "name": "io.github.BackBond/agent-scan",
+  "displayName": "BackBond Agent Scan",
   "version": "0.6.3",
-  "versionScheme": "semver",
-  "description": "Vet MCP tool manifests before attachment; returns block, review, or no blocking finding.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/BackBond/agent-scan",
-    "homepage": "https://backbond.ai/agent-scan/",
-    "readme": "https://github.com/BackBond/agent-scan#readme"
-  },
-  "keywords": [
-    "BackBond Agent Scan"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@backbond/agent-scan",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Vet MCP tool manifests before attachment; returns block, review, or no blocking finding.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@backbond/agent-scan",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e5564cb5a4982289",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@backbond/agent-scan",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/BackBond/agent-scan",
+    "homepage": "https://backbond.ai/agent-scan/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.backbond__agent-scan.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=112",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.BackBond/agent-scan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

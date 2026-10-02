@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.DemigodDSK/hubmesh",
   "name": "io.github.DemigodDSK/hubmesh",
+  "displayName": "hubmesh",
   "version": "0.4.2",
-  "versionScheme": "semver",
-  "description": "Deterministic multi-hop graph retrieval for RAG. Zero LLM calls in the query path.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/DemigodDSK/hubmesh",
-    "readme": "https://github.com/DemigodDSK/hubmesh#readme"
-  },
-  "keywords": [
-    "hubmesh"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "hubmesh",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Deterministic multi-hop graph retrieval for RAG. Zero LLM calls in the query path.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "hubmesh",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5c60e1a8e482d432",
       "type": "registry",
-      "url": "https://pypi.org/project/hubmesh/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/hubmesh",
+      "registry": "pypi",
+      "version": "0.4.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/DemigodDSK/hubmesh"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.demigoddsk__hubmesh.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=123",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.DemigodDSK/hubmesh"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

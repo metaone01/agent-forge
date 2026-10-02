@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.overwing/mcp",
+  "name": "ai.overwing/mcp",
+  "displayName": "Overwing",
+  "version": "0.12.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Guardrails for LLM output: pass / fail / review verdicts and one recommended action. Hosted or npm.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "overwing-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://overwing.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-549f58eca0ac5744",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/overwing-mcp",
+      "registry": "npm",
+      "version": "0.12.0"
+    },
+    {
+      "id": "upstream-d5482e79c557bfe4",
+      "type": "other",
+      "url": "https://overwing.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://overwing.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/frod27/overwing-mcp",
+    "homepage": "https://overwing.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=10",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.overwing/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

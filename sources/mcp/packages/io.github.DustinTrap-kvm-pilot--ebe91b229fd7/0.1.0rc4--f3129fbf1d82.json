@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.DustinTrap/kvm-pilot",
   "name": "io.github.DustinTrap/kvm-pilot",
+  "displayName": "io.github.DustinTrap/kvm-pilot",
   "version": "0.1.0rc4",
-  "versionScheme": "semver",
-  "description": "Smart hands for your AI agents - write-capable KVM+BMC+SSH MCP server: gated, verified, audited.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/DustinTrap/kvm-pilot",
-    "readme": "https://github.com/DustinTrap/kvm-pilot#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "kvm-pilot",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Smart hands for your AI agents - write-capable KVM+BMC+SSH MCP server: gated, verified, audited.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "kvm-pilot",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a8498edd84c0f19f",
       "type": "registry",
-      "url": "https://pypi.org/project/kvm-pilot/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/kvm-pilot",
+      "registry": "pypi",
+      "version": "0.1.0rc4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/DustinTrap/kvm-pilot"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dustintrap__kvm-pilot.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=124",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.DustinTrap/kvm-pilot"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.team.yardstick/yardstick",
+  "name": "team.yardstick/yardstick",
+  "displayName": "Yardstick ATS",
+  "version": "0.6.7",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage hiring in Yardstick's ATS: jobs, candidates, applications, interviews, and scorecards.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "team.yardstick/yardstick",
+    "remotes": [
+      {
+        "url": "https://api.yardstick.team/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fb727babc7cbc02d",
+      "type": "other",
+      "url": "https://api.yardstick.team/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.yardstick.team/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/yardstickinc/yardstick-mcp",
+    "homepage": "https://portal.yardstick.team/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=377",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "team.yardstick/yardstick"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

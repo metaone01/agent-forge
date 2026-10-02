@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dmytrome/groundhog-mcp",
   "name": "io.github.dmytrome/groundhog-mcp",
+  "displayName": "Groundhog",
   "version": "0.16.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Search, read and research the web, with hidden text stripped by default and sources hashed",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/dmytrome/groundhog",
-    "readme": "https://github.com/dmytrome/groundhog#readme"
-  },
-  "keywords": [
-    "Groundhog"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "groundhog-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "groundhog-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5b9f4b34f5b6991d",
       "type": "registry",
-      "url": "https://pypi.org/project/groundhog-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/groundhog-mcp",
+      "registry": "pypi",
+      "version": "0.16.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dmytrome/groundhog"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dmytrome__groundhog-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=194",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dmytrome/groundhog-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Lex-API/lexapi-mcp",
   "name": "io.github.Lex-API/lexapi-mcp",
+  "displayName": "LexAPI",
   "version": "0.1.3",
-  "versionScheme": "semver",
-  "description": "Search EUR-Lex, fetch parsed EU legislation and case law, explore the citation graph.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Lex-API/lexapi-mcp",
-    "homepage": "https://lex-api.com",
-    "readme": "https://github.com/Lex-API/lexapi-mcp#readme"
-  },
-  "keywords": [
-    "LexAPI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@lexapi/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search EUR-Lex, fetch parsed EU legislation and case law, explore the citation graph.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@lexapi/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4ec225b3c7dd8d33",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@lexapi/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Lex-API/lexapi-mcp",
+    "homepage": "https://lex-api.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.lex-api__lexapi-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=139",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Lex-API/lexapi-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

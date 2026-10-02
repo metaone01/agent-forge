@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.publicdataoracle/api",
+  "name": "com.publicdataoracle/api",
+  "displayName": "PublicData Oracle",
+  "version": "2.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Public data API with ML enrichment — SEC EDGAR, FRED, NOAA, EPA, USGS. 404 endpoints.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.publicdataoracle/api",
+    "remotes": [
+      {
+        "url": "https://www.publicdataoracle.com/api/v1/data/query",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fb4cd438e0030b5f",
+      "type": "other",
+      "url": "https://www.publicdataoracle.com/api/v1/data/query",
+      "install": {
+        "type": "api",
+        "url": "https://www.publicdataoracle.com/api/v1/data/query"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Mljessop/SensorAnalytics",
+    "homepage": "https://www.publicdataoracle.com/developer"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=70",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.publicdataoracle/api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

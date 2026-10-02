@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Hybirdss/smartest-tv",
   "name": "io.github.Hybirdss/smartest-tv",
+  "displayName": "smartest-tv",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "Control any smart TV with natural language. Resolve Netflix/YouTube/Spotify and deep-link.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/Hybirdss/smartest-tv",
-    "readme": "https://github.com/Hybirdss/smartest-tv#readme"
-  },
-  "keywords": [
-    "smartest-tv"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "stv",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Control any smart TV with natural language. Resolve Netflix/YouTube/Spotify and deep-link.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "stv",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7b27c573e6858dab",
       "type": "registry",
-      "url": "https://pypi.org/project/stv/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/stv",
+      "registry": "pypi",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Hybirdss/smartest-tv"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.hybirdss__smartest-tv.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=133",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Hybirdss/smartest-tv"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

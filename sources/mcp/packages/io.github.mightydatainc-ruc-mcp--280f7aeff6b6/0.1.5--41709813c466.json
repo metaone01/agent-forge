@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mightydatainc/ruc-mcp",
   "name": "io.github.mightydatainc/ruc-mcp",
+  "displayName": "Render Unto Caesar",
   "version": "0.1.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "An MCP server that fuses LLM contextual intelligence with procedural code reliability.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/mightydatainc/ruc-mcp",
-    "readme": "https://github.com/mightydatainc/ruc-mcp#readme"
-  },
-  "keywords": [
-    "Render Unto Caesar"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/mightydatainc/ruc-mcp:0.1.5",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/mightydatainc/ruc-mcp:0.1.5",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/mightydatainc/ruc-mcp",
-      "priority": 10,
+      "id": "upstream-2e98b57f721194b8",
+      "type": "oci",
+      "url": "https://ghcr.io/mightydatainc/ruc-mcp:0.1.5",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mightydatainc/ruc-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mightydatainc__ruc-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=249",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mightydatainc/ruc-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.marcomoauro/substack-mcp",
   "name": "io.github.marcomoauro/substack-mcp",
+  "displayName": "Substack MCP Server",
   "version": "1.3.2",
-  "versionScheme": "semver",
-  "description": "Manage Substack publishing, subscribers, analytics, reader feeds, comments, and images through MCP.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/marcomoauro/substack-mcp",
-    "homepage": "https://implementing.substack.com/p/mcp-server-for-substack",
-    "readme": "https://github.com/marcomoauro/substack-mcp#readme"
-  },
-  "keywords": [
-    "Substack MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "substack-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Manage Substack publishing, subscribers, analytics, reader feeds, comments, and images through MCP.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "substack-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-60650aa3a4bbe03b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/substack-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.3.2"
+    },
+    {
+      "id": "upstream-43158c9ba31103db",
+      "type": "oci",
+      "url": "https://docker.io/marcomoauro/substack-mcp:v1.3.2",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/marcomoauro/substack-mcp",
+    "homepage": "https://implementing.substack.com/p/mcp-server-for-substack"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.marcomoauro__substack-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=233",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.marcomoauro/substack-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

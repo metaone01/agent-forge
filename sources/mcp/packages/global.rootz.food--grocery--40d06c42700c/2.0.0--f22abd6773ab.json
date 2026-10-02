@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.global.rootz.food/grocery",
+  "name": "global.rootz.food/grocery",
+  "displayName": "global.rootz.food/grocery",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Signed US food & grocery data: Kroger prices, nutrition, allergens, recalls, diet filters.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "global.rootz.food/grocery",
+    "remotes": [
+      {
+        "url": "https://food.rootz.global/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-63a04e29b283a88c",
+      "type": "other",
+      "url": "https://food.rootz.global/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://food.rootz.global/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rootz-global/mcp-servers",
+    "homepage": "https://politics.rootz.global"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "global.rootz.food/grocery"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

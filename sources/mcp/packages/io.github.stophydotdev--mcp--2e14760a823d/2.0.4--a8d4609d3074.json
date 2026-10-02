@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.stophydotdev/mcp",
+  "name": "io.github.stophydotdev/mcp",
+  "displayName": "Stophy",
+  "version": "2.0.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "One API for live, structured web data. REST, MCP, SDK and CLI.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@stophy/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.stophy.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.stophy.dev/mcp-oauth",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6227be3a8d593ba3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@stophy/mcp",
+      "registry": "npm",
+      "version": "2.0.4"
+    },
+    {
+      "id": "upstream-16a6f8c8d15b6f26",
+      "type": "other",
+      "url": "https://api.stophy.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.stophy.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-161b7a58be7bdf2a",
+      "type": "other",
+      "url": "https://api.stophy.dev/mcp-oauth",
+      "install": {
+        "type": "api",
+        "url": "https://api.stophy.dev/mcp-oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/stophydotdev/mcp.git"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stophydotdev/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.flytohub/flyto-runtime",
+  "name": "io.github.flytohub/flyto-runtime",
+  "displayName": "Flyto2 Runtime",
+  "version": "1.0.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Self-hosted MCP runtime for ChatGPT to edit files, run commands, and test local projects.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.flytohub/flyto-runtime",
+    "remotes": [
+      {
+        "url": "https://{runtime_host}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-002b503290651812",
+      "type": "other",
+      "url": "https://{runtime_host}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{runtime_host}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/flytohub/flyto-runtime",
+    "homepage": "https://github.com/flytohub/flyto-runtime#quick-start"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.flytohub/flyto-runtime"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

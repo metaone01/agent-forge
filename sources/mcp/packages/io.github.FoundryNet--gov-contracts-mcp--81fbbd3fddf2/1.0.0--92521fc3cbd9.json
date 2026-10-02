@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.FoundryNet/gov-contracts-mcp",
+  "name": "io.github.FoundryNet/gov-contracts-mcp",
+  "displayName": "Government Contracts MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Government contract search and federal procurement data: SAM.gov opportunities + USASpending awards.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.FoundryNet/gov-contracts-mcp",
+    "remotes": [
+      {
+        "url": "https://gov-contracts-mcp-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f21b27c9e1433978",
+      "type": "other",
+      "url": "https://gov-contracts-mcp-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gov-contracts-mcp-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/FoundryNet/gov-contracts-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=130",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.FoundryNet/gov-contracts-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

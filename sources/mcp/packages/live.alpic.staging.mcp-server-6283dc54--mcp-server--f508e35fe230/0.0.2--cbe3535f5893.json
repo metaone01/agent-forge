@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.live.alpic.staging.mcp-server-6283dc54/mcp-server",
+  "name": "live.alpic.staging.mcp-server-6283dc54/mcp-server",
+  "displayName": "Template!",
+  "version": "0.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A non functional MCP server (yet)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "live.alpic.staging.mcp-server-6283dc54/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp-server-6283dc54.staging.alpic.live",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp-server-6283dc54.staging.alpic.live",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-597a0c1e06b04c38",
+      "type": "other",
+      "url": "https://mcp-server-6283dc54.staging.alpic.live",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-server-6283dc54.staging.alpic.live"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-c171a64d975025cf",
+      "type": "other",
+      "url": "https://mcp-server-6283dc54.staging.alpic.live",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-server-6283dc54.staging.alpic.live"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "live.alpic.staging.mcp-server-6283dc54/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

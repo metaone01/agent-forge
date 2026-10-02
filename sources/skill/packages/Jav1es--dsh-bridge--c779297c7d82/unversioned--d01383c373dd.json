@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.e6133123ea73988311f1505e166a8901b63eb8661e7e84068f78f7063fd1a3c2",
+  "name": "Jav1es/dsh-bridge",
+  "displayName": "Jav1es/dsh-bridge",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "让腾讯 Marvis 调用本机 DeepSeek Harness：Skill + MCP 两种接入方式，Marvis 自主决定何时把任务交给 DSH",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/Jav1es/dsh-bridge",
+    "readme": "https://github.com/Jav1es/dsh-bridge/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Jav1es/dsh-bridge"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "17124"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

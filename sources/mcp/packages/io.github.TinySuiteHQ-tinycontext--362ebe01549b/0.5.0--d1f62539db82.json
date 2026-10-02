@@ -2,47 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.TinySuiteHQ/tinycontext",
   "name": "io.github.TinySuiteHQ/tinycontext",
+  "displayName": "io.github.TinySuiteHQ/tinycontext",
   "version": "0.5.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Token-light local memory with SQLite hybrid retrieval for MCP agents.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/TinySuiteHQ/TinyContext",
-    "homepage": "https://github.com/TinySuiteHQ/TinyContext",
-    "readme": "https://github.com/TinySuiteHQ/TinyContext#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/marcellm01/tinycontext:v0.5.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/marcellm01/tinycontext:v0.5.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/marcellm01/tinycontext",
-      "priority": 10,
+      "id": "upstream-a9e4cdfa324ebbaf",
+      "type": "oci",
+      "url": "https://docker.io/marcellm01/tinycontext:v0.5.0",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-86434b600babc7c0",
+      "type": "registry",
+      "url": "https://pypi.org/project/tinysuite-context",
+      "registry": "pypi",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/TinySuiteHQ/TinyContext",
+    "homepage": "https://github.com/TinySuiteHQ/TinyContext"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tinysuitehq__tinycontext.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=157",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.TinySuiteHQ/tinycontext"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

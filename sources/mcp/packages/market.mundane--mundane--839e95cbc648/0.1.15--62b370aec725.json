@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.market.mundane/mundane",
+  "name": "market.mundane/mundane",
+  "displayName": "Mundane",
+  "version": "0.1.15",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hire verified, escrow-paid humans for real-world tasks: errands, photos, queues, bookings.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mundane-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.mundane.market/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c4e302f05f816711",
+      "type": "registry",
+      "url": "https://pypi.org/project/mundane-mcp",
+      "registry": "pypi",
+      "version": "0.1.15"
+    },
+    {
+      "id": "upstream-f534654b6cfdf272",
+      "type": "oci",
+      "url": "https://ghcr.io/sttruji/mundane-mcp:0.1.15",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-553534a7b48bf9e0",
+      "type": "other",
+      "url": "https://api.mundane.market/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.mundane.market/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sttruji/mundane-mcp",
+    "homepage": "https://mundane.market/for-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=365",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "market.mundane/mundane"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

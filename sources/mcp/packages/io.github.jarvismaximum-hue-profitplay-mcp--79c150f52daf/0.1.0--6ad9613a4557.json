@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.jarvismaximum-hue/profitplay-mcp",
   "name": "io.github.jarvismaximum-hue/profitplay-mcp",
+  "displayName": "ProfitPlay",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for the live ProfitPlay BTC five-minute AI agent sandbox",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/jarvismaximum-hue/profitplay-mcp",
-    "readme": "https://github.com/jarvismaximum-hue/profitplay-mcp#readme"
-  },
-  "keywords": [
-    "ProfitPlay"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/jarvismaximum-hue/profitplay-mcp:0.1.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/jarvismaximum-hue/profitplay-mcp:0.1.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/jarvismaximum-hue/profitplay-mcp",
-      "priority": 10,
+      "id": "upstream-4c56003853011f76",
+      "type": "oci",
+      "url": "https://ghcr.io/jarvismaximum-hue/profitplay-mcp:0.1.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/jarvismaximum-hue/profitplay-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jarvismaximum-hue__profitplay-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=216",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jarvismaximum-hue/profitplay-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

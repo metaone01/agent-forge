@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.at.sporthotelideal/booking",
+  "name": "at.sporthotelideal/booking",
+  "displayName": "Sporthotel IDEAL Hochgurgl",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live-Verfügbarkeit, Preise und Buchungslinks direkt beim Sporthotel IDEAL Hochgurgl in Tirol.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "at.sporthotelideal/booking",
+    "remotes": [
+      {
+        "url": "https://booking.sporthotelideal.at/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f889231e1424bc7b",
+      "type": "other",
+      "url": "https://booking.sporthotelideal.at/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://booking.sporthotelideal.at/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.sporthotelideal.at"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "at.sporthotelideal/booking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

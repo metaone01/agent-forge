@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nevent-dev/mcp-nevent",
   "name": "io.github.nevent-dev/mcp-nevent",
+  "displayName": "Nevent MCP",
   "version": "1.8.0",
-  "versionScheme": "semver",
-  "description": "Talk to your live-events CRM (campaigns, analytics, paid ads, segments) in Claude and ChatGPT.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/nevent-dev/mcp-nevent",
-    "homepage": "https://nevent.ai/en/features/nevent-ai/",
-    "readme": "https://github.com/nevent-dev/mcp-nevent#readme"
-  },
-  "keywords": [
-    "Nevent MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-nevent",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Talk to your live-events CRM (campaigns, analytics, paid ads, segments) in Claude and ChatGPT.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-nevent",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.nevent.ai/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-37047b47c2fb35cf",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-nevent",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.8.0"
+    },
+    {
+      "id": "upstream-bc0a4f59d5f97cae",
+      "type": "other",
+      "url": "https://mcp.nevent.ai/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nevent.ai/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/nevent-dev/mcp-nevent",
+    "homepage": "https://nevent.ai/en/features/nevent-ai/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nevent-dev__mcp-nevent.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nevent-dev/mcp-nevent"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SpecLeft/specleft",
   "name": "io.github.SpecLeft/specleft",
+  "displayName": "SpecLeft",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Python intent tracing MCP: map specs to pytest tests, monitor implementation progress, offline-only.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/SpecLeft/specleft",
-    "homepage": "https://specleft.dev",
-    "readme": "https://github.com/SpecLeft/specleft#readme"
-  },
-  "keywords": [
-    "SpecLeft"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "specleft",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Python intent tracing MCP: map specs to pytest tests, monitor implementation progress, offline-only.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "specleft",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0e5c5bcfae68a471",
       "type": "registry",
-      "url": "https://pypi.org/project/specleft/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/specleft",
+      "registry": "pypi",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/SpecLeft/specleft",
+    "homepage": "https://specleft.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.specleft__specleft.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=154",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SpecLeft/specleft"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.ce2bb852b4c578af1544a543e7c8d47010711db29824c0532ac5bbaac3e56327",
+  "name": "chaggle/dsh-powershell-check",
+  "displayName": "chaggle/dsh-powershell-check",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "Native DeepSeek Harness plugin: gates pwsh tool calls against PowerShell pitfalls via the official tools/pre-execute interception point, bundles the powershell-check skill",
+  "license": "MIT",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/chaggle/dsh-powershell-check",
+    "readme": "https://github.com/chaggle/dsh-powershell-check/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/chaggle/dsh-powershell-check"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "323"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

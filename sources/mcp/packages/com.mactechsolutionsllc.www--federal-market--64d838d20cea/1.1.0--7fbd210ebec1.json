@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mactechsolutionsllc.www/federal-market",
+  "name": "com.mactechsolutionsllc.www/federal-market",
+  "displayName": "MacTech Federal Market",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SAM.gov contract opportunities and entity lookup (BYOK) plus USASpending federal award data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mactechsolutionsllc.www/federal-market",
+    "remotes": [
+      {
+        "url": "https://www.mactechsolutionsllc.com/api/mcp/market",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e27106e3f7a622f6",
+      "type": "other",
+      "url": "https://www.mactechsolutionsllc.com/api/mcp/market",
+      "install": {
+        "type": "api",
+        "url": "https://www.mactechsolutionsllc.com/api/mcp/market"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.mactechsolutionsllc.com/mcp/federal-market"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=59",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mactechsolutionsllc.www/federal-market"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

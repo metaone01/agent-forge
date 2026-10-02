@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.sellermate/amazon-ads",
+  "name": "ai.sellermate/amazon-ads",
+  "displayName": "ai.sellermate/amazon-ads",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Ask your Amazon Ads account anything and act with guardrails. Remote MCP, OAuth, free to connect.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.sellermate/amazon-ads",
+    "remotes": [
+      {
+        "url": "https://api.sellermate.ai/mcp/sse",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.sellermate.ai/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3403bc269544dc40",
+      "type": "other",
+      "url": "https://api.sellermate.ai/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.sellermate.ai/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8b8f4a0247946247",
+      "type": "other",
+      "url": "https://api.sellermate.ai/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.sellermate.ai/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SellerMate-AI/amazon-ads-mcp",
+    "homepage": "https://www.sellermate.ai/product/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=12",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.sellermate/amazon-ads"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

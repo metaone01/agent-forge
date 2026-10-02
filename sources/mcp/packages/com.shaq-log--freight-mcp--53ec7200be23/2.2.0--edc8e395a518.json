@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.shaq-log/freight-mcp",
+  "name": "com.shaq-log/freight-mcp",
+  "displayName": "com.shaq-log/freight-mcp",
+  "version": "2.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time ocean freight rates, LCL pricing, and booking management for global logistics.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.shaq-log/freight-mcp",
+    "remotes": [
+      {
+        "url": "https://search.shaq-logistics.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6d04a801b41e3a11",
+      "type": "other",
+      "url": "https://search.shaq-logistics.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://search.shaq-logistics.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=76",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.shaq-log/freight-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

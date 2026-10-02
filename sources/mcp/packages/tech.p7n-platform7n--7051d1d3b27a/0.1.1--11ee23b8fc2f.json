@@ -2,46 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.tech.p7n/platform7n",
   "name": "tech.p7n/platform7n",
+  "displayName": "tech.p7n/platform7n",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Connect Claude to your Platform7n workspaces — chat, links, and tasks. One-click OAuth.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@p7ntech/mcp"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@p7ntech/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Connect Claude to your Platform7n workspaces — chat, links, and tasks. One-click OAuth.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@p7ntech/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.p7n.tech/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f90df590f268c577",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@p7ntech/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-160d736c08130899",
+      "type": "other",
+      "url": "https://api.p7n.tech/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.p7n.tech/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\tech.p7n__platform7n.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=377",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tech.p7n/platform7n"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

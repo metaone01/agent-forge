@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.thinkneo/control-plane",
+  "name": "ai.thinkneo/control-plane",
+  "displayName": "ThinkNEO Control Plane",
+  "version": "1.29.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Enterprise AI Control Plane: governance, guardrails, spend tracking, compliance & smart routing.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.thinkneo/control-plane",
+    "remotes": [
+      {
+        "url": "https://mcp.thinkneo.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-57304bc0f229aea4",
+      "type": "other",
+      "url": "https://mcp.thinkneo.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.thinkneo.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/thinkneo-ai/mcp-server",
+    "homepage": "https://thinkneo.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=15",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.thinkneo/control-plane"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

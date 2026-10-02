@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.1b9137d0c07db0849c21ed94afec73b8194f311047e44c3f6191062db4405ae1",
+  "name": "EmptyCollin/dsh-todo-enhancer",
+  "displayName": "EmptyCollin/dsh-todo-enhancer",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 插件：Host 半区向系统提示词注入规则，要求 LLM 把需要用户决策的内容用 <!-- dsh-todo:start -->…<!-- dsh-todo:end --> 成对标记包裹（渲染不可见）；Client 半区仅对标记块在输入框上方显示带复选框的表格增强 UI，支持单行/整体编辑与「直接发送」「填入对话框」「关闭」，任意操作完成后关闭。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/EmptyCollin/dsh-todo-enhancer",
+    "readme": "https://github.com/EmptyCollin/dsh-todo-enhancer#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/EmptyCollin/dsh-todo-enhancer"
+    }
+  ],
+  "keywords": [
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "9488"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "5205"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "11820"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

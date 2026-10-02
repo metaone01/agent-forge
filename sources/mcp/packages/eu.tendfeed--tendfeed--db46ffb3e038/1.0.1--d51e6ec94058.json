@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.tendfeed/tendfeed",
+  "name": "eu.tendfeed/tendfeed",
+  "displayName": "eu.tendfeed/tendfeed",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Bid/no-bid verdicts for open EU tenders, from 592,000 real TED contract awards.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "eu.tendfeed/tendfeed",
+    "remotes": [
+      {
+        "url": "https://tendfeed.eu/api/mcp/tendfeed",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9059da754bc3f5ed",
+      "type": "other",
+      "url": "https://tendfeed.eu/api/mcp/tendfeed",
+      "install": {
+        "type": "api",
+        "url": "https://tendfeed.eu/api/mcp/tendfeed"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://tendfeed.eu"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.tendfeed/tendfeed"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.co.marketmayhem/mcp",
+  "name": "co.marketmayhem/mcp",
+  "displayName": "co.marketmayhem/mcp",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Launch and trade BSC tokens on Market Mayhem. Your own wallet signs; dry run by default; spend caps.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@marketmayhem/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://marketmayhem.co/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b74813a967280222",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@marketmayhem/mcp",
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-c1ed800c53745f59",
+      "type": "other",
+      "url": "https://marketmayhem.co/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://marketmayhem.co/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Comovis/MarketMayhem-MCP",
+    "homepage": "https://marketmayhem.co/developers/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=28",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "co.marketmayhem/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

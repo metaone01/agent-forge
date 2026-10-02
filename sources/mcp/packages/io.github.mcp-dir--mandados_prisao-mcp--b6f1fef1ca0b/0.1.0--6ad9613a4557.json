@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mcp-dir/mandados_prisao-mcp",
+  "name": "io.github.mcp-dir/mandados_prisao-mcp",
+  "displayName": "Mandados de Prisão (CNJ)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Checks for open arrest warrants in the CNJ national database for a person, from the CPF and name. Pl",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mcp-dir/mandados_prisao-mcp",
+    "remotes": [
+      {
+        "url": "https://api.mcp.ai/p_mandados_prisao",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4e59941ce71b3855",
+      "type": "other",
+      "url": "https://api.mcp.ai/p_mandados_prisao",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcp.ai/p_mandados_prisao"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mcp-dir/mandados_prisao-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=240",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mcp-dir/mandados_prisao-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

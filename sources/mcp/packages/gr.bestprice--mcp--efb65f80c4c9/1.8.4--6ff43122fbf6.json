@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.gr.bestprice/mcp",
+  "name": "gr.bestprice/mcp",
+  "displayName": "BestPrice",
+  "version": "1.8.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only shopping decisions, product search, offers, and price history for Greece.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "gr.bestprice/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.bestprice.gr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3ede9558e14f796a",
+      "type": "other",
+      "url": "https://mcp.bestprice.gr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.bestprice.gr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TheBestCo/bestprice-mcp",
+    "homepage": "https://www.bestprice.gr/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "gr.bestprice/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

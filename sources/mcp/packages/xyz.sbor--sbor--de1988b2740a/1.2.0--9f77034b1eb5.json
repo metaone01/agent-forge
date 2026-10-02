@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.xyz.sbor/sbor",
+  "name": "xyz.sbor/sbor",
+  "displayName": "SBOR",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check a lending rate before your agent borrows. Stacks benchmark, read from contract state. No key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sbor-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.sbor.xyz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3fd3eb178be8181c",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/sbor-mcp",
+      "registry": "npm",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-9243066584318afa",
+      "type": "other",
+      "url": "https://mcp.sbor.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.sbor.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sborxyz/sbor",
+    "homepage": "https://sbor.xyz"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=383",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.sbor/sbor"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

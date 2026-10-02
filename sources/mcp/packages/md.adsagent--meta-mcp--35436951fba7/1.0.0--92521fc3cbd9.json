@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.md.adsagent/meta-mcp",
+  "name": "md.adsagent/meta-mcp",
+  "displayName": "AdsAgent — Meta Ads MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted Meta ads MCP with OAuth, bounded reads, and prepare/confirm writes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "md.adsagent/meta-mcp",
+    "remotes": [
+      {
+        "url": "https://adsagent.md/mcp/v2",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d5c69b87652b504d",
+      "type": "other",
+      "url": "https://adsagent.md/mcp/v2",
+      "install": {
+        "type": "api",
+        "url": "https://adsagent.md/mcp/v2"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kimlucky7/smartads",
+    "homepage": "https://adsagent.md"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "md.adsagent/meta-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

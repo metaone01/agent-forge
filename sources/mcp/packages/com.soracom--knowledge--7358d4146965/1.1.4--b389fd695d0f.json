@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.soracom/knowledge",
+  "name": "com.soracom/knowledge",
+  "displayName": "Soracom Knowledge",
+  "version": "1.1.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search SORACOM documentation: service guides, FAQ, API references, IoT recipes, etc.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.soracom/knowledge",
+    "remotes": [
+      {
+        "url": "https://knowledge-mcp.soracom.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c54b15c41ff288f2",
+      "type": "other",
+      "url": "https://knowledge-mcp.soracom.com",
+      "install": {
+        "type": "api",
+        "url": "https://knowledge-mcp.soracom.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/soracom/mcp",
+    "homepage": "https://developers.soracom.io/en/docs/tools/knowledge-mcp-server/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.soracom/knowledge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

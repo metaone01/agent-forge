@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/data-sncf",
+  "name": "io.github.pipeworx-io/data-sncf",
+  "displayName": "Data Sncf",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SNCF Open Data (ressources.data.sncf.com) — OpenDataSoft MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/data-sncf",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/data-sncf/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4955bd82c0fea8c5",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/data-sncf/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/data-sncf/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-data-sncf",
+    "homepage": "https://pipeworx.io/packs/data-sncf"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=277",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/data-sncf"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

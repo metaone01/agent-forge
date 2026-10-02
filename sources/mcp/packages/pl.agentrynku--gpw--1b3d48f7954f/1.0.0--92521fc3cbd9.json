@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pl.agentrynku/gpw",
+  "name": "pl.agentrynku/gpw",
+  "displayName": "Agent Rynku - Warsaw Stock Exchange (GPW) data for your agent",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Warsaw Stock Exchange data: quotes, ESPI/EBI filings, quarterly KPIs, earnings forecasts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agentrynku-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agentrynku.pl/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c2992aa472a303e3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/agentrynku-mcp",
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-276706c8a3b64597",
+      "type": "other",
+      "url": "https://agentrynku.pl/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentrynku.pl/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/krystiangw/agentrynku-mcp",
+    "homepage": "https://agentrynku.pl/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pl.agentrynku/gpw"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

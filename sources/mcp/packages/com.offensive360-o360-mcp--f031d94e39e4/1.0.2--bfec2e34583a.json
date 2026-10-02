@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.com.offensive360/o360-mcp",
   "name": "com.offensive360/o360-mcp",
+  "displayName": "com.offensive360/o360-mcp",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "Run Offensive360 SAST scans (60+ languages) on local code; findings with file/line and fixes",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/offensive360/mcp-server",
-    "readme": "https://github.com/offensive360/mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "o360-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Run Offensive360 SAST scans (60+ languages) on local code; findings with file/line and fixes",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "o360-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-01cde0224b29053a",
       "type": "registry",
       "url": "https://www.npmjs.com/package/o360-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/offensive360/mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.offensive360__o360-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=66",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.offensive360/o360-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

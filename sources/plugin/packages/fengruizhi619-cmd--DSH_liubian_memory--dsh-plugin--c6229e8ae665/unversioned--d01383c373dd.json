@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.f1369fb457910110849d585f737e1f12403bfea0025ebff701feff43a652a78c",
+  "name": "fengruizhi619-cmd/DSH_liubian_memory/dsh-plugin",
+  "displayName": "fengruizhi619-cmd/DSH_liubian_memory/dsh-plugin",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "流变系统 DSH 移植版：记忆(日记/标签/语义检索/留言板) + 被炉(实时房间/挂机监听) + 更新(技能独立装载/快照广播) + 通路(双通路外部校验) + 面板。后端复用 Codex 侧 memory-skill / liubian 的 Python 实现与数据。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "dsh-plugin/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/fengruizhi619-cmd/DSH_liubian_memory",
+    "readme": "https://github.com/fengruizhi619-cmd/DSH_liubian_memory#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/fengruizhi619-cmd/DSH_liubian_memory/tree/HEAD/dsh-plugin"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15386"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

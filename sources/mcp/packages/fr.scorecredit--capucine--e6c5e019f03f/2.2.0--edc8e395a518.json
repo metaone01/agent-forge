@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fr.scorecredit/capucine",
+  "name": "fr.scorecredit/capucine",
+  "displayName": "Capucine — ScoreCredit",
+  "version": "2.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "French mortgage tools: HCSF capacity, dated rates, usury caps, ORIAS 26000195.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fr.scorecredit/capucine",
+    "remotes": [
+      {
+        "url": "https://scorecredit.fr/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://scorecredit.fr/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9c584c083c1ae4f2",
+      "type": "other",
+      "url": "https://scorecredit.fr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://scorecredit.fr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9eb57a2a77bc678e",
+      "type": "other",
+      "url": "https://scorecredit.fr/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://scorecredit.fr/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://scorecredit.fr/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fr.scorecredit/capucine"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

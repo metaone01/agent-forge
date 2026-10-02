@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.estate.guthmann/mcp",
+  "name": "estate.guthmann/mcp",
+  "displayName": "GUTHMANN® Berlin Real Estate",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Berlin real estate for AI agents: granular market data and property search, free, by GUTHMANN®.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "estate.guthmann/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.guthmann.estate/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-542cbbbbe6cefa84",
+      "type": "other",
+      "url": "https://mcp.guthmann.estate/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.guthmann.estate/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/GuthmannEstate/mcp",
+    "homepage": "https://guthmann.estate/en/market-intelligence/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "estate.guthmann/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

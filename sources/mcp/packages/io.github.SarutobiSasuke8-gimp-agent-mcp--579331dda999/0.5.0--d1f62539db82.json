@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.SarutobiSasuke8/gimp-agent-mcp",
   "name": "io.github.SarutobiSasuke8/gimp-agent-mcp",
+  "displayName": "GIMP Agent MCP",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "Edit in GIMP 3 with AI agents: live previews, grouped edits, pixel measurements and recipes.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/SarutobiSasuke8/gimp-agent-mcp",
-    "homepage": "https://pypi.org/project/gimp-agent-mcp/",
-    "readme": "https://github.com/SarutobiSasuke8/gimp-agent-mcp#readme"
-  },
-  "keywords": [
-    "GIMP Agent MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "gimp-agent-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Edit in GIMP 3 with AI agents: live previews, grouped edits, pixel measurements and recipes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "gimp-agent-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fd070704fc7eac55",
       "type": "registry",
-      "url": "https://pypi.org/project/gimp-agent-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/gimp-agent-mcp",
+      "registry": "pypi",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/SarutobiSasuke8/gimp-agent-mcp",
+    "homepage": "https://pypi.org/project/gimp-agent-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sarutobisasuke8__gimp-agent-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=151",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SarutobiSasuke8/gimp-agent-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

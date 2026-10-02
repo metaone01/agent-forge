@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.yh919/servd-agent-ordering",
+  "name": "io.github.yh919/servd-agent-ordering",
+  "displayName": "Servd Agentic Ordering",
+  "version": "1.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Discover Servd venues, browse menus, validate carts, place confirmed orders, and track status.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.yh919/servd-agent-ordering",
+    "remotes": [
+      {
+        "url": "https://app.getservd.me/api/v1/agent/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2facd4a1e672fa40",
+      "type": "other",
+      "url": "https://app.getservd.me/api/v1/agent/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.getservd.me/api/v1/agent/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/yh919/servd",
+    "homepage": "https://getservd.me/en"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yh919/servd-agent-ordering"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

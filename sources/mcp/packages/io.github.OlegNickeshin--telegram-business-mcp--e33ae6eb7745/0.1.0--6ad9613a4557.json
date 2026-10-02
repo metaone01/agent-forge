@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.OlegNickeshin/telegram-business-mcp",
+  "name": "io.github.OlegNickeshin/telegram-business-mcp",
+  "displayName": "Telegram Business MCP",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Self-hosted Telegram Business MCP: search chats, read files and transcripts, optionally reply.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.OlegNickeshin/telegram-business-mcp",
+    "remotes": [
+      {
+        "url": "https://{host}/tg-mcp/{secret}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bc21a897bdb4a5c7",
+      "type": "other",
+      "url": "https://{host}/tg-mcp/{secret}",
+      "install": {
+        "type": "api",
+        "url": "https://{host}/tg-mcp/{secret}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/OlegNickeshin/telegram-business-mcp",
+    "homepage": "https://github.com/OlegNickeshin/telegram-business-mcp#readme"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.OlegNickeshin/telegram-business-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

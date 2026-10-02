@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jshelley/briefings",
+  "name": "io.github.jshelley/briefings",
+  "displayName": "io.github.jshelley/briefings",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hourly ranked news (AI, markets, sports, world): JSON, e-ink pages, Morning Paper PDF; 25 free/day",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/jshelley/briefing-mcp/releases/download/v0.1.0/briefing-mcp-0.1.0.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://briefing-service.wholemind.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-34dfbbb7bd426efc",
+      "type": "archive",
+      "url": "https://github.com/jshelley/briefing-mcp/releases/download/v0.1.0/briefing-mcp-0.1.0.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-6680d9351cede124",
+      "type": "other",
+      "url": "https://briefing-service.wholemind.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://briefing-service.wholemind.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jshelley/briefing-mcp",
+    "homepage": "https://briefing-service.wholemind.workers.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=222",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jshelley/briefings"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

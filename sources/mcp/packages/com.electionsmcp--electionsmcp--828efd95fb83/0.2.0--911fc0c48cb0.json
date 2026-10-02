@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.electionsmcp/electionsmcp",
+  "name": "com.electionsmcp/electionsmcp",
+  "displayName": "ElectionsMCP",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Model and map any 2028 U.S. race down to the precinct: scenarios, swing, turnout, and roll-ups.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.electionsmcp/electionsmcp",
+    "remotes": [
+      {
+        "url": "https://www.electionsmcp.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://www.electionsmcp.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a3194528e957f97a",
+      "type": "other",
+      "url": "https://www.electionsmcp.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.electionsmcp.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-3a6f207b1df0ed0e",
+      "type": "other",
+      "url": "https://www.electionsmcp.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://www.electionsmcp.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.electionsmcp.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=46",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.electionsmcp/electionsmcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

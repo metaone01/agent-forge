@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alex-on-ai/webreaper",
   "name": "io.github.alex-on-ai/webreaper",
+  "displayName": "WebReaper",
   "version": "11.3.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "AI-native web scraper: scrape, crawl and map any site to clean markdown over stdio. MIT-licensed.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/alex-on-ai/WebReaper",
-    "homepage": "https://webreaper.ai",
-    "readme": "https://github.com/alex-on-ai/WebReaper#readme"
-  },
-  "keywords": [
-    "WebReaper"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "WebReaper.Mcp",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "WebReaper.Mcp",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3f037b10046b504f",
       "type": "registry",
       "url": "https://www.nuget.org/packages/WebReaper.Mcp",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "11.3.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/alex-on-ai/WebReaper",
+    "homepage": "https://webreaper.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alex-on-ai__webreaper.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=167",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alex-on-ai/webreaper"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

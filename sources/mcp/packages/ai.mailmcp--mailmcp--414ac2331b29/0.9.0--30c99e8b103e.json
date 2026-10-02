@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.mailmcp/mailmcp",
+  "name": "ai.mailmcp/mailmcp",
+  "displayName": "mailmcp",
+  "version": "0.9.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Your mailboxes in ChatGPT and Claude: Gmail, iCloud, Fastmail, any IMAP. Passwords stay yours.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/kojott/mailmcp-dist/releases/download/v0.9.0/mailmcp.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mailmcp.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4e007d4d6efd8ee2",
+      "type": "archive",
+      "url": "https://github.com/kojott/mailmcp-dist/releases/download/v0.9.0/mailmcp.mcpb",
+      "registry": "mcpb",
+      "version": "0.9.0"
+    },
+    {
+      "id": "upstream-886bd8c2db1d17eb",
+      "type": "other",
+      "url": "https://mailmcp.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mailmcp.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kojott/mailmcp-dist",
+    "homepage": "https://mailmcp.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.mailmcp/mailmcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

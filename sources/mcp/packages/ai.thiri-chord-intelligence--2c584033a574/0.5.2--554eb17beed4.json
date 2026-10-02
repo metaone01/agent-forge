@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.ai.thiri/chord-intelligence",
   "name": "ai.thiri/chord-intelligence",
+  "displayName": "THIRI Chord Intelligence",
   "version": "0.5.2",
-  "versionScheme": "semver",
-  "description": "Deterministic music theory for agents: analyze, voice, reharmonize, conduct — computed, not guessed",
-  "license": "PolyForm-Noncommercial-1.0.0",
-  "links": {
-    "repository": "https://github.com/BluesPrince/thiri-mcp",
-    "homepage": "https://thiri.ai",
-    "readme": "https://github.com/BluesPrince/thiri-mcp#readme"
-  },
-  "keywords": [
-    "THIRI Chord Intelligence"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@bluesprincemedia/thiri-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Deterministic music theory for agents: analyze, voice, reharmonize, conduct — computed, not guessed",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@bluesprincemedia/thiri-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.thiri.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-9d22a58b723494df",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@bluesprincemedia/thiri-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.2"
+    },
+    {
+      "id": "upstream-3ed11d8d6de9431f",
+      "type": "other",
+      "url": "https://mcp.thiri.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.thiri.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/BluesPrince/thiri-mcp",
+    "homepage": "https://thiri.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.thiri__chord-intelligence.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=15",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.thiri/chord-intelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

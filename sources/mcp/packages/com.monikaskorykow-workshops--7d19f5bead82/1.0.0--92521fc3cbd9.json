@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.monikaskorykow/workshops",
   "name": "com.monikaskorykow/workshops",
+  "displayName": "com.monikaskorykow/workshops",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "MCP server for Monika Skorykow workshops - browse prices and promotions",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/monikaskorykow/mcp-workshops",
-    "readme": "https://github.com/monikaskorykow/mcp-workshops#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@monikaskorykow/mcp-workshops",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Monika Skorykow workshops - browse prices and promotions",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@monikaskorykow/mcp-workshops",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp-workshops.jani-828.workers.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-225d8537b5197306",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@monikaskorykow/mcp-workshops",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-04b75849a4cc9eaa",
+      "type": "other",
+      "url": "https://mcp-workshops.jani-828.workers.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-workshops.jani-828.workers.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/monikaskorykow/mcp-workshops"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.monikaskorykow__workshops.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.monikaskorykow/workshops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

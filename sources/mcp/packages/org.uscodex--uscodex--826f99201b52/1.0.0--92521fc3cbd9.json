@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.uscodex/uscodex",
+  "name": "org.uscodex/uscodex",
+  "displayName": "US Codex",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Federal law: US Code, CFR, public laws, bills and executive orders, cross-linked and versioned.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.uscodex/uscodex",
+    "remotes": [
+      {
+        "url": "https://uscodex.org/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://uscodex.org/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b864e220271037eb",
+      "type": "other",
+      "url": "https://uscodex.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://uscodex.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-c37030781cef2a0a",
+      "type": "other",
+      "url": "https://uscodex.org/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://uscodex.org/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://uscodex.org/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.uscodex/uscodex"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

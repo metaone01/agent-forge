@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.xyz.sputnikx/market",
   "name": "xyz.sputnikx/market",
+  "displayName": "xyz.sputnikx/market",
   "version": "2.4.0",
-  "versionScheme": "semver",
-  "description": "Sputnik X: EU trade 63M+, LV customs, salary, sanctions, EU AI Act, SoulLedger + x402 USDC.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/drivenbymyai-max/mcp-sputnikx-market",
-    "readme": "https://github.com/drivenbymyai-max/mcp-sputnikx-market#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-sputnikx-market",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Sputnik X: EU trade 63M+, LV customs, salary, sanctions, EU AI Act, SoulLedger + x402 USDC.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-sputnikx-market",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.sputnikx.xyz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-35423e203d10122d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-sputnikx-market",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.4.0"
+    },
+    {
+      "id": "upstream-47a71786f16dc4cf",
+      "type": "other",
+      "url": "https://mcp.sputnikx.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.sputnikx.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/drivenbymyai-max/mcp-sputnikx-market"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\xyz.sputnikx__market.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=383",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.sputnikx/market"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

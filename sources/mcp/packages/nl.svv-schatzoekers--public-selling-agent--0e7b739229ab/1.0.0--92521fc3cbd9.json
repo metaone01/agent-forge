@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.nl.svv-schatzoekers/public-selling-agent",
+  "name": "nl.svv-schatzoekers/public-selling-agent",
+  "displayName": "SVV-Schatzoekers Public Selling Agent",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only product discovery, merchant trust, shipping and returns for SVV-Schatzoekers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "nl.svv-schatzoekers/public-selling-agent",
+    "remotes": [
+      {
+        "url": "https://brain.svv-schatzoekers.nl/mcp-public",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2a7b8458d1badfb2",
+      "type": "other",
+      "url": "https://brain.svv-schatzoekers.nl/mcp-public",
+      "install": {
+        "type": "api",
+        "url": "https://brain.svv-schatzoekers.nl/mcp-public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "nl.svv-schatzoekers/public-selling-agent"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

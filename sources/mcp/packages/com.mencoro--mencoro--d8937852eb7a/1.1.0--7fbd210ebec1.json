@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mencoro/mencoro",
+  "name": "com.mencoro/mencoro",
+  "displayName": "Mencoro",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Track and manage how your brand appears in AI answers: rank, mentions, sentiment, share of voice.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@mencoro/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.mencoro.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d3d91537b53cecf1",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@mencoro/mcp",
+      "registry": "npm",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-37db991d63e2d0fe",
+      "type": "oci",
+      "url": "https://ghcr.io/mencoro/mencoro-mcp:1.1.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-e241655a7753ccf8",
+      "type": "other",
+      "url": "https://api.mencoro.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.mencoro.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mencoro/mencoro-mcp",
+    "homepage": "https://mencoro.com/features/mcp-server/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mencoro/mencoro"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

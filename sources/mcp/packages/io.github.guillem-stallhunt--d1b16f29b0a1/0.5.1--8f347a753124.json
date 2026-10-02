@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.guillem/stallhunt",
   "name": "io.github.guillem/stallhunt",
+  "displayName": "Stallhunt",
   "version": "0.5.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Evidence-backed Linux performance triage over MCP",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/guillem/stallhunt",
-    "readme": "https://github.com/guillem/stallhunt#readme"
-  },
-  "keywords": [
-    "Stallhunt"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/guillem/stallhunt/releases/download/v0.5.1/stallhunt-0.5.1-x86_64-unknown-linux-gnu.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/guillem/stallhunt/releases/download/v0.5.1/stallhunt-0.5.1-x86_64-unknown-linux-gnu.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-d848eb281e3f5487",
+      "type": "archive",
       "url": "https://github.com/guillem/stallhunt/releases/download/v0.5.1/stallhunt-0.5.1-x86_64-unknown-linux-gnu.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/guillem/stallhunt"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.guillem__stallhunt.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=207",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.guillem/stallhunt"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

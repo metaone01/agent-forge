@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.unbrowse-ai/sites",
+  "name": "io.github.unbrowse-ai/sites",
+  "displayName": "Unbrowse sites: one website's tools per server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "One website's first-party API as MCP tools, e.g. airbnb.com. Thousands of sites indexed.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.unbrowse-ai/sites",
+    "remotes": [
+      {
+        "url": "https://unbrowse.ai/mcp/{site}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9373906ca7396eaf",
+      "type": "other",
+      "url": "https://unbrowse.ai/mcp/{site}",
+      "install": {
+        "type": "api",
+        "url": "https://unbrowse.ai/mcp/{site}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/unbrowse-ai/sites",
+    "homepage": "https://unbrowse.ai/sites"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=344",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.unbrowse-ai/sites"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

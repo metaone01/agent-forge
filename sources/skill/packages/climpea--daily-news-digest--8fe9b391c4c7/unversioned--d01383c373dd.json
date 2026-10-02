@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.c2d13bfaae03b4c348010bd96c6e1ee309ea497bfd580fa1fe08a12e1e70337d",
+  "name": "climpea/daily-news-digest",
+  "displayName": "climpea/daily-news-digest",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "聚合 7 个权威源（Hacker News、GitHub、HuggingFace、arXiv、掘金、OSCHINA、 InfoQ），用 AI 生成中文 Markdown 开发者日报，并附带基于当日热点的 「 学习成长计划」与「 落地练手 Idea」。纯 Skill 即可用 （SKILL.md 内置手动采集命令）；在 DSH 中配合动态插件可实现每天 09:00 自动生成 + 落盘。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/climpea/daily-news-digest",
+    "readme": "https://github.com/climpea/daily-news-digest/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/climpea/daily-news-digest"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "291"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

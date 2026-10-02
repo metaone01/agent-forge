@@ -2,48 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.ai.reka/mcp",
   "name": "ai.reka/mcp",
+  "displayName": "Reka",
   "version": "0.1.10",
-  "versionScheme": "semver",
-  "description": "Understand your videos with Reka AI — search, ask questions, and extract insights.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://pypi.org/project/reka-mcp/"
-  },
-  "keywords": [
-    "Reka"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "reka-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Understand your videos with Reka AI — search, ask questions, and extract insights.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "reka-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.reka.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-16438e0dfe734d28",
       "type": "registry",
-      "url": "https://pypi.org/project/reka-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/reka-mcp",
+      "registry": "pypi",
+      "version": "0.1.10"
+    },
+    {
+      "id": "upstream-1e726ce95215f3e7",
+      "type": "other",
+      "url": "https://mcp.reka.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.reka.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.reka__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=11",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.reka/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.group.aicare/aicare-mcp",
+  "name": "group.aicare/aicare-mcp",
+  "displayName": "group.aicare/aicare-mcp",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AIcare 康护评估 MCP：舌诊等 AI 检测 → 健康评估 → 康护报告 → 康复指导书（健康评估与康护建议，非医学诊断）",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "group.aicare/aicare-mcp",
+    "remotes": [
+      {
+        "url": "https://www.aicare.group/api/mcp/aicare",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agent.avatargaia.top/api/mcp/aicare",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-37b6c84bd6ea2b3a",
+      "type": "other",
+      "url": "https://www.aicare.group/api/mcp/aicare",
+      "install": {
+        "type": "api",
+        "url": "https://www.aicare.group/api/mcp/aicare"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-5a7f29dba526035f",
+      "type": "other",
+      "url": "https://agent.avatargaia.top/api/mcp/aicare",
+      "install": {
+        "type": "api",
+        "url": "https://agent.avatargaia.top/api/mcp/aicare"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AvatarGaia/aicare-mcp",
+    "homepage": "https://www.aicare.group"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "group.aicare/aicare-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

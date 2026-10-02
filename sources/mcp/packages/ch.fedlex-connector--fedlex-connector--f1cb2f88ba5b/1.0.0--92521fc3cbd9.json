@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ch.fedlex-connector/fedlex-connector",
+  "name": "ch.fedlex-connector/fedlex-connector",
+  "displayName": "Fedlex Connector",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search Swiss federal legislation: laws, articles, amendments via the Fedlex SPARQL endpoint.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ch.fedlex-connector/fedlex-connector",
+    "remotes": [
+      {
+        "url": "https://mcp.fedlex-connector.ch/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7729fb1019c2dc61",
+      "type": "other",
+      "url": "https://mcp.fedlex-connector.ch/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.fedlex-connector.ch/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/JayTheSkier/fedlex-connector",
+    "homepage": "https://fedlex-connector.ch"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ch.fedlex-connector/fedlex-connector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

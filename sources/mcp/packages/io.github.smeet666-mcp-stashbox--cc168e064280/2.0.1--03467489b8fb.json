@@ -2,48 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.smeet666/mcp-stashbox",
   "name": "io.github.smeet666/mcp-stashbox",
+  "displayName": "io.github.smeet666/mcp-stashbox",
   "version": "2.0.1",
-  "versionScheme": "semver",
-  "description": "Search scenes, performers, studios and tags across the public stash-box catalogues.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/smeet666/mcp-stashbox",
-    "homepage": "https://github.com/smeet666/mcp-stashbox#readme",
-    "readme": "https://github.com/smeet666/mcp-stashbox#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-stashbox",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search scenes, performers, studios and tags across the public stash-box catalogues.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-stashbox",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-13e07f7bdb206fab",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-stashbox",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.0.1"
+    },
+    {
+      "id": "upstream-ad9c78bb279552d5",
+      "type": "archive",
+      "url": "https://github.com/smeet666/mcp-stashbox/releases/download/v2.0.1/mcp-stashbox-2.0.1.mcpb",
+      "registry": "mcpb",
+      "version": "2.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/smeet666/mcp-stashbox",
+    "homepage": "https://github.com/smeet666/mcp-stashbox#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.smeet666__mcp-stashbox.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=330",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.smeet666/mcp-stashbox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

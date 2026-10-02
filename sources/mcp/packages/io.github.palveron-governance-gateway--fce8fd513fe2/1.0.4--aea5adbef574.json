@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.palveron/governance-gateway",
   "name": "io.github.palveron/governance-gateway",
+  "displayName": "Palveron Governance Gateway",
   "version": "1.0.4",
-  "versionScheme": "semver",
-  "description": "Advisory governance checks for MCP hosts; enforcement runs in the Palveron remote MCP proxy.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/palveron/mcp-server",
-    "homepage": "https://palveron.com/early-access",
-    "readme": "https://github.com/palveron/mcp-server#readme"
-  },
-  "keywords": [
-    "Palveron Governance Gateway"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@palveron/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Advisory governance checks for MCP hosts; enforcement runs in the Palveron remote MCP proxy.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@palveron/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-11eb6a97f0768b9d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@palveron/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/palveron/mcp-server",
+    "homepage": "https://palveron.com/early-access"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.palveron__governance-gateway.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=270",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.palveron/governance-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

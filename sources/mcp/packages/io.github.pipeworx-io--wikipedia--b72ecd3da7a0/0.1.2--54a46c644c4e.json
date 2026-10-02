@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/wikipedia",
+  "name": "io.github.pipeworx-io/wikipedia",
+  "displayName": "Wikipedia",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Wikipedia MCP — wraps Wikipedia REST API (free, no auth)",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/wikipedia",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/wikipedia/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-61df2910c0c4381e",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/wikipedia/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/wikipedia/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-wikipedia",
+    "homepage": "https://pipeworx.io/packs/wikipedia"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=289",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/wikipedia"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

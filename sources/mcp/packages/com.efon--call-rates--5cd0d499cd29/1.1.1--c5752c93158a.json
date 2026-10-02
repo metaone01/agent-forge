@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.efon/call-rates",
+  "name": "com.efon/call-rates",
+  "displayName": "eFon international call rates & VoIP",
+  "version": "1.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "International call & VoIP rates: per-minute prices to call 200+ countries, comparison, dialing help.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.efon/call-rates",
+    "remotes": [
+      {
+        "url": "https://efon.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-abb728babd5858d5",
+      "type": "other",
+      "url": "https://efon.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://efon.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://efon.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=46",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.efon/call-rates"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

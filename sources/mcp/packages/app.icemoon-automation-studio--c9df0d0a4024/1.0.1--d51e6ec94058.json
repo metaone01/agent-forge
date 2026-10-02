@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.app.icemoon/automation-studio",
   "name": "app.icemoon/automation-studio",
+  "displayName": "Icemoon — control a real iPhone with AI",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Control real, physical iPhones with AI: screen reading, human-like touch, no jailbreak.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/icemoon-dev/icemoon-mcp",
-    "homepage": "https://icemoon.app/mcp",
-    "readme": "https://github.com/icemoon-dev/icemoon-mcp#readme"
-  },
-  "keywords": [
-    "Icemoon — control a real iPhone with AI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "icemoon-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Control real, physical iPhones with AI: screen reading, human-like touch, no jailbreak.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "icemoon-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-42613c5af6fe8bb9",
       "type": "registry",
       "url": "https://www.npmjs.com/package/icemoon-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/icemoon-dev/icemoon-mcp",
+    "homepage": "https://icemoon.app/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\app.icemoon__automation-studio.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=19",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.icemoon/automation-studio"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

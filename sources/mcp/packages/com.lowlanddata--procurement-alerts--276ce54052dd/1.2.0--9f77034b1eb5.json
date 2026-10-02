@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.lowlanddata/procurement-alerts",
+  "name": "com.lowlanddata/procurement-alerts",
+  "displayName": "LowlandData Procurement & Permit Alerts",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Alerts on official data: US and EU tenders, federal awards and grants, permits, MAP violations.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.lowlanddata/procurement-alerts",
+    "remotes": [
+      {
+        "url": "https://mcp.apify.com/?actors=lowlanddata/us-rfp-monitor,lowlanddata/eu-tender-monitor,lowlanddata/france-public-tender-monitor,lowlanddata/usa-federal-award-monitor,lowlanddata/building-permit-monitor,lowlanddata/map-price-violation-monitor,lowlanddata/grants-gov-monitor",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-84bca6ded4fe74fc",
+      "type": "other",
+      "url": "https://mcp.apify.com/?actors=lowlanddata/us-rfp-monitor,lowlanddata/eu-tender-monitor,lowlanddata/france-public-tender-monitor,lowlanddata/usa-federal-award-monitor,lowlanddata/building-permit-monitor,lowlanddata/map-price-violation-monitor,lowlanddata/grants-gov-monitor",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.apify.com/?actors=lowlanddata/us-rfp-monitor,lowlanddata/eu-tender-monitor,lowlanddata/france-public-tender-monitor,lowlanddata/usa-federal-award-monitor,lowlanddata/building-permit-monitor,lowlanddata/map-price-violation-monitor,lowlanddata/grants-gov-monitor"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://apify.com/lowlanddata"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=59",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.lowlanddata/procurement-alerts"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

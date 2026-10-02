@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.eodozzy/icloud-mcp",
   "name": "io.github.eodozzy/icloud-mcp",
+  "displayName": "io.github.eodozzy/icloud-mcp",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Read-only-by-default MCP server for iCloud mail, calendar, and contacts (IMAP/CalDAV/CardDAV).",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/eodozzy/icloud-mcp",
-    "readme": "https://github.com/eodozzy/icloud-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "icloud-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Read-only-by-default MCP server for iCloud mail, calendar, and contacts (IMAP/CalDAV/CardDAV).",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "icloud-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4bb0d44262d8e2ea",
       "type": "registry",
-      "url": "https://pypi.org/project/icloud-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/icloud-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/eodozzy/icloud-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.eodozzy__icloud-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=199",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.eodozzy/icloud-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

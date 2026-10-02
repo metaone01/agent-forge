@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.fisher-byte/markovo",
   "name": "io.github.fisher-byte/markovo",
+  "displayName": "Markovo File to Markdown",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Convert files and authorized public HTTPS pages to Markdown with secure job and billing guidance.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/fisher-byte/markovo",
-    "homepage": "https://markovo.net/docs/mcp",
-    "readme": "https://github.com/fisher-byte/markovo#readme"
-  },
-  "keywords": [
-    "Markovo File to Markdown"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "markovo",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "markovo",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://markovo.net/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-535ab0a0199699ac",
       "type": "registry",
-      "url": "https://pypi.org/project/markovo/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/markovo",
+      "registry": "pypi",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-4f52fa7903a03913",
+      "type": "other",
+      "url": "https://markovo.net/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://markovo.net/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/fisher-byte/markovo",
+    "homepage": "https://markovo.net/docs/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fisher-byte__markovo.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=201",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fisher-byte/markovo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

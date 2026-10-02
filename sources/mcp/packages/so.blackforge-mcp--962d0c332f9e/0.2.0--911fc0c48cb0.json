@@ -2,48 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.so.blackforge/mcp",
   "name": "so.blackforge/mcp",
+  "displayName": "so.blackforge/mcp",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Crypto market data: order book depth, liquidity lifetimes and taker flow on 9 spot venues",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/blackforge-so/mcp",
-    "homepage": "https://blackforge.so",
-    "readme": "https://github.com/blackforge-so/mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@blackforge-so/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Crypto market data: order book depth, liquidity lifetimes and taker flow on 9 spot venues",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@blackforge-so/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-653bc9ec17e2d1dc",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@blackforge-so/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/blackforge-so/mcp",
+    "homepage": "https://blackforge.so"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\so.blackforge__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "so.blackforge/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.sentfrom/mcp",
+  "name": "ai.sentfrom/mcp",
+  "displayName": "ai.sentfrom/mcp",
+  "version": "0.4.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Email for AI agents: inboxes, send/reply/forward, search, threads, webhooks — 21 SentFromAI tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sentfromai-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.sentfrom.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-681d5755bc6bfaee",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/sentfromai-mcp",
+      "registry": "npm",
+      "version": "0.4.1"
+    },
+    {
+      "id": "upstream-dff08a6cb03ceb84",
+      "type": "other",
+      "url": "https://api.sentfrom.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.sentfrom.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sentfromai/sentfromai-mcp",
+    "homepage": "https://docs.sentfrom.ai/guides/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=12",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.sentfrom/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

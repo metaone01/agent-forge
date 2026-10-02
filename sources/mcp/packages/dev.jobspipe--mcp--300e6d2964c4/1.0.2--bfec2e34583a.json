@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.jobspipe/mcp",
+  "name": "dev.jobspipe/mcp",
+  "displayName": "JobsPipe",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live job postings from 30+ ATS feeds and job boards, one schema. Sign in with OAuth, or use a key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.jobspipe/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.jobspipe.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://jobspipe.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2a506353f64ad184",
+      "type": "other",
+      "url": "https://mcp.jobspipe.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.jobspipe.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9f95ac9207d47bf1",
+      "type": "other",
+      "url": "https://jobspipe.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://jobspipe.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jobspipe/mcp",
+    "homepage": "https://jobspipe.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=92",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.jobspipe/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

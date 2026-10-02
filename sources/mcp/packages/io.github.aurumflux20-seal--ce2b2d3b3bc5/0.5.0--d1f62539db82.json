@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aurumflux20/seal",
   "name": "io.github.aurumflux20/seal",
+  "displayName": "Seal",
   "version": "0.5.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Stops agents double-charging across processes: exactly one execution, confirmed by the provider.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/aurumflux20/seal",
-    "readme": "https://github.com/aurumflux20/seal#readme"
-  },
-  "keywords": [
-    "Seal"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "seal-kernel",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "seal-kernel",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7b930fca4940caf2",
       "type": "registry",
-      "url": "https://pypi.org/project/seal-kernel/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/seal-kernel",
+      "registry": "pypi",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aurumflux20/seal"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aurumflux20__seal.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=174",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aurumflux20/seal"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

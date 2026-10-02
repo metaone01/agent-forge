@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pipeshub-ai/mcp",
   "name": "io.github.pipeshub-ai/mcp",
+  "displayName": "PipesHub",
   "version": "2.4.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Permissioned search and cited answers over Slack, Drive, Gmail, Jira, and 50+ workplace sources.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/pipeshub-ai/mcp-server",
-    "homepage": "https://docs.pipeshub.com/for-agents",
-    "readme": "https://github.com/pipeshub-ai/mcp-server#readme"
-  },
-  "keywords": [
-    "PipesHub"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@pipeshub-ai/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pipeshub-ai/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://{instance_host}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-49e91b53489db657",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@pipeshub-ai/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.4.2"
+    },
+    {
+      "id": "upstream-171d698ff898d3e0",
+      "type": "other",
+      "url": "https://{instance_host}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{instance_host}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/pipeshub-ai/mcp-server",
+    "homepage": "https://docs.pipeshub.com/for-agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pipeshub-ai__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=273",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeshub-ai/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

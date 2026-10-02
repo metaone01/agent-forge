@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.josephibra/handoff-mcp-server",
+  "name": "io.github.josephibra/handoff-mcp-server",
+  "displayName": "io.github.josephibra/handoff-mcp-server",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Durable agent-to-agent handoffs and shared scratchpad for multi-agent workflows.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.josephibra/handoff-mcp-server",
+    "remotes": [
+      {
+        "url": "https://handoff-mcp-server-production.mcp.xpay.sh/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://handoff-mcp-server-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f1a2fc1c6b4208a5",
+      "type": "other",
+      "url": "https://handoff-mcp-server-production.mcp.xpay.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://handoff-mcp-server-production.mcp.xpay.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-2fa9bceaa2ddd80c",
+      "type": "other",
+      "url": "https://handoff-mcp-server-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://handoff-mcp-server-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/josephibra/handoff-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=221",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.josephibra/handoff-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

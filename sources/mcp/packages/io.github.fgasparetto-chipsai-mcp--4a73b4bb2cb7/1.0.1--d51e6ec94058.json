@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.fgasparetto/chipsai-mcp",
   "name": "io.github.fgasparetto/chipsai-mcp",
+  "displayName": "ChipsAI MCP Server",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "MCP server for ChipsAI — manage chatbots, conversations, and AI models",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/fgasparetto/chipsai-mcp",
-    "readme": "https://github.com/fgasparetto/chipsai-mcp#readme"
-  },
-  "keywords": [
-    "ChipsAI MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "chipsai-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for ChipsAI — manage chatbots, conversations, and AI models",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "chipsai-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f11b07cd742ae235",
       "type": "registry",
-      "url": "https://pypi.org/project/chipsai-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/chipsai-mcp",
+      "registry": "pypi",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/fgasparetto/chipsai-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fgasparetto__chipsai-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=201",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fgasparetto/chipsai-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

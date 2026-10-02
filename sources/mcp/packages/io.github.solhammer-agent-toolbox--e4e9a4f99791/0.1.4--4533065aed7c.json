@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.solhammer/agent-toolbox",
   "name": "io.github.solhammer/agent-toolbox",
+  "displayName": "Agent Toolbox",
   "version": "0.1.4",
-  "versionScheme": "semver",
-  "description": "26 deterministic, offline pre-action safety gates for AI agents, each with a signed verdict.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/solhammer/agentoolbox",
-    "homepage": "https://agent-toolbox.ai",
-    "readme": "https://github.com/solhammer/agentoolbox#readme"
-  },
-  "keywords": [
-    "Agent Toolbox"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "agentoolbox-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "26 deterministic, offline pre-action safety gates for AI agents, each with a signed verdict.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agentoolbox-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ef63d99dd6917e14",
       "type": "registry",
       "url": "https://www.npmjs.com/package/agentoolbox-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/solhammer/agentoolbox",
+    "homepage": "https://agent-toolbox.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.solhammer__agent-toolbox.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=331",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.solhammer/agent-toolbox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

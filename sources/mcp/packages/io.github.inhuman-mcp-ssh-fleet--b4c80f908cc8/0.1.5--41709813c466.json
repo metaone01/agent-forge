@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.inhuman/mcp-ssh-fleet",
   "name": "io.github.inhuman/mcp-ssh-fleet",
+  "displayName": "SSH Fleet",
   "version": "0.1.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Curated ssh_probe diagnostics and single-host ssh_exec over an allowlisted SSH fleet.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/inhuman/mcp-ssh-fleet",
-    "readme": "https://github.com/inhuman/mcp-ssh-fleet#readme"
-  },
-  "keywords": [
-    "SSH Fleet"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/inhuman/mcp-ssh-fleet:0.1.5",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/inhuman/mcp-ssh-fleet:0.1.5",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/inhuman/mcp-ssh-fleet",
-      "priority": 10,
+      "id": "upstream-13dbac7627231e17",
+      "type": "oci",
+      "url": "https://ghcr.io/inhuman/mcp-ssh-fleet:0.1.5",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/inhuman/mcp-ssh-fleet"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.inhuman__mcp-ssh-fleet.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=214",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.inhuman/mcp-ssh-fleet"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.davidscoreal/univercity-mcp",
   "name": "io.github.davidscoreal/univercity-mcp",
+  "displayName": "io.github.davidscoreal/univercity-mcp",
   "version": "0.2.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "8-dimension business diagnosis with Revenue Leak Score and triple-option recommendations",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/davidscoreal/univercity-mcp",
-    "readme": "https://github.com/davidscoreal/univercity-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "univercity-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "univercity-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.univercityaiconsult.tech",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fa5c1e7b20e83208",
       "type": "registry",
-      "url": "https://pypi.org/project/univercity-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/univercity-mcp",
+      "registry": "pypi",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-651b4eb022e73f79",
+      "type": "other",
+      "url": "https://mcp.univercityaiconsult.tech",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.univercityaiconsult.tech"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/davidscoreal/univercity-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.davidscoreal__univercity-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=191",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.davidscoreal/univercity-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

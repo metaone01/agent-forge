@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.blueprint-infrastructure/solentic",
+  "name": "io.github.blueprint-infrastructure/solentic",
+  "displayName": "Blueprint Agentic Staking (Solentic)",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Native Solana staking for AI agents. 26 MCP tools, one-shot signing, webhooks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@solentic/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://solentic.theblueprint.xyz/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0eceededd24b1dc8",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@solentic/mcp-server",
+      "registry": "npm",
+      "version": "1.1.1"
+    },
+    {
+      "id": "upstream-dcbb46963233a80a",
+      "type": "other",
+      "url": "https://solentic.theblueprint.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://solentic.theblueprint.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/blueprint-infrastructure/solentic-mcp",
+    "homepage": "https://solentic.theblueprint.xyz"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.blueprint-infrastructure/solentic"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.monday/monday.com",
+  "name": "com.monday/monday.com",
+  "displayName": "com.monday/monday.com",
+  "version": "0.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for monday.com integration.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.monday/monday.com",
+    "remotes": [
+      {
+        "url": "https://mcp.monday.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.monday.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8a9e79e44d49afd9",
+      "type": "other",
+      "url": "https://mcp.monday.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.monday.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-16d3d0f9eb7b96ca",
+      "type": "other",
+      "url": "https://mcp.monday.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.monday.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mondaycom/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.monday/monday.com"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

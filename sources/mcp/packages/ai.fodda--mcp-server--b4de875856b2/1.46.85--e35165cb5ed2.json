@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.fodda/mcp-server",
+  "name": "ai.fodda/mcp-server",
+  "displayName": "Fodda Knowledge Graphs",
+  "version": "1.46.85",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Expert-curated knowledge, brand, research & earnings intelligence — 46 tools, 220+ graphs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.fodda/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.fodda.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-09e5255b0dc9c0d8",
+      "type": "other",
+      "url": "https://mcp.fodda.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.fodda.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/piers-fawkes/fodda-mcp",
+    "homepage": "https://www.fodda.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=5",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.fodda/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

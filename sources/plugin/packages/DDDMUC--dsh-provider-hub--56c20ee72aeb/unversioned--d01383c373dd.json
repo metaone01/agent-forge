@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.fda462d973b33941206ad8d849149af16978ecb0d4191415b0dc31ad620499e5",
+  "name": "DDDMUC/dsh-provider-hub",
+  "displayName": "DDDMUC/dsh-provider-hub",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "只填 Key 的服务商预设：为 DSH 一键写入官方 llm-pi-ai 路由与凭据（插件），并可写入腾讯 WorkBuddy 的本地 models.json 与 OpenCode 配置（CLI，Key 走 OpenCode 自己的 auth.json）；核心为纯 JS，可被更多应用的外壳复用。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/DDDMUC/dsh-provider-hub",
+    "readme": "https://github.com/DDDMUC/dsh-provider-hub#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/DDDMUC/dsh-provider-hub"
+    },
+    {
+      "id": "npm-3da34a830565",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-provider-hub",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "models",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14218"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15770"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

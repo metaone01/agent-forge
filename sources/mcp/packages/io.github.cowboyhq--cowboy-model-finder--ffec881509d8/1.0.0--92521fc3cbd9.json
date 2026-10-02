@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cowboyhq/cowboy-model-finder",
+  "name": "io.github.cowboyhq/cowboy-model-finder",
+  "displayName": "io.github.cowboyhq/cowboy-model-finder",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Find your perfect Cowboy e-bike with an interactive wizard and AI recommendations.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.cowboyhq/cowboy-model-finder",
+    "remotes": [
+      {
+        "url": "https://cowboy-model-finder-mcp-app-8b3709a7529a.herokuapp.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://cowboy-model-finder-mcp-app-8b3709a7529a.herokuapp.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-92807febbd1b3d28",
+      "type": "other",
+      "url": "https://cowboy-model-finder-mcp-app-8b3709a7529a.herokuapp.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://cowboy-model-finder-mcp-app-8b3709a7529a.herokuapp.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f700700a7c0d88e9",
+      "type": "other",
+      "url": "https://cowboy-model-finder-mcp-app-8b3709a7529a.herokuapp.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://cowboy-model-finder-mcp-app-8b3709a7529a.herokuapp.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cowboyhq/model-finder-mcp-app",
+    "homepage": "https://cowboy.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cowboyhq/cowboy-model-finder"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

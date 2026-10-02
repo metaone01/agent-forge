@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.us.uphealth/mcp",
   "name": "us.uphealth/mcp",
+  "displayName": "Uphealth Signal",
   "version": "1.1.7",
-  "versionScheme": "semver",
-  "description": "The adaptive health-messaging engine for apps and agents. Federally-sourced. Not medical advice.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ericinsf/uphealth",
-    "homepage": "https://uphealth.us/docs/mcp-quickstart",
-    "readme": "https://github.com/ericinsf/uphealth#readme"
-  },
-  "keywords": [
-    "Uphealth Signal"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@uphealth/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "The adaptive health-messaging engine for apps and agents. Federally-sourced. Not medical advice.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@uphealth/mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.uphealth.us/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f8ddfb62662795f0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@uphealth/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.7"
+    },
+    {
+      "id": "upstream-ef7c2911b55932d1",
+      "type": "other",
+      "url": "https://mcp.uphealth.us/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.uphealth.us/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ericinsf/uphealth",
+    "homepage": "https://uphealth.us/docs/mcp-quickstart"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\us.uphealth__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=381",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "us.uphealth/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

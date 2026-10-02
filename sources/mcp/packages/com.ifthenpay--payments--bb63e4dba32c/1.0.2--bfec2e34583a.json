@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ifthenpay/payments",
+  "name": "com.ifthenpay/payments",
+  "displayName": "ifthenpay Payments MCP",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP for ifthenpay payments: Multibanco, MB WAY and Payshop.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ifthenpay/payments",
+    "remotes": [
+      {
+        "url": "https://ai.ifthenpay.com/mcp/payments/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-07ce0595fd9df45b",
+      "type": "other",
+      "url": "https://ai.ifthenpay.com/mcp/payments/",
+      "install": {
+        "type": "api",
+        "url": "https://ai.ifthenpay.com/mcp/payments/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ifthenpay/mcp-payments"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=54",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ifthenpay/payments"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

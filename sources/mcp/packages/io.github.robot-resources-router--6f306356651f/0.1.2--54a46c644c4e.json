@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.robot-resources/router",
   "name": "io.github.robot-resources/router",
+  "displayName": "Robot Resources Router",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Intelligent LLM routing proxy — 60-90% cost savings by auto-selecting the cheapest model",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/robot-resources/robot-resources",
-    "readme": "https://github.com/robot-resources/robot-resources#readme"
-  },
-  "keywords": [
-    "Robot Resources Router"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@robot-resources/router-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Intelligent LLM routing proxy — 60-90% cost savings by auto-selecting the cheapest model",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@robot-resources/router-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7ebded71e79ddaa9",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@robot-resources/router-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/robot-resources/robot-resources"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.robot-resources__router.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=296",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.robot-resources/router"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

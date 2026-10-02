@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.online.projectstate/projectstate",
+  "name": "online.projectstate/projectstate",
+  "displayName": "projectstate",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Per-project memory for AI agents: decisions, attempts, tasks, ranked recall. Paid per call via x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "online.projectstate/projectstate",
+    "remotes": [
+      {
+        "url": "https://projectstate.online/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bb5ea6fac0ab0356",
+      "type": "other",
+      "url": "https://projectstate.online/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://projectstate.online/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ErikKerkvliet/projectstate",
+    "homepage": "https://projectstate.online"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=370",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "online.projectstate/projectstate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

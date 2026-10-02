@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.us.propertyscoop/mcp",
+  "name": "us.propertyscoop/mcp",
+  "displayName": "us.propertyscoop/mcp",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "US property data: powerlines, noise, crime, hazards, schools and more",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "us.propertyscoop/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.propertyscoop.us",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1ba006630319f723",
+      "type": "other",
+      "url": "https://mcp.propertyscoop.us",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.propertyscoop.us"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=381",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "us.propertyscoop/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

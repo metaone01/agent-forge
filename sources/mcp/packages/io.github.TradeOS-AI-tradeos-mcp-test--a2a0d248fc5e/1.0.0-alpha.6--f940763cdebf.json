@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.TradeOS-AI/tradeos-mcp-test",
   "name": "io.github.TradeOS-AI/tradeos-mcp-test",
+  "displayName": "TradeOS (test)",
   "version": "1.0.0-alpha.6",
-  "versionScheme": "semver",
-  "description": "[TEST] TradeOS MCP bridge: ticker search, My Agent, chart TA, macro news. npm or HTTP.",
-  "license": "ISC",
-  "links": {
-    "repository": "https://github.com/TradeOS-AI/tradeos-mcp",
-    "homepage": "https://ai.tradeos.xyz",
-    "readme": "https://github.com/TradeOS-AI/tradeos-mcp#readme"
-  },
-  "keywords": [
-    "TradeOS (test)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@tradeos/tradeos-mcp-test",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "[TEST] TradeOS MCP bridge: ticker search, My Agent, chart TA, macro news. npm or HTTP.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@tradeos/tradeos-mcp-test",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ai.tradeos.xyz/api/agent/mcp-call",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3679a00b4f24b615",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@tradeos/tradeos-mcp-test",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0-alpha.6"
+    },
+    {
+      "id": "upstream-c95f7d8e7a7f1c57",
+      "type": "other",
+      "url": "https://ai.tradeos.xyz/api/agent/mcp-call",
+      "install": {
+        "type": "api",
+        "url": "https://ai.tradeos.xyz/api/agent/mcp-call"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/TradeOS-AI/tradeos-mcp",
+    "homepage": "https://ai.tradeos.xyz"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.tradeos-ai__tradeos-mcp-test.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=158",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.TradeOS-AI/tradeos-mcp-test"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

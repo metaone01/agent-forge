@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.4lador/leantime-mcp",
   "name": "io.github.4lador/leantime-mcp",
+  "displayName": "Leantime MCP (Unofficial)",
   "version": "2.9.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Unofficial MCP server for Leantime: 42 agent-first tools, backup/restore, dry-run validation",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/4lador/leantime-mcp",
-    "homepage": "https://github.com/4lador/leantime-mcp",
-    "readme": "https://github.com/4lador/leantime-mcp#readme"
-  },
-  "keywords": [
-    "Leantime MCP (Unofficial)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "cargo",
-    "identifier": "leantime-mcp",
-    "registryBaseUrl": "https://crates.io/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "cargo",
+    "identifier": "leantime-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ff151a212da5747a",
       "type": "registry",
       "url": "https://crates.io/crates/leantime-mcp",
-      "priority": 10,
-      "registry": "cargo"
+      "registry": "cargo",
+      "version": "2.9.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/4lador/leantime-mcp",
+    "homepage": "https://github.com/4lador/leantime-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.4lador__leantime-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=106",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.4lador/leantime-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.cc.servelink/serve",
   "name": "cc.servelink/serve",
+  "displayName": "serve",
   "version": "0.8.8",
-  "versionScheme": "semver",
-  "description": "Public links for local services and static artifacts: live from your machine or hosted by Serve.",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/servelink-swyftlabs/serve-mcp",
-    "homepage": "https://servelink.cc",
-    "readme": "https://github.com/servelink-swyftlabs/serve-mcp#readme"
-  },
-  "keywords": [
-    "serve"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@servelink/serve",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Public links for local services and static artifacts: live from your machine or hosted by Serve.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@servelink/serve",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2c3ee533b7005c95",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@servelink/serve",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.8.8"
     }
   ],
+  "links": {
+    "repository": "https://github.com/servelink-swyftlabs/serve-mcp",
+    "homepage": "https://servelink.cc"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\cc.servelink__serve.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cc.servelink/serve"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

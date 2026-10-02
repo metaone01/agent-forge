@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.chrisgleissner/c64bridge",
   "name": "io.github.chrisgleissner/c64bridge",
+  "displayName": "C64 Bridge",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "MCP server for Commodore 64 Ultimate hardware and VICE emulator control.",
-  "license": "GPL-2.0-only",
-  "links": {
-    "repository": "https://github.com/chrisgleissner/c64bridge",
-    "homepage": "https://github.com/chrisgleissner/c64bridge",
-    "readme": "https://github.com/chrisgleissner/c64bridge#readme"
-  },
-  "keywords": [
-    "C64 Bridge"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "c64bridge",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Commodore 64 Ultimate hardware and VICE emulator control.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "c64bridge",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-69e64e0f77320c54",
       "type": "registry",
       "url": "https://www.npmjs.com/package/c64bridge",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/chrisgleissner/c64bridge",
+    "homepage": "https://github.com/chrisgleissner/c64bridge"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.chrisgleissner__c64bridge.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=182",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.chrisgleissner/c64bridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.uk.co.frankspace/frankspace-public",
+  "name": "uk.co.frankspace/frankspace-public",
+  "displayName": "FrankSpace Public MCP",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only search over live UK office & workspace listings on FrankSpace.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "uk.co.frankspace/frankspace-public",
+    "remotes": [
+      {
+        "url": "https://bqixfybgflusxwnvzjwu.supabase.co/functions/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1ba58d1d91c8bac2",
+      "type": "other",
+      "url": "https://bqixfybgflusxwnvzjwu.supabase.co/functions/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bqixfybgflusxwnvzjwu.supabase.co/functions/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://frankspace.co.uk"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=380",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "uk.co.frankspace/frankspace-public"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

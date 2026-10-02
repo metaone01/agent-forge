@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.OnChainAIIntel/pqs-mcp-server",
   "name": "io.github.OnChainAIIntel/pqs-mcp-server",
+  "displayName": "io.github.OnChainAIIntel/pqs-mcp-server",
   "version": "1.4.0",
-  "versionScheme": "semver",
-  "description": "PQS scores any prompt before the model runs. 8 dimensions. 5 frameworks. Pre-flight, not post-hoc.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/OnChainAIIntel/pqs-mcp-server",
-    "homepage": "https://promptqualityscore.com",
-    "readme": "https://github.com/OnChainAIIntel/pqs-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "pqs-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "PQS scores any prompt before the model runs. 8 dimensions. 5 frameworks. Pre-flight, not post-hoc.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "pqs-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://promptqualityscore.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-57383738077f102e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/pqs-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.4.0"
+    },
+    {
+      "id": "upstream-459f3469d66849c2",
+      "type": "other",
+      "url": "https://promptqualityscore.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://promptqualityscore.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/OnChainAIIntel/pqs-mcp-server",
+    "homepage": "https://promptqualityscore.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.onchainaiintel__pqs-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.OnChainAIIntel/pqs-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

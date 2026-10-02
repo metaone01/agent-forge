@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.System-R-AI/systemr-risk-intelligence",
+  "name": "io.github.System-R-AI/systemr-risk-intelligence",
+  "displayName": "System R Risk Intelligence",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pre-trade risk validation and position sizing for AI trading agents via G-formula and Iron Fist.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "systemr",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agents.systemr.ai/mcp/sse",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agents.systemr.ai/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-97febde9b9e6e9df",
+      "type": "registry",
+      "url": "https://pypi.org/project/systemr",
+      "registry": "pypi",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-3b94de28a67e2ef1",
+      "type": "other",
+      "url": "https://agents.systemr.ai/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://agents.systemr.ai/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-0af0eb0ba1e52d86",
+      "type": "other",
+      "url": "https://agents.systemr.ai/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://agents.systemr.ai/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/System-R-AI/systemr-python"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=155",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.System-R-AI/systemr-risk-intelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

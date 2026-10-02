@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.kcaldata/kcaldata",
+  "name": "io.github.kcaldata/kcaldata",
+  "displayName": "kcaldata",
+  "version": "1.0.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Natural-language calorie lookup. Send '2 large eggs', get USDA-sourced nutrition data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.kcaldata/kcaldata",
+    "remotes": [
+      {
+        "url": "https://api.kcaldata.com/mcp-server/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0a0e97590b1e19d4",
+      "type": "other",
+      "url": "https://api.kcaldata.com/mcp-server/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.kcaldata.com/mcp-server/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kcaldata/kcaldata",
+    "homepage": "https://kcaldata.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=224",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kcaldata/kcaldata"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

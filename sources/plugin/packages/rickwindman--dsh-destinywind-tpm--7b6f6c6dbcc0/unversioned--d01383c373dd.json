@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2e880bbda84d3fe10b62f7e5c0d9e4a21d0c552251da223acc68a4ec38ee20f7",
+  "name": "rickwindman/dsh-destinywind-tpm",
+  "displayName": "rickwindman/dsh-destinywind-tpm",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "跨平台硬件/用户级凭据存储：引用值与记录在落盘前用本机最强的密钥保护者（Windows TPM CNG 优先，回退 DPAPI；Linux tpm2-tools 优先，回退会话密钥环）封存，只在 resolve 时解封；无保护者可用则拒绝挂载，绝不落明文。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/rickwindman/dsh-destinywind-tpm",
+    "readme": "https://github.com/rickwindman/dsh-destinywind-tpm#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/rickwindman/dsh-destinywind-tpm"
+    }
+  ],
+  "keywords": [
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16369"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16307"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

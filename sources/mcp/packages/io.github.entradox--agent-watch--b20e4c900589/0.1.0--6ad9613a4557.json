@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.entradox/agent-watch",
+  "name": "io.github.entradox/agent-watch",
+  "displayName": "Agent Watch",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Monitoring for the agent economy — liveness, latency, trust scoring for MCP endpoints",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.entradox/agent-watch",
+    "remotes": [
+      {
+        "url": "https://agent-watch-api-production.up.railway.app/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5545c43fa8a21cc6",
+      "type": "other",
+      "url": "https://agent-watch-api-production.up.railway.app/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://agent-watch-api-production.up.railway.app/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/entradox/agent-watch",
+    "homepage": "https://github.com/entradox/agent-watch"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=198",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.entradox/agent-watch"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

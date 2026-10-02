@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.jordan23wagner-ops/agent-handoff",
+  "name": "io.github.jordan23wagner-ops/agent-handoff",
+  "displayName": "Agent Handoff",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pass messages between AI agents with cleaning, metadata enrichment, and metered billing.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.jordan23wagner-ops/agent-handoff",
+    "remotes": [
+      {
+        "url": "https://agent-handoff-production-573c.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3a2c08c99aeadee7",
+      "type": "other",
+      "url": "https://agent-handoff-production-573c.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent-handoff-production-573c.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jordan23wagner-ops/agent-handoff",
+    "homepage": "https://agent-handoff-production-573c.up.railway.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=221",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.jordan23wagner-ops/agent-handoff"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

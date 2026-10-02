@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.shingou/sentiment",
+  "name": "io.shingou/sentiment",
+  "displayName": "Shingou",
+  "version": "0.3.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hourly crypto news sentiment and typed market events, with sources on every signal.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@shingou-io/mcp-stdio",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.shingou.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1968a863c8df11aa",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@shingou-io/mcp-stdio",
+      "registry": "npm",
+      "version": "0.4.2"
+    },
+    {
+      "id": "upstream-ae8ee14e4724348b",
+      "type": "other",
+      "url": "https://api.shingou.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.shingou.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://shingou.io/docs/agents?via=mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=359",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.shingou/sentiment"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

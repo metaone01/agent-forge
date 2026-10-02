@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.chamade/server",
   "name": "io.chamade/server",
+  "displayName": "Chamade",
   "version": "5.1.0",
-  "versionScheme": "semver",
-  "description": "Voice and chat for AI agents — Discord, Teams, Meet, Slack, Zoom, Telegram, WhatsApp, NC Talk, SIP",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/chamade-io/mcp-server",
-    "homepage": "https://chamade.io",
-    "readme": "https://github.com/chamade-io/mcp-server#readme"
-  },
-  "keywords": [
-    "Chamade"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@chamade/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Voice and chat for AI agents — Discord, Teams, Meet, Slack, Zoom, Telegram, WhatsApp, NC Talk, SIP",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@chamade/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.chamade.io/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-930da495c2f1c497",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@chamade/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "5.1.0"
+    },
+    {
+      "id": "upstream-63de4f5c3b4a0be1",
+      "type": "other",
+      "url": "https://mcp.chamade.io/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.chamade.io/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/chamade-io/mcp-server",
+    "homepage": "https://chamade.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.chamade__server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.chamade/server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

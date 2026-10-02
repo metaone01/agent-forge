@@ -2,48 +2,52 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.sendsoon/mcp",
   "name": "io.github.sendsoon/mcp",
+  "displayName": "io.github.sendsoon/mcp",
   "version": "0.3.8",
-  "versionScheme": "semver",
-  "description": "Send email, look up public IP information, and convert files to Markdown through SendSoon.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/sendsoon/mcp",
-    "homepage": "https://www.sendsoonai.com",
-    "readme": "https://github.com/sendsoon/mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@sendsoon/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Send email, look up public IP information, and convert files to Markdown through SendSoon.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@sendsoon/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-dd98290a65723ff1",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@sendsoon/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.8"
+    },
+    {
+      "id": "upstream-43cdfb8b24211015",
+      "type": "registry",
+      "url": "https://pypi.org/project/sendsoon-mcp",
+      "registry": "pypi",
+      "version": "0.3.8"
     }
   ],
+  "links": {
+    "repository": "https://github.com/sendsoon/mcp",
+    "homepage": "https://www.sendsoonai.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +60,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.sendsoon__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sendsoon/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

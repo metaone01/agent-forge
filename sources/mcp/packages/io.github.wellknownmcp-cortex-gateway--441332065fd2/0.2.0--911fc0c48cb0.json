@@ -2,46 +2,58 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wellknownmcp/cortex-gateway",
   "name": "io.github.wellknownmcp/cortex-gateway",
+  "displayName": "io.github.wellknownmcp/cortex-gateway",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Self-hosted federated MCP gateway: one OAuth 2.1 MCP server in front of N apps, user-level scopes.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/wellknownmcp/cortex-gateway",
-    "readme": "https://github.com/wellknownmcp/cortex-gateway#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wellknownmcp/cortex-gateway:v0.2.0",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wellknownmcp/cortex-gateway:v0.2.0",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://mcp.cortex-gateway.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wellknownmcp/cortex-gateway",
-      "priority": 10,
+      "id": "upstream-5c124028d9b510f3",
+      "type": "oci",
+      "url": "https://ghcr.io/wellknownmcp/cortex-gateway:v0.2.0",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-b8d95abde80f84a0",
+      "type": "other",
+      "url": "https://mcp.cortex-gateway.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cortex-gateway.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/wellknownmcp/cortex-gateway"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +66,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wellknownmcp__cortex-gateway.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=349",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wellknownmcp/cortex-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

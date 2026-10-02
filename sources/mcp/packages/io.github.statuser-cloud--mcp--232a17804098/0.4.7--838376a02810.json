@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.statuser-cloud/mcp",
+  "name": "io.github.statuser-cloud/mcp",
+  "displayName": "Statuser",
+  "version": "0.4.7",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Monitor services, manage incidents and status pages in Statuser.cloud from your AI assistant.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@statuser/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.statuser.cloud",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-44f3fc07eeee8d80",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@statuser/mcp",
+      "registry": "npm",
+      "version": "0.4.7"
+    },
+    {
+      "id": "upstream-6f3a2536a0baf521",
+      "type": "other",
+      "url": "https://mcp.statuser.cloud",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.statuser.cloud"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/statuser-cloud/mcp",
+    "homepage": "https://statuser.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=333",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.statuser-cloud/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

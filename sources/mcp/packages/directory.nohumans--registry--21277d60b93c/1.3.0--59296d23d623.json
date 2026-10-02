@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.directory.nohumans/registry",
+  "name": "directory.nohumans/registry",
+  "displayName": "nohumans.directory",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "We buy from x402 endpoints with real USDC and publish delivery outcomes. Check before you spend.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "directory.nohumans/registry",
+    "remotes": [
+      {
+        "url": "https://api.nohumans.directory/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-006a577887c6c8d0",
+      "type": "other",
+      "url": "https://api.nohumans.directory/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.nohumans.directory/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jalcodev/nohumans-mcp",
+    "homepage": "https://nohumans.directory"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=96",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "directory.nohumans/registry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

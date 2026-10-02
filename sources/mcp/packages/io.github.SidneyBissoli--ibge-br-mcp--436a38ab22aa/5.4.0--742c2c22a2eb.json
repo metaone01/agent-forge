@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.SidneyBissoli/ibge-br-mcp",
+  "name": "io.github.SidneyBissoli/ibge-br-mcp",
+  "displayName": "IBGE Brasil MCP",
+  "version": "5.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "IBGE: geography, census, economy and health from the official APIs, with provenance. 23 tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "ibge-br-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ibge.sidneybissoli.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7362f158087b58ae",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/ibge-br-mcp",
+      "registry": "npm",
+      "version": "5.4.0"
+    },
+    {
+      "id": "upstream-51596ad8f4f5987f",
+      "type": "other",
+      "url": "https://ibge.sidneybissoli.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ibge.sidneybissoli.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SidneyBissoli/ibge-br-mcp",
+    "homepage": "https://ibge.sidneybissoli.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=153",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.SidneyBissoli/ibge-br-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

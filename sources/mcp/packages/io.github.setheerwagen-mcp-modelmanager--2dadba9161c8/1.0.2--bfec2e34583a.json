@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.setheerwagen/mcp-modelmanager",
   "name": "io.github.setheerwagen/mcp-modelmanager",
+  "displayName": "Model Manager",
   "version": "1.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Manage your local model machine over MCP: state, model pull/remove, service switch, LoRA training",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/setheerwagen/local-ai-mcp-servers",
-    "readme": "https://github.com/setheerwagen/local-ai-mcp-servers#readme"
-  },
-  "keywords": [
-    "Model Manager"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-modelmanager",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-modelmanager",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0e807ace2bcb0b1c",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-modelmanager/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-modelmanager",
+      "registry": "pypi",
+      "version": "1.0.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/setheerwagen/local-ai-mcp-servers"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.setheerwagen__mcp-modelmanager.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=327",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.setheerwagen/mcp-modelmanager"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

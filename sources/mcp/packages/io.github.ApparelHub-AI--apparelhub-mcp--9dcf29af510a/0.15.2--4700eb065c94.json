@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.ApparelHub-AI/apparelhub-mcp",
+  "name": "io.github.ApparelHub-AI/apparelhub-mcp",
+  "displayName": "ApparelHub",
+  "version": "0.15.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Run a custom-merch store from an agent: design, build products, list on every channel, fulfill.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@apparelhub/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.apparelhub.ai",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6aab3bfe15261c69",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@apparelhub/mcp-server",
+      "registry": "npm",
+      "version": "0.15.2"
+    },
+    {
+      "id": "upstream-be65f0788d93aa8a",
+      "type": "other",
+      "url": "https://mcp.apparelhub.ai",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.apparelhub.ai"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ApparelHub-AI/apparelhub-mcp",
+    "homepage": "https://apparelhub.ai/agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=111",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ApparelHub-AI/apparelhub-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

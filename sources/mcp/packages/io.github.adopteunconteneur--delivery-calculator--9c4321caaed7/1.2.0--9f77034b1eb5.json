@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.adopteunconteneur/delivery-calculator",
+  "name": "io.github.adopteunconteneur/delivery-calculator",
+  "displayName": "Adopte un Conteneur - Container Delivery & Dimensions",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Delivery cost calculator and container dimensions for France. Real HT/TTC prices.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.adopteunconteneur/delivery-calculator",
+    "remotes": [
+      {
+        "url": "https://adopte-un-conteneur.fr/api/v1/mcp-server.php",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-697bf9a14481ccdc",
+      "type": "other",
+      "url": "https://adopte-un-conteneur.fr/api/v1/mcp-server.php",
+      "install": {
+        "type": "api",
+        "url": "https://adopte-un-conteneur.fr/api/v1/mcp-server.php"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/adopteunconteneur/mcp-container-delivery",
+    "homepage": "https://adopte-un-conteneur.fr/ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=165",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.adopteunconteneur/delivery-calculator"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

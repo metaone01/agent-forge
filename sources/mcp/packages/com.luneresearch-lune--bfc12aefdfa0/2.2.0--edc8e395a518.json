@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.luneresearch/lune",
   "name": "com.luneresearch/lune",
+  "displayName": "Lune Research",
   "version": "2.2.0",
-  "versionScheme": "semver",
-  "description": "Search peer-reviewed papers and research methodology guidance from your AI agent.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/RetrogradeLabs/lune-mcp-server",
-    "homepage": "https://luneresearch.com",
-    "readme": "https://github.com/RetrogradeLabs/lune-mcp-server#readme"
-  },
-  "keywords": [
-    "Lune Research"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@retrograde-labs/lune-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search peer-reviewed papers and research methodology guidance from your AI agent.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@retrograde-labs/lune-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.luneresearch.com",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-75159dec250564ad",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@retrograde-labs/lune-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.2.0"
+    },
+    {
+      "id": "upstream-08617733136065e7",
+      "type": "other",
+      "url": "https://mcp.luneresearch.com",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.luneresearch.com"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/RetrogradeLabs/lune-mcp-server",
+    "homepage": "https://luneresearch.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.luneresearch__lune.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=59",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.luneresearch/lune"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

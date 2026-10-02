@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.charleslucas/poe-data-mcp",
   "name": "io.github.charleslucas/poe-data-mcp",
+  "displayName": "poe-data-mcp - Path of Exile game data",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "MCP server for Path of Exile game data: wiki, economy, and Craft of Exile lookups",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/charleslucas/poe-data-mcp",
-    "readme": "https://github.com/charleslucas/poe-data-mcp#readme"
-  },
-  "keywords": [
-    "poe-data-mcp - Path of Exile game data"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "poe-data-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Path of Exile game data: wiki, economy, and Craft of Exile lookups",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "poe-data-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e1b6b99270f384f9",
       "type": "registry",
-      "url": "https://pypi.org/project/poe-data-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/poe-data-mcp",
+      "registry": "pypi",
+      "version": "0.3.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/charleslucas/poe-data-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.charleslucas__poe-data-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=181",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.charleslucas/poe-data-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

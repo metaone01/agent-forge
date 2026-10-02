@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cyanheads/imf-mcp-server",
+  "name": "io.github.cyanheads/imf-mcp-server",
+  "displayName": "io.github.cyanheads/imf-mcp-server",
+  "version": "0.4.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query IMF SDMX 3.0 macroeconomic dataflows — WEO, BOP, CPI, exchange rates, 190 countries.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cyanheads/imf-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://imf.caseyjhand.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-33406a791a1aa1c8",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cyanheads/imf-mcp-server",
+      "registry": "npm",
+      "version": "0.4.3"
+    },
+    {
+      "id": "upstream-2391c8f23338bf5c",
+      "type": "other",
+      "url": "https://imf.caseyjhand.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://imf.caseyjhand.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cyanheads/imf-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=188",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cyanheads/imf-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

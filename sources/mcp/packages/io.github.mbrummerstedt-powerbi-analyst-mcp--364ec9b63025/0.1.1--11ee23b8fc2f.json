@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mbrummerstedt/powerbi-analyst-mcp",
   "name": "io.github.mbrummerstedt/powerbi-analyst-mcp",
+  "displayName": "Power BI Analyst MCP",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Browse Power BI workspaces, run DAX queries, and page through large results.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://pypi.org/project/powerbi-analyst-mcp/"
-  },
-  "keywords": [
-    "Power BI Analyst MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "powerbi-analyst-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Browse Power BI workspaces, run DAX queries, and page through large results.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "powerbi-analyst-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-505572eb37d5e755",
       "type": "registry",
-      "url": "https://pypi.org/project/powerbi-analyst-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/powerbi-analyst-mcp",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mbrummerstedt__powerbi-analyst-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=235",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mbrummerstedt/powerbi-analyst-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

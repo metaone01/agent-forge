@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.0497aa527dd4a2e046b4005c9dd2a02a438215deb62ed3a2243b1b7ac29869ff",
+  "name": "joinsnow-star/dsh-agentic-proxy",
+  "displayName": "joinsnow-star/dsh-agentic-proxy",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Per-command proxy for DeepSeek Harness: the agent decides which shell commands leave through a proxy, backed by a kernel the plugin installs and supervises itself.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/joinsnow-star/dsh-agentic-proxy",
+    "readme": "https://github.com/joinsnow-star/dsh-agentic-proxy#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/joinsnow-star/dsh-agentic-proxy"
+    },
+    {
+      "id": "npm-c4c90d0f4df4",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-agentic-proxy",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14384"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14474"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-agentic-proxy"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

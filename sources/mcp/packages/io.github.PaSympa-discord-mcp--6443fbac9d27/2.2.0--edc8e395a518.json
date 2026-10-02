@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.PaSympa/discord-mcp",
   "name": "io.github.PaSympa/discord-mcp",
+  "displayName": "io.github.PaSympa/discord-mcp",
   "version": "2.2.0",
-  "versionScheme": "semver",
-  "description": "A lightweight, multi-guild Discord MCP server with 95+ tools",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/PaSympa/discord-mcp",
-    "readme": "https://github.com/PaSympa/discord-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@pasympa/discord-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "A lightweight, multi-guild Discord MCP server with 95+ tools",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pasympa/discord-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-40686580c86d4668",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@pasympa/discord-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.2.0"
+    },
+    {
+      "id": "upstream-2330da5089bd1a1b",
+      "type": "oci",
+      "url": "https://docker.io/pasympa/discord-mcp:2.2.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/PaSympa/discord-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pasympa__discord-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=146",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.PaSympa/discord-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

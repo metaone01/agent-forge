@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.proplineapi/propline-mcp",
+  "name": "io.github.proplineapi/propline-mcp",
+  "displayName": "PropLine — Sports Betting Odds & Prop Resolution",
+  "version": "0.49.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live odds, cross-book +EV and graded player-prop results across 32 books. Hosted endpoint included.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "propline-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.prop-line.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c22635a42c696f18",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/propline-mcp",
+      "registry": "npm",
+      "version": "0.49.1"
+    },
+    {
+      "id": "upstream-8dc10dbb51ac27a8",
+      "type": "other",
+      "url": "https://mcp.prop-line.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.prop-line.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/proplineapi/propline-mcp",
+    "homepage": "https://prop-line.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=292",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.proplineapi/propline-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

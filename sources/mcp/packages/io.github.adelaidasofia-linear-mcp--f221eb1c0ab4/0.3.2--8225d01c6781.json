@@ -2,49 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.adelaidasofia/linear-mcp",
   "name": "io.github.adelaidasofia/linear-mcp",
+  "displayName": "Linear MCP (multi-workspace, PAT auth)",
   "version": "0.3.2",
-  "versionScheme": "semver",
-  "description": "Multi-workspace Linear MCP — PAT auth, 57 tools + 3 prompts, substrate enforcement, drop-in.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/adelaidasofia/linear-mcp",
-    "readme": "https://github.com/adelaidasofia/linear-mcp#readme"
-  },
-  "keywords": [
-    "Linear MCP (multi-workspace, PAT auth)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "adelaidasofia-linear-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Multi-workspace Linear MCP — PAT auth, 57 tools + 3 prompts, substrate enforcement, drop-in.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "adelaidasofia-linear-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-27e6dfa9cc46e5d9",
       "type": "registry",
-      "url": "https://pypi.org/project/adelaidasofia-linear-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/adelaidasofia-linear-mcp",
+      "registry": "pypi",
+      "version": "0.3.2"
+    },
+    {
+      "id": "upstream-1aa2e38d2e08b3b9",
+      "type": "archive",
+      "url": "https://github.com/adelaidasofia/linear-mcp/releases/download/v0.3.2/linear-mcp.mcpb",
+      "registry": "mcpb",
+      "version": "0.3.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/adelaidasofia/linear-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.adelaidasofia__linear-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=165",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.adelaidasofia/linear-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

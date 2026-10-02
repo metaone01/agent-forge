@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.news.pollar/pollar-news",
+  "name": "news.pollar/pollar-news",
+  "displayName": "Pollar News",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Independent European news from Pollar: search, brief, threads, markets. Read-only, no login.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "news.pollar/pollar-news",
+    "remotes": [
+      {
+        "url": "https://mcp.pollar.news/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1a0d5b4b5874594b",
+      "type": "other",
+      "url": "https://mcp.pollar.news/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pollar.news/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "news.pollar/pollar-news"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

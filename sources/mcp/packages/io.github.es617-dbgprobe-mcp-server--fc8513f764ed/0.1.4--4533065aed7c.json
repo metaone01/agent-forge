@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.es617/dbgprobe-mcp-server",
   "name": "io.github.es617/dbgprobe-mcp-server",
+  "displayName": "io.github.es617/dbgprobe-mcp-server",
   "version": "0.1.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Let AI agents interact with debug probes — connect, flash, read/write memory, and reset.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/es617/dbgprobe-mcp-server.git",
-    "readme": "https://github.com/es617/dbgprobe-mcp-server.git#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "dbgprobe-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "dbgprobe-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c7547cb53bbc86fa",
       "type": "registry",
-      "url": "https://pypi.org/project/dbgprobe-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/dbgprobe-mcp-server",
+      "registry": "pypi",
+      "version": "0.1.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/es617/dbgprobe-mcp-server.git"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.es617__dbgprobe-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=199",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.es617/dbgprobe-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

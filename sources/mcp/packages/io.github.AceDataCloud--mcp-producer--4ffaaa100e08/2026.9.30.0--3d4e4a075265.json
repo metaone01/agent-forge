@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AceDataCloud/mcp-producer",
+  "name": "io.github.AceDataCloud/mcp-producer",
+  "displayName": "io.github.AceDataCloud/mcp-producer",
+  "version": "2026.9.30.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for Producer/Riffusion AI music generation",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-producer",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://producer.mcp.acedata.cloud/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f751bfcd32573d92",
+      "type": "registry",
+      "url": "https://pypi.org/project/mcp-producer",
+      "registry": "pypi",
+      "version": "2026.9.30.0"
+    },
+    {
+      "id": "upstream-58f619c8d0813e38",
+      "type": "other",
+      "url": "https://producer.mcp.acedata.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://producer.mcp.acedata.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AceDataCloud/ProducerMCP",
+    "homepage": "https://producer.mcp.acedata.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AceDataCloud/mcp-producer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

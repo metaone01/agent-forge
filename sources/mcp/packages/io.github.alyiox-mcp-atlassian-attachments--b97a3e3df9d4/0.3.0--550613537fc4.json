@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alyiox/mcp-atlassian-attachments",
   "name": "io.github.alyiox/mcp-atlassian-attachments",
+  "displayName": "Atlassian Attachments",
   "version": "0.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for downloading, uploading, and deleting Jira Cloud attachments by ID.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/alyiox/mcp-atlassian-attachments",
-    "readme": "https://github.com/alyiox/mcp-atlassian-attachments#readme"
-  },
-  "keywords": [
-    "Atlassian Attachments"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-atlassian-attachments",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-atlassian-attachments",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-88a5a76ddad1d843",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-atlassian-attachments/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-atlassian-attachments",
+      "registry": "pypi",
+      "version": "0.3.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/alyiox/mcp-atlassian-attachments"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alyiox__mcp-atlassian-attachments.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alyiox/mcp-atlassian-attachments"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

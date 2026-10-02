@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.WYRE-AI/connectwise-automate-mcp",
   "name": "io.github.WYRE-AI/connectwise-automate-mcp",
+  "displayName": "ConnectWise Automate",
   "version": "2.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for ConnectWise Automate RMM — computers, clients, alerts, and scripts.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/WYRE-AI/connectwise-automate-mcp",
-    "homepage": "https://github.com/WYRE-AI/connectwise-automate-mcp",
-    "readme": "https://github.com/WYRE-AI/connectwise-automate-mcp#readme"
-  },
-  "keywords": [
-    "ConnectWise Automate"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-ai/connectwise-automate-mcp:v2.0.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-ai/connectwise-automate-mcp:v2.0.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-ai/connectwise-automate-mcp",
-      "priority": 10,
+      "id": "upstream-c0077f6b7bc7b19e",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-ai/connectwise-automate-mcp:v2.0.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/WYRE-AI/connectwise-automate-mcp",
+    "homepage": "https://github.com/WYRE-AI/connectwise-automate-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-ai__connectwise-automate-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=159",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.WYRE-AI/connectwise-automate-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

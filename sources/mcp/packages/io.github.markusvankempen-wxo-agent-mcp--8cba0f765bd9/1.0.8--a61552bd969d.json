@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.markusvankempen/wxo-agent-mcp",
   "name": "io.github.markusvankempen/wxo-agent-mcp",
+  "displayName": "WxO Agent MCP",
   "version": "1.0.8",
-  "versionScheme": "semver",
-  "description": "Invoke a Watson Orchestrate agent via MCP. Configure with WO_AGENT_ID.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/markusvankempen/wxo-agent-mcp",
-    "homepage": "https://github.com/markusvankempen/wxo-agent-mcp#readme",
-    "readme": "https://github.com/markusvankempen/wxo-agent-mcp#readme"
-  },
-  "keywords": [
-    "WxO Agent MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "wxo-agent-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Invoke a Watson Orchestrate agent via MCP. Configure with WO_AGENT_ID.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "wxo-agent-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-75389cb865aff238",
       "type": "registry",
       "url": "https://www.npmjs.com/package/wxo-agent-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.8"
     }
   ],
+  "links": {
+    "repository": "https://github.com/markusvankempen/wxo-agent-mcp",
+    "homepage": "https://github.com/markusvankempen/wxo-agent-mcp#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.markusvankempen__wxo-agent-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=234",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.markusvankempen/wxo-agent-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

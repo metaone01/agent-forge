@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ca.honkio/mcp",
+  "name": "ca.honkio/mcp",
+  "displayName": "HonkIO",
+  "version": "1.12.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Canadian SMS and email API for AI agents: send SMS and email, verify phones, handle CASL consent.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@honkio/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.honkio.ca/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f0570774ffeed050",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@honkio/mcp",
+      "registry": "npm",
+      "version": "1.12.1"
+    },
+    {
+      "id": "upstream-c04fd8aafe4fc9e8",
+      "type": "other",
+      "url": "https://mcp.honkio.ca/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.honkio.ca/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jeffcaldwellca/honkio",
+    "homepage": "https://honkio.ca/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ca.honkio/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

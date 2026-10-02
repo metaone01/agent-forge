@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.OjasKord/tender-mcp",
   "name": "io.github.OjasKord/tender-mcp",
+  "displayName": "Tender MCP",
   "version": "1.2.25",
-  "versionScheme": "semver",
-  "description": "Government tender search for AI agents. UK, EU and US procurement opportunities.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/OjasKord/tender-mcp",
-    "homepage": "https://kordagencies.com",
-    "readme": "https://github.com/OjasKord/tender-mcp#readme"
-  },
-  "keywords": [
-    "Tender MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "tender-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Government tender search for AI agents. UK, EU and US procurement opportunities.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "tender-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://tender-mcp-production.up.railway.app",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-04d817ab79b6e52e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/tender-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.2.25"
+    },
+    {
+      "id": "upstream-82e503dcc4aea4cb",
+      "type": "other",
+      "url": "https://tender-mcp-production.up.railway.app",
+      "install": {
+        "type": "api",
+        "url": "https://tender-mcp-production.up.railway.app"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/OjasKord/tender-mcp",
+    "homepage": "https://kordagencies.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ojaskord__tender-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.OjasKord/tender-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

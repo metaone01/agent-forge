@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Defenter-AI/defenter-proxy",
   "name": "io.github.Defenter-AI/defenter-proxy",
+  "displayName": "Defenter Proxy",
   "version": "0.0.96",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Real-time semantic security for AI coding agents and MCP tools",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Defenter-AI/defenter-proxy",
-    "readme": "https://github.com/Defenter-AI/defenter-proxy#readme"
-  },
-  "keywords": [
-    "Defenter Proxy"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "defenter-proxy",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "defenter-proxy",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ec04269f2f9938c8",
       "type": "registry",
-      "url": "https://pypi.org/project/defenter-proxy/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/defenter-proxy",
+      "registry": "pypi",
+      "version": "0.0.96"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Defenter-AI/defenter-proxy"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.defenter-ai__defenter-proxy.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=123",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Defenter-AI/defenter-proxy"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

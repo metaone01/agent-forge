@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ing.rentseek/evidence",
+  "name": "ing.rentseek/evidence",
+  "displayName": "RentSeek Evidence",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Source-linked executive compensation data for AI agents and developers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ing.rentseek/evidence",
+    "remotes": [
+      {
+        "url": "https://rentseek.ing/mcp/public-facts",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://rentseek.ing/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-aab9a9cd49c9964b",
+      "type": "other",
+      "url": "https://rentseek.ing/mcp/public-facts",
+      "install": {
+        "type": "api",
+        "url": "https://rentseek.ing/mcp/public-facts"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a3f15780049ea5f9",
+      "type": "other",
+      "url": "https://rentseek.ing/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://rentseek.ing/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://rentseek.ing/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ing.rentseek/evidence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

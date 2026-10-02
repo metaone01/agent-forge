@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.lowlanddata/tcg-prices",
+  "name": "com.lowlanddata/tcg-prices",
+  "displayName": "LowlandData TCG Prices",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Daily EU card prices, deals, EU-vs-US arbitrage and spike alerts for 19 card games.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.lowlanddata/tcg-prices",
+    "remotes": [
+      {
+        "url": "https://mcp.apify.com/?actors=lowlanddata/cardmarket-price-guide,lowlanddata/cardmarket-deal-finder,lowlanddata/tcg-price-arbitrage,lowlanddata/tcg-price-movers",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fcf6a4ca30a9e4ef",
+      "type": "other",
+      "url": "https://mcp.apify.com/?actors=lowlanddata/cardmarket-price-guide,lowlanddata/cardmarket-deal-finder,lowlanddata/tcg-price-arbitrage,lowlanddata/tcg-price-movers",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.apify.com/?actors=lowlanddata/cardmarket-price-guide,lowlanddata/cardmarket-deal-finder,lowlanddata/tcg-price-arbitrage,lowlanddata/tcg-price-movers"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://apify.com/lowlanddata"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=59",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.lowlanddata/tcg-prices"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

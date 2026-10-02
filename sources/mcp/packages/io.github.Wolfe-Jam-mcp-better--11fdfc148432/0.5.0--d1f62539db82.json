@@ -2,49 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Wolfe-Jam/mcp-better",
   "name": "io.github.Wolfe-Jam/mcp-better",
+  "displayName": "mcp-better",
   "version": "0.5.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "AAIF-verified modern MCP setup optimised to the 2026-07-28 model (BETTER textbook).",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Wolfe-Jam/mcp-better",
-    "readme": "https://github.com/Wolfe-Jam/mcp-better#readme"
-  },
-  "keywords": [
-    "mcp-better"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "cargo",
-    "identifier": "mcp-better",
-    "registryBaseUrl": "https://crates.io/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "cargo",
+    "identifier": "mcp-better",
+    "registryBaseUrl": "https://crates.io",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-a2eb393e38313596",
       "type": "registry",
       "url": "https://crates.io/crates/mcp-better",
-      "priority": 10,
-      "registry": "cargo"
+      "registry": "cargo",
+      "version": "0.5.0"
+    },
+    {
+      "id": "upstream-6aa4d0671c73a366",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/mcp-better",
+      "registry": "npm",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Wolfe-Jam/mcp-better"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wolfe-jam__mcp-better.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=161",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Wolfe-Jam/mcp-better"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.blueskylineassets/far-mcp-server",
   "name": "io.github.blueskylineassets/far-mcp-server",
+  "displayName": "FAR Oracle",
   "version": "1.0.5",
-  "versionScheme": "semver",
-  "description": "Search Federal Acquisition Regulations (FAR) for government contracting.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://pypi.org/project/far-oracle/"
-  },
-  "keywords": [
-    "FAR Oracle"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "far-oracle",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Search Federal Acquisition Regulations (FAR) for government contracting.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "far-oracle",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e4e977f88e410bf0",
       "type": "registry",
-      "url": "https://pypi.org/project/far-oracle/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/far-oracle",
+      "registry": "pypi",
+      "version": "1.0.5"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.blueskylineassets__far-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=177",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.blueskylineassets/far-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

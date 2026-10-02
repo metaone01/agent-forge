@@ -2,48 +2,46 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.redis/mcp-redis",
   "name": "io.github.redis/mcp-redis",
+  "displayName": "Redis MCP Server",
   "version": "0.5.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Natural language interface designed for agentic applications to manage and search data in Redis.",
   "license": "unknown",
-  "links": {
-    "repository": "https://pypi.org/project/redis-mcp-server/"
-  },
-  "keywords": [
-    "Redis MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "redis-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "redis-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-dff96b004f961d75",
       "type": "registry",
-      "url": "https://pypi.org/project/redis-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/redis-mcp-server",
+      "registry": "pypi",
+      "version": "0.5.1"
+    },
+    {
+      "id": "upstream-635975a4a5d8f810",
+      "type": "oci",
+      "url": "https://docker.io/mcp/redis:latest",
+      "registry": "oci"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +54,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.redis__mcp-redis.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=295",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.redis/mcp-redis"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

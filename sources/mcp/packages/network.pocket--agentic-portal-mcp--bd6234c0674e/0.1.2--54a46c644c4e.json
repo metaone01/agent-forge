@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.pocket/agentic-portal-mcp",
+  "name": "network.pocket/agentic-portal-mcp",
+  "displayName": "Pocket Network Agentic Marketplace",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search and call pay-per-request data services, paying in USDC on Base with x402.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@pocket-network/agentic-portal-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agent.pocket.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5cc915b3fafd5b8b",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@pocket-network/agentic-portal-mcp",
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-16a7cb186c416818",
+      "type": "other",
+      "url": "https://agent.pocket.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent.pocket.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pokt-network/agentic-portal-mcp",
+    "homepage": "https://agent.pocket.network"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.pocket/agentic-portal-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

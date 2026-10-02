@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.xbbg-org/xbbg-mcp",
   "name": "io.github.xbbg-org/xbbg-mcp",
+  "displayName": "xbbg MCP",
   "version": "1.4.12",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local Bloomberg tools for xbbg users.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/xbbg-org/xbbg",
-    "homepage": "https://github.com/xbbg-org/xbbg/tree/main/apps/xbbg-mcp",
-    "readme": "https://github.com/xbbg-org/xbbg#readme"
-  },
-  "keywords": [
-    "xbbg MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/xbbg-org/xbbg/releases/download/v1.4.12/xbbg-mcp-v1.4.12.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/xbbg-org/xbbg/releases/download/v1.4.12/xbbg-mcp-v1.4.12.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-b60845374255e243",
+      "type": "archive",
       "url": "https://github.com/xbbg-org/xbbg/releases/download/v1.4.12/xbbg-mcp-v1.4.12.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "1.4.12"
     }
   ],
+  "links": {
+    "repository": "https://github.com/xbbg-org/xbbg",
+    "homepage": "https://github.com/xbbg-org/xbbg/tree/main/apps/xbbg-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.xbbg-org__xbbg-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=352",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.xbbg-org/xbbg-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

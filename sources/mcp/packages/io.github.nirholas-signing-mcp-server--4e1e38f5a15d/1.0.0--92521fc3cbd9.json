@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nirholas/signing-mcp-server",
   "name": "io.github.nirholas/signing-mcp-server",
+  "displayName": "Ethereum & EVM Message Signing",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Sign Ethereum messages - EIP-191, EIP-712 typed data, Permit2, signature verification and recovery",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/nirholas/ethereum-wallet-toolkit",
-    "readme": "https://github.com/nirholas/ethereum-wallet-toolkit#readme"
-  },
-  "keywords": [
-    "Ethereum & EVM Message Signing"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "signing-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Sign Ethereum messages - EIP-191, EIP-712 typed data, Permit2, signature verification and recovery",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "signing-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cc7aad91b85d43c8",
       "type": "registry",
-      "url": "https://pypi.org/project/signing-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/signing-mcp-server",
+      "registry": "pypi",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nirholas/ethereum-wallet-toolkit"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nirholas__signing-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=265",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nirholas/signing-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

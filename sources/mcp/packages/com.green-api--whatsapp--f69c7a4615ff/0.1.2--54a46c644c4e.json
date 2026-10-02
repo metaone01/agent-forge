@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.green-api/whatsapp",
+  "name": "com.green-api/whatsapp",
+  "displayName": "Green API WhatsApp",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP gateway for WhatsApp via Green API: messaging, contacts, groups and instance management.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.green-api/whatsapp",
+    "remotes": [
+      {
+        "url": "https://mcp.green-api.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.green-api.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0041293be8fc8524",
+      "type": "other",
+      "url": "https://mcp.green-api.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.green-api.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f41f22137fab54d3",
+      "type": "other",
+      "url": "https://mcp.green-api.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.green-api.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/green-api/green-api-mcp-gateway"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=52",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.green-api/whatsapp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

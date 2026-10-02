@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.it.datituristici/datituristici",
+  "name": "it.datituristici/datituristici",
+  "displayName": "it.datituristici/datituristici",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Dati turistici ISTAT di ogni comune italiano: presenze, arrivi, posti letto, popolazione.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "it.datituristici/datituristici",
+    "remotes": [
+      {
+        "url": "https://datituristici.it/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-36b3866de40b2669",
+      "type": "other",
+      "url": "https://datituristici.it/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://datituristici.it/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://datituristici.it"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=363",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "it.datituristici/datituristici"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

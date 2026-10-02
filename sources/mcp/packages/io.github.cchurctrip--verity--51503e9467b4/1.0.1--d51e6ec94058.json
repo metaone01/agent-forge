@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cchurctrip/verity",
+  "name": "io.github.cchurctrip/verity",
+  "displayName": "Verity Skills",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time social media and prediction market integrity layer for traders, funds, and quant desks.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.cchurctrip/verity",
+    "remotes": [
+      {
+        "url": "https://mcp.verityskills.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.verityskills.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e4b063e258c435e7",
+      "type": "other",
+      "url": "https://mcp.verityskills.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.verityskills.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-fa91fcdd27dcd48a",
+      "type": "other",
+      "url": "https://mcp.verityskills.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.verityskills.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cchurctrip/verity-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=180",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cchurctrip/verity"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

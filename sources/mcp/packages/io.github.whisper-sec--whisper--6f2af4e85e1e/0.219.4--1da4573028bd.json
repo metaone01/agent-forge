@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.whisper-sec/whisper",
+  "name": "io.github.whisper-sec/whisper",
+  "displayName": "Whisper",
+  "version": "0.219.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "One routable IPv6 per AI agent, verifiable from the DNS root. Keyless tools need no signup.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@whisper-security/whisper-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://whisper.online/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-31caeef9ecde6651",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@whisper-security/whisper-mcp",
+      "registry": "npm",
+      "version": "0.219.3"
+    },
+    {
+      "id": "upstream-d23fc64a7e024954",
+      "type": "oci",
+      "url": "https://ghcr.io/whisper-sec/whisper:0.219.2",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-12106e02621b5ea8",
+      "type": "other",
+      "url": "https://whisper.online/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://whisper.online/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/whisper-sec/whisper-cli",
+    "homepage": "https://whisper.online"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=349",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.whisper-sec/whisper"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

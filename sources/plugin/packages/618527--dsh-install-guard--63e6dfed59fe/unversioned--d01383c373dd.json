@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.17a665c93a8478cd1faa54fa36fbd73d7ebebea72df40b24291e3f1d05aa0c87",
+  "name": "618527/dsh-install-guard",
+  "displayName": "618527/dsh-install-guard",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 插件安装前兼容性预检守卫：检查 Node/engines、@deepseek-ai 核心包 peer 版本与 dsh 清单，支持隔离试启动与确认后修复安装，防止版本不兼容导致崩溃。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/618527/dsh-install-guard",
+    "readme": "https://github.com/618527/dsh-install-guard#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/618527/dsh-install-guard"
+    }
+  ],
+  "keywords": [
+    "interop",
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11970"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12778"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

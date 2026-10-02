@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Firefloco/chirpie",
   "name": "io.github.Firefloco/chirpie",
+  "displayName": "Chirpie",
   "version": "1.0.21",
-  "versionScheme": "semver",
-  "description": "Post, schedule, and track social posts on X, Bluesky, LinkedIn, Instagram and more from AI agents.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Firefloco/chirpie-mcp",
-    "homepage": "https://chirpie.ai/docs/mcp",
-    "readme": "https://github.com/Firefloco/chirpie-mcp#readme"
-  },
-  "keywords": [
-    "Chirpie"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@chirpie/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Post, schedule, and track social posts on X, Bluesky, LinkedIn, Instagram and more from AI agents.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@chirpie/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://chirpie.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0d84e1cea57466b3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@chirpie/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.21"
+    },
+    {
+      "id": "upstream-76984f37225ad8d1",
+      "type": "other",
+      "url": "https://chirpie.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://chirpie.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Firefloco/chirpie-mcp",
+    "homepage": "https://chirpie.ai/docs/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.firefloco__chirpie.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=129",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Firefloco/chirpie"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

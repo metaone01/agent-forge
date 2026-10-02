@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.focxle/agent-payments-virtual-cards",
+  "name": "com.focxle/agent-payments-virtual-cards",
+  "displayName": "Focxle (retired listing): see com.focxle/b2b-agent-negotiation-governance",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Retired: Focxle no longer issues cards. Use com.focxle/b2b-agent-negotiation-governance.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.focxle/agent-payments-virtual-cards",
+    "remotes": [
+      {
+        "url": "https://focxle.com/api/v1/mcp/cards",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8b7036eb8c3bbc42",
+      "type": "other",
+      "url": "https://focxle.com/api/v1/mcp/cards",
+      "install": {
+        "type": "api",
+        "url": "https://focxle.com/api/v1/mcp/cards"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://focxle.com/fiat"
+  },
+  "lifecycle": {
+    "status": "deprecated"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=49",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.focxle/agent-payments-virtual-cards"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

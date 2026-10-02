@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.agentavow/agentavow-trust",
+  "name": "com.agentavow/agentavow-trust",
+  "displayName": "AgentAvow Trust",
+  "version": "0.6.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Signed, offline-verifiable safety scores for the MCP servers, packages & tools an agent connects to",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "agentavow-trust",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agentavow.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-aee84e8736c0776b",
+      "type": "registry",
+      "url": "https://pypi.org/project/agentavow-trust",
+      "registry": "pypi",
+      "version": "0.6.1"
+    },
+    {
+      "id": "upstream-c163b86685797966",
+      "type": "other",
+      "url": "https://agentavow.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentavow.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.agentavow/agentavow-trust"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

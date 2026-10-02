@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.a88a95ffd0565240ef13f9d6de73bf6fc042ecb36585689c82afd0052953a150",
+  "name": "weibaohui/user-management",
+  "displayName": "weibaohui/user-management",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "dsh 插件 · 用户管理：自带 HTTPS 网关挡在 dsh web 前面做登录门禁——未登录访问一律 401 跳登录/注册页，首个注册者自动成为管理员，注册默认审批制；支持 TOTP 两步验证（验证器 App 扫码/手输密钥绑定）；管理员可管理所有用户（新增/删除/禁用/重置密码/角色调整/重置两步验证）、IP 封禁并查看登录记录、访问记录与操作日志三本审计账",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/weibaohui/user-management",
+    "readme": "https://github.com/weibaohui/user-management#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/weibaohui/user-management"
+    },
+    {
+      "id": "npm-c69fd30cc656",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@weibaohui/user-management",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "safety",
+    "observability"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14757"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/weibaohui__user-management.yml"
+        },
+        {
+          "repository": "beancookie/awesome-dsh-plugin",
+          "revision": "8f779f6938b5f3434729be589c82bcd7db4c32f7",
+          "path": "docs/plugins.json",
+          "entry": "473"
+        },
+        {
+          "repository": "kejixiaoliang/awesome-dsh-plugins",
+          "revision": "b38612ffc864e695a565112252acc6e3e01ced19",
+          "path": "INDEX.md",
+          "entry": "312"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13515"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "kczx-user-management"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "@weibaohui/user-management"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

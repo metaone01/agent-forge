@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.clauxel.clawmanagerfleet/clawmanagerfleet-mcp",
+  "name": "com.clauxel.clawmanagerfleet/clawmanagerfleet-mcp",
+  "displayName": "com.clauxel.clawmanagerfleet/clawmanagerfleet-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A paid remote MCP for ClawManager, built to return verdicts, receipts, usage logs, and audit-ready J",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.clauxel.clawmanagerfleet/clawmanagerfleet-mcp",
+    "remotes": [
+      {
+        "url": "https://clawmanagerfleet.clauxel.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cd0b85aa1f390e1d",
+      "type": "other",
+      "url": "https://clawmanagerfleet.clauxel.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://clawmanagerfleet.clauxel.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/clauxel/clawmanager-fleet-control-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=40",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.clauxel.clawmanagerfleet/clawmanagerfleet-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

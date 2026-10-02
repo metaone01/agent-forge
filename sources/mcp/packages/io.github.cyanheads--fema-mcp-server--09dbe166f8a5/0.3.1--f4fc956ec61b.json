@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cyanheads/fema-mcp-server",
+  "name": "io.github.cyanheads/fema-mcp-server",
+  "displayName": "io.github.cyanheads/fema-mcp-server",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query FEMA disaster declarations, public assistance grants, housing aid, and NFIP claims.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cyanheads/fema-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://fema.caseyjhand.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-91375ea7dde0b91a",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cyanheads/fema-mcp-server",
+      "registry": "npm",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-d6c32d5a7d96e1f2",
+      "type": "other",
+      "url": "https://fema.caseyjhand.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fema.caseyjhand.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cyanheads/fema-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=188",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cyanheads/fema-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

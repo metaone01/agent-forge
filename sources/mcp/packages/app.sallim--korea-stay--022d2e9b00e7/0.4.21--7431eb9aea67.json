@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.sallim/korea-stay",
+  "name": "app.sallim/korea-stay",
+  "displayName": "app.sallim/korea-stay",
+  "version": "0.4.21",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Korean lodging: 84,490 stays from 4 government permit ledgers + KTO TourAPI, honest gaps",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.sallim/korea-stay",
+    "remotes": [
+      {
+        "url": "https://stay.sallim.app/mcp?via=official",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4fcb7b442d0f32b0",
+      "type": "other",
+      "url": "https://stay.sallim.app/mcp?via=official",
+      "install": {
+        "type": "api",
+        "url": "https://stay.sallim.app/mcp?via=official"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.sallim/korea-stay"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

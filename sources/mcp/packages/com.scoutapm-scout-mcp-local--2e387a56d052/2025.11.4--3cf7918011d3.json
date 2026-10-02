@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.com.scoutapm/scout-mcp-local",
   "name": "com.scoutapm/scout-mcp-local",
+  "displayName": "com.scoutapm/scout-mcp-local",
   "version": "2025.11.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "An MCP server for Scout Monitoring data interactions.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/scoutapp/scout-mcp-local",
-    "readme": "https://github.com/scoutapp/scout-mcp-local#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "scout-mcp-local",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "scout-mcp-local",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-fdb64595b3b1b6ed",
       "type": "registry",
-      "url": "https://pypi.org/project/scout-mcp-local/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/scout-mcp-local",
+      "registry": "pypi",
+      "version": "2025.11.4"
+    },
+    {
+      "id": "upstream-2f5ef236e64e9446",
+      "type": "oci",
+      "url": "https://docker.io/scoutapp/scout-mcp-local:latest",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/scoutapp/scout-mcp-local"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.scoutapm__scout-mcp-local.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=75",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.scoutapm/scout-mcp-local"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.neverinfamous/postgres-mcp-server",
   "name": "io.github.neverinfamous/postgres-mcp-server",
+  "displayName": "PostgreSQL MCP Server",
   "version": "1.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Enterprise PostgreSQL MCP server with 63 tools, 10 resources, 10 prompts for AI-native operations",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/neverinfamous/postgres-mcp.git",
-    "readme": "https://github.com/neverinfamous/postgres-mcp.git#readme"
-  },
-  "keywords": [
-    "PostgreSQL MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/writenotenow/postgres-mcp-enhanced:v1.2.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/writenotenow/postgres-mcp-enhanced:v1.2.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/writenotenow/postgres-mcp-enhanced",
-      "priority": 10,
+      "id": "upstream-6eff9cf8ae476804",
+      "type": "oci",
+      "url": "https://docker.io/writenotenow/postgres-mcp-enhanced:v1.2.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/neverinfamous/postgres-mcp.git"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.neverinfamous__postgres-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.neverinfamous/postgres-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

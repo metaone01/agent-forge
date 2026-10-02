@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Fabsbags/swisstrip-mcp",
   "name": "io.github.Fabsbags/swisstrip-mcp",
+  "displayName": "io.github.Fabsbags/swisstrip-mcp",
   "version": "0.6.3",
-  "versionScheme": "semver",
-  "description": "Canonical SwissTrip MCP — independent SBB/CFF/FFS schedules, prices, and ticket links by SwissTrip.",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/Fabsbags/swisstrip-mcp",
-    "readme": "https://github.com/Fabsbags/swisstrip-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "swisstrip-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Canonical SwissTrip MCP — independent SBB/CFF/FFS schedules, prices, and ticket links by SwissTrip.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "swisstrip-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.swisstrip.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-68538e6ba09a270b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/swisstrip-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.3"
+    },
+    {
+      "id": "upstream-bbdc9fb49e938436",
+      "type": "other",
+      "url": "https://mcp.swisstrip.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.swisstrip.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Fabsbags/swisstrip-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fabsbags__swisstrip-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=129",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Fabsbags/swisstrip-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ajwann/queensestate",
   "name": "io.github.ajwann/queensestate",
+  "displayName": "Charlotte Open City Data",
   "version": "1.0.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Charlotte and Mecklenburg County open data: addresses, crime, 311, zoning, budget, and services",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ajwann/queensestate",
-    "homepage": "https://github.com/ajwann/queensestate",
-    "readme": "https://github.com/ajwann/queensestate#readme"
-  },
-  "keywords": [
-    "Charlotte Open City Data"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "queensestate",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "queensestate",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://queensestate.adamwanninger.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bc988d0a17e70be1",
       "type": "registry",
-      "url": "https://pypi.org/project/queensestate/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/queensestate",
+      "registry": "pypi",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-121a3ff0c8b961ea",
+      "type": "other",
+      "url": "https://queensestate.adamwanninger.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://queensestate.adamwanninger.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/ajwann/queensestate",
+    "homepage": "https://github.com/ajwann/queensestate"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ajwann__queensestate.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=167",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ajwann/queensestate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

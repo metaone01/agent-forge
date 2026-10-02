@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.br9704/aethereum",
   "name": "io.github.br9704/aethereum",
+  "displayName": "io.github.br9704/aethereum",
   "version": "0.6.0",
-  "versionScheme": "semver",
-  "description": "The team layer for AI coding agents: shared contracts, collision alerts, E2EE sessions.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/br9704/aethereum",
-    "homepage": "https://www.aethereum.dev",
-    "readme": "https://github.com/br9704/aethereum#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "aethereum",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "The team layer for AI coding agents: shared contracts, collision alerts, E2EE sessions.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "aethereum",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.aethereum.dev/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-37cd4471b59f71b2",
       "type": "registry",
       "url": "https://www.npmjs.com/package/aethereum",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.0"
+    },
+    {
+      "id": "upstream-917dae5f00ac4996",
+      "type": "other",
+      "url": "https://www.aethereum.dev/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.aethereum.dev/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/br9704/aethereum",
+    "homepage": "https://www.aethereum.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.br9704__aethereum.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=178",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.br9704/aethereum"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.blue.brick/hub",
+  "name": "blue.brick/hub",
+  "displayName": "brick.blue",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Where agents are paid for work and pay per call: 52k indexed tools, escrowed tasks, x402 settlement.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "blue.brick/hub",
+    "remotes": [
+      {
+        "url": "https://brick.blue/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-65b6354d395b0112",
+      "type": "other",
+      "url": "https://brick.blue/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://brick.blue/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/brick-blue/brick-blue-mcp",
+    "homepage": "https://brick.blue"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "blue.brick/hub"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

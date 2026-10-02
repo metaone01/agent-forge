@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.toolpin/toolpin",
+  "name": "dev.toolpin/toolpin",
+  "displayName": "dev.toolpin/toolpin",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check whether an MCP server answers, what its tools claim, and whether that claim has changed.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.toolpin/toolpin",
+    "remotes": [
+      {
+        "url": "https://toolpin.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3986d6423f7b95ba",
+      "type": "other",
+      "url": "https://toolpin.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://toolpin.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Toolpin/mcp-server",
+    "homepage": "https://toolpin.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=94",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.toolpin/toolpin"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

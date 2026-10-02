@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.xyz.crossgrain/epitaxy",
   "name": "xyz.crossgrain/epitaxy",
+  "displayName": "xyz.crossgrain/epitaxy",
   "version": "0.1.4",
-  "versionScheme": "semver",
-  "description": "Federal drug shortages and recalls joined to the federal contracts that buy those drugs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/vor-bot/epitaxy-mcp",
-    "homepage": "https://drugs.crossgrain.xyz/docs",
-    "readme": "https://github.com/vor-bot/epitaxy-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "epitaxy-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Federal drug shortages and recalls joined to the federal contracts that buy those drugs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "epitaxy-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://drugs.crossgrain.xyz/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1ef9b6610167df1e",
       "type": "registry",
-      "url": "https://pypi.org/project/epitaxy-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/epitaxy-mcp",
+      "registry": "pypi",
+      "version": "0.1.4"
+    },
+    {
+      "id": "upstream-3d124ae9d0b8ab64",
+      "type": "other",
+      "url": "https://drugs.crossgrain.xyz/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://drugs.crossgrain.xyz/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/vor-bot/epitaxy-mcp",
+    "homepage": "https://drugs.crossgrain.xyz/docs"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\xyz.crossgrain__epitaxy.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.crossgrain/epitaxy"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

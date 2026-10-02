@@ -2,48 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ibnsaleem29/dorar-hadith-mcp",
   "name": "io.github.ibnsaleem29/dorar-hadith-mcp",
+  "displayName": "Hadith Checker [Dorar.net]",
   "version": "3.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Research Hadith, authenticity, grading, Takhrij and Sharh [commentaries] in Claude Desktop for free.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ibnsaleem29/dorar-hadith-mcp",
-    "readme": "https://github.com/ibnsaleem29/dorar-hadith-mcp#readme"
-  },
-  "keywords": [
-    "Hadith Checker [Dorar.net]"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/ibnsaleem29/dorar-hadith-mcp/releases/download/v3.0/dorar-hadith-mcp-v3.0.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/ibnsaleem29/dorar-hadith-mcp/releases/download/v3.0/dorar-hadith-mcp-v3.0.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-0e5693aae07a8b90",
+      "type": "archive",
       "url": "https://github.com/ibnsaleem29/dorar-hadith-mcp/releases/download/v3.0/dorar-hadith-mcp-v3.0.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "3.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ibnsaleem29/dorar-hadith-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ibnsaleem29__dorar-hadith-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=212",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ibnsaleem29/dorar-hadith-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

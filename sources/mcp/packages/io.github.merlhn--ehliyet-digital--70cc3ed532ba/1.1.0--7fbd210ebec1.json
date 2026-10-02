@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.merlhn/ehliyet-digital",
+  "name": "io.github.merlhn/ehliyet-digital",
+  "displayName": "io.github.merlhn/ehliyet-digital",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Türkiye ehliyet sınavı hazırlık: 200 çıkmış soru, 76 hap bilgi, 43 ders özeti, deneme sınavı.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.merlhn/ehliyet-digital",
+    "remotes": [
+      {
+        "url": "https://ehliyet-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://ehliyet-production.up.railway.app/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-28c79f6b8064031a",
+      "type": "other",
+      "url": "https://ehliyet-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ehliyet-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-0542e3442a70439f",
+      "type": "other",
+      "url": "https://ehliyet-production.up.railway.app/sse",
+      "install": {
+        "type": "api",
+        "url": "https://ehliyet-production.up.railway.app/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/merlhn/ehliyet",
+    "homepage": "https://ehliyet.digital"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=248",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.merlhn/ehliyet-digital"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

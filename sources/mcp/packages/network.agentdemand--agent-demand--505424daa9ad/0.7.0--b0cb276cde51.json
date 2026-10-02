@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.agentdemand/agent-demand",
+  "name": "network.agentdemand/agent-demand",
+  "displayName": "Agent Demand",
+  "version": "0.7.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Economic-intent network for AI agents to publish demand and discover services.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "network.agentdemand/agent-demand",
+    "remotes": [
+      {
+        "url": "https://agentdemand.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-459b9d16a0ef194c",
+      "type": "other",
+      "url": "https://agentdemand.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentdemand.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://agentdemand.network/?sats_source=acq_official_mcp_registry&sats_campaign=campaign.phase4.official_mcp_registry.initial&sats_surface=int_landing"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.agentdemand/agent-demand"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

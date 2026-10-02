@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pe.comparadolar/tasas",
+  "name": "pe.comparadolar/tasas",
+  "displayName": "pe.comparadolar/tasas",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live USD/PEN rate ranking of Peru's SBS-supervised online exchange houses, from comparadolar.pe",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pe.comparadolar/tasas",
+    "remotes": [
+      {
+        "url": "https://comparadolar.pe/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e6fd061f3564e1cf",
+      "type": "other",
+      "url": "https://comparadolar.pe/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://comparadolar.pe/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://comparadolar.pe"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pe.comparadolar/tasas"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

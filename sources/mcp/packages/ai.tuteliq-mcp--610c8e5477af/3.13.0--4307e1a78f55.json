@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.ai.tuteliq/mcp",
   "name": "ai.tuteliq/mcp",
+  "displayName": "ai.tuteliq/mcp",
   "version": "3.13.0",
-  "versionScheme": "semver",
-  "description": "Detect grooming, bullying, fraud, and 16+ online threats across text, voice, image, and video.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Tuteliq/mcp",
-    "readme": "https://github.com/Tuteliq/mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@tuteliq/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Detect grooming, bullying, fraud, and 16+ online threats across text, voice, image, and video.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@tuteliq/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.tuteliq.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-190e5ad1283a347f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@tuteliq/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "3.13.0"
+    },
+    {
+      "id": "upstream-977fc323ac8f794f",
+      "type": "other",
+      "url": "https://api.tuteliq.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.tuteliq.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Tuteliq/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.tuteliq__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.tuteliq/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.tradestarinsider/edgar-insider-signals",
+  "name": "com.tradestarinsider/edgar-insider-signals",
+  "displayName": "Insider Buy Signals",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Filing-verified U.S. insider-buy signals from SEC Form 4: cluster buys and large-vs-holdings buys.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "insider-signals-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.tradestarinsider.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-74c0a549df693d3a",
+      "type": "registry",
+      "url": "https://pypi.org/project/insider-signals-mcp",
+      "registry": "pypi",
+      "version": "1.1.0"
+    },
+    {
+      "id": "upstream-2d83d493fa1e2e2c",
+      "type": "other",
+      "url": "https://mcp.tradestarinsider.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tradestarinsider.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TradestarV5/insider-signals"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=83",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.tradestarinsider/edgar-insider-signals"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

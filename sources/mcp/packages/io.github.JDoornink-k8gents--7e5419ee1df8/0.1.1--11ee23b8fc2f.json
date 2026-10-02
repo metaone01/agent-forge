@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.JDoornink/k8gents",
   "name": "io.github.JDoornink/k8gents",
+  "displayName": "K8gentS — Kubernetes RCA MCP Server",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Kubernetes RCA agent that sandboxes its own AI with OPA Gatekeeper. MCP-ready for any client.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/JDoornink/K8gentS",
-    "readme": "https://github.com/JDoornink/K8gentS#readme"
-  },
-  "keywords": [
-    "K8gentS — Kubernetes RCA MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "docker.io/jdoornink/k8gents:0.1.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "docker.io/jdoornink/k8gents:0.1.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/jdoornink/k8gents",
-      "priority": 10,
+      "id": "upstream-6ff8a54121c59c88",
+      "type": "oci",
+      "url": "https://docker.io/jdoornink/k8gents:0.1.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/JDoornink/K8gentS"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jdoornink__k8gents.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=135",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.JDoornink/k8gents"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

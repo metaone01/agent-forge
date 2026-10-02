@@ -2,46 +2,72 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ydnikolaev/a2ahub",
   "name": "io.github.ydnikolaev/a2ahub",
+  "displayName": "io.github.ydnikolaev/a2ahub",
   "version": "0.26.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Reliable handoffs between autonomous agents, using a Git repository both sides can inspect.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ydnikolaev/a2ahub",
-    "readme": "https://github.com/ydnikolaev/a2ahub#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-darwin-amd64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-darwin-amd64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-73313d07b8f748c2",
+      "type": "archive",
       "url": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-darwin-amd64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-5a7d7ade4ccca56d",
+      "type": "archive",
+      "url": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-darwin-arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-c49905da0e76583b",
+      "type": "archive",
+      "url": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-linux-amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-7513d0acd4b01de0",
+      "type": "archive",
+      "url": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-linux-arm64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-09d3010cd5d11421",
+      "type": "archive",
+      "url": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-windows-amd64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-7f0d8282fa507b67",
+      "type": "archive",
+      "url": "https://github.com/ydnikolaev/a2ahub/releases/download/v0.26.3/a2a-windows-arm64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ydnikolaev/a2ahub"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +80,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ydnikolaev__a2ahub.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ydnikolaev/a2ahub"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.com.linebreakapp/linebreak-gate",
   "name": "com.linebreakapp/linebreak-gate",
+  "displayName": "LineBreak Gate & Spec Bridge",
   "version": "1.10.3",
-  "versionScheme": "semver",
-  "description": "Approved acceptance criteria served over MCP to Claude Code, Cursor, or Codex. Git-only, sealed.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/Baktun-Studio/linebreak-gate",
-    "homepage": "https://www.linebreakapp.com/en/start",
-    "readme": "https://github.com/Baktun-Studio/linebreak-gate#readme"
-  },
-  "keywords": [
-    "LineBreak Gate & Spec Bridge"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "linebreak-gate",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Approved acceptance criteria served over MCP to Claude Code, Cursor, or Codex. Git-only, sealed.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "linebreak-gate",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-54fc6d52fa2d3eb2",
       "type": "registry",
-      "url": "https://pypi.org/project/linebreak-gate/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/linebreak-gate",
+      "registry": "pypi",
+      "version": "1.10.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Baktun-Studio/linebreak-gate",
+    "homepage": "https://www.linebreakapp.com/en/start"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.linebreakapp__linebreak-gate.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=58",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.linebreakapp/linebreak-gate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

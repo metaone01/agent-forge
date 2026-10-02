@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.dropwatchhq/distress-diligence",
+  "name": "com.dropwatchhq/distress-diligence",
+  "displayName": "com.dropwatchhq/distress-diligence",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Distressed-SMB diligence: bankruptcy, lawsuits, recalls, exclusions, WARN layoffs, liens (sourced).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.dropwatchhq/distress-diligence",
+    "remotes": [
+      {
+        "url": "https://diligence.dropwatchhq.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5b3c700d4c9a9a45",
+      "type": "other",
+      "url": "https://diligence.dropwatchhq.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://diligence.dropwatchhq.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://diligence.dropwatchhq.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=45",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.dropwatchhq/distress-diligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

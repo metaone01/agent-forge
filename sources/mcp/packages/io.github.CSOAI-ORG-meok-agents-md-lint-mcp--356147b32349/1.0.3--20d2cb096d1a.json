@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/meok-agents-md-lint-mcp",
   "name": "io.github.CSOAI-ORG/meok-agents-md-lint-mcp",
+  "displayName": "io.github.CSOAI-ORG/meok-agents-md-lint-mcp",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "MEOK AGENTS.md Linter MCP — validates the cross-vendor coding-agent spec (Cursor / Claude Code /",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/meok-agents-md-lint-mcp",
-    "readme": "https://github.com/CSOAI-ORG/meok-agents-md-lint-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "meok-agents-md-lint-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MEOK AGENTS.md Linter MCP — validates the cross-vendor coding-agent spec (Cursor / Claude Code /",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "meok-agents-md-lint-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/dev/agents-md-lint",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0adbb7a42fc52be9",
       "type": "registry",
-      "url": "https://pypi.org/project/meok-agents-md-lint-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/meok-agents-md-lint-mcp",
+      "registry": "pypi",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-48fa28e5b033f023",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/dev/agents-md-lint",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/dev/agents-md-lint"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/meok-agents-md-lint-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__meok-agents-md-lint-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=117",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/meok-agents-md-lint-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

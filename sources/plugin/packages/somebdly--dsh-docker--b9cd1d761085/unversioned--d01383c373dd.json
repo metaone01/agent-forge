@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.23cefe272efde69cba06a835b9a1f6afa21eebb19a450c078ac447e081a1e324",
+  "name": "somebdly/dsh-docker",
+  "displayName": "somebdly/dsh-docker",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Docker MCP Gateway 管理面板：经 SSH 在远端服务器执行 docker mcp 命令，管理 Docker MCP（列出/部署/移除 profile 中的 MCP、搜索/拉取 Docker MCP Catalog）。免构建（纯 ESM：Host 端 Node 原生 import + spawn python paramiko，Client 端零依赖纯 DOM）。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/somebdly/dsh-docker",
+    "readme": "https://github.com/somebdly/dsh-docker#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/somebdly/dsh-docker"
+    }
+  ],
+  "keywords": [
+    "interop",
+    "marketplace"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16483"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/somebdly__dsh-docker.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13821"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

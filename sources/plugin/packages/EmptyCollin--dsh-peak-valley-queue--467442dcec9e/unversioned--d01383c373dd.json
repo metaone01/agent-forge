@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.5fe85a45b146b5c16da3680a20816ad7cf00848a1bcd6c47aa75c81544f913ff",
+  "name": "EmptyCollin/dsh-peak-valley-queue",
+  "displayName": "EmptyCollin/dsh-peak-valley-queue",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 峰谷任务排队插件：开关拦截输入入队，DeepSeek API 谷段（工作日 09:00-12:00 / 14:00-18:00 之外）自动按序执行，支持编辑/删除/拖拽排序/手动送出/失败暂停恢复/严格完成标志校验，队列与配置本地持久化，UI 为 better-sidebar 页签。Peak/valley-pricing task queue with",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/EmptyCollin/dsh-peak-valley-queue",
+    "readme": "https://github.com/EmptyCollin/dsh-peak-valley-queue#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/EmptyCollin/dsh-peak-valley-queue"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "ui"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "6403"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "12087"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

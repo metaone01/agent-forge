@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.bot.402/discovery-oracle",
+  "name": "bot.402/discovery-oracle",
+  "displayName": "bot.402/discovery-oracle",
+  "version": "1.0.1-beta",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Discover live agent APIs, ranked endpoints, trust, payment telemetry, and x402 surfaces.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "bot.402/discovery-oracle",
+    "remotes": [
+      {
+        "url": "https://api.402.bot/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ae9d030b5501baed",
+      "type": "other",
+      "url": "https://api.402.bot/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.402.bot/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "bot.402/discovery-oracle"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

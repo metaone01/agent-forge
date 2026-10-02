@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.roam2go/esim-catalog",
+  "name": "com.roam2go/esim-catalog",
+  "displayName": "Roam2Go eSIM Catalog",
+  "version": "1.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search travel eSIM data plans for 230+ destinations with live prices and purchase links.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.roam2go/esim-catalog",
+    "remotes": [
+      {
+        "url": "https://roam2go.com/wp-json/r2g-mcp/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fa38aa86f6206d6d",
+      "type": "other",
+      "url": "https://roam2go.com/wp-json/r2g-mcp/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://roam2go.com/wp-json/r2g-mcp/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://roam2go.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=73",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.roam2go/esim-catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

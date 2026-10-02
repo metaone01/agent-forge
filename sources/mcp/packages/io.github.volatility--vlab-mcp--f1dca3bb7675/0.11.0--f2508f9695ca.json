@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.volatility/vlab-mcp",
+  "name": "io.github.volatility/vlab-mcp",
+  "displayName": "V-Lab",
+  "version": "0.11.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Volatility, SRISK, CRISK, liquidity and climate data from NYU Stern's V-Lab, with model forecasts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.volatility/vlab-mcp",
+    "remotes": [
+      {
+        "url": "https://vlab.stern.nyu.edu/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-461c4675a5e30d2f",
+      "type": "other",
+      "url": "https://vlab.stern.nyu.edu/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://vlab.stern.nyu.edu/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://vlab.stern.nyu.edu/setup-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=348",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.volatility/vlab-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

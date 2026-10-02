@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.juanjaragavi/devspeak",
   "name": "io.github.juanjaragavi/devspeak",
+  "displayName": "DevSpeak",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "Official DevSpeak MCP server — translate technical text into formal specs from any AI IDE or agent",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/juanjaragavi/devspeak",
-    "homepage": "https://www.devspeak.dev",
-    "readme": "https://github.com/juanjaragavi/devspeak#readme"
-  },
-  "keywords": [
-    "DevSpeak"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@devspeak/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Official DevSpeak MCP server — translate technical text into formal specs from any AI IDE or agent",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@devspeak/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://devspeak.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-79481bcfe0ecd96d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@devspeak/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-915f7ecf5b81c36b",
+      "type": "other",
+      "url": "https://devspeak.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://devspeak.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/juanjaragavi/devspeak",
+    "homepage": "https://www.devspeak.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.juanjaragavi__devspeak.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=222",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.juanjaragavi/devspeak"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

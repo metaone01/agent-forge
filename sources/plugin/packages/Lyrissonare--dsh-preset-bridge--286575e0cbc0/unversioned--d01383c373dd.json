@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.c3eee05a0697d3cf1253f3776bd91c8136b3c7fccf36ee52fc4aab0df075d2ad",
+  "name": "Lyrissonare/dsh-preset-bridge",
+  "displayName": "Lyrissonare/dsh-preset-bridge",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "模式目录桥接：DSH 桌面版 0.2.x 移除了 ~/.dsh/.agent-presets 目录扫描，本插件补回该通道，把目录预设注册进 agentPresets 注册表。不保证对所有预设生效，见 README 限制一节。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Lyrissonare/dsh-preset-bridge",
+    "readme": "https://github.com/Lyrissonare/dsh-preset-bridge#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Lyrissonare/dsh-preset-bridge"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "17282"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16784"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

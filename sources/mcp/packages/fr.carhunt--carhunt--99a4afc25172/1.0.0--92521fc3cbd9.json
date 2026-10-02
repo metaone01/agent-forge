@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fr.carhunt/carhunt",
+  "name": "fr.carhunt/carhunt",
+  "displayName": "CarHunt",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "French used-car search across LeBonCoin, LaCentrale, L'Argus and more, with price estimates.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fr.carhunt/carhunt",
+    "remotes": [
+      {
+        "url": "https://api.carhunt.fr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ec8e17d0f35929b8",
+      "type": "other",
+      "url": "https://api.carhunt.fr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.carhunt.fr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://carhunt.fr/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fr.carhunt/carhunt"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

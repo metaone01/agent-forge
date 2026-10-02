@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.global.rootz.ship/maritime",
+  "name": "global.rootz.ship/maritime",
+  "displayName": "global.rootz.ship/maritime",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Signed global shipping & commodity data: oil, LNG, grain, sanctions, fleet, emissions.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "global.rootz.ship/maritime",
+    "remotes": [
+      {
+        "url": "https://ship.rootz.global/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2bd7d6e0a4792679",
+      "type": "other",
+      "url": "https://ship.rootz.global/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ship.rootz.global/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rootz-global/mcp-servers",
+    "homepage": "https://ship.rootz.global"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "global.rootz.ship/maritime"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

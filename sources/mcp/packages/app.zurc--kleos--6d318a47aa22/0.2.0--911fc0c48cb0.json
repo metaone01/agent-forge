@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.zurc/kleos",
+  "name": "app.zurc/kleos",
+  "displayName": "Kleos",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Generate, schedule and measure UGC-style TikTok and Instagram posts for your app.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "kleos-cli",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zurc.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-831e0902f2a3e6dd",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/kleos-cli",
+      "registry": "npm",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-0befc578e3068aaf",
+      "type": "other",
+      "url": "https://mcp.zurc.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zurc.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ugc.zurc.app/docs/agentes"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=23",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.zurc/kleos"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

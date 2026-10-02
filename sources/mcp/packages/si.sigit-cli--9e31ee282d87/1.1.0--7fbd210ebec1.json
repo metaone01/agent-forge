@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.si.sigit/cli",
   "name": "si.sigit/cli",
+  "displayName": "siGit CLI",
   "version": "1.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Run sigit.si locally: browse repos, search code, manage PRs, issues, and Cloud Sessions.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/getsigit/si",
-    "homepage": "https://github.com/getsigit/si",
-    "readme": "https://github.com/getsigit/si#readme"
-  },
-  "keywords": [
-    "siGit CLI"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "cargo",
-    "identifier": "sigit-si-cli",
-    "registryBaseUrl": "https://crates.io/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "cargo",
+    "identifier": "sigit-si-cli",
+    "registryBaseUrl": "https://crates.io",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ce58b7f55ff2303b",
       "type": "registry",
       "url": "https://crates.io/crates/sigit-si-cli",
-      "priority": 10,
-      "registry": "cargo"
+      "registry": "cargo",
+      "version": "1.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/getsigit/si",
+    "homepage": "https://github.com/getsigit/si"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\si.sigit__cli.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "si.sigit/cli"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

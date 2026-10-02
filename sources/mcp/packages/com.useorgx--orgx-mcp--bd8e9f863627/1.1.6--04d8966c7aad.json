@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.useorgx/orgx-mcp",
+  "name": "com.useorgx/orgx-mcp",
+  "displayName": "OrgX MCP — Organizational Continuity for AI Agents",
+  "version": "1.1.6",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Make AI work resumable, reviewable, and provable across agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.useorgx/orgx-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.useorgx.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.useorgx.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-40572b71fc60960f",
+      "type": "other",
+      "url": "https://mcp.useorgx.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.useorgx.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-97a42c801aa4cc2a",
+      "type": "other",
+      "url": "https://mcp.useorgx.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.useorgx.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/useorgx/orgx-mcp",
+    "homepage": "https://useorgx.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=84",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.useorgx/orgx-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ibipoint/esim-catalog",
+  "name": "com.ibipoint/esim-catalog",
+  "displayName": "IbiPoint eSIM Catalog",
+  "version": "2.0.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search prepaid travel eSIM data plans for 200+ countries with live prices and a buy link.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.ibipoint/esim-catalog",
+    "remotes": [
+      {
+        "url": "https://ibipoint.com/esimshop/wp-json/ibipoint/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-13d505b83bb5f63e",
+      "type": "other",
+      "url": "https://ibipoint.com/esimshop/wp-json/ibipoint/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ibipoint.com/esimshop/wp-json/ibipoint/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://ibipoint.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=54",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ibipoint/esim-catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

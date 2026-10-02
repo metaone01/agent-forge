@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.eaisdevelopment/cc-bridge-mcp-server",
   "name": "io.github.eaisdevelopment/cc-bridge-mcp-server",
+  "displayName": "Claude Code Bridge from Essential AI Solutions (essentialai.uk)",
   "version": "0.3.0",
-  "versionScheme": "semver",
-  "description": "MCP bridge for inter-session communication between Claude Code instances",
-  "license": "ISC",
-  "links": {
-    "repository": "https://github.com/eaisdevelopment/cc-bridge-mcp-server",
-    "readme": "https://github.com/eaisdevelopment/cc-bridge-mcp-server#readme"
-  },
-  "keywords": [
-    "Claude Code Bridge from Essential AI Solutions (essentialai.uk)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@essentialai/cc-bridge-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP bridge for inter-session communication between Claude Code instances",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@essentialai/cc-bridge-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c2c648faae1c8ed3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@essentialai/cc-bridge-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/eaisdevelopment/cc-bridge-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.eaisdevelopment__cc-bridge-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=196",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.eaisdevelopment/cc-bridge-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

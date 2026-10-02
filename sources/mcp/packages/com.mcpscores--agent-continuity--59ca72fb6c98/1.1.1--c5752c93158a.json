@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mcpscores/agent-continuity",
+  "name": "com.mcpscores/agent-continuity",
+  "displayName": "MCPFax Agent Continuity",
+  "version": "1.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Resume the work, not the conversation. A checkpoint by one model is resumable by another.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mcpscores/agent-continuity",
+    "remotes": [
+      {
+        "url": "https://mcpfax-continuity.bowling-anthony.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-92fe77474bbdf80e",
+      "type": "other",
+      "url": "https://mcpfax-continuity.bowling-anthony.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpfax-continuity.bowling-anthony.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mcpfax-continuity.bowling-anthony.workers.dev/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpscores/agent-continuity"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

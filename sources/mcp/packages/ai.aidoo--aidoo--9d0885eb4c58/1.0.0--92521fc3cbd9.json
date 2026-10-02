@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.aidoo/aidoo",
+  "name": "ai.aidoo/aidoo",
+  "displayName": "Aidoo for Odoo",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query and update your Odoo ERP in plain language, under your own Odoo access rules.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.aidoo/aidoo",
+    "remotes": [
+      {
+        "url": "https://mcp.aidoo.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.aidoo.ai/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-238c61cc7058ac9c",
+      "type": "other",
+      "url": "https://mcp.aidoo.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aidoo.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-2961a22529ccd5a9",
+      "type": "other",
+      "url": "https://mcp.aidoo.ai/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aidoo.ai/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/eantoniomota/aidoo-mcp",
+    "homepage": "https://aidoo.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=1",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.aidoo/aidoo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

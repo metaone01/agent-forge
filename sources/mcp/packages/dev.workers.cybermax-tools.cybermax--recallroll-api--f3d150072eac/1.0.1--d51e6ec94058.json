@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.workers.cybermax-tools.cybermax/recallroll-api",
+  "name": "dev.workers.cybermax-tools.cybermax/recallroll-api",
+  "displayName": "Recallroll",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "VIN recall API + MCP: VIN decode + every NHTSA recall, Do Not Drive first. $19/mo; 50 free/day.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.workers.cybermax-tools.cybermax/recallroll-api",
+    "remotes": [
+      {
+        "url": "https://recallroll-api.cybermax-tools.workers.dev/mcp?via=mcp-registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-603c1d3c5afc3e32",
+      "type": "other",
+      "url": "https://recallroll-api.cybermax-tools.workers.dev/mcp?via=mcp-registry",
+      "install": {
+        "type": "api",
+        "url": "https://recallroll-api.cybermax-tools.workers.dev/mcp?via=mcp-registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cybermax.cybermax-tools.workers.dev/store/recallroll-api/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=95",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.workers.cybermax-tools.cybermax/recallroll-api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

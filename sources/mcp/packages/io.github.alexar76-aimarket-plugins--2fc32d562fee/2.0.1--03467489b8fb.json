@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.alexar76/aimarket-plugins",
   "name": "io.github.alexar76/aimarket-plugins",
+  "displayName": "AIMarket MCP Packager",
   "version": "2.0.1",
-  "versionScheme": "semver",
-  "description": "Stdio MCP packager: AIMarket hub plugins into self-hosted MCP server products.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/alexar76/aimarket-plugins",
-    "readme": "https://github.com/alexar76/aimarket-plugins#readme"
-  },
-  "keywords": [
-    "AIMarket MCP Packager"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "aimarket-mcp-packager",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Stdio MCP packager: AIMarket hub plugins into self-hosted MCP server products.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "aimarket-mcp-packager",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-641152daae5f115a",
       "type": "registry",
-      "url": "https://pypi.org/project/aimarket-mcp-packager/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/aimarket-mcp-packager",
+      "registry": "pypi",
+      "version": "2.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/alexar76/aimarket-plugins"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.alexar76__aimarket-plugins.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.alexar76/aimarket-plugins"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.M-China-Official/mcd-mcp",
+  "name": "io.github.M-China-Official/mcd-mcp",
+  "displayName": "mcd-mcp-server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "McDonald's China MCP Server with event calendar, coupon inquiries and redemption features.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.M-China-Official/mcd-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.mcd.cn/mcp-servers/mcd-mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-703f514c99f5019f",
+      "type": "other",
+      "url": "https://mcp.mcd.cn/mcp-servers/mcd-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mcd.cn/mcp-servers/mcd-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=140",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.M-China-Official/mcd-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

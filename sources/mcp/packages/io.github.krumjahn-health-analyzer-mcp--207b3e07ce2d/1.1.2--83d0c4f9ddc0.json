@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.krumjahn/health-analyzer-mcp",
   "name": "io.github.krumjahn/health-analyzer-mcp",
+  "displayName": "Apple Health MCP Server",
   "version": "1.1.2",
-  "versionScheme": "semver",
-  "description": "Apple Health data for Claude, Cursor, and any MCP client — 100% local on your Mac.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/krumjahn/MacHealthAnalyzer",
-    "homepage": "https://applehealthdata.com/apple-health-mcp/",
-    "readme": "https://github.com/krumjahn/MacHealthAnalyzer#readme"
-  },
-  "keywords": [
-    "Apple Health MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "health-analyzer-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Apple Health data for Claude, Cursor, and any MCP client — 100% local on your Mac.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "health-analyzer-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-25db68436bab4b0d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/health-analyzer-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/krumjahn/MacHealthAnalyzer",
+    "homepage": "https://applehealthdata.com/apple-health-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.krumjahn__health-analyzer-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.krumjahn/health-analyzer-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

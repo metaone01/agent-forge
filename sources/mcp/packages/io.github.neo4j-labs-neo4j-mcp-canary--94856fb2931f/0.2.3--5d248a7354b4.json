@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.neo4j-labs/neo4j-mcp-canary",
   "name": "io.github.neo4j-labs/neo4j-mcp-canary",
+  "displayName": "io.github.neo4j-labs/neo4j-mcp-canary",
   "version": "0.2.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Neo4j MCP Canary — The canary goes first so the rest of us know what's coming",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/neo4j-labs/neo4j-mcp-canary",
-    "readme": "https://github.com/neo4j-labs/neo4j-mcp-canary#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "neo4j-mcp-canary",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "neo4j-mcp-canary",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8f5493ecc5b945d8",
       "type": "registry",
-      "url": "https://pypi.org/project/neo4j-mcp-canary/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/neo4j-mcp-canary",
+      "registry": "pypi",
+      "version": "0.2.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/neo4j-labs/neo4j-mcp-canary"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.neo4j-labs__neo4j-mcp-canary.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=262",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.neo4j-labs/neo4j-mcp-canary"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

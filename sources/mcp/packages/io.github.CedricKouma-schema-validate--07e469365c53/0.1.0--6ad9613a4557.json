@@ -2,46 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CedricKouma/schema-validate",
   "name": "io.github.CedricKouma/schema-validate",
+  "displayName": "io.github.CedricKouma/schema-validate",
   "version": "0.1.0",
-  "versionScheme": "semver",
-  "description": "MCP server (stdio): validate JSON against JSON Schema (draft-07 / 2020-12) via the AgentForge API",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://www.npmjs.com/package/agentforge-schema-validate-mcp"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "agentforge-schema-validate-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server (stdio): validate JSON against JSON Schema (draft-07 / 2020-12) via the AgentForge API",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agentforge-schema-validate-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://apim-agentforge-6lfm33.azure-api.net/schema-validate/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d791062a3b529c9b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/agentforge-schema-validate-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-8232af1920805374",
+      "type": "other",
+      "url": "https://apim-agentforge-6lfm33.azure-api.net/schema-validate/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://apim-agentforge-6lfm33.azure-api.net/schema-validate/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cedrickouma__schema-validate.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=119",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CedricKouma/schema-validate"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

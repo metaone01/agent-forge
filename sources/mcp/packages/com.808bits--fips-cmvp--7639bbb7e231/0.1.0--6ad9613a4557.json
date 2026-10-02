@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.808bits/fips-cmvp",
+  "name": "com.808bits/fips-cmvp",
+  "displayName": "FIPS 140 certificate tracker",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Every NIST FIPS 140 certificate, plus the modules-in-process queue NIST publishes only as a page.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.808bits/fips-cmvp",
+    "remotes": [
+      {
+        "url": "https://fips.808bits.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-27b4fb9b61e8bb5d",
+      "type": "other",
+      "url": "https://fips.808bits.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fips.808bits.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/808bits/fips-mcp",
+    "homepage": "https://808bits.com/fips/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=30",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.808bits/fips-cmvp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

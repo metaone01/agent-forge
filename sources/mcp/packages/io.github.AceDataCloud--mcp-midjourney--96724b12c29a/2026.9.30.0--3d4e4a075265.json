@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AceDataCloud/mcp-midjourney",
+  "name": "io.github.AceDataCloud/mcp-midjourney",
+  "displayName": "Midjourney",
+  "version": "2026.9.30.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for Midjourney AI image generation and editing",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-midjourney",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://midjourney.mcp.acedata.cloud/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-81e1985fce945cd2",
+      "type": "registry",
+      "url": "https://pypi.org/project/mcp-midjourney",
+      "registry": "pypi",
+      "version": "2026.9.30.0"
+    },
+    {
+      "id": "upstream-cb55432e201a30df",
+      "type": "other",
+      "url": "https://midjourney.mcp.acedata.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://midjourney.mcp.acedata.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AceDataCloud/MidjourneyMCP",
+    "homepage": "https://midjourney.mcp.acedata.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AceDataCloud/mcp-midjourney"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

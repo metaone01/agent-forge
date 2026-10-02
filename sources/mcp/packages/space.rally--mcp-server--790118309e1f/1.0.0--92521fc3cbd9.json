@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.space.rally/mcp-server",
+  "name": "space.rally/mcp-server",
+  "displayName": "Rally",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Tools for Go-to-market teams creating sales materials, product demos, and deal rooms for customers.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "space.rally/mcp-server",
+    "remotes": [
+      {
+        "url": "https://agents.rallyspace.io/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agents.rallyspace.io/mcp/public",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-020dddc50fc6608b",
+      "type": "other",
+      "url": "https://agents.rallyspace.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agents.rallyspace.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-7a004edfd816ce2d",
+      "type": "other",
+      "url": "https://agents.rallyspace.io/mcp/public",
+      "install": {
+        "type": "api",
+        "url": "https://agents.rallyspace.io/mcp/public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://rally.space"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "space.rally/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

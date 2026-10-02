@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.br.com.pegarex/mcp",
+  "name": "br.com.pegarex/mcp",
+  "displayName": "PegaRex",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search 1.8M+ live Brazilian used-car and motorcycle listings, with FIPE reference prices.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "br.com.pegarex/mcp",
+    "remotes": [
+      {
+        "url": "https://pegarex.com.br/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-30a60bc54d88ade4",
+      "type": "other",
+      "url": "https://pegarex.com.br/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pegarex.com.br/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/paya-alavi77/pegarex-mcp",
+    "homepage": "https://pegarex.com.br/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=25",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "br.com.pegarex/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

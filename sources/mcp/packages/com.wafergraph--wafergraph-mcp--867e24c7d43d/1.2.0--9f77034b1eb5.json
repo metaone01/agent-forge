@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.wafergraph/wafergraph-mcp",
+  "name": "com.wafergraph/wafergraph-mcp",
+  "displayName": "Wafergraph MCP",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP server for wafergraph.com's semiconductor & AI supply-chain data: 30 tools, no auth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.wafergraph/wafergraph-mcp",
+    "remotes": [
+      {
+        "url": "https://wafergraph-mcp.jwpalm99.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f0edd322f2c8515c",
+      "type": "other",
+      "url": "https://wafergraph-mcp.jwpalm99.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://wafergraph-mcp.jwpalm99.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jasonpalmer1/wafergraph-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=86",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.wafergraph/wafergraph-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

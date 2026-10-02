@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.NeoResearchAI/MCPServer",
   "name": "io.github.NeoResearchAI/MCPServer",
+  "displayName": "Neo — AI/ML Engineering",
   "version": "0.5.15",
-  "versionScheme": "semver",
-  "description": "AI/ML engineering MCP server for Neo — submit tasks, track execution, and retrieve outputs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/NeoResearchAI/MCPServer",
-    "homepage": "https://heyneo.com",
-    "readme": "https://github.com/NeoResearchAI/MCPServer#readme"
-  },
-  "keywords": [
-    "Neo — AI/ML Engineering"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "neo-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "AI/ML engineering MCP server for Neo — submit tasks, track execution, and retrieve outputs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "neo-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bc433d48717b55e1",
       "type": "registry",
-      "url": "https://pypi.org/project/neo-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/neo-mcp",
+      "registry": "pypi",
+      "version": "0.5.15"
     }
   ],
+  "links": {
+    "repository": "https://github.com/NeoResearchAI/MCPServer",
+    "homepage": "https://heyneo.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.neoresearchai__mcpserver.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=143",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.NeoResearchAI/MCPServer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

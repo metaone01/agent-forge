@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pt.pdmfacil/pdmfacil",
+  "name": "pt.pdmfacil/pdmfacil",
+  "displayName": "PDMFácil — Portugal Planning",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Portugal PDM zoning with official sources. One free query per account; no purchases.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pt.pdmfacil/pdmfacil",
+    "remotes": [
+      {
+        "url": "https://pdmfacil.pt/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-779d6f49f7550074",
+      "type": "other",
+      "url": "https://pdmfacil.pt/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://pdmfacil.pt/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://pdmfacil.pt/mcp-guide"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pt.pdmfacil/pdmfacil"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

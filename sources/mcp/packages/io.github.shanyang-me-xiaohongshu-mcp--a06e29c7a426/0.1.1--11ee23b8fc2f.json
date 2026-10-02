@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.shanyang-me/xiaohongshu-mcp",
   "name": "io.github.shanyang-me/xiaohongshu-mcp",
+  "displayName": "Xiaohongshu (Little Red Book) MCP Server",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Publish, search, and manage Xiaohongshu (Little Red Book) content via MCP tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/shanyang-me/xhs-mcp",
-    "readme": "https://github.com/shanyang-me/xhs-mcp#readme"
-  },
-  "keywords": [
-    "Xiaohongshu (Little Red Book) MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "xiaohongshu-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "xiaohongshu-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-53ba1b5009291c4b",
       "type": "registry",
-      "url": "https://pypi.org/project/xiaohongshu-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/xiaohongshu-mcp-server",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/shanyang-me/xhs-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.shanyang-me__xiaohongshu-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=327",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.shanyang-me/xiaohongshu-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

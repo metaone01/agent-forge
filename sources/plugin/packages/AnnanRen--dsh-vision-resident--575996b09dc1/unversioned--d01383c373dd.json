@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.9fc3d6404b170279a122c2a20d5851ac7a58c9d63082ecf4361784abe5058fdb",
+  "name": "AnnanRen/dsh-vision-resident",
+  "displayName": "AnnanRen/dsh-vision-resident",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "常驻视觉服务：直连视觉模型（默认 opencode-go/minimax-m3，回退 zai-coding-cn/glm-4.6v）。describe_image / subagent_vision 工具 + 粘贴图片自动转译（llm/stream 钩子）+ 输入框视觉状态小胶囊与详情页（活动日志：指令/思考过程/输出）。零子代理、零 agent 上下文开销，按会话记忆窗支持视觉追问与验收。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/AnnanRen/dsh-vision-resident",
+    "readme": "https://github.com/AnnanRen/dsh-vision-resident#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/AnnanRen/dsh-vision-resident"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "10254"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "5428"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "7868"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "6767"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

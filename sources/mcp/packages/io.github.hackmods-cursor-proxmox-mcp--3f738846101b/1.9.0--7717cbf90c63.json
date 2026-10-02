@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.hackmods/cursor-proxmox-mcp",
   "name": "io.github.hackmods/cursor-proxmox-mcp",
+  "displayName": "Cursor Proxmox MCP",
   "version": "1.9.0",
-  "versionScheme": "semver",
-  "description": "Manage Proxmox VE via Cursor: QEMU, LXC, storage, HA, firewall, access.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/hackmods/cursor-proxmox-mcp",
-    "homepage": "https://github.com/hackmods/cursor-proxmox-mcp",
-    "readme": "https://github.com/hackmods/cursor-proxmox-mcp#readme"
-  },
-  "keywords": [
-    "Cursor Proxmox MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "cursor-proxmox-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Manage Proxmox VE via Cursor: QEMU, LXC, storage, HA, firewall, access.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "cursor-proxmox-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5fdbd27ba3c05845",
       "type": "registry",
-      "url": "https://pypi.org/project/cursor-proxmox-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/cursor-proxmox-mcp",
+      "registry": "pypi",
+      "version": "1.9.0"
+    },
+    {
+      "id": "upstream-12cdcbaef573c3de",
+      "type": "oci",
+      "url": "https://ghcr.io/hackmods/cursor-proxmox-mcp:1.9.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/hackmods/cursor-proxmox-mcp",
+    "homepage": "https://github.com/hackmods/cursor-proxmox-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.hackmods__cursor-proxmox-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=208",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hackmods/cursor-proxmox-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

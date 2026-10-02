@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.a2awire/data-earthquake-alert-seismic-activity",
+  "name": "com.a2awire/data-earthquake-alert-seismic-activity",
+  "displayName": "Earthquake Alerts & Seismic Activity (USGS Live) — buy per-query in-session (quakewatch)",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live USGS earthquake alerts: M2.5+ 24h, mag, depth. Register in-session — free testnet funds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.a2awire/data-earthquake-alert-seismic-activity",
+    "remotes": [
+      {
+        "url": "https://a2awire.com/mcp/data/quakewatch-earthquake-alerts-usgs-m2-5-24h-b24d70/http",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1ca7003cf2bb483c",
+      "type": "other",
+      "url": "https://a2awire.com/mcp/data/quakewatch-earthquake-alerts-usgs-m2-5-24h-b24d70/http",
+      "install": {
+        "type": "api",
+        "url": "https://a2awire.com/mcp/data/quakewatch-earthquake-alerts-usgs-m2-5-24h-b24d70/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ee324/a2awire",
+    "homepage": "https://a2awire.com/data/quakewatch-earthquake-alerts-usgs-m2-5-24h-b24d70"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=30",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.a2awire/data-earthquake-alert-seismic-activity"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

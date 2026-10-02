@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.broisnischal/azure-mcp",
   "name": "io.github.broisnischal/azure-mcp",
+  "displayName": "Azure Boards MCP",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Azure DevOps Boards work items over MCP (stdio). Requires Bun, org, project, and PAT.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/broisnischal/azure-mcp",
-    "homepage": "https://github.com/broisnischal/azure-mcp",
-    "readme": "https://github.com/broisnischal/azure-mcp#readme"
-  },
-  "keywords": [
-    "Azure Boards MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "azure-board-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Azure DevOps Boards work items over MCP (stdio). Requires Bun, org, project, and PAT.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "azure-board-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0082d4f6a80bf6a2",
       "type": "registry",
       "url": "https://www.npmjs.com/package/azure-board-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/broisnischal/azure-mcp",
+    "homepage": "https://github.com/broisnischal/azure-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.broisnischal__azure-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=178",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.broisnischal/azure-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

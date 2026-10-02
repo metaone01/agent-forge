@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.itzikhr18/israel-business-intelligence",
+  "name": "io.github.itzikhr18/israel-business-intelligence",
+  "displayName": "Israel Business Intelligence MCP",
+  "version": "1.8.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Israeli invoice PAY/HOLD/BLOCK gate; cheapest paid path company-changes $0.01 USDC.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.itzikhr18/israel-business-intelligence",
+    "remotes": [
+      {
+        "url": "https://israel-counterparty-intelligence.vercel.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b1c20e239e94659c",
+      "type": "other",
+      "url": "https://israel-counterparty-intelligence.vercel.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://israel-counterparty-intelligence.vercel.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/itzikhr18/israel-counterparty-intelligence",
+    "homepage": "https://israel-counterparty-intelligence.vercel.app/README.md"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=215",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.itzikhr18/israel-business-intelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.fe00940cec0f6037989f4b118dddf31ec495a5c7cba255638602f8a08bd13bb7",
+  "name": "addie-ace/dsh-mattpocock-skills",
+  "displayName": "addie-ace/dsh-mattpocock-skills",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 技能包插件（汉化版）：把 mattpocock/skills 仓库的 25 个 promoted 技能（engineering 18 个 + productivity 7 个）全文汉化后打包为 host 端 Cordis 技能 provider，经 ctx.skills 注册（rank 600 bundled 级），供 DSH 技能系统发现与调用",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/addie-ace/dsh-mattpocock-skills",
+    "readme": "https://github.com/addie-ace/dsh-mattpocock-skills#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/addie-ace/dsh-mattpocock-skills"
+    }
+  ],
+  "keywords": [
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14951"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/addie-ace__dsh-mattpocock-skills.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13680"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

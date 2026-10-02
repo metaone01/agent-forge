@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/hk-companies",
+  "name": "io.github.pipeworx-io/hk-companies",
+  "displayName": "Hk Companies",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hong Kong Companies Registry (香港公司註冊處) open data via data.gov.hk (keyless): search companies by…",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/hk-companies",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/hk-companies/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-891387cc2bb85cf0",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/hk-companies/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/hk-companies/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-hk-companies",
+    "homepage": "https://pipeworx.io/packs/hk-companies"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=281",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/hk-companies"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

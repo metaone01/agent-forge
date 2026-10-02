@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.dev.districtapi/districtapi-mcp",
   "name": "dev.districtapi/districtapi-mcp",
+  "displayName": "DistrictAPI",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "US public school districts and schools by address — enrollment, demographics, boundaries",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/DistrictAPI/districtapi-mcp",
-    "homepage": "https://districtapi.dev",
-    "readme": "https://github.com/DistrictAPI/districtapi-mcp#readme"
-  },
-  "keywords": [
-    "DistrictAPI"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "districtapi-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "US public school districts and schools by address — enrollment, demographics, boundaries",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "districtapi-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-83630a2bb228014d",
       "type": "registry",
-      "url": "https://pypi.org/project/districtapi-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/districtapi-mcp",
+      "registry": "pypi",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/DistrictAPI/districtapi-mcp",
+    "homepage": "https://districtapi.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.districtapi__districtapi-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=91",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.districtapi/districtapi-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

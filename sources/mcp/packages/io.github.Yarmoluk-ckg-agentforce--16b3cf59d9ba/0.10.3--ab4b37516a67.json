@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Yarmoluk/ckg-agentforce",
   "name": "io.github.Yarmoluk/ckg-agentforce",
+  "displayName": "Salesforce AgentForce CKG",
   "version": "0.10.3",
-  "versionScheme": "semver",
-  "description": "Salesforce AgentForce knowledge graph — 40 nodes, Einstein Trust Layer, 11x fewer tokens than RAG.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Yarmoluk/ckg-agentforce",
-    "readme": "https://github.com/Yarmoluk/ckg-agentforce#readme"
-  },
-  "keywords": [
-    "Salesforce AgentForce CKG"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "ckg-agentforce",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Salesforce AgentForce knowledge graph — 40 nodes, Einstein Trust Layer, 11x fewer tokens than RAG.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ckg-agentforce",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ckg-agentforce.onrender.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bd8bdf312924d2bb",
       "type": "registry",
-      "url": "https://pypi.org/project/ckg-agentforce/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/ckg-agentforce",
+      "registry": "pypi",
+      "version": "0.10.3"
+    },
+    {
+      "id": "upstream-d60e2ccce61b027a",
+      "type": "other",
+      "url": "https://ckg-agentforce.onrender.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ckg-agentforce.onrender.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Yarmoluk/ckg-agentforce"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yarmoluk__ckg-agentforce.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=162",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Yarmoluk/ckg-agentforce"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

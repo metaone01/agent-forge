@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mjandrews1/c3fst-biomedical-search",
   "name": "io.github.mjandrews1/c3fst-biomedical-search",
+  "displayName": "c3fst Biomedical Search",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Biomedical search: FDA drugs, MeSH headings, ClinVar genomic variants with BM25 ranking.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mjandrews1/c3fst",
-    "readme": "https://github.com/mjandrews1/c3fst#readme"
-  },
-  "keywords": [
-    "c3fst Biomedical Search"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "c3fst-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "sse"
-  },
+  "description": "Biomedical search: FDA drugs, MeSH headings, ClinVar genomic variants with BM25 ranking.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "c3fst-mcp-server",
+    "transport": "sse"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-634bc2fad0168c92",
       "type": "registry",
-      "url": "https://pypi.org/project/c3fst-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/c3fst-mcp-server",
+      "registry": "pypi",
+      "version": "1.0.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mjandrews1/c3fst"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mjandrews1__c3fst-biomedical-search.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=250",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mjandrews1/c3fst-biomedical-search"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

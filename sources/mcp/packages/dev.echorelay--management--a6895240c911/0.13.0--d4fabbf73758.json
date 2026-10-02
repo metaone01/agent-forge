@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.echorelay/management",
+  "name": "dev.echorelay/management",
+  "displayName": "EchoRelay",
+  "version": "0.13.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A managed runtime for custom API integrations. Manage lines, endpoints, keys, logs and DLQ via MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.echorelay/management",
+    "remotes": [
+      {
+        "url": "https://mcp.echorelay.dev",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ecacec51bc87f68b",
+      "type": "other",
+      "url": "https://mcp.echorelay.dev",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.echorelay.dev"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=91",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.echorelay/management"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

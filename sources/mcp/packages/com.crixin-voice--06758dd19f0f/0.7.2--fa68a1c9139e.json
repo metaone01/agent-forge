@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.crixin/voice",
   "name": "com.crixin/voice",
+  "displayName": "Crixin Voice",
   "version": "0.7.2",
-  "versionScheme": "semver",
-  "description": "Give your AI a real phone: place calls, send SMS, fetch recordings and transcripts. Local or hosted.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/THELAZIZAGROUP/crixin",
-    "homepage": "https://crixin.com",
-    "readme": "https://github.com/THELAZIZAGROUP/crixin#readme"
-  },
-  "keywords": [
-    "Crixin Voice"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "crixin",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Give your AI a real phone: place calls, send SMS, fetch recordings and transcripts. Local or hosted.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "crixin",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://crixin-platform.vercel.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-71de7c6c342e4104",
       "type": "registry",
       "url": "https://www.npmjs.com/package/crixin",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.7.2"
+    },
+    {
+      "id": "upstream-c0783294efb48daa",
+      "type": "other",
+      "url": "https://crixin-platform.vercel.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://crixin-platform.vercel.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/THELAZIZAGROUP/crixin",
+    "homepage": "https://crixin.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.crixin__voice.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.crixin/voice"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

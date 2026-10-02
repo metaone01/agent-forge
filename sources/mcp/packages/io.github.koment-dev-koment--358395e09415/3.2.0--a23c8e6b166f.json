@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.koment-dev/koment",
   "name": "io.github.koment-dev/koment",
+  "displayName": "koment",
   "version": "3.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read and write checked code rationale stored outside source comments.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/koment-dev/koment",
-    "homepage": "https://github.com/koment-dev/koment",
-    "readme": "https://github.com/koment-dev/koment#readme"
-  },
-  "keywords": [
-    "koment"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/koment-dev/koment:3.2.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/koment-dev/koment:3.2.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/koment-dev/koment",
-      "priority": 10,
+      "id": "upstream-ff13f43d7a8aa318",
+      "type": "oci",
+      "url": "https://ghcr.io/koment-dev/koment:3.2.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/koment-dev/koment",
+    "homepage": "https://github.com/koment-dev/koment"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.koment-dev__koment.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=225",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.koment-dev/koment"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

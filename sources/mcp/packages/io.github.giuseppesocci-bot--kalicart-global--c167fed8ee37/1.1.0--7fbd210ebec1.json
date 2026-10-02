@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.giuseppesocci-bot/kalicart-global",
+  "name": "io.github.giuseppesocci-bot/kalicart-global",
+  "displayName": "io.github.giuseppesocci-bot/kalicart-global",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Federated commerce search across independent WooCommerce merchants. Keyless, read-only MCP server.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.giuseppesocci-bot/kalicart-global",
+    "remotes": [
+      {
+        "url": "https://global.kalicart.com/mcp-public",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://dashboard.kalicart.com/mcp-public",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7037550a6a5d9321",
+      "type": "other",
+      "url": "https://global.kalicart.com/mcp-public",
+      "install": {
+        "type": "api",
+        "url": "https://global.kalicart.com/mcp-public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-32ed56ab60c98bfb",
+      "type": "other",
+      "url": "https://dashboard.kalicart.com/mcp-public",
+      "install": {
+        "type": "api",
+        "url": "https://dashboard.kalicart.com/mcp-public"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/giuseppesocci-bot/kalicart-global",
+    "homepage": "https://bridge.kalicart.com/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=206",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.giuseppesocci-bot/kalicart-global"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

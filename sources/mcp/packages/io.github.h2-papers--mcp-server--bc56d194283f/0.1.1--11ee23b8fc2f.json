@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.h2-papers/mcp-server",
+  "name": "io.github.h2-papers/mcp-server",
+  "displayName": "水素分子医学文献データベース — Molecular hydrogen medical literature (H2 Papers)",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "PubMed molecular-hydrogen medical literature with delivery-aware safety notes inline.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@h2-papers/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://h2-papers.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d1385382066337c3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@h2-papers/mcp-server",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-1b4415c1efdc4057",
+      "type": "other",
+      "url": "https://h2-papers.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://h2-papers.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/h2-papers/h2-papers-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=208",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.h2-papers/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

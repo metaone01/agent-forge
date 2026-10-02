@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.yarrasys/kdbx",
   "name": "io.github.yarrasys/kdbx",
+  "displayName": "kdbx",
   "version": "0.3.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only access to secrets in a local KeePassXC vault. Runs commands with them injected.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/yarrasys/kdbx",
-    "homepage": "https://github.com/yarrasys/kdbx#agent-and-editor-integration",
-    "readme": "https://github.com/yarrasys/kdbx#readme"
-  },
-  "keywords": [
-    "kdbx"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/yarrasys/kdbx:0.3.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/yarrasys/kdbx:0.3.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/yarrasys/kdbx",
-      "priority": 10,
+      "id": "upstream-7071ac1b65d6fdad",
+      "type": "oci",
+      "url": "https://ghcr.io/yarrasys/kdbx:0.3.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/yarrasys/kdbx",
+    "homepage": "https://github.com/yarrasys/kdbx#agent-and-editor-integration"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.yarrasys__kdbx.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=353",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.yarrasys/kdbx"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

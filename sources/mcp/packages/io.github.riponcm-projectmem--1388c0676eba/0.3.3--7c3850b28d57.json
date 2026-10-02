@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.riponcm/projectmem",
   "name": "io.github.riponcm/projectmem",
+  "displayName": "io.github.riponcm/projectmem",
   "version": "0.3.3",
-  "versionScheme": "semver",
-  "description": "Coding agent memory — one local MCP server for every project. Warns before repeating failed fixes.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/riponcm/projectmem",
-    "readme": "https://github.com/riponcm/projectmem#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "projectmem",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Coding agent memory — one local MCP server for every project. Warns before repeating failed fixes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "projectmem",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c601ccfc54640dbc",
       "type": "registry",
-      "url": "https://pypi.org/project/projectmem/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/projectmem",
+      "registry": "pypi",
+      "version": "0.3.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/riponcm/projectmem"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.riponcm__projectmem.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=296",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.riponcm/projectmem"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

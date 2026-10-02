@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/agent-replay-debugger-mcp",
   "name": "io.github.CSOAI-ORG/agent-replay-debugger-mcp",
+  "displayName": "io.github.CSOAI-ORG/agent-replay-debugger-mcp",
   "version": "1.0.7",
-  "versionScheme": "semver",
-  "description": "Agent Replay Debugger MCP — record every agent step + deterministic replay. Step-debugger for",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/agent-replay-debugger-mcp",
-    "readme": "https://github.com/CSOAI-ORG/agent-replay-debugger-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "agent-replay-debugger-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Agent Replay Debugger MCP — record every agent step + deterministic replay. Step-debugger for",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "agent-replay-debugger-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/a2a/agent-replay-debugger",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6814b110ad404315",
       "type": "registry",
-      "url": "https://pypi.org/project/agent-replay-debugger-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/agent-replay-debugger-mcp",
+      "registry": "pypi",
+      "version": "1.0.7"
+    },
+    {
+      "id": "upstream-c736b52dc2b03f77",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/a2a/agent-replay-debugger",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/a2a/agent-replay-debugger"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/agent-replay-debugger-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__agent-replay-debugger-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=115",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/agent-replay-debugger-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

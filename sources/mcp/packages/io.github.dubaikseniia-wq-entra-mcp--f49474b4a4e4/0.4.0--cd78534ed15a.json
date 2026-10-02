@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dubaikseniia-wq/entra-mcp",
   "name": "io.github.dubaikseniia-wq/entra-mcp",
+  "displayName": "ENTRA Jobs",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Verified AI/tech jobs from company ATSs: search, fit matching, salary stats; employer job posting",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/dubaikseniia-wq/entra-mcp",
-    "homepage": "https://entracareers.com/ai-agents",
-    "readme": "https://github.com/dubaikseniia-wq/entra-mcp#readme"
-  },
-  "keywords": [
-    "ENTRA Jobs"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "entra-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Verified AI/tech jobs from company ATSs: search, fit matching, salary stats; employer job posting",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "entra-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.entracareers.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bc5a6ba65291513c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/entra-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.0"
+    },
+    {
+      "id": "upstream-eb4804ac592971ab",
+      "type": "other",
+      "url": "https://mcp.entracareers.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.entracareers.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/dubaikseniia-wq/entra-mcp",
+    "homepage": "https://entracareers.com/ai-agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dubaikseniia-wq__entra-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=196",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dubaikseniia-wq/entra-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

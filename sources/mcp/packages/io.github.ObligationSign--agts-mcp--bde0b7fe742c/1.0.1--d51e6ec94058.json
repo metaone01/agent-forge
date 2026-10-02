@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.ObligationSign/agts-mcp",
+  "name": "io.github.ObligationSign/agts-mcp",
+  "displayName": "AGTS MCP Server",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Sovereign MCP Gateway — 64 governed tools with Merkle transparency log. EU AI Act and SOC 2 ready.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.ObligationSign/agts-mcp",
+    "remotes": [
+      {
+        "url": "https://agts-mcp.obligationsign.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agts-mcp.obligationsign.com/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a44b0e8e7c0b09da",
+      "type": "other",
+      "url": "https://agts-mcp.obligationsign.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agts-mcp.obligationsign.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-ee7db388f7911696",
+      "type": "other",
+      "url": "https://agts-mcp.obligationsign.com/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://agts-mcp.obligationsign.com/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ObligationSign/agts-mcp",
+    "homepage": "https://obligationsign.com/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ObligationSign/agts-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

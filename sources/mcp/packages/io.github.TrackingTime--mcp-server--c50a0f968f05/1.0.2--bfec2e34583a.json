@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.TrackingTime/mcp-server",
+  "name": "io.github.TrackingTime/mcp-server",
+  "displayName": "io.github.TrackingTime/mcp-server",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "TrackingTime MCP server for profile, events, users, projects, tasks, customers, and services.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.TrackingTime/mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.trackingtime.co/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.trackingtime.co/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-17ad5e10556a26c7",
+      "type": "other",
+      "url": "https://mcp.trackingtime.co/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.trackingtime.co/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-fd8e4c35e339913f",
+      "type": "other",
+      "url": "https://mcp.trackingtime.co/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.trackingtime.co/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TrackingTime/mcp-server",
+    "homepage": "https://trackingtime.co"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=158",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.TrackingTime/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.85bc1c13742fe169f33821d0908592334df87d3fd4a7be993d164a04283b15e3",
+  "name": "pgmi-builds/omp-web/apps/omp-webui",
+  "displayName": "pgmi-builds/omp-web/apps/omp-webui",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "OMP provider for DeepSeek Harness (dsh): registers an AgentFactory on ctx.agents that spawns `omp --mode rpc` and bridges OMP's RPC stream into Dash Agent/Session contracts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "apps/omp-webui/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/pgmi-builds/omp-web",
+    "readme": "https://github.com/pgmi-builds/omp-web#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/pgmi-builds/omp-web/tree/HEAD/apps/omp-webui"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12428"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

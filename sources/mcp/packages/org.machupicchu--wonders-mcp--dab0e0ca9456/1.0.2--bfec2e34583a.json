@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.machupicchu/wonders-mcp",
+  "name": "org.machupicchu/wonders-mcp",
+  "displayName": "Wonders MCP",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP for heritage travel: search 500+ UNESCO destinations by region and intent.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.machupicchu/wonders-mcp",
+    "remotes": [
+      {
+        "url": "https://www.machupicchu.org/wp-json/wonders-mcp/v1/jsonrpc",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c48c009dbe974f46",
+      "type": "other",
+      "url": "https://www.machupicchu.org/wp-json/wonders-mcp/v1/jsonrpc",
+      "install": {
+        "type": "api",
+        "url": "https://www.machupicchu.org/wp-json/wonders-mcp/v1/jsonrpc"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.machupicchu.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=371",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.machupicchu/wonders-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

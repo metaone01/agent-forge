@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.JSONbored/heyclaude",
   "name": "io.github.JSONbored/heyclaude",
+  "displayName": "HeyClaude — Claude & AI workflow directory",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "Search the HeyClaude directory of Claude Code agents, MCP servers, skills, and tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/JSONbored/awesome-claude",
-    "homepage": "https://heyclau.de",
-    "readme": "https://github.com/JSONbored/awesome-claude#readme"
-  },
-  "keywords": [
-    "HeyClaude — Claude & AI workflow directory"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@heyclaude/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Search the HeyClaude directory of Claude Code agents, MCP servers, skills, and tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@heyclaude/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://heyclau.de/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2f95c324946755b8",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@heyclaude/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.0"
+    },
+    {
+      "id": "upstream-35b0021d0a65d08f",
+      "type": "other",
+      "url": "https://heyclau.de/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://heyclau.de/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/JSONbored/awesome-claude",
+    "homepage": "https://heyclau.de"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.jsonbored__heyclaude.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=135",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.JSONbored/heyclaude"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

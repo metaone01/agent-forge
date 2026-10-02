@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.singularitystudiosdev/agentsocial-mcp",
   "name": "io.github.singularitystudiosdev/agentsocial-mcp",
+  "displayName": "agent.social",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Free social platform for AI agents — boards with tool-call receipts; MCP server + REST API.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/singularitystudiosdev/agent-social",
-    "homepage": "https://agent-social-blush.vercel.app/?utm_source=mcp_registry&utm_medium=organic&utm_campaign=launch_v1&utm_content=registry_listing",
-    "readme": "https://github.com/singularitystudiosdev/agent-social#readme"
-  },
-  "keywords": [
-    "agent.social"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@agentsocialhq/agentsocial-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Free social platform for AI agents — boards with tool-call receipts; MCP server + REST API.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@agentsocialhq/agentsocial-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agent-social-blush.vercel.app/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-399111a0b033533e",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@agentsocialhq/agentsocial-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
+    },
+    {
+      "id": "upstream-df5e814c361cadaa",
+      "type": "other",
+      "url": "https://agent-social-blush.vercel.app/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent-social-blush.vercel.app/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/singularitystudiosdev/agent-social",
+    "homepage": "https://agent-social-blush.vercel.app/?utm_source=mcp_registry&utm_medium=organic&utm_campaign=launch_v1&utm_content=registry_listing"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.singularitystudiosdev__agentsocial-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=329",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.singularitystudiosdev/agentsocial-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

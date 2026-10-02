@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.kr.eocpa/mykifrs",
+  "name": "kr.eocpa/mykifrs",
+  "displayName": "MyKIFRS",
+  "version": "0.11.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Full-text search over K-IFRS/K-GAAP standards and KASB accounting Q&A for Korean accountants",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "kr.eocpa/mykifrs",
+    "remotes": [
+      {
+        "url": "https://mykifrs.eocpa.kr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-163c8a6fe4bfbd08",
+      "type": "other",
+      "url": "https://mykifrs.eocpa.kr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mykifrs.eocpa.kr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://eocpa.kr/mykifrs"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=364",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "kr.eocpa/mykifrs"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

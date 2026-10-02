@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.janpuc/koment",
   "name": "io.github.janpuc/koment",
+  "displayName": "koment",
   "version": "1.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read and write checked code rationale stored outside source comments.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/janpuc/koment",
-    "homepage": "https://github.com/janpuc/koment",
-    "readme": "https://github.com/janpuc/koment#readme"
-  },
-  "keywords": [
-    "koment"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/janpuc/koment:1.1.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/janpuc/koment:1.1.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/janpuc/koment",
-      "priority": 10,
+      "id": "upstream-639bdc21dbf11552",
+      "type": "oci",
+      "url": "https://ghcr.io/janpuc/koment:1.1.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/janpuc/koment",
+    "homepage": "https://github.com/janpuc/koment"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.janpuc__koment.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=216",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.janpuc/koment"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

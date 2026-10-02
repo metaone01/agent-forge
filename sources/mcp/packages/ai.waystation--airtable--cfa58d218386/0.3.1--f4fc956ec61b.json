@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.waystation/airtable",
+  "name": "ai.waystation/airtable",
+  "displayName": "ai.waystation/airtable",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Access and manage your Airtable bases, tables, and records seamlessly",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.waystation/airtable",
+    "remotes": [
+      {
+        "url": "https://waystation.ai/airtable/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://waystation.ai/airtable/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2c99ecfad14c260e",
+      "type": "other",
+      "url": "https://waystation.ai/airtable/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/airtable/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-043849f49328b949",
+      "type": "other",
+      "url": "https://waystation.ai/airtable/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/airtable/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/waystation-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.waystation/airtable"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mcpemails/emails",
+  "name": "com.mcpemails/emails",
+  "displayName": "MCP Emails",
+  "version": "1.0.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Never-stored live email: read, send, organize, schedule and auto-triage Gmail or any IMAP mailbox.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcpemails",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcpemails.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-87c2e18a270a5d8e",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/mcpemails",
+      "registry": "npm",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-aa0f8dda35826ff2",
+      "type": "other",
+      "url": "https://mcpemails.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpemails.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Albretsen/MCPEmails",
+    "homepage": "https://mcpemails.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpemails/emails"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

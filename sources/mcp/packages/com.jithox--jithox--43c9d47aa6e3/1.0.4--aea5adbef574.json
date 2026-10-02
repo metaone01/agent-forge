@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.jithox/jithox",
+  "name": "com.jithox/jithox",
+  "displayName": "Jithox payment preflight: check an invoice payment before your AI agent pays",
+  "version": "1.0.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Call preflight_payment before an agent pays an invoice: approval, IBAN, bank change; signed, free.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.jithox/jithox",
+    "remotes": [
+      {
+        "url": "https://jithox.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b193899db4de759c",
+      "type": "other",
+      "url": "https://jithox.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://jithox.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/victor-emmanuel-c/jithox-mcp",
+    "homepage": "https://jithox.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=56",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.jithox/jithox"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

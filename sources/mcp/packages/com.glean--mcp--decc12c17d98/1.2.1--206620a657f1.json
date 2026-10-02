@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.glean/mcp",
+  "name": "com.glean/mcp",
+  "displayName": "Glean Remote MCP Server",
+  "version": "1.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP Server that securely connects Glean Enterprise Knowledge with your IDE, LLM, or agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.glean/mcp",
+    "remotes": [
+      {
+        "url": "https://{baseUrl}/mcp/{server-name}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4ce2e1e40cc95ec6",
+      "type": "other",
+      "url": "https://{baseUrl}/mcp/{server-name}",
+      "install": {
+        "type": "api",
+        "url": "https://{baseUrl}/mcp/{server-name}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/gleanwork/remote-mcp-server",
+    "homepage": "https://docs.glean.com/administration/platform/mcp/enable-mcp-servers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=51",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.glean/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

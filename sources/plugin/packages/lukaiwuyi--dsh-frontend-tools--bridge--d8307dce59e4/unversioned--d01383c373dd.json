@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.d8307dce59e4bd601897ddc9d649c2820cc9e1fec13cb26d9d9568bcf33014ce",
+  "name": "lukaiwuyi/dsh-frontend-tools/bridge",
+  "displayName": "lukaiwuyi/dsh-frontend-tools/bridge",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH plugin: loopback WebSocket bridge that mirrors application frontend tools onto the agent's tool registry and forwards model calls back to the application — one bridge, many apps, key-based",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "bridge/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/lukaiwuyi/dsh-frontend-tools",
+    "readme": "https://github.com/lukaiwuyi/dsh-frontend-tools#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/lukaiwuyi/dsh-frontend-tools/tree/HEAD/bridge"
+    },
+    {
+      "id": "npm-cadc3eae4a52",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-frontend-tools-bridge",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "agents",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "3905"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "3961"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "6030"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "lukaiwuyi/dsh-frontend-tools"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "4536"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-frontend-tools-bridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

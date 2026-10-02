@@ -2,46 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.lj22503/invest-brain",
   "name": "io.github.lj22503/invest-brain",
+  "displayName": "io.github.lj22503/invest-brain",
   "version": "0.1.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "A-share investment research: quotes, financials, behavior patterns, and trading journals.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/lj22503/invest-brain",
-    "readme": "https://github.com/lj22503/invest-brain#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/lj22503/invest-brain/releases/download/v0.1.1/invest-brain.mcpb",
-    "transport": "sse"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/lj22503/invest-brain/releases/download/v0.1.1/invest-brain.mcpb",
+    "transport": "sse"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-3906fa2ff85d0a0b",
+      "type": "archive",
       "url": "https://github.com/lj22503/invest-brain/releases/download/v0.1.1/invest-brain.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/lj22503/invest-brain"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.lj22503__invest-brain.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=229",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.lj22503/invest-brain"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

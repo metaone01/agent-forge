@@ -2,49 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MontyGovernance/montycat-mcp",
   "name": "io.github.MontyGovernance/montycat-mcp",
+  "displayName": "Montycat MCP - Shared Memory for AI Agents",
   "version": "1.1.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Shared, persistent memory for AI agents, with semantic recall and live updates.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/MontyGovernance/montycat-mcp",
-    "readme": "https://github.com/MontyGovernance/montycat-mcp#readme"
-  },
-  "keywords": [
-    "Montycat MCP - Shared Memory for AI Agents"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "montycat-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "montycat-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d79f5dc3d65cbf58",
       "type": "registry",
-      "url": "https://pypi.org/project/montycat-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/montycat-mcp",
+      "registry": "pypi",
+      "version": "1.1.5"
+    },
+    {
+      "id": "upstream-c9b0c8133e399ef8",
+      "type": "oci",
+      "url": "https://docker.io/montygovernance/montycat-mcp:1.1.5",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MontyGovernance/montycat-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.montygovernance__montycat-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=142",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MontyGovernance/montycat-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

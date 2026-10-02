@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.cc3964602b3d40b461376f3a008c44d2735c2102c6785d65026b32ffd55ae5c1",
+  "name": "que3sui/dsh-darwin/packages/forge",
+  "displayName": "que3sui/dsh-darwin/packages/forge",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 自进化插件工厂：消费 dsh-sentinel 问题工单 → 分级合成（config/skill→template/code）→ 评测门（fork A/B + 回归套件 + 成本适应度）→ 晋级/自动回滚。dsh-darwin 双插件架构的 A 面。MVP 默认只启用零代码执行的两级。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "packages/forge/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/que3sui/dsh-darwin",
+    "readme": "https://github.com/que3sui/dsh-darwin#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/que3sui/dsh-darwin/tree/HEAD/packages/forge"
+    },
+    {
+      "id": "npm-880fcfa929be",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-darwin-forge",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "12947"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/que3sui__dsh-darwin--packages-forge.yml"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/que3sui__dsh-darwin--packages-sentinel.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13191"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-darwin-forge"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-darwin-sentinel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

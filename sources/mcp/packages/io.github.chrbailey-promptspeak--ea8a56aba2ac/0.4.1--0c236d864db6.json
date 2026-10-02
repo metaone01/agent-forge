@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.chrbailey/promptspeak",
   "name": "io.github.chrbailey/promptspeak",
+  "displayName": "PromptSpeak Governance",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "Pre-execution governance for AI agents. Validates tool calls before they execute.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/chrbailey/promptspeak-mcp-server",
-    "readme": "https://github.com/chrbailey/promptspeak-mcp-server#readme"
-  },
-  "keywords": [
-    "PromptSpeak Governance"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@chrbailey/promptspeak-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Pre-execution governance for AI agents. Validates tool calls before they execute.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@chrbailey/promptspeak-mcp-server",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f0ea75da7c4002ad",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@chrbailey/promptspeak-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/chrbailey/promptspeak-mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.chrbailey__promptspeak.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=181",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.chrbailey/promptspeak"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

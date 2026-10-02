@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fm.callboard/connector",
+  "name": "fm.callboard/connector",
+  "displayName": "Callboard",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Concert booking intelligence: run and read Promoter Briefs from Claude or ChatGPT.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fm.callboard/connector",
+    "remotes": [
+      {
+        "url": "https://api.callboard.fm/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.callboard.fm/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b4c48027fbb35646",
+      "type": "other",
+      "url": "https://api.callboard.fm/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.callboard.fm/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f92b1cb4fcf83177",
+      "type": "other",
+      "url": "https://api.callboard.fm/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.callboard.fm/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.callboard.fm/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fm.callboard/connector"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

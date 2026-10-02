@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.JaviMaligno/vitamind",
+  "name": "io.github.JaviMaligno/vitamind",
+  "displayName": "io.github.JaviMaligno/vitamind",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Know when the sun can make vitamin D where you are, for your skin type. Live UV data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.JaviMaligno/vitamind",
+    "remotes": [
+      {
+        "url": "https://getvitamind.app/api/mcp/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://getvitamind.app/api/mcp-auth/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3be0f1e92c880077",
+      "type": "other",
+      "url": "https://getvitamind.app/api/mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://getvitamind.app/api/mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-ad855f0fee30da23",
+      "type": "other",
+      "url": "https://getvitamind.app/api/mcp-auth/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://getvitamind.app/api/mcp-auth/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/JaviMaligno/vitamind",
+    "homepage": "https://getvitamind.app/connect"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=135",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.JaviMaligno/vitamind"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.kr.xdata/xdata-mcp",
+  "name": "kr.xdata/xdata-mcp",
+  "displayName": "XBOSS",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Korean national tax and social insurance filings, invoices and payroll data as MCP tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "kr.xdata/xdata-mcp",
+    "remotes": [
+      {
+        "url": "https://api.xdata.kr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-62a68215343353cb",
+      "type": "other",
+      "url": "https://api.xdata.kr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.xdata.kr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://xdata.kr"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=364",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "kr.xdata/xdata-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

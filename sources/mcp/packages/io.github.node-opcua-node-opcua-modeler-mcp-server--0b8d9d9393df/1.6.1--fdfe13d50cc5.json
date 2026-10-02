@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.node-opcua/node-opcua-modeler-mcp-server",
   "name": "io.github.node-opcua/node-opcua-modeler-mcp-server",
+  "displayName": "OPC UA Modeler",
   "version": "1.6.1",
-  "versionScheme": "semver",
-  "description": "OPC UA companion spec types, namespace dependencies, and engineering units for AI agents",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/node-opcua/node-opcua-modeler-mcp-server",
-    "homepage": "https://opcua-modeler.sterfive.io",
-    "readme": "https://github.com/node-opcua/node-opcua-modeler-mcp-server#readme"
-  },
-  "keywords": [
-    "OPC UA Modeler"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "node-opcua-modeler-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "OPC UA companion spec types, namespace dependencies, and engineering units for AI agents",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "node-opcua-modeler-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.opcua-modeler.sterfive.io/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-505be1748804fd45",
       "type": "registry",
       "url": "https://www.npmjs.com/package/node-opcua-modeler-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.6.1"
+    },
+    {
+      "id": "upstream-4bbbe0d66cebb7ce",
+      "type": "other",
+      "url": "https://api.opcua-modeler.sterfive.io/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.opcua-modeler.sterfive.io/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/node-opcua/node-opcua-modeler-mcp-server",
+    "homepage": "https://opcua-modeler.sterfive.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.node-opcua__node-opcua-modeler-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=265",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.node-opcua/node-opcua-modeler-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

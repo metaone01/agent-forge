@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.ai.lbrain/lbrain",
   "name": "ai.lbrain/lbrain",
+  "displayName": "LBrain",
   "version": "0.1.3",
-  "versionScheme": "semver",
-  "description": "Local-first agent memory. Source, date, bind/abstain. Permanent name: lbrain.ai/claim.html",
-  "license": "BSD-3-Clause",
-  "links": {
-    "repository": "https://github.com/metavolve-labs/lbrain-coding-agents",
-    "homepage": "https://lbrain.ai",
-    "readme": "https://github.com/metavolve-labs/lbrain-coding-agents#readme"
-  },
-  "keywords": [
-    "LBrain"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "lbrain-coding-agents",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Local-first agent memory. Source, date, bind/abstain. Permanent name: lbrain.ai/claim.html",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "lbrain-coding-agents",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5993ee6768b58b67",
       "type": "registry",
-      "url": "https://pypi.org/project/lbrain-coding-agents/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/lbrain-coding-agents",
+      "registry": "pypi",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/metavolve-labs/lbrain-coding-agents",
+    "homepage": "https://lbrain.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.lbrain__lbrain.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.lbrain/lbrain"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

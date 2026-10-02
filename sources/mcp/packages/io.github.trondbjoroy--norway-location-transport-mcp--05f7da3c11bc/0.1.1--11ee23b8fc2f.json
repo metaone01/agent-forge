@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.trondbjoroy/norway-location-transport-mcp",
+  "name": "io.github.trondbjoroy/norway-location-transport-mcp",
+  "displayName": "io.github.trondbjoroy/norway-location-transport-mcp",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Norwegian transport (Entur) and geodata (Kartverket): trips, departures, addresses, elevation.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "norway-location-transport-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://norway-location-transport-mcp.met-mcp-worker.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-31d0dc0905501d5d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/norway-location-transport-mcp",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-7bede224cef9dee0",
+      "type": "other",
+      "url": "https://norway-location-transport-mcp.met-mcp-worker.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://norway-location-transport-mcp.met-mcp-worker.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/trondbjoroy/norway-location-transport-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.trondbjoroy/norway-location-transport-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

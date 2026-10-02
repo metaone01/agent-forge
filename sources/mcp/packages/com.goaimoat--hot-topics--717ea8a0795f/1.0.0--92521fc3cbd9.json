@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.goaimoat/hot-topics",
+  "name": "com.goaimoat/hot-topics",
+  "displayName": "Hot Topics MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Trending topics from Weibo, Baidu, Zhihu & Google Trends for content and market research.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.goaimoat/hot-topics",
+    "remotes": [
+      {
+        "url": "https://hot.mcp.goaimoat.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-85fa91af25c9b4d0",
+      "type": "other",
+      "url": "https://hot.mcp.goaimoat.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://hot.mcp.goaimoat.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jayniebingyu-cyber/hot-topics-mcp",
+    "homepage": "https://github.com/jayniebingyu-cyber/hot-topics-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=51",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.goaimoat/hot-topics"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

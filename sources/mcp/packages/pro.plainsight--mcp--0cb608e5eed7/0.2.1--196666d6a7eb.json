@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pro.plainsight/mcp",
+  "name": "pro.plainsight/mcp",
+  "displayName": "Plainsight MCP",
+  "version": "0.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search the Plainsight playbook and review code against proven best practices.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pro.plainsight/mcp",
+    "remotes": [
+      {
+        "url": "https://playbook-mcp.plainsight.pro/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0c7d2b694066ca6a",
+      "type": "other",
+      "url": "https://playbook-mcp.plainsight.pro/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://playbook-mcp.plainsight.pro/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/PlainsightPro/plainsight-mcp",
+    "homepage": "https://playbook-mcp.plainsight.pro/authorize"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pro.plainsight/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

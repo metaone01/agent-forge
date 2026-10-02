@@ -2,48 +2,58 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Buddhima-JD3/sri-lanka-payslip",
   "name": "io.github.Buddhima-JD3/sri-lanka-payslip",
+  "displayName": "Sri Lanka Payslip",
   "version": "2026.27.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Source-backed Sri Lanka payslip tools for APIT/PAYE, EPF, ETF, stamp duty, and net pay.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Buddhima-JD3/sri-lanka-salary-calculator",
-    "readme": "https://github.com/Buddhima-JD3/sri-lanka-salary-calculator#readme"
-  },
-  "keywords": [
-    "Sri Lanka Payslip"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/buddhima-jd3/sri-lanka-payslip-mcp:2026.27.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/buddhima-jd3/sri-lanka-payslip-mcp:2026.27.2",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mypayslip.lk/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/buddhima-jd3/sri-lanka-payslip-mcp",
-      "priority": 10,
+      "id": "upstream-83ed84343cd2b8c8",
+      "type": "oci",
+      "url": "https://ghcr.io/buddhima-jd3/sri-lanka-payslip-mcp:2026.27.2",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-f9e1546026debf2e",
+      "type": "other",
+      "url": "https://mypayslip.lk/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mypayslip.lk/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Buddhima-JD3/sri-lanka-salary-calculator"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +66,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.buddhima-jd3__sri-lanka-payslip.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=115",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Buddhima-JD3/sri-lanka-payslip"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

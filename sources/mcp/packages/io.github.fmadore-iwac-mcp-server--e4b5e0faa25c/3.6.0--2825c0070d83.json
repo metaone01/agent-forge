@@ -2,49 +2,65 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.fmadore/iwac-mcp-server",
   "name": "io.github.fmadore/iwac-mcp-server",
+  "displayName": "Islam West Africa Collection (IWAC)",
   "version": "3.6.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only access to the Islam West Africa Collection via Hugging Face datasets.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/fmadore/iwac-mcp-server",
-    "homepage": "https://islam.zmo.de/s/westafrica/",
-    "readme": "https://github.com/fmadore/iwac-mcp-server#readme"
-  },
-  "keywords": [
-    "Islam West Africa Collection (IWAC)"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/fmadore/iwac-mcp-server/releases/download/v3.6.0/iwac-mcp-server-windows.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/fmadore/iwac-mcp-server/releases/download/v3.6.0/iwac-mcp-server-windows.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://islam.zmo.de/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-1099af08227adb4f",
+      "type": "archive",
       "url": "https://github.com/fmadore/iwac-mcp-server/releases/download/v3.6.0/iwac-mcp-server-windows.mcpb",
-      "priority": 10,
       "registry": "mcpb"
+    },
+    {
+      "id": "upstream-aa225e2cde78d8ee",
+      "type": "archive",
+      "url": "https://github.com/fmadore/iwac-mcp-server/releases/download/v3.6.0/iwac-mcp-server-macos.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-9e1391fcb8ebbba4",
+      "type": "other",
+      "url": "https://islam.zmo.de/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://islam.zmo.de/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/fmadore/iwac-mcp-server",
+    "homepage": "https://islam.zmo.de/s/westafrica/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +73,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.fmadore__iwac-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fmadore/iwac-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

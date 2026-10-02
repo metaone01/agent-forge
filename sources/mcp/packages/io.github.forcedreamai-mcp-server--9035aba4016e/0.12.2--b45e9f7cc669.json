@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.forcedreamai/mcp-server",
   "name": "io.github.forcedreamai/mcp-server",
+  "displayName": "io.github.forcedreamai/mcp-server",
   "version": "0.12.2",
-  "versionScheme": "semver",
-  "description": "Discover, invoke, and trustlessly verify ForceDream AI agents with cryptographic proofs. 17 tools.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/forcedreamai/forcedream-mcp",
-    "readme": "https://github.com/forcedreamai/forcedream-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@forcedream/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Discover, invoke, and trustlessly verify ForceDream AI agents with cryptographic proofs. 17 tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@forcedream/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.forcedream.ai/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-29b46db2afc2eab5",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@forcedream/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.12.2"
+    },
+    {
+      "id": "upstream-bfd94389584ce936",
+      "type": "other",
+      "url": "https://api.forcedream.ai/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.forcedream.ai/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/forcedreamai/forcedream-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.forcedreamai__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.forcedreamai/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

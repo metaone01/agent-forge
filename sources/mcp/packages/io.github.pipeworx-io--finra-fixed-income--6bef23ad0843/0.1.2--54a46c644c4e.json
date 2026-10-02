@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/finra-fixed-income",
+  "name": "io.github.pipeworx-io/finra-fixed-income",
+  "displayName": "Finra Fixed Income",
+  "version": "0.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "FINRA Fixed Income aggregate market data (fleet #530).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/finra-fixed-income",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/finra-fixed-income/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9807640d1ee9b84c",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/finra-fixed-income/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/finra-fixed-income/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-finra-fixed-income",
+    "homepage": "https://pipeworx.io/packs/finra-fixed-income"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=279",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/finra-fixed-income"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

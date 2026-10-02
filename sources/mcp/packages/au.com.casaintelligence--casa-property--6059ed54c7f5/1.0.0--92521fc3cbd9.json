@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.au.com.casaintelligence/casa-property",
+  "name": "au.com.casaintelligence/casa-property",
+  "displayName": "au.com.casaintelligence/casa-property",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Indicative SEQ Australia property planning intelligence: zones, overlays, subdivision, DA stats.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "au.com.casaintelligence/casa-property",
+    "remotes": [
+      {
+        "url": "https://api.casaintelligence.com.au/mcp/public/v1/messages",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-678d67449dce7d96",
+      "type": "other",
+      "url": "https://api.casaintelligence.com.au/mcp/public/v1/messages",
+      "install": {
+        "type": "api",
+        "url": "https://api.casaintelligence.com.au/mcp/public/v1/messages"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/robsonspooner-svg/Casa-Engine",
+    "homepage": "https://www.casaintelligence.com.au/for-ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "au.com.casaintelligence/casa-property"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

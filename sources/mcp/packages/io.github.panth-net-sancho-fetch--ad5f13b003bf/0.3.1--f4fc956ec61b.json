@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.panth-net/sancho-fetch",
   "name": "io.github.panth-net/sancho-fetch",
+  "displayName": "Sancho Fetch",
   "version": "0.3.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local-first public-data MCP server that writes inspectable records and working files.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/panth-net/sancho-fetch",
-    "homepage": "https://github.com/panth-net/sancho-fetch",
-    "readme": "https://github.com/panth-net/sancho-fetch#readme"
-  },
-  "keywords": [
-    "Sancho Fetch"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sancho-fetch",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sancho-fetch",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-ac199edce06b3cf2",
       "type": "registry",
-      "url": "https://pypi.org/project/sancho-fetch/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sancho-fetch",
+      "registry": "pypi",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-03416b8b4d7e0c03",
+      "type": "archive",
+      "url": "https://github.com/panth-net/sancho-fetch/releases/download/v0.3.1/sancho.mcpb",
+      "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/panth-net/sancho-fetch",
+    "homepage": "https://github.com/panth-net/sancho-fetch"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.panth-net__sancho-fetch.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=270",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.panth-net/sancho-fetch"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

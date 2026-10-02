@@ -2,49 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MontyGovernance/memocat-mcp",
   "name": "io.github.MontyGovernance/memocat-mcp",
+  "displayName": "MemoCat — Shared AI Memory",
   "version": "0.4.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "One shared, persistent memory across AI agents and systems, with semantic recall and live updates.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/MontyGovernance/memocat-mcp",
-    "readme": "https://github.com/MontyGovernance/memocat-mcp#readme"
-  },
-  "keywords": [
-    "MemoCat — Shared AI Memory"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "memocat-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "memocat-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f1356f3f2927ca66",
       "type": "registry",
-      "url": "https://pypi.org/project/memocat-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/memocat-mcp",
+      "registry": "pypi",
+      "version": "0.4.3"
+    },
+    {
+      "id": "upstream-01db0883f5a6148f",
+      "type": "oci",
+      "url": "https://docker.io/montygovernance/memocat-mcp:0.4.3",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MontyGovernance/memocat-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.montygovernance__memocat-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=142",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MontyGovernance/memocat-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

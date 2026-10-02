@@ -2,48 +2,48 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.arunmm8335/sysmcp",
   "name": "io.github.arunmm8335/sysmcp",
+  "displayName": "sysmcp",
   "version": "0.5.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Live Linux host signal (CPU, memory, processes, network, optional eBPF) for MCP clients.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/arunmm8335/sysmcp",
-    "readme": "https://github.com/arunmm8335/sysmcp#readme"
-  },
-  "keywords": [
-    "sysmcp"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/arunmm8335/sysmcp/releases/download/v0.5.0/sysmcp_0.5.0_linux_amd64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/arunmm8335/sysmcp/releases/download/v0.5.0/sysmcp_0.5.0_linux_amd64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-3d87e0cdab5cb93e",
+      "type": "archive",
       "url": "https://github.com/arunmm8335/sysmcp/releases/download/v0.5.0/sysmcp_0.5.0_linux_amd64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-007189140151b14c",
+      "type": "archive",
+      "url": "https://github.com/arunmm8335/sysmcp/releases/download/v0.5.0/sysmcp_0.5.0_linux_arm64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/arunmm8335/sysmcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +56,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.arunmm8335__sysmcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=172",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.arunmm8335/sysmcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

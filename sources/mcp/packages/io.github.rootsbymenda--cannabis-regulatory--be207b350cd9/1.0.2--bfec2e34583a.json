@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.rootsbymenda/cannabis-regulatory",
+  "name": "io.github.rootsbymenda/cannabis-regulatory",
+  "displayName": "io.github.rootsbymenda/cannabis-regulatory",
+  "version": "1.0.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Cannabis compliance: US state testing, INCB, Health Canada, EU precursors. Free.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.rootsbymenda/cannabis-regulatory",
+    "remotes": [
+      {
+        "url": "https://cannabis-mcp-server.rootsbybenda.workers.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://cannabis-mcp-server.rootsbybenda.workers.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c6e3165e0295d444",
+      "type": "other",
+      "url": "https://cannabis-mcp-server.rootsbybenda.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://cannabis-mcp-server.rootsbybenda.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f2100fbfb650c85d",
+      "type": "other",
+      "url": "https://cannabis-mcp-server.rootsbybenda.workers.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://cannabis-mcp-server.rootsbybenda.workers.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rootsbymenda/cannabis-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=298",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rootsbymenda/cannabis-regulatory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

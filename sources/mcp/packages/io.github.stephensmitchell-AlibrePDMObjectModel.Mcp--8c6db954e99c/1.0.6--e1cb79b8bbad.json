@@ -2,48 +2,41 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.stephensmitchell/AlibrePDMObjectModel.Mcp",
   "name": "io.github.stephensmitchell/AlibrePDMObjectModel.Mcp",
+  "displayName": "Alibre PDM MCP Server",
   "version": "1.0.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server exposing the Alibre PDM vault API: safes, projects, files, properties, versions.",
   "license": "unknown",
-  "links": {
-    "repository": "https://www.nuget.org/packages/AlibrePDMObjectModel.Mcp"
-  },
-  "keywords": [
-    "Alibre PDM MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "nuget",
-    "identifier": "AlibrePDMObjectModel.Mcp",
-    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "nuget",
+    "identifier": "AlibrePDMObjectModel.Mcp",
+    "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c5860a07e5e4296f",
       "type": "registry",
       "url": "https://www.nuget.org/packages/AlibrePDMObjectModel.Mcp",
-      "priority": 10,
-      "registry": "nuget"
+      "registry": "nuget",
+      "version": "1.0.6"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +49,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.stephensmitchell__alibrepdmobjectmodel.mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stephensmitchell/AlibrePDMObjectModel.Mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

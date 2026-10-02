@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.fyi.carbon/carbon-fyi",
+  "name": "fyi.carbon/carbon-fyi",
+  "displayName": "fyi.carbon/carbon-fyi",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Voluntary carbon market news and open carbon price data. Read-only, keyless.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "fyi.carbon/carbon-fyi",
+    "remotes": [
+      {
+        "url": "https://www.carbon.fyi/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b12ada0f20d3aa07",
+      "type": "other",
+      "url": "https://www.carbon.fyi/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.carbon.fyi/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Carbonmark/carbon.fyi-new",
+    "homepage": "https://www.carbon.fyi/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=99",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "fyi.carbon/carbon-fyi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

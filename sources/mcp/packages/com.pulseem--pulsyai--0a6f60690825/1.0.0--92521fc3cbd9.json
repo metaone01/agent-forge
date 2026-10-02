@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.pulseem/pulsyai",
+  "name": "com.pulseem/pulsyai",
+  "displayName": "PulsyAI",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Send SMS, WhatsApp & email, manage contacts and campaigns, and pull reports via Pulseem.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.pulseem/pulsyai",
+    "remotes": [
+      {
+        "url": "https://mcp.api.pulseem.com/mcp_{token}/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.ui-api.pulseem.com/mcp_{token}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-57c1b9b2ddada303",
+      "type": "other",
+      "url": "https://mcp.api.pulseem.com/mcp_{token}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.api.pulseem.com/mcp_{token}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-41fba32c937a0fdc",
+      "type": "other",
+      "url": "https://mcp.ui-api.pulseem.com/mcp_{token}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.ui-api.pulseem.com/mcp_{token}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=70",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.pulseem/pulsyai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

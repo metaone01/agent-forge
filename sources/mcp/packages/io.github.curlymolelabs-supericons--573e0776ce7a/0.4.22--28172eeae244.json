@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.curlymolelabs/supericons",
   "name": "io.github.curlymolelabs/supericons",
+  "displayName": "Supericons",
   "version": "0.4.22",
-  "versionScheme": "semver",
-  "description": "Multilingual semantic SVG icon search with previews for AI coding agents. 20,000+ icons.",
-  "license": "SEE LICENSE IN LICENSE",
-  "links": {
-    "repository": "https://github.com/curlymolelabs/supericons",
-    "readme": "https://github.com/curlymolelabs/supericons#readme"
-  },
-  "keywords": [
-    "Supericons"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@supericons/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Multilingual semantic SVG icon search with previews for AI coding agents. 20,000+ icons.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@supericons/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.supericons.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cfe04760b45502ce",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@supericons/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.22"
+    },
+    {
+      "id": "upstream-8f56dfbc75c7f2d2",
+      "type": "other",
+      "url": "https://mcp.supericons.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.supericons.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/curlymolelabs/supericons"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.curlymolelabs__supericons.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=187",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.curlymolelabs/supericons"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

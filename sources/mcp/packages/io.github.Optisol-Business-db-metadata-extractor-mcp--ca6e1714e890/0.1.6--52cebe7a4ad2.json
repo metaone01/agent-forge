@@ -2,47 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Optisol-Business/db-metadata-extractor-mcp",
   "name": "io.github.Optisol-Business/db-metadata-extractor-mcp",
+  "displayName": "io.github.Optisol-Business/db-metadata-extractor-mcp",
   "version": "0.1.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Extract database metadata from PostgreSQL, Snowflake, SQL Server, BigQuery, and Oracle.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Optisol-Business/db-metadata-extractor-mcp",
-    "readme": "https://github.com/Optisol-Business/db-metadata-extractor-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "db-metadata-extractor-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "db-metadata-extractor-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0d678f7d0557b167",
       "type": "registry",
-      "url": "https://pypi.org/project/db-metadata-extractor-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/db-metadata-extractor-mcp",
+      "registry": "pypi",
+      "version": "0.1.6"
+    },
+    {
+      "id": "upstream-8c1b57b29b97c877",
+      "type": "oci",
+      "url": "https://docker.io/optisolbusinesssol/db-metadata-extractor-mcp:0.1.6",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Optisol-Business/db-metadata-extractor-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.optisol-business__db-metadata-extractor-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=146",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Optisol-Business/db-metadata-extractor-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

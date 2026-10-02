@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.neonjelly/mcp",
+  "name": "io.neonjelly/mcp",
+  "displayName": "Neonjelly",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP over 1.37M Shopify stores. 14-day trial, 100/day, no account. Paid from $29/mo.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.neonjelly/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.neonjelly.io/c/{connect_token}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d71742fd024aefa0",
+      "type": "other",
+      "url": "https://mcp.neonjelly.io/c/{connect_token}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.neonjelly.io/c/{connect_token}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/germanas/neonjelly-mcp-public",
+    "homepage": "https://www.neonjelly.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=357",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.neonjelly/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

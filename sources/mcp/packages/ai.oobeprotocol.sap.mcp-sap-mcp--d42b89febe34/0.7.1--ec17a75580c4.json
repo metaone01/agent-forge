@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.ai.oobeprotocol.sap.mcp/sap-mcp",
   "name": "ai.oobeprotocol.sap.mcp/sap-mcp",
+  "displayName": "SAP MCP Server",
   "version": "0.7.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Solana-native MCP gateway for SAP, DeFi tools, SNS identity, and x402 payments.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/OOBE-PROTOCOL/sap-mcp",
-    "homepage": "https://mcp.sap.oobeprotocol.ai/",
-    "readme": "https://github.com/OOBE-PROTOCOL/sap-mcp#readme"
-  },
-  "keywords": [
-    "SAP MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@oobe-protocol-labs/sap-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@oobe-protocol-labs/sap-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.sap.oobeprotocol.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c14b64296b8a769c",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@oobe-protocol-labs/sap-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.7.1"
+    },
+    {
+      "id": "upstream-60685503f972914e",
+      "type": "other",
+      "url": "https://mcp.sap.oobeprotocol.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.sap.oobeprotocol.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/OOBE-PROTOCOL/sap-mcp",
+    "homepage": "https://mcp.sap.oobeprotocol.ai/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.oobeprotocol.sap.mcp__sap-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=9",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.oobeprotocol.sap.mcp/sap-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

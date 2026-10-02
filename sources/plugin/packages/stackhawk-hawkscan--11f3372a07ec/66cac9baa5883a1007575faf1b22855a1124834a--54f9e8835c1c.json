@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.stackhawk-hawkscan",
+  "name": "stackhawk-hawkscan",
+  "displayName": "stackhawk/agent-skills/plugins/hawkscan",
+  "version": "66cac9baa5883a1007575faf1b22855a1124834a",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Configure, run, and interpret HawkScan DAST results inside Claude Code. Generates stackhawk.yml configs, runs scans via CLI or Docker, and transforms security findings into prioritized fix tasks for your coding agent.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "plugins/hawkscan/.claude-plugin/plugin.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/stackhawk/agent-skills",
+    "readme": "https://github.com/stackhawk/agent-skills#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/stackhawk/agent-skills/tree/66cac9baa5883a1007575faf1b22855a1124834a/plugins/hawkscan",
+      "ref": "66cac9baa5883a1007575faf1b22855a1124834a"
+    }
+  ],
+  "keywords": [],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": ".claude-plugin/marketplace.json",
+          "entry": "stackhawk-hawkscan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.gg.batru/batru-mcp",
+  "name": "gg.batru/batru-mcp",
+  "displayName": "Batru — Competitive Game Intelligence for AI Agents",
+  "version": "0.7.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Live competitive-game predictions, meta data and decision tools for AI agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "batru-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://batru.gg/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-169ac0af02112e8a",
+      "type": "registry",
+      "url": "https://pypi.org/project/batru-mcp",
+      "registry": "pypi",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-dc9408f576300a70",
+      "type": "other",
+      "url": "https://batru.gg/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://batru.gg/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/batrugg/batru-mcp",
+    "homepage": "https://batru.gg"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "gg.batru/batru-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.bitcoinsllm/autotrade",
+  "name": "com.bitcoinsllm/autotrade",
+  "displayName": "Autotrade — Autonomous Trading Agents",
+  "version": "1.4.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Deploy autonomous LLM trading agents and drive them over MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.bitcoinsllm/autotrade",
+    "remotes": [
+      {
+        "url": "https://agent.bitcoinsllm.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://agent.bitcoinsllm.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c6b69a02019152a3",
+      "type": "other",
+      "url": "https://agent.bitcoinsllm.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent.bitcoinsllm.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-1a766c6406475168",
+      "type": "other",
+      "url": "https://agent.bitcoinsllm.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://agent.bitcoinsllm.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://bitcoinsllm.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=36",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.bitcoinsllm/autotrade"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.vaquarkhan/mcp-bastion",
   "name": "io.github.vaquarkhan/mcp-bastion",
+  "displayName": "MCP-Bastion",
   "version": "5.1.0",
-  "versionScheme": "semver",
-  "description": "Security middleware for MCP. Blocks prompt injection, PII leakage, and resource exhaustion.",
-  "license": "Other/Proprietary License",
-  "links": {
-    "repository": "https://github.com/vaquarkhan/MCP-Bastion",
-    "readme": "https://github.com/vaquarkhan/MCP-Bastion#readme"
-  },
-  "keywords": [
-    "MCP-Bastion"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-bastion-python",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Security middleware for MCP. Blocks prompt injection, PII leakage, and resource exhaustion.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-bastion-python",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d6ffbcd00ea3e4ea",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-bastion-python/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-bastion-python",
+      "registry": "pypi",
+      "version": "5.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/vaquarkhan/MCP-Bastion"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.vaquarkhan__mcp-bastion.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=345",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.vaquarkhan/mcp-bastion"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

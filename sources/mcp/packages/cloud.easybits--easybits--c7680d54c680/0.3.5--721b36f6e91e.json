@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.easybits/easybits",
+  "name": "cloud.easybits/easybits",
+  "displayName": "EasyBits",
+  "version": "0.3.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Persistent Linux microVMs for agents: root, internet, sub-second resume and a public URL.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@easybits.cloud/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.easybits.cloud/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-85a2c61affac51cc",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@easybits.cloud/mcp",
+      "registry": "npm",
+      "version": "0.3.4"
+    },
+    {
+      "id": "upstream-171af0a9c9adc94f",
+      "type": "other",
+      "url": "https://www.easybits.cloud/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.easybits.cloud/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/blissito/easybits",
+    "homepage": "https://www.easybits.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cloud.easybits/easybits"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

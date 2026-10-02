@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.danchev/openmarkets",
   "name": "io.github.danchev/openmarkets",
+  "displayName": "Open Markets",
   "version": "0.1.0b1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Financial market data, SEC filings, macroeconomic telemetry, and portfolio analytics through MCP.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/danchev/openmarkets",
-    "readme": "https://github.com/danchev/openmarkets#readme"
-  },
-  "keywords": [
-    "Open Markets"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "openmarkets",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "openmarkets",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6202702577a4b7cb",
       "type": "registry",
-      "url": "https://pypi.org/project/openmarkets/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/openmarkets",
+      "registry": "pypi",
+      "version": "0.1.0b1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/danchev/openmarkets"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.danchev__openmarkets.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=190",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.danchev/openmarkets"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

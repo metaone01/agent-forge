@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pro.ledgerhq/ledgerhq",
+  "name": "pro.ledgerhq/ledgerhq",
+  "displayName": "LedgerHQ",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Double-entry bookkeeping: accounts, journal entries, bank feeds, reconciliation, and reports.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pro.ledgerhq/ledgerhq",
+    "remotes": [
+      {
+        "url": "https://ledgerhq.pro/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4a901c4053eab452",
+      "type": "other",
+      "url": "https://ledgerhq.pro/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ledgerhq.pro/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ChrisRagainTR/ledgerhq-pro",
+    "homepage": "https://ledgerhq.pro/docs/guides/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pro.ledgerhq/ledgerhq"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

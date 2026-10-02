@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.abbacusgroup/cortex",
   "name": "io.github.abbacusgroup/cortex",
+  "displayName": "Cortex",
   "version": "0.2.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Persistent knowledge system with OWL-RL reasoning and 22 MCP tools. Local-first.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/abbacusgroup/Cortex",
-    "readme": "https://github.com/abbacusgroup/Cortex#readme"
-  },
-  "keywords": [
-    "Cortex"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "abbacus-cortex",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "abbacus-cortex",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1a95dd5ff248ee0f",
       "type": "registry",
-      "url": "https://pypi.org/project/abbacus-cortex/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/abbacus-cortex",
+      "registry": "pypi",
+      "version": "0.2.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/abbacusgroup/Cortex"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.abbacusgroup__cortex.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=164",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.abbacusgroup/cortex"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

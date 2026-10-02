@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.org.pennyforge.api/sendcheck",
+  "name": "org.pennyforge.api/sendcheck",
+  "displayName": "SendCheck — EVM address verification (x402)",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pre-send EVM address checks: free pre-check, $0.01 check, $0.05 deep scan. x402: payment is auth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "org.pennyforge.api/sendcheck",
+    "remotes": [
+      {
+        "url": "https://api.pennyforge.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-963c0b05d80673d2",
+      "type": "other",
+      "url": "https://api.pennyforge.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.pennyforge.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pennyforgeorg/sendcheck-verify"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.pennyforge.api/sendcheck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

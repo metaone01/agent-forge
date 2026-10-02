@@ -2,46 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.at.baeck/nginx-proxy-manager",
   "name": "at.baeck/nginx-proxy-manager",
+  "displayName": "at.baeck/nginx-proxy-manager",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "MCP server for Nginx Proxy Manager with full API coverage (43 tools)",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://pypi.org/project/nginx-proxy-manager-mcp-full/"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "nginx-proxy-manager-mcp-full",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Nginx Proxy Manager with full API coverage (43 tools)",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "nginx-proxy-manager-mcp-full",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-18dc31630bca4a6c",
       "type": "registry",
-      "url": "https://pypi.org/project/nginx-proxy-manager-mcp-full/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/nginx-proxy-manager-mcp-full",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\at.baeck__nginx-proxy-manager.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "at.baeck/nginx-proxy-manager"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

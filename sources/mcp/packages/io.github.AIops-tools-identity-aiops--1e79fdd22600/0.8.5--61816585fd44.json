@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.AIops-tools/identity-aiops",
   "name": "io.github.AIops-tools/identity-aiops",
+  "displayName": "Identity AIops",
   "version": "0.8.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Governed Keycloak + authentik identity ops: users, events, clients, MFA, RCA. 29 tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/AIops-tools/Identity-AIops",
-    "readme": "https://github.com/AIops-tools/Identity-AIops#readme"
-  },
-  "keywords": [
-    "Identity AIops"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "identity-aiops",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "identity-aiops",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-afc0e89d21fecb3f",
       "type": "registry",
-      "url": "https://pypi.org/project/identity-aiops/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/identity-aiops",
+      "registry": "pypi",
+      "version": "0.8.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/AIops-tools/Identity-AIops"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aiops-tools__identity-aiops.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=107",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AIops-tools/identity-aiops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.typestoofast/finddoc",
   "name": "io.github.typestoofast/finddoc",
+  "displayName": "Find doctors and specialists in the Greater Toronto Area",
   "version": "0.4.1",
-  "versionScheme": "semver",
-  "description": "GTA doctor, specialist, clinic, language, availability, and freshness data through REST and MCP.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/typestoofast/finddoc",
-    "homepage": "https://www.finddoc.ca/developers/mcp",
-    "readme": "https://github.com/typestoofast/finddoc#readme"
-  },
-  "keywords": [
-    "Find doctors and specialists in the Greater Toronto Area"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@find-doc/finddoc-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "GTA doctor, specialist, clinic, language, availability, and freshness data through REST and MCP.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@find-doc/finddoc-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.finddoc.ca/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2b37d5c390b637a2",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@find-doc/finddoc-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.1"
+    },
+    {
+      "id": "upstream-7d66b8fa8e15c502",
+      "type": "other",
+      "url": "https://www.finddoc.ca/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.finddoc.ca/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/typestoofast/finddoc",
+    "homepage": "https://www.finddoc.ca/developers/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.typestoofast__finddoc.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=344",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.typestoofast/finddoc"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

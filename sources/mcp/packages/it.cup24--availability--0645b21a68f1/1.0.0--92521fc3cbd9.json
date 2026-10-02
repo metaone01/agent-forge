@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.it.cup24/availability",
+  "name": "it.cup24/availability",
+  "displayName": "Cup24.it Availability",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search private healthcare appointment availability across Cup24.it: services, doctors, clinics.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "it.cup24/availability",
+    "remotes": [
+      {
+        "url": "https://mcpserver.cup24.it/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5e5ee75df953fc2b",
+      "type": "other",
+      "url": "https://mcpserver.cup24.it/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpserver.cup24.it/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cup24.it"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=363",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "it.cup24/availability"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

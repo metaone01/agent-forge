@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.2f18f5459f11370f5dd8dfa2491264eb25d3ccce5b02493d774d140adb58a272",
+  "name": "anthropics/claude-plugins-official/plugins/mcp-server-dev/skills/build-mcp-server",
+  "displayName": "anthropics/claude-plugins-official/plugins/mcp-server-dev/skills/build-mcp-server",
+  "version": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "This skill should be used when the user asks to \"build an MCP server\", \"create an MCP\", \"make an MCP integration\", \"wrap an API for Claude\", \"expose tools to Claude\", \"make an MCP app\", or discusses building something with the Model Context Protocol. It is the entry point for MCP server development — it interrogates the user about their use case, determines the right deployment model (remote HTTP, MCPB, local stdio), picks a tool-design pattern, and hands off to specialized skills.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "plugins/mcp-server-dev/skills/build-mcp-server/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "readme": "https://github.com/anthropics/claude-plugins-official/blob/ab024cdcfa7ca80be204acd4907656ba5a968589/plugins/mcp-server-dev/skills/build-mcp-server/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/ab024cdcfa7ca80be204acd4907656ba5a968589/plugins/mcp-server-dev/skills/build-mcp-server",
+      "ref": "ab024cdcfa7ca80be204acd4907656ba5a968589"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": "plugins/mcp-server-dev/skills/build-mcp-server/SKILL.md"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

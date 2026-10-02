@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.alphanume/datasets",
+  "name": "com.alphanume/datasets",
+  "displayName": "Alphanume Datasets",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Point-in-time US equity & options data: vol premium, earnings moves, dilution, FDA events, splits",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.alphanume/datasets",
+    "remotes": [
+      {
+        "url": "https://mcp.alphanume.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.alphanume.com/key/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bd98d793985bb953",
+      "type": "other",
+      "url": "https://mcp.alphanume.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.alphanume.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-06acc13558595f0a",
+      "type": "other",
+      "url": "https://mcp.alphanume.com/key/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.alphanume.com/key/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://alphanume.com/docs/mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=33",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.alphanume/datasets"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

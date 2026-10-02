@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.com.mcpbundles/uk-property-business",
   "name": "com.mcpbundles/uk-property-business",
+  "displayName": "UK Property & Business Intelligence MCP Server from MCPBundles",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Search UK companies, land registry prices, charities, OS locations, and traffic data",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/thinkchainai/mcpbundles",
-    "homepage": "https://mcpbundles.com/skills/uk-property-business",
-    "readme": "https://github.com/thinkchainai/mcpbundles#readme"
-  },
-  "keywords": [
-    "UK Property & Business Intelligence MCP Server from MCPBundles"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-property-business-v1.0.0+build.de7d29a8/uk-property-business.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-property-business-v1.0.0+build.de7d29a8/uk-property-business.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.mcpbundles.com/bundle/uk-property-business/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1095167873/b498b103-5c2b-41b4-ba6e-309c4ce7de5c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T10%3A47%3A23Z&rscd=attachment%3B+filename%3Duk-property-business.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T09%3A47%3A17Z&ske=2026-09-22T10%3A47%3A23Z&sks=b&skv=2018-11-09&sig=v0Lu1BtxAF61vzgtxmqALU4Veo4HbJfvN2%2BxBLWGZjE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3Mzg1OCwibmJmIjoxNzkwMDcyMDU4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.PumgKuF7EOQZPbYQfWBVVkU0dN4Pg5NuV4DyAhKLsmc&response-content-disposition=attachment%3B%20filename%3Duk-property-business.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
+      "id": "upstream-a01ab8096cdacd24",
+      "type": "archive",
+      "url": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-property-business-v1.0.0+build.de7d29a8/uk-property-business.mcpb",
       "registry": "mcpb"
+    },
+    {
+      "id": "upstream-8c1410d359e503e0",
+      "type": "other",
+      "url": "https://mcp.mcpbundles.com/bundle/uk-property-business/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mcpbundles.com/bundle/uk-property-business/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/thinkchainai/mcpbundles",
+    "homepage": "https://mcpbundles.com/skills/uk-property-business"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mcpbundles__uk-property-business.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpbundles/uk-property-business"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

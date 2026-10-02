@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.f51dd4ff71c646e5e690d2aa15d451e46107a710359edc402e45558feea678f0",
+  "name": "sixtysevenlf/dsh-routing-suite-opencode-go/injector",
+  "displayName": "sixtysevenlf/dsh-routing-suite-opencode-go/injector",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "超级模组注入器：运行时注入任意本地 DSH 插件包（junction 链接 + loader.create，不碰 patch/package.json/不重启），热重载全家桶 + 开发侧挂区一键转正 + 一键卸载 + 路由自愈 + 插件管理 UI（设置页：列表/卸载/拖入内化），清单持久化重启自动恢复——DSH 生态的 BepInEx 式模组注入入口",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "injector/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/sixtysevenlf/dsh-routing-suite-opencode-go",
+    "readme": "https://github.com/sixtysevenlf/dsh-routing-suite-opencode-go#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/sixtysevenlf/dsh-routing-suite-opencode-go/tree/HEAD/injector"
+    }
+  ],
+  "keywords": [
+    "models",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "8159"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "6851"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "9833"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "5723"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

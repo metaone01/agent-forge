@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.traql/mcp-server",
   "name": "io.traql/mcp-server",
+  "displayName": "traql",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "AML risk scoring for crypto addresses and transactions on Ethereum, BSC, TRON, TON, Bitcoin",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/traql/mcp-server",
-    "homepage": "https://traql.io",
-    "readme": "https://github.com/traql/mcp-server#readme"
-  },
-  "keywords": [
-    "traql"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@traql/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AML risk scoring for crypto addresses and transactions on Ethereum, BSC, TRON, TON, Bitcoin",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@traql/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-65861d42ff5d8082",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@traql/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/traql/mcp-server",
+    "homepage": "https://traql.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.traql__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=360",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.traql/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

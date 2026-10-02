@@ -2,49 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cesteral/gads-mcp",
   "name": "io.github.cesteral/gads-mcp",
+  "displayName": "Google Ads MCP Server",
   "version": "1.3.0",
-  "versionScheme": "semver",
-  "description": "Google Ads management — campaign writes, GAQL reporting, bulk mutate, validation, and previews",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/cesteral/mcp-open-advertising",
-    "readme": "https://github.com/cesteral/mcp-open-advertising#readme"
-  },
-  "keywords": [
-    "Google Ads MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@cesteral/gads-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Google Ads management — campaign writes, GAQL reporting, bulk mutate, validation, and previews",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cesteral/gads-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://{host}/gads-mcp/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4ae116840fabaaa8",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@cesteral/gads-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.3.0"
+    },
+    {
+      "id": "upstream-70f159e2676a806e",
+      "type": "other",
+      "url": "https://{host}/gads-mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://{host}/gads-mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/cesteral/mcp-open-advertising"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cesteral__gads-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=181",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cesteral/gads-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

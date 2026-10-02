@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.d313005745f543d4e6d33a3cbe2cde9b3ecacead34e9a1bab1f754cd8598dcc2",
+  "name": "levodoubt/dsh-longtext-input",
+  "displayName": "levodoubt/dsh-longtext-input",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness 长文本输入插件：在输入框工具栏加一个「长文本」按钮，弹出编辑器，保存后把正文写入工作区 .dsh-longtext/ 下的 md 文件，并把 @ 引用注入输入框。用于超长粘贴（报错日志、会议记录、文档）而不让聊天界面变乱。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/levodoubt/dsh-longtext-input",
+    "readme": "https://github.com/levodoubt/dsh-longtext-input#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/levodoubt/dsh-longtext-input"
+    },
+    {
+      "id": "npm-802a595e3e5f",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-longtext-input",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "capabilities",
+    "observability"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15917"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/levodoubt__dsh-longtext-input.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "14542"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

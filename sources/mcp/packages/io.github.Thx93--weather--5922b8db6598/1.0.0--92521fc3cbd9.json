@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Thx93/weather",
+  "name": "io.github.Thx93/weather",
+  "displayName": "Weather",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "US weather for AI agents: active NWS alerts by state, 5-period forecasts by lat/lon. Paid per call.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Thx93/weather",
+    "remotes": [
+      {
+        "url": "https://agent-evidence-api.thx93.workers.dev/weather/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-17c239c2420588b3",
+      "type": "other",
+      "url": "https://agent-evidence-api.thx93.workers.dev/weather/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent-evidence-api.thx93.workers.dev/weather/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Thx93/mcp-weather-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=157",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Thx93/weather"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

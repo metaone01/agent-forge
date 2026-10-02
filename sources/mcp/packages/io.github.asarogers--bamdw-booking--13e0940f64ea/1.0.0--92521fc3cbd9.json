@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.asarogers/bamdw-booking",
+  "name": "io.github.asarogers/bamdw-booking",
+  "displayName": "Bay Area Mobile Dog Wash Booking",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check prices by dog size, see openings, and book a mobile dog wash in San Jose + South Bay",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.asarogers/bamdw-booking",
+    "remotes": [
+      {
+        "url": "https://bayareamobiledogwash.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1ad084d7b203ba27",
+      "type": "other",
+      "url": "https://bayareamobiledogwash.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bayareamobiledogwash.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/asarogers/bamdw-mcp",
+    "homepage": "https://bayareamobiledogwash.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=172",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.asarogers/bamdw-booking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

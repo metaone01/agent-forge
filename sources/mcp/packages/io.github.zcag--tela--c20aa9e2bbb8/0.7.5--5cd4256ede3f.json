@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.zcag/tela",
+  "name": "io.github.zcag/tela",
+  "displayName": "io.github.zcag/tela",
+  "version": "0.7.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Self-hostable team wiki; agents read & write it via MCP; Atlas turns your repo into a cited wiki.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "tela-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://telawiki.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8caf51d6b1db0691",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/tela-mcp",
+      "registry": "npm",
+      "version": "0.7.4"
+    },
+    {
+      "id": "upstream-e386311bc34becea",
+      "type": "other",
+      "url": "https://telawiki.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://telawiki.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/zcag/tela",
+    "homepage": "https://telawiki.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=354",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.zcag/tela"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

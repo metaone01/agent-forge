@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Nantiai/ocl-standard",
   "name": "io.github.Nantiai/ocl-standard",
+  "displayName": "OCL Context Layer",
   "version": "0.1.0-alpha.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Reference MCP server for OCL, an open standard giving AI agents scoped business meaning for Odoo.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Nantiai/ocl-standard",
-    "homepage": "https://nanti.ai",
-    "readme": "https://github.com/Nantiai/ocl-standard#readme"
-  },
-  "keywords": [
-    "OCL Context Layer"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/nantiai/ocl-examples:0.1.0-alpha.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/nantiai/ocl-examples:0.1.0-alpha.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/nantiai/ocl-examples",
-      "priority": 10,
+      "id": "upstream-732c0463094d6448",
+      "type": "oci",
+      "url": "https://ghcr.io/nantiai/ocl-examples:0.1.0-alpha.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Nantiai/ocl-standard",
+    "homepage": "https://nanti.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nantiai__ocl-standard.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=143",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Nantiai/ocl-standard"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

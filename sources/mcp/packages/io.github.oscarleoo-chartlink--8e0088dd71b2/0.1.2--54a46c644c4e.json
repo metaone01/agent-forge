@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.oscarleoo/chartlink",
   "name": "io.github.oscarleoo/chartlink",
+  "displayName": "chartlink",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Charts and tables for AI agents with live-updating embed links. No account: signup returns a key.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/oscarleoo/chartlink-agents",
-    "homepage": "https://chartlink.app",
-    "readme": "https://github.com/oscarleoo/chartlink-agents#readme"
-  },
-  "keywords": [
-    "chartlink"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "chartlink-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Charts and tables for AI agents with live-updating embed links. No account: signup returns a key.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "chartlink-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://chartlink.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d800b088cf875bf2",
       "type": "registry",
       "url": "https://www.npmjs.com/package/chartlink-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-5d37e405a1830317",
+      "type": "other",
+      "url": "https://chartlink.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://chartlink.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/oscarleoo/chartlink-agents",
+    "homepage": "https://chartlink.app"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.oscarleoo__chartlink.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=269",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.oscarleoo/chartlink"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.loopxxi/loop-mcp",
+  "name": "com.loopxxi/loop-mcp",
+  "displayName": "loop-mcp",
+  "version": "2.2.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "L402 MCP: 5 paid BTC/Lightning tools + fiat credits, 10-25 sats/call.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.loopxxi/loop-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.loopxxi.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3494e7ccc76fa31b",
+      "type": "other",
+      "url": "https://mcp.loopxxi.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.loopxxi.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Loop-XXI/loop-mcp",
+    "homepage": "https://loopxxi.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=59",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.loopxxi/loop-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

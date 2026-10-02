@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aliengineering-byte/gaugemesh",
   "name": "io.github.aliengineering-byte/gaugemesh",
+  "displayName": "GaugeMesh",
   "version": "0.4.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Route MCP capabilities through deterministic identity, policy, budget, and deadline constraints.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/aliengineering-byte/gaugemesh",
-    "homepage": "https://aliengineering-byte.github.io/gaugemesh/",
-    "readme": "https://github.com/aliengineering-byte/gaugemesh#readme"
-  },
-  "keywords": [
-    "GaugeMesh"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/aliengineering-byte/gaugemesh@sha256:69f3ccb7c2fdcd9b6897c99eba22d18be1384957bb2dbdf760f8273ee2e43189",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/aliengineering-byte/gaugemesh@sha256:69f3ccb7c2fdcd9b6897c99eba22d18be1384957bb2dbdf760f8273ee2e43189",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/aliengineering-byte/gaugemesh",
-      "priority": 10,
+      "id": "upstream-0537d93511234722",
+      "type": "oci",
+      "url": "https://ghcr.io/aliengineering-byte/gaugemesh@sha256:69f3ccb7c2fdcd9b6897c99eba22d18be1384957bb2dbdf760f8273ee2e43189",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aliengineering-byte/gaugemesh",
+    "homepage": "https://aliengineering-byte.github.io/gaugemesh/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aliengineering-byte__gaugemesh.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=168",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aliengineering-byte/gaugemesh"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

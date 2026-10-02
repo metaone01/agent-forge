@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.getspawnpoint/spawnpoint",
+  "name": "com.getspawnpoint/spawnpoint",
+  "displayName": "spawnpoint",
+  "version": "0.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Deploy the small apps your agent builds: one tool call returns a live, private shareable HTTPS link.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.getspawnpoint/spawnpoint",
+    "remotes": [
+      {
+        "url": "https://app.getspawnpoint.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5d6a071989cf0cf8",
+      "type": "other",
+      "url": "https://app.getspawnpoint.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.getspawnpoint.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/spawnpoint-inc/spawnpoint-plugin",
+    "homepage": "https://getspawnpoint.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=50",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.getspawnpoint/spawnpoint"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

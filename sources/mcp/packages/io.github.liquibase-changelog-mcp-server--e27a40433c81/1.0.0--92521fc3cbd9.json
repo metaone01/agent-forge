@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.liquibase/changelog-mcp-server",
   "name": "io.github.liquibase/changelog-mcp-server",
+  "displayName": "Liquibase Changelog MCP Server",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Convert natural language into validated Liquibase XML or SQL changesets. 19 tools, 12 databases.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/liquibase/liquibase-mcp-changelog-server",
-    "readme": "https://github.com/liquibase/liquibase-mcp-changelog-server#readme"
-  },
-  "keywords": [
-    "Liquibase Changelog MCP Server"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/liquibase/liquibase-mcp-changelog-server:1.0.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/liquibase/liquibase-mcp-changelog-server:1.0.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/liquibase/liquibase-mcp-changelog-server",
-      "priority": 10,
+      "id": "upstream-27572cfcfe889dfb",
+      "type": "oci",
+      "url": "https://ghcr.io/liquibase/liquibase-mcp-changelog-server:1.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/liquibase/liquibase-mcp-changelog-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.liquibase__changelog-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=229",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.liquibase/changelog-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.run.parlay/parlay",
+  "name": "run.parlay/parlay",
+  "displayName": "Parlay",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP server for live Polymarket, Kalshi, Limitless odds; Manifold sentiment.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "run.parlay/parlay",
+    "remotes": [
+      {
+        "url": "https://mcp.parlay.run/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-96433c45d41da782",
+      "type": "other",
+      "url": "https://mcp.parlay.run/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.parlay.run/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/parlay-run/parlay-mcp",
+    "homepage": "https://parlay.run"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=374",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "run.parlay/parlay"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

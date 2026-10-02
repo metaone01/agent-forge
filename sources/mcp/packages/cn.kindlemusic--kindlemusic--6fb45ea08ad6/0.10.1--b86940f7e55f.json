@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cn.kindlemusic/kindlemusic",
+  "name": "cn.kindlemusic/kindlemusic",
+  "displayName": "Kindle Music",
+  "version": "0.10.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search 2M+ licensed production-music tracks, find similar ones by track or audio, share pick lists.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cn.kindlemusic/kindlemusic",
+    "remotes": [
+      {
+        "url": "https://share.kindlemusic.cn/mcp/oauth",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://share.kindlemusic.cn/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-63d43fdd705bb2bb",
+      "type": "other",
+      "url": "https://share.kindlemusic.cn/mcp/oauth",
+      "install": {
+        "type": "api",
+        "url": "https://share.kindlemusic.cn/mcp/oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b2651833940d7273",
+      "type": "other",
+      "url": "https://share.kindlemusic.cn/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://share.kindlemusic.cn/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.kindlemusic.cn/essential/developers"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cn.kindlemusic/kindlemusic"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.uk.co.smokecontrolchecker/site",
+  "name": "uk.co.smokecontrolchecker/site",
+  "displayName": "uk.co.smokecontrolchecker/site",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Smoke Control Checker: the site's own MCP server — checker, enquiry (enquiry = a human handoff,...",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "uk.co.smokecontrolchecker/site",
+    "remotes": [
+      {
+        "url": "https://smokecontrolchecker.co.uk/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1c1847cc2ea6a173",
+      "type": "other",
+      "url": "https://smokecontrolchecker.co.uk/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://smokecontrolchecker.co.uk/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/joeetdev/venture-estate",
+    "homepage": "https://smokecontrolchecker.co.uk"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=381",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "uk.co.smokecontrolchecker/site"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

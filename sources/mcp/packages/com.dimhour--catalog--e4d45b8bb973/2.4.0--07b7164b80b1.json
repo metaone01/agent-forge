@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.dimhour/catalog",
+  "name": "com.dimhour/catalog",
+  "displayName": "Dim Hour",
+  "version": "2.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search 19,000+ verified places to eat and drink across 24 cities, each with a 0-100 quality score.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.dimhour/catalog",
+    "remotes": [
+      {
+        "url": "https://mcp.dimhour.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.dimhour.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ba0286d01d6787b4",
+      "type": "other",
+      "url": "https://mcp.dimhour.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.dimhour.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a1531291ec6c7163",
+      "type": "other",
+      "url": "https://mcp.dimhour.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.dimhour.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Dim-hour/Dim-Hour",
+    "homepage": "https://dimhour.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=44",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.dimhour/catalog"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

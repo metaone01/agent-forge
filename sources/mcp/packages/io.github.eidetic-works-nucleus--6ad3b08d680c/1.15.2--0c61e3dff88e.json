@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.eidetic-works/nucleus",
   "name": "io.github.eidetic-works/nucleus",
+  "displayName": "io.github.eidetic-works/nucleus",
   "version": "1.15.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Sovereign Agent OS — Persistent Memory, Governance & Compliance for AI Agents.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/eidetic-works/nucleus-mcp",
-    "homepage": "https://nucleusos.dev",
-    "readme": "https://github.com/eidetic-works/nucleus-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "nucleus-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "nucleus-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://relay.nucleusos.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-23fbe91617dbc28c",
       "type": "registry",
-      "url": "https://pypi.org/project/nucleus-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/nucleus-mcp",
+      "registry": "pypi",
+      "version": "1.15.2"
+    },
+    {
+      "id": "upstream-d9fe52e6055fe032",
+      "type": "other",
+      "url": "https://relay.nucleusos.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://relay.nucleusos.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/eidetic-works/nucleus-mcp",
+    "homepage": "https://nucleusos.dev"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.eidetic-works__nucleus.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=197",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.eidetic-works/nucleus"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

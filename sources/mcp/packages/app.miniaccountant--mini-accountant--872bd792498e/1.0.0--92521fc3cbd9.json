@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.miniaccountant/mini-accountant",
+  "name": "app.miniaccountant/mini-accountant",
+  "displayName": "Mini Accountant",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted MCP server for Mini Accountant: invoices, expenses, customers, analytics, tax estimates.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.miniaccountant/mini-accountant",
+    "remotes": [
+      {
+        "url": "https://mcp.miniaccountant.app/v1beta",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3030eeebd1c1d574",
+      "type": "other",
+      "url": "https://mcp.miniaccountant.app/v1beta",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.miniaccountant.app/v1beta"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/miniaccountant/mcp-setup",
+    "homepage": "https://ad.miniaccountant.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.miniaccountant/mini-accountant"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

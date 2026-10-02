@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Ljunqiang/rustchain-mcp",
   "name": "io.github.Ljunqiang/rustchain-mcp",
+  "displayName": "RustChain MCP",
   "version": "0.4.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for RustChain blockchain, BoTTube video, and Beacon agent messaging",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/Scottcjn/rustchain-mcp",
-    "homepage": "https://rustchain.org",
-    "readme": "https://github.com/Scottcjn/rustchain-mcp#readme"
-  },
-  "keywords": [
-    "RustChain MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Ljunqiang/rustchain-mcp/releases/download/v0.4.0-mcpb/rustchain-mcp.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Ljunqiang/rustchain-mcp/releases/download/v0.4.0-mcpb/rustchain-mcp.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-eeefa7c4f20403b5",
+      "type": "archive",
       "url": "https://github.com/Ljunqiang/rustchain-mcp/releases/download/v0.4.0-mcpb/rustchain-mcp.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Scottcjn/rustchain-mcp",
+    "homepage": "https://rustchain.org"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ljunqiang__rustchain-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=139",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Ljunqiang/rustchain-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

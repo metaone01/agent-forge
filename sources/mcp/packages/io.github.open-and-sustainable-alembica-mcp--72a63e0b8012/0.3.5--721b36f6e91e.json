@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.open-and-sustainable/alembica-mcp",
   "name": "io.github.open-and-sustainable/alembica-mcp",
+  "displayName": "Alembica MCP",
   "version": "0.3.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Alembica validation, extraction, cost estimation, and schema queries.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/open-and-sustainable/alembica",
-    "readme": "https://github.com/open-and-sustainable/alembica#readme"
-  },
-  "keywords": [
-    "Alembica MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/open-and-sustainable/alembica-mcp:0.3.5",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/open-and-sustainable/alembica-mcp:0.3.5",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/open-and-sustainable/alembica-mcp",
-      "priority": 10,
+      "id": "upstream-4838cd6c07a7d413",
+      "type": "oci",
+      "url": "https://ghcr.io/open-and-sustainable/alembica-mcp:0.3.5",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/open-and-sustainable/alembica"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.open-and-sustainable__alembica-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.open-and-sustainable/alembica-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

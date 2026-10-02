@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Ayo-Fam/mcp-cloudflare-dns",
   "name": "io.github.Ayo-Fam/mcp-cloudflare-dns",
+  "displayName": "MCP Cloudflare DNS",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Cloudflare DNS MCP server: manage zones, records, cache purge, and page rules.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/apexradius/mcp-cloudflare-dns",
-    "readme": "https://github.com/apexradius/mcp-cloudflare-dns#readme"
-  },
-  "keywords": [
-    "MCP Cloudflare DNS"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-cloudflare-dns",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Cloudflare DNS MCP server: manage zones, records, cache purge, and page rules.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-cloudflare-dns",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-830918402c862ed3",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-cloudflare-dns/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-cloudflare-dns",
+      "registry": "pypi",
+      "version": "0.1.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/apexradius/mcp-cloudflare-dns"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ayo-fam__mcp-cloudflare-dns.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=112",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Ayo-Fam/mcp-cloudflare-dns"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

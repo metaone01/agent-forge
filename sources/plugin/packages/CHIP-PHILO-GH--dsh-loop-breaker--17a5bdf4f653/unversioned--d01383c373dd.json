@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.56dfc0f84912debb1b0ead76aa5c2b0685a28e22b3f138bb1eb1b6a5342be0e8",
+  "name": "CHIP-PHILO-GH/dsh-loop-breaker",
+  "displayName": "CHIP-PHILO-GH/dsh-loop-breaker",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 流式复读熔断器：在 llm/stream 层边收边判，命中退化复读就地掐断（底层 HTTP 随即取消，token 停止计费），掐断时消毒正文避免污染上下文",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/CHIP-PHILO-GH/dsh-loop-breaker",
+    "readme": "https://github.com/CHIP-PHILO-GH/dsh-loop-breaker#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/CHIP-PHILO-GH/dsh-loop-breaker"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15174"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15029"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.theluckystrike/contract-clause-library-proposal-template-docx",
   "name": "io.github.theluckystrike/contract-clause-library-proposal-template-docx",
+  "displayName": "io.github.theluckystrike/contract-clause-library-proposal-template-docx",
   "version": "0.22.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "A personal library of reusable contract and proposal clauses, assembled into a real Word .docx.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/theluckystrike/mcp-servers",
-    "homepage": "https://mcp.zovo.one/s/clauses",
-    "readme": "https://github.com/theluckystrike/mcp-servers#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/clauses.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/clauses.mcpb",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.zovo.one/mcp/clauses",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-c50e974a1251e0c0",
+      "type": "archive",
       "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/clauses.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.22.0"
+    },
+    {
+      "id": "upstream-a0b469503aa54fcc",
+      "type": "other",
+      "url": "https://mcp.zovo.one/mcp/clauses",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.zovo.one/mcp/clauses"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/theluckystrike/mcp-servers",
+    "homepage": "https://mcp.zovo.one/s/clauses"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.theluckystrike__contract-clause-library-proposal-template-docx.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=338",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.theluckystrike/contract-clause-library-proposal-template-docx"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.stepbot/stockfish-mcp",
   "name": "io.github.stepbot/stockfish-mcp",
+  "displayName": "Stockfish MCP",
   "version": "v1.0.2",
   "versionScheme": "unknown",
-  "description": "A Stockfish MCP server to allow an LLM to play chess against Stockfish",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://pypi.org/project/stockfish-mcp/"
-  },
-  "keywords": [
-    "Stockfish MCP"
-  ],
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "stockfish-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "A Stockfish MCP server to allow an LLM to play chess against Stockfish",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "stockfish-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-feb0a5302ef380b1",
       "type": "registry",
-      "url": "https://pypi.org/project/stockfish-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/stockfish-mcp",
+      "registry": "pypi",
+      "version": "v1.0.2"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.stepbot__stockfish-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=333",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stepbot/stockfish-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

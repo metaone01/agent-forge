@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cartoonitunes/inlay",
+  "name": "io.github.cartoonitunes/inlay",
+  "displayName": "Inlay",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Make any website discoverable by AI agents via MCP, llms.txt, and structured data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.cartoonitunes/inlay",
+    "remotes": [
+      {
+        "url": "https://inlay.dev/api/mcp/{site_key}",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://inlay.dev/api/mcp/{site_key}",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b8a46897771bb22c",
+      "type": "other",
+      "url": "https://inlay.dev/api/mcp/{site_key}",
+      "install": {
+        "type": "api",
+        "url": "https://inlay.dev/api/mcp/{site_key}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-fbf7638ae0264508",
+      "type": "other",
+      "url": "https://inlay.dev/api/mcp/{site_key}",
+      "install": {
+        "type": "api",
+        "url": "https://inlay.dev/api/mcp/{site_key}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cartoonitunes/inlay-skills"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=180",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cartoonitunes/inlay"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

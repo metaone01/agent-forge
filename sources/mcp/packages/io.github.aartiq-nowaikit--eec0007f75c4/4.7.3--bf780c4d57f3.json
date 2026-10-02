@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aartiq/nowaikit",
   "name": "io.github.aartiq/nowaikit",
+  "displayName": "ServiceNow MCP Server (NowAIKit)",
   "version": "4.7.3",
-  "versionScheme": "semver",
-  "description": "ServiceNow MCP server: 450+ tools for Claude, ChatGPT, Copilot & any AI. Read-only by default.",
-  "license": "Elastic-2.0",
-  "links": {
-    "repository": "https://github.com/aartiq/servicenow-mcp",
-    "homepage": "https://servicenow-mcp.com",
-    "readme": "https://github.com/aartiq/servicenow-mcp#readme"
-  },
-  "keywords": [
-    "ServiceNow MCP Server (NowAIKit)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "nowaikit",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "ServiceNow MCP server: 450+ tools for Claude, ChatGPT, Copilot & any AI. Read-only by default.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "nowaikit",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8b3c23fa8a097a45",
       "type": "registry",
       "url": "https://www.npmjs.com/package/nowaikit",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "4.7.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aartiq/servicenow-mcp",
+    "homepage": "https://servicenow-mcp.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aartiq__nowaikit.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=164",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aartiq/nowaikit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

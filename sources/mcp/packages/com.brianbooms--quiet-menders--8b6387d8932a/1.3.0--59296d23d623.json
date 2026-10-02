@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.brianbooms/quiet-menders",
+  "name": "com.brianbooms/quiet-menders",
+  "displayName": "Quiet Menders",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Privacy clinic + pay-per-call data APIs for AI agents via x402. Never pays or touches keys.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.brianbooms/quiet-menders",
+    "remotes": [
+      {
+        "url": "https://mcp.brianbooms.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://quiet-menders-mcp.brianbooms.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2d744776bb9a9a2e",
+      "type": "other",
+      "url": "https://mcp.brianbooms.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.brianbooms.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-d81d3f1a82c49e53",
+      "type": "other",
+      "url": "https://quiet-menders-mcp.brianbooms.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://quiet-menders-mcp.brianbooms.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/brianbooms/quiet-menders",
+    "homepage": "https://brianbooms.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=38",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.brianbooms/quiet-menders"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

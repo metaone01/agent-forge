@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aresyn/codex-control-plane-mcp",
   "name": "io.github.aresyn/codex-control-plane-mcp",
+  "displayName": "Codex Control Plane MCP",
   "version": "0.2.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Durable MCP control plane for long-running Codex Desktop tasks.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/aresyn/codex-control-plane-mcp",
-    "homepage": "https://github.com/aresyn/codex-control-plane-mcp",
-    "readme": "https://github.com/aresyn/codex-control-plane-mcp#readme"
-  },
-  "keywords": [
-    "Codex Control Plane MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "codex-control-plane-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "codex-control-plane-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-93c1bed3b4e9d26f",
       "type": "registry",
-      "url": "https://pypi.org/project/codex-control-plane-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/codex-control-plane-mcp",
+      "registry": "pypi",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/aresyn/codex-control-plane-mcp",
+    "homepage": "https://github.com/aresyn/codex-control-plane-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aresyn__codex-control-plane-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=171",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aresyn/codex-control-plane-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

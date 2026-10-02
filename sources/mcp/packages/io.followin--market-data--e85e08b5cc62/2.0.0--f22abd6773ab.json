@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.followin/market-data",
+  "name": "io.followin/market-data",
+  "displayName": "Followin MCP",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Investment-bank research, market data, news and trader signals for crypto and US equities.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.followin/market-data",
+    "remotes": [
+      {
+        "url": "https://mcp.followin.io/v2/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.followin.io/v2/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2e04b7758048578b",
+      "type": "other",
+      "url": "https://mcp.followin.io/v2/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.followin.io/v2/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-5a4b0ffdf2218c4c",
+      "type": "other",
+      "url": "https://mcp.followin.io/v2/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.followin.io/v2/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://followin.io/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=104",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.followin/market-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

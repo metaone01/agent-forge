@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nanoodlecom/nanoodle-mcp",
   "name": "io.github.nanoodlecom/nanoodle-mcp",
+  "displayName": "nanoodle",
   "version": "0.6.0",
-  "versionScheme": "semver",
-  "description": "Your saved nanoodle workflow graphs as MCP tools — BYOK or pay per call in Nano (x402)",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/nanoodlecom/nanoodle-mcp",
-    "homepage": "https://nanoodle.com",
-    "readme": "https://github.com/nanoodlecom/nanoodle-mcp#readme"
-  },
-  "keywords": [
-    "nanoodle"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "nanoodle-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Your saved nanoodle workflow graphs as MCP tools — BYOK or pay per call in Nano (x402)",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "nanoodle-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.nanoodle.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1116aa317bddced4",
       "type": "registry",
       "url": "https://www.npmjs.com/package/nanoodle-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.6.0"
+    },
+    {
+      "id": "upstream-9118a41568bd2d1f",
+      "type": "other",
+      "url": "https://mcp.nanoodle.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.nanoodle.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/nanoodlecom/nanoodle-mcp",
+    "homepage": "https://nanoodle.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nanoodlecom__nanoodle-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=262",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nanoodlecom/nanoodle-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

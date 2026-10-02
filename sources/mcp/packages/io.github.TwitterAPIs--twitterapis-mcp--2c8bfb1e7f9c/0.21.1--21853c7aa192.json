@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.TwitterAPIs/twitterapis-mcp",
+  "name": "io.github.TwitterAPIs/twitterapis-mcp",
+  "displayName": "TwitterAPIs",
+  "version": "0.21.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Official MCP server for twitterapis.com. Read and write Twitter/X: search, users, tweets, DMs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@twitterapis/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.twitterapis.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c0e9f4ddaf54ad20",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@twitterapis/mcp",
+      "registry": "npm",
+      "version": "0.21.1"
+    },
+    {
+      "id": "upstream-626df832903e2915",
+      "type": "other",
+      "url": "https://api.twitterapis.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.twitterapis.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/TwitterAPIs/twitterapis-mcp",
+    "homepage": "https://www.twitterapis.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=158",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.TwitterAPIs/twitterapis-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

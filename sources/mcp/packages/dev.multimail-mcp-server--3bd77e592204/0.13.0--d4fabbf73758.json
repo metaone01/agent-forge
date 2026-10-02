@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.dev.multimail/mcp-server",
   "name": "dev.multimail/mcp-server",
+  "displayName": "dev.multimail/mcp-server",
   "version": "0.13.0",
-  "versionScheme": "semver",
-  "description": "Give your agent its own email address with graduated human oversight, from approval to autonomy.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/multimail-dev/mcp-server",
-    "readme": "https://github.com/multimail-dev/mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@multimail/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Give your agent its own email address with graduated human oversight, from approval to autonomy.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@multimail/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.multimail.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-16ecb39afdc73fbc",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@multimail/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.13.0"
+    },
+    {
+      "id": "upstream-0f6923da9cbdd3ef",
+      "type": "other",
+      "url": "https://mcp.multimail.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.multimail.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/multimail-dev/mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\dev.multimail__mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=92",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.multimail/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

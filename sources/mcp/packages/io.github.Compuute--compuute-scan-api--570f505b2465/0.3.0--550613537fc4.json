@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Compuute/compuute-scan-api",
+  "name": "io.github.Compuute/compuute-scan-api",
+  "displayName": "Compuute MCP Security Scanner",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Scan any public GitHub MCP-server repo for security issues. 37 MCP-specific L1 rules, 8 languages.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Compuute/compuute-scan-api",
+    "remotes": [
+      {
+        "url": "https://scan.compuute.se/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f66069a1987dc930",
+      "type": "other",
+      "url": "https://scan.compuute.se/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://scan.compuute.se/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Compuute/compuute-scan-api",
+    "homepage": "https://scan.compuute.se"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=120",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Compuute/compuute-scan-api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

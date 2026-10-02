@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nouchix/pqc-khepra-mcp",
   "name": "io.github.nouchix/pqc-khepra-mcp",
+  "displayName": "PQC-Khepra MCP — CMMC Autopilot & AI Security Recorder",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Post-quantum CMMC compliance scanner & AI agent attestation. FIPS 140-3, ML-DSA-65, 36K+ mappings.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/nouchix/PQC-Khepra-MCP.git",
-    "readme": "https://github.com/nouchix/PQC-Khepra-MCP.git#readme"
-  },
-  "keywords": [
-    "PQC-Khepra MCP — CMMC Autopilot & AI Security Recorder"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/nouchix/pqc-khepra-mcp:v1.0.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/nouchix/pqc-khepra-mcp:v1.0.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/nouchix/pqc-khepra-mcp",
-      "priority": 10,
+      "id": "upstream-ca3a14fced94143c",
+      "type": "oci",
+      "url": "https://ghcr.io/nouchix/pqc-khepra-mcp:v1.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nouchix/PQC-Khepra-MCP.git"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nouchix__pqc-khepra-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=266",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nouchix/pqc-khepra-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

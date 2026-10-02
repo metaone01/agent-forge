@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.fe9dc50e3298a55f6f353e2e7983d4c62e86cdfe3c71ab04d902158b81ebef3c",
+  "name": "xinghe-1018/dsh-token-plan-quota",
+  "displayName": "xinghe-1018/dsh-token-plan-quota",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DeepSeek Harness Web 插件：输入框工具行里的额度徽标，跟随当前模型供应商切换。做它的起因是阿里云 / 千问 Token Plan 有额度却没有公开的额度接口——本插件内置了它的控制台数据网关（Cookie）契约。官方真值来源：DeepSeek /user/balance、Moonshot 开放平台、OpenRouter credits、阿里云",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/xinghe-1018/dsh-token-plan-quota",
+    "readme": "https://github.com/xinghe-1018/dsh-token-plan-quota#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/xinghe-1018/dsh-token-plan-quota"
+    },
+    {
+      "id": "npm-11c2eca25db7",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-token-plan-quota",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "models"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14790"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/xinghe-1018__dsh-token-plan-quota.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "13781"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-token-plan-quota"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

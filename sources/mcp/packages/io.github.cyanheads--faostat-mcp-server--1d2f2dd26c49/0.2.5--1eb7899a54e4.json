@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cyanheads/faostat-mcp-server",
+  "name": "io.github.cyanheads/faostat-mcp-server",
+  "displayName": "io.github.cyanheads/faostat-mcp-server",
+  "version": "0.2.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "UN FAOSTAT global food & agriculture statistics over a local SQLite mirror, via MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cyanheads/faostat-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://faostat.caseyjhand.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-16a7894546877150",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cyanheads/faostat-mcp-server",
+      "registry": "npm",
+      "version": "0.2.5"
+    },
+    {
+      "id": "upstream-5eabfa708d892658",
+      "type": "other",
+      "url": "https://faostat.caseyjhand.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://faostat.caseyjhand.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cyanheads/faostat-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=188",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cyanheads/faostat-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

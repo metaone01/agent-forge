@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.pl.idfmetale/catalog-feed",
+  "name": "pl.idfmetale/catalog-feed",
+  "displayName": "IDF Metale — gold & silver bullion (Poland)",
+  "version": "0.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Polish gold/silver bullion dealer: live PLN prices, stock, buyback prices, guides. Read-only.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "pl.idfmetale/catalog-feed",
+    "remotes": [
+      {
+        "url": "https://mcp.idfmetale.pl/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2b0670ae815ec299",
+      "type": "other",
+      "url": "https://mcp.idfmetale.pl/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.idfmetale.pl/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://idfmetale.pl"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "pl.idfmetale/catalog-feed"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

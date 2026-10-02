@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.KazKozDev/footnote-mcp",
   "name": "io.github.KazKozDev/footnote-mcp",
+  "displayName": "footnote-mcp",
   "version": "0.2.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Source-grounded web research: search, extraction, verification, and browser automation.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/KazKozDev/footnote-mcp",
-    "homepage": "https://github.com/KazKozDev/footnote-mcp",
-    "readme": "https://github.com/KazKozDev/footnote-mcp#readme"
-  },
-  "keywords": [
-    "footnote-mcp"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "footnote-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "footnote-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-cd30b13ec6bb8ba7",
       "type": "registry",
-      "url": "https://pypi.org/project/footnote-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/footnote-mcp",
+      "registry": "pypi",
+      "version": "0.2.6"
+    },
+    {
+      "id": "upstream-1a8df4680b1a17c4",
+      "type": "oci",
+      "url": "https://ghcr.io/kazkozdev/footnote-mcp:0.2.6",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/KazKozDev/footnote-mcp",
+    "homepage": "https://github.com/KazKozDev/footnote-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kazkozdev__footnote-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=137",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.KazKozDev/footnote-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

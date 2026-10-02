@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.FoundryNet/fact-check-mcp",
+  "name": "io.github.FoundryNet/fact-check-mcp",
+  "displayName": "Fact Verification MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verify claims with verdict, confidence & cited sources; batch verify, source checks, daily brief.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.FoundryNet/fact-check-mcp",
+    "remotes": [
+      {
+        "url": "https://fact-check-mcp-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-de220c7a7bdacfdc",
+      "type": "other",
+      "url": "https://fact-check-mcp-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://fact-check-mcp-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/FoundryNet/fact-check-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=130",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.FoundryNet/fact-check-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

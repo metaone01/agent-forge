@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.mireye/earth",
   "name": "com.mireye/earth",
+  "displayName": "com.mireye/earth",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "MCP server for Mireye Earth — federal-source-cited geospatial data for any MCP-aware agent.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Mireye-Labs/mireye-earth-mcp",
-    "homepage": "https://api.mireye.com",
-    "readme": "https://github.com/Mireye-Labs/mireye-earth-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mireye-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Mireye Earth — federal-source-cited geospatial data for any MCP-aware agent.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mireye-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.mireye.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8e6ed9b14236796f",
       "type": "registry",
-      "url": "https://pypi.org/project/mireye-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mireye-mcp",
+      "registry": "pypi",
+      "version": "0.5.0"
+    },
+    {
+      "id": "upstream-51909f2b864dc324",
+      "type": "other",
+      "url": "https://api.mireye.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.mireye.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/Mireye-Labs/mireye-earth-mcp",
+    "homepage": "https://api.mireye.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.mireye__earth.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mireye/earth"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

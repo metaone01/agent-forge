@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.ai-rete-rag/ai-rete-rag-mcp",
+  "name": "com.ai-rete-rag/ai-rete-rag-mcp",
+  "displayName": "ai·rete·rag",
+  "version": "0.8.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Author rules from policy docs, then decide: a Rete engine gives the verdict, an LLM explains why.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "ai-rete-rag-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://ai-rete-rag.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://ai-rete-rag.com/mcp/auth",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3240b69ccf7f09f1",
+      "type": "registry",
+      "url": "https://pypi.org/project/ai-rete-rag-mcp",
+      "registry": "pypi",
+      "version": "0.8.0"
+    },
+    {
+      "id": "upstream-3e8598d187b238bb",
+      "type": "other",
+      "url": "https://ai-rete-rag.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://ai-rete-rag.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-4de1d7f3a485ae27",
+      "type": "other",
+      "url": "https://ai-rete-rag.com/mcp/auth",
+      "install": {
+        "type": "api",
+        "url": "https://ai-rete-rag.com/mcp/auth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/zaharajabeen13-create/ai-rete-rag-mcp",
+    "homepage": "https://ai-rete-rag.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=32",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.ai-rete-rag/ai-rete-rag-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

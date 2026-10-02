@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.a885d36a67d959d0c3cf514e42ea27097d138e9905d3faadf31125b37593b4f1",
+  "name": "EIGHTfs/dsh-session-migrate",
+  "displayName": "EIGHTfs/dsh-session-migrate",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 会话迁移插件：扫描 .dsh/session.old/ 下的旧版本会话（v0 等），按实例实际会话版本契约投放并改写 cwd 绑定工作区，由 DSH 在打开会话时自动完成版本迁移；设置侧边栏提供导入 / 列表 / 工作区选择 / 转换四项 UI，外置多语言。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/EIGHTfs/dsh-session-migrate",
+    "readme": "https://github.com/EIGHTfs/dsh-session-migrate#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/EIGHTfs/dsh-session-migrate"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "interop"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15331"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/EIGHTfs__dsh-session-migrate.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "15450"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.rti/connext-mcp",
+  "name": "com.rti/connext-mcp",
+  "displayName": "Connext MCP",
+  "version": "1.7.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Integrate Connext AI into agentic workflows, enabling Connext product-aware assistance.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.rti/connext-mcp",
+    "remotes": [
+      {
+        "url": "https://chatbot.rti.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6f8468f97b2f1558",
+      "type": "other",
+      "url": "https://chatbot.rti.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://chatbot.rti.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=74",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.rti/connext-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

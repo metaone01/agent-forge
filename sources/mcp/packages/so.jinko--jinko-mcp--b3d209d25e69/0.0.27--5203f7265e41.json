@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.so.jinko/jinko-mcp",
+  "name": "so.jinko/jinko-mcp",
+  "displayName": "so.jinko/jinko-mcp",
+  "version": "0.0.27",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Jinko is a travel MCP server that provides hotel search and booking capabilities.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "so.jinko/jinko-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp-remote.jinko.so/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9cd27b4fc2f9c77c",
+      "type": "other",
+      "url": "https://mcp-remote.jinko.so/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-remote.jinko.so/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/jinkoso/jinko-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "so.jinko/jinko-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

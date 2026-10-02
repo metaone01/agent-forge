@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.today.solarstorm/solarstorm",
+  "name": "today.solarstorm/solarstorm",
+  "displayName": "today.solarstorm/solarstorm",
+  "version": "1.0.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Space weather: Kp index, NOAA 3-day geomagnetic forecast, solar flares, aurora visibility.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "today.solarstorm/solarstorm",
+    "remotes": [
+      {
+        "url": "https://mcp.solarstorm.today/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ff7ed251f4e18a34",
+      "type": "other",
+      "url": "https://mcp.solarstorm.today/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.solarstorm.today/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/newminya/solarstorm-mcp",
+    "homepage": "https://solarstorm.today/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=378",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "today.solarstorm/solarstorm"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

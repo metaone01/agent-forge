@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.perforce/perforce-agentic-gateway",
   "name": "io.github.perforce/perforce-agentic-gateway",
+  "displayName": "Perforce Agentic Gateway",
   "version": "2026.6",
   "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local MCP gateway that proxies AI clients to many MCP servers with a token-efficient code mode",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/perforce/perforce-agentic-gateway",
-    "readme": "https://github.com/perforce/perforce-agentic-gateway#readme"
-  },
-  "keywords": [
-    "Perforce Agentic Gateway"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "perforce-agentic-gateway",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "perforce-agentic-gateway",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-467c6f8c4b735e90",
       "type": "registry",
-      "url": "https://pypi.org/project/perforce-agentic-gateway/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/perforce-agentic-gateway",
+      "registry": "pypi",
+      "version": "2026.6"
     }
   ],
+  "links": {
+    "repository": "https://github.com/perforce/perforce-agentic-gateway"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.perforce__perforce-agentic-gateway.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=272",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.perforce/perforce-agentic-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

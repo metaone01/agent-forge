@@ -2,49 +2,55 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.copyleftdev/kahea",
   "name": "io.github.copyleftdev/kahea",
+  "displayName": "Kāhea",
   "version": "0.3.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Deterministic HTTP/WebSocket testing and policy-gated API execution for AI agents.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/copyleftdev/kahea",
-    "homepage": "https://github.com/copyleftdev/kahea",
-    "readme": "https://github.com/copyleftdev/kahea#readme"
-  },
-  "keywords": [
-    "Kāhea"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/copyleftdev/kahea/releases/download/v0.3.1/kahea-mcp-Linux-X64.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/copyleftdev/kahea/releases/download/v0.3.1/kahea-mcp-Linux-X64.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-0aa54d1e69d3dfb5",
+      "type": "archive",
       "url": "https://github.com/copyleftdev/kahea/releases/download/v0.3.1/kahea-mcp-Linux-X64.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-1cb75cc9c13ee442",
+      "type": "archive",
+      "url": "https://github.com/copyleftdev/kahea/releases/download/v0.3.1/kahea-mcp-Windows-X64.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-ed9fe1428619702a",
+      "type": "archive",
+      "url": "https://github.com/copyleftdev/kahea/releases/download/v0.3.1/kahea-mcp-macOS-ARM64.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/copyleftdev/kahea",
+    "homepage": "https://github.com/copyleftdev/kahea"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +63,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.copyleftdev__kahea.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=186",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.copyleftdev/kahea"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

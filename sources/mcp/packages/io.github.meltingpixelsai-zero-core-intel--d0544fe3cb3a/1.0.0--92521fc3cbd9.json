@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.meltingpixelsai/zero-core-intel",
   "name": "io.github.meltingpixelsai/zero-core-intel",
+  "displayName": "io.github.meltingpixelsai/zero-core-intel",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "DrainBrain token safety, CORTEX trading signals, social trends. Zero Core Intel.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/meltingpixelsai/harvey-intel",
-    "homepage": "https://relayzero.ai",
-    "readme": "https://github.com/meltingpixelsai/harvey-intel#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@meltingpixels/zero-core-intel",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "streamable-http"
-  },
+  "description": "DrainBrain token safety, CORTEX trading signals, social trends. Zero Core Intel.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@meltingpixels/zero-core-intel",
+    "transport": "streamable-http",
+    "remotes": [
+      {
+        "url": "https://agents.rugslayer.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d5894d3c522b0e33",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@meltingpixels/zero-core-intel",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-19a666081f2d4121",
+      "type": "other",
+      "url": "https://agents.rugslayer.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agents.rugslayer.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/meltingpixelsai/harvey-intel",
+    "homepage": "https://relayzero.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.meltingpixelsai__zero-core-intel.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=248",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.meltingpixelsai/zero-core-intel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

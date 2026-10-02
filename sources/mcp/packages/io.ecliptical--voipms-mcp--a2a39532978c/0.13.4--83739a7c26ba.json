@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.ecliptical/voipms-mcp",
+  "name": "io.ecliptical/voipms-mcp",
+  "displayName": "VoIP.ms",
+  "version": "0.13.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage phone numbers, SMS/MMS, voicemail, faxing, and call routing for your VoIP.ms account.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.ecliptical/voipms-mcp",
+    "remotes": [
+      {
+        "url": "https://voipms-mcp.ecliptical.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-dd6e20091dee68d1",
+      "type": "other",
+      "url": "https://voipms-mcp.ecliptical.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://voipms-mcp.ecliptical.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=104",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.ecliptical/voipms-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

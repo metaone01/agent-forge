@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.projecttron/numproof",
   "name": "io.github.projecttron/numproof",
+  "displayName": "NumProof",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Deterministic signed verification of numeric & financial claims for AI agents & spreadsheets.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/projecttron/numproof",
-    "homepage": "https://numproof.com",
-    "readme": "https://github.com/projecttron/numproof#readme"
-  },
-  "keywords": [
-    "NumProof"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "numproof",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Deterministic signed verification of numeric & financial claims for AI agents & spreadsheets.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "numproof",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://numproof.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d7e4c7e63dc977f3",
       "type": "registry",
-      "url": "https://pypi.org/project/numproof/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/numproof",
+      "registry": "pypi",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-d55a825cefee8699",
+      "type": "other",
+      "url": "https://numproof.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://numproof.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/projecttron/numproof",
+    "homepage": "https://numproof.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.projecttron__numproof.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=291",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.projecttron/numproof"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

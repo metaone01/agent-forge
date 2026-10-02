@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dfch/biz.dfch.specmgr",
   "name": "io.github.dfch/biz.dfch.specmgr",
+  "displayName": "SpecMgr",
   "version": "0.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "An artifact manager for system specifications.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/dfch/biz.dfch.SpecMgr",
-    "homepage": "https://github.com/dfch/biz.dfch.SpecMgr#readme",
-    "readme": "https://github.com/dfch/biz.dfch.SpecMgr#readme"
-  },
-  "keywords": [
-    "SpecMgr"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "biz-dfch-specmgr",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "biz-dfch-specmgr",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-76a1913f03cb5457",
       "type": "registry",
-      "url": "https://pypi.org/project/biz-dfch-specmgr/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/biz-dfch-specmgr",
+      "registry": "pypi",
+      "version": "0.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dfch/biz.dfch.SpecMgr",
+    "homepage": "https://github.com/dfch/biz.dfch.SpecMgr#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dfch__biz.dfch.specmgr.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=193",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dfch/biz.dfch.specmgr"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

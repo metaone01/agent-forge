@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.e4a86a9786f87a6aab5e0e298b5da92ecf24489412ca640b3e0cf1a7ed8ff852",
+  "name": "linxuhao/AItelier/integrations/dsh",
+  "displayName": "linxuhao/AItelier/integrations/dsh",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Use AItelier as a subagent from DeepSeek Harness: generate, edit, run, export and import SkillFlow pipelines. Client only — requires a running AItelier backend (Docker; see README).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "integrations/dsh/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/linxuhao/AItelier",
+    "readme": "https://github.com/linxuhao/AItelier#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/linxuhao/AItelier/tree/HEAD/integrations/dsh"
+    },
+    {
+      "id": "npm-6ce6c1d42396",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-plugin-aitelier",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "interop",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "13559"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/linxuhao__AItelier--integrations-dsh.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "121"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-plugin-aitelier"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

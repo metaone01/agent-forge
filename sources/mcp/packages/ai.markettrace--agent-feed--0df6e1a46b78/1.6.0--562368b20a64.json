@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.markettrace/agent-feed",
+  "name": "ai.markettrace/agent-feed",
+  "displayName": "MarketTrace agent-feed",
+  "version": "1.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Crypto perps data for AI agents: funding rates, open interest, liquidations, order book, CVD.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.markettrace/agent-feed",
+    "remotes": [
+      {
+        "url": "https://api.markettrace.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3eeac6de31f9bd95",
+      "type": "other",
+      "url": "https://api.markettrace.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.markettrace.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/MarketTrace/markettrace-agent-feed",
+    "homepage": "https://markettrace.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=8",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.markettrace/agent-feed"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

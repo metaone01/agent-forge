@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ch.antevo/wealth",
+  "name": "ch.antevo/wealth",
+  "displayName": "Antevo Wealth",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "The family estate in full — what you hold, what you owe, and what it is exposed to.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ch.antevo/wealth",
+    "remotes": [
+      {
+        "url": "https://api.antevo.ch/mcp/wealth/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.antevo.ch/mcp/wealth/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b883fd1b53f8b5d6",
+      "type": "other",
+      "url": "https://api.antevo.ch/mcp/wealth/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.antevo.ch/mcp/wealth/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-6eca0fb5dcdd9809",
+      "type": "other",
+      "url": "https://api.antevo.ch/mcp/wealth/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.antevo.ch/mcp/wealth/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://antevo.ch/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ch.antevo/wealth"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

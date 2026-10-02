@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.pythonanywhere.baseusdcearn/mcp",
+  "name": "com.pythonanywhere.baseusdcearn/mcp",
+  "displayName": "Crypto Market Pulse & Base USDC Stats",
+  "version": "1.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Pay-per-call agent tools on Base: market pulse, USDC stats, crypto prices, JSON repair, DNS, URLs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.pythonanywhere.baseusdcearn/mcp",
+    "remotes": [
+      {
+        "url": "https://baseusdcearn.pythonanywhere.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-25430895361a5614",
+      "type": "other",
+      "url": "https://baseusdcearn.pythonanywhere.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://baseusdcearn.pythonanywhere.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://baseusdcearn.pythonanywhere.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=71",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.pythonanywhere.baseusdcearn/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

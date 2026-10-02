@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dfieser/thermocouple-its90",
   "name": "io.github.dfieser/thermocouple-its90",
+  "displayName": "Thermocouple ITS-90",
   "version": "1.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "NIST ITS-90 thermocouple conversion, all 8 types, cold-junction compensation, NIST-table verified.",
   "license": "unknown",
-  "links": {
-    "repository": "https://pypi.org/project/thermocouple-its90/"
-  },
-  "keywords": [
-    "Thermocouple ITS-90"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "thermocouple-its90",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "thermocouple-its90",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-7a6a42d70a3eabea",
       "type": "registry",
-      "url": "https://pypi.org/project/thermocouple-its90/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/thermocouple-its90",
+      "registry": "pypi",
+      "version": "1.0.2"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dfieser__thermocouple-its90.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=193",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dfieser/thermocouple-its90"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

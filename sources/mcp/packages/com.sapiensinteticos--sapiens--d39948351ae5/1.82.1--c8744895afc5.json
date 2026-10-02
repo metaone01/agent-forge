@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.sapiensinteticos/sapiens",
+  "name": "com.sapiensinteticos/sapiens",
+  "displayName": "Sapiens Sintéticos",
+  "version": "1.82.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Operate your Sapiens Sintéticos AI studio: generate image, article, voice, music and video.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sapiens-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.sapiensinteticos.com/api/mcp/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-60fefab5a478b20f",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/sapiens-mcp",
+      "registry": "npm",
+      "version": "1.82.1"
+    },
+    {
+      "id": "upstream-50d332f346000ce4",
+      "type": "other",
+      "url": "https://www.sapiensinteticos.com/api/mcp/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.sapiensinteticos.com/api/mcp/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/inhabitants/sapiens-mcp",
+    "homepage": "https://www.sapiensinteticos.com/conectar-claude"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=74",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.sapiensinteticos/sapiens"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

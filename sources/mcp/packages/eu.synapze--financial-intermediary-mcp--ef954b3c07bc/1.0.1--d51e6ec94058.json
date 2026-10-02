@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.synapze/financial-intermediary-mcp",
+  "name": "eu.synapze/financial-intermediary-mcp",
+  "displayName": "Synapze — Financial Intermediary MCP",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connect AI agents to licensed financial intermediaries in France: insurance, credit, wealth.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "eu.synapze/financial-intermediary-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.synapze.eu/v1/{tenant_id}",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.synapze.eu/v1/registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6d81b979ef84b87b",
+      "type": "other",
+      "url": "https://mcp.synapze.eu/v1/{tenant_id}",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.synapze.eu/v1/{tenant_id}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-ca8458231901117a",
+      "type": "other",
+      "url": "https://mcp.synapze.eu/v1/registry",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.synapze.eu/v1/registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ycdvll/synapze-mcp",
+    "homepage": "https://mcp.synapze.eu"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.synapze/financial-intermediary-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

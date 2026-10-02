@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.mrfentmen/artifact-hub-mcp",
   "name": "io.github.mrfentmen/artifact-hub-mcp",
+  "displayName": "io.github.mrfentmen/artifact-hub-mcp",
   "version": "1.0.1",
-  "versionScheme": "semver",
-  "description": "Helm charts and cloud native packages from Artifact Hub. No key required.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mrfentmen/artifact-hub-mcp",
-    "readme": "https://github.com/mrfentmen/artifact-hub-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@mrfentmen/artifact-hub-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Helm charts and cloud native packages from Artifact Hub. No key required.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@mrfentmen/artifact-hub-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8aaa2a46f8256ed3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@mrfentmen/artifact-hub-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/mrfentmen/artifact-hub-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mrfentmen__artifact-hub-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=252",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mrfentmen/artifact-hub-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

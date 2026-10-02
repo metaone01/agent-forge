@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cloud.theprotocol/registry",
+  "name": "cloud.theprotocol/registry",
+  "displayName": "TheProtocol — Sovereign AI Agent Platform",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Sovereign AI agent economy: identity, payments, governance, exchanges. 400+ tools, ?mode=gateway.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cloud.theprotocol/registry",
+    "remotes": [
+      {
+        "url": "https://api.theprotocol.cloud/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.theprotocol.cloud/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0fcfdfd389c4ebc1",
+      "type": "other",
+      "url": "https://api.theprotocol.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.theprotocol.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e448e7393268260d",
+      "type": "other",
+      "url": "https://api.theprotocol.cloud/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://api.theprotocol.cloud/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cloud.theprotocol/registry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.atlassian/atlassian-mcp-server",
+  "name": "com.atlassian/atlassian-mcp-server",
+  "displayName": "Atlassian Rovo MCP Server",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connect to Atlassian Jira, Confluence, Loom, and more to search, create, and manage your work.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.atlassian/atlassian-mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.atlassian.com/v2/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.atlassian.com/v1/mcp/authv2",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e6dba86835fafeab",
+      "type": "other",
+      "url": "https://mcp.atlassian.com/v2/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.atlassian.com/v2/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-db4c3c10193ed9dd",
+      "type": "other",
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/atlassian/atlassian-mcp-server",
+    "homepage": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=35",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.atlassian/atlassian-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

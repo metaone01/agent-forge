@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.tvpulse/tvpulse",
+  "name": "io.tvpulse/tvpulse",
+  "displayName": "TVPulse",
+  "version": "1.0.14",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search OCR/ASR mentions on 15 terrestrial stations (Tokyo 7, Osaka 8); archive from 2026-01-01.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.tvpulse/tvpulse",
+    "remotes": [
+      {
+        "url": "https://mcp.tvpulse.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cec49108e1f10369",
+      "type": "other",
+      "url": "https://mcp.tvpulse.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.tvpulse.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://tvpulse.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=360",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.tvpulse/tvpulse"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

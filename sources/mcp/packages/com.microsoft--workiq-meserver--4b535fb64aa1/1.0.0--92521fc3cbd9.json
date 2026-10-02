@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.microsoft/workiq-meserver",
+  "name": "com.microsoft/workiq-meserver",
+  "displayName": "Work IQ User MCP Server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Tools for retrieving user details, manager, team or direct reportees from Microsoft Graph.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.microsoft/workiq-meserver",
+    "remotes": [
+      {
+        "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_MeServer",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9153bca8301da65c",
+      "type": "other",
+      "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_MeServer",
+      "install": {
+        "type": "api",
+        "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_MeServer"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bap-microsoft/MCP-Platform/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.microsoft/workiq-meserver"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

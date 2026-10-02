@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mwstech/auditra",
+  "name": "io.github.mwstech/auditra",
+  "displayName": "Auditra",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only MCP server for WordPress plugin audits: vulnerabilities, bloat, cron, orphaned tables.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mwstech/auditra",
+    "remotes": [
+      {
+        "url": "https://{site_domain}/wp-json/auditra/v1/mcp/{token}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cabd403c41bf452d",
+      "type": "other",
+      "url": "https://{site_domain}/wp-json/auditra/v1/mcp/{token}",
+      "install": {
+        "type": "api",
+        "url": "https://{site_domain}/wp-json/auditra/v1/mcp/{token}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mwstech/auditra",
+    "homepage": "https://www.macronimous.com/free-tools/auditra/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=261",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mwstech/auditra"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

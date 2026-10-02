@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dpc00/sublime-mcp",
   "name": "io.github.dpc00/sublime-mcp",
+  "displayName": "Sublime Text MCP",
   "version": "1.7.5",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Sublime Text 4. Lets AI coding agents read and control a running ST instance.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/dpc00/sublime-mcp",
-    "readme": "https://github.com/dpc00/sublime-mcp#readme"
-  },
-  "keywords": [
-    "Sublime Text MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sublime-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sublime-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f412e7831ebe25ec",
       "type": "registry",
-      "url": "https://pypi.org/project/sublime-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sublime-mcp",
+      "registry": "pypi",
+      "version": "1.7.5"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dpc00/sublime-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dpc00__sublime-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=195",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dpc00/sublime-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

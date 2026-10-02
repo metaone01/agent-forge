@@ -2,49 +2,101 @@
   "schemaVersion": 2,
   "id": "mcp.app.selis.mcp/pmo",
   "name": "app.selis.mcp/pmo",
+  "displayName": "Selis MCP",
   "version": "0.2.2",
-  "versionScheme": "semver",
-  "description": "MCP server for Selis TMiS — manage PMO entities from any MCP client",
-  "license": "SSPL-1.0",
-  "links": {
-    "repository": "https://github.com/calx-sa/selis-mcp",
-    "readme": "https://github.com/calx-sa/selis-mcp#readme"
-  },
-  "keywords": [
-    "Selis MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@calx/selis-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for Selis TMiS — manage PMO entities from any MCP client",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@calx/selis-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.selis.app/tmis/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.selis.app/tmis/sse",
+        "transport": "sse"
+      },
+      {
+        "url": "https://mcp.selis.dev/tmis/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.selis.dev/tmis/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2c5a129e82e8c01b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@calx/selis-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.2"
+    },
+    {
+      "id": "upstream-f785736fc8f74a80",
+      "type": "other",
+      "url": "https://mcp.selis.app/tmis/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.selis.app/tmis/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f6c2646ef7b96c4b",
+      "type": "other",
+      "url": "https://mcp.selis.app/tmis/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.selis.app/tmis/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-58ee5c4afe13f5f1",
+      "type": "other",
+      "url": "https://mcp.selis.dev/tmis/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.selis.dev/tmis/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-888a896758531b66",
+      "type": "other",
+      "url": "https://mcp.selis.dev/tmis/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.selis.dev/tmis/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/calx-sa/selis-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +109,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\app.selis.mcp__pmo.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=21",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.selis.mcp/pmo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

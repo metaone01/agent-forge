@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ni-c/freshrss-mcp",
   "name": "io.github.ni-c/freshrss-mcp",
+  "displayName": "FreshRSS",
   "version": "0.3.2",
-  "versionScheme": "semver",
-  "description": "MCP server for FreshRSS, the self-hosted RSS feed aggregator",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/ni-c/freshrss-mcp",
-    "homepage": "https://freshrss-mcp.ni-c.de",
-    "readme": "https://github.com/ni-c/freshrss-mcp#readme"
-  },
-  "keywords": [
-    "FreshRSS"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@ni-c/freshrss-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP server for FreshRSS, the self-hosted RSS feed aggregator",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@ni-c/freshrss-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-77933146a3cdaf49",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@ni-c/freshrss-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.2"
+    },
+    {
+      "id": "upstream-54aea8c6596a83f0",
+      "type": "oci",
+      "url": "https://ghcr.io/ni-c/freshrss-mcp:0.3.2",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ni-c/freshrss-mcp",
+    "homepage": "https://freshrss-mcp.ni-c.de"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ni-c__freshrss-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ni-c/freshrss-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

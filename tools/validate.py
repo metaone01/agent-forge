@@ -16,6 +16,11 @@ from typing import Any
 from jsonschema import Draft202012Validator, FormatChecker
 from referencing import Registry, Resource
 
+try:
+    from tools.identity import identity_errors
+except ModuleNotFoundError:
+    from identity import identity_errors
+
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_FILES = (
     "package.schema.json",
@@ -280,6 +285,14 @@ def validate_all() -> tuple[list[str], list[str]]:
         source_errors, source_warnings = validate_source_directory(source_dir)
         errors.extend(source_errors)
         warnings.extend(source_warnings)
+
+    identities = []
+    for path in sorted(sources_root.glob("*/packages/**/*.json")) if sources_root else ():
+        try:
+            identities.append((str(path), load_json(path)))
+        except (OSError, json.JSONDecodeError):
+            continue
+    errors.extend(identity_errors(identities))
 
     examples = ROOT / "examples"
     if examples.exists():

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.fujimura-ui/japan-official-statistics-mcp",
+  "name": "io.github.fujimura-ui/japan-official-statistics-mcp",
+  "displayName": "Japan Official Statistics",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search official Japanese government statistics (e-Stat): population, economy, labor, and more.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.fujimura-ui/japan-official-statistics-mcp",
+    "remotes": [
+      {
+        "url": "https://estat-mcp.plus-synergy.workers.dev/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://estat-mcp.plus-synergy.workers.dev/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b4bc280fa4495111",
+      "type": "other",
+      "url": "https://estat-mcp.plus-synergy.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://estat-mcp.plus-synergy.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-344ba5e9e6692648",
+      "type": "other",
+      "url": "https://estat-mcp.plus-synergy.workers.dev/sse",
+      "install": {
+        "type": "api",
+        "url": "https://estat-mcp.plus-synergy.workers.dev/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=203",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.fujimura-ui/japan-official-statistics-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

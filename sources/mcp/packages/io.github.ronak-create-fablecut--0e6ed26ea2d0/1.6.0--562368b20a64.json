@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.ronak-create/fablecut",
   "name": "io.github.ronak-create/fablecut",
+  "displayName": "FableCut",
   "version": "1.6.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Zero-dependency browser video editor AI agents drive via a JSON timeline over MCP; ffmpeg export.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/ronak-create/FableCut",
-    "homepage": "https://ronak-create.github.io/FableCut/",
-    "readme": "https://github.com/ronak-create/FableCut#readme"
-  },
-  "keywords": [
-    "FableCut"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/ronak-create/FableCut/releases/download/v1.6.0/fablecut.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/ronak-create/FableCut/releases/download/v1.6.0/fablecut.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-b4355cca63c9d9c2",
+      "type": "archive",
       "url": "https://github.com/ronak-create/FableCut/releases/download/v1.6.0/fablecut.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/ronak-create/FableCut",
+    "homepage": "https://ronak-create.github.io/FableCut/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ronak-create__fablecut.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=298",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ronak-create/fablecut"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

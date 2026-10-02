@@ -2,48 +2,40 @@
   "schemaVersion": 2,
   "id": "mcp.org.publicmcp/publicmcp",
   "name": "org.publicmcp/publicmcp",
+  "displayName": "PUBLICMCP",
   "version": "0.2.3",
-  "versionScheme": "semver",
-  "description": "Publish structured, AI-readable business identity data as an MCP server in minutes.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://pypi.org/project/publicmcp/"
-  },
-  "keywords": [
-    "PUBLICMCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "publicmcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "streamable-http"
-  },
+  "description": "Publish structured, AI-readable business identity data as an MCP server in minutes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "publicmcp",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c3ab7ed6ee392ce1",
       "type": "registry",
-      "url": "https://pypi.org/project/publicmcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/publicmcp",
+      "registry": "pypi",
+      "version": "0.2.3"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +48,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\org.publicmcp__publicmcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=372",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "org.publicmcp/publicmcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

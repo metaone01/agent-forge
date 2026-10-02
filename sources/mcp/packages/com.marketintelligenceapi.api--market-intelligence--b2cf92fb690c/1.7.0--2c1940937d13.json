@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.marketintelligenceapi.api/market-intelligence",
+  "name": "com.marketintelligenceapi.api/market-intelligence",
+  "displayName": "Market Intelligence API",
+  "version": "1.7.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "x402 market intel + $1 trade decisions: crypto, US & EU stocks, order flow, perps, macro, filings",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.marketintelligenceapi.api/market-intelligence",
+    "remotes": [
+      {
+        "url": "https://api.marketintelligenceapi.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e0e1df89bff4d314",
+      "type": "other",
+      "url": "https://api.marketintelligenceapi.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.marketintelligenceapi.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://api.marketintelligenceapi.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=60",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.marketintelligenceapi.api/market-intelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

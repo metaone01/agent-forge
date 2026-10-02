@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.sarduine13-star/agent-teller",
+  "name": "io.github.sarduine13-star/agent-teller",
+  "displayName": "io.github.sarduine13-star/agent-teller",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Verify AI agent payments and detect fraud. Input: agent_id, amount, service_id.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.sarduine13-star/agent-teller",
+    "remotes": [
+      {
+        "url": "https://agent-teller-production.up.railway.app/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d75835d84f93af06",
+      "type": "other",
+      "url": "https://agent-teller-production.up.railway.app/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agent-teller-production.up.railway.app/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sarduine13-star/botguard-agent"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=325",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.sarduine13-star/agent-teller"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

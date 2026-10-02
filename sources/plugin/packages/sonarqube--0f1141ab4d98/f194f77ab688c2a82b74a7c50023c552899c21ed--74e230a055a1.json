@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.sonarqube",
+  "name": "sonarqube",
+  "displayName": "SonarSource/sonarqube-agent-plugins",
+  "version": "f194f77ab688c2a82b74a7c50023c552899c21ed",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Automatically enforce SonarQube code quality and security in the agent coding loop — 7,000+ rules, secrets scanning, agentic analysis, and quality gates across 40+ languages. PostToolUse hooks run analysis after every file edit. Pre-tool secrets scanning prevents 450+ patterns from reaching the LLM. Slash commands give on-demand access to quality gate status, coverage, duplication, and dependency risks. Includes SonarQube CLI, MCP Server, skills, hooks, and slash commands.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": ".claude-plugin/plugin.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/SonarSource/sonarqube-agent-plugins",
+    "readme": "https://github.com/SonarSource/sonarqube-agent-plugins#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/SonarSource/sonarqube-agent-plugins",
+      "ref": "f194f77ab688c2a82b74a7c50023c552899c21ed"
+    }
+  ],
+  "keywords": [],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": ".claude-plugin/marketplace.json",
+          "entry": "sonarqube"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

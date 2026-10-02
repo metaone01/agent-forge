@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.aaronte/useqr-mcp",
   "name": "io.github.aaronte/useqr-mcp",
+  "displayName": "useqr-mcp",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Static QR PNG/SVG for agents. Designer and dynamic codes live at useqr.co.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/aaronte/useqr-mcp",
-    "homepage": "https://useqr.co",
-    "readme": "https://github.com/aaronte/useqr-mcp#readme"
-  },
-  "keywords": [
-    "useqr-mcp"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "useqr-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Static QR PNG/SVG for agents. Designer and dynamic codes live at useqr.co.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "useqr-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://useqr.co/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-06a65ad3b5e6cd81",
       "type": "registry",
       "url": "https://www.npmjs.com/package/useqr-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-4a88a2913936c119",
+      "type": "other",
+      "url": "https://useqr.co/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://useqr.co/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/aaronte/useqr-mcp",
+    "homepage": "https://useqr.co"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aaronte__useqr-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=164",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aaronte/useqr-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

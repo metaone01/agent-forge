@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.OjasKord/local-model-suitability-mcp",
   "name": "io.github.OjasKord/local-model-suitability-mcp",
+  "displayName": "Local Model Suitability MCP",
   "version": "1.1.23",
-  "versionScheme": "semver",
-  "description": "Check if a task runs locally vs cloud. Save money on calls that don't need cloud inference.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/OjasKord/local-model-suitability-mcp",
-    "homepage": "https://kordagencies.com",
-    "readme": "https://github.com/OjasKord/local-model-suitability-mcp#readme"
-  },
-  "keywords": [
-    "Local Model Suitability MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "local-model-suitability-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Check if a task runs locally vs cloud. Save money on calls that don't need cloud inference.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "local-model-suitability-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://local-model-suitability-mcp-production.up.railway.app",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c2787377ee965ee3",
       "type": "registry",
       "url": "https://www.npmjs.com/package/local-model-suitability-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.1.23"
+    },
+    {
+      "id": "upstream-2247b5f5ae26dddc",
+      "type": "other",
+      "url": "https://local-model-suitability-mcp-production.up.railway.app",
+      "install": {
+        "type": "api",
+        "url": "https://local-model-suitability-mcp-production.up.railway.app"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/OjasKord/local-model-suitability-mcp",
+    "homepage": "https://kordagencies.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.ojaskord__local-model-suitability-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=145",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.OjasKord/local-model-suitability-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

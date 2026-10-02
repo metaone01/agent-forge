@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.VessellTech/cdf.mcp",
+  "name": "io.github.VessellTech/cdf.mcp",
+  "displayName": "CDF Finance MCP",
+  "version": "0.1.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Consulte contas, cartões, transações e orçamentos da sua conta financeira Vessell.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.VessellTech/cdf.mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.cdf.finance/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1b04336eb97ca493",
+      "type": "other",
+      "url": "https://mcp.cdf.finance/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cdf.finance/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/VessellTech/cdf.mcp",
+    "homepage": "https://cdf.finance/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=159",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.VessellTech/cdf.mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.semihbugrasezer/seerxo",
   "name": "io.github.semihbugrasezer/seerxo",
+  "displayName": "Seerxo",
   "version": "1.13.0",
-  "versionScheme": "semver",
-  "description": "Generate SEO-optimized Etsy listings — title, description, and 13 tags — from your AI assistant.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/semihbugrasezer/seerxo",
-    "homepage": "https://www.seerxo.com",
-    "readme": "https://github.com/semihbugrasezer/seerxo#readme"
-  },
-  "keywords": [
-    "Seerxo"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "seerxo",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate SEO-optimized Etsy listings — title, description, and 13 tags — from your AI assistant.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "seerxo",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.seerxo.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-beccd22bbf0e159d",
       "type": "registry",
       "url": "https://www.npmjs.com/package/seerxo",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.13.0"
+    },
+    {
+      "id": "upstream-945c9a5c17f44257",
+      "type": "other",
+      "url": "https://api.seerxo.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.seerxo.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/semihbugrasezer/seerxo",
+    "homepage": "https://www.seerxo.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.semihbugrasezer__seerxo.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=326",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.semihbugrasezer/seerxo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

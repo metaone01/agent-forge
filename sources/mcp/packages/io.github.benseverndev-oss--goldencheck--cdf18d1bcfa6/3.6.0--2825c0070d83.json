@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.benseverndev-oss/goldencheck",
+  "name": "io.github.benseverndev-oss/goldencheck",
+  "displayName": "GoldenCheck",
+  "version": "3.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Auto-discover validation rules from data — scan, profile, health-score. No rules to write.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "goldencheck",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://goldencheck-mcp-production.up.railway.app/mcp/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5cc453dad3ed111d",
+      "type": "registry",
+      "url": "https://pypi.org/project/goldencheck",
+      "registry": "pypi",
+      "version": "3.6.0"
+    },
+    {
+      "id": "upstream-bafa994a25e221d4",
+      "type": "other",
+      "url": "https://goldencheck-mcp-production.up.railway.app/mcp/",
+      "install": {
+        "type": "api",
+        "url": "https://goldencheck-mcp-production.up.railway.app/mcp/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/benseverndev-oss/goldencheck",
+    "homepage": "https://benseverndev-oss.github.io/goldencheck/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=176",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.benseverndev-oss/goldencheck"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

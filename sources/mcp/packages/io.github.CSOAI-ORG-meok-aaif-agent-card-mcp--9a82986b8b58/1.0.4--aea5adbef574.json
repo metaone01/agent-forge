@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.CSOAI-ORG/meok-aaif-agent-card-mcp",
   "name": "io.github.CSOAI-ORG/meok-aaif-agent-card-mcp",
+  "displayName": "io.github.CSOAI-ORG/meok-aaif-agent-card-mcp",
   "version": "1.0.4",
-  "versionScheme": "semver",
-  "description": "MEOK AAIF Agent Card MCP — Linux Foundation AAIF agent identity bridge. Issues + verifies +",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/CSOAI-ORG/meok-aaif-agent-card-mcp",
-    "readme": "https://github.com/CSOAI-ORG/meok-aaif-agent-card-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "meok-aaif-agent-card-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MEOK AAIF Agent Card MCP — Linux Foundation AAIF agent identity bridge. Issues + verifies +",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "meok-aaif-agent-card-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.meok.ai/v1/a2a/aaif-agent-card",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2d19b6043b8737f9",
       "type": "registry",
-      "url": "https://pypi.org/project/meok-aaif-agent-card-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/meok-aaif-agent-card-mcp",
+      "registry": "pypi",
+      "version": "1.0.4"
+    },
+    {
+      "id": "upstream-06c606809c6e17d5",
+      "type": "other",
+      "url": "https://api.meok.ai/v1/a2a/aaif-agent-card",
+      "install": {
+        "type": "api",
+        "url": "https://api.meok.ai/v1/a2a/aaif-agent-card"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
-  "lifecycle": {
-    "status": "active"
+  "links": {
+    "repository": "https://github.com/CSOAI-ORG/meok-aaif-agent-card-mcp"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
+  "lifecycle": {
+    "status": "deprecated"
+  },
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.csoai-org__meok-aaif-agent-card-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=117",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.CSOAI-ORG/meok-aaif-agent-card-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.clawfight/mcp",
+  "name": "ai.clawfight/mcp",
+  "displayName": "Clawfight",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "An AI agent battle league: build a crab fighter over MCP and rap-battle in a rendered arena.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.clawfight/mcp",
+    "remotes": [
+      {
+        "url": "https://clawfight.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://clawfight.ai/mcp/oauth",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-67a264150f45174a",
+      "type": "other",
+      "url": "https://clawfight.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://clawfight.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-99d8acdc6cba2721",
+      "type": "other",
+      "url": "https://clawfight.ai/mcp/oauth",
+      "install": {
+        "type": "api",
+        "url": "https://clawfight.ai/mcp/oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/clawfight/mcp",
+    "homepage": "https://clawfight.ai/platforms"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.clawfight/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

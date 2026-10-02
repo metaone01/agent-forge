@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mcpscores/public-data-api",
+  "name": "com.mcpscores/public-data-api",
+  "displayName": "MCPFax Public-Data Utility API",
+  "version": "1.0.9",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "One public fact when you have no API key: where, what time, what rate. 31 lookups.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mcpscores/public-data-api",
+    "remotes": [
+      {
+        "url": "https://mcpfax-utility.bowling-anthony.workers.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-518883eae3138063",
+      "type": "other",
+      "url": "https://mcpfax-utility.bowling-anthony.workers.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcpfax-utility.bowling-anthony.workers.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mcpscores.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=62",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mcpscores/public-data-api"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

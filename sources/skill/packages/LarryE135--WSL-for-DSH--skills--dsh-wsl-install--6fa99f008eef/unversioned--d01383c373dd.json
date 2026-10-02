@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.ea66d033fabff3890d03860ab699c1951a6008426ae8f682405f9bde2b442a1c",
+  "name": "LarryE135/WSL-for-DSH/skills/dsh-wsl-install",
+  "displayName": "LarryE135/WSL-for-DSH/skills/dsh-wsl-install",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "通过WSL端口转发的特性实现在WSL内启动DSH，而在windows外用WebUI浏览。把安装流程和调用标准写成了两个skill",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "skills/dsh-wsl-install/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/LarryE135/WSL-for-DSH",
+    "readme": "https://github.com/LarryE135/WSL-for-DSH/blob/HEAD/skills/dsh-wsl-install/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/LarryE135/WSL-for-DSH/tree/HEAD/skills/dsh-wsl-install"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15883"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

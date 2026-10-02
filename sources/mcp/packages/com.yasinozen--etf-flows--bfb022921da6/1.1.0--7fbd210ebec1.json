@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.yasinozen/etf-flows",
+  "name": "com.yasinozen/etf-flows",
+  "displayName": "US Spot Bitcoin & Ethereum ETF Flows",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Daily net flows for US spot Bitcoin & Ethereum ETFs (IBIT, FBTC, GBTC, ETHA) with per-fund history",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.yasinozen/etf-flows",
+    "remotes": [
+      {
+        "url": "https://yasinozen.com/etf-flows/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-295b14bc43cdf04a",
+      "type": "other",
+      "url": "https://yasinozen.com/etf-flows/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://yasinozen.com/etf-flows/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/yasinozen35/free-etf-flows-mcp",
+    "homepage": "https://yasinozen.com/etf-flows/mcp-server/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=87",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.yasinozen/etf-flows"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

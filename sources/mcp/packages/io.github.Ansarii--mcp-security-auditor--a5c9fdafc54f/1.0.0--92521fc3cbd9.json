@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Ansarii/mcp-security-auditor",
+  "name": "io.github.Ansarii/mcp-security-auditor",
+  "displayName": "MCP Security & Vulnerability Auditor",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Static AST security scanner detecting command injection, leaked secrets, and SSRF in MCP tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Ansarii/mcp-security-auditor",
+    "remotes": [
+      {
+        "url": "https://neon_innovation_lab--mcp-security-auditor.apify.actor/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://neoninnovationlab.com/api/mcp-security",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-36de4cc975e8740d",
+      "type": "other",
+      "url": "https://neon_innovation_lab--mcp-security-auditor.apify.actor/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://neon_innovation_lab--mcp-security-auditor.apify.actor/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b1c1c79cf21400d2",
+      "type": "other",
+      "url": "https://neoninnovationlab.com/api/mcp-security",
+      "install": {
+        "type": "api",
+        "url": "https://neoninnovationlab.com/api/mcp-security"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Ansarii/mcp-security-auditor",
+    "homepage": "https://neoninnovationlab.com/tools/mcp-security-scanner"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=110",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Ansarii/mcp-security-auditor"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

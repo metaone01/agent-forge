@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.magpiecapital/magpie",
   "name": "io.github.magpiecapital/magpie",
+  "displayName": "Magpie Capital",
   "version": "0.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Solana lending tools: live stats, 160+ collateral tokens, loan terms, x402 agent borrowing",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/magpiecapital/magpie-mcp",
-    "homepage": "https://magpie.capital",
-    "readme": "https://github.com/magpiecapital/magpie-mcp#readme"
-  },
-  "keywords": [
-    "Magpie Capital"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/magpiecapital/magpie-mcp/releases/download/v0.3.0/magpie-mcp.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/magpiecapital/magpie-mcp/releases/download/v0.3.0/magpie-mcp.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-d86e19094dad23ac",
+      "type": "archive",
       "url": "https://github.com/magpiecapital/magpie-mcp/releases/download/v0.3.0/magpie-mcp.mcpb",
-      "priority": 10,
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "version": "0.3.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/magpiecapital/magpie-mcp",
+    "homepage": "https://magpie.capital"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.magpiecapital__magpie.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=231",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.magpiecapital/magpie"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

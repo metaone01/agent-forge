@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.actionlayer/actionlayer",
   "name": "io.actionlayer/actionlayer",
+  "displayName": "io.actionlayer/actionlayer",
   "version": "0.7.1",
-  "versionScheme": "semver",
-  "description": "Concierge for AI agents: takes action in the physical world — book, order, register, resolve.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://pypi.org/project/actionlayer/",
-    "homepage": "https://actionlayer.io"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "actionlayer",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Concierge for AI agents: takes action in the physical world — book, order, register, resolve.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "actionlayer",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.actionlayer.io/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3dfa6972008f8a87",
       "type": "registry",
-      "url": "https://pypi.org/project/actionlayer/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/actionlayer",
+      "registry": "pypi",
+      "version": "0.7.1"
+    },
+    {
+      "id": "upstream-c3f65e719dc7d9f8",
+      "type": "other",
+      "url": "https://api.actionlayer.io/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.actionlayer.io/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://actionlayer.io"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.actionlayer__actionlayer.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=102",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.actionlayer/actionlayer"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.network.waymark/server",
+  "name": "network.waymark/server",
+  "displayName": "network.waymark/server",
+  "version": "0.9.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Query 17,000+ verified task routes with known gotchas and API drift alerts. Free keyless reads.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "network.waymark/server",
+    "remotes": [
+      {
+        "url": "https://mcp.waymark.network/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-de0ab2ed78739a43",
+      "type": "other",
+      "url": "https://mcp.waymark.network/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.waymark.network/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://waymark.network"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=369",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "network.waymark/server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

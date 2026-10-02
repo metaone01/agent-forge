@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.me.ceki/mcp-server",
+  "name": "me.ceki/mcp-server",
+  "displayName": "me.ceki/mcp-server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hire specialists by the hour — search, schedule, and pay via MCP protocol.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "me.ceki/mcp-server",
+    "remotes": [
+      {
+        "url": "https://api.ceki.me/mcp/agent",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ab7a822f4df98c43",
+      "type": "other",
+      "url": "https://api.ceki.me/mcp/agent",
+      "install": {
+        "type": "api",
+        "url": "https://api.ceki.me/mcp/agent"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Ceki-me/mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "me.ceki/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

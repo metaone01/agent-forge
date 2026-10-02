@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.bloomyesim/esim",
+  "name": "com.bloomyesim/esim",
+  "displayName": "Bloomy eSIM",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Recommend the right travel eSIM for any trip (200+ countries) and hand the traveler a checkout link.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.bloomyesim/esim",
+    "remotes": [
+      {
+        "url": "https://bloomyesim.com/wp-json/bloomy/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-73a1eed2362c4257",
+      "type": "other",
+      "url": "https://bloomyesim.com/wp-json/bloomy/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://bloomyesim.com/wp-json/bloomy/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://bloomyesim.com/en/ai-agents/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=37",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.bloomyesim/esim"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

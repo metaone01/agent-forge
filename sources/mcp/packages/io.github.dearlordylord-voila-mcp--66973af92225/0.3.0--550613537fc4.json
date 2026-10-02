@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dearlordylord/voila-mcp",
   "name": "io.github.dearlordylord/voila-mcp",
+  "displayName": "Voila Groceries MCP",
   "version": "0.3.0",
-  "versionScheme": "semver",
-  "description": "Safe personal Voila grocery automation for search, slots, cart updates, and order history",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/dearlordylord/voila-sdk",
-    "homepage": "https://github.com/dearlordylord/voila-sdk#readme",
-    "readme": "https://github.com/dearlordylord/voila-sdk#readme"
-  },
-  "keywords": [
-    "Voila Groceries MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@firfi/voila-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Safe personal Voila grocery automation for search, slots, cart updates, and order history",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@firfi/voila-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-042f67929a6edb5b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@firfi/voila-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dearlordylord/voila-sdk",
+    "homepage": "https://github.com/dearlordylord/voila-sdk#readme"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dearlordylord__voila-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=192",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dearlordylord/voila-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

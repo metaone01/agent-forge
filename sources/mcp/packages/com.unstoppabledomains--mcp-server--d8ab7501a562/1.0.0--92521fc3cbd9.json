@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.unstoppabledomains/mcp-server",
+  "name": "com.unstoppabledomains/mcp-server",
+  "displayName": "Unstoppable Domains",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Domain search, registration, DNS, marketplace, and checkout with your AI agent.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.unstoppabledomains/mcp-server",
+    "remotes": [
+      {
+        "url": "https://api.unstoppabledomains.com/mcp/v1/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5568c439973b628d",
+      "type": "other",
+      "url": "https://api.unstoppabledomains.com/mcp/v1/",
+      "install": {
+        "type": "api",
+        "url": "https://api.unstoppabledomains.com/mcp/v1/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/unstoppabledomains/unstoppable-mcp-server",
+    "homepage": "https://unstoppabledomains.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=84",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.unstoppabledomains/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

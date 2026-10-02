@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MShekow/package-version-check-mcp",
   "name": "io.github.MShekow/package-version-check-mcp",
+  "displayName": "io.github.MShekow/package-version-check-mcp",
   "version": "1.1.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Returns the latest package / dependency / tool versions for Python, NPM, Go, Docker, Helm, etc.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/MShekow/package-version-check-mcp",
-    "readme": "https://github.com/MShekow/package-version-check-mcp#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "package-version-check-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "package-version-check-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5a3e72b17b110413",
       "type": "registry",
-      "url": "https://pypi.org/project/package-version-check-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/package-version-check-mcp",
+      "registry": "pypi",
+      "version": "1.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/MShekow/package-version-check-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mshekow__package-version-check-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=140",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MShekow/package-version-check-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

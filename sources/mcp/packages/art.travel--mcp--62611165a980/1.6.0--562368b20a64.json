@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.art.travel/mcp",
+  "name": "art.travel/mcp",
+  "displayName": "travel.art",
+  "version": "1.6.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Art-tourism data for AI agents: biennales, art fairs, museums, layover itineraries with 2026 facts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "art.travel/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.travel.art/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3a43d107e93e8f37",
+      "type": "other",
+      "url": "https://mcp.travel.art/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.travel.art/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/alexzavialov/travel-art-mcp",
+    "homepage": "https://travel.art/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=24",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "art.travel/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

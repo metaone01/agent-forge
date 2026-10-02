@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.trustcarinfo/plate-lookup",
   "name": "io.github.trustcarinfo/plate-lookup",
+  "displayName": "io.github.trustcarinfo/plate-lookup",
   "version": "1.0.2",
-  "versionScheme": "semver",
-  "description": "Ukrainian license-plate and vehicle lookups: registry data, photos and reviews (trustcar.info).",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/trustcarinfo/mcp-server-trustcar",
-    "readme": "https://github.com/trustcarinfo/mcp-server-trustcar#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mcp-server-trustcar",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Ukrainian license-plate and vehicle lookups: registry data, photos and reviews (trustcar.info).",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mcp-server-trustcar",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://trustcar.info/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-168bad3db4be8b8b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mcp-server-trustcar",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.2"
+    },
+    {
+      "id": "upstream-e96ccb2e000c4e87",
+      "type": "other",
+      "url": "https://trustcar.info/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://trustcar.info/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/trustcarinfo/mcp-server-trustcar"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.trustcarinfo__plate-lookup.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=343",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.trustcarinfo/plate-lookup"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

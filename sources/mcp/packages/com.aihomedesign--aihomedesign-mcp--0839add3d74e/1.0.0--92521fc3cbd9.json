@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.aihomedesign/aihomedesign-mcp",
+  "name": "com.aihomedesign/aihomedesign-mcp",
+  "displayName": "AI HomeDesign MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server to virtually stage, redesign, enhance and declutter real-estate photos.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.aihomedesign/aihomedesign-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.aihomedesign.com/{connector_token}/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7772cdcfedfa39cb",
+      "type": "other",
+      "url": "https://mcp.aihomedesign.com/{connector_token}/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.aihomedesign.com/{connector_token}/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AIHomeDesign/aihomedesign-mcp",
+    "homepage": "https://aihomedesign.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=33",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.aihomedesign/aihomedesign-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

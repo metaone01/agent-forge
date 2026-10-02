@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.zeroatflops/flopsindex-mcp",
   "name": "io.github.zeroatflops/flopsindex-mcp",
+  "displayName": "FLOPS Compute Intelligence",
   "version": "0.12.4",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "GPU compute price indices over MCP; every value carries a verify URL. Five key-free tools.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/zeroatflops/flopsindex",
-    "homepage": "https://flopsindex.com",
-    "readme": "https://github.com/zeroatflops/flopsindex#readme"
-  },
-  "keywords": [
-    "FLOPS Compute Intelligence"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "flopsindex-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "flopsindex-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4cf4fd8ed8547ef4",
       "type": "registry",
-      "url": "https://pypi.org/project/flopsindex-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/flopsindex-mcp",
+      "registry": "pypi",
+      "version": "0.12.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/zeroatflops/flopsindex",
+    "homepage": "https://flopsindex.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.zeroatflops__flopsindex-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=355",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.zeroatflops/flopsindex-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

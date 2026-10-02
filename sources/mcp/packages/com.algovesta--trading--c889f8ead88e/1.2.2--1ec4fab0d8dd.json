@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.algovesta/trading",
+  "name": "com.algovesta/trading",
+  "displayName": "AlgoVesta MCP Trading",
+  "version": "1.2.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Trade 16 crypto exchanges + MetaTrader 5 from your AI assistant via one MCP connection.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.algovesta/trading",
+    "remotes": [
+      {
+        "url": "https://api.algovesta.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b92b4c8dcb3e5f1e",
+      "type": "other",
+      "url": "https://api.algovesta.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.algovesta.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AlgoVesta/mcp",
+    "homepage": "https://algovesta.com/features-mcp.html"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=33",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.algovesta/trading"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

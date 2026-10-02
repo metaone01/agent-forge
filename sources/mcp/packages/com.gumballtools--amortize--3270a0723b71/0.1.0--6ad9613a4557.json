@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.gumballtools/amortize",
+  "name": "com.gumballtools/amortize",
+  "displayName": "Amortization Schedule",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Row-by-row loan amortization schedules: monthly or daily accrual, extra principal, PMI, biweekly.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.gumballtools/amortize",
+    "remotes": [
+      {
+        "url": "https://amortize.gumballtools.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1fa513c223723bb2",
+      "type": "other",
+      "url": "https://amortize.gumballtools.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://amortize.gumballtools.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bwalvoord/gumball",
+    "homepage": "https://amortize.gumballtools.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=52",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.gumballtools/amortize"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

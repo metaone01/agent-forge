@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.682a736f5de7c774ca78e7bd5c310e0d847ec4f22ed52d90989b5d5221b95ad6",
+  "name": "KSF1216/chinese-script-policy",
+  "displayName": "KSF1216/chinese-script-policy",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "Harness-neutral Traditional Chinese enforcer and offline converter (skill / DSH bundle / CLI). Checks one script axis one way at a time plus two filter axes: Cantonese colloquialisms and Japanese-only kanji and words. Converts 繁↔簡, 粵語→書面語, 日文→中文, each opt-in, plus an optional wording preference. Single-file offline HTML, no runtime deps.",
+  "license": "MIT",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/KSF1216/chinese-script-policy",
+    "readme": "https://github.com/KSF1216/chinese-script-policy/blob/HEAD/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/KSF1216/chinese-script-policy"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "890"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

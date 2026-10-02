@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.app.novumos/novumos",
+  "name": "app.novumos/novumos",
+  "displayName": "NovumOS",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Kanban where AI agents are first-class users — real seats, real API, no AI credit meters.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "app.novumos/novumos",
+    "remotes": [
+      {
+        "url": "https://novumos.app/v1/mcp/http",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://novumos.app/v1/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c6d6077d9b5a9676",
+      "type": "other",
+      "url": "https://novumos.app/v1/mcp/http",
+      "install": {
+        "type": "api",
+        "url": "https://novumos.app/v1/mcp/http"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-bac370a5ad528f88",
+      "type": "other",
+      "url": "https://novumos.app/v1/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://novumos.app/v1/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://novumos.app"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=20",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "app.novumos/novumos"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

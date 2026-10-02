@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.waystation/postgres",
+  "name": "ai.waystation/postgres",
+  "displayName": "ai.waystation/postgres",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Connect to your PostgreSQL database to query data and schemas.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.waystation/postgres",
+    "remotes": [
+      {
+        "url": "https://waystation.ai/postgres/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://waystation.ai/postgres/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a6ea53f48062e2a4",
+      "type": "other",
+      "url": "https://waystation.ai/postgres/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/postgres/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-c2f4d362bdf7adb5",
+      "type": "other",
+      "url": "https://waystation.ai/postgres/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://waystation.ai/postgres/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/waystation-ai/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=17",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.waystation/postgres"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

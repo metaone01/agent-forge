@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cn.housingsentinel/housing-sentinel",
+  "name": "cn.housingsentinel/housing-sentinel",
+  "displayName": "cn.housingsentinel/housing-sentinel",
+  "version": "1.3.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "中国12城官方房产成交数据与进攻/防守买卖信号 MCP。3天全城市免费试用，深圳信号永久免费。Housing data & signals for 12 Chinese cities.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "housing-sentinel-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.housingsentinel.cn/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f66967c852b7f08c",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/housing-sentinel-mcp",
+      "registry": "npm",
+      "version": "1.3.0"
+    },
+    {
+      "id": "upstream-54f69cbb676412ba",
+      "type": "other",
+      "url": "https://api.housingsentinel.cn/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.housingsentinel.cn/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SheldonZhuang/housing-sentinel-ai",
+    "homepage": "https://housingsentinel.cn"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=27",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cn.housingsentinel/housing-sentinel"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

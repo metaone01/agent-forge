@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.zhaoyue722/llm-usage-mcp",
   "name": "io.github.zhaoyue722/llm-usage-mcp",
+  "displayName": "LLM Usage",
   "version": "0.1.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Local-first, multi-provider tool that captures LLM API spend and exposes it to coding agents via MCP",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/zhaoyue722/llm-usage-mcp",
-    "homepage": "https://github.com/zhaoyue722/llm-usage-mcp",
-    "readme": "https://github.com/zhaoyue722/llm-usage-mcp#readme"
-  },
-  "keywords": [
-    "LLM Usage"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "llm-usage-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "llm-usage-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-649f592ed9b78c5f",
       "type": "registry",
-      "url": "https://pypi.org/project/llm-usage-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/llm-usage-mcp",
+      "registry": "pypi",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/zhaoyue722/llm-usage-mcp",
+    "homepage": "https://github.com/zhaoyue722/llm-usage-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.zhaoyue722__llm-usage-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=355",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.zhaoyue722/llm-usage-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

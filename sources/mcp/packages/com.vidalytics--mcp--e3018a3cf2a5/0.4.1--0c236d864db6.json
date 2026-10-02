@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.vidalytics/mcp",
+  "name": "com.vidalytics/mcp",
+  "displayName": "com.vidalytics/mcp",
+  "version": "0.4.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage your Vidalytics videos and analytics from your AI assistant.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.vidalytics/mcp",
+    "remotes": [
+      {
+        "url": "https://api.vidalytics.com/public/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-2aad3184264d2ef0",
+      "type": "other",
+      "url": "https://api.vidalytics.com/public/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.vidalytics.com/public/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/vidalytics/vidalytics-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=85",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.vidalytics/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

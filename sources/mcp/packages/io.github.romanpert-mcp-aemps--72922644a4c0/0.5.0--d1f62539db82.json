@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.romanpert/mcp-aemps",
   "name": "io.github.romanpert/mcp-aemps",
+  "displayName": "MCP AEMPS — CIMA",
   "version": "0.5.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for the Spanish AEMPS CIMA pharmaceutical registry (20,000+ authorised medicines).",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/romanpert/mcp-aemps",
-    "homepage": "https://github.com/romanpert/mcp-aemps",
-    "readme": "https://github.com/romanpert/mcp-aemps#readme"
-  },
-  "keywords": [
-    "MCP AEMPS — CIMA"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "mcp-aemps",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "streamable-http"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-aemps",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "streamable-http"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3dc845ba5c1f28b1",
       "type": "registry",
-      "url": "https://pypi.org/project/mcp-aemps/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/mcp-aemps",
+      "registry": "pypi",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/romanpert/mcp-aemps",
+    "homepage": "https://github.com/romanpert/mcp-aemps"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.romanpert__mcp-aemps.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=298",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.romanpert/mcp-aemps"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.526cf15142d6d0fc67148bb76512b9b89251de7d7f7d816caa4eb383432791ec",
+  "name": "Harris-Logic/dsh-web-rescue",
+  "displayName": "Harris-Logic/dsh-web-rescue",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 救援 skill 插件：把「webui 挂了 → 诊断/回滚/修复」做成可复用 skill（webui-rescue），并随包附带 guardian 救援脚本。DSH rescue skill plugin: turns the \"web UI down → diagnose/rollback/fix\" playbook into a reusable skill",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/Harris-Logic/dsh-web-rescue",
+    "readme": "https://github.com/Harris-Logic/dsh-web-rescue#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/Harris-Logic/dsh-web-rescue"
+    }
+  ],
+  "keywords": [
+    "ui",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "10486"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/skills.json",
+          "entry": "948"
+        },
+        {
+          "repository": "yzfly/awesome-dsh-skills",
+          "revision": "4b7d4cfc8a5287e6443c381a3d0fe61b639c6892",
+          "path": "data/candidates.json",
+          "entry": "948"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mcp-dir/veiculo_estadual-mcp",
+  "name": "io.github.mcp-dir/veiculo_estadual-mcp",
+  "displayName": "Consulta Veicular Estadual",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Vehicle data from its plate sourced directly from state traffic databases (DETRAN), including debts",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mcp-dir/veiculo_estadual-mcp",
+    "remotes": [
+      {
+        "url": "https://api.mcp.ai/p_veiculo_estadual",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e30a560b5db19136",
+      "type": "other",
+      "url": "https://api.mcp.ai/p_veiculo_estadual",
+      "install": {
+        "type": "api",
+        "url": "https://api.mcp.ai/p_veiculo_estadual"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mcp-dir/veiculo_estadual-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=246",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mcp-dir/veiculo_estadual-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

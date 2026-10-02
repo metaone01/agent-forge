@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.tkllabs.bh.mcp-servers/ethereum-toolkit",
+  "name": "io.tkllabs.bh.mcp-servers/ethereum-toolkit",
+  "displayName": "io.tkllabs.bh.mcp-servers/ethereum-toolkit",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real-time Ethereum blockchain data (gas prices, account balances etc) on Mainnet and Sepolia",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.tkllabs.bh.mcp-servers/ethereum-toolkit",
+    "remotes": [
+      {
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bbb702961f09042e",
+      "type": "other",
+      "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-5ceef75dda83a14a",
+      "type": "other",
+      "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/teckel-mcp-servers/ethereum-toolkit"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=360",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.tkllabs.bh.mcp-servers/ethereum-toolkit"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

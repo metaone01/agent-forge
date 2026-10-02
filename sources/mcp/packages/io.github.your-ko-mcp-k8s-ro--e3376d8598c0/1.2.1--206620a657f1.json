@@ -2,46 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.your-ko/mcp-k8s-ro",
   "name": "io.github.your-ko/mcp-k8s-ro",
+  "displayName": "io.github.your-ko/mcp-k8s-ro",
   "version": "1.2.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only Kubernetes MCP server: inspect resources, logs, events, and metrics. Secrets are masked.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/your-ko/mcp-k8s-ro",
-    "readme": "https://github.com/your-ko/mcp-k8s-ro#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/your-ko/mcp-k8s-ro:1.2.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/your-ko/mcp-k8s-ro:1.2.1",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/your-ko/mcp-k8s-ro",
-      "priority": 10,
+      "id": "upstream-c91537cf1644b47e",
+      "type": "oci",
+      "url": "https://ghcr.io/your-ko/mcp-k8s-ro:1.2.1",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/your-ko/mcp-k8s-ro"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.your-ko__mcp-k8s-ro.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=354",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.your-ko/mcp-k8s-ro"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

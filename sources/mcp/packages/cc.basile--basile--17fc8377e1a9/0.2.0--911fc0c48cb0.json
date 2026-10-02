@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.cc.basile/basile",
+  "name": "cc.basile/basile",
+  "displayName": "Basile",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Data B2B française : 26,7 M d'entreprises et 29,5 M de contacts (registre légal, LinkedIn, Maps).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "cc.basile/basile",
+    "remotes": [
+      {
+        "url": "https://mcp.basile.cc/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0f33cf3d40dbb80e",
+      "type": "other",
+      "url": "https://mcp.basile.cc/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.basile.cc/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Bridgers-Agency/mcpbasile",
+    "homepage": "https://basile.cc"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "cc.basile/basile"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

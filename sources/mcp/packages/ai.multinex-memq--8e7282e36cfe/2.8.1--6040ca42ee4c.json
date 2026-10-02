@@ -2,48 +2,58 @@
   "schemaVersion": 2,
   "id": "mcp.ai.multinex/memq",
   "name": "ai.multinex/memq",
+  "displayName": "MemQ Team Sync",
   "version": "2.8.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Shared project memory that keeps teammates and AI agents aligned across sessions.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/multinex-ai/memq",
-    "readme": "https://github.com/multinex-ai/memq#readme"
-  },
-  "keywords": [
-    "MemQ Team Sync"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/multinex-ai/memq-mcp-server:registry-2.8.1",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/multinex-ai/memq-mcp-server:registry-2.8.1",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.multinex.ai/mcp/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/v2/repositories/multinex-ai/memq-mcp-server/",
-      "priority": 10,
+      "id": "upstream-dc380af5911a71f2",
+      "type": "oci",
+      "url": "https://ghcr.io/multinex-ai/memq-mcp-server:registry-2.8.1",
       "registry": "oci"
+    },
+    {
+      "id": "upstream-752c77b51eaf6e12",
+      "type": "other",
+      "url": "https://mcp.multinex.ai/mcp/v1",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.multinex.ai/mcp/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/multinex-ai/memq"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +66,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.multinex__memq.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=9",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.multinex/memq"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -2,50 +2,51 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.keel-trade/keel-trade",
   "name": "io.github.keel-trade/keel-trade",
+  "displayName": "Keel — Hyperliquid trading agent",
   "version": "0.5.6",
-  "versionScheme": "semver",
-  "description": "Build, backtest, and automate Hyperliquid trading strategies — typed, deterministic, live parity.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/keel-trade/keel-trade",
-    "homepage": "https://usekeel.io/keel-mcp?utm_source=keel_mcp&utm_medium=directory&utm_content=mcp_registry",
-    "readme": "https://github.com/keel-trade/keel-trade#readme"
-  },
-  "keywords": [
-    "Keel — Hyperliquid trading agent"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "keel-trade",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Build, backtest, and automate Hyperliquid trading strategies — typed, deterministic, live parity.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "keel-trade",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-f699c700509c2781",
       "type": "registry",
-      "url": "https://pypi.org/project/keel-trade/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/keel-trade",
+      "registry": "pypi",
+      "version": "0.5.6"
+    },
+    {
+      "id": "upstream-9499c99e36d48da0",
+      "type": "archive",
+      "url": "https://github.com/keel-trade/keel-trade/releases/download/v0.5.6/keel-trade-0.5.6.mcpb",
+      "registry": "mcpb",
+      "version": "0.5.6"
     }
   ],
+  "links": {
+    "repository": "https://github.com/keel-trade/keel-trade",
+    "homepage": "https://usekeel.io/keel-mcp?utm_source=keel_mcp&utm_medium=directory&utm_content=mcp_registry"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +59,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.keel-trade__keel-trade.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=224",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.keel-trade/keel-trade"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

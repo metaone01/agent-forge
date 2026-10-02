@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bxetech/bpe-mcp",
   "name": "io.github.bxetech/bpe-mcp",
+  "displayName": "BPE (Bitcoin Pricing Engine)",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Consolidated Bitcoin market data for AI agents: BBO pricing, ML signals, funding skew, briefings.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/bxetech/bpe-mcp",
-    "homepage": "https://bxetech.com/agents",
-    "readme": "https://github.com/bxetech/bpe-mcp#readme"
-  },
-  "keywords": [
-    "BPE (Bitcoin Pricing Engine)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@bxetech/bpe-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Consolidated Bitcoin market data for AI agents: BBO pricing, ML signals, funding skew, briefings.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@bxetech/bpe-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d326fe63d25acfb6",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@bxetech/bpe-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/bxetech/bpe-mcp",
+    "homepage": "https://bxetech.com/agents"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bxetech__bpe-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=179",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bxetech/bpe-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

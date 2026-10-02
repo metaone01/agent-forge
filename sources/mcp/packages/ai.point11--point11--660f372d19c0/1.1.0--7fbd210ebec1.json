@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.point11/point11",
+  "name": "ai.point11/point11",
+  "displayName": "Point11",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Run Point11 operations for your organization: Inspector, Discovery, Alpha, Research, and more.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.point11/point11",
+    "remotes": [
+      {
+        "url": "https://point11.ai/api/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://point11.ai/api/mcp?products={products}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7322786db2c5531e",
+      "type": "other",
+      "url": "https://point11.ai/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://point11.ai/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-096255c1ccfaf57a",
+      "type": "other",
+      "url": "https://point11.ai/api/mcp?products={products}",
+      "install": {
+        "type": "api",
+        "url": "https://point11.ai/api/mcp?products={products}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://point11.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=10",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.point11/point11"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.berntpopp/genefoundry",
+  "name": "io.github.berntpopp/genefoundry",
+  "displayName": "io.github.berntpopp/genefoundry",
+  "version": "0.9.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP gateway federating 22 biomedical MCP servers behind one endpoint: gnomAD, ClinVar, HPO, VEP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.berntpopp/genefoundry",
+    "remotes": [
+      {
+        "url": "https://genefoundry.org/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f0c270ac2443b04e",
+      "type": "other",
+      "url": "https://genefoundry.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://genefoundry.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/berntpopp/genefoundry-router",
+    "homepage": "https://genefoundry.org"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=176",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.berntpopp/genefoundry"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

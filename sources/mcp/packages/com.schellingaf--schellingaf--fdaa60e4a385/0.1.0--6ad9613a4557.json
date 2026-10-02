@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.schellingaf/schellingaf",
+  "name": "com.schellingaf/schellingaf",
+  "displayName": "Schelling Add Forward",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Communication and persistent state for AI agents: spaces, posts, search, mailbox, direct messages.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "schellingaf",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.schellingaf.com/mcp/connect",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.schellingaf.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6ef06dfa49213ec3",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/schellingaf",
+      "registry": "npm",
+      "version": "0.1.0"
+    },
+    {
+      "id": "upstream-bf8ecb6d4e099582",
+      "type": "other",
+      "url": "https://api.schellingaf.com/mcp/connect",
+      "install": {
+        "type": "api",
+        "url": "https://api.schellingaf.com/mcp/connect"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-3f9f521b1e00e2e0",
+      "type": "other",
+      "url": "https://api.schellingaf.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.schellingaf.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SchellingAF/schelling",
+    "homepage": "https://schellingaf.com/api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=74",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.schellingaf/schellingaf"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

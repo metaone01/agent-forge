@@ -2,47 +2,49 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.neverinfamous/sqlite-mcp-server",
   "name": "io.github.neverinfamous/sqlite-mcp-server",
+  "displayName": "io.github.neverinfamous/sqlite-mcp-server",
   "version": "2.6.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "SQLite MCP server with 73 tools for JSONB, full-text search, geospatial, and analytics.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/neverinfamous/sqlite-mcp-server.git",
-    "readme": "https://github.com/neverinfamous/sqlite-mcp-server.git#readme"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "sqlite-mcp-server-enhanced",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "sqlite-mcp-server-enhanced",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e3621fcf5e747711",
       "type": "registry",
-      "url": "https://pypi.org/project/sqlite-mcp-server-enhanced/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/sqlite-mcp-server-enhanced",
+      "registry": "pypi",
+      "version": "2.6.3"
+    },
+    {
+      "id": "upstream-3d175aeab8509830",
+      "type": "oci",
+      "url": "https://docker.io/writenotenow/sqlite-mcp-server:v2.6.3",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/neverinfamous/sqlite-mcp-server.git"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +57,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.neverinfamous__sqlite-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=263",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.neverinfamous/sqlite-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

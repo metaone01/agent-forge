@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.RedDateTech/realagent-mcp",
   "name": "io.github.RedDateTech/realagent-mcp",
+  "displayName": "RealAgent MCP",
   "version": "0.4.0",
-  "versionScheme": "semver",
-  "description": "AI agent real-name identity: SM2 keypair, QR real-name link, SD-JWT VP generate/verify.",
-  "license": "UNLICENSED",
-  "links": {
-    "repository": "https://github.com/RedDateTech/RealAgentMCP",
-    "homepage": "https://github.com/RedDateTech/RealAgentMCP",
-    "readme": "https://github.com/RedDateTech/RealAgentMCP#readme"
-  },
-  "keywords": [
-    "RealAgent MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "realagent-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AI agent real-name identity: SM2 keypair, QR real-name link, SD-JWT VP generate/verify.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "realagent-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-518ec05649db2121",
       "type": "registry",
       "url": "https://www.npmjs.com/package/realagent-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.4.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/RedDateTech/RealAgentMCP",
+    "homepage": "https://github.com/RedDateTech/RealAgentMCP"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.reddatetech__realagent-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=149",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.RedDateTech/realagent-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

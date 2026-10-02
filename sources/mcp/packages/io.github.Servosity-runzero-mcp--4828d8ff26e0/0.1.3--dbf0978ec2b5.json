@@ -2,48 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Servosity/runzero-mcp",
   "name": "io.github.Servosity/runzero-mcp",
+  "displayName": "runZero MCP",
   "version": "0.1.3",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Every runZero query, plus a local SQLite copy of your whole attack surface that diffs over time",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/servosity/msp-skills",
-    "readme": "https://github.com/servosity/msp-skills#readme"
-  },
-  "keywords": [
-    "runZero MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/Servosity/msp-skills/releases/download/runzero-v0.1.3/runzero-mcp.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/Servosity/msp-skills/releases/download/runzero-v0.1.3/runzero-mcp.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1250321811/5d616a2d-3f2f-4973-a4e6-5c74e8a2e7c7?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T11%3A21%3A15Z&rscd=attachment%3B+filename%3Drunzero-mcp.mcpb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T10%3A21%3A07Z&ske=2026-09-22T11%3A21%3A15Z&sks=b&skv=2018-11-09&sig=6dw5UW7HT8y420XDb%2BldwRkkC50CGC0qPxc0eClwjr8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3NDc3NywibmJmIjoxNzkwMDcyOTc3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.kL8GpdFAlmbnR5xzTzrfsqV-WhiysX33pCThQQd5Z1A&response-content-disposition=attachment%3B%20filename%3Drunzero-mcp.mcpb&response-content-type=application%2Foctet-stream",
-      "priority": 10,
-      "registry": "mcpb"
+      "id": "upstream-6384d767fce5b076",
+      "type": "archive",
+      "url": "https://github.com/Servosity/msp-skills/releases/download/runzero-v0.1.3/runzero-mcp.mcpb",
+      "registry": "mcpb",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/servosity/msp-skills"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.servosity__runzero-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=153",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Servosity/runzero-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

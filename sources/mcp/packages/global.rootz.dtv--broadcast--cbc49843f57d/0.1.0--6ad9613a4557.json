@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.global.rootz.dtv/broadcast",
+  "name": "global.rootz.dtv/broadcast",
+  "displayName": "global.rootz.dtv/broadcast",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Which TV transmitters actually reach an address, terrain-graded, and what is on now.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "global.rootz.dtv/broadcast",
+    "remotes": [
+      {
+        "url": "https://dtv.rootz.global/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-cd32080dcd37a2b7",
+      "type": "other",
+      "url": "https://dtv.rootz.global/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://dtv.rootz.global/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "global.rootz.dtv/broadcast"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

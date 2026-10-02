@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.edithatogo/osf-cli-go",
   "name": "io.github.edithatogo/osf-cli-go",
+  "displayName": "OSF CLI Go",
   "version": "0.3.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Read-only MCP tools for authenticated Open Science Framework projects and files.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/edithatogo/osf-cli-go",
-    "readme": "https://github.com/edithatogo/osf-cli-go#readme"
-  },
-  "keywords": [
-    "OSF CLI Go"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/edithatogo/osf-cli-go-osf-mcp:0.3.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/edithatogo/osf-cli-go-osf-mcp:0.3.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/edithatogo/osf-cli-go-osf-mcp",
-      "priority": 10,
+      "id": "upstream-f122ed0cd122928a",
+      "type": "oci",
+      "url": "https://ghcr.io/edithatogo/osf-cli-go-osf-mcp:0.3.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/edithatogo/osf-cli-go"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.edithatogo__osf-cli-go.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=197",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.edithatogo/osf-cli-go"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

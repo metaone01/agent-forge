@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.fluxink/fci-mcp",
+  "name": "ai.fluxink/fci-mcp",
+  "displayName": "ai.fluxink/fci-mcp",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Convert handwriting into text, LaTeX math, chemistry, or molecular structures.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.fluxink/fci-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.fluxink.ai/servers/f6b6758dba6c4c92b83407a113fdb80b/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bb4bcb6c061d3b6d",
+      "type": "other",
+      "url": "https://mcp.fluxink.ai/servers/f6b6758dba6c4c92b83407a113fdb80b/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.fluxink.ai/servers/f6b6758dba6c4c92b83407a113fdb80b/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=5",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.fluxink/fci-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

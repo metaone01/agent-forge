@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.AceDataCloud/mcp-seedream-pro",
+  "name": "io.github.AceDataCloud/mcp-seedream-pro",
+  "displayName": "io.github.AceDataCloud/mcp-seedream-pro",
+  "version": "2026.9.30.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for ByteDance Seedream AI image generation",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "mcp-seedream-pro",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://seedream.mcp.acedata.cloud/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c440da31784eca5c",
+      "type": "registry",
+      "url": "https://pypi.org/project/mcp-seedream-pro",
+      "registry": "pypi",
+      "version": "2026.9.30.0"
+    },
+    {
+      "id": "upstream-d82d4b5ea502d3aa",
+      "type": "other",
+      "url": "https://seedream.mcp.acedata.cloud/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://seedream.mcp.acedata.cloud/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/AceDataCloud/SeedreamMCP",
+    "homepage": "https://seedream.mcp.acedata.cloud"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=108",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AceDataCloud/mcp-seedream-pro"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.kr.gronox/finbridge",
+  "name": "kr.gronox/finbridge",
+  "displayName": "FinBridge",
+  "version": "0.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Korean company disclosures in English: DART filings, financial statements, segments, 13F.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "kr.gronox/finbridge",
+    "remotes": [
+      {
+        "url": "https://mcp.gronox.kr/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7730026c23973e47",
+      "type": "other",
+      "url": "https://mcp.gronox.kr/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.gronox.kr/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Jakechj/finbridge-mcp",
+    "homepage": "https://www.gronox.kr"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=364",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "kr.gronox/finbridge"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

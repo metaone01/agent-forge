@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.so.cleat/cleat",
+  "name": "so.cleat/cleat",
+  "displayName": "Cleat",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "A real US mobile number that receives verification codes, by text or transcribed call.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "cleatapi-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://cleat.so/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-edcde01ad1f3b388",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/cleatapi-mcp",
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-9fd36af16989b5b1",
+      "type": "other",
+      "url": "https://cleat.so/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://cleat.so/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cleat.so/for/ai-agents"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=376",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "so.cleat/cleat"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

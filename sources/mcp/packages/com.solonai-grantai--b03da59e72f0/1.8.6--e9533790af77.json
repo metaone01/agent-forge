@@ -2,48 +2,54 @@
   "schemaVersion": 2,
   "id": "mcp.com.solonai/grantai",
   "name": "com.solonai/grantai",
+  "displayName": "GrantAi Memory",
   "version": "1.8.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Persistent memory for AI agents. Infinite context with sub-millisecond recall.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/solonai-com/grantai",
-    "readme": "https://github.com/solonai-com/grantai#readme"
-  },
-  "keywords": [
-    "GrantAi Memory"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/solonai-com/grantai/releases/download/v1.8.5/grantai-mcp-macos-arm64.zip",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/solonai-com/grantai/releases/download/v1.8.5/grantai-mcp-macos-arm64.zip",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/1169437927/b2528582-8f6d-447d-a061-8a898275100b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-09-22T10%3A49%3A51Z&rscd=attachment%3B+filename%3Dgrantai-mcp-macos-arm64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-09-22T09%3A49%3A05Z&ske=2026-09-22T10%3A49%3A51Z&sks=b&skv=2018-11-09&sig=k2MbCKIbLGlBx%2BrMvejJRIAmgDEtv7DBcb4Ehur5JGA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDA3NTcwMCwibmJmIjoxNzkwMDcyMTAwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Q7XTmgaNe4i4TzIZp4-XnpcInmhzwFqNt_AxgPHNCe4&response-content-disposition=attachment%3B%20filename%3Dgrantai-mcp-macos-arm64.zip&response-content-type=application%2Foctet-stream",
-      "priority": 10,
+      "id": "upstream-0d6f90ad806d0bdb",
+      "type": "archive",
+      "url": "https://github.com/solonai-com/grantai/releases/download/v1.8.5/grantai-mcp-macos-arm64.zip",
       "registry": "mcpb"
+    },
+    {
+      "id": "upstream-1a62b95f35127079",
+      "type": "archive",
+      "url": "https://github.com/solonai-com/grantai/releases/download/v1.8.5/grantai-mcp-linux-x64.zip",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-bf108e32363d6317",
+      "type": "oci",
+      "url": "https://ghcr.io/solonai-com/grantai-memory:1.8.5",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/solonai-com/grantai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +62,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.solonai__grantai.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.solonai/grantai"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

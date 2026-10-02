@@ -2,48 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.antonillos/safeselect",
   "name": "io.github.antonillos/safeselect",
+  "displayName": "SafeSelect MCP",
   "version": "0.7.9",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Fail-closed, read-only PostgreSQL and MongoDB access for AI agents over MCP.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/antonillos/safeselect",
-    "readme": "https://github.com/antonillos/safeselect#readme"
-  },
-  "keywords": [
-    "SafeSelect MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/antonillos/safeselect/releases/download/v0.7.9/safeselect-v0.7.9-aarch64-apple-darwin.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/antonillos/safeselect/releases/download/v0.7.9/safeselect-v0.7.9-aarch64-apple-darwin.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-4ab56caf659160ad",
+      "type": "archive",
       "url": "https://github.com/antonillos/safeselect/releases/download/v0.7.9/safeselect-v0.7.9-aarch64-apple-darwin.mcpb",
-      "priority": 10,
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-44a9db650f4e4488",
+      "type": "archive",
+      "url": "https://github.com/antonillos/safeselect/releases/download/v0.7.9/safeselect-v0.7.9-x86_64-apple-darwin.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-5c11792dfb1e65b7",
+      "type": "archive",
+      "url": "https://github.com/antonillos/safeselect/releases/download/v0.7.9/safeselect-v0.7.9-aarch64-unknown-linux-gnu.mcpb",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-239be12d925dd262",
+      "type": "archive",
+      "url": "https://github.com/antonillos/safeselect/releases/download/v0.7.9/safeselect-v0.7.9-x86_64-unknown-linux-gnu.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/antonillos/safeselect"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.antonillos__safeselect.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=170",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.antonillos/safeselect"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

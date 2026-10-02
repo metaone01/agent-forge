@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.omiiyamu/hiveclaw",
   "name": "io.github.omiiyamu/hiveclaw",
+  "displayName": "io.github.omiiyamu/hiveclaw",
   "version": "0.1.1",
-  "versionScheme": "semver",
-  "description": "Connect AI assistants to HiveClaw — manage projects, talk to AI agents, and more.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/HiveClaw-AI/hiveclaw",
-    "readme": "https://github.com/HiveClaw-AI/hiveclaw#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@hiveclaw/mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Connect AI assistants to HiveClaw — manage projects, talk to AI agents, and more.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@hiveclaw/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.hiveclaw.ai/api/v1/mcp/remote",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-0a5e059b73dcfc62",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@hiveclaw/mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.1"
+    },
+    {
+      "id": "upstream-5251f2192caca9c5",
+      "type": "other",
+      "url": "https://api.hiveclaw.ai/api/v1/mcp/remote",
+      "install": {
+        "type": "api",
+        "url": "https://api.hiveclaw.ai/api/v1/mcp/remote"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/HiveClaw-AI/hiveclaw"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.omiiyamu__hiveclaw.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=268",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.omiiyamu/hiveclaw"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

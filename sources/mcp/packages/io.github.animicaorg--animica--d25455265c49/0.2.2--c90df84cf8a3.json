@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.animicaorg/animica",
+  "name": "io.github.animicaorg/animica",
+  "displayName": "Animica",
+  "version": "0.2.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Read-only Animica chain data, free AI inference, verifiable quantum randomness, and mining stats.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "animica-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.animica.org/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://animica.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-25a8fb9dbdc504f7",
+      "type": "registry",
+      "url": "https://pypi.org/project/animica-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-127c9c99ec64caf4",
+      "type": "other",
+      "url": "https://mcp.animica.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.animica.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b0a84af55199a770",
+      "type": "other",
+      "url": "https://animica.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://animica.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/animicaorg/animica-mcp",
+    "homepage": "https://animica.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=170",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.animicaorg/animica"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

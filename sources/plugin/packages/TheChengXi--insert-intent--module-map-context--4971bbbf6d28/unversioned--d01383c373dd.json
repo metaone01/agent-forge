@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.62aed8dbd4f074b166824954e179ffa7ed9d55eacf988064d08c14c4b51472fe",
+  "name": "TheChengXi/insert-intent/module-map-context",
+  "displayName": "TheChengXi/insert-intent/module-map-context",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH host plugin: inject the workspace module map (.intentflow/_packages/*.yml verbatim) at the top of each new session's first step, skipping gracefully when the folder is absent.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "module-map-context/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/TheChengXi/insert-intent",
+    "readme": "https://github.com/TheChengXi/insert-intent#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/TheChengXi/insert-intent/tree/HEAD/module-map-context"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "16548"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

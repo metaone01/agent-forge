@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.getsentry/sentry-mcp",
+  "name": "io.github.getsentry/sentry-mcp",
+  "displayName": "io.github.getsentry/sentry-mcp",
+  "version": "0.42.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "MCP server for Sentry - error monitoring, issue tracking, and debugging for AI assistants",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@sentry/mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.sentry.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-97d05a2a5724a786",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@sentry/mcp-server",
+      "registry": "npm",
+      "version": "0.42.0"
+    },
+    {
+      "id": "upstream-0f93eaeb09ad2f49",
+      "type": "other",
+      "url": "https://mcp.sentry.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.sentry.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/getsentry/sentry-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=205",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.getsentry/sentry-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

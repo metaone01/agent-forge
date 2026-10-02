@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.skycloak/skycloak-mcp",
+  "name": "io.skycloak/skycloak-mcp",
+  "displayName": "Skycloak",
+  "version": "0.13.3",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Managed Keycloak from any MCP client: clusters, realms, apps, SSO, users, domains, audit events.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.skycloak/skycloak-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.skycloak.io",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-62423174cfcea209",
+      "type": "other",
+      "url": "https://mcp.skycloak.io",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.skycloak.io"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/sky-cloak/skycloak-mcp",
+    "homepage": "https://skycloak.io"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=359",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.skycloak/skycloak-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

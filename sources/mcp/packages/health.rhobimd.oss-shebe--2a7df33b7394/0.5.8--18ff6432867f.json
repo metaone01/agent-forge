@@ -2,45 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.health.rhobimd.oss/shebe",
   "name": "health.rhobimd.oss/shebe",
+  "displayName": "health.rhobimd.oss/shebe",
   "version": "0.5.8",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Fast BM25 full-text search for code repositories. 14 MCP tools, 2ms search latency.",
   "license": "unknown",
-  "links": {
-    "repository": "https://gitlab.com/rhobimd-oss/shebe"
-  },
-  "keywords": [],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://gitlab.com/rhobimd-oss/shebe/-/releases/v0.5.8/downloads/shebe-mcp-v0.5.8.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://gitlab.com/rhobimd-oss/shebe/-/releases/v0.5.8/downloads/shebe-mcp-v0.5.8.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://gitlab.com/api/v4/projects/75748935/packages/generic/shebe/0.5.8/shebe-mcp-v0.5.8.mcpb",
-      "priority": 10,
+      "id": "upstream-d9fd3464caed0d0b",
+      "type": "archive",
+      "url": "https://gitlab.com/rhobimd-oss/shebe/-/releases/v0.5.8/downloads/shebe-mcp-v0.5.8.mcpb",
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://gitlab.com/rhobimd-oss/shebe"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -53,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\health.rhobimd.oss__shebe.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "health.rhobimd.oss/shebe"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

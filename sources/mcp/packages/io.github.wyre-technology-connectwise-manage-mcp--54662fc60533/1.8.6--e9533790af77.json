@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wyre-technology/connectwise-manage-mcp",
   "name": "io.github.wyre-technology/connectwise-manage-mcp",
+  "displayName": "ConnectWise Manage",
   "version": "1.8.6",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for ConnectWise Manage PSA — companies, tickets, projects, time entries, and more.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/wyre-technology/connectwise-manage-mcp",
-    "homepage": "https://github.com/wyre-technology/connectwise-manage-mcp",
-    "readme": "https://github.com/wyre-technology/connectwise-manage-mcp#readme"
-  },
-  "keywords": [
-    "ConnectWise Manage"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-technology/connectwise-manage-mcp:v1.8.6",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-technology/connectwise-manage-mcp:v1.8.6",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-technology/connectwise-manage-mcp",
-      "priority": 10,
+      "id": "upstream-47e0ee76d2e5eff2",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-technology/connectwise-manage-mcp:v1.8.6",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wyre-technology/connectwise-manage-mcp",
+    "homepage": "https://github.com/wyre-technology/connectwise-manage-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-technology__connectwise-manage-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=351",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wyre-technology/connectwise-manage-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

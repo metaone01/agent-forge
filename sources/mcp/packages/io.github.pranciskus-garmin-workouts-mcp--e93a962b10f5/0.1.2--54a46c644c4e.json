@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.pranciskus/garmin-workouts-mcp",
   "name": "io.github.pranciskus/garmin-workouts-mcp",
+  "displayName": "Garmin Workouts MCP",
   "version": "0.1.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Manage Garmin Connect workouts, including strength workouts with mapped exercises.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/pranciskus/garmin-workouts-mcp",
-    "homepage": "https://github.com/pranciskus/garmin-workouts-mcp",
-    "readme": "https://github.com/pranciskus/garmin-workouts-mcp#readme"
-  },
-  "keywords": [
-    "Garmin Workouts MCP"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/pranciskus/garmin-workouts-mcp:0.1.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/pranciskus/garmin-workouts-mcp:0.1.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/pranciskus/garmin-workouts-mcp",
-      "priority": 10,
+      "id": "upstream-54a4fcc3a7ee294f",
+      "type": "oci",
+      "url": "https://ghcr.io/pranciskus/garmin-workouts-mcp:0.1.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/pranciskus/garmin-workouts-mcp",
+    "homepage": "https://github.com/pranciskus/garmin-workouts-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.pranciskus__garmin-workouts-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=291",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pranciskus/garmin-workouts-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

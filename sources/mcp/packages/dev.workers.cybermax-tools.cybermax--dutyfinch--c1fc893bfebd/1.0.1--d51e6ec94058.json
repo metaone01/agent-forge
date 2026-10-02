@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.workers.cybermax-tools.cybermax/dutyfinch",
+  "name": "dev.workers.cybermax-tools.cybermax/dutyfinch",
+  "displayName": "Dutyfinch",
+  "version": "1.0.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "US tariff API + MCP: HTS duty rates, Section 301 lists. Keys $19/mo; 50 free calls a day.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.workers.cybermax-tools.cybermax/dutyfinch",
+    "remotes": [
+      {
+        "url": "https://dutyfinch.cybermax-tools.workers.dev/mcp?via=mcp-registry",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6dcf4e8ad13146bd",
+      "type": "other",
+      "url": "https://dutyfinch.cybermax-tools.workers.dev/mcp?via=mcp-registry",
+      "install": {
+        "type": "api",
+        "url": "https://dutyfinch.cybermax-tools.workers.dev/mcp?via=mcp-registry"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cybermax.cybermax-tools.workers.dev/store/dutyfinch-api/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=95",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.workers.cybermax-tools.cybermax/dutyfinch"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

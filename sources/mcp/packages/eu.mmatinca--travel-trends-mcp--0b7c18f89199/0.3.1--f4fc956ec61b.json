@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.eu.mmatinca/travel-trends-mcp",
+  "name": "eu.mmatinca/travel-trends-mcp",
+  "displayName": "eu.mmatinca/travel-trends-mcp",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "European tourism & travel-disruption MCP: trip risk, live events, Eurostat panels, RO county data.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "eu.mmatinca/travel-trends-mcp",
+    "remotes": [
+      {
+        "url": "https://travel-trends.mmatinca.eu/mcp/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-ec7fbac84caa4a6e",
+      "type": "other",
+      "url": "https://travel-trends.mmatinca.eu/mcp/v1",
+      "install": {
+        "type": "api",
+        "url": "https://travel-trends.mmatinca.eu/mcp/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://travel-trends.mmatinca.eu"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=98",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "eu.mmatinca/travel-trends-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

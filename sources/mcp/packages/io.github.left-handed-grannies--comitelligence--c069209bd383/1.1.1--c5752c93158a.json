@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.left-handed-grannies/comitelligence",
+  "name": "io.github.left-handed-grannies/comitelligence",
+  "displayName": "Comitelligence — EU Comitology Register",
+  "version": "1.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-native search of EU comitology: committees, votes, dossiers, and implementing-act documents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.left-handed-grannies/comitelligence",
+    "remotes": [
+      {
+        "url": "https://comitelligence-mcp.onrender.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://comitelligence-mcp.onrender.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9a294b2d621faecf",
+      "type": "other",
+      "url": "https://comitelligence-mcp.onrender.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://comitelligence-mcp.onrender.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-c45eb84d7712de29",
+      "type": "other",
+      "url": "https://comitelligence-mcp.onrender.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://comitelligence-mcp.onrender.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/left-handed-grannies/comitelligence-v4"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=228",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.left-handed-grannies/comitelligence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

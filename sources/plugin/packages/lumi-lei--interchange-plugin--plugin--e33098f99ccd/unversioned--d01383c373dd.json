@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.e33098f99ccdc21c8a2aa604a585152095bc3f9187ba8ebe5252f865033b1fde",
+  "name": "lumi-lei/interchange-plugin/plugin",
+  "displayName": "lumi-lei/interchange-plugin/plugin",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Interchange 本地优先协同工具（角色化转化/知识沉淀/协同发送）的 DeepSeek Harness 插件：宿主侧服务生命周期管理 + interchange_* 模型工具 + 设置面板（内嵌 Web 应用）。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "plugin/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/lumi-lei/interchange-plugin",
+    "readme": "https://github.com/lumi-lei/interchange-plugin#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/lumi-lei/interchange-plugin/tree/HEAD/plugin"
+    },
+    {
+      "id": "npm-c62c027b0249",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/interchange-dsh",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "models",
+    "knowledge"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "11213"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "3962"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "6032"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "5251"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

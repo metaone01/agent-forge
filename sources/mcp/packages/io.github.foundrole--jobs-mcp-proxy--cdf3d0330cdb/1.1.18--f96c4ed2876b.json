@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.foundrole/jobs-mcp-proxy",
+  "name": "io.github.foundrole/jobs-mcp-proxy",
+  "displayName": "FoundRole — AI Job Search & Application Tracker MCP for Claude & ChatGPT",
+  "version": "1.1.18",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI job search MCP — fact-checked jobs, application tracker, alerts. ChatGPT, Claude, Cursor.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@foundrole/ai-job-search-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.foundrole.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-bae84e846c821ba1",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@foundrole/ai-job-search-mcp",
+      "registry": "npm",
+      "version": "1.1.18"
+    },
+    {
+      "id": "upstream-8b32175eefdd6b4e",
+      "type": "other",
+      "url": "https://www.foundrole.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.foundrole.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/foundrole/jobs-mcp-proxy",
+    "homepage": "https://www.foundrole.com/ai-search-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=202",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.foundrole/jobs-mcp-proxy"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,47 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.hoornet/agentdocs-mcp",
   "name": "io.github.hoornet/agentdocs-mcp",
+  "displayName": "io.github.hoornet/agentdocs-mcp",
   "version": "0.10.1",
-  "versionScheme": "semver",
-  "description": "AgentDocs (agentdocs.eu) MCP: read, search, write, comment, share & attach images to Markdown docs.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/hoornet/agentdocs-mcp",
-    "readme": "https://github.com/hoornet/agentdocs-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "agentdocs-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "AgentDocs (agentdocs.eu) MCP: read, search, write, comment, share & attach images to Markdown docs.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agentdocs-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://agentdocs.eu/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c2b957ac5a3d58b6",
       "type": "registry",
       "url": "https://www.npmjs.com/package/agentdocs-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.10.1"
+    },
+    {
+      "id": "upstream-994eb7f1861f761b",
+      "type": "other",
+      "url": "https://agentdocs.eu/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://agentdocs.eu/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/hoornet/agentdocs-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.hoornet__agentdocs-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=210",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hoornet/agentdocs-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.md.adsagent/tiktok-mcp",
+  "name": "md.adsagent/tiktok-mcp",
+  "displayName": "AdsAgent — TikTok Ads MCP",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hosted TikTok ads MCP with OAuth, bounded reads, and prepare/confirm writes.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "md.adsagent/tiktok-mcp",
+    "remotes": [
+      {
+        "url": "https://tiktok.adsagent.md/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-032c7e2eb21878a0",
+      "type": "other",
+      "url": "https://tiktok.adsagent.md/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://tiktok.adsagent.md/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/kimlucky7/tiktok-adsagent",
+    "homepage": "https://tiktok.adsagent.md"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "md.adsagent/tiktok-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

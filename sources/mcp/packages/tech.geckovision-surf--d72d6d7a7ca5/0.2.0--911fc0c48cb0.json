@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.tech.geckovision/surf",
   "name": "tech.geckovision/surf",
+  "displayName": "tech.geckovision/surf",
   "version": "0.2.0",
-  "versionScheme": "semver",
-  "description": "Point Gecko at an OpenAPI spec; get first-call-correct, auth-hidden agent tools.",
-  "license": "Apache Software License",
-  "links": {
-    "repository": "https://github.com/GeckoVision/gecko-surf",
-    "readme": "https://github.com/GeckoVision/gecko-surf#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "gecko-surf",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Point Gecko at an OpenAPI spec; get first-call-correct, auth-hidden agent tools.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "gecko-surf",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.geckovision.tech/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c09ecfe4fbe5e9fe",
       "type": "registry",
-      "url": "https://pypi.org/project/gecko-surf/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/gecko-surf",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-8c5dbff7ed983b5c",
+      "type": "other",
+      "url": "https://mcp.geckovision.tech/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.geckovision.tech/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/GeckoVision/gecko-surf"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\tech.geckovision__surf.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=377",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "tech.geckovision/surf"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

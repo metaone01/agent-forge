@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.dev.rt4/foodgpt",
+  "name": "dev.rt4/foodgpt",
+  "displayName": "dev.rt4/foodgpt",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Order food from Rio restaurants. Pix prepaid: no order is a commitment until it is paid.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "dev.rt4/foodgpt",
+    "remotes": [
+      {
+        "url": "https://foodgpt.rt4.dev/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-9422b392a33a4a0b",
+      "type": "other",
+      "url": "https://foodgpt.rt4.dev/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://foodgpt.rt4.dev/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rt4-rio/foodgpt",
+    "homepage": "https://foodgpt.rt4.dev"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=93",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "dev.rt4/foodgpt"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -2,49 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.bawbel/bawbel-mcp",
   "name": "io.github.bawbel/bawbel-mcp",
+  "displayName": "Bawbel Scanner",
   "version": "1.1.0",
-  "versionScheme": "semver",
-  "description": "Scan MCP servers and skill files for AVE vulnerabilities. Conformance scoring and threat intel.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/bawbel/bawbel-mcp",
-    "readme": "https://github.com/bawbel/bawbel-mcp#readme"
-  },
-  "keywords": [
-    "Bawbel Scanner"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "bawbel-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Scan MCP servers and skill files for AVE vulnerabilities. Conformance scoring and threat intel.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "bawbel-mcp",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-10beb30f4cae679a",
       "type": "registry",
-      "url": "https://pypi.org/project/bawbel-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/bawbel-mcp",
+      "registry": "pypi",
+      "version": "1.1.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/bawbel/bawbel-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.bawbel__bawbel-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=175",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.bawbel/bawbel-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

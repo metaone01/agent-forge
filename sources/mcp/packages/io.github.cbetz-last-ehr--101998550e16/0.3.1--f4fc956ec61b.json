@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cbetz/last-ehr",
   "name": "io.github.cbetz/last-ehr",
+  "displayName": "Last EHR — Medplum",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "FHIR chart tools for MCP: read-only by default, with elicitation-gated, human-approved writes.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/cbetz/last-ehr",
-    "homepage": "https://www.lastehr.com/docs/mcp",
-    "readme": "https://github.com/cbetz/last-ehr#readme"
-  },
-  "keywords": [
-    "Last EHR — Medplum"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@lastehr/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "FHIR chart tools for MCP: read-only by default, with elicitation-gated, human-approved writes.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@lastehr/mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-c9eb2fac30526f68",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@lastehr/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/cbetz/last-ehr",
+    "homepage": "https://www.lastehr.com/docs/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cbetz__last-ehr.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=180",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cbetz/last-ehr"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

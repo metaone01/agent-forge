@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.aleksUIX/vastlint",
+  "name": "io.github.aleksUIX/vastlint",
+  "displayName": "VASTlint",
+  "version": "0.13.12",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 235 rules, pure Rust core.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/aleksUIX/vastlint/releases/download/v0.13.12/vastlint-mcp-linux-x86_64.tar.gz",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://vastlint.org/mcp",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-5fbe1941ec899c74",
+      "type": "archive",
+      "url": "https://github.com/aleksUIX/vastlint/releases/download/v0.13.12/vastlint-mcp-linux-x86_64.tar.gz",
+      "registry": "mcpb"
+    },
+    {
+      "id": "upstream-3619503b91da94c0",
+      "type": "other",
+      "url": "https://vastlint.org/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://vastlint.org/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/aleksUIX/vastlint"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=167",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.aleksUIX/vastlint"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

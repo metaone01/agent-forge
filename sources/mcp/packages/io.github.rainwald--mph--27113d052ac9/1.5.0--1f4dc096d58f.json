@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.rainwald/mph",
+  "name": "io.github.rainwald/mph",
+  "displayName": "Menor Preço Hoje - MPH",
+  "version": "1.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Preços e ofertas locais em Lages via MCP para consumidores e agentes de IA.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.rainwald/mph",
+    "remotes": [
+      {
+        "url": "https://mcp.menorprecohoje.com.br/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8b6b287917b080db",
+      "type": "other",
+      "url": "https://mcp.menorprecohoje.com.br/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.menorprecohoje.com.br/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rainwald/mph",
+    "homepage": "https://www.menorprecohoje.com.br"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=294",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.rainwald/mph"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

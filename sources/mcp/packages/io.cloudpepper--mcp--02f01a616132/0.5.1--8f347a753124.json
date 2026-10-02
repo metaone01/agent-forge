@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.cloudpepper/mcp",
+  "name": "io.cloudpepper/mcp",
+  "displayName": "CloudPepper",
+  "version": "0.5.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage CloudPepper servers, Odoo instances, backups, and deployments over MCP.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.cloudpepper/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.cloudpepper.io",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3b15474b7b3efc22",
+      "type": "other",
+      "url": "https://mcp.cloudpepper.io",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.cloudpepper.io"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://cloudpepper.io/docs/api-and-mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=103",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.cloudpepper/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

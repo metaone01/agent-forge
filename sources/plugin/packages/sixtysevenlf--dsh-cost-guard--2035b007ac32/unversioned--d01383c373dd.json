@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.2fb3ff8ad3f20de3037485167576fb61a56bbca787e5dbdc99b7abe494409767",
+  "name": "sixtysevenlf/dsh-cost-guard",
+  "displayName": "sixtysevenlf/dsh-cost-guard",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "成本守卫：对 DeepSeek V4-Flash-0731 纯 API 计价的省钱插件——按官方 2026-08-17 峰谷分级（高峰 09:00-12:00 / 14:00-18:00）核算会话成本、缓存命中率与全命中可省金额；¥ 预算守卫（预算=硬上限：设了预算花到即经 llm/stream 短路、不再产生任何新计费，到顶即停",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/sixtysevenlf/dsh-cost-guard",
+    "readme": "https://github.com/sixtysevenlf/dsh-cost-guard#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/sixtysevenlf/dsh-cost-guard"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "2712"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-plugin-catalog.json",
+          "entry": "2433"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "4043"
+        },
+        {
+          "repository": "wgd753/awesome-dsh-plugin",
+          "revision": "274ef577d5c5ab8194a782e0ac5adc1585bc8737",
+          "path": "data/repositories.json",
+          "entry": "sixtysevenlf/dsh-cost-guard"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "7508"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

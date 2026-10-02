@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ch.lundio/lundio",
+  "name": "ch.lundio/lundio",
+  "displayName": "Lundio",
+  "version": "1.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Swiss commercial register: companies, officers, bankruptcy risk, and your monitored lists.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ch.lundio/lundio",
+    "remotes": [
+      {
+        "url": "https://www.lundio.ch/api/mcp/account",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://www.lundio.ch/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f9d661b5073eb3f7",
+      "type": "other",
+      "url": "https://www.lundio.ch/api/mcp/account",
+      "install": {
+        "type": "api",
+        "url": "https://www.lundio.ch/api/mcp/account"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-9d31851d506dfdae",
+      "type": "other",
+      "url": "https://www.lundio.ch/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.lundio.ch/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://www.lundio.ch/api-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=26",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ch.lundio/lundio"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

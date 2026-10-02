@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Wolfe-Jam/rust-faf-mcp",
+  "name": "io.github.Wolfe-Jam/rust-faf-mcp",
+  "displayName": "io.github.Wolfe-Jam/rust-faf-mcp",
+  "version": "0.3.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Persistent project context — Rust-native MCP server. IANA-registered .faf format.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "cargo",
+    "identifier": "rust-faf-mcp",
+    "registryBaseUrl": "https://crates.io",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcpaas.live/rust/mcp/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e17c339c0fdf6657",
+      "type": "registry",
+      "url": "https://crates.io/crates/rust-faf-mcp",
+      "registry": "cargo",
+      "version": "0.3.1"
+    },
+    {
+      "id": "upstream-99239ccd73d38aa3",
+      "type": "other",
+      "url": "https://mcpaas.live/rust/mcp/v1",
+      "install": {
+        "type": "api",
+        "url": "https://mcpaas.live/rust/mcp/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Wolfe-Jam/rust-faf-mcp",
+    "homepage": "https://faf.one"
+  },
+  "lifecycle": {
+    "status": "deprecated"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=161",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Wolfe-Jam/rust-faf-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

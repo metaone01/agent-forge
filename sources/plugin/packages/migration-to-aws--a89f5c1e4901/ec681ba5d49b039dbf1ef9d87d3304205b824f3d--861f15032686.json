@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.migration-to-aws",
+  "name": "migration-to-aws",
+  "displayName": "awslabs/startups/migrate/plugins/migration-to-aws",
+  "version": "ec681ba5d49b039dbf1ef9d87d3304205b824f3d",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Plan a migration from Google Cloud Platform (and OpenAI/Gemini AI workloads) to AWS. Analyzes your Infrastructure-as-Code files, app code, and GCP billing data to discover resources, design an AWS architecture, estimate costs, and generate migration artifacts — including AI-provider mapping to Amazon Bedrock. Processing is local; your data stays in your environment.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "migrate/plugins/migration-to-aws/.claude-plugin/plugin.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/awslabs/startups",
+    "readme": "https://github.com/awslabs/startups#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/awslabs/startups/tree/ec681ba5d49b039dbf1ef9d87d3304205b824f3d/migrate/plugins/migration-to-aws",
+      "ref": "ec681ba5d49b039dbf1ef9d87d3304205b824f3d"
+    }
+  ],
+  "keywords": [],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "anthropics/claude-plugins-official",
+          "revision": "ab024cdcfa7ca80be204acd4907656ba5a968589",
+          "path": ".claude-plugin/marketplace.json",
+          "entry": "migration-to-aws"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

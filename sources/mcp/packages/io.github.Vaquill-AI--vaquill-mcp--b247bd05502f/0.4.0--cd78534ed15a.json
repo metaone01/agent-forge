@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.Vaquill-AI/vaquill-mcp",
+  "name": "io.github.Vaquill-AI/vaquill-mcp",
+  "displayName": "Vaquill",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search US and Indian statutes, regulations, constitutions, and court rules.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.Vaquill-AI/vaquill-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.vaquill.ai/s/_",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.vaquill.ai/in/s/_",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4ccfc1e93db587b9",
+      "type": "other",
+      "url": "https://mcp.vaquill.ai/s/_",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.vaquill.ai/s/_"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-70ffa6b870ee1a8b",
+      "type": "other",
+      "url": "https://mcp.vaquill.ai/in/s/_",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.vaquill.ai/in/s/_"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Vaquill-AI/vaquill-mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=158",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Vaquill-AI/vaquill-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

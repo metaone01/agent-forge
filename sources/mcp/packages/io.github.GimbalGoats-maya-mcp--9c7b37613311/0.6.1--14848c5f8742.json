@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.GimbalGoats/maya-mcp",
   "name": "io.github.GimbalGoats/maya-mcp",
+  "displayName": "Maya MCP",
   "version": "0.6.1",
-  "versionScheme": "semver",
-  "description": "Control Autodesk Maya scenes with 71 typed tools for modeling, animation, shading, and more.",
-  "license": "MIT License",
-  "links": {
-    "repository": "https://github.com/GimbalGoats/GG_MayaMCP",
-    "homepage": "https://gimbalgoats.github.io/GG_MayaMCP/",
-    "readme": "https://github.com/GimbalGoats/GG_MayaMCP#readme"
-  },
-  "keywords": [
-    "Maya MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "maya-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Control Autodesk Maya scenes with 71 typed tools for modeling, animation, shading, and more.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "maya-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-356e8e954f4a2139",
       "type": "registry",
-      "url": "https://pypi.org/project/maya-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/maya-mcp",
+      "registry": "pypi",
+      "version": "0.6.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/GimbalGoats/GG_MayaMCP",
+    "homepage": "https://gimbalgoats.github.io/GG_MayaMCP/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.gimbalgoats__maya-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=131",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.GimbalGoats/maya-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

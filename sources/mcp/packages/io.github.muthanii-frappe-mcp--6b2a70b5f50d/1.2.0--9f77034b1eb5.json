@@ -2,50 +2,57 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.muthanii/frappe_mcp",
   "name": "io.github.muthanii/frappe_mcp",
+  "displayName": "Frappe MCP Server",
   "version": "1.2.0",
-  "versionScheme": "semver",
-  "description": "Interact with Frappe/ERPNext sites — document CRUD, search, and whitelisted method calls",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/muthanii/frappe_mcp",
-    "homepage": "https://github.com/muthanii/frappe_mcp",
-    "readme": "https://github.com/muthanii/frappe_mcp#readme"
-  },
-  "keywords": [
-    "Frappe MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "frappe-mcp-server",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Interact with Frappe/ERPNext sites — document CRUD, search, and whitelisted method calls",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "frappe-mcp-server",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3e1d16a0d4872ecc",
       "type": "registry",
-      "url": "https://pypi.org/project/frappe-mcp-server/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/frappe-mcp-server",
+      "registry": "pypi",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-62a5507473473e43",
+      "type": "oci",
+      "url": "https://docker.io/muthanii/frappe-mcp:1.2.0",
+      "registry": "oci"
+    },
+    {
+      "id": "upstream-0bc67f78df7a1af0",
+      "type": "oci",
+      "url": "https://ghcr.io/muthanii/frappe-mcp:1.2.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/muthanii/frappe_mcp",
+    "homepage": "https://github.com/muthanii/frappe_mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +65,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.muthanii__frappe_mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=261",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.muthanii/frappe_mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

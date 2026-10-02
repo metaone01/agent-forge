@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.50924672a4e146ab73e7027c0c2dc429bad25a3bd3d16cdc55ed6f59c37e3ca5",
+  "name": "EchoHeim/DSH-Memory",
+  "displayName": "EchoHeim/DSH-Memory",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH（DeepSeek Harness）常驻记忆插件：默认与 WorkBuddy 共用同一份记忆文件（.workbuddy/memory/MEMORY.md 的受控小节 + 当日文件），无 .workbuddy 的项目自建 .DSH__memory/ 按日期沉淀；自动采集会话、动态注入上下文并注册 project-memory skill。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/EchoHeim/DSH-Memory",
+    "readme": "https://github.com/EchoHeim/DSH-Memory#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/EchoHeim/DSH-Memory"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "capabilities"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "15320"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.gg.var/naming-memory",
+  "name": "gg.var/naming-memory",
+  "displayName": "var.gg Naming Memory",
+  "version": "2.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Curated multilingual dictionary that names code identifiers from domain concepts (KO/JA/ZH/VI/EN).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "gg.var/naming-memory",
+    "remotes": [
+      {
+        "url": "https://var.gg/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://var.gg/mcp?transport=sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c9f95b9fc7c335a2",
+      "type": "other",
+      "url": "https://var.gg/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://var.gg/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-f785c66b0b4d8d7e",
+      "type": "other",
+      "url": "https://var.gg/mcp?transport=sse",
+      "install": {
+        "type": "api",
+        "url": "https://var.gg/mcp?transport=sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://var.gg/ko/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=100",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "gg.var/naming-memory"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

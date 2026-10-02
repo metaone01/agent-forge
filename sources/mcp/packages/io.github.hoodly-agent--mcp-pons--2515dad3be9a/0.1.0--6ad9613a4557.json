@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.hoodly-agent/mcp-pons",
+  "name": "io.github.hoodly-agent/mcp-pons",
+  "displayName": "pons Launchpad (Robinhood Chain)",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Dual-version MCP for pons token launches on Robinhood Chain: v1 trading, v2 curve reads (plan-only).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.hoodly-agent/mcp-pons",
+    "remotes": [
+      {
+        "url": "https://mcp-pons.hoodly.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e1c4bf588ad7bbf5",
+      "type": "other",
+      "url": "https://mcp-pons.hoodly.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-pons.hoodly.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hoodly-agent/mcp-pons"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=210",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.hoodly-agent/mcp-pons"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

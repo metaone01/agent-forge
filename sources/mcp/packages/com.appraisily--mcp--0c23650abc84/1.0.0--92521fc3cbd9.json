@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.appraisily/mcp",
+  "name": "com.appraisily/mcp",
+  "displayName": "Appraisily",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check past auction prices in ChatGPT, plus appraisal prep and sample reports.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.appraisily/mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.appraisily.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://mcp.appraisily.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-1185647a31ab8932",
+      "type": "other",
+      "url": "https://mcp.appraisily.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.appraisily.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-26a6e5f4b148285a",
+      "type": "other",
+      "url": "https://mcp.appraisily.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.appraisily.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Appraisily/appraisily-openai-mcp",
+    "homepage": "https://appraisily.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=34",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.appraisily/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

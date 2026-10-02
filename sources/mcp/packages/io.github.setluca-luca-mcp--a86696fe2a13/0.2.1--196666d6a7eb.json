@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.setluca/luca-mcp",
   "name": "io.github.setluca/luca-mcp",
+  "displayName": "io.github.setluca/luca-mcp",
   "version": "0.2.1",
-  "versionScheme": "semver",
-  "description": "Work your Luca workspace from any MCP client: 183 API tools + 15 task tools for leads and calls.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@setluca/mcp",
-    "homepage": "https://setluca.com/developers"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@setluca/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Work your Luca workspace from any MCP client: 183 API tools + 15 task tools for leads and calls.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@setluca/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.setluca.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d1f32b0550a69530",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@setluca/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.2.1"
+    },
+    {
+      "id": "upstream-2e340298eba91e01",
+      "type": "other",
+      "url": "https://mcp.setluca.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.setluca.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "homepage": "https://setluca.com/developers"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.setluca__luca-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=327",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.setluca/luca-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.trade.snacs/snacs-data",
+  "name": "trade.snacs/snacs-data",
+  "displayName": "SNACS Data",
+  "version": "3.5.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "SEC dilution data, live market data, and news for U.S. equities, with point-in-time as-of queries.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "trade.snacs/snacs-data",
+    "remotes": [
+      {
+        "url": "https://mcp.snacs.trade/",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-c326071ab75e2c6b",
+      "type": "other",
+      "url": "https://mcp.snacs.trade/",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.snacs.trade/"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/snacstrade/snacs-mcp",
+    "homepage": "https://snacs.trade/api"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=378",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "trade.snacs/snacs-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

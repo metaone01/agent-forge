@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.re-port-flow/reportflow-mcp",
   "name": "io.github.re-port-flow/reportflow-mcp",
+  "displayName": "Re:port Flow MCP",
   "version": "1.4.0",
-  "versionScheme": "semver",
-  "description": "Generate PDF reports from Re:port Flow templates via Claude and other AI agents.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/re-port-flow/reportflow-mcp",
-    "homepage": "https://re-port-flow.com",
-    "readme": "https://github.com/re-port-flow/reportflow-mcp#readme"
-  },
-  "keywords": [
-    "Re:port Flow MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "reportflow-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Generate PDF reports from Re:port Flow templates via Claude and other AI agents.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "reportflow-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.re-port-flow.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-d1783795f3625709",
       "type": "registry",
       "url": "https://www.npmjs.com/package/reportflow-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.4.0"
+    },
+    {
+      "id": "upstream-5f46bca9d00a1658",
+      "type": "other",
+      "url": "https://mcp.re-port-flow.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.re-port-flow.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/re-port-flow/reportflow-mcp",
+    "homepage": "https://re-port-flow.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.re-port-flow__reportflow-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=295",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.re-port-flow/reportflow-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

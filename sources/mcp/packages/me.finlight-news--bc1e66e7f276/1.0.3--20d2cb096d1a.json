@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.me.finlight/news",
   "name": "me.finlight/news",
+  "displayName": "finlight Financial News",
   "version": "1.0.3",
-  "versionScheme": "semver",
-  "description": "Real-time financial news for AI agents: search by ticker and source, with sentiment and entities.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/callbk/finlight-mcp",
-    "homepage": "https://finlight.me/mcp",
-    "readme": "https://github.com/callbk/finlight-mcp#readme"
-  },
-  "keywords": [
-    "finlight Financial News"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "finlight-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Real-time financial news for AI agents: search by ticker and source, with sentiment and entities.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "finlight-mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.finlight.me",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-226df225b96056a0",
       "type": "registry",
       "url": "https://www.npmjs.com/package/finlight-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.3"
+    },
+    {
+      "id": "upstream-8219361780299ff0",
+      "type": "other",
+      "url": "https://mcp.finlight.me",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.finlight.me"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/callbk/finlight-mcp",
+    "homepage": "https://finlight.me/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\me.finlight__news.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=366",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "me.finlight/news"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.cyanheads/nws-weather-mcp-server",
+  "name": "io.github.cyanheads/nws-weather-mcp-server",
+  "displayName": "io.github.cyanheads/nws-weather-mcp-server",
+  "version": "0.10.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Get US weather forecasts, active alerts, and current observations.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cyanheads/nws-weather-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://nws.caseyjhand.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-001e3e2585b3c5d1",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@cyanheads/nws-weather-mcp-server",
+      "registry": "npm",
+      "version": "0.10.0"
+    },
+    {
+      "id": "upstream-497636a8a2b1fa63",
+      "type": "other",
+      "url": "https://nws.caseyjhand.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://nws.caseyjhand.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/cyanheads/nws-weather-mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=188",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cyanheads/nws-weather-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

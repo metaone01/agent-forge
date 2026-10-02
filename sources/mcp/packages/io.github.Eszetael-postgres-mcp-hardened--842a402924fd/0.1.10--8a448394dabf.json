@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.Eszetael/postgres-mcp-hardened",
   "name": "io.github.Eszetael/postgres-mcp-hardened",
+  "displayName": "PostgreSQL (hardened, read-only)",
   "version": "0.1.10",
-  "versionScheme": "semver",
-  "description": "Read-only PostgreSQL over MCP. Writes refused at the parsed SQL, plus a READ ONLY transaction.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/Eszetael/postgres-mcp-hardened",
-    "homepage": "https://github.com/Eszetael/postgres-mcp-hardened",
-    "readme": "https://github.com/Eszetael/postgres-mcp-hardened#readme"
-  },
-  "keywords": [
-    "PostgreSQL (hardened, read-only)"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "postgres-mcp-hardened",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Read-only PostgreSQL over MCP. Writes refused at the parsed SQL, plus a READ ONLY transaction.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "postgres-mcp-hardened",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3656c05d3210f4b9",
       "type": "registry",
       "url": "https://www.npmjs.com/package/postgres-mcp-hardened",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.10"
+    },
+    {
+      "id": "upstream-b4b0faa822671109",
+      "type": "oci",
+      "url": "https://ghcr.io/eszetael/postgres-mcp-hardened:0.1.10",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/Eszetael/postgres-mcp-hardened",
+    "homepage": "https://github.com/Eszetael/postgres-mcp-hardened"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.eszetael__postgres-mcp-hardened.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=125",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.Eszetael/postgres-mcp-hardened"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

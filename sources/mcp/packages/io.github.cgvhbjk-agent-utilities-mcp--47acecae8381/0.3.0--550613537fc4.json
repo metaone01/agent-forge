@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.cgvhbjk/agent-utilities-mcp",
   "name": "io.github.cgvhbjk/agent-utilities-mcp",
+  "displayName": "Agent Utilities",
   "version": "0.3.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Paid tools for HTML, JSON, shopping data and agent configs. Free discovery; $5 prepaid credits.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/cgvhbjk/agent-utilities-mcp",
-    "homepage": "https://agent-utilities.agent-utilities.workers.dev/integrations/mcp",
-    "readme": "https://github.com/cgvhbjk/agent-utilities-mcp#readme"
-  },
-  "keywords": [
-    "Agent Utilities"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "mcpb",
-    "identifier": "https://github.com/cgvhbjk/agent-utilities-mcp/releases/download/v0.3.0/agent-utilities-mcp-0.3.0.mcpb",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "mcpb",
+    "identifier": "https://github.com/cgvhbjk/agent-utilities-mcp/releases/download/v0.3.0/agent-utilities-mcp-0.3.0.mcpb",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
+      "id": "upstream-3070f68c99960fab",
+      "type": "archive",
       "url": "https://github.com/cgvhbjk/agent-utilities-mcp/releases/download/v0.3.0/agent-utilities-mcp-0.3.0.mcpb",
-      "priority": 10,
       "registry": "mcpb"
     }
   ],
+  "links": {
+    "repository": "https://github.com/cgvhbjk/agent-utilities-mcp",
+    "homepage": "https://agent-utilities.agent-utilities.workers.dev/integrations/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.cgvhbjk__agent-utilities-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=181",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.cgvhbjk/agent-utilities-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

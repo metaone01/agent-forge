@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.teampolarity/cosmos-mcp",
   "name": "io.github.teampolarity/cosmos-mcp",
+  "displayName": "io.github.teampolarity/cosmos-mcp",
   "version": "0.7.1",
-  "versionScheme": "semver",
-  "description": "Personal knowledge graph every MCP client reads from and writes to. Portable across agents.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/teampolarity/cosmos-mcp",
-    "readme": "https://github.com/teampolarity/cosmos-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@polarity-lab/cosmos-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Personal knowledge graph every MCP client reads from and writes to. Portable across agents.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@polarity-lab/cosmos-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e71b8a37b2120e53",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@polarity-lab/cosmos-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.7.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/teampolarity/cosmos-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.teampolarity__cosmos-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=336",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.teampolarity/cosmos-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

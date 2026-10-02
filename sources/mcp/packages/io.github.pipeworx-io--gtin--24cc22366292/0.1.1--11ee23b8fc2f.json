@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.pipeworx-io/gtin",
+  "name": "io.github.pipeworx-io/gtin",
+  "displayName": "Gtin",
+  "version": "0.1.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Barcode / GTIN validation MCP (EAN-13, UPC-A, EAN-8, GTIN-14).",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.pipeworx-io/gtin",
+    "remotes": [
+      {
+        "url": "https://gateway.pipeworx.io/gtin/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-28ed8f78018646ec",
+      "type": "other",
+      "url": "https://gateway.pipeworx.io/gtin/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gateway.pipeworx.io/gtin/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/pipeworx-io/mcp-gtin",
+    "homepage": "https://pipeworx.io/packs/gtin"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=280",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.pipeworx-io/gtin"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

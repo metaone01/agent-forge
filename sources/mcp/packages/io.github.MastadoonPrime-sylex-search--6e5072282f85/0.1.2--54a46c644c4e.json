@@ -2,47 +2,59 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.MastadoonPrime/sylex-search",
   "name": "io.github.MastadoonPrime/sylex-search",
+  "displayName": "io.github.MastadoonPrime/sylex-search",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Universal search engine for AI agents. Discover products, services, and businesses via MCP.",
-  "license": "AGPL-3.0",
-  "links": {
-    "repository": "https://github.com/MastadoonPrime/sylex-search",
-    "readme": "https://github.com/MastadoonPrime/sylex-search#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "sylex-search",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Universal search engine for AI agents. Discover products, services, and businesses via MCP.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "sylex-search",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp-server-production-38c9.up.railway.app/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-8bfea039ed6e6140",
       "type": "registry",
       "url": "https://www.npmjs.com/package/sylex-search",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-d866de370f8e5e96",
+      "type": "other",
+      "url": "https://mcp-server-production-38c9.up.railway.app/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp-server-production-38c9.up.railway.app/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/MastadoonPrime/sylex-search"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +67,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.mastadoonprime__sylex-search.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=141",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.MastadoonPrime/sylex-search"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

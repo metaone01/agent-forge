@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.pearl.mcp/pearl-api-mcp-server",
+  "name": "com.pearl.mcp/pearl-api-mcp-server",
+  "displayName": "com.pearl.mcp/pearl-api-mcp-server",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Hybrid human + AI expertise for faster, trusted answers and decisions via MCP Server.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.pearl.mcp/pearl-api-mcp-server",
+    "remotes": [
+      {
+        "url": "https://mcp.pearl.com/sse",
+        "transport": "sse"
+      },
+      {
+        "url": "https://mcp.pearl.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-3f8ec18fbb858ef7",
+      "type": "other",
+      "url": "https://mcp.pearl.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pearl.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-8f84a82948a15ee1",
+      "type": "other",
+      "url": "https://mcp.pearl.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.pearl.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=68",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.pearl.mcp/pearl-api-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

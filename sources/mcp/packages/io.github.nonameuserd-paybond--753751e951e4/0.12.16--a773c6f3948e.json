@@ -2,50 +2,52 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.nonameuserd/paybond",
   "name": "io.github.nonameuserd/paybond",
+  "displayName": "Paybond MCP Server",
   "version": "0.12.16",
-  "versionScheme": "semver",
-  "description": "Default trust layer for agentic payments: authorize agent spend, evidence, receipts, settlement.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/nonameuserd/paybond-kit",
-    "homepage": "https://paybond.ai/docs/kit/mcp-server",
-    "readme": "https://github.com/nonameuserd/paybond-kit#readme"
-  },
-  "keywords": [
-    "Paybond MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@paybond/kit",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Default trust layer for agentic payments: authorize agent spend, evidence, receipts, settlement.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@paybond/kit",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-bafc2ba1b7d08caa",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@paybond/kit",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.12.16"
+    },
+    {
+      "id": "upstream-108872593a682ca3",
+      "type": "registry",
+      "url": "https://pypi.org/project/paybond-kit",
+      "registry": "pypi",
+      "version": "0.12.16"
     }
   ],
+  "links": {
+    "repository": "https://github.com/nonameuserd/paybond-kit",
+    "homepage": "https://paybond.ai/docs/kit/mcp-server"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +60,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.nonameuserd__paybond.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=265",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.nonameuserd/paybond"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

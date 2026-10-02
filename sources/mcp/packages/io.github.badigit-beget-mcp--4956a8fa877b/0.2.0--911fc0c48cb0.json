@@ -2,50 +2,50 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.badigit/beget-mcp",
   "name": "io.github.badigit/beget-mcp",
+  "displayName": "Beget Hosting",
   "version": "0.2.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Beget hosting: sites, domains, DNS, MySQL, FTP, cron, backups, mail — 73 tools",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/badigit/beget-mcp",
-    "homepage": "https://badigit.github.io/beget-mcp/",
-    "readme": "https://github.com/badigit/beget-mcp#readme"
-  },
-  "keywords": [
-    "Beget Hosting"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "beget-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "beget-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6f7ef0ef5699083f",
       "type": "registry",
-      "url": "https://pypi.org/project/beget-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/beget-mcp",
+      "registry": "pypi",
+      "version": "0.2.0"
+    },
+    {
+      "id": "upstream-3e1538ac50b490f4",
+      "type": "oci",
+      "url": "https://ghcr.io/badigit/beget-mcp:0.2.0",
+      "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/badigit/beget-mcp",
+    "homepage": "https://badigit.github.io/beget-mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +58,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.badigit__beget-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=174",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.badigit/beget-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

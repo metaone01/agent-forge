@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.net.sodatsu-mitsumori/estimate-invoice",
+  "name": "net.sodatsu-mitsumori/estimate-invoice",
+  "displayName": "育つ見積",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP + OAuthで、MCP対応AIから見積書・請求書等を作成・編集・変換。PDF生成、共有URL、品目マスタ、学習結果の保存にも対応。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "net.sodatsu-mitsumori/estimate-invoice",
+    "remotes": [
+      {
+        "url": "https://app.sodatsu-mitsumori.net/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-f53f40208dde77b7",
+      "type": "other",
+      "url": "https://app.sodatsu-mitsumori.net/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://app.sodatsu-mitsumori.net/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://sodatsu-mitsumori.net/features/external-ai-mcp/?utm_source=official_mcp_registry&utm_medium=referral&utm_campaign=remote_mcp_registry"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=368",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "net.sodatsu-mitsumori/estimate-invoice"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

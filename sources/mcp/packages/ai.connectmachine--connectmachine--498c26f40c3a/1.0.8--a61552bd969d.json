@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.connectmachine/connectmachine",
+  "name": "ai.connectmachine/connectmachine",
+  "displayName": "ConnectMachine",
+  "version": "1.0.8",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage your ConnectMachine contacts, networks, events, and digital business cards.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.connectmachine/connectmachine",
+    "remotes": [
+      {
+        "url": "https://mcp.connectmachine.ai/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-6b031ab50902eceb",
+      "type": "other",
+      "url": "https://mcp.connectmachine.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.connectmachine.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/connectmachine/mcp-server",
+    "homepage": "https://connectmachine.ai/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=3",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.connectmachine/connectmachine"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

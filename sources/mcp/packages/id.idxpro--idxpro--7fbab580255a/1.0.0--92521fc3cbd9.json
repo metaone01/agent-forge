@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.id.idxpro/idxpro",
+  "name": "id.idxpro/idxpro",
+  "displayName": "id.idxpro/idxpro",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Data saham Indonesia (IDX) untuk AI: harga, teknikal, screener, deteksi bandar, sektor, earnings.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "id.idxpro/idxpro",
+    "remotes": [
+      {
+        "url": "https://mcp.idxpro.id",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-42c2a5ba89f06581",
+      "type": "other",
+      "url": "https://mcp.idxpro.id",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.idxpro.id"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://idxpro.id"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=101",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "id.idxpro/idxpro"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

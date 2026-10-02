@@ -2,47 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.stevemilton/agentmarketplace-mcp",
   "name": "io.github.stevemilton/agentmarketplace-mcp",
+  "displayName": "io.github.stevemilton/agentmarketplace-mcp",
   "version": "0.5.0",
-  "versionScheme": "semver",
-  "description": "Discover MCP servers + tools, auto-install into any client, pay for x402 endpoints in USDC.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/arispay-inc/ArisPay",
-    "readme": "https://github.com/arispay-inc/ArisPay#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "agentmarketplace-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Discover MCP servers + tools, auto-install into any client, pay for x402 endpoints in USDC.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "agentmarketplace-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-41dab068479a923f",
       "type": "registry",
       "url": "https://www.npmjs.com/package/agentmarketplace-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.5.0"
     }
   ],
+  "links": {
+    "repository": "https://github.com/arispay-inc/ArisPay"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.stevemilton__agentmarketplace-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=334",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.stevemilton/agentmarketplace-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

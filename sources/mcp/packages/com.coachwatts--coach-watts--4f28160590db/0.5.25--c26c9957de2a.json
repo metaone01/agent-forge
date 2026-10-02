@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.coachwatts/coach-watts",
+  "name": "com.coachwatts/coach-watts",
+  "displayName": "Coach Watts",
+  "version": "0.5.25",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP server for training, nutrition, wellness, and performance data with OAuth 2.0.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.coachwatts/coach-watts",
+    "remotes": [
+      {
+        "url": "https://coachwatts.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-530f4e24d574f2fb",
+      "type": "other",
+      "url": "https://coachwatts.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://coachwatts.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/hdkiller/coach",
+    "homepage": "https://coachwatts.com/documentation/developers/mcp-server"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=41",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.coachwatts/coach-watts"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

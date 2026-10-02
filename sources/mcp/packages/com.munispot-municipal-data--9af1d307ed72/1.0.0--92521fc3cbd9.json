@@ -2,46 +2,56 @@
   "schemaVersion": 2,
   "id": "mcp.com.munispot/municipal-data",
   "name": "com.munispot/municipal-data",
+  "displayName": "com.munispot/municipal-data",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Financial data, credit scores, and economic indicators for 14,800+ U.S. municipalities.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://www.npmjs.com/package/@munispot/mcp"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@munispot/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Financial data, credit scores, and economic indicators for 14,800+ U.S. municipalities.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@munispot/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.munispot.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-21c9b6c90e2de800",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@munispot/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-31604c7a1ee78ebc",
+      "type": "other",
+      "url": "https://www.munispot.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.munispot.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -54,6 +64,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.munispot__municipal-data.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=64",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.munispot/municipal-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

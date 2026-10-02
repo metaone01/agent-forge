@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.sh.simplepu/mcp",
+  "name": "sh.simplepu/mcp",
+  "displayName": "Simplepush",
+  "version": "0.4.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Send tasks and notifications to people's phones. Answers build a queryable knowledge base.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@simplepush/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.simplepu.sh/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-517676cc1d76b3d7",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@simplepush/mcp",
+      "registry": "npm",
+      "version": "0.4.0"
+    },
+    {
+      "id": "upstream-dd2e82a45ed23250",
+      "type": "other",
+      "url": "https://mcp.simplepu.sh/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.simplepu.sh/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/simplepush/simplepush-mcp",
+    "homepage": "https://simplepu.sh"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=375",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "sh.simplepu/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

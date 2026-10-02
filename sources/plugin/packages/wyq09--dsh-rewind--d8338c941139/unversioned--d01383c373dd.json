@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.8835e2313164c738e4ea3286efec56bba617e97fff3262246750fa98691db1b8",
+  "name": "wyq09/dsh-rewind",
+  "displayName": "wyq09/dsh-rewind",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "Checkpoint/rewind extension for the DeepSeek Harness (dsh) web UI, adapted from pi-rewind. 检查点/回退插件：每个 agent 回合自动 git 快照，diff 预览后一键还原，支持撤销/重做。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/wyq09/dsh-rewind",
+    "readme": "https://github.com/wyq09/dsh-rewind#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/wyq09/dsh-rewind"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "agents"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "8100"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

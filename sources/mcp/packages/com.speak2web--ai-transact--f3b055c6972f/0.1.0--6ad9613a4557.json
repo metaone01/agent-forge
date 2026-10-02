@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.speak2web/ai-transact",
+  "name": "com.speak2web/ai-transact",
+  "displayName": "Speak2Web AI Transact",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Order & book on AI Transact WordPress sites by AI agent — MCP tools with WhatsApp confirmation.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.speak2web/ai-transact",
+    "remotes": [
+      {
+        "url": "https://{host}/wp-json/s2w-ai-gateway/v1/mcp-server",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8d6e085d8ed04e55",
+      "type": "other",
+      "url": "https://{host}/wp-json/s2w-ai-gateway/v1/mcp-server",
+      "install": {
+        "type": "api",
+        "url": "https://{host}/wp-json/s2w-ai-gateway/v1/mcp-server"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://speak2web.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=78",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.speak2web/ai-transact"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

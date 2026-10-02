@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.WYRE-AI/dicker-data-mcp",
   "name": "io.github.WYRE-AI/dicker-data-mcp",
+  "displayName": "Dicker Data",
   "version": "1.0.2",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "MCP server for Dicker Data's B2B partner/reseller REST API — pricing, orders, and invoices.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/WYRE-AI/dicker-data-mcp",
-    "homepage": "https://github.com/WYRE-AI/dicker-data-mcp",
-    "readme": "https://github.com/WYRE-AI/dicker-data-mcp#readme"
-  },
-  "keywords": [
-    "Dicker Data"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/wyre-ai/dicker-data-mcp:v1.0.2",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/wyre-ai/dicker-data-mcp:v1.0.2",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/wyre-ai/dicker-data-mcp",
-      "priority": 10,
+      "id": "upstream-f9e82a7e78f44f94",
+      "type": "oci",
+      "url": "https://ghcr.io/wyre-ai/dicker-data-mcp:v1.0.2",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/WYRE-AI/dicker-data-mcp",
+    "homepage": "https://github.com/WYRE-AI/dicker-data-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wyre-ai__dicker-data-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=160",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.WYRE-AI/dicker-data-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

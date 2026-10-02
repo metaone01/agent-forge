@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.xyz.558686.gpt55/token-gateway",
+  "name": "xyz.558686.gpt55/token-gateway",
+  "displayName": "GPT55 Model Gateway",
+  "version": "2026.8.5",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Remote MCP gateway for GPT-5.6 Luna, Soul, Terra, and x402-paid agent tools with no API key.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "xyz.558686.gpt55/token-gateway",
+    "remotes": [
+      {
+        "url": "https://gpt55.558686.xyz/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://gpt55.558686.xyz/mcp/sse",
+        "transport": "sse"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-239cbb4474690f97",
+      "type": "other",
+      "url": "https://gpt55.558686.xyz/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://gpt55.558686.xyz/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-78da66c3193433a5",
+      "type": "other",
+      "url": "https://gpt55.558686.xyz/mcp/sse",
+      "install": {
+        "type": "api",
+        "url": "https://gpt55.558686.xyz/mcp/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/wangletiand/gpt55-x402-gateway",
+    "homepage": "https://gpt55.558686.xyz/x402/service"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=382",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.558686.gpt55/token-gateway"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

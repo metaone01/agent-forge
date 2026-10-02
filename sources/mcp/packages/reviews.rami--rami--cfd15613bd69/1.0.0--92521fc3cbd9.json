@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.reviews.rami/rami",
+  "name": "reviews.rami/rami",
+  "displayName": "Rami Code Review",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "AI code review for GitHub PRs with an MCP autofix loop for Claude Code and Cursor",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "reviews.rami/rami",
+    "remotes": [
+      {
+        "url": "https://rami.reviews/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-688f4ba957981b3a",
+      "type": "other",
+      "url": "https://rami.reviews/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://rami.reviews/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/rami-code-review/claude-code-marketplace",
+    "homepage": "https://rami.reviews"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=373",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "reviews.rami/rami"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

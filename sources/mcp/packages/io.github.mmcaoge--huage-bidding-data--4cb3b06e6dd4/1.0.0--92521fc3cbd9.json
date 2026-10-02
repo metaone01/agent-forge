@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.mmcaoge/huage-bidding-data",
+  "name": "io.github.mmcaoge/huage-bidding-data",
+  "displayName": "华哥·全国招投标数据",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "查询 hndcw.com 全国政府招投标 / 建设项目库，可按关键词、省份、城市、行业、预算区间筛选，返回项目标题、地区、预算(万元)、业主单位、阶段、公告日期与原文链接。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "io.github.mmcaoge/huage-bidding-data",
+    "remotes": [
+      {
+        "url": "https://hndcw.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-b2d0ee65bd633aa3",
+      "type": "other",
+      "url": "https://hndcw.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://hndcw.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/mmcaoge/huage-mcp-servers",
+    "homepage": "https://hndcw.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=251",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.mmcaoge/huage-bidding-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

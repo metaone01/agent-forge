@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.shilpibuilder/shilpi",
+  "name": "com.shilpibuilder/shilpi",
+  "displayName": "Shilpi for WordPress",
+  "version": "1.9.4",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Edit a WordPress site through scoped abilities: pages, templates, design system, SEO, shop.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.shilpibuilder/shilpi",
+    "remotes": [
+      {
+        "url": "https://{site_domain}/wp-json/mcp/shilpi-oauth",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-e31b8cabeb68eccf",
+      "type": "other",
+      "url": "https://{site_domain}/wp-json/mcp/shilpi-oauth",
+      "install": {
+        "type": "api",
+        "url": "https://{site_domain}/wp-json/mcp/shilpi-oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/shilpibuilder/shilpi-mcp",
+    "homepage": "https://shilpibuilder.com/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=76",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.shilpibuilder/shilpi"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

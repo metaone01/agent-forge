@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.celigo/celigo",
+  "name": "com.celigo/celigo",
+  "displayName": "Celigo",
+  "version": "0.11.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Manage your Celigo integrator.io account: integrations, flows, connections, errors, and jobs.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.celigo/celigo",
+    "remotes": [
+      {
+        "url": "https://api.integrator.io/celigo-mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.eu.integrator.io/celigo-mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.au.integrator.io/celigo-mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.ca.integrator.io/celigo-mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-d7074ae1c8eada38",
+      "type": "other",
+      "url": "https://api.integrator.io/celigo-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.integrator.io/celigo-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-a452c35f3f04874a",
+      "type": "other",
+      "url": "https://api.eu.integrator.io/celigo-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.eu.integrator.io/celigo-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-76673ddc985cef2f",
+      "type": "other",
+      "url": "https://api.au.integrator.io/celigo-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.au.integrator.io/celigo-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-1a84aa82447dca15",
+      "type": "other",
+      "url": "https://api.ca.integrator.io/celigo-mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.ca.integrator.io/celigo-mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/celigo/ai",
+    "homepage": "https://github.com/celigo/ai/blob/main/docs/connect-mcp.md"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=39",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.celigo/celigo"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

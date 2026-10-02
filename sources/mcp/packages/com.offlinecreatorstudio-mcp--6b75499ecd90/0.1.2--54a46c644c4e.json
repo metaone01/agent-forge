@@ -2,50 +2,60 @@
   "schemaVersion": 2,
   "id": "mcp.com.offlinecreatorstudio/mcp",
   "name": "com.offlinecreatorstudio/mcp",
+  "displayName": "OfflineCreator Studio",
   "version": "0.1.2",
-  "versionScheme": "semver",
-  "description": "Create images and videos with OfflineCreator Studio through OAuth or the npm stdio server.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/OfflineCreatorStudio/offlinecreator-mcp",
-    "homepage": "https://offlinecreatorstudio.com/mcp-cli",
-    "readme": "https://github.com/OfflineCreatorStudio/offlinecreator-mcp#readme"
-  },
-  "keywords": [
-    "OfflineCreator Studio"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@offlinecreator/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Create images and videos with OfflineCreator Studio through OAuth or the npm stdio server.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@offlinecreator/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.offlinecreatorstudio.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-4ff2e4cc6bf70e02",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@offlinecreator/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.1.2"
+    },
+    {
+      "id": "upstream-9ffa234c31f82eb5",
+      "type": "other",
+      "url": "https://mcp.offlinecreatorstudio.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.offlinecreatorstudio.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/OfflineCreatorStudio/offlinecreator-mcp",
+    "homepage": "https://offlinecreatorstudio.com/mcp-cli"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +68,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.offlinecreatorstudio__mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=66",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.offlinecreatorstudio/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mobilevalidate/mcp",
+  "name": "com.mobilevalidate/mcp",
+  "displayName": "MobileValidate",
+  "version": "1.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Check phone numbers (WhatsApp, Telegram, carrier, spam reputation) and e-mail addresses.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@mobilevalidate/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://mcp.mobilevalidate.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-fbe50fce9a03938d",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@mobilevalidate/mcp",
+      "registry": "npm",
+      "version": "1.2.0"
+    },
+    {
+      "id": "upstream-dee83ffec6b0f1b4",
+      "type": "other",
+      "url": "https://mcp.mobilevalidate.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.mobilevalidate.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/brntech/mobilevalidate-sdk",
+    "homepage": "https://mobilevalidate.com/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mobilevalidate/mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.crossingkeyintelligence/crossingkey-mcp",
+  "name": "com.crossingkeyintelligence/crossingkey-mcp",
+  "displayName": "CrossingKey MCP",
+  "version": "3.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Agent-native MCP for governed commerce, x402 payments, paid capabilities, and verifiable receipts.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.crossingkeyintelligence/crossingkey-mcp",
+    "remotes": [
+      {
+        "url": "https://mcp.crossingkeyintelligence.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7d0afdcfd46e183c",
+      "type": "other",
+      "url": "https://mcp.crossingkeyintelligence.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.crossingkeyintelligence.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/crossingkey-holdings/crossingkey-mcp",
+    "homepage": "https://www.crossingkeyintelligence.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.crossingkeyintelligence/crossingkey-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

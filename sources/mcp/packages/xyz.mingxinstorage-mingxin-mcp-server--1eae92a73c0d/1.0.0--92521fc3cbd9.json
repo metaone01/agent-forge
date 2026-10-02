@@ -2,48 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.xyz.mingxinstorage/mingxin-mcp-server",
   "name": "xyz.mingxinstorage/mingxin-mcp-server",
+  "displayName": "xyz.mingxinstorage/mingxin-mcp-server",
   "version": "1.0.0",
-  "versionScheme": "semver",
-  "description": "Measured AI-inference-storage benchmarks with citations, article search, KV-cache ROI estimation.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/mingxin-tech/mingxin-mcp-server",
-    "homepage": "https://mingxinstorage.xyz/en",
-    "readme": "https://github.com/mingxin-tech/mingxin-mcp-server#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "mingxin-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Measured AI-inference-storage benchmarks with citations, article search, KV-cache ROI estimation.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "mingxin-mcp-server",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://www.mingxinstorage.xyz/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1c7651e964321673",
       "type": "registry",
       "url": "https://www.npmjs.com/package/mingxin-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "1.0.0"
+    },
+    {
+      "id": "upstream-e86ef009d2e29420",
+      "type": "other",
+      "url": "https://www.mingxinstorage.xyz/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://www.mingxinstorage.xyz/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/mingxin-tech/mingxin-mcp-server",
+    "homepage": "https://mingxinstorage.xyz/en"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\xyz.mingxinstorage__mingxin-mcp-server.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=383",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "xyz.mingxinstorage/mingxin-mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

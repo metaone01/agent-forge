@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.heubme2020/datasinking",
+  "name": "io.github.heubme2020/datasinking",
+  "displayName": "DataSinking",
+  "version": "0.2.13",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Full-text Asian financial reports (China, Korea, Japan, Taiwan) as clean Markdown for RAG agents.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "datasinking",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.datasink.ing/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-575de0d6cc9433d4",
+      "type": "registry",
+      "url": "https://pypi.org/project/datasinking",
+      "registry": "pypi",
+      "version": "0.2.13"
+    },
+    {
+      "id": "upstream-b87139f9e928bf93",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/datasinking-mcp",
+      "registry": "npm",
+      "version": "0.2.13"
+    },
+    {
+      "id": "upstream-26fe186cbc5b6ba2",
+      "type": "other",
+      "url": "https://api.datasink.ing/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.datasink.ing/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/heubme2020/datasinking",
+    "homepage": "https://datasink.ing"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=210",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.heubme2020/datasinking"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

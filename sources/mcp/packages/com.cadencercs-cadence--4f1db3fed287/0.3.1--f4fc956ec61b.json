@@ -2,48 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.com.cadencercs/cadence",
   "name": "com.cadencercs/cadence",
+  "displayName": "com.cadencercs/cadence",
   "version": "0.3.1",
-  "versionScheme": "semver",
-  "description": "Send RCS messages from your agent and get typed replies. Automatic SMS fallback.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/dwixom/rcs-agent-mvp",
-    "homepage": "https://cadencercs.com",
-    "readme": "https://github.com/dwixom/rcs-agent-mvp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "@cadencercs/mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Send RCS messages from your agent and get typed replies. Automatic SMS fallback.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@cadencercs/mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-2dc71c079c3c6aa7",
       "type": "registry",
       "url": "https://www.npmjs.com/package/@cadencercs/mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.3.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dwixom/rcs-agent-mvp",
+    "homepage": "https://cadencercs.com"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.cadencercs__cadence.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=38",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.cadencercs/cadence"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

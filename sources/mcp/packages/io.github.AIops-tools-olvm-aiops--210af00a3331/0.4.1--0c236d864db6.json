@@ -2,49 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.AIops-tools/olvm-aiops",
   "name": "io.github.AIops-tools/olvm-aiops",
+  "displayName": "OLVM AIops",
   "version": "0.4.1",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Governed OLVM / oVirt 4.5 ops — 17 MCP tools: inventory, health, capacity, diagnosis; audited.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/AIops-tools/OLVM-AIops",
-    "readme": "https://github.com/AIops-tools/OLVM-AIops#readme"
-  },
-  "keywords": [
-    "OLVM AIops"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "olvm-aiops",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "olvm-aiops",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-1d97b416997c7b9d",
       "type": "registry",
-      "url": "https://pypi.org/project/olvm-aiops/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/olvm-aiops",
+      "registry": "pypi",
+      "version": "0.4.1"
     }
   ],
+  "links": {
+    "repository": "https://github.com/AIops-tools/OLVM-AIops"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -57,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.aiops-tools__olvm-aiops.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=107",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.AIops-tools/olvm-aiops"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

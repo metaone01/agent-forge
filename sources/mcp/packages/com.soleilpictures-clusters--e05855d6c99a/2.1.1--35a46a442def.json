@@ -2,50 +2,61 @@
   "schemaVersion": 2,
   "id": "mcp.com.soleilpictures/clusters",
   "name": "com.soleilpictures/clusters",
+  "displayName": "Soleil Clusters",
   "version": "2.1.1",
-  "versionScheme": "semver",
-  "description": "Read and build visual moodboards, shot lists and lookbooks from an AI assistant.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/arconkli/soleilpictures",
-    "homepage": "https://clusters.soleilpictures.com/docs/mcp",
-    "readme": "https://github.com/arconkli/soleilpictures#readme"
-  },
-  "keywords": [
-    "Soleil Clusters"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "soleil-clusters-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Read and build visual moodboards, shot lists and lookbooks from an AI assistant.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "soleil-clusters-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://clusters.soleilpictures.com/api/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-e74f939027053771",
       "type": "registry",
       "url": "https://www.npmjs.com/package/soleil-clusters-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.1.1"
+    },
+    {
+      "id": "upstream-db4128b557e4b58a",
+      "type": "other",
+      "url": "https://clusters.soleilpictures.com/api/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://clusters.soleilpictures.com/api/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/arconkli/soleilpictures",
+    "homepage": "https://clusters.soleilpictures.com/docs/mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +69,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\com.soleilpictures__clusters.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.soleilpictures/clusters"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

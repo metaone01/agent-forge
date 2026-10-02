@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.crimsoncrawler/mcp-server",
+  "name": "com.crimsoncrawler/mcp-server",
+  "displayName": "Crimson Crawler",
+  "version": "4.1.2",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Enrich, search, assess, and manage threat intelligence through 80+ typed MCP tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.crimsoncrawler/mcp-server",
+    "remotes": [
+      {
+        "url": "https://crimsoncrawler.com/mcp/v1",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-a2e516eb5b276596",
+      "type": "other",
+      "url": "https://crimsoncrawler.com/mcp/v1",
+      "install": {
+        "type": "api",
+        "url": "https://crimsoncrawler.com/mcp/v1"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://crimsoncrawler.com/docs/clients/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=42",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.crimsoncrawler/mcp-server"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

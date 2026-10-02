@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.io.github.ABTdomain/domainkits-mcp",
+  "name": "io.github.ABTdomain/domainkits-mcp",
+  "displayName": "DomainKits",
+  "version": "2.2.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Search newly registered, expired, aged, active, deleted and for-sale domains, plus WHOIS and DNS.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "@domainkits/mcp",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://api.domainkits.com/v1/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7400fc1cfaa918f4",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/@domainkits/mcp",
+      "registry": "npm",
+      "version": "2.1.1"
+    },
+    {
+      "id": "upstream-1c4ea57393819e15",
+      "type": "other",
+      "url": "https://api.domainkits.com/v1/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.domainkits.com/v1/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/ABTdomain/domainkits-mcp",
+    "homepage": "https://domainkits.com/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=106",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.ABTdomain/domainkits-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

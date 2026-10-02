@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.twmarketdata/tw-market-data",
+  "name": "com.twmarketdata/tw-market-data",
+  "displayName": "com.twmarketdata/tw-market-data",
+  "version": "1.28.1",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Taiwan stock market data (TWMD): official-source, point-in-time-safe datasets via read-only tools.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.twmarketdata/tw-market-data",
+    "remotes": [
+      {
+        "url": "https://mcp.twmarketdata.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-8f3d7fe1fa291cd0",
+      "type": "other",
+      "url": "https://mcp.twmarketdata.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://mcp.twmarketdata.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://twmarketdata.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=84",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.twmarketdata/tw-market-data"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

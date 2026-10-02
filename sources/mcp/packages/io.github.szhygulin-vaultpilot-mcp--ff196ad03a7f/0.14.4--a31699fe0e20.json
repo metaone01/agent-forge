@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.szhygulin/vaultpilot-mcp",
   "name": "io.github.szhygulin/vaultpilot-mcp",
+  "displayName": "VaultPilot MCP",
   "version": "0.14.4",
-  "versionScheme": "semver",
-  "description": "Self-custodial crypto + DeFi MCP for AI agents. Ledger-signed. EVM, TRON, Solana, BTC, LTC.",
-  "license": "BUSL-1.1",
-  "links": {
-    "repository": "https://github.com/szhygulin/vaultpilot-mcp",
-    "homepage": "https://github.com/szhygulin/vaultpilot-mcp",
-    "readme": "https://github.com/szhygulin/vaultpilot-mcp#readme"
-  },
-  "keywords": [
-    "VaultPilot MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "vaultpilot-mcp",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Self-custodial crypto + DeFi MCP for AI agents. Ledger-signed. EVM, TRON, Solana, BTC, LTC.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "vaultpilot-mcp",
+    "registryBaseUrl": "https://registry.npmjs.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6a930c791d5d57c5",
       "type": "registry",
       "url": "https://www.npmjs.com/package/vaultpilot-mcp",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.14.4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/szhygulin/vaultpilot-mcp",
+    "homepage": "https://github.com/szhygulin/vaultpilot-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.szhygulin__vaultpilot-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=335",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.szhygulin/vaultpilot-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

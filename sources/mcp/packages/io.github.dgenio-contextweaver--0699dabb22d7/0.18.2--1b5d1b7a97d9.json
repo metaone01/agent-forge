@@ -2,50 +2,45 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.dgenio/contextweaver",
   "name": "io.github.dgenio/contextweaver",
+  "displayName": "contextweaver",
   "version": "0.18.2",
-  "versionScheme": "semver",
-  "description": "MCP gateway: bounded tool shortlists + artifact-backed result firewall. Deterministic, no model.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/dgenio/contextweaver",
-    "homepage": "https://dgenio.github.io/contextweaver/recipes/",
-    "readme": "https://github.com/dgenio/contextweaver#readme"
-  },
-  "keywords": [
-    "contextweaver"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "contextweaver",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "MCP gateway: bounded tool shortlists + artifact-backed result firewall. Deterministic, no model.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "contextweaver",
+    "registryBaseUrl": "https://pypi.org",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-5fd3164ff8f514f0",
       "type": "registry",
-      "url": "https://pypi.org/project/contextweaver/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/contextweaver",
+      "registry": "pypi",
+      "version": "0.18.2"
     }
   ],
+  "links": {
+    "repository": "https://github.com/dgenio/contextweaver",
+    "homepage": "https://dgenio.github.io/contextweaver/recipes/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +53,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.dgenio__contextweaver.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=193",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.dgenio/contextweaver"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

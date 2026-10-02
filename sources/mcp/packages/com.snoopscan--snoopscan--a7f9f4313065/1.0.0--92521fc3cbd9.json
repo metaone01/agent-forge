@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.snoopscan/snoopscan",
+  "name": "com.snoopscan/snoopscan",
+  "displayName": "SnoopScan",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Web scraping for agents: scrape, crawl, map, search and extract pages as clean markdown or JSON.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.snoopscan/snoopscan",
+    "remotes": [
+      {
+        "url": "https://api.snoopscan.com/mcp-oauth",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://api.snoopscan.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-4ed18fb4ac031a0b",
+      "type": "other",
+      "url": "https://api.snoopscan.com/mcp-oauth",
+      "install": {
+        "type": "api",
+        "url": "https://api.snoopscan.com/mcp-oauth"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-e32bed006d83b468",
+      "type": "other",
+      "url": "https://api.snoopscan.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://api.snoopscan.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/SnoopScan/snoopscan-core",
+    "homepage": "https://snoopscan.com/docs/mcp"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=77",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.snoopscan/snoopscan"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

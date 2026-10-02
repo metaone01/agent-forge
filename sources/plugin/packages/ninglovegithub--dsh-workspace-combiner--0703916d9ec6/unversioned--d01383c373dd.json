@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.8eab6dd8f875e992ccb72c8dd4108447f372bc96ed076223fa59c24503f8e96f",
+  "name": "ninglovegithub/dsh-workspace-combiner",
+  "displayName": "ninglovegithub/dsh-workspace-combiner",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH 工作区组合器：左侧边栏管理多工作空间，每个绑定一个主目录（工作区锚点/文档区）+ 若干代码项目；新建向导自动识别 Java/Vue/React/Python/Go 等项目并支持多选，新建会话在主目录打开，把所有项目绝对路径注入 system prompt，联动 @chaoset/sandbox-extra-roots 放开读写白名单。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/ninglovegithub/dsh-workspace-combiner",
+    "readme": "https://github.com/ninglovegithub/dsh-workspace-combiner#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/ninglovegithub/dsh-workspace-combiner"
+    },
+    {
+      "id": "npm-0af048754ed1",
+      "type": "registry",
+      "url": "https://www.npmjs.com/package/dsh-workspace-combiner",
+      "registry": "npm"
+    }
+  ],
+  "keywords": [
+    "memory",
+    "safety"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14556"
+        },
+        {
+          "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+          "revision": "bb8496ec4cbb9217b33bf081ec4cdf06b51501e8",
+          "path": "data/plugins/ninglovegithub__dsh-workspace-combiner.yml"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "16027"
+        },
+        {
+          "repository": "npm-search:dsh-plugin",
+          "revision": "2026-10-02T05:18:39Z",
+          "path": "-/v1/search",
+          "entry": "dsh-workspace-combiner"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

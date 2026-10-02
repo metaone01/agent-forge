@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "skill.f26f4fb109a353d7da67f22560fed2ec3db2ba6e6e9273b85aa1e6ddc2833365",
+  "name": "omni-/containerize-dsh/skills/dsh-work",
+  "displayName": "omni-/containerize-dsh/skills/dsh-work",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "skill",
+  "description": "Run DeepSeek Harness in an isolated Docker sandbox with external project plugins and Git-based host/agent change transfer.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "skillDetails": {
+    "skillPath": "skills/dsh-work/SKILL.md"
+  },
+  "links": {
+    "repository": "https://github.com/omni-/containerize-dsh",
+    "readme": "https://github.com/omni-/containerize-dsh/blob/HEAD/skills/dsh-work/SKILL.md"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/omni-/containerize-dsh/tree/HEAD/skills/dsh-work"
+    }
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "14570"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

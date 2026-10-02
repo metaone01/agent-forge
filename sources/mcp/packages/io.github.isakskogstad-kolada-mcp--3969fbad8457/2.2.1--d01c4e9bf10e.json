@@ -2,50 +2,74 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.isakskogstad/kolada-mcp",
   "name": "io.github.isakskogstad/kolada-mcp",
+  "displayName": "Kolada MCP Server",
   "version": "2.2.1",
-  "versionScheme": "semver",
-  "description": "Swedish municipality statistics from Kolada API. 6000+ KPIs for all 290 municipalities.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/isakskogstad/kolada-mcp",
-    "homepage": "https://github.com/isakskogstad/kolada-mcp",
-    "readme": "https://github.com/isakskogstad/kolada-mcp#readme"
-  },
-  "keywords": [
-    "Kolada MCP Server"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "kolada-mcp-server",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Swedish municipality statistics from Kolada API. 6000+ KPIs for all 290 municipalities.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "kolada-mcp-server",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://kolada-mcp-pafn.onrender.com/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://kolada-mcp-pafn.onrender.com/sse",
+        "transport": "sse"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-6369b9ffcdf14045",
       "type": "registry",
       "url": "https://www.npmjs.com/package/kolada-mcp-server",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "2.2.1"
+    },
+    {
+      "id": "upstream-2ff16dc7ec279d77",
+      "type": "other",
+      "url": "https://kolada-mcp-pafn.onrender.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://kolada-mcp-pafn.onrender.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-b32055eeab5448c1",
+      "type": "other",
+      "url": "https://kolada-mcp-pafn.onrender.com/sse",
+      "install": {
+        "type": "api",
+        "url": "https://kolada-mcp-pafn.onrender.com/sse"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/isakskogstad/kolada-mcp",
+    "homepage": "https://github.com/isakskogstad/kolada-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +82,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.isakskogstad__kolada-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=214",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.isakskogstad/kolada-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "plugin.bd6f377b69706ec578a4bf5c50bbb44585793fac03ece447e5f827a1d3c78cbc",
+  "name": "nvnoa57-star/dsh-compaction-slider/dsh-compaction-live",
+  "displayName": "nvnoa57-star/dsh-compaction-slider/dsh-compaction-live",
+  "version": "unversioned",
+  "versionScheme": "unknown",
+  "type": "plugin",
+  "description": "DSH(DeepSeek Harness)上下文压缩阈值滑块插件 —— 在 web 输入栏的上下文使用量圆环旁提供实时滑块,拖动即可调整自动压缩的触发比例(thresholdRatio,范围 0.4 ~ 1.0),无需改配置、无需重启,下一个 step 边界即生效。",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "pluginDetails": {
+    "manifestPath": "dsh-compaction-live/package.json",
+    "sourceType": "git"
+  },
+  "links": {
+    "repository": "https://github.com/nvnoa57-star/dsh-compaction-slider",
+    "readme": "https://github.com/nvnoa57-star/dsh-compaction-slider#readme"
+  },
+  "distributions": [
+    {
+      "id": "upstream-git",
+      "type": "git",
+      "url": "https://github.com/nvnoa57-star/dsh-compaction-slider/tree/HEAD/dsh-compaction-live"
+    }
+  ],
+  "keywords": [
+    "usage",
+    "memory"
+  ],
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "dshworks/awesome-dsh-plugins",
+          "revision": "6c211eaaab7e74e7cb3e5c04110ec1db88510074",
+          "path": "data/plugins.json",
+          "entry": "2497"
+        },
+        {
+          "repository": "white0dew/awesome-dsh-plugins",
+          "revision": "55ece09ae6278782389c3cc64691ec8797b26623",
+          "path": "data/sources/github-topic-dsh-plugin.json",
+          "entry": "6303"
+        },
+        {
+          "repository": "bruc3van/awesome-dsh-plugin",
+          "revision": "d562ead4b6b62cc8ebaf77f469335dfd6b659897",
+          "path": "data/repositories.json",
+          "entry": "7282"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

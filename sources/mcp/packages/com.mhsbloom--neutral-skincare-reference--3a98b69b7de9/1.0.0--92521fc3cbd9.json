@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.mhsbloom/neutral-skincare-reference",
+  "name": "com.mhsbloom/neutral-skincare-reference",
+  "displayName": "com.mhsbloom/neutral-skincare-reference",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Neutral, payment-blind reference of 1,682 dermacosmetic products: lookup, search, alternatives.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.mhsbloom/neutral-skincare-reference",
+    "remotes": [
+      {
+        "url": "https://europe-west3-mhs-bloom.cloudfunctions.net/bloomMcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-0d74c90b909f67d9",
+      "type": "other",
+      "url": "https://europe-west3-mhs-bloom.cloudfunctions.net/bloomMcp",
+      "install": {
+        "type": "api",
+        "url": "https://europe-west3-mhs-bloom.cloudfunctions.net/bloomMcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://mhsbloom.com/mcp/"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=63",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.mhsbloom/neutral-skincare-reference"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

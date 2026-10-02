@@ -2,47 +2,43 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.wesseltl/price-data-mcp",
   "name": "io.github.wesseltl/price-data-mcp",
+  "displayName": "io.github.wesseltl/price-data-mcp",
   "version": "0.1.3",
-  "versionScheme": "semver",
-  "description": "Live market prices and candles for AI agents (200+ coins). Data only, no trading advice.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/wesseltl/price-data-mcp",
-    "readme": "https://github.com/wesseltl/price-data-mcp#readme"
-  },
-  "keywords": [],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "hyperliquid-price-mcp",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Live market prices and candles for AI agents (200+ coins). Data only, no trading advice.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "hyperliquid-price-mcp",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3bd3250a5c09b2fb",
       "type": "registry",
-      "url": "https://pypi.org/project/hyperliquid-price-mcp/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/hyperliquid-price-mcp",
+      "registry": "pypi",
+      "version": "0.1.3"
     }
   ],
+  "links": {
+    "repository": "https://github.com/wesseltl/price-data-mcp"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -55,6 +51,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.wesseltl__price-data-mcp.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=349",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.wesseltl/price-data-mcp"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

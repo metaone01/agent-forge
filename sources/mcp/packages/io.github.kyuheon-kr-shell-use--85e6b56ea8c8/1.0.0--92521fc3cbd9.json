@@ -2,48 +2,42 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.kyuheon-kr/shell-use",
   "name": "io.github.kyuheon-kr/shell-use",
+  "displayName": "shell-use",
   "version": "1.0.0",
-  "versionScheme": "semver",
+  "versionScheme": "unknown",
+  "type": "mcp",
   "description": "Let agents use the shell like a human.",
   "license": "unknown",
-  "links": {
-    "repository": "https://github.com/kyuheon-kr/shell-use",
-    "readme": "https://github.com/kyuheon-kr/shell-use#readme"
-  },
-  "keywords": [
-    "shell-use"
-  ],
-  "type": "mcp",
-  "mcpDetails": {
-    "registryType": "oci",
-    "identifier": "ghcr.io/kyuheon-kr/shell-use:1.0.0",
-    "transport": "stdio"
-  },
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "oci",
+    "identifier": "ghcr.io/kyuheon-kr/shell-use:1.0.0",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
-      "type": "registry",
-      "url": "https://hub.docker.com/r/kyuheon-kr/shell-use",
-      "priority": 10,
+      "id": "upstream-22941c2182934dd0",
+      "type": "oci",
+      "url": "https://ghcr.io/kyuheon-kr/shell-use:1.0.0",
       "registry": "oci"
     }
   ],
+  "links": {
+    "repository": "https://github.com/kyuheon-kr/shell-use"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -56,6 +50,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.kyuheon-kr__shell-use.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=226",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.kyuheon-kr/shell-use"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

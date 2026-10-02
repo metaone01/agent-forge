@@ -2,50 +2,44 @@
   "schemaVersion": 2,
   "id": "mcp.io.github.xiaojiou176-open/openvibecoding-readonly",
   "name": "io.github.xiaojiou176-open/openvibecoding-readonly",
+  "displayName": "OpenVibeCoding Read-only MCP",
   "version": "0.1.0a4",
-  "versionScheme": "semver",
-  "description": "Read-only MCP for OpenVibeCoding runs, workflows, proof, queue, replay, and incident reads.",
-  "license": "MIT",
-  "links": {
-    "repository": "https://github.com/xiaojiou176-open/OpenVibeCoding",
-    "homepage": "https://xiaojiou176-open.github.io/OpenVibeCoding/mcp/",
-    "readme": "https://github.com/xiaojiou176-open/OpenVibeCoding#readme"
-  },
-  "keywords": [
-    "OpenVibeCoding Read-only MCP"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "pypi",
-    "identifier": "openvibecoding-orchestrator",
-    "registryBaseUrl": "https://pypi.org/",
-    "transport": "stdio"
-  },
+  "description": "Read-only MCP for OpenVibeCoding runs, workflows, proof, queue, replay, and incident reads.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "pypi",
+    "identifier": "openvibecoding-orchestrator",
+    "transport": "stdio"
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-b8d6c08de0c07e4f",
       "type": "registry",
-      "url": "https://pypi.org/project/openvibecoding-orchestrator/",
-      "priority": 10,
-      "registry": "pypi"
+      "url": "https://pypi.org/project/openvibecoding-orchestrator",
+      "registry": "pypi",
+      "version": "0.1.0a4"
     }
   ],
+  "links": {
+    "repository": "https://github.com/xiaojiou176-open/OpenVibeCoding",
+    "homepage": "https://xiaojiou176-open.github.io/OpenVibeCoding/mcp/"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +52,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\io.github.xiaojiou176-open__openvibecoding-readonly.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=352",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "io.github.xiaojiou176-open/openvibecoding-readonly"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }

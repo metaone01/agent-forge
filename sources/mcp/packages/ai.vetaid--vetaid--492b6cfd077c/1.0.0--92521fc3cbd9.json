@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.ai.vetaid/vetaid",
+  "name": "ai.vetaid/vetaid",
+  "displayName": "VetAid — VA Claim Intelligence",
+  "version": "1.0.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Real Board of Veterans' Appeals outcome data for VA disability claims. No key needed.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "ai.vetaid/vetaid",
+    "remotes": [
+      {
+        "url": "https://vetaid.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://vetaid-mcp.onrender.com/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-aa1abc9586868836",
+      "type": "other",
+      "url": "https://vetaid.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://vetaid.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-3456f2c33e4cdd3b",
+      "type": "other",
+      "url": "https://vetaid-mcp.onrender.com/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://vetaid-mcp.onrender.com/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "homepage": "https://vetaid.ai"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=16",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.vetaid/vetaid"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

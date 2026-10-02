@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.com.gumballtools/body-metrics",
+  "name": "com.gumballtools/body-metrics",
+  "displayName": "Body Metrics",
+  "version": "0.1.0",
+  "versionScheme": "unknown",
+  "type": "mcp",
+  "description": "Convert height and weight, compute BMI, TDEE and protein targets with error bounds.",
+  "license": "unknown",
+  "targets": [
+    {
+      "agentId": "dsh",
+      "agentVersionRange": null,
+      "versionScheme": "unknown",
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
+    }
+  ],
+  "createdAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "other",
+    "identifier": "com.gumballtools/body-metrics",
+    "remotes": [
+      {
+        "url": "https://body-metrics.gumballtools.com/api/mcp",
+        "transport": "streamable-http"
+      }
+    ]
+  },
+  "distributions": [
+    {
+      "id": "upstream-7fd8dd1987f6c574",
+      "type": "other",
+      "url": "https://body-metrics.gumballtools.com/api/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://body-metrics.gumballtools.com/api/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/bwalvoord/gumball",
+    "homepage": "https://body-metrics.gumballtools.com"
+  },
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=52",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "com.gumballtools/body-metrics"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
+    }
+  }
+}

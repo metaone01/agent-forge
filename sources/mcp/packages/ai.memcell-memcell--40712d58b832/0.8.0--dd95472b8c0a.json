@@ -2,50 +2,74 @@
   "schemaVersion": 2,
   "id": "mcp.ai.memcell/memcell",
   "name": "ai.memcell/memcell",
+  "displayName": "MemCell",
   "version": "0.8.0",
-  "versionScheme": "semver",
-  "description": "Living memory for AI coding agents: recall before acting, report outcomes so confidence is earned.",
-  "license": "Apache-2.0",
-  "links": {
-    "repository": "https://github.com/memcell-ai/cli",
-    "homepage": "https://memcell.ai",
-    "readme": "https://github.com/memcell-ai/cli#readme"
-  },
-  "keywords": [
-    "MemCell"
-  ],
+  "versionScheme": "unknown",
   "type": "mcp",
-  "mcpDetails": {
-    "registryType": "npm",
-    "identifier": "memcell",
-    "registryBaseUrl": "https://registry.npmjs.org/",
-    "transport": "stdio"
-  },
+  "description": "Living memory for AI coding agents: recall before acting, report outcomes so confidence is earned.",
+  "license": "unknown",
   "targets": [
     {
       "agentId": "dsh",
       "agentVersionRange": null,
       "versionScheme": "unknown",
       "compatibilityStatus": "unknown",
-      "compatibilityNote": "The archived source did not provide a parseable Agent version range; this record is metadata-only and unverified.",
-      "status": "active"
+      "compatibilityNote": "Discovery association only; no parseable upstream Agent compatibility range was supplied."
     }
   ],
+  "createdAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T05:18:39Z",
+  "mcpDetails": {
+    "registryType": "npm",
+    "identifier": "memcell",
+    "transport": "stdio",
+    "remotes": [
+      {
+        "url": "https://memcell.ai/mcp",
+        "transport": "streamable-http"
+      },
+      {
+        "url": "https://memcell.ai/mcp/public/{memory}",
+        "transport": "streamable-http"
+      }
+    ]
+  },
   "distributions": [
     {
-      "id": "upstream",
+      "id": "upstream-3f1180ef50600f1b",
       "type": "registry",
       "url": "https://www.npmjs.com/package/memcell",
-      "priority": 10,
-      "registry": "npm"
+      "registry": "npm",
+      "version": "0.8.0"
+    },
+    {
+      "id": "upstream-8b75ff1bf2d122d5",
+      "type": "other",
+      "url": "https://memcell.ai/mcp",
+      "install": {
+        "type": "api",
+        "url": "https://memcell.ai/mcp"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
+    },
+    {
+      "id": "upstream-352a4190bc33d16c",
+      "type": "other",
+      "url": "https://memcell.ai/mcp/public/{memory}",
+      "install": {
+        "type": "api",
+        "url": "https://memcell.ai/mcp/public/{memory}"
+      },
+      "notes": "Declared MCP endpoint; not a downloadable package."
     }
   ],
+  "links": {
+    "repository": "https://github.com/memcell-ai/cli",
+    "homepage": "https://memcell.ai"
+  },
   "lifecycle": {
     "status": "active"
   },
-  "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
-  "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/registry": {
       "source": "registry.modelcontextprotocol.io",
@@ -58,6 +82,18 @@
       "sourceSchemaVersion": 1,
       "collectedAt": "2026-09-22T09:00:00Z",
       "legacyPath": "sources\\mcp\\packages\\ai.memcell__memcell.json"
+    },
+    "org.agentforge/collection": {
+      "sources": [
+        {
+          "repository": "mcp-registry",
+          "path": "v0.1/servers?page=9",
+          "revision": "2026-10-02T05:18:39Z",
+          "entry": "ai.memcell/memcell"
+        }
+      ],
+      "classification": "upstream-metadata",
+      "observedAt": "2026-10-02T05:18:39Z"
     }
   }
 }
