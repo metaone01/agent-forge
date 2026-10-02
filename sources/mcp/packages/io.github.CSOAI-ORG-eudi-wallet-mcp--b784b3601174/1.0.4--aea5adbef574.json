@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "eudi-wallet-mcp",
@@ -33,20 +33,22 @@
   "distributions": [
     {
       "id": "upstream-0c2d21b86d60f4ef",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/eudi-wallet-mcp",
       "registry": "pypi",
-      "version": "1.0.4"
+      "version": "1.0.4",
+      "name": "pypi package"
     },
     {
       "id": "upstream-ded576e7134cb346",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.meok.ai/v1/a2a/eudi-wallet",
       "install": {
         "type": "api",
         "url": "https://api.meok.ai/v1/a2a/eudi-wallet"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@sealgate/mcp",
@@ -34,20 +34,22 @@
   "distributions": [
     {
       "id": "upstream-c62fb7624376cdfb",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@sealgate/mcp",
       "registry": "npm",
-      "version": "0.1.2"
+      "version": "0.1.2",
+      "name": "npm package"
     },
     {
       "id": "upstream-dba55916d4e1d43e",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.sealgate.ai/mcp/{api_key}/?client={label}",
       "install": {
         "type": "api",
         "url": "https://mcp.sealgate.ai/mcp/{api_key}/?client={label}"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "docker.io/kubeshop/mcp-server:2.14.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-f77b6094749a71cf",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/kubeshop/mcp-server:2.14.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-f8fe0c39f7bb5eb7",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.testkube.io/organizations/{organization_id}/environments/{environment_id}/mcp",
       "install": {
         "type": "api",
         "url": "https://api.testkube.io/organizations/{organization_id}/environments/{environment_id}/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

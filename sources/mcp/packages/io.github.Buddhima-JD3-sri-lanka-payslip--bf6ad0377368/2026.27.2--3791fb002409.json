@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/buddhima-jd3/sri-lanka-payslip-mcp:2026.27.2",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-83ed84343cd2b8c8",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/buddhima-jd3/sri-lanka-payslip-mcp:2026.27.2",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-f9e1546026debf2e",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mypayslip.lk/api/mcp",
       "install": {
         "type": "api",
         "url": "https://mypayslip.lk/api/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

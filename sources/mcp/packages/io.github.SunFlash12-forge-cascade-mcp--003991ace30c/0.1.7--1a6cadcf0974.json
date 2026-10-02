@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-b5a3445997cd5850",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-30af2b332275cdac",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://forgecascade.org/mcp",
       "install": {
         "type": "api",
         "url": "https://forgecascade.org/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

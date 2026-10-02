@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "docker.io/luthersystems/insideout-mcp:v0.36.3",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-9e47a1439469b742",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/luthersystems/insideout-mcp:v0.36.3",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-7548df07f2311411",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://app.luthersystems.com/v1/insideout-mcp",
       "install": {
         "type": "api",
         "url": "https://app.luthersystems.com/v1/insideout-mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

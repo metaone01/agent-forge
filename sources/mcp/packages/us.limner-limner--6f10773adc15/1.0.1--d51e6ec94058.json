@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "mcpb",
     "identifier": "https://github.com/vinsonconsulting/limner/releases/download/mcpb-v1.0.1/limner-mcp.mcpb",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-2b8e2532bfcabe5b",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/vinsonconsulting/limner/releases/download/mcpb-v1.0.1/limner-mcp.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-b25039b7be28c824",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.limner.us/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.limner.us/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

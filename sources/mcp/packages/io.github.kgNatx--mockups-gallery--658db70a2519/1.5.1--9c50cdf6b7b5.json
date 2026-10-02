@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/kgnatx/mockups-mpc:1.5.1",
@@ -37,29 +37,32 @@
   "distributions": [
     {
       "id": "upstream-a1a01a7224065c97",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/kgnatx/mockups-mpc:1.5.1",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-4e6e0bd17dbf64ec",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{host}/mcp",
       "install": {
         "type": "api",
         "url": "https://{host}/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-6933dad2161ef6ba",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{host}/mcp/sse",
       "install": {
         "type": "api",
         "url": "https://{host}/mcp/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "docker.io/formatho/formatho-runtime:0.3.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-36b5ddc0a1c1dd44",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/formatho/formatho-runtime:0.3.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-5dde5235ef07f007",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.formatho.com/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.formatho.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "lifecycle": {

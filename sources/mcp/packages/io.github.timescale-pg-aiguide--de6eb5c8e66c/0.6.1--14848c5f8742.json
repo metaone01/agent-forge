@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@tigerdata/pg-aiguide",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-13b1d042cc1d0639",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@tigerdata/pg-aiguide",
       "registry": "npm",
-      "version": "0.6.1"
+      "version": "0.6.1",
+      "name": "npm package"
     },
     {
       "id": "upstream-b0ca0b5f73c9031a",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/timescale/pg-aiguide:0.6.1",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-fc7f880500ec39fb",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.tigerdata.com/docs",
       "install": {
         "type": "api",
         "url": "https://mcp.tigerdata.com/docs"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

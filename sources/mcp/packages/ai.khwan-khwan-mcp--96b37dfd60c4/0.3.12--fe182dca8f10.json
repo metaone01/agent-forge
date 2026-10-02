@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "khwan-mcp",
@@ -33,20 +33,22 @@
   "distributions": [
     {
       "id": "upstream-c57f0832353868f5",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/khwan-mcp",
       "registry": "pypi",
-      "version": "0.3.12"
+      "version": "0.3.12",
+      "name": "pypi package"
     },
     {
       "id": "upstream-10034dd2e1e0e55d",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.khwan.ai/mcp/{core}/{user}",
       "install": {
         "type": "api",
         "url": "https://mcp.khwan.ai/mcp/{core}/{user}"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

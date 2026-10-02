@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/val7h/dados-b3-mcp:1.7.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-2ec7d69a3c952e00",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/val7h/dados-b3-mcp:1.7.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-2df71d66aa9181be",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://dadosb3.com/mcp/",
       "install": {
         "type": "api",
         "url": "https://dadosb3.com/mcp/"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

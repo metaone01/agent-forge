@@ -19,12 +19,11 @@ from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
-from urllib.parse import quote
 
 try:
-    from tools.identity import identity_errors
+    from tools.identity import encoded_component, identity_errors
 except ModuleNotFoundError:
-    from identity import identity_errors
+    from identity import encoded_component, identity_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 TYPES = ("mcp", "plugin", "skill", "general", "bundle")
@@ -75,10 +74,7 @@ def record_time(record: dict[str, Any]) -> datetime | None:
 
 
 def safe_component(value: str) -> str:
-    # URL quoting makes package names such as ``author/tool`` filesystem-safe
-    # while keeping common package punctuation readable.
-    encoded = quote(value, safe="@._+-")
-    return encoded or "_"
+    return encoded_component(value)
 
 
 def clone_for_target(record: dict[str, Any], agent_id: str) -> dict[str, Any]:
@@ -150,7 +146,7 @@ def projected_record_path(name: str, version: str) -> str:
     # Hashes preserve distinct upstream casing on case-insensitive filesystems.
     name_suffix = hashlib.sha256(name.encode("utf-8")).hexdigest()[:12]
     version_suffix = hashlib.sha256(version.encode("utf-8")).hexdigest()[:12]
-    return f"packages/{safe_component(name)}--{name_suffix}/{safe_component(version)}--{version_suffix}.json"
+    return f"packages/{safe_component(name)[:110]}--{name_suffix}/{safe_component(version)[:64]}--{version_suffix}.json"
 
 
 def build_projection(

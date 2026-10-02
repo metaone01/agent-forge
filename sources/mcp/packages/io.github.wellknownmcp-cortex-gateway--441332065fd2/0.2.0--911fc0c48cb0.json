@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/wellknownmcp/cortex-gateway:v0.2.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-5c124028d9b510f3",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/wellknownmcp/cortex-gateway:v0.2.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-b8d95abde80f84a0",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.cortex-gateway.dev/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.cortex-gateway.dev/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

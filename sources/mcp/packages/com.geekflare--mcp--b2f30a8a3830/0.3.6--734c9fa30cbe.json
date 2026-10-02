@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@geekflare/mcp",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-10f470c259a19c90",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@geekflare/mcp",
       "registry": "npm",
-      "version": "0.3.5"
+      "version": "0.3.5",
+      "name": "npm package"
     },
     {
       "id": "upstream-00659aed4fd0dcf6",
-      "type": "oci",
+      "type": "oci-image",
       "url": "https://geekflarehq/geekflare-api-mcp:0.3.5",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "oci container image"
     },
     {
       "id": "upstream-523cba0c649db1e9",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.geekflare.com/{API_KEY}/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.geekflare.com/{API_KEY}/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "lifecycle": {

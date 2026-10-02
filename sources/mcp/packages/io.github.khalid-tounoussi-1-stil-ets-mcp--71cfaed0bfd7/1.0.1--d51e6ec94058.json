@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/khalid-tounoussi-1/stil-ets-mcp:1.0.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-3bdc479e9ff0bc45",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/khalid-tounoussi-1/stil-ets-mcp:1.0.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-b3fadc3f98df5452",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://web-production-4729.up.railway.app/mcp",
       "install": {
         "type": "api",
         "url": "https://web-production-4729.up.railway.app/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "lifecycle": {

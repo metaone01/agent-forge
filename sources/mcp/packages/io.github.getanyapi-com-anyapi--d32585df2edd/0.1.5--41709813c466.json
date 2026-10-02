@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "anyapi-mcp",
@@ -34,26 +34,29 @@
   "distributions": [
     {
       "id": "upstream-c9d8a5928c5d7804",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/anyapi-mcp",
       "registry": "npm",
-      "version": "0.1.5"
+      "version": "0.1.5",
+      "name": "npm package"
     },
     {
       "id": "upstream-ec6a1e1d85dc050b",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/getanyapi-com/mcp:0.1.5",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-fb94c214a68b9b33",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.getanyapi.com/mcp",
       "install": {
         "type": "api",
         "url": "https://api.getanyapi.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/ziyuant222/crystal-suppliers-mcp:0.1.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-fe65c410c6284d0b",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/ziyuant222/crystal-suppliers-mcp:0.1.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-9d545497b33c0170",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://ktcrystals.com/mcp",
       "install": {
         "type": "api",
         "url": "https://ktcrystals.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

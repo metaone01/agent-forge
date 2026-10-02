@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "mcpb",
     "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-air-quality-v1.0.0+build.5d5a8d2a/uk-air-quality.mcpb",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-e526edaa5a495d9d",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-air-quality-v1.0.0+build.5d5a8d2a/uk-air-quality.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-fceeb2432028414f",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.mcpbundles.com/bundle/uk-air-quality/",
       "install": {
         "type": "api",
         "url": "https://mcp.mcpbundles.com/bundle/uk-air-quality/"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

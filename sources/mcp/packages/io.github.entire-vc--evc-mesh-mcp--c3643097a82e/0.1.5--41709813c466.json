@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/entire-vc/evc-mesh-mcp:0.1.5",
@@ -37,35 +37,39 @@
   "distributions": [
     {
       "id": "upstream-d8c072587028c56a",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/entire-vc/evc-mesh-mcp:0.1.5",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-e6387376ad1a2bce",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/entire-vc/evc-mesh-mcp/releases/download/v0.1.5/evc-mesh-mcp-0.1.5.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-b153fc755e2aa5c2",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mesh.entire.host/mcp",
       "install": {
         "type": "api",
         "url": "https://mesh.entire.host/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-1d5a7adf6d1a52f8",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mesh.entire.host/mcp/sse",
       "install": {
         "type": "api",
         "url": "https://mesh.entire.host/mcp/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/0000f8/salt-mcp:v0.2.7",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-35a1f907f22f011b",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/0000f8/salt-mcp:v0.2.7",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-afd0d3f950b54118",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.saltapp.ai/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.saltapp.ai/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

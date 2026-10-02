@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "docker.io/hapimcp/hapi-cli:0.6.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-f6bbb9b644e52393",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/hapimcp/hapi-cli:0.6.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-4049df5ab2869da9",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp",
       "install": {
         "type": "api",
         "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

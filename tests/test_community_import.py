@@ -1,3 +1,5 @@
+import hashlib
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -74,6 +76,21 @@ class CommunityImportTests(unittest.TestCase):
         self.assertEqual(1, len(record["mcpDetails"]["remotes"]))
         self.assertEqual(1, len(record["distributions"]))
         self.assertEqual([], list(build_validator("package.schema.json").iter_errors(record)))
+
+    def test_explicit_npm_source_preserves_registry_distribution_identity(self):
+        server = {"name": "org.example/memory", "version": "1", "packages": [
+            {"registryType": "npm", "identifier": "memory", "version": "1"},
+        ]}
+        legacy = {"id": "npm-" + hashlib.sha256(b"memory").hexdigest()[:12], "type": "registry", "url": "https://www.npmjs.com/package/memory", "registry": "npm", "version": "1"}
+        expected = "upstream-" + hashlib.sha256(json.dumps(legacy, sort_keys=True).encode()).hexdigest()[:16]
+        with patch("tools.import_community.load", side_effect=[
+            {"errors": [], "pages": [{"page": 1}]}, {"servers": [{"server": server}]},
+        ]):
+            self.importer.registry()
+        distribution = next(iter(self.importer.records.values()))["distributions"][0]
+        self.assertEqual(expected, distribution["id"])
+        self.assertEqual("npm-pkg", distribution["type"])
+        self.assertEqual("npm package", distribution["name"])
 
     def test_projected_paths_preserve_case_sensitive_name_and_version(self):
         self.assertNotEqual(projected_record_path("author/Tool", "V1").lower(), projected_record_path("author/tool", "V1").lower())

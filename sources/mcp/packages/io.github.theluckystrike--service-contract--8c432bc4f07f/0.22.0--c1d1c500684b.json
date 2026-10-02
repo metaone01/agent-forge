@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "mcpb",
     "identifier": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/service-agreement.mcpb",
@@ -33,20 +33,22 @@
   "distributions": [
     {
       "id": "upstream-918e6aac6d0f7da3",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/theluckystrike/mcp-servers/releases/download/v0.22.0/service-agreement.mcpb",
       "registry": "mcpb",
-      "version": "0.22.0"
+      "version": "0.22.0",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-4f6fd2b6df0c98d1",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.zovo.one/mcp/service-contract",
       "install": {
         "type": "api",
         "url": "https://mcp.zovo.one/mcp/service-contract"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "nexatron-mcp",
@@ -38,30 +38,33 @@
   "distributions": [
     {
       "id": "upstream-0c600ce2270ce89c",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/nexatron-mcp",
       "registry": "pypi",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "name": "pypi package"
     },
     {
       "id": "upstream-b1f0bd73f403f81a",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.nexatron.io/api/v1/mcp",
       "install": {
         "type": "api",
         "url": "https://api.nexatron.io/api/v1/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-dcd4e90d9870ee16",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.nexatron.io/api/v1/mcp/stream",
       "install": {
         "type": "api",
         "url": "https://api.nexatron.io/api/v1/mcp/stream"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -22,7 +22,7 @@
     "packages": {
       "type": "object",
       "description": "Package records keyed by source-local package name.",
-      "propertyNames": { "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$" },
+      "propertyNames": { "$ref": "package.schema.json#/$defs/packageName" },
       "additionalProperties": { "$ref": "#/$defs/packageEntry" }
     },
     "_meta": { "$ref": "package.schema.json#/$defs/extensionMeta" }

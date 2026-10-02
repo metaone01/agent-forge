@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/github/github-mcp-server:1.13.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-c52b6853267bdf7e",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/github/github-mcp-server:1.13.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-01331f620d179ab9",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.githubcopilot.com/mcp/",
       "install": {
         "type": "api",
         "url": "https://api.githubcopilot.com/mcp/"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

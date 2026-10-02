@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "rootly-mcp-server",
@@ -33,20 +33,22 @@
   "distributions": [
     {
       "id": "upstream-decc1352e13b8996",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/rootly-mcp-server",
       "registry": "pypi",
-      "version": "2.2.4"
+      "version": "2.2.4",
+      "name": "pypi package"
     },
     {
       "id": "upstream-65cb9ae570d77c61",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.rootly.com/sse",
       "install": {
         "type": "api",
         "url": "https://mcp.rootly.com/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

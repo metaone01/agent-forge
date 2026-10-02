@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@verygoodplugins/mcp-automem",
@@ -37,30 +37,33 @@
   "distributions": [
     {
       "id": "upstream-f3468b00aa577fd2",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@verygoodplugins/mcp-automem",
       "registry": "npm",
-      "version": "0.10.0"
+      "version": "0.10.0",
+      "name": "npm package"
     },
     {
       "id": "upstream-33f80bb93efadb0e",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{endpoint}/mcp",
       "install": {
         "type": "api",
         "url": "https://{endpoint}/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-5db44b64aec1f1a8",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{endpoint}/mcp/sse",
       "install": {
         "type": "api",
         "url": "https://{endpoint}/mcp/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

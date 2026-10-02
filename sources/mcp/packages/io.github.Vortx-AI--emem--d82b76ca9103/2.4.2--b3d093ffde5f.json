@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/vortx-ai/emem:latest",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-d6cbdb84da59b5a1",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/vortx-ai/emem:latest",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-5682d60e1e742ea6",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://emem.dev/mcp",
       "install": {
         "type": "api",
         "url": "https://emem.dev/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

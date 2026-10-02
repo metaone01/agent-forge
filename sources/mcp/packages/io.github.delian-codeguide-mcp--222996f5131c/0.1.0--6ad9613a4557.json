@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "docker.io/delian/codeguide-mcp:0.1.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-714367d8edc727ad",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/delian/codeguide-mcp:0.1.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-5a2fc472cb55575d",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://codeguide-mcp-86057491046.europe-west1.run.app/mcp",
       "install": {
         "type": "api",
         "url": "https://codeguide-mcp-86057491046.europe-west1.run.app/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

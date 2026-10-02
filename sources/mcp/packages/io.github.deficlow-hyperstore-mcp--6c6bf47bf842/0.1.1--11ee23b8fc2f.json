@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "hyperstore-mcp",
@@ -37,36 +37,40 @@
   "distributions": [
     {
       "id": "upstream-13a12244fdc5a8c3",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/hyperstore-mcp",
       "registry": "pypi",
-      "version": "0.1.1"
+      "version": "0.1.1",
+      "name": "pypi package"
     },
     {
       "id": "upstream-d9fb92714277ccc2",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/deficlow/hyperstore-mcp:0.1.1",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-fe20e8e8fbd91d1d",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.store.hypergpt.ai/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.store.hypergpt.ai/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-caa563fbc92c678d",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.store.hypergpt.ai/sse",
       "install": {
         "type": "api",
         "url": "https://mcp.store.hypergpt.ai/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

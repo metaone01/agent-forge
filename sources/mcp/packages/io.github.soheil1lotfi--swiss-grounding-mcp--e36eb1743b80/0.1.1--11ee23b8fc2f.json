@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/gastaan/swiss-grounding-mcp:0.1.1",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-7550802c173e34d0",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/gastaan/swiss-grounding-mcp:0.1.1",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-22ad069dd113683e",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://swiss-grounding-mcp-542630986415.europe-west6.run.app/mcp",
       "install": {
         "type": "api",
         "url": "https://swiss-grounding-mcp-542630986415.europe-west6.run.app/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

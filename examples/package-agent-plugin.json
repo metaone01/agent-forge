@@ -11,9 +11,9 @@
   "keywords": ["plugin", "gui", "playground"],
   "type": "plugin",
   "subtype": "extension",
-  "pluginDetails": {"manifestPath": ".claude-plugin/plugin.json", "sourceType": "git", "entrypoint": "src/index.js"},
+  "pluginDetails": {"manifestPath": ".claude-plugin/plugin.json", "sourceType": "github-repo", "entrypoint": "src/index.js"},
   "targets": [{"agentId": "dsh", "agentVersionRange": "^0.2.0", "versionScheme": "semver", "compatibilityStatus": "known", "status": "active"}],
-  "distributions": [{"id": "github", "type": "git", "url": "https://github.com/anthropics/claude-plugins-official.git", "ref": "main", "priority": 10}],
+  "distributions": [{"id": "github", "name": "github repository", "type": "github-repo", "url": "https://github.com/anthropics/claude-plugins-official.git", "ref": "main", "priority": 10}],
   "facets": {"capabilities": ["gui.create", "code.generate"], "effects": ["workspace.modify"], "runtime": ["interactive.required"], "integrations": ["agent-ui"]},
   "lifecycle": {"status": "active"},
   "publishedAt": "2026-09-30T16:00:00Z"

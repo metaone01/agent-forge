@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "verantis-mcp",
@@ -34,20 +34,22 @@
   "distributions": [
     {
       "id": "upstream-48a7b3440a4fda5c",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/verantis-mcp",
       "registry": "pypi",
-      "version": "0.2.1"
+      "version": "0.2.1",
+      "name": "pypi package"
     },
     {
       "id": "upstream-c9686f85782fc588",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.verantis.ai/mcp",
       "install": {
         "type": "api",
         "url": "https://api.verantis.ai/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

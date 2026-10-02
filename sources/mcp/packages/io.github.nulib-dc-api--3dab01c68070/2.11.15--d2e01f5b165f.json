@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@nulib/dc-api-mcp",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-3e463ed7df63375a",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@nulib/dc-api-mcp",
       "registry": "npm",
-      "version": "2.11.15"
+      "version": "2.11.15",
+      "name": "npm package"
     },
     {
       "id": "upstream-cfe6464f4299a983",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/nulib/dc-api-mcp:2.11.15",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-98ae72fc7c2ee064",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.dc.library.northwestern.edu/api/v2/mcp",
       "install": {
         "type": "api",
         "url": "https://api.dc.library.northwestern.edu/api/v2/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

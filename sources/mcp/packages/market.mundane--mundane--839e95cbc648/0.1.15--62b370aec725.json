@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "mundane-mcp",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-c4e302f05f816711",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/mundane-mcp",
       "registry": "pypi",
-      "version": "0.1.15"
+      "version": "0.1.15",
+      "name": "pypi package"
     },
     {
       "id": "upstream-f534654b6cfdf272",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/sttruji/mundane-mcp:0.1.15",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-553534a7b48bf9e0",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.mundane.market/mcp",
       "install": {
         "type": "api",
         "url": "https://api.mundane.market/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

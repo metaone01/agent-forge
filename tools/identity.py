@@ -3,6 +3,13 @@
 from __future__ import annotations
 
 from typing import Any, Iterable
+from urllib.parse import quote
+
+
+def encoded_component(value: str) -> str:
+    # Literal percent filenames are decoded by HTTP servers. Tilde escapes
+    # retain UTF-8 bytes while surviving one URL-decoding pass unchanged.
+    return quote(value, safe="@._+-").replace("~", "%7E").replace("%", "~") or "_"
 
 
 def identity_errors(records: Iterable[tuple[str, dict[str, Any]]]) -> list[str]:

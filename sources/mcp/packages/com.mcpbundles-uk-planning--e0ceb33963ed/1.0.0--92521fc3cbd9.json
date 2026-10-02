@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "mcpb",
     "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-planning-v1.0.0+build.a1b0b389/uk-planning.mcpb",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-920b4f0824185179",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-planning-v1.0.0+build.a1b0b389/uk-planning.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-03cdd3611f27cc1e",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.mcpbundles.com/bundle/uk-planning/",
       "install": {
         "type": "api",
         "url": "https://mcp.mcpbundles.com/bundle/uk-planning/"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

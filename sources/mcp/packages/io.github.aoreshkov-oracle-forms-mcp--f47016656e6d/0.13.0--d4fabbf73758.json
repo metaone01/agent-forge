@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/aoreshkov/oracle-forms-mcp:0.13.0",
@@ -27,16 +27,18 @@
   "distributions": [
     {
       "id": "upstream-3b95caa62e564b70",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/aoreshkov/oracle-forms-mcp:0.13.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-96ac954aa49b576c",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/aoreshkov/oracle-forms-mcp/releases/download/v0.13.0/oracle-forms-mcp-0.13.0.mcpb",
       "registry": "mcpb",
-      "version": "0.13.0"
+      "version": "0.13.0",
+      "name": "github mcpb package"
     }
   ],
   "links": {

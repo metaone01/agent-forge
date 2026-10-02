@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "docker.io/artsamsonov/transcriptor-mcp:1.5.19",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-90d73c8ea842999b",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/artsamsonov/transcriptor-mcp:1.5.19",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-3a2cfece3775284e",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://transcriptor.gateway.mcpal.io/mcp",
       "install": {
         "type": "api",
         "url": "https://transcriptor.gateway.mcpal.io/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

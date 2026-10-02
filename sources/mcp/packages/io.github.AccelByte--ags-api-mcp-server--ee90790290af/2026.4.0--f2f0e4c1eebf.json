@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "other",
     "identifier": "io.github.AccelByte/ags-api-mcp-server",
@@ -36,23 +36,25 @@
   "distributions": [
     {
       "id": "upstream-921b864d84863b14",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/mcp/{studio}-{game}",
       "install": {
         "type": "api",
         "url": "https://{studio}-{game}.prod.gamingservices.accelbyte.io/mcp/{studio}-{game}"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-00bc523ef7c4de99",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{private_cloud_url}/mcp/{namespace}",
       "install": {
         "type": "api",
         "url": "https://{private_cloud_url}/mcp/{namespace}"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

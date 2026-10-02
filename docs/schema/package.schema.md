@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | `schemaVersion` | `2` | Schema 契约版本。 |
 | `id` | string | 跨版本、Agent 和投影稳定的逻辑包 ID。 |
-| `name` | string | 人类可见名称或源内 slug。 |
+| `name` | string | 保存原始 Unicode 包名或源内名称，中文不替换为连字符。 |
 | `displayName` | string | 展示名称。 |
 | `version` | string | 上游原始版本字符串，不改写。 |
 | `versionScheme` | `semver`/`npm`/`pep440`/`calver`/`date`/`custom`/`unknown` | 版本比较方案提示，不是保证。 |
@@ -47,6 +47,12 @@
 `agentTarget` 使用 `agentId`、`compatibilityStatus`、`agentVersionRange`、`versionScheme`、`compatibilityNote`、`targetMetadata`、`installMetadata` 和 `status`。`known` 必须提供范围，`unknown` 必须提供 null 范围和说明。
 
 `distribution` 使用 `id`、`type`、`url`，可选 `agentIds`、`version`、`ref`、`registry`、`priority`、`regions`、`checksum`、`signature`、`install` 和 `notes`。`install` 内含 `type`、`url`、`command`、`scriptIntegrity`、`requires` 和 `notes`；它只是安装说明。
+
+可选 `name` 是发行候选的显示名称，例如 `github repository`、`npm package`；消费者展示时优先使用 `name`，缺失时回退到 `type`。来源明确时，`type` 使用 `github-repo`、`npm-pkg` 等具体来源标识。`github-repo` 延续仓库/`ref` 语义，`npm-pkg` 延续注册表/`version` 语义；`registry=npm` 保留注册表身份。其它来源和旧记录仍接受 `git`、`registry`。插件的 `pluginDetails.sourceType` 同样支持这两个具体标识。消费者必须支持新增类型后才能使用迁移后的数据，不能只按旧枚举分派安装逻辑。
+
+其它具体来源包括 `pypi-pkg`、`nuget-pkg`、`crates-pkg`、`ghcr-image`、`dockerhub-image`、`quay-image`、`gcp-artifact-image`、`oci-image`、`github-mcpb`、`gitlab-mcpb`、`mcpb-pkg` 和 `mcp-endpoint`。远程端点仅表示 MCP 服务地址，不是文件下载；MCPB 是文件格式，不是一级 `bundle` 分类。
+
+包 `name` 和 index 的包名键允许 Unicode，控制字符禁止。`id` 允许 Unicode 和 UTF-8 百分号编码；新增采集记录将原始身份可逆编码为 ID，例如 `plugin.author/project/%E4%B8%AD%E6%96%87`。已有 ID 保持稳定。JSON 中的 `\u4e2d\u6587` 是“中文”的序列化写法，解码后不是另一个身份。文件路径的编码与包名分离，见[中文名称处理](../unicode-package-names-2026-10-02.md)。
 
 `bundleMember` 使用 `memberType`（`package` 或 `bundle`）和 `memberId`，可带版本范围、Agent 和 Bundle-local `override`。`effectiveTarget` 保存交集计算结果；`facetUnion` 和 `customFacetUnion` 分别保存核心与用户 facet 并集。禁止循环引用。
 
@@ -91,7 +97,7 @@ const record = {
   subtype: "skin", // 管理员定义的唯一 subtype。
   pluginDetails: { // plugin 专用信息。
     manifestPath: ".dsh/plugin.json", // 插件 manifest 路径。
-    sourceType: "git", // 上游来源形式。
+    sourceType: "github-repo", // 上游来源平台与形式。
     marketplaceUrl: "https://example.com/marketplace/example-skin", // 市场页。
     entrypoint: "dist/index.js", // 入口。
     permissions: ["filesystem.workspace-read"], // 上游声明的权限。

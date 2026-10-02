@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/steledger/mcp:latest",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-9a761ce4c6d6fff3",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/steledger/mcp:latest",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-9894202b0a2e9bfe",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.steledger.com/mcp",
       "install": {
         "type": "api",
         "url": "https://api.steledger.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

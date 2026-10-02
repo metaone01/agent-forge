@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "docker-mcp-server",
@@ -27,22 +27,25 @@
   "distributions": [
     {
       "id": "upstream-4d2f56ae7811ba54",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/docker-mcp-server",
       "registry": "pypi",
-      "version": "2.2.6"
+      "version": "2.2.6",
+      "name": "pypi package"
     },
     {
       "id": "upstream-4fedd9f410854b37",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/l337-org/docker-mcp-server:2.2.6",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-0667baa0ee921ab1",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/L337-org/docker-mcp/releases/download/v2.2.6/docker-mcp-server-2.2.6.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     }
   ],
   "links": {

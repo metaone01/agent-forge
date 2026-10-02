@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/yonatangross/orchestkit-docs-mcp:10.0.0-beta.140",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-7598503f6bef0041",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/yonatangross/orchestkit-docs-mcp:10.0.0-beta.140",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-3422346082b0b891",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://orchestkit.yonyon.ai/api/mcp",
       "install": {
         "type": "api",
         "url": "https://orchestkit.yonyon.ai/api/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@savvly/mcp-server",
@@ -33,46 +33,52 @@
   "distributions": [
     {
       "id": "upstream-1c5bdef6a4511696",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@savvly/mcp-server",
       "registry": "npm",
-      "version": "1.0.93"
+      "version": "1.0.93",
+      "name": "npm package"
     },
     {
       "id": "upstream-8b92f87c7dea0dcc",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/savvly-mcp-server",
       "registry": "pypi",
-      "version": "1.0.93"
+      "version": "1.0.93",
+      "name": "pypi package"
     },
     {
       "id": "upstream-64adc3e4f5fde012",
-      "type": "registry",
+      "type": "nuget-pkg",
       "url": "https://www.nuget.org/packages/Savvly.McpServer",
       "registry": "nuget",
-      "version": "1.0.93"
+      "version": "1.0.93",
+      "name": "nuget package"
     },
     {
       "id": "upstream-20d6fd7e71f2178b",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/savvly/savvly-mcp-server:1.0.93",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-5e4897537b18fbda",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/Savvly/savvly-mcp/releases/download/v1.0.93/savvly-mcp-server.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-a560c2157cfb31e7",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.savvly.com/mcp",
       "install": {
         "type": "api",
         "url": "https://api.savvly.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/paperandbeyond23-gif/edgrapi-mcp:1.0.0",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-714452ae5fab52e9",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/paperandbeyond23-gif/edgrapi-mcp:1.0.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-50ae8f85bfac3537",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.edgrapi.com/mcp",
       "install": {
         "type": "api",
         "url": "https://api.edgrapi.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

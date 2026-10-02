@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "terradev-cli",
@@ -34,20 +34,22 @@
   "distributions": [
     {
       "id": "upstream-ddc65ed6e7bf7e18",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/terradev-cli",
       "registry": "pypi",
-      "version": "6.2.20"
+      "version": "6.2.20",
+      "name": "pypi package"
     },
     {
       "id": "upstream-a37df65403061aac",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://terradev-mcp.terradev.cloud/sse",
       "install": {
         "type": "api",
         "url": "https://terradev-mcp.terradev.cloud/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

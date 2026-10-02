@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "sentimatix-mcp",
@@ -38,30 +38,33 @@
   "distributions": [
     {
       "id": "upstream-adf2646f9f0c32f0",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/sentimatix-mcp",
       "registry": "pypi",
-      "version": "1.0.2"
+      "version": "1.0.2",
+      "name": "pypi package"
     },
     {
       "id": "upstream-4f0403bac86af854",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://sentimatix-mcp.up.railway.app/mcp",
       "install": {
         "type": "api",
         "url": "https://sentimatix-mcp.up.railway.app/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-20b1a29ea85d5432",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://sentimatix-mcp.up.railway.app/sse",
       "install": {
         "type": "api",
         "url": "https://sentimatix-mcp.up.railway.app/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

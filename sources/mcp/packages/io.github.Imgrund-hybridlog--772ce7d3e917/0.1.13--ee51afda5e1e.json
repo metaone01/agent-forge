@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/imgrund/hybridlog:0.1.13",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-e2bbfeb82eb2aa62",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/imgrund/hybridlog:0.1.13",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-66ef3b54c8ba4cf5",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{hybridlog_host}/mcp/garmin",
       "install": {
         "type": "api",
         "url": "https://{hybridlog_host}/mcp/garmin"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

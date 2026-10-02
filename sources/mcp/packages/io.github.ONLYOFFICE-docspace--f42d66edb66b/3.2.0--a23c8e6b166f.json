@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "mcpb",
     "identifier": "https://github.com/ONLYOFFICE/docspace-mcp/releases/download/v3.2.0/onlyoffice-docspace-mcp-3.2.0.mcpb",
@@ -37,43 +37,48 @@
   "distributions": [
     {
       "id": "upstream-0899ce0dde9ecb18",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/ONLYOFFICE/docspace-mcp/releases/download/v3.2.0/onlyoffice-docspace-mcp-3.2.0.mcpb",
       "registry": "mcpb",
-      "version": "3.2.0"
+      "version": "3.2.0",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-1e3cedc5548e9fd8",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@onlyoffice/docspace-mcp",
       "registry": "npm",
-      "version": "3.2.0"
+      "version": "3.2.0",
+      "name": "npm package"
     },
     {
       "id": "upstream-08d9b128392b041f",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/onlyoffice/docspace-mcp:3.2.0",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-38c9b4cba23583d3",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.onlyoffice.com/sse",
       "install": {
         "type": "api",
         "url": "https://mcp.onlyoffice.com/sse"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     },
     {
       "id": "upstream-be7ba7cae91685a4",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.onlyoffice.com/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.onlyoffice.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

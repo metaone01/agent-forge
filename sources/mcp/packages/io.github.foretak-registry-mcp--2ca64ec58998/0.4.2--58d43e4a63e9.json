@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "registry-mcp",
@@ -34,27 +34,30 @@
   "distributions": [
     {
       "id": "upstream-83e465f9279176a6",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/registry-mcp",
       "registry": "pypi",
-      "version": "0.4.2"
+      "version": "0.4.2",
+      "name": "pypi package"
     },
     {
       "id": "upstream-82110bc9e60c07dd",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/registry-mcp",
       "registry": "npm",
-      "version": "0.4.2"
+      "version": "0.4.2",
+      "name": "npm package"
     },
     {
       "id": "upstream-00c4facbab7d5f29",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.foretak.dev/mcp",
       "install": {
         "type": "api",
         "url": "https://api.foretak.dev/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

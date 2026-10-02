@@ -15,7 +15,7 @@
   "type": "plugin",
   "pluginDetails": {
     "manifestPath": ".claude-plugin/plugin.json",
-    "sourceType": "git",
+    "sourceType": "github-repo",
     "marketplaceUrl": "https://github.com/anthropics/claude-plugins-official"
   },
   "targets": [
@@ -31,17 +31,18 @@
   "distributions": [
     {
       "id": "upstream",
-      "type": "git",
+      "type": "github-repo",
       "url": "https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-lsp",
       "priority": 10,
-      "ref": "main"
+      "ref": "main",
+      "name": "github repository"
     }
   ],
   "lifecycle": {
     "status": "active"
   },
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-09-22T09:00:00Z",
+  "updatedAt": "2026-10-02T09:37:44Z",
   "publishedAt": "2026-09-22T09:00:00Z",
   "_meta": {
     "io.github.metaone01/marketplace": {

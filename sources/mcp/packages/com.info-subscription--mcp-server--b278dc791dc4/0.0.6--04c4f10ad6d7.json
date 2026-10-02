@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "nuget",
     "identifier": "Infosoft.Info.Subscription.Mcp.LocalServer",
@@ -34,20 +34,22 @@
   "distributions": [
     {
       "id": "upstream-894002be0b80d42a",
-      "type": "registry",
+      "type": "nuget-pkg",
       "url": "https://www.nuget.org/packages/Infosoft.Info.Subscription.Mcp.LocalServer",
       "registry": "nuget",
-      "version": "2026.9.15.2"
+      "version": "2026.9.15.2",
+      "name": "nuget package"
     },
     {
       "id": "upstream-f0d630f243fcc078",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://s4mcp-prod.azurewebsites.net/{tenantId}",
       "install": {
         "type": "api",
         "url": "https://s4mcp-prod.azurewebsites.net/{tenantId}"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "lifecycle": {

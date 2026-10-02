@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "aimarket-mcp",
@@ -34,20 +34,22 @@
   "distributions": [
     {
       "id": "upstream-77d89466ff70f818",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/aimarket-mcp",
       "registry": "pypi",
-      "version": "0.3.0"
+      "version": "0.3.0",
+      "name": "pypi package"
     },
     {
       "id": "upstream-399b58c451b2fe86",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://{aimarket_host}/mcp",
       "install": {
         "type": "api",
         "url": "https://{aimarket_host}/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

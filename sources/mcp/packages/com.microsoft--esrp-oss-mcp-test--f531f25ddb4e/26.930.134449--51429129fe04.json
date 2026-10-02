@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@microsoft/esrp-release-test-integration",
@@ -33,46 +33,52 @@
   "distributions": [
     {
       "id": "upstream-cee1f82199496613",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@microsoft/esrp-release-test-integration",
       "registry": "npm",
-      "version": "26.226.151853"
+      "version": "26.226.151853",
+      "name": "npm package"
     },
     {
       "id": "upstream-c8faaf860244b7c4",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/esrp_release_test",
       "registry": "pypi",
-      "version": "26.226.153828"
+      "version": "26.226.153828",
+      "name": "pypi package"
     },
     {
       "id": "upstream-41dbdc5964c1c240",
-      "type": "registry",
+      "type": "nuget-pkg",
       "url": "https://www.nuget.org/packages/sravanism.oss.mcp.server",
       "registry": "nuget",
-      "version": "0.0.3"
+      "version": "0.0.3",
+      "name": "nuget package"
     },
     {
       "id": "upstream-a10f53f981e3a61b",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/sravanmsft/esrp-oss-mcp-test:mcpserver",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-c224efd18fa9b70f",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/esrp-test/winget-esrp-ppe/releases/download/v0.0.2/com.microsoftesrp-oss-mcp-test.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-180fca5ef62481f3",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://esrp-mcp-server-test-{env}.azurewebsites.net/mcp",
       "install": {
         "type": "api",
         "url": "https://esrp-mcp-server-test-{env}.azurewebsites.net/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

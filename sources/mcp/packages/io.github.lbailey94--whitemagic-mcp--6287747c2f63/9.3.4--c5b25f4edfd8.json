@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "whitemagic-mcp",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-27dc0f37ec1570c9",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/whitemagic-mcp",
       "registry": "npm",
-      "version": "9.3.4"
+      "version": "9.3.4",
+      "name": "npm package"
     },
     {
       "id": "upstream-cbeabdc8fa8c1f90",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/lbailey94/whitemagic:9",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-d27c40ccb730e630",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.whitemagic.dev/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.whitemagic.dev/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "mcpb",
     "identifier": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v3.1.0/gitlab-mcp-server.mcpb",
@@ -33,53 +33,60 @@
   "distributions": [
     {
       "id": "upstream-7800d242def2eb55",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v3.1.0/gitlab-mcp-server.mcpb",
       "registry": "mcpb",
-      "version": "3.1.0"
+      "version": "3.1.0",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-a793b78cd2e0fe15",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/jmrplens/gitlab-mcp-server:3.1.0@sha256:87e483299a2663a7a5d4d28679859b0c7fba2b1a421b7de2652441a569d4a2fc",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-0b0c0e21eca69123",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/jmrplens/gitlab-mcp-server:3.1.0@sha256:87e483299a2663a7a5d4d28679859b0c7fba2b1a421b7de2652441a569d4a2fc",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-7ef01dff44d8cc51",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@jmrp.io/gitlab-mcp-server",
       "registry": "npm",
-      "version": "3.1.0"
+      "version": "3.1.0",
+      "name": "npm package"
     },
     {
       "id": "upstream-1a6ca5a2e4613409",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/jmrplens-gitlab-mcp-server",
       "registry": "pypi",
-      "version": "3.1.0"
+      "version": "3.1.0",
+      "name": "pypi package"
     },
     {
       "id": "upstream-efded4de16e5e3db",
-      "type": "registry",
+      "type": "nuget-pkg",
       "url": "https://www.nuget.org/packages/gitlab-mcp-server",
       "registry": "nuget",
-      "version": "3.1.0"
+      "version": "3.1.0",
+      "name": "nuget package"
     },
     {
       "id": "upstream-60ca0aa5c420a878",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.jmrp.io/gitlab",
       "install": {
         "type": "api",
         "url": "https://mcp.jmrp.io/gitlab"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

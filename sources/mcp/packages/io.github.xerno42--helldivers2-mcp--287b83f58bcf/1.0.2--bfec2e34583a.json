@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "helldivers2-mcp",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-5b59e124ccdb63fa",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/helldivers2-mcp",
       "registry": "npm",
-      "version": "1.0.2"
+      "version": "1.0.2",
+      "name": "npm package"
     },
     {
       "id": "upstream-45f36928d6d4c5d8",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/xerno42/helldivers2-mcp:1.0.2",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-013e88da213ce6e4",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.avengersofsuperearth.com/mcp",
       "install": {
         "type": "api",
         "url": "https://mcp.avengersofsuperearth.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

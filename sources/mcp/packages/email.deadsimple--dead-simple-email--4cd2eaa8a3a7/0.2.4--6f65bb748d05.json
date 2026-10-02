@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "deadsimple-email",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-f14b52cbf97beb22",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/deadsimple-email",
       "registry": "pypi",
-      "version": "0.2.2"
+      "version": "0.2.2",
+      "name": "pypi package"
     },
     {
       "id": "upstream-06353a78a7b3cc8b",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/deadsimple-email/deadsimple-email:0.2.2",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-322ff9b52c990bb5",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://api.deadsimple.email/mcp",
       "install": {
         "type": "api",
         "url": "https://api.deadsimple.email/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

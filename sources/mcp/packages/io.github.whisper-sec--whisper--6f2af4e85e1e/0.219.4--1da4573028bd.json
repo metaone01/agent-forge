@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@whisper-security/whisper-mcp",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-31caeef9ecde6651",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@whisper-security/whisper-mcp",
       "registry": "npm",
-      "version": "0.219.3"
+      "version": "0.219.3",
+      "name": "npm package"
     },
     {
       "id": "upstream-d23fc64a7e024954",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/whisper-sec/whisper:0.219.2",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-12106e02621b5ea8",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://whisper.online/mcp",
       "install": {
         "type": "api",
         "url": "https://whisper.online/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

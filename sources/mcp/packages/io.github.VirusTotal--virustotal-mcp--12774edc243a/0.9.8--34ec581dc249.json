@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-10-02T05:18:39Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "pypi",
     "identifier": "vt-mcp",
@@ -34,20 +34,22 @@
   "distributions": [
     {
       "id": "upstream-3e6245faa26b1071",
-      "type": "registry",
+      "type": "pypi-pkg",
       "url": "https://pypi.org/project/vt-mcp",
       "registry": "pypi",
-      "version": "0.9.8"
+      "version": "0.9.8",
+      "name": "pypi package"
     },
     {
       "id": "upstream-7575046e403daab7",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://ai.virustotal.com/mcp",
       "install": {
         "type": "api",
         "url": "https://ai.virustotal.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

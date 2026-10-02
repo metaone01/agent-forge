@@ -22,10 +22,12 @@ from urllib.parse import quote, unquote, urlparse
 import yaml
 
 try:
-    from tools.identity import identity_errors
+    from tools.distribution_names import normalize_distribution, normalize_plugin_source
+    from tools.identity import encoded_component, identity_errors
     from tools.validate import build_validator
 except ModuleNotFoundError:
-    from identity import identity_errors
+    from distribution_names import normalize_distribution, normalize_plugin_source
+    from identity import encoded_component, identity_errors
     from validate import build_validator
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,17 +48,8 @@ def dump(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def slug(value: str) -> str:
-    clean = re.sub(r"[^A-Za-z0-9._@/+\-]", "-", value).strip("-/")
-    if not clean or not re.match(r"^[A-Za-z0-9@]", clean):
-        clean = "package-" + clean
-    if len(clean) > 185:
-        clean = clean[:170] + "--" + hashlib.sha256(value.encode()).hexdigest()[:12]
-    return clean
-
-
 def file_component(value: str) -> str:
-    return slug(value).replace("/", "--")[:110] + "--" + hashlib.sha256(value.encode()).hexdigest()[:12]
+    return encoded_component(value)[:110] + "--" + hashlib.sha256(value.encode()).hexdigest()[:12]
 
 
 def repository(value: Any) -> str | None:
@@ -94,11 +87,11 @@ def unknown_target(agent: str) -> dict[str, Any]:
 
 
 def base_record(category: str, identity: str, name: str, description: str, version: str, agent: str) -> dict[str, Any]:
-    return {"schemaVersion": 2, "id": category + "." + hashlib.sha256(identity.encode()).hexdigest(), "name": slug(name), "displayName": name[:300], "version": version, "versionScheme": "unknown", "type": category, "description": description[:4000] or name, "license": "unknown", "targets": [unknown_target(agent)], "createdAt": STAMP, "updatedAt": STAMP}
+    return {"schemaVersion": 2, "id": category + "." + quote(identity, safe="._/@+-"), "name": name, "displayName": name[:300], "version": version, "versionScheme": "unknown", "type": category, "description": description[:4000] or name, "license": "unknown", "targets": [unknown_target(agent)], "createdAt": STAMP, "updatedAt": STAMP}
 
 
 def git_distribution(repo: str, path: str = "", revision: str | None = None) -> dict[str, Any]:
-    value: dict[str, Any] = {"id": "upstream-git", "type": "git", "url": f"https://github.com/{repo}"}
+    value: dict[str, Any] = {"id": "upstream-git", "name": "github repository", "type": "github-repo", "url": f"https://github.com/{repo}"}
     if path:
         value["url"] += f"/tree/{revision or 'HEAD'}/{quote(path, safe='/')}"
     if revision:
@@ -160,6 +153,9 @@ class Importer:
             else:
                 record["createdAt"] = self.records[key].get("createdAt", STAMP)
                 record["_meta"] = self.records[key].get("_meta", {})
+        for distribution in record.get("distributions", []):
+            normalize_distribution(distribution, record["type"])
+        normalize_plugin_source(record)
         collection = record.setdefault("_meta", {}).setdefault("org.agentforge/collection", {"sources": [], "classification": "upstream-metadata", "observedAt": STAMP})
         if ref not in collection["sources"]:
             collection["sources"].append(ref)
@@ -230,8 +226,8 @@ class Importer:
         name = repo + ("/" + subpath if subpath else "")
         if not version:
             version = text(row.get("version") or row.get("latestVersion")) or "unversioned"
-        value = base_record("plugin", f"{repo.lower()}/{subpath}", name, text(row.get("description"), name), version, agent)
-        value["pluginDetails"] = {"manifestPath": manifest, "sourceType": "git"}
+        value = base_record("plugin", repo.lower() + ("/" + subpath if subpath else ""), name, text(row.get("description"), name), version, agent)
+        value["pluginDetails"] = {"manifestPath": manifest, "sourceType": "github-repo"}
         value["links"] = {"repository": f"https://github.com/{repo}", "readme": f"https://github.com/{repo}#readme"}
         value["distributions"] = [git_distribution(repo, subpath, revision)]
         npm = row.get("npm") or row.get("npmName") or row.get("npmPackage")
@@ -444,13 +440,12 @@ class Importer:
                 if remotes:
                     details["remotes"] = remotes
                 record = base_record("mcp", name, name, text(server.get("description"), name), version, "dsh")
-                record["name"] = slug(name)
-                record["id"] = "mcp." + record["name"] if len(record["name"]) <= 210 else record["id"]
                 record["mcpDetails"] = details
                 unique_distributions = {json.dumps(distribution, sort_keys=True): distribution for distribution in distributions}
                 record["distributions"] = list(unique_distributions.values())
                 for distribution in record["distributions"]:
-                    distribution["id"] = "upstream-" + hashlib.sha256(json.dumps(distribution, sort_keys=True).encode()).hexdigest()[:16]
+                    identity_fields = {key: value for key, value in distribution.items() if key != "name"}
+                    distribution["id"] = "upstream-" + hashlib.sha256(json.dumps(identity_fields, sort_keys=True).encode()).hexdigest()[:16]
                 record["displayName"] = text(server.get("title"), name)[:300]
                 links = {}
                 upstream = server.get("repository") or {}

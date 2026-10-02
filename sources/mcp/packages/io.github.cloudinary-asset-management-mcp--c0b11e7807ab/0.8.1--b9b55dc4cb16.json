@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "npm",
     "identifier": "@cloudinary/asset-management-mcp",
@@ -33,26 +33,29 @@
   "distributions": [
     {
       "id": "upstream-9f886986c68f9c42",
-      "type": "registry",
+      "type": "npm-pkg",
       "url": "https://www.npmjs.com/package/@cloudinary/asset-management-mcp",
       "registry": "npm",
-      "version": "0.8.1"
+      "version": "0.8.1",
+      "name": "npm package"
     },
     {
       "id": "upstream-a8ec6577df7bd328",
-      "type": "oci",
+      "type": "dockerhub-image",
       "url": "https://docker.io/cloudinary/asset-management-mcp:0.8.1",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "docker hub image"
     },
     {
       "id": "upstream-c58f714d7304fcb3",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://asset-management.mcp.cloudinary.com/mcp",
       "install": {
         "type": "api",
         "url": "https://asset-management.mcp.cloudinary.com/mcp"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

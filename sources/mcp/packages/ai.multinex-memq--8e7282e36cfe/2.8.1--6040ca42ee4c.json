@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "oci",
     "identifier": "ghcr.io/multinex-ai/memq-mcp-server:registry-2.8.1",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-dc380af5911a71f2",
-      "type": "oci",
+      "type": "ghcr-image",
       "url": "https://ghcr.io/multinex-ai/memq-mcp-server:registry-2.8.1",
-      "registry": "oci"
+      "registry": "oci",
+      "name": "github container image"
     },
     {
       "id": "upstream-752c77b51eaf6e12",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.multinex.ai/mcp/v1",
       "install": {
         "type": "api",
         "url": "https://mcp.multinex.ai/mcp/v1"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {

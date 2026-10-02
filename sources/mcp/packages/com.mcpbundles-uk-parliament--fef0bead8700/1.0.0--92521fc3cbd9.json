@@ -18,7 +18,7 @@
     }
   ],
   "createdAt": "2026-09-22T09:00:00Z",
-  "updatedAt": "2026-10-02T05:18:39Z",
+  "updatedAt": "2026-10-02T10:54:46Z",
   "mcpDetails": {
     "registryType": "mcpb",
     "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-parliament-v1.0.0+build.d613fb8a/uk-parliament.mcpb",
@@ -33,19 +33,21 @@
   "distributions": [
     {
       "id": "upstream-09f040d4e014da1c",
-      "type": "archive",
+      "type": "github-mcpb",
       "url": "https://github.com/thinkchainai/mcpbundles/releases/download/uk-parliament-v1.0.0+build.d613fb8a/uk-parliament.mcpb",
-      "registry": "mcpb"
+      "registry": "mcpb",
+      "name": "github mcpb package"
     },
     {
       "id": "upstream-105f3b059250701c",
-      "type": "other",
+      "type": "mcp-endpoint",
       "url": "https://mcp.mcpbundles.com/bundle/uk-parliament/",
       "install": {
         "type": "api",
         "url": "https://mcp.mcpbundles.com/bundle/uk-parliament/"
       },
-      "notes": "Declared MCP endpoint; not a downloadable package."
+      "notes": "Declared MCP endpoint; not a downloadable package.",
+      "name": "remote mcp endpoint"
     }
   ],
   "links": {
