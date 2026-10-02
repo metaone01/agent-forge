@@ -51,12 +51,12 @@ jobs:
         shell: bash
         run: |
           # Generated Pages data is intentionally not committed. Compare the
-          # canonical source tree with the last immutable catalog tag instead.
-          # This keeps an unchanged scheduled point from creating a release.
+          # canonical sources and site with the last immutable catalog tag.
+          # Dashboard-only changes must also reach the published site.
           last_tag=$(gh release list --limit 20 --json tagName --jq '[.[] | select(.tagName | startswith("catalog-"))][0].tagName' || true)
           if [ -z "$last_tag" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
-          elif git diff --quiet "$last_tag"..HEAD -- sources; then
+          elif git diff --quiet "$last_tag"..HEAD -- sources site; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -126,7 +126,7 @@ jobs:
 
   pages:
     needs: generate
-    if: needs.generate.outputs.changed == 'true'
+    if: needs.generate.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
