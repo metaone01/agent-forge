@@ -1,0 +1,22 @@
+{
+  "contractVersion": 1,
+  "schemaVersion": 2,
+  "schema": "../package.schema.json",
+  "example": "example.json",
+  "issue": {
+    "repository": "metaone01/agent-forge",
+    "url": "https://github.com/metaone01/agent-forge/issues/new",
+    "template": "package-submission.yml",
+    "label": "package-submission",
+    "jsonField": "package_json",
+    "jsonHeading": "Canonical package JSON",
+    "notesField": "rationale",
+    "notesHeading": "Submission notes",
+    "notesRequired": false,
+    "bodyShape": "### Canonical package JSON\n\n{complete package record}\n\n### Submission notes\n\n{optional notes}",
+    "instructions": "Create an Issue with the package-submission label using your own authorized GitHub tool. Supply a complete Schema v2 record under the stable Canonical package JSON heading. Omit the notes heading when there are no notes. No token is accepted by this site."
+  },
+  "timestamps": "Preserve declared createdAt/updatedAt/publishedAt. New visual drafts include their actual metadata createdAt, not an invented upstream publication time. When all three timestamps are absent, the main Issue pipeline adds the actual GitHub Issue created_at as metadata createdAt so the record can enter dated projections.",
+  "validation": "Browser checks the bundled Schema field constraints; CI performs final canonical and cross-file checks. Proposals target the packages branch, not main.",
+  "urlHandoff": { "conservativeCharacterBudget": 7500, "notAGitHubLimitGuarantee": true, "fallback": "Copy the complete JSON into the GitHub form. Do not truncate or encode package identity fields." }
+}

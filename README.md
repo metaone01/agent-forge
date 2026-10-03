@@ -108,8 +108,8 @@ uv run tools/validate.py examples/package-mcp.json package.schema.json
 本地预览需将页面和生成的 `data/` 放在同一个静态站点根目录。以下命令适用于 PowerShell 和常见 Unix shell，会更新忽略的 `pages-staging/` 预览目录：
 
 ```sh
-uv run python -c "import shutil; shutil.copytree('site', 'pages-staging', dirs_exist_ok=True)"
-uv run tools/project.py --output pages-staging/data --base-url http://localhost:8000/data
+uv run tools/project.py --output data --base-url http://localhost:8000/data
+uv run python tools/build_site.py --output pages-staging --data data
 uv run python -m http.server 8000 --bind 127.0.0.1 --directory pages-staging
 ```
 
@@ -131,7 +131,7 @@ uv run tools/snapshot.py --data data --output snapshots
 1. 从 `packages` 创建贡献分支，参考其 Schema、示例与[字段文档](docs/schema/README.md)，选择一种类型；非 Bundle 记录需要发行候选。
 2. 将包版本 JSON 放入 `sources/<type>/packages/`，更新对应 `index.json` 的版本、latest 和相对详情路径，并保持源与索引 revision 一致。
 3. 保留上游原始版本字符串；`versionScheme` 仅作为比较提示。记录来源、兼容性未知项与发行链接，不暗示已经过安全核验。
-4. 运行上述测试与完整校验，再向 `packages` 分支发起元数据 Pull Request。README 等文档改动在文档所在分支维护。也可以通过 [Issue 表单](https://github.com/metaone01/agent-forge/issues/new/choose)提供完整的 Schema v2 记录和说明。
+4. 运行上述测试与完整校验，再向 `packages` 分支发起元数据 Pull Request。README 等文档改动在文档所在分支维护。也可以通过[可视化上传页](https://metaone01.github.io/agent-forge/submit/)填写元数据并自动生成 JSON，再到 GitHub 确认提交。Agent 可使用 [JSON Issue 表单](https://github.com/metaone01/agent-forge/issues/new?template=package-submission.yml)或[机器提交契约](https://metaone01.github.io/agent-forge/submit/contract.json)；Submission Notes 可选。
 
 符合条件的 `package-submission` Issue 会由工作流生成面向 `packages` 的提案 Pull Request，仍需审阅和校验。自动合并的条件以[冷却工作流](https://github.com/metaone01/agent-forge/blob/main/.github/workflows/package-cooldown.yml)、仓库规则和必需检查为准。
 

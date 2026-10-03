@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="通过可视化表单或 Agent JSON 提交 Agent Forge 包元数据">
+  <title>上传包 · Agent Forge</title>
+  <script src="../assets/preferences.js"></script>
+  <link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/submit.css">
+  <script defer src="../assets/submission-core.js"></script><script defer src="../assets/submit.js"></script>
+</head>
+<body data-page="submit">
+<header class="topbar"><a class="brand" href="../">Agent Forge <span>METADATA CATALOG</span></a><nav class="topnav" aria-label="主导航" data-i18n-aria-label="nav.label"><a href="../" data-i18n="nav.catalog">目录</a><a href="../dashboard/" data-i18n="nav.dashboard">Dashboard</a><a href="../docs/" data-doc-entry data-i18n="nav.docs">文档</a><a href="./" aria-current="page" data-i18n="nav.submit">上传包</a></nav></header>
+<main class="shell submit-shell">
+  <section class="hero"><div><p class="eyebrow">METADATA SUBMISSION</p><h1 data-i18n="submit.heading">填写元数据，交由 GitHub 审核。</h1><p class="lede" data-i18n="submit.intro">助手表单自动生成 JSON；最终由你在 GitHub 确认创建 Issue。本页面不上传二进制文件，也不要求访问 token。</p></div></section>
+  <div class="submission-tabs" role="tablist" aria-label="提交方式" data-i18n-aria-label="submit.modeLabel"><button id="form-tab" type="button" role="tab" aria-selected="true" aria-controls="form-panel" data-i18n="submit.formTab">可视化填写</button><button id="json-tab" type="button" role="tab" aria-selected="false" aria-controls="json-panel" tabindex="-1" data-i18n="submit.jsonTab">Agent / JSON</button></div>
+  <p class="muted" data-i18n="submit.boundary">这里只整合元数据。来源、兼容性、发行地址和标签均不是安全保证。</p>
+  <div id="schema-status" role="status" data-i18n="submit.loading">正在加载 Schema…</div>
+  <div class="submit-layout">
+    <div>
+      <section id="form-panel" role="tabpanel" aria-labelledby="form-tab"><form id="package-form" novalidate><div id="schema-fields"></div></form></section>
+      <section id="json-panel" role="tabpanel" aria-labelledby="json-tab" hidden>
+        <h2 data-i18n="submit.jsonTab">Agent / JSON</h2><p data-i18n="submit.agentHelp">粘贴或导入完整 Schema v2 记录，所有合法字段和扩展数据会原样保留。Agent 也可以通过已授权的 GitHub 工具直接创建带 package-submission 标签的 Issue。</p>
+        <p><a href="../package.schema.json" data-i18n="submit.schemaLink">机器可读 Schema</a> · <a href="contract.json" data-i18n="submit.contractLink">Agent 提交契约</a> · <a href="example.json" data-i18n="submit.exampleLink">完整示例</a></p>
+        <label class="json-file"><span data-i18n="submit.import">导入 JSON 文件</span><input id="json-file" type="file" accept=".json,application/json"></label>
+        <label for="json-input" data-i18n="submit.jsonLabel">完整 package JSON</label><textarea id="json-input" rows="24" spellcheck="false" autocomplete="off"></textarea>
+      </section>
+      <section class="submission-notes"><label for="submission-notes" data-i18n="submit.notes">Submission Notes（可选）</label><textarea id="submission-notes" rows="3"></textarea><p class="muted" data-i18n="submit.notesHelp">可补充来源或兼容性说明。不填也能提交；它不属于 package JSON。</p></section>
+    </div>
+    <aside class="submit-preview"><h2 data-i18n="submit.preview">生成的 JSON</h2><p class="muted" data-i18n="submit.checkBoundary">浏览器检查当前 Schema 的字段约束；跨文件和 Bundle 等语义仍由 CI 最终校验。</p><div id="submission-errors" aria-live="polite"></div><pre><code id="json-preview"></code></pre><div class="submit-actions"><button id="copy-json" class="button button-quiet" type="button" disabled data-i18n="submit.copy">复制 JSON</button><button id="download-json" class="button button-quiet" type="button" disabled data-i18n="submit.download">下载 JSON</button><button id="create-issue" class="button" type="button" disabled data-i18n="submit.create">前往 GitHub 确认</button></div><div id="submission-fallback" hidden><p data-i18n="submit.longURL">记录较长，不会放进 URL 或被截断。请复制 JSON，在 GitHub 表单的 Canonical package JSON 字段粘贴，然后确认提交。</p><button id="copy-issue" type="button" class="button button-quiet" data-i18n="submit.copyIssue">复制完整 Issue 内容</button><a class="external-link" href="https://github.com/metaone01/agent-forge/issues/new?template=package-submission.yml&amp;labels=package-submission" target="_blank" rel="noreferrer" data-i18n="submit.blankIssue">打开 GitHub JSON 表单 ↗</a></div><p id="submission-status" role="status"></p></aside>
+  </div>
+</main>
+<footer class="footer"><span data-i18n="submit.footer">只在浏览器保存填写草稿；请勿填入 token、密码或其他秘密。</span><a href="../docs/schema/package.schema.html" data-i18n="submit.reference">Package 字段参考</a></footer>
+</body></html>
