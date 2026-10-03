@@ -3,24 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Agent Forge agent dashboard">
-    <title>Agent Forge · Agent Dashboard</title>
+    <meta name="description" content="Agent Forge Agent 数据总览" data-i18n-content="Agent Forge agent dashboard">
+    <title data-i18n="Agent Forge · Agent Dashboard">Agent Forge · Agent 数据</title>
+    <script src="../../assets/preferences.js"></script>
     <link rel="stylesheet" href="../../assets/styles.css">
   </head>
   <body data-page="agent-dashboard">
     <header class="topbar">
-      <a class="brand" href="../../">Agent Forge <span>METADATA CATALOG</span></a>
-      <nav class="topnav" aria-label="主导航"><a href="../../">目录</a><a href="../">Dashboard</a><a class="button button-small" href="https://github.com/metaone01/agent-forge/issues/new/choose" target="_blank" rel="noreferrer">提交包</a></nav>
+      <a class="brand" href="../../">Agent Forge <span data-i18n="METADATA CATALOG">元数据目录</span></a>
+      <nav class="topnav" aria-label="主导航" data-i18n-aria-label="nav.label">
+        <a href="../../" data-i18n="nav.catalog">目录</a>
+        <a href="../../dashboard/" data-i18n="nav.dashboard">数据总览</a>
+        <a href="../../docs/" data-doc-entry data-i18n="nav.docs">文档</a>
+        <a class="button button-small" href="../../submit/" data-i18n="nav.submit">上传包</a>
+      </nav>
     </header>
     <main class="shell dashboard-shell">
-      <a class="back-link" href="../">← 返回总览</a>
-      <section class="dashboard-heading"><div><p class="eyebrow">AGENT PROFILE</p><h1 id="agent-title">Agent 数据</h1><p class="lede" id="agent-description">正在读取 Agent 投影…</p></div><div class="dashboard-updated" id="dashboard-updated">正在读取…</div></section>
-      <section id="global-metrics" class="metric-grid" aria-label="Agent 指标"></section>
-      <section class="dashboard-grid"><article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">TYPE MIX</p><h2>类型分布</h2></div></div><div id="agent-type-chart" class="bar-chart"></div></article><article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">FACETS</p><h2>常见 facet</h2></div></div><div id="agent-facet-chart" class="facet-chart"></div></article></section>
-      <section class="panel"><div class="panel-heading"><div><p class="eyebrow">RECENT UPDATES</p><h2>最近更新</h2></div></div><div id="recent-packages" class="result-list"></div></section>
-      <p class="disclaimer">数据已整合但未核验。Agent Forge 不提供安全、可信度或兼容性保证。</p>
+      <a class="back-link" href="../" data-i18n="← 返回总览">← 返回总览</a>
+      <section class="dashboard-heading"><div><p class="eyebrow" data-i18n="AGENT PROFILE">Agent 概况</p><h1 id="agent-title" data-i18n="Agent 数据">Agent 数据</h1><p class="lede" id="agent-description" data-i18n="正在读取 Agent 投影…">正在读取 Agent 投影…</p></div><div class="dashboard-updated" id="dashboard-updated" data-i18n="正在读取…">正在读取…</div></section>
+      <section id="global-metrics" class="metric-grid" aria-label="Agent 指标" data-i18n-aria-label="Agent 指标"></section>
+      <section class="dashboard-grid"><article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow" data-i18n="TYPE MIX">类型分布</p><h2 data-i18n="类型分布">类型分布</h2></div></div><div id="agent-type-chart" class="bar-chart"></div></article><article class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow" data-i18n="FACETS">受控标签</p><h2 data-i18n="常见 facet">常见标签</h2></div></div><div id="agent-facet-chart" class="facet-chart"></div></article></section>
+      <section class="panel"><div class="panel-heading"><div><p class="eyebrow" data-i18n="RECENT UPDATES">最近更新</p><h2 data-i18n="最近更新">最近更新</h2></div></div><div id="recent-packages" class="result-list"></div></section>
+      <p class="disclaimer" data-i18n="数据已整合但未核验。Agent Forge 不提供安全、可信度或兼容性保证。">数据已整合但未核验。Agent Forge 不提供安全、可信度或兼容性保证。</p>
     </main>
-    <footer class="footer"><span>Agent Forge · 静态 Dashboard</span><a href="https://github.com/metaone01/agent-forge" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+    <footer class="footer"><span data-i18n="Agent Forge · 静态 Dashboard">Agent Forge · 静态数据总览</span><a href="https://github.com/metaone01/agent-forge" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
     <script src="../../assets/app.js" defer></script>
   </body>
 </html>

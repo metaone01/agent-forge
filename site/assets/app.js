@@ -3,11 +3,15 @@
   "use strict";
 
   const page = document.body.dataset.page || "catalog";
-  const base = new URL(page === "dashboard" ? "../" : page === "agent-dashboard" ? "../../" : "./", document.baseURI);
+  const ui = window.ForgeUI;
+  const t = ui.t;
+  const base = ui.siteBase;
+  const dataBase = new URL("data/", base);
   const dataUrl = (path) => new URL(`data/${path}`.replace(/^data\/data\//, "data/"), base).href;
   const types = ["mcp", "plugin", "skill", "general", "bundle"];
   const colors = { mcp: "#0e766e", plugin: "#4876a7", skill: "#c87927", general: "#8667a9", bundle: "#53656a" };
-  const state = { manifest: null, entries: [], detailCache: new Map(), filtered: [] };
+  const pageSize = 50;
+  const state = { manifest: null, entries: [], detailCache: new Map(), detailPending: new Map(), filtered: [], resultPage: 0, sort: "", ready: false, catalogNodes: null, detailRoute: 0, dashboard: null, agentDashboard: null };
 
   async function getJSON(url, optional) {
     try {
@@ -24,12 +28,18 @@
     return String(value == null ? "" : value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
   }
   function formatDate(value) {
-    if (!value) return "未知时间";
+    if (!value) return t("未知时间");
     const date = new Date(value);
-    return Number.isNaN(date.getTime()) ? String(value) : date.toLocaleString("zh-CN", { dateStyle: "medium", timeStyle: "short" });
+    return Number.isNaN(date.getTime()) ? String(value) : new Intl.DateTimeFormat(ui.locale, { dateStyle: "medium", timeStyle: "short" }).format(date);
   }
-  function number(value) { return Number(value || 0).toLocaleString("zh-CN"); }
+  function number(value) { return Number(value || 0).toLocaleString(ui.locale); }
   function pathFor(path) { return /^https?:\/\//i.test(path) ? path : new URL(path.replace(/^\//, ""), base).href; }
+  // Manifest source paths are relative to the generated data directory, not the page root.
+  function dataPathFor(path) {
+    if (/^https?:\/\//i.test(path)) return path;
+    const normalized = String(path).replace(/^\/+/, "");
+    return new URL(normalized, normalized.startsWith("data/") ? base : dataBase).href;
+  }
   function safeHref(value) {
     try {
       const parsed = new URL(String(value || ""), base);
@@ -64,17 +74,19 @@
 
   function normalizeIndex(index, indexPath) {
     if (!index || typeof index !== "object") return [];
-    const items = Array.isArray(index.packages) ? index.packages.map((record) => [record.name || record.id, record]) : Object.entries(index.packages || {});
+    const items = Array.isArray(index.packages) ? index.packages.map((record) => [record.name || record.packageId || record.id, record]) : Object.entries(index.packages || {});
     return items.filter(([name]) => name).map(([name, record]) => {
       const sourceBase = indexPath.replace(/index\.json(?:\?.*)?$/, "");
       const path = record.path || `${name}.json`;
       return {
-        id: `${index.agentId || "unknown"}:${index.type || "general"}:${name}`,
-        name, agentId: index.agentId || record.agentId || "unknown", type: index.type || record.type || "general",
+        key: `${index.agentId || record.agentId || "unknown"}:${index.type || record.type || "general"}:${name}`,
+        id: record.packageId || record.id || "", packageId: record.packageId || record.id || "", routeName: name,
+        name: record.name || name, agentId: index.agentId || record.agentId || "unknown", type: index.type || record.type || "general",
         subtype: record.subtype || null, latest: record.latest || record.version || "unknown", versions: record.versions || [],
         path: pathFor(path.startsWith("http") ? path : sourceBase + path), recordRevision: record.recordRevision || index.revision,
-        summary: record.summary || record.description || "", keywords: record.keywords || [], facets: record.facets || {}, indexPath,
-        updatedAt: record.updatedAt || index.updatedAt || index.generatedAt, searchText: record.searchText || ""
+        summary: record.summary || record.description || "", keywords: record.keywords || [], facets: record.facets || {}, customFacets: record.customFacets || {}, indexPath,
+        updatedAt: record.updatedAt || index.updatedAt || index.generatedAt,
+        searchText: (record.searchText || [name, record.name, record.id, record.packageId, record.displayName, record.summary, record.description, valueText(record.keywords), valueText(record.facets), valueText(record.customFacets), record.subtype].join(" ")).toLowerCase()
       };
     });
   }
@@ -83,13 +95,13 @@
     const manifest = await loadManifest();
     const paths = indexCandidates(manifest);
     const loaded = await Promise.all(paths.map(async (path) => {
-      const absolute = /^https?:\/\//i.test(path) ? path : pathFor(path);
+      const absolute = dataPathFor(path);
       return normalizeIndex(await getJSON(absolute, true), absolute);
     }));
     state.entries = loaded.flat();
     // A stale or empty manifest should not leave the page looking broken: it is a valid empty catalog.
     const stamp = document.getElementById("revision-stamp");
-    if (stamp) stamp.textContent = `${manifest.revision || "未发布 revision"} · ${formatDate(manifest.generatedAt)}`;
+    if (stamp) setText("revision-stamp", `${manifest.revision || t("未发布 revision")} · ${formatDate(manifest.generatedAt)}`);
     return state.entries;
   }
 
@@ -99,46 +111,71 @@
     return value == null ? "" : String(value);
   }
   async function hydrate(entry) {
-    if (state.detailCache.has(entry.id)) return state.detailCache.get(entry.id);
-    const record = await getJSON(entry.path, true);
-    const full = record && typeof record === "object" ? { ...entry, ...record } : entry;
-    full.name = full.name || full.packageId || entry.name;
-    full.searchText = [full.name, full.displayName, full.description, full.summary, full.keywords, full.facets, full.customFacets, full.subtype, valueText(full.details)].join(" ").toLowerCase();
-    state.detailCache.set(entry.id, full);
-    return full;
+    if (state.detailCache.has(entry.key)) return state.detailCache.get(entry.key);
+    if (state.detailPending.has(entry.key)) return state.detailPending.get(entry.key);
+    const pending = (async () => {
+      const record = await getJSON(entry.path, true);
+      const full = record && typeof record === "object" ? { ...entry, ...record } : { ...entry };
+      full.name = record && record.name || entry.name;
+      full.packageId = record && (record.packageId || record.id) || entry.packageId;
+      state.detailCache.set(entry.key, full);
+      if (state.detailCache.size > 20) state.detailCache.delete(state.detailCache.keys().next().value);
+      return full;
+    })();
+    state.detailPending.set(entry.key, pending);
+    try { return await pending; } finally { state.detailPending.delete(entry.key); }
   }
 
-  async function filterEntries() {
+  function filterEntries() {
+    if (!document.getElementById("query")) return;
     const query = document.getElementById("query").value.trim().toLowerCase();
     const agent = document.getElementById("agent-filter").value;
     const type = document.getElementById("type-filter").value;
     const subtype = document.getElementById("subtype-filter").value;
-    let entries = state.entries.filter((entry) => (!agent || entry.agentId === agent) && (!type || entry.type === type) && (!subtype || entry.subtype === subtype));
-    if (query) {
-      await Promise.all(entries.slice(0, 100).map(hydrate));
-      entries = entries.filter((entry) => ((state.detailCache.get(entry.id) || entry).searchText || [entry.name, entry.summary, entry.keywords].join(" ")).toLowerCase().includes(query));
-    }
     const sort = document.getElementById("sort-select").value;
-    entries.sort((a, b) => sort === "name" ? a.name.localeCompare(b.name) : sort === "updated" ? String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")) : a.name.localeCompare(b.name));
-    state.filtered = entries;
+    if (sort !== state.sort) {
+      state.entries.sort((a, b) => sort === "updated" ? String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")) : a.name.localeCompare(b.name));
+      state.sort = sort;
+    }
+    state.filtered = state.entries.filter((entry) => (!agent || entry.agentId === agent) && (!type || entry.type === type) && (!subtype || entry.subtype === subtype) && (!query || entry.searchText.includes(query)));
+    state.resultPage = 0;
     renderResults();
   }
 
+  function setText(id, value) {
+    const node = document.getElementById(id);
+    if (!node) return;
+    node.removeAttribute("data-i18n");
+    node.textContent = value;
+  }
+  function packageSubtitle(record) {
+    const id = record.packageId || record.id;
+    return id ? '<p class="package-id">' + escapeHTML(id) + '</p>' : '';
+  }
   function renderResults() {
     const results = document.getElementById("results");
-    const empty = document.getElementById("empty-state");
-    const count = document.getElementById("result-count");
-    const status = document.getElementById("catalog-status");
     if (!results) return;
-    count.textContent = number(state.filtered.length);
-    status.textContent = state.entries.length ? `· ${state.entries.length} 条静态索引记录` : "· 当前没有已发布记录";
-    results.innerHTML = state.filtered.map((entry) => {
-      const typeLabel = entry.type.toUpperCase();
-      const record = state.detailCache.get(entry.id) || entry;
-      const summary = record.description || record.summary || "暂无描述，打开详情查看来源与安装候选。";
-      return `<article class="result-card"><div><a class="result-link" href="#/package/${encodeURIComponent(entry.agentId)}/${encodeURIComponent(entry.type)}/${encodeURIComponent(entry.name)}"><div class="result-title"><strong>${escapeHTML(record.displayName || entry.name)}</strong><span class="pill">${escapeHTML(typeLabel)}</span>${entry.subtype ? `<span class="pill pill-neutral">${escapeHTML(entry.subtype)}</span>` : ""}</div><p class="result-summary">${escapeHTML(summary)}</p></a><div class="result-meta"><span>${escapeHTML(entry.agentId)}</span><span>${entry.versions && entry.versions.length ? `${entry.versions.length} 个版本` : "版本 ${escapeHTML(entry.latest)}"}</span>${record.facets ? `<span>${Object.keys(record.facets).length} 个 facet 组</span>` : ""}</div></div><div class="result-version">最新版本<strong>${escapeHTML(entry.latest)}</strong>${entry.updatedAt ? `<span>${escapeHTML(formatDate(entry.updatedAt))}</span>` : ""}</div></article>`;
+    setText("result-count", number(state.filtered.length));
+    setText("catalog-status", state.entries.length ? t("catalog.records", { count: number(state.entries.length) }) : t("catalog.empty"));
+    if (state.manifest) setText("revision-stamp", (state.manifest.revision || t("未发布 revision")) + " · " + formatDate(state.manifest.generatedAt));
+    const start = state.resultPage * pageSize;
+    results.innerHTML = state.filtered.slice(start, start + pageSize).map((entry) => {
+      const record = state.detailCache.get(entry.key) || entry;
+      const href = "#/package/" + [entry.agentId, entry.type, entry.routeName].map(encodeURIComponent).join("/");
+      const title = '<div class="result-title"><strong>' + escapeHTML(record.name || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
+      const summary = record.description || record.summary || t("暂无描述，打开详情查看来源与安装候选。");
+      const versions = entry.versions.length ? t("catalog.versions", { count: number(entry.versions.length) }) : t("catalog.version", { version: entry.latest });
+      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + title + packageSubtitle(record) + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(record, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
     }).join("");
-    empty.hidden = state.filtered.length !== 0;
+    document.getElementById("empty-state").hidden = state.filtered.length > 0;
+    const pages = Math.max(1, Math.ceil(state.filtered.length / pageSize));
+    document.getElementById("pagination").hidden = pages <= 1;
+    document.getElementById("page-number").max = pages;
+    document.getElementById("page-number").value = state.resultPage + 1;
+    setText("page-total", t("catalog.pages", { count: number(pages) }));
+    setText("page-range", state.filtered.length ? number(start + 1) + "–" + number(Math.min(start + pageSize, state.filtered.length)) + " / " + number(state.filtered.length) : "");
+    document.getElementById("previous-page").disabled = state.resultPage === 0;
+    document.getElementById("next-page").disabled = state.resultPage + 1 >= pages;
   }
 
   function setupFilters() {
@@ -146,37 +183,97 @@
     const subtypes = [...new Set(state.entries.map((entry) => entry.subtype).filter(Boolean))].sort();
     document.getElementById("agent-filter").insertAdjacentHTML("beforeend", agents.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
     document.getElementById("subtype-filter").insertAdjacentHTML("beforeend", subtypes.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
-    ["query", "agent-filter", "type-filter", "subtype-filter", "sort-select"].forEach((id) => document.getElementById(id).addEventListener(id === "query" ? "input" : "change", filterEntries));
-    document.getElementById("clear-filters").addEventListener("click", () => { ["query", "agent-filter", "type-filter", "subtype-filter"].forEach((id) => { document.getElementById(id).value = ""; }); filterEntries(); });
-    window.addEventListener("keydown", (event) => { if (event.key === "/" && document.activeElement.tagName !== "INPUT") { event.preventDefault(); document.getElementById("query").focus(); } });
+    let searchTimer;
+    const applyFilters = () => { clearTimeout(searchTimer); filterEntries(); };
+    document.getElementById("query").addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(filterEntries, 150); });
+    ["agent-filter", "type-filter", "subtype-filter", "sort-select"].forEach((id) => document.getElementById(id).addEventListener("change", applyFilters));
+    document.getElementById("clear-filters").addEventListener("click", () => { ["query", "agent-filter", "type-filter", "subtype-filter"].forEach((id) => { document.getElementById(id).value = ""; }); applyFilters(); });
+    const changePage = (pageNumber) => {
+      if (!Number.isFinite(pageNumber)) pageNumber = 0;
+      state.resultPage = Math.max(0, Math.min(Math.ceil(state.filtered.length / pageSize) - 1, Math.floor(pageNumber)));
+      renderResults();
+      document.querySelector(".catalog-toolbar").scrollIntoView({ block: "start" });
+    };
+    document.getElementById("previous-page").addEventListener("click", () => changePage(state.resultPage - 1));
+    document.getElementById("next-page").addEventListener("click", () => changePage(state.resultPage + 1));
+    document.getElementById("page-number").addEventListener("change", (event) => changePage(Number(event.target.value) - 1));
+    window.addEventListener("keydown", (event) => { if (event.key === "/" && !event.ctrlKey && !event.altKey && !event.metaKey && !["INPUT", "TEXTAREA", "SELECT", "BUTTON"].includes(document.activeElement.tagName) && !document.activeElement.isContentEditable) { event.preventDefault(); document.getElementById("query").focus(); } });
   }
 
-  async function renderDetail(agent, type, encodedName) {
-    const name = decodeURIComponent(encodedName);
-    const entry = state.entries.find((item) => item.agentId === agent && item.type === type && item.name === name);
+  function tagItems(record) {
+    const items = [];
+    for (const [kind, facets] of [["controlled", record.facets], ["custom", record.customFacets]]) {
+      if (!facets || typeof facets !== "object" || Array.isArray(facets)) continue;
+      for (const [group, values] of Object.entries(facets)) {
+        for (const value of Array.isArray(values) ? values : [values]) {
+          if (value == null || String(value).trim() === "") continue;
+          items.push({ kind, group, text: group + ": " + String(value) });
+        }
+      }
+    }
+    for (const value of Array.isArray(record.keywords) ? record.keywords : []) {
+      if (value != null && String(value).trim()) items.push({ kind: "keywords", text: String(value) });
+    }
+    return items;
+  }
+  function renderPackageTags(record, limit = Infinity) {
+    const items = tagItems(record);
+    if (!items.length) return "";
+    const tags = items.slice(0, limit).map((item) => '<span class="tag tag-' + item.kind + (item.kind === "controlled" ? " facet-color-" + facetColor(item.group) : "") + '" title="' + escapeHTML(t("tags." + item.kind)) + '">' + escapeHTML(item.text) + '</span>').join("");
+    const more = items.length > limit ? '<span class="tag tag-more">' + escapeHTML(t("tags.more", { count: number(items.length - limit) })) + '</span>' : '';
+    return '<div class="tag-list" aria-label="' + escapeHTML(t("标签")) + '">' + tags + more + '</div>';
+  }
+  function facetColor(group) {
+    let hash = 0;
+    for (const char of group) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+    return hash % 5;
+  }
+  async function renderDetail(agent, type, name, scroll = true) {
+    const route = ++state.detailRoute;
+    const entry = state.entries.find((item) => item.agentId === agent && item.type === type && item.routeName === name);
     const main = document.querySelector("main");
-    if (!entry || !main) return;
+    if (!main) return;
+    if (!entry) {
+      main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><p role="status">' + escapeHTML(t("detail.missing")) + '</p>';
+      return;
+    }
     const record = await hydrate(entry);
-    const details = record.details || record[`${type}Details`] || {};
-    const links = record.links || {};
-    const distributions = record.distributions || [];
-    main.innerHTML = `<a class="back-link" href="./">← 返回目录</a><section class="detail-heading"><div><p class="eyebrow">${escapeHTML(type.toUpperCase())} · ${escapeHTML(agent)}</p><h1>${escapeHTML(record.displayName || record.name || name)}</h1><p class="lede">${escapeHTML(record.description || record.summary || "暂无描述")}</p></div><span class="pill">${record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录"}</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>包信息</h2><dl class="facts"><div><dt>Package ID</dt><dd>${escapeHTML(record.packageId || name)}</dd></div><div><dt>Agent</dt><dd>${escapeHTML(agent)}</dd></div><div><dt>最新版本</dt><dd>${escapeHTML(record.version || entry.latest)}</dd></div><div><dt>Subtype</dt><dd>${escapeHTML(record.subtype || "未指定")}</dd></div><div><dt>Agent 版本范围</dt><dd>${escapeHTML(record.agentVersionRange || "未提供")}</dd></div></dl></div><div class="detail-section"><h2>Facets</h2><div class="tag-list">${renderTags(record.facets)}${renderTags(record.customFacets, "custom") || "<span class=\"muted\">未声明 facet</span>"}</div></div><div class="detail-section"><h2>类型详情</h2><pre class="code-block">${escapeHTML(JSON.stringify(details, null, 2))}</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>安装候选</h2>${distributions.length ? distributions.map((item) => { const href = safeHref(item.url || item.href); return `<a class="distribution" href="${escapeHTML(href)}" target="_blank" rel="noreferrer"><strong>${escapeHTML(item.name || item.type || "发行来源")}</strong><span>${escapeHTML(item.url || item.href || "未提供地址")}</span></a>`; }).join("") : "<p class=\"muted\">暂无发行来源。Agent Forge 不托管插件文件。</p>"}</div><div class="detail-section"><h2>文档链接</h2>${Object.entries(links).filter(([, value]) => value).map(([key, value]) => `<a class="external-link" href="${escapeHTML(safeHref(value))}" target="_blank" rel="noreferrer">${escapeHTML(key)} ↗</a>`).join("") || "<p class=\"muted\">暂无链接</p>"}</div></aside></div>`;
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // A late fetch must not replace the catalog or a more recently selected detail.
+    if (route !== state.detailRoute) return;
+    const details = record.details || record[type + "Details"] || {};
+    const distributions = Array.isArray(record.distributions) ? record.distributions : [];
+    const fact = (label, value) => '<div><dt>' + escapeHTML(t(label)) + '</dt><dd>' + escapeHTML(value) + '</dd></div>';
+    const tags = renderPackageTags(record);
+    const sources = distributions.map((item) => '<a class="distribution" href="' + escapeHTML(safeHref(item.url || item.href)) + '" target="_blank" rel="noreferrer"><strong>' + escapeHTML(item.name || item.type || t("发行来源")) + '</strong><span>' + escapeHTML(item.url || item.href || t("未提供地址")) + '</span></a>').join("") || '<p class="muted">' + escapeHTML(t("暂无发行来源。Agent Forge 不托管插件文件。")) + '</p>';
+    const links = Object.entries(record.links || {}).filter(([, value]) => value).map(([key, value]) => '<a class="external-link" href="' + escapeHTML(safeHref(value)) + '" target="_blank" rel="noreferrer">' + escapeHTML(key) + ' ↗</a>').join("") || '<p class="muted">' + escapeHTML(t("暂无链接")) + '</p>';
+    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><section class="detail-heading"><div><p class="eyebrow">' + escapeHTML(type.toUpperCase()) + ' · ' + escapeHTML(agent) + '</p><h1>' + escapeHTML(record.name || name) + '</h1>' + packageSubtitle(record) + '<p class="lede">' + escapeHTML(record.description || record.summary || t("暂无描述")) + '</p></div><span class="pill">' + escapeHTML(t(record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录")) + '</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>' + escapeHTML(t("包信息")) + '</h2><dl class="facts">' + fact("Package ID", record.packageId || t("未提供")) + fact("Agent", agent) + fact("最新版本", record.version || entry.latest) + fact("Subtype", record.subtype || t("未指定")) + fact("Agent 版本范围", record.agentVersionRange || t("未提供")) + '</dl></div>' + (tags ? '<div class="detail-section"><h2>' + escapeHTML(t("标签")) + '</h2>' + tags + '</div>' : '') + '<div class="detail-section"><h2>' + escapeHTML(t("类型详情")) + '</h2><pre class="code-block">' + escapeHTML(JSON.stringify(details, null, 2)) + '</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>' + escapeHTML(t("安装候选")) + '</h2>' + sources + '</div><div class="detail-section"><h2>' + escapeHTML(t("文档链接")) + '</h2>' + links + '</div></aside></div>';
+    if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
   }
-
-  function renderTags(facets, prefix) {
-    if (!facets || typeof facets !== "object") return "";
-    return Object.entries(facets).flatMap(([group, values]) => (Array.isArray(values) ? values : [values]).map((value) => `<span class="tag ${prefix ? "tag-custom" : ""}">${escapeHTML(group)}: ${escapeHTML(value)}</span>`)).join("");
+  function renderRoute(scroll = true) {
+    const main = document.querySelector("main");
+    if (location.hash.startsWith("#/package/")) {
+      try {
+        const parts = location.hash.slice("#/package/".length).split("/");
+        return renderDetail(decodeURIComponent(parts[0]), decodeURIComponent(parts[1]), decodeURIComponent(parts.slice(2).join("/")), scroll);
+      } catch (_) {
+        return renderDetail("", "", "", scroll);
+      }
+    }
+    ++state.detailRoute;
+    if (state.catalogNodes && !document.getElementById("query")) main.replaceChildren(...state.catalogNodes);
+    ui.apply(main);
+    renderResults();
   }
-
   async function startCatalog() {
     await loadEntries();
     setupFilters();
     const initialAgent = new URLSearchParams(location.search).get("agent");
-    if (initialAgent) { document.getElementById("agent-filter").value = initialAgent; }
-    if (location.hash.startsWith("#/package/")) { const parts = location.hash.slice("#/package/".length).split("/"); return renderDetail(decodeURIComponent(parts[0]), decodeURIComponent(parts[1]), parts.slice(2).join("/")); }
-    await filterEntries();
-    window.addEventListener("hashchange", () => { if (location.hash.startsWith("#/package/")) { const parts = location.hash.slice("#/package/".length).split("/"); renderDetail(decodeURIComponent(parts[0]), decodeURIComponent(parts[1]), parts.slice(2).join("/")); } else location.reload(); });
+    if (initialAgent) document.getElementById("agent-filter").value = initialAgent;
+    filterEntries();
+    state.catalogNodes = Array.from(document.querySelector("main").childNodes);
+    state.ready = true;
+    window.addEventListener("hashchange", () => renderRoute());
+    await renderRoute();
   }
 
   function metric(label, value, detail) { return `<div class="metric"><div class="metric-label">${escapeHTML(label)}</div><div class="metric-value">${escapeHTML(number(value))}</div>${detail ? `<div class="metric-detail">${escapeHTML(detail)}</div>` : ""}</div>`; }
@@ -209,20 +306,32 @@
   }
   function renderDashboard(dashboard) {
     const totals = dashboard.totals || {};
-    document.getElementById("dashboard-updated").textContent = `${dashboard.revision || "未发布 revision"} · ${formatDate(dashboard.generatedAt)}`;
-    document.getElementById("global-metrics").innerHTML = [metric("Agent", totals.agents || dashboard.agents.length, "已生成公开投影"), metric("包", totals.packages || totals.packageCount, "跨所有类型"), metric("版本", totals.versions || totals.versionCount, "元数据版本记录"), metric("Bundle", totals.bundles || totals.bundleCount, "包含嵌套统计")].join("");
+    setText("dashboard-updated", (dashboard.revision || t("未发布 revision")) + " · " + formatDate(dashboard.generatedAt));
+    document.getElementById("global-metrics").innerHTML = [metric("Agent", totals.agents || dashboard.agents.length, t("已生成公开投影")), metric(t("包"), totals.packages || totals.packageCount, t("跨所有类型")), metric(t("版本"), totals.versions || totals.versionCount, t("元数据版本记录")), metric(t("Bundle"), totals.bundles || totals.bundleCount, t("包含嵌套统计"))].join("");
     const agentValues = Object.fromEntries(dashboard.agents.map((agent) => [agent.name || agent.id, agent.packageCount || agent.packages || agent.count || 0]));
-    document.getElementById("agent-chart").innerHTML = Object.keys(agentValues).length ? barRows(agentValues, 12) : `<p class="muted">暂无 Agent 统计</p>`;
-    document.getElementById("agent-table").innerHTML = `<table><caption>Agent 包数量</caption><tbody>${Object.entries(agentValues).map(([label, value]) => `<tr><th>${escapeHTML(label)}</th><td>${number(value)}</td></tr>`).join("")}</tbody></table>`;
+    document.getElementById("agent-chart").innerHTML = Object.keys(agentValues).length ? barRows(agentValues, 12) : '<p class="muted">' + escapeHTML(t("暂无 Agent 统计")) + '</p>';
+    document.getElementById("agent-table").innerHTML = '<table><caption>' + escapeHTML(t("Agent 包数量")) + '</caption><tbody>' + Object.entries(agentValues).map(([label, value]) => '<tr><th>' + escapeHTML(label) + '</th><td>' + number(value) + '</td></tr>').join("") + '</tbody></table>';
     const typeValues = Object.fromEntries(types.map((type) => [type, Number(dashboard.types[type] || 0)]));
     const typeTotal = Math.max(1, Object.values(typeValues).reduce((a, b) => a + b, 0));
-    let cursor = 0; const stops = types.map((type) => { const start = cursor / typeTotal * 100; cursor += typeValues[type]; return `${colors[type]} ${start}% ${cursor / typeTotal * 100}%`; }).join(", ");
-    document.getElementById("type-chart").innerHTML = `<div class="donut" style="background:conic-gradient(${stops})"></div><div class="legend">${types.map((type) => `<div class="legend-item"><i class="legend-swatch" style="background:${colors[type]}"></i><span>${type.toUpperCase()} · ${number(typeValues[type])}</span></div>`).join("")}</div>`;
-    document.getElementById("type-table").innerHTML = `<table><caption>类型数量</caption><tbody>${types.map((type) => `<tr><th>${type}</th><td>${number(typeValues[type])}</td></tr>`).join("")}</tbody></table>`;
-    document.getElementById("facet-chart").innerHTML = Object.keys(dashboard.facets).length ? barRows(dashboard.facets, 10) : `<p class="muted">暂无 facet 统计</p>`;
-    const compatibility = dashboard.compatibility || {}; const known = Number(compatibility.known || 0); const unknown = Number(compatibility.unknown || 0); const total = Math.max(1, known + unknown);
-    document.getElementById("compat-chart").innerHTML = `<div class="compat-item known"><span>已声明范围</span><div class="bar-track"><div class="bar-fill" style="width:${known / total * 100}%"></div></div><span class="bar-value">${number(known)}</span></div><div class="compat-item"><span>范围未知</span><div class="bar-track"><div class="bar-fill" style="width:${unknown / total * 100}%"></div></div><span class="bar-value">${number(unknown)}</span></div>`;
-    document.getElementById("agent-cards").innerHTML = dashboard.agents.length ? dashboard.agents.map((agent) => { const id = agent.id || agent.name; const count = agent.packageCount || agent.packages || agent.count || 0; const typeCount = Object.keys(getTypes(agent)).length; return `<a class="agent-card" href="agent/?id=${encodeURIComponent(id)}"><div class="agent-card-title"><span>${escapeHTML(agent.name || id)}</span><span class="pill">${escapeHTML(id)}</span></div><div class="agent-card-stats"><span>${number(count)} 个包</span><span>${number(typeCount)} 类</span></div></a>`; }).join("") : `<p class="muted">暂无 Agent 统计</p>`;
+    let cursor = 0;
+    const stops = types.map((type) => {
+      const start = cursor / typeTotal * 100;
+      cursor += typeValues[type];
+      return colors[type] + " " + start + "% " + cursor / typeTotal * 100 + "%";
+    }).join(", ");
+    document.getElementById("type-chart").innerHTML = '<div class="donut" style="background:conic-gradient(' + stops + ')"></div><div class="legend">' + types.map((type) => '<div class="legend-item"><i class="legend-swatch" style="background:' + colors[type] + '"></i><span>' + escapeHTML(type.toUpperCase()) + ' · ' + number(typeValues[type]) + '</span></div>').join("") + '</div>';
+    document.getElementById("type-table").innerHTML = '<table><caption>' + escapeHTML(t("类型数量")) + '</caption><tbody>' + types.map((type) => '<tr><th>' + escapeHTML(type) + '</th><td>' + number(typeValues[type]) + '</td></tr>').join("") + '</tbody></table>';
+    document.getElementById("facet-chart").innerHTML = Object.keys(dashboard.facets).length ? barRows(dashboard.facets, 10) : '<p class="muted">' + escapeHTML(t("暂无 facet 统计")) + '</p>';
+    const compatibility = dashboard.compatibility || {};
+    const known = Number(compatibility.known || 0), unknown = Number(compatibility.unknown || 0);
+    const total = Math.max(1, known + unknown);
+    document.getElementById("compat-chart").innerHTML = '<div class="compat-item known"><span>' + escapeHTML(t("已声明范围")) + '</span><div class="bar-track"><div class="bar-fill" style="width:' + known / total * 100 + '%"></div></div><span class="bar-value">' + number(known) + '</span></div><div class="compat-item"><span>' + escapeHTML(t("范围未知")) + '</span><div class="bar-track"><div class="bar-fill" style="width:' + unknown / total * 100 + '%"></div></div><span class="bar-value">' + number(unknown) + '</span></div>';
+    document.getElementById("agent-cards").innerHTML = dashboard.agents.length ? dashboard.agents.map((agent) => {
+      const id = agent.id || agent.name;
+      const count = agent.packageCount || agent.packages || agent.count || 0;
+      const href = new URL("dashboard/agent/?id=" + encodeURIComponent(id), base).href;
+      return '<a class="agent-card" href="' + escapeHTML(href) + '"><div class="agent-card-title"><span>' + escapeHTML(agent.name || id) + '</span><span class="pill">' + escapeHTML(id) + '</span></div><div class="agent-card-stats"><span>' + escapeHTML(t("agent.packages", { count: number(count) })) + '</span><span>' + escapeHTML(t("agent.types", { count: number(Object.keys(getTypes(agent)).length) })) + '</span></div></a>';
+    }).join("") : '<p class="muted">' + escapeHTML(t("暂无 Agent 统计")) + '</p>';
   }
 
   async function startDashboard() {
@@ -234,24 +343,38 @@
       dashboard.agents = fallback.agents;
       dashboard.totals.agents = fallback.totals.agents;
     }
+    state.dashboard = dashboard;
+    state.ready = true;
     renderDashboard(dashboard);
   }
   async function startAgentDashboard() {
-    const id = new URLSearchParams(location.search).get("id") || location.pathname.split("/").filter(Boolean).pop() || "dsh";
+    const id = new URLSearchParams(location.search).get("id") || "dsh";
     const global = normalizeDashboard(await getJSON(dataUrl("dashboard.json"), true));
     const raw = await getJSON(dataUrl(`agents/${encodeURIComponent(id)}/dashboard.json`), true);
     const agent = raw ? normalizeDashboard(raw) : global.agents.find((item) => (item.id || item.name) === id) || { id, name: id, types: {}, facets: {}, packages: 0, versions: 0 };
-    const totals = agent.totals || agent.summary || agent;
-    document.getElementById("agent-title").textContent = agent.name || id;
-    document.getElementById("agent-description").textContent = agent.description || `Agent ${id} 的静态元数据投影。`;
-    document.getElementById("dashboard-updated").textContent = `${agent.revision || global.revision || "未发布 revision"} · ${formatDate(agent.generatedAt || global.generatedAt)}`;
-    document.getElementById("global-metrics").innerHTML = [metric("包", totals.packages || totals.packageCount || agent.packageCount, "该 Agent 投影"), metric("版本", totals.versions || totals.versionCount || agent.versionCount, "元数据版本记录"), metric("Bundle", totals.bundles || totals.bundleCount, "包含嵌套统计"), metric("范围未知", totals.unknownCompatibility || agent.unknownCompatibility, "未提供 Agent 版本范围")].join("");
-    const typeValues = agent.types || agent.typeCounts || {};
-    document.getElementById("agent-type-chart").innerHTML = Object.keys(typeValues).length ? barRows(typeValues, 10) : `<p class="muted">暂无类型统计</p>`;
-    const facetValues = agent.facets || agent.facetCounts || {};
-    document.getElementById("agent-facet-chart").innerHTML = Object.keys(facetValues).length ? barRows(facetValues, 10) : `<p class="muted">暂无 facet 统计</p>`;
-    const recent = agent.recentPackages || agent.recent || [];
-    document.getElementById("recent-packages").innerHTML = recent.length ? recent.map((item) => `<article class="result-card"><div><div class="result-title"><strong>${escapeHTML(item.displayName || item.name || item.packageId)}</strong><span class="pill">${escapeHTML(item.type || "package")}</span></div><p class="result-summary">${escapeHTML(item.description || "暂无描述")}</p></div><div class="result-version"><strong>${escapeHTML(item.version || item.latest || "unknown")}</strong><span>${escapeHTML(formatDate(item.updatedAt))}</span></div></article>`).join("") : `<p class="muted">暂无最近更新记录</p>`;
+    state.agentDashboard = { agent, global, id };
+    state.ready = true;
+    renderAgentDashboard(state.agentDashboard);
   }
+  function renderAgentDashboard({ agent, global, id }) {
+    const totals = agent.totals || agent.summary || agent;
+    setText("agent-title", agent.name || id);
+    setText("agent-description", agent.description || t("agent.description", { id }));
+    setText("dashboard-updated", `${agent.revision || global.revision || t("未发布 revision")} · ${formatDate(agent.generatedAt || global.generatedAt)}`);
+    document.getElementById("global-metrics").innerHTML = [metric(t("包"), totals.packages || totals.packageCount || agent.packageCount, t("该 Agent 投影")), metric(t("版本"), totals.versions || totals.versionCount || agent.versionCount, t("元数据版本记录")), metric(t("Bundle"), totals.bundles || totals.bundleCount, t("包含嵌套统计")), metric(t("范围未知"), totals.unknownCompatibility || agent.unknownCompatibility, t("未提供 Agent 版本范围"))].join("");
+    const typeValues = agent.types || agent.typeCounts || {};
+    document.getElementById("agent-type-chart").innerHTML = Object.keys(typeValues).length ? barRows(typeValues, 10) : `<p class="muted">${escapeHTML(t("暂无类型统计"))}</p>`;
+    const facetValues = agent.facets || agent.facetCounts || {};
+    document.getElementById("agent-facet-chart").innerHTML = Object.keys(facetValues).length ? barRows(facetValues, 10) : `<p class="muted">${escapeHTML(t("暂无 facet 统计"))}</p>`;
+    const recent = agent.recentPackages || agent.recent || [];
+    document.getElementById("recent-packages").innerHTML = recent.length ? recent.map((item) => `<article class="result-card"><div><div class="result-title"><strong>${escapeHTML(item.name || item.packageId || item.id)}</strong><span class="pill">${escapeHTML(item.type || "package")}</span></div>${packageSubtitle(item)}<p class="result-summary">${escapeHTML(item.description || t("暂无描述"))}</p>${renderPackageTags(item, 8)}</div><div class="result-version"><strong>${escapeHTML(item.version || item.latest || "unknown")}</strong><span>${escapeHTML(formatDate(item.updatedAt))}</span></div></article>`).join("") : `<p class="muted">${escapeHTML(t("暂无最近更新记录"))}</p>`;
+  }
+  window.addEventListener("forge:localechange", () => {
+    if (!state.ready) return;
+    if (state.dashboard) renderDashboard(state.dashboard);
+    else if (state.agentDashboard) renderAgentDashboard(state.agentDashboard);
+    else renderRoute(false);
+  });
+  ui.apply();
   if (page === "dashboard") startDashboard(); else if (page === "agent-dashboard") startAgentDashboard(); else startCatalog();
 }());

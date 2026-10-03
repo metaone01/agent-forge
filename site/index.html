@@ -3,58 +3,68 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Agent Forge metadata catalog">
-    <title>Agent Forge · 元数据目录</title>
+    <meta name="description" content="Agent Forge 元数据目录" data-i18n-content="Agent Forge metadata catalog">
+    <title data-i18n="Agent Forge · 元数据目录">Agent Forge · 元数据目录</title>
+    <script src="assets/preferences.js"></script>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body data-page="catalog">
     <header class="topbar">
-      <a class="brand" href="./">Agent Forge <span>METADATA CATALOG</span></a>
-      <nav class="topnav" aria-label="主导航">
-        <a href="./" aria-current="page">目录</a>
-        <a href="dashboard/">Dashboard</a>
-        <a class="button button-small" href="https://github.com/metaone01/agent-forge/issues/new/choose" target="_blank" rel="noreferrer">上传包</a>
+      <a class="brand" href="./">Agent Forge <span data-i18n="METADATA CATALOG">元数据目录</span></a>
+      <nav class="topnav" aria-label="主导航" data-i18n-aria-label="nav.label">
+        <a href="./" data-i18n="nav.catalog" aria-current="page">目录</a>
+        <a href="dashboard/" data-i18n="nav.dashboard">数据总览</a>
+        <a href="docs/" data-doc-entry data-i18n="nav.docs">文档</a>
+        <a class="button button-small" href="submit/" data-i18n="nav.submit">上传包</a>
       </nav>
     </header>
 
     <main class="shell">
       <section class="hero">
         <div>
-          <p class="eyebrow">READ-ONLY METADATA INDEX</p>
-          <h1>为 Agent 找到合适的工具。</h1>
-          <p class="lede">按 Agent、类型、版本范围和 facet 检索整合后的公开元数据。安装地址由每个包提供，目录本身不代理二进制文件。</p>
+          <p class="eyebrow" data-i18n="READ-ONLY METADATA INDEX">只读元数据索引</p>
+          <h1 data-i18n="为 Agent 找到合适的工具。">为 Agent 找到合适的工具。</h1>
+          <p class="lede" data-i18n="按 Agent、类型、版本范围和 facet 检索整合后的公开元数据。安装地址由每个包提供，目录本身不代理二进制文件。">按 Agent、类型、版本范围和标签检索整合后的公开元数据。安装地址由每个包提供，目录本身不代理二进制文件。</p>
         </div>
-        <div class="hero-stamp" id="revision-stamp">正在读取索引…</div>
+        <div class="hero-stamp" id="revision-stamp" data-i18n="正在读取索引…">正在读取索引…</div>
       </section>
 
-      <section class="search-panel" aria-label="搜索和筛选">
+      <section class="search-panel" aria-label="搜索和筛选" data-i18n-aria-label="搜索和筛选">
         <label class="search-box">
           <span class="search-icon" aria-hidden="true">⌕</span>
-          <input id="query" type="search" placeholder="搜索名称、描述、关键词或 facet" autocomplete="off">
+          <input id="query" type="search" placeholder="搜索名称、描述、关键词或标签" data-i18n-placeholder="搜索名称、描述、关键词或 facet" autocomplete="off">
           <kbd>/</kbd>
         </label>
         <div class="filters">
-          <label>Agent<select id="agent-filter"><option value="">全部 Agent</option></select></label>
-          <label>类型<select id="type-filter"><option value="">全部类型</option><option value="mcp">MCP</option><option value="plugin">Plugin</option><option value="skill">Skill</option><option value="general">General</option><option value="bundle">Bundle</option></select></label>
-          <label>Subtype<select id="subtype-filter"><option value="">全部 subtype</option></select></label>
-          <button class="button button-quiet" id="clear-filters" type="button">清除筛选</button>
+          <label>Agent<select id="agent-filter"><option value="" data-i18n="全部 Agent">全部 Agent</option></select></label>
+          <label><span data-i18n="类型">类型</span><select id="type-filter"><option value="" data-i18n="全部类型">全部类型</option><option value="mcp">MCP</option><option value="plugin" data-i18n="Plugin">插件</option><option value="skill" data-i18n="Skill">技能</option><option value="general" data-i18n="General">通用</option><option value="bundle" data-i18n="Bundle">组合包</option></select></label>
+          <label><span data-i18n="Subtype">子类型</span><select id="subtype-filter"><option value="" data-i18n="全部 subtype">全部子类型</option></select></label>
+          <button class="button button-quiet" id="clear-filters" type="button" data-i18n="清除筛选">清除筛选</button>
         </div>
       </section>
 
       <section class="catalog-toolbar">
-        <div><strong id="result-count">0</strong> 个结果 <span id="catalog-status" class="muted">正在加载…</span></div>
-        <label class="sort-control">排序<select id="sort-select"><option value="relevance">相关性</option><option value="updated">最近更新</option><option value="name">名称</option></select></label>
+        <div><strong id="result-count">0</strong> <span data-i18n="个结果">个结果</span> <span id="catalog-status" class="muted" data-i18n="正在加载…">正在加载…</span></div>
+        <label class="sort-control"><span data-i18n="排序">排序</span><select id="sort-select"><option value="relevance" data-i18n="相关性">相关性</option><option value="updated" data-i18n="最近更新">最近更新</option><option value="name" data-i18n="名称">名称</option></select></label>
       </section>
       <section id="results" class="result-list" aria-live="polite"></section>
+      <nav id="pagination" class="pagination" aria-label="结果分页" data-i18n-aria-label="结果分页" hidden>
+        <span id="page-range" class="page-range"></span>
+        <div class="page-controls">
+          <button id="previous-page" class="page-button" type="button" aria-label="上一页" data-i18n-aria-label="上一页" title="上一页" data-i18n-title="上一页">←</button>
+          <label><span data-i18n="第">第</span> <input id="page-number" type="number" min="1" value="1" aria-label="页码" data-i18n-aria-label="页码"><span id="page-total"></span></label>
+          <button id="next-page" class="page-button" type="button" aria-label="下一页" data-i18n-aria-label="下一页" title="下一页" data-i18n-title="下一页">→</button>
+        </div>
+      </nav>
       <div id="empty-state" class="empty-state" hidden>
         <div class="empty-mark">∅</div>
-        <h2>没有匹配的包</h2>
-        <p>尝试减少筛选条件，或者查看 Dashboard 了解当前数据范围。</p>
-        <a class="button" href="dashboard/">打开 Dashboard</a>
+        <h2 data-i18n="没有匹配的包">没有匹配的包</h2>
+        <p data-i18n="尝试减少筛选条件，或者查看 Dashboard 了解当前数据范围。">尝试减少筛选条件，或者查看数据总览了解当前数据范围。</p>
+        <a class="button" href="dashboard/" data-i18n="打开 Dashboard">打开数据总览</a>
       </div>
     </main>
 
-    <footer class="footer"><span>Agent Forge 只整合元数据，不验证来源、兼容性或安全性。</span><a href="https://github.com/metaone01/agent-forge" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+    <footer class="footer"><span data-i18n="Agent Forge 只整合元数据，不验证来源、兼容性或安全性。">Agent Forge 只整合元数据，不验证来源、兼容性或安全性。</span><a href="https://github.com/metaone01/agent-forge" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
     <script src="assets/app.js" defer></script>
   </body>
 </html>

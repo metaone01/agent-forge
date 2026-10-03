@@ -108,8 +108,8 @@ uv run tools/validate.py examples/package-mcp.json package.schema.json
 For preview, place the frontend and generated `data/` under the same static site root. These commands work in PowerShell and common Unix shells and update the ignored `pages-staging/` preview directory:
 
 ```sh
-uv run python -c "import shutil; shutil.copytree('site', 'pages-staging', dirs_exist_ok=True)"
-uv run tools/project.py --output pages-staging/data --base-url http://localhost:8000/data
+uv run tools/project.py --output data --base-url http://localhost:8000/data
+uv run python tools/build_site.py --output pages-staging --data data
 uv run python -m http.server 8000 --bind 127.0.0.1 --directory pages-staging
 ```
 
@@ -131,11 +131,13 @@ uv run tools/snapshot.py --data data --output snapshots
 1. Create a contribution branch from `packages`, consult its schemas and examples alongside the [field reference](docs/schema/README_en.md), and choose one type. Non-Bundle records need distribution candidates.
 2. Add a package-version JSON document under `sources/<type>/packages/`. Update its index with versions, latest, and a relative detail path; keep the source and index revisions consistent.
 3. Preserve the original upstream version string; `versionScheme` is only a comparison hint. Record provenance, unknown compatibility, and distribution links without implying a security review.
-4. Run the tests and full validation above, then open a metadata Pull Request targeting `packages`. Maintain README and other documentation changes on the documentation branch. Alternatively, propose a complete Schema v2 record and notes through the [Issue form](https://github.com/metaone01/agent-forge/issues/new/choose).
+4. Run the tests and full validation above, then open a metadata Pull Request targeting `packages`. Maintain README and other documentation changes on the documentation branch. Alternatively, fill in the [visual upload form](https://metaone01.github.io/agent-forge/submit/) to generate a complete Schema v2 record, then confirm the Issue on GitHub.
 
 Eligible `package-submission` Issues are converted by a workflow into proposal Pull Requests targeting `packages`; review and validation are still required. Automatic merge conditions are determined by the [cooldown workflow](https://github.com/metaone01/agent-forge/blob/main/.github/workflows/package-cooldown.yml), repository rules, and required checks.
 
 Update READMEs and other documentation when project guidance or procedures change, independently of package data updates. Bulk import tools write canonical records and indexes with `--apply`; review the preview first.
+
+The visual form generates JSON for GitHub confirmation. Agents can use the [JSON Issue form](https://github.com/metaone01/agent-forge/issues/new?template=package-submission.yml) or the [machine submission contract](https://metaone01.github.io/agent-forge/submit/contract.json). Submission Notes are optional.
 
 ## Documentation and Repository Map
 
