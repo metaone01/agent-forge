@@ -1,5 +1,5 @@
-name: Submit package metadata
-description: Propose one Agent Forge package-version metadata record.
+name: Agent / JSON package submission
+description: Submit complete Schema v2 JSON. For visual entry, use the Pages upload form.
 title: "[package] "
 labels:
   - package-submission
@@ -8,7 +8,9 @@ body:
     attributes:
       value: |
         Agent Forge only integrates metadata. It does not inspect, execute, or guarantee upstream content.
-        Paste one complete Schema v2 package record below. The automation will open a Pull Request for review.
+        For visual entry, use https://metaone01.github.io/agent-forge/submit/ to generate the JSON automatically.
+        Agents may paste one complete Schema v2 package record below. The automation opens a Pull Request for review.
+        Submission notes are optional. Never include tokens or other secrets.
   - type: textarea
     id: package_json
     attributes:
@@ -26,6 +28,6 @@ body:
     id: rationale
     attributes:
       label: Submission notes
-      description: Explain the public source links and any unknown compatibility ranges.
+      description: Optional. Explain public source links or unknown compatibility ranges.
     validations:
-      required: true
+      required: false

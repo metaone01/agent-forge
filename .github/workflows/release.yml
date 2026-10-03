@@ -20,12 +20,35 @@ jobs:
     outputs:
       revision: ${{ steps.revision.outputs.value }}
       changed: ${{ steps.changes.outputs.changed }}
+      control_sha: ${{ steps.control.outputs.sha }}
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           ref: packages
+
+      - name: Check out main site control plane
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          path: control
+          persist-credentials: false
+
+      - name: Overlay selected main site docs contracts and tools
+        id: control
+        shell: bash
+        run: |
+          # Main owns presentation/contracts; canonical sources remain packages.
+          cp -R control/site/. site/
+          cp control/README.md control/README_en.md .
+          mkdir -p docs/schema
+          cp -R control/docs/schema/. docs/schema/
+          for schema in package index source advisory; do
+            cp "control/${schema}.schema.json" "${schema}.schema.json"
+          done
+          cp control/tools/build_site.py control/tools/project.py control/tools/validate.py control/tools/identity.py tools/
+          echo "sha=$(git -C control rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Install uv
         uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
@@ -48,13 +71,19 @@ jobs:
         id: changes
         env:
           GH_TOKEN: ${{ github.token }}
+          CONTROL_SHA: ${{ steps.control.outputs.sha }}
         shell: bash
         run: |
           # Generated Pages data is intentionally not committed. Compare the
           # canonical sources and site with the last immutable catalog tag.
           # Dashboard-only changes must also reach the published site.
           last_tag=$(gh release list --limit 20 --json tagName --jq '[.[] | select(.tagName | startswith("catalog-"))][0].tagName' || true)
-          if [ -z "$last_tag" ]; then
+          last_control=""
+          if [ -n "$last_tag" ]; then
+            last_control=$(gh release view "$last_tag" --json body --jq .body | sed -n 's/^Control-plane commit: //p' | head -n 1)
+          fi
+          # A main-only site/tool change must not be suppressed by the packages diff.
+          if [ -z "$last_tag" ] || [ "$last_control" != "$CONTROL_SHA" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           elif git diff --quiet "$last_tag"..HEAD -- sources site; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -85,11 +114,7 @@ jobs:
 
       - name: Assemble GitHub Pages site
         shell: bash
-        run: |
-          rm -rf pages-staging
-          cp -R site pages-staging
-          rm -rf pages-staging/data
-          cp -R data pages-staging/data
+        run: uv run python tools/build_site.py --output pages-staging --data data --root .
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -118,11 +143,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           REVISION: ${{ needs.generate.outputs.revision }}
+          CONTROL_SHA: ${{ needs.generate.outputs.control_sha }}
         run: |
           gh release create --repo "${GITHUB_REPOSITORY}" "catalog-${REVISION}" agent-forge-${REVISION}.tar.gz release-assets/*.db.zst \
             --target packages \
             --title "Catalog ${REVISION}" \
-            --notes "Generated Agent Forge metadata projection. Metadata is integrated but not source-verified."
+            --notes "$(printf 'Generated Agent Forge metadata projection. Metadata is integrated but not source-verified.\n\nControl-plane commit: %s\n' "$CONTROL_SHA")"
 
   pages:
     needs: generate

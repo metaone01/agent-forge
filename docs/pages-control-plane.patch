@@ -1,0 +1,285 @@
+diff --git a/.github/workflows/issue-to-pr.yml b/.github/workflows/issue-to-pr.yml
+index 7f1b85cd79..488b71cc8a 100644
+--- a/.github/workflows/issue-to-pr.yml
++++ b/.github/workflows/issue-to-pr.yml
+@@ -9,11 +9,89 @@ permissions:
+   issues: write
+   pull-requests: write
+
++concurrency:
++  group: package-submission-${{ github.event.issue.number }}
++  cancel-in-progress: false
++
+ jobs:
+   proposal:
+     if: contains(github.event.issue.labels.*.name, 'package-submission')
+     runs-on: ubuntu-latest
+     steps:
++      - name: Check out main control plane
++        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
++        with:
++          ref: main
++          path: control
++          persist-credentials: false
++
++      - name: Check out canonical packages for preflight
++        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
++        with:
++          ref: packages
++          path: canonical
++          persist-credentials: false
++
++      - name: Install uv
++        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
++        with:
++          version: latest-known
++          enable-cache: true
++
++      - name: Overlay main submission validator and contracts
++        shell: bash
++        run: |
++          # Local runner only: never commit control files into the proposal.
++          cp control/tools/validate.py control/tools/identity.py canonical/tools/
++          for schema in package index source advisory; do
++            cp "control/${schema}.schema.json" "canonical/${schema}.schema.json"
++          done
++
++      - name: Parse issue and stage canonical record locally
++        id: stage
++        uses: actions/github-script@v7
++        with:
++          script: |
++            const fs = require('node:fs');
++            const path = require('node:path');
++            const { execFileSync } = require('node:child_process');
++            const workspace = process.env.GITHUB_WORKSPACE;
++            const { parseIssue, prepareRecord, packagePath, TARGET_BRANCH } = require(path.join(workspace, 'control/tools/issue_submission.cjs'));
++            if (TARGET_BRANCH !== 'packages') throw new Error('Submission target must be packages.');
++            const issue = context.payload.issue;
++            const { record: submitted } = parseIssue(issue.body || '');
++            const record = prepareRecord(submitted, issue.created_at);
++            const relative = packagePath(record);
++            const root = path.join(workspace, 'canonical');
++            let directory = root;
++            // Reject symlinks before descending or creating the next directory.
++            for (const component of relative.split('/').slice(0, -1)) {
++              directory = path.join(directory, component);
++              try { fs.mkdirSync(directory); }
++              catch (error) { if (error.code !== 'EEXIST') throw error; }
++              const stat = fs.lstatSync(directory);
++              if (stat.isSymbolicLink() || !stat.isDirectory()) throw new Error('Canonical package directories must not be symlinks.');
++            }
++            try {
++              fs.writeFileSync(path.join(root, relative), JSON.stringify(record, null, 2) + '\n', { flag: 'wx' });
++            } catch (error) {
++              if (error.code === 'EEXIST') throw new Error('This package/version path already exists; updates need a reviewed PR, not an overwrite.');
++              throw error;
++            }
++            const baseSha = execFileSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
++            return { path: relative, baseSha };
++
++      - name: Validate staged canonical JSON and catalog identity
++        working-directory: canonical
++        env:
++          STAGED_SUBMISSION: ${{ steps.stage.outputs.result }}
++        shell: bash
++        run: |
++          record_path=$(node -e 'process.stdout.write(JSON.parse(process.env.STAGED_SUBMISSION).path)')
++          # validate.py binds ROOT to its own checkout, not the shell cwd alone.
++          uv run --with jsonschema --with referencing python tools/validate.py "$record_path" --submission-formats
++          uv run --with jsonschema --with referencing python tools/validate.py --all
++
+       - name: Create short-lived GitHub App token
+         id: app-token
+         uses: actions/create-github-app-token@v2
+@@ -23,32 +101,37 @@ jobs:
+           owner: ${{ github.repository_owner }}
+           repositories: agent-forge
+
+-      - name: Create proposal branch and Pull Request
++      - name: Create validated proposal branch and Pull Request
+         uses: actions/github-script@v7
++        env:
++          STAGED_SUBMISSION: ${{ steps.stage.outputs.result }}
+         with:
+           github-token: ${{ steps.app-token.outputs.token }}
+           script: |
++            const fs = require('node:fs');
++            const path = require('node:path');
++            const workspace = process.env.GITHUB_WORKSPACE;
++            const { parseIssue, prepareRecord, packagePath, TARGET_BRANCH } = require(path.join(workspace, 'control/tools/issue_submission.cjs'));
++            if (TARGET_BRANCH !== 'packages') throw new Error('Submission target must be packages.');
+             const issue = context.payload.issue;
+-            const body = issue.body || '';
+-            const match = body.match(/### Canonical package JSON\s+([\s\S]*?)(?=\n### |$)/i);
+-            if (!match) throw new Error('The canonical package JSON section is missing.');
+-            const fenced = match[1].match(/```(?:json)?\s*([\s\S]*?)```/i);
+-            const raw = (fenced ? fenced[1] : match[1]).trim();
+-            let record;
+-            try { record = JSON.parse(raw); } catch (error) { throw new Error(`Invalid JSON: ${error.message}`); }
+-            if (!record || record.schemaVersion !== 2 || typeof record.id !== 'string' || typeof record.name !== 'string' || typeof record.version !== 'string' || !['mcp','plugin','skill','general','bundle'].includes(record.type)) {
+-              throw new Error('The record must contain schemaVersion=2, id, name, version, and a supported type.');
+-            }
+-            const safe = (value) => String(value).replace(/[^A-Za-z0-9._@+\/-]+/g, '-').replace(/^[-/]+|[-/]+$/g, '') || 'package';
+-            const path = `sources/${record.type}/packages/${safe(record.name)}-${safe(record.version)}.json`;
+-            const owner = context.repo.owner;
+-            const repo = context.repo.repo;
++            const { record: submitted, notes } = parseIssue(issue.body || '');
++            const record = prepareRecord(submitted, issue.created_at);
++            const staged = JSON.parse(process.env.STAGED_SUBMISSION);
++            const relative = packagePath(record);
++            if (relative !== staged.path || !/^[a-f0-9]{40}$/.test(staged.baseSha)) throw new Error('Invalid staged submission metadata.');
++            const payload = fs.readFileSync(path.join(workspace, 'canonical', relative), 'utf8');
++            if (JSON.stringify(JSON.parse(payload)) !== JSON.stringify(record)) throw new Error('The staged canonical JSON changed after parsing.');
++            const { owner, repo } = context.repo;
+             const ref = await github.rest.git.getRef({ owner, repo, ref: 'heads/packages' });
++            if (ref.data.object.sha !== staged.baseSha) {
++              throw new Error('packages advanced after canonical validation; rerun this workflow against the new base before creating a branch.');
++            }
+             const branch = `proposal/issue-${issue.number}`;
+-            await github.rest.git.createRef({ owner, repo, ref: `refs/heads/${branch}`, sha: ref.data.object.sha });
+-            const content = Buffer.from(JSON.stringify(record, null, 2) + '\n').toString('base64');
+-            await github.rest.repos.createOrUpdateFileContents({ owner, repo, path, message: `Add metadata proposal from issue #${issue.number}`, content, branch, committer: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' }, author: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' } });
++            await github.rest.git.createRef({ owner, repo, ref: `refs/heads/${branch}`, sha: staged.baseSha });
++            const content = Buffer.from(payload).toString('base64');
++            await github.rest.repos.createOrUpdateFileContents({ owner, repo, path: relative, message: `Add metadata proposal from issue #${issue.number}`, content, branch, committer: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' }, author: { name: 'agent-forge-bot', email: '41898282+github-actions[bot]@users.noreply.github.com' } });
+             await github.rest.issues.addLabels({ owner, repo, issue_number: issue.number, labels: ['package-submission'] });
+-            const pr = await github.rest.pulls.create({ owner, repo, head: branch, base: 'packages', title: `Metadata proposal: ${record.name} ${record.version}`, body: `Closes #${issue.number}\n\nSubmitted by @${issue.user.login}.\n\nThis PR was generated from the package upload form. It will remain open for the ten-minute publication cooldown before entering Merge Queue. Required schema and semantic checks must pass before merge.`, maintainer_can_modify: false });
++            const notesBody = notes ? `\n\nSubmission notes:\n${notes}` : '';
++            const pr = await github.rest.pulls.create({ owner, repo, head: branch, base: 'packages', title: `Metadata proposal: ${record.name} ${record.version}`, body: `Closes #${issue.number}\n\nSubmitted by @${issue.user.login}.\n\nThis PR was generated from the package upload form after canonical preflight validation. It will remain open for the ten-minute publication cooldown before entering Merge Queue. Required schema and semantic checks must still pass on the final PR/merge-group commit before merge.${notesBody}`, maintainer_can_modify: false });
+             await github.rest.issues.addLabels({ owner, repo, issue_number: pr.data.number, labels: ['package-submission'] });
+             await github.rest.issues.createComment({ owner, repo, issue_number: issue.number, body: `Created Pull Request #${pr.data.number} for review: ${pr.data.html_url}` });
+diff --git a/.github/workflows/release.yml b/.github/workflows/release.yml
+index 3f10e0e160..22d2e16e52 100644
+--- a/.github/workflows/release.yml
++++ b/.github/workflows/release.yml
+@@ -20,6 +20,7 @@ jobs:
+     outputs:
+       revision: ${{ steps.revision.outputs.value }}
+       changed: ${{ steps.changes.outputs.changed }}
++      control_sha: ${{ steps.control.outputs.sha }}
+     steps:
+       - name: Check out repository
+         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+@@ -27,6 +28,28 @@ jobs:
+           fetch-depth: 0
+           ref: packages
+
++      - name: Check out main site control plane
++        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
++        with:
++          ref: main
++          path: control
++          persist-credentials: false
++
++      - name: Overlay selected main site docs contracts and tools
++        id: control
++        shell: bash
++        run: |
++          # Main owns presentation/contracts; canonical sources remain packages.
++          cp -R control/site/. site/
++          cp control/README.md control/README_en.md .
++          mkdir -p docs/schema
++          cp -R control/docs/schema/. docs/schema/
++          for schema in package index source advisory; do
++            cp "control/${schema}.schema.json" "${schema}.schema.json"
++          done
++          cp control/tools/build_site.py control/tools/project.py control/tools/validate.py control/tools/identity.py tools/
++          echo "sha=$(git -C control rev-parse HEAD)" >> "$GITHUB_OUTPUT"
++
+       - name: Install uv
+         uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+         with:
+@@ -48,13 +71,19 @@ jobs:
+         id: changes
+         env:
+           GH_TOKEN: ${{ github.token }}
++          CONTROL_SHA: ${{ steps.control.outputs.sha }}
+         shell: bash
+         run: |
+           # Generated Pages data is intentionally not committed. Compare the
+           # canonical sources and site with the last immutable catalog tag.
+           # Dashboard-only changes must also reach the published site.
+           last_tag=$(gh release list --limit 20 --json tagName --jq '[.[] | select(.tagName | startswith("catalog-"))][0].tagName' || true)
+-          if [ -z "$last_tag" ]; then
++          last_control=""
++          if [ -n "$last_tag" ]; then
++            last_control=$(gh release view "$last_tag" --json body --jq .body | sed -n 's/^Control-plane commit: //p' | head -n 1)
++          fi
++          # A main-only site/tool change must not be suppressed by the packages diff.
++          if [ -z "$last_tag" ] || [ "$last_control" != "$CONTROL_SHA" ]; then
+             echo "changed=true" >> "$GITHUB_OUTPUT"
+           elif git diff --quiet "$last_tag"..HEAD -- sources site; then
+             echo "changed=false" >> "$GITHUB_OUTPUT"
+@@ -85,11 +114,7 @@ jobs:
+
+       - name: Assemble GitHub Pages site
+         shell: bash
+-        run: |
+-          rm -rf pages-staging
+-          cp -R site pages-staging
+-          rm -rf pages-staging/data
+-          cp -R data pages-staging/data
++        run: uv run python tools/build_site.py --output pages-staging --data data --root .
+
+       - name: Upload Pages artifact
+         uses: actions/upload-pages-artifact@v3
+@@ -118,11 +143,12 @@ jobs:
+         env:
+           GH_TOKEN: ${{ github.token }}
+           REVISION: ${{ needs.generate.outputs.revision }}
++          CONTROL_SHA: ${{ needs.generate.outputs.control_sha }}
+         run: |
+           gh release create --repo "${GITHUB_REPOSITORY}" "catalog-${REVISION}" agent-forge-${REVISION}.tar.gz release-assets/*.db.zst \
+             --target packages \
+             --title "Catalog ${REVISION}" \
+-            --notes "Generated Agent Forge metadata projection. Metadata is integrated but not source-verified."
++            --notes "$(printf 'Generated Agent Forge metadata projection. Metadata is integrated but not source-verified.\n\nControl-plane commit: %s\n' "$CONTROL_SHA")"
+
+   pages:
+     needs: generate
+diff --git a/.github/ISSUE_TEMPLATE/package-submission.yml b/.github/ISSUE_TEMPLATE/package-submission.yml
+index d03b3d46a1..eb61198cf6 100644
+--- a/.github/ISSUE_TEMPLATE/package-submission.yml
++++ b/.github/ISSUE_TEMPLATE/package-submission.yml
+@@ -1,5 +1,5 @@
+-name: Submit package metadata
+-description: Propose one Agent Forge package-version metadata record.
++name: Agent / JSON package submission
++description: Submit complete Schema v2 JSON. For visual entry, use the Pages upload form.
+ title: "[package] "
+ labels:
+   - package-submission
+@@ -8,7 +8,9 @@ body:
+     attributes:
+       value: |
+         Agent Forge only integrates metadata. It does not inspect, execute, or guarantee upstream content.
+-        Paste one complete Schema v2 package record below. The automation will open a Pull Request for review.
++        For visual entry, use https://metaone01.github.io/agent-forge/submit/ to generate the JSON automatically.
++        Agents may paste one complete Schema v2 package record below. The automation opens a Pull Request for review.
++        Submission notes are optional. Never include tokens or other secrets.
+   - type: textarea
+     id: package_json
+     attributes:
+@@ -26,6 +28,6 @@ body:
+     id: rationale
+     attributes:
+       label: Submission notes
+-      description: Explain the public source links and any unknown compatibility ranges.
++      description: Optional. Explain public source links or unknown compatibility ranges.
+     validations:
+-      required: true
++      required: false
+diff --git a/.github/ISSUE_TEMPLATE/config.yml b/.github/ISSUE_TEMPLATE/config.yml
+index 7561b62782..6f4a827ec6 100644
+--- a/.github/ISSUE_TEMPLATE/config.yml
++++ b/.github/ISSUE_TEMPLATE/config.yml
+@@ -1,5 +1,8 @@
+ blank_issues_enabled: false
+ contact_links:
++  - name: Visual package upload / 可视化上传包
++    url: https://metaone01.github.io/agent-forge/submit/
++    about: Fill in metadata visually; JSON is generated automatically for GitHub confirmation.
+   - name: Schema and contribution documentation
+     url: https://metaone01.github.io/agent-forge/docs/schema/README.html
+     about: Read the field reference before submitting metadata.

@@ -30,6 +30,9 @@ jobs:
       - name: Generate static projections
         run: uv run --with jsonschema --with referencing python tools/project.py --clean --revision "${GITHUB_SHA::12}"
 
+      - name: Build static Pages and bilingual documentation
+        run: uv run python tools/build_site.py --output pages-staging --data data
+
       - name: Upload projection artifact
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4
         with:
