@@ -24,6 +24,8 @@ An index is a compact package index for one source revision. It supports low-ban
 
 Each `packageEntry` contains `latest`, `versions`, and `path`, with optional `checksum`, `recordRevision`, and administrator `subtype`. Paths must be safe relative paths.
 
+Optional `id`, `summary`, `keywords`, and generated `searchText` support identity lookup and index-level search. Equal names may appear in different categories; names do not replace global ids. Projections preserve the canonical index's `latest` designation when that version is included, otherwise selecting a deterministic fallback. Path, digest, and search fields always describe the selected version.
+
 ## TypeScript example
 
 ```typescript
@@ -44,3 +46,5 @@ const index = {
   _meta: { "org.example/index": { shard: "dsh-plugin-00" } }, // Extension data.
 } as const;
 ```
+
+Optional entry fields `facets` and `customFacets` copy controlled and user-defined labels from the selected version. Entry `updatedAt` copies its record timestamp for sorting. These are metadata, not guarantees; omit tag containers when labels are absent. They allow cards to render without fetching every package detail.

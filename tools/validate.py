@@ -8,13 +8,20 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
+from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker
 from referencing import Registry, Resource
+
+try:
+    from tools.identity import identity_errors
+except ModuleNotFoundError:
+    from identity import identity_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_FILES = (
@@ -69,15 +76,41 @@ def schema_registry() -> Registry:
     return Registry().with_resources(resources)
 
 
+def metadata_format_checker() -> FormatChecker:
+    # jsonschema silently skips these formats without its optional dependencies.
+    # Keep CI and the no-dependency browser checks deterministic.
+    checker = FormatChecker()
+
+    @checker.checks("date-time", raises=ValueError)
+    def date_time(value: Any) -> bool:
+        if not isinstance(value, str):
+            return True
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}[Tt]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[Zz]|[+-]\d{2}:\d{2})", value):
+            return False
+        offset = re.search(r"[+-](\d{2}):(\d{2})$", value)
+        if offset and (int(offset[1]) > 23 or int(offset[2]) > 59):
+            return False
+        datetime.fromisoformat(value.upper().replace("Z", "+00:00"))
+        return True
+
+    @checker.checks("uri")
+    def absolute_uri(value: Any) -> bool:
+        if not isinstance(value, str):
+            return True
+        return bool(re.fullmatch(r"[a-zA-Z][a-zA-Z0-9+.-]*:[^\s]*", value)) and not re.search(r'[<>"{}|\\^`]|%(?![0-9a-fA-F]{2})', value)
+
+    return checker
+
+
 @lru_cache(maxsize=None)
-def build_validator(schema_name: str) -> Draft202012Validator:
+def build_validator(schema_name: str, submission_formats: bool = False) -> Draft202012Validator:
     """Compile each schema once; large catalogs otherwise rebuild it per file."""
     schema = load_json(ROOT / schema_name)
     Draft202012Validator.check_schema(schema)
     return Draft202012Validator(
         schema,
         registry=schema_registry(),
-        format_checker=FormatChecker(),
+        format_checker=metadata_format_checker() if submission_formats else FormatChecker(),
     )
 
 
@@ -86,14 +119,14 @@ def format_error(path: Path, error: Any) -> str:
     return f"{path.relative_to(ROOT) if path.is_relative_to(ROOT) else path}:{location}: {error.message}"
 
 
-def validate_instance(path: Path, schema_name: str) -> list[str]:
+def validate_instance(path: Path, schema_name: str, submission_formats: bool = False) -> list[str]:
     try:
         instance = load_json(path)
     except (OSError, json.JSONDecodeError) as error:
         return [f"{path}: {error}"]
     return [
         format_error(path, error)
-        for error in sorted(build_validator(schema_name).iter_errors(instance), key=str)
+        for error in sorted(build_validator(schema_name, submission_formats).iter_errors(instance), key=str)
     ]
 
 
@@ -281,6 +314,14 @@ def validate_all() -> tuple[list[str], list[str]]:
         errors.extend(source_errors)
         warnings.extend(source_warnings)
 
+    identities = []
+    for path in sorted(sources_root.glob("*/packages/**/*.json")) if sources_root else ():
+        try:
+            identities.append((str(path), load_json(path)))
+        except (OSError, json.JSONDecodeError):
+            continue
+    errors.extend(identity_errors(identities))
+
     examples = ROOT / "examples"
     if examples.exists():
         schema_by_name = {
@@ -305,13 +346,16 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("file", nargs="?", type=Path)
     parser.add_argument("schema", nargs="?", default="package.schema.json")
     parser.add_argument("--all", action="store_true", dest="validate_everything")
+    parser.add_argument("--submission-formats", action="store_true", help="enforce deterministic URI/date-time checks for one new submission; not --all")
     args = parser.parse_args(argv)
 
+    if args.submission_formats and args.validate_everything:
+        parser.error("--submission-formats applies to a single new submission, not the legacy catalog")
     if args.validate_everything:
         errors, warnings = validate_all()
     elif args.file:
         path = args.file if args.file.is_absolute() else ROOT / args.file
-        errors = validate_instance(path, args.schema)
+        errors = validate_instance(path, args.schema, args.submission_formats)
         warnings = []
     else:
         parser.error("provide --all or a JSON file")
