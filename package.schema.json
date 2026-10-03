@@ -53,8 +53,8 @@
     { "if": { "properties": { "type": { "const": "bundle" } }, "required": ["type"] }, "then": { "required": ["bundleDetails"], "not": { "anyOf": [{ "required": ["mcpDetails"] }, { "required": ["pluginDetails"] }, { "required": ["skillDetails"] }, { "required": ["generalDetails"] }] } } }
   ],
   "$defs": {
-    "identifier": { "type": "string", "minLength": 1, "maxLength": 214, "pattern": "^[A-Za-z0-9][A-Za-z0-9._/@+-]*$" },
-    "packageName": { "type": "string", "minLength": 1, "maxLength": 214, "pattern": "^[A-Za-z0-9@][A-Za-z0-9._@/+-]*$" },
+    "identifier": { "type": "string", "minLength": 1, "maxLength": 4096, "pattern": "^[^\\s\\u0000-\\u001f\\u007f\\\\]+$", "description": "Stable identity; supports Unicode and reversible UTF-8 percent escapes. Controls, whitespace, and literal backslashes are forbidden." },
+    "packageName": { "type": "string", "minLength": 1, "maxLength": 4096, "pattern": "^(?=.*\\S)[^\\u0000-\\u001f\\u007f]+$", "description": "Original Unicode package name. Encoding filesystem or URL paths must not rewrite this value." },
     "url": { "type": "string", "format": "uri", "minLength": 1 },
     "timestamp": { "type": "string", "format": "date-time" },
     "stringOrArray": { "oneOf": [ { "type": "string", "minLength": 1 }, { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } } ] },
@@ -85,7 +85,7 @@
     },
     "pluginDetails": {
       "type": "object", "required": ["manifestPath"], "additionalProperties": false,
-      "properties": { "manifestPath": { "type": "string", "minLength": 1 }, "sourceType": { "type": "string", "enum": ["git", "archive", "registry", "local", "other"] }, "marketplaceUrl": { "$ref": "#/$defs/url" }, "entrypoint": { "type": "string", "minLength": 1 }, "permissions": { "$ref": "#/$defs/stringList" } }
+      "properties": { "manifestPath": { "type": "string", "minLength": 1 }, "sourceType": { "type": "string", "enum": ["github-repo", "npm-pkg", "pypi-pkg", "nuget-pkg", "crates-pkg", "github-mcpb", "gitlab-mcpb", "mcpb-pkg", "git", "archive", "registry", "local", "other"] }, "marketplaceUrl": { "$ref": "#/$defs/url" }, "entrypoint": { "type": "string", "minLength": 1 }, "permissions": { "$ref": "#/$defs/stringList" } }
     },
     "skillDetails": {
       "type": "object", "required": ["skillPath"], "additionalProperties": false,
@@ -110,7 +110,7 @@
     "distribution": {
       "type": "object", "required": ["id", "type", "url"], "additionalProperties": false,
       "properties": {
-        "id": { "$ref": "#/$defs/identifier" }, "type": { "type": "string", "enum": ["git", "release", "archive", "registry", "oci", "package", "other"] }, "url": { "$ref": "#/$defs/url" }, "agentIds": { "$ref": "#/$defs/stringList" }, "version": { "type": "string", "minLength": 1 }, "ref": { "type": "string", "minLength": 1 }, "registry": { "type": "string", "minLength": 1 }, "priority": { "type": "integer", "minimum": 0 }, "regions": { "$ref": "#/$defs/stringList" }, "checksum": { "$ref": "#/$defs/checksum" }, "signature": { "$ref": "#/$defs/signature" }, "install": { "$ref": "#/$defs/install" }, "notes": { "type": "string", "maxLength": 2000 }
+        "id": { "$ref": "#/$defs/identifier" }, "name": { "type": "string", "minLength": 1, "maxLength": 200, "description": "Human-readable distribution name." }, "type": { "type": "string", "enum": ["github-repo", "npm-pkg", "pypi-pkg", "nuget-pkg", "crates-pkg", "ghcr-image", "dockerhub-image", "quay-image", "gcp-artifact-image", "oci-image", "github-mcpb", "gitlab-mcpb", "mcpb-pkg", "mcp-endpoint", "git", "release", "archive", "registry", "oci", "package", "other"], "description": "Platform and artifact kind. Repository sources use ref; registry packages use version and registry; image sources use OCI semantics; MCPB sources are downloadable archives; mcp-endpoint is a remote service. Generic values remain valid for unclassified or legacy sources." }, "url": { "$ref": "#/$defs/url" }, "agentIds": { "$ref": "#/$defs/stringList" }, "version": { "type": "string", "minLength": 1 }, "ref": { "type": "string", "minLength": 1 }, "registry": { "type": "string", "minLength": 1 }, "priority": { "type": "integer", "minimum": 0 }, "regions": { "$ref": "#/$defs/stringList" }, "checksum": { "$ref": "#/$defs/checksum" }, "signature": { "$ref": "#/$defs/signature" }, "install": { "$ref": "#/$defs/install" }, "notes": { "type": "string", "maxLength": 2000 }
       }
     },
     "checksum": { "type": "object", "minProperties": 1, "additionalProperties": false, "properties": { "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" }, "sha512": { "type": "string", "pattern": "^[A-Fa-f0-9]{128}$" }, "blake2b": { "type": "string", "minLength": 1 } } },

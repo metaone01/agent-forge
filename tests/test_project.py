@@ -35,6 +35,28 @@ def record(name: str, package_type: str, updated: str):
 
 
 class ProjectionTests(unittest.TestCase):
+    def test_canonical_latest_controls_path_checksum_and_search_fields(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "sources/plugin"
+            (source / "packages").mkdir(parents=True)
+            for version, description in (("2.0.0", "current description"), ("unversioned", "old snapshot")):
+                value = record("tool", "plugin", "2026-10-01T00:00:00Z")
+                value.update(version=version, description=description)
+                (source / "packages" / (version + ".json")).write_text(json.dumps(value), encoding="utf-8")
+            (source / "index.json").write_text(json.dumps({"packages": {"tool": {"latest": "2.0.0"}}}), encoding="utf-8")
+            output = root / "data"
+            now = datetime(2026, 10, 2, tzinfo=timezone.utc)
+            build_projection(root, output, "test", now, now, "https://example.test/data", False)
+            entry = json.loads((output / "dsh/plugin/index.json").read_text())["packages"]["tool"]
+            payload = (output / "dsh/plugin" / entry["path"]).read_bytes()
+            import hashlib
+            self.assertEqual("2.0.0", entry["latest"])
+            self.assertEqual("2.0.0", json.loads(payload)["version"])
+            self.assertEqual(hashlib.sha256(payload).hexdigest(), entry["checksum"]["sha256"])
+            self.assertIn("current description", entry["searchText"])
+            self.assertEqual("dsh.tool", entry["id"])
+
     def test_cutoff_projection_and_snapshot(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

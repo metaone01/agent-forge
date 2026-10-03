@@ -24,6 +24,8 @@ Index 是一个 source revision 的紧凑包索引。它用于低带宽发现、
 
 每个 `packageEntry` 包含 `latest`、`versions`、`path`，可选 `checksum`、`recordRevision` 和管理员 `subtype`。`path` 必须是安全的相对路径。
 
+还可以包含全局包身份 `id`、最新记录的描述 `summary`、`keywords` 和生成的 `searchText`，用于直接搜索索引。可选 `facets`、`customFacets` 用于直接渲染受控标签与用户标签；可选的条目 `updatedAt` 用于按最新记录时间排序。它们都复制自选中版本，不代表安全核验，缺失时客户端不应生成占位标签。相同名称可以出现在不同类型中，消费者不能用名称代替全局身份。投影优先保留 canonical index 指定的 `latest`；仅当该版本未进入当前投影时使用确定性的回退选择。`path`、摘要和搜索字段始终对应选中的版本。
+
 ## TypeScript 示例
 
 ```typescript
