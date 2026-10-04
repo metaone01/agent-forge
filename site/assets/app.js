@@ -3,6 +3,10 @@
   "use strict";
 
   const page = document.body.dataset.page || "catalog";
+  if (page === "catalog-hidden") {
+    window.location.replace(new URL("dashboard/", document.baseURI).href);
+    return;
+  }
   const ui = window.ForgeUI;
   ui.addMessages({
     "zh-CN": { "media.load": "加载外链图片", "media.hide": "隐藏外链图片", "media.notice": "图片来自第三方，未核验。加载后会向图片站点发送请求；本页不发送 Referer。", "media.preview": "静态预览", "media.blocked": "尚未加载", "media.failed": "图片加载失败" },

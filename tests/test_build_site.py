@@ -83,6 +83,16 @@ class BuildSiteTests(unittest.TestCase):
     def build(self, **kwargs):
         return build_site(self.root, self.output, **kwargs)
 
+    def test_catalog_pause_survives_build_and_document_navigation(self):
+        self.build()
+        landing = (self.output / "index.html").read_text(encoding="utf-8")
+        self.assertIn('<meta http-equiv="refresh" content="0; url=dashboard/">', landing)
+        self.assertIn('<body data-page="catalog-hidden" hidden>', landing)
+        for doc in DOCUMENTS:
+            page = Page((self.output / doc.target).read_text(encoding="utf-8"))
+            self.assertFalse(any(attrs.get("data-i18n") == "docs.catalog" for _, attrs in page.attributes))
+            self.assertTrue(any(attrs.get("href", "").endswith("dashboard/index.html") for _, attrs in page.attributes))
+
     def test_complete_build_copies_static_schemas_data_and_raw_sources(self):
         before = digest_tree(self.root)
         self.build()

@@ -4,6 +4,8 @@
 
 ## Pages and preferences
 
+Catalog search is temporarily hidden: the site root (including old filters and detail hashes) redirects to `dashboard/` without loading search indexes. Catalog navigation is removed; docs, submission, dashboards, and static data remain available. Search source is retained in `index.html` and `assets/app.js`. To restore it, remove the root refresh and `hidden`, change `data-page` back to `catalog`, and restore catalog navigation.
+
 Catalog, package details, both dashboards, documentation and submission share preferences. The default is Chinese (`zh-CN`) and system theme; users can choose English, Light or Dark. Explicit choices persist when storage is available. Language changes preserve filters, pagination and draft data.
 
 `docs/` renders the root project READMEs and Schema references with highlighting, headings and code copying. `submit/` offers a visual Schema-driven form and an independent Agent / JSON entry. Submission Notes are optional. Cards show package name above canonical ID, followed by controlled facets, custom tags and keyword tags; empty collections are omitted.

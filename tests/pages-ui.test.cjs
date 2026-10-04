@@ -50,6 +50,27 @@ function appEnvironment(options) {
 }
 function addNodes(env, ids) { for (const id of ids) env.nodes.set(id, new NodeStub()); }
 
+test('paused catalog redirects without starting search or requesting any data', () => {
+  for (const baseURI of ['https://example.test/project/', 'https://example.test/project/index.html?agent=dsh#package/dsh/plugin/tool', 'https://example.test/']) {
+    let destination, requests = 0;
+    const env = environment({ page: 'catalog-hidden', fetch: async () => { requests++; throw Error('Catalog must not fetch'); } });
+    env.document.baseURI = baseURI;
+    env.window.location = { replace(url) { destination = url; } };
+    vm.runInContext(appSource, env.context);
+    assert.equal(destination, new URL('dashboard/', baseURI).href);
+    assert.equal(requests, 0);
+    assert.deepEqual(env.events, []);
+  }
+});
+test('catalog is statically hidden with a no-JavaScript redirect and no navigation entry', () => {
+  const html = fs.readFileSync(path.join(root, 'site/index.html'), 'utf8');
+  assert.match(html, /<meta http-equiv="refresh" content="0; url=dashboard\/">/);
+  assert.match(html, /<body data-page="catalog-hidden" hidden>/);
+  for (const page of ['index.html', 'dashboard/index.html', 'dashboard/agent/index.html', 'submit/index.html']) {
+    assert.doesNotMatch(fs.readFileSync(path.join(root, 'site', page), 'utf8'), /data-i18n="nav\.catalog"/);
+  }
+});
+
 test('defaults ignore browser language, resolve system theme synchronously, and derive project root', () => {
   const { ui, document } = environment({ dark: true });
   assert.equal(ui.locale, 'zh-CN'); assert.equal(ui.theme, 'system');
@@ -237,6 +258,7 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     return [name, { id: 'canonical.tool-' + i, name, displayName: i % 2 === 0 ? '展示工具-' + String(i).padStart(3, '0') : undefined, latest: '1.0.0', versions: ['1.0.0'], path: 'p/' + i + '.json', summary: 'Searchable package', ...recordTags, subtype: 'skin', media: [0, 50].includes(i) ? mediaIndex : i === 1 ? { icon: { url: 'javascript:alert(1)', alt: 'Invalid' } } : undefined }];
   }));
   const requests = [];
+  let catalogFixture = false;
   const agentDashboard = { counts: { packages: 123, versions: 123 }, byType: { plugin: 123 }, facets: { node: 123 }, recentPackages: [{ id: 'canonical.recent', name: 'recent name', displayName: '最近展示包名', version: '1.0.0', ...recordTags }] };
   const server = http.createServer((req, res) => {
     const pathname = new URL(req.url, 'http://localhost').pathname;
@@ -273,7 +295,13 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     }
     const local = path.resolve(root, 'site', relative.endsWith('/') || !relative ? relative + 'index.html' : relative);
     if (!local.startsWith(path.resolve(root, 'site') + path.sep)) { res.writeHead(403).end(); return; }
-    try { res.setHeader('Content-Type', local.endsWith('.js') ? 'application/javascript' : local.endsWith('.css') ? 'text/css' : 'text/html'); res.end(fs.readFileSync(local)); } catch (_) { res.writeHead(404).end(); }
+    try {
+      res.setHeader('Content-Type', local.endsWith('.js') ? 'application/javascript' : local.endsWith('.css') ? 'text/css' : 'text/html');
+      let content = fs.readFileSync(local);
+      // Only this local fixture re-enables the retained catalog for regression tests.
+      if (catalogFixture && local === path.join(root, 'site/index.html')) content = content.toString().replace(/<meta http-equiv="refresh"[^>]*>/, '').replace('<body data-page="catalog-hidden" hidden>', '<body data-page="catalog">');
+      res.end(content);
+    } catch (_) { res.writeHead(404).end(); }
   });
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
   const base = 'http://127.0.0.1:' + server.address().port + '/project/';
@@ -376,6 +404,19 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
       await waitFor((reload ? 'globalThis.__forgeReloadMarker !== true && ' : '') + 'location.href === ' + JSON.stringify(url) + ' && document.readyState === "complete" && (' + ready + ')');
     };
     await cdp('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: 'dark' }] });
+    for (const scriptsDisabled of [false, true]) {
+      await cdp('Emulation.setScriptExecutionDisabled', { value: scriptsDisabled });
+      for (const route of ['', 'index.html?agent=dsh#package/dsh/plugin/tool']) {
+        const firstRequest = requests.length;
+        await cdp('Page.navigate', { url: new URL(route, base).href });
+        await waitFor('location.pathname === "/project/dashboard/" && document.readyState === "complete"' + (scriptsDisabled ? '' : ' && document.getElementById("global-metrics")?.children.length === 4'));
+        assert.equal(await evaluate('document.querySelector("#query")'), null);
+        assert.equal(await evaluate('document.querySelector(`[data-i18n="nav.catalog"]`)'), null);
+        assert.ok(!requests.slice(firstRequest).some((url) => /index\.json|packages\//.test(url)), 'Paused catalog must not fetch search data');
+      }
+    }
+    await cdp('Emulation.setScriptExecutionDisabled', { value: false });
+    catalogFixture = true;
     await navigate('', 'document.querySelectorAll(".result-card").length === 50');
     assert.deepEqual(await evaluate('({locale:ForgeUI.locale,theme:ForgeUI.theme,resolved:document.documentElement.dataset.theme,base:ForgeUI.siteBase.href,controls:document.querySelectorAll(".forge-preferences").length})'), { locale: 'zh-CN', theme: 'system', resolved: 'dark', base, controls: 1 });
     assert.equal(await evaluate('document.querySelector(".result-title strong").textContent'), '展示工具-000');

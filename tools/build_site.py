@@ -490,7 +490,6 @@ def render_document(root: Path, doc: Document, data_files: set[str]) -> str:
 <a class="skip-link" href="#doc-content" data-i18n="docs.skip">{words['skip']}</a>
 <header class="topbar"><a class="brand" href="{relative('index.html', doc.target)}">Agent Forge</a>
 <nav class="topnav" aria-label="{'Main navigation' if english else '主导航'}">
-{link('index.html', words['catalog'], 'catalog')}
 {link('dashboard/index.html', 'Dashboard')}
 <a href="{relative('docs/index' + suffix + '.html', doc.target)}" aria-current="page" data-i18n="docs.docs">{words['docs']}</a>
 <a href="{REPOSITORY}/issues/new/choose" rel="noreferrer" data-i18n="docs.submit">{words['submit']}</a>

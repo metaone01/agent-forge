@@ -8,7 +8,7 @@
 [![Build metadata projections](https://github.com/metaone01/agent-forge/actions/workflows/project.yml/badge.svg)](https://github.com/metaone01/agent-forge/actions/workflows/project.yml)
 [![Publish catalog revision](https://github.com/metaone01/agent-forge/actions/workflows/release.yml/badge.svg)](https://github.com/metaone01/agent-forge/actions/workflows/release.yml)
 
-[Catalog site](https://metaone01.github.io/agent-forge/) · [Dashboard](https://metaone01.github.io/agent-forge/dashboard/) · [Schema documentation](docs/schema/README_en.md) · [Submit a record](https://github.com/metaone01/agent-forge/issues/new/choose)
+[Dashboard](https://metaone01.github.io/agent-forge/dashboard/) · [Schema documentation](docs/schema/README_en.md) · [Submit a record](https://github.com/metaone01/agent-forge/issues/new/choose)
 
 > [!WARNING]
 > Agent Forge integrates third-party metadata. It does not review upstream code, certify publishers, execute installations, or guarantee origin, compatibility, or safety. Reachable links, checksums, signatures, facets, and advisories do not replace a security review.
@@ -29,7 +29,7 @@ Static JSON is the public read contract; no database or dynamic API is required.
 
 | Information | Entry point |
 | --- | --- |
-| Published tools, versions, and Agent filters | [Catalog site](https://metaone01.github.io/agent-forge/) |
+| Published tools, versions, and Agent filters | Catalog search is temporarily hidden; the site root redirects to Dashboard |
 | Published counts, category statistics, and update time | [Dashboard](https://metaone01.github.io/agent-forge/dashboard/) |
 | Published revision, generation time, and source list | [Data manifest](https://metaone01.github.io/agent-forge/data/manifest.json) |
 | Latest canonical records in Git | [`packages` branch](https://github.com/metaone01/agent-forge/tree/packages/sources) |

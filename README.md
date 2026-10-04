@@ -8,7 +8,7 @@
 [![Build metadata projections](https://github.com/metaone01/agent-forge/actions/workflows/project.yml/badge.svg)](https://github.com/metaone01/agent-forge/actions/workflows/project.yml)
 [![Publish catalog revision](https://github.com/metaone01/agent-forge/actions/workflows/release.yml/badge.svg)](https://github.com/metaone01/agent-forge/actions/workflows/release.yml)
 
-[目录站点](https://metaone01.github.io/agent-forge/) · [Dashboard](https://metaone01.github.io/agent-forge/dashboard/) · [Schema 文档](docs/schema/README.md) · [提交记录](https://github.com/metaone01/agent-forge/issues/new/choose)
+[Dashboard](https://metaone01.github.io/agent-forge/dashboard/) · [Schema 文档](docs/schema/README.md) · [提交记录](https://github.com/metaone01/agent-forge/issues/new/choose)
 
 > [!WARNING]
 > Agent Forge 整合第三方元数据，不审查上游代码、不认证发布者、不执行安装，也不保证来源、兼容性或安全性。链接可用、checksum、signature、facet 和 advisory 都不能替代安全审查。
@@ -29,7 +29,7 @@
 
 | 需要的信息 | 查看入口 |
 | --- | --- |
-| 已发布工具、版本与 Agent 筛选 | [目录站点](https://metaone01.github.io/agent-forge/) |
+| 已发布工具、版本与 Agent 筛选 | 目录搜索页面暂时隐藏；站点首页跳转至 Dashboard |
 | 已发布收录数量、分类统计与更新时间 | [Dashboard](https://metaone01.github.io/agent-forge/dashboard/) |
 | 已发布 revision、生成时间和数据源列表 | [数据 manifest](https://metaone01.github.io/agent-forge/data/manifest.json) |
 | 最新入库的规范记录 | [`packages` 分支](https://github.com/metaone01/agent-forge/tree/packages/sources) |
