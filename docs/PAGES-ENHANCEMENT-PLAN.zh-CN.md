@@ -89,7 +89,7 @@
 
 #### 名称与身份
 
-- 标题恢复为 `displayName` → `name`，canonical `id` 仅保留在详情的技术信息中。
+- 标题恢复为 `displayName` → `name`；详情包信息展示「包名」与 `record.name`，canonical `id` 仅保留在机器数据中，不在默认信息区展示。
 - 索引携带最新版本的 `displayName`，保证列表、详情和最近更新展示规则一致；显示名不参与身份和路由。
 - 同步目录卡片、详情及 Dashboard 中的包条目；缺失字段明确回退，不把内部组合键误当 canonical ID。
 - 不修改路由、索引键、身份、去重或版本选择逻辑；长名称、Unicode 与长 ID 在窄屏可读。

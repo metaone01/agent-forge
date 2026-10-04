@@ -178,7 +178,12 @@ test('defaults ignore browser language, resolve system theme synchronously, and 
   await env.app.renderDetail('dsh', 'plugin', 'owner/repo');
   assert.match(env.nodes.get('main').innerHTML, /<h1>&lt;真实包名&gt;<\/h1>/);
   assert.doesNotMatch(env.nodes.get('main').innerHTML, /class="package-id"/);
-  assert.match(env.nodes.get('main').innerHTML, /plugin.hash/);
+  assert.match(env.nodes.get('main').innerHTML, /<dt>包名<\/dt><dd>owner\/repo<\/dd>/);
+  assert.doesNotMatch(env.nodes.get('main').innerHTML, /plugin.hash|Package ID/);
+  env.ui.setLocale('en');
+  await env.app.renderDetail('dsh', 'plugin', 'owner/repo');
+  assert.match(env.nodes.get('main').innerHTML, /<dt>Package name<\/dt><dd>owner\/repo<\/dd>/);
+  assert.doesNotMatch(env.nodes.get('main').innerHTML, /plugin.hash|Package ID/);
   assert.equal(env.app.state.detailCache.get(entry.key).id, 'plugin.hash');
   assert.equal(entry.routeName, 'owner/repo');
   env.app.renderAgentDashboard({ id: 'dsh', global: {}, agent: { counts: {}, byType: {}, facets: {}, recentPackages: [record, { ...record, displayName: '' }] } });
@@ -186,6 +191,19 @@ test('defaults ignore browser language, resolve system theme synchronously, and 
   assert.match(recent, /<strong>&lt;真实包名&gt;<\/strong>/);
   assert.match(recent, /<strong>owner\/repo<\/strong>/);
   assert.doesNotMatch(recent, /plugin.hash|package-id/);
+});
+ test('package-name facts escape names and fall back to the route without exposing internal IDs', async () => {
+  for (const packageName of ['owner/<repo>', undefined]) {
+    const env = appEnvironment({ fetch: async () => ({ ok: true, json: async () => ({ id: 'plugin.internal-hash', ...(packageName ? { name: packageName } : {}), displayName: 'Display title', pluginDetails: {} }) }) });
+    addNodes(env, ['main']);
+    const [entry] = env.app.normalizeIndex({ agentId: 'dsh', type: 'plugin', packages: { 'owner/route': { id: 'plugin.internal-hash', path: 'p.json' } } }, 'https://example.test/project/data/dsh/plugin/index.json');
+    env.app.state.entries = [entry];
+    await env.app.renderDetail('dsh', 'plugin', 'owner/route');
+    assert.match(env.nodes.get('main').innerHTML, packageName ? /<dt>包名<\/dt><dd>owner\/&lt;repo&gt;<\/dd>/ : /<dt>包名<\/dt><dd>owner\/route<\/dd>/);
+    assert.doesNotMatch(env.nodes.get('main').innerHTML, /plugin.internal-hash|Package ID|<dd>Display title/);
+    assert.equal(env.app.state.detailCache.get(entry.key).id, 'plugin.internal-hash');
+    assert.equal(entry.routeName, 'owner/route');
+  }
 });
  test('stale detail responses cannot replace a newer route', async () => {
   let resolve;
@@ -398,7 +416,8 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     await waitFor('!!document.querySelector(".detail-heading")');
     assert.equal(await evaluate('document.querySelector(".detail-heading h1").textContent'), '展示工具-050');
     assert.equal(await evaluate('document.querySelectorAll(".detail-heading .package-id").length'), 0);
-    assert.match(await evaluate('document.querySelector(".facts").textContent'), /canonical.tool-50/);
+    assert.deepEqual(await evaluate('Array.from(document.querySelectorAll(".facts dt")).map(node=>[node.textContent,node.nextElementSibling.textContent])[0]'), ['Package name', 'tool/工具-050']);
+    assert.doesNotMatch(await evaluate('document.querySelector(".facts").textContent'), /canonical.tool-50|Package ID/);
     assert.equal(await evaluate('document.querySelector(".detail-main .tag-list").children.length'), 10);
     assert.equal(await evaluate('document.querySelector(".external-link").getAttribute("href")'), '#');
     assert.equal(await evaluate('document.querySelectorAll(".preview-gallery figure").length'), 3);

@@ -55,4 +55,4 @@ Optional `packageEntry.media` copies the icon and at most the first preview from
 
 ## Package titles
 
-Optional `packageEntry.displayName` copies the selected latest version's display name. Pages titles prefer `displayName`, falling back to the source-local package name. Canonical `id` is not a title or subtitle; it remains in detail technical information. Display names do not change identity, index keys or routes. Omit this field when the selected version has no display name; never inherit an older version's title.
+Optional `packageEntry.displayName` copies the selected latest version's display name. Pages titles prefer `displayName`, falling back to the source-local package name. Canonical `id` is not a title or subtitle and is not shown in the default package facts. These facts show `record.name` as the package name; internal IDs remain in machine-readable data. Display names do not change identity, index keys or routes. Omit this field when the selected version has no display name; never inherit an older version's title.

@@ -62,4 +62,4 @@ const index = {
 
 ## 包名标题
 
-可选 `packageEntry.displayName` 复制所选最新版本的显示名。Pages 标题优先使用 `displayName`，缺失时使用 source-local 包名；canonical `id` 不作为标题或副标题，仍保留在详情技术信息中。显示名不改变身份、索引键或路由。所选版本没有显示名时必须省略，不能沿用旧版本的显示名。
+可选 `packageEntry.displayName` 复制所选最新版本的显示名。Pages 标题优先使用 `displayName`，缺失时使用 source-local 包名；canonical `id` 不作为标题或副标题，也不在默认包信息区展示；该区域显示 `record.name` 作为「包名」，内部 ID 保留在机器数据中。显示名不改变身份、索引键或路由。所选版本没有显示名时必须省略，不能沿用旧版本的显示名。
