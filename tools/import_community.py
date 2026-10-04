@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import copy
 import hashlib
 import io
 import json
@@ -25,10 +26,12 @@ try:
     from tools.distribution_names import normalize_distribution, normalize_plugin_source
     from tools.identity import encoded_component, identity_errors
     from tools.validate import build_validator
+    from tools.media import normalize_media, merge_media, media_summary
 except ModuleNotFoundError:
     from distribution_names import normalize_distribution, normalize_plugin_source
     from identity import encoded_component, identity_errors
     from validate import build_validator
+    from media import normalize_media, merge_media, media_summary
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / ".collection-cache"
@@ -151,6 +154,8 @@ class Importer:
             if not overwrite:
                 record = self.records[key]
             else:
+                if "media" not in record and "media" in self.records[key]:
+                    record["media"] = copy.deepcopy(self.records[key]["media"])
                 record["createdAt"] = self.records[key].get("createdAt", STAMP)
                 record["_meta"] = self.records[key].get("_meta", {})
         for distribution in record.get("distributions", []):
@@ -201,6 +206,14 @@ class Importer:
     def pending(self, row: Any, ref: dict[str, Any], reason: str, claimed: str | None = None) -> None:
         self.unresolved.append({"source": ref, "claimedType": claimed, "reason": reason, "metadata": row})
 
+    def enrich_media(self, record: dict[str, Any], row: dict[str, Any], ref: dict[str, Any]) -> None:
+        asset_path = record.get("pluginDetails", {}).get("manifestPath") or record.get("skillDetails", {}).get("skillPath")
+        context = ref if ref.get("repository") == row_repository(row) and ref.get("path") == asset_path else None
+        media, issues = normalize_media(row, context)
+        issues.extend(merge_media(record, media, ref))
+        for issue in issues:
+            self.pending(issue, ref, "Media: " + issue["reason"], record["type"])
+
     def ingest_plugin(self, row: dict[str, Any], ref: dict[str, Any], manifest: str | None = None, subpath: str = "", agent: str = "dsh", version: str | None = None, revision: str | None = None) -> None:
         repo = row_repository(row)
         if not repo:
@@ -216,6 +229,7 @@ class Importer:
             if existing:
                 value = self.records[existing]
                 current = self.current.get((value["type"], value["name"]))
+                self.enrich_media(value, row, ref)
                 self.put(value, ("plugin", repo, subpath), ref)
                 if current:
                     self.current[(value["type"], value["name"])] = current
@@ -240,7 +254,8 @@ class Importer:
         value["keywords"] = list(dict.fromkeys(str(tag)[:100] for tag in tags if tag))[:100]
         if row.get("category") in ("theme", "skin") or row.get("kind") == "skin":
             value["subtype"] = "skin"
-        self.put(value, identity, ref)
+        key = self.put(value, identity, ref)
+        self.enrich_media(self.records[key], row, ref)
         self.accepted[ref["repository"]] += 1
 
     def ingest_skill(self, repo: str, path: str, row: dict[str, Any], ref: dict[str, Any], revision: str | None = None, agent: str = "dsh") -> None:
@@ -256,7 +271,8 @@ class Importer:
         value["distributions"] = [git_distribution(repo, str(PurePosixPath(path).parent) if path != "SKILL.md" else "", revision)]
         if isinstance(row.get("license"), str) and row["license"]:
             value["license"] = row["license"]
-        self.put(value, ("skill", repo, path), ref)
+        key = self.put(value, ("skill", repo, path), ref)
+        self.enrich_media(self.records[key], row, ref)
         self.accepted[ref["repository"]] += 1
 
     def structured_dsh(self) -> None:
@@ -534,6 +550,11 @@ class Importer:
             if chosen == key or chosen not in valid:
                 index_entry.update(latest=version, path=path.relative_to(self.root / "sources" / category).as_posix(), summary=record["description"], keywords=record.get("keywords", []), searchText=" ".join(str(record.get(field, "")) for field in ("name", "displayName", "description", "keywords", "generalDetails")).lower())
         for category in TYPES:
+            for name, entry in package_entries[category].items():
+                selected = valid.get((category, name, entry["latest"]))
+                summary_media = media_summary(selected or {})
+                if summary_media:
+                    entry["media"] = summary_media
             directory = self.root / "sources" / category
             source = load(directory / "source.json")
             source.update(revision=REVISION, generatedAt=STAMP, updatedAt=STAMP)

@@ -40,8 +40,12 @@
         "checksum": { "$ref": "package.schema.json#/$defs/checksum" },
         "recordRevision": { "$ref": "#/$defs/revision", "description": "Optional revision of the package record." },
         "id": { "$ref": "package.schema.json#/$defs/identifier", "description": "Global package identity, distinct from the source-local name." },
+        "media": { "$ref": "package.schema.json#/$defs/mediaSummary", "description": "Optional icon and first preview from the selected package record; unverified image references." },
         "summary": { "type": "string", "maxLength": 4000, "description": "Description copied from the latest package record for search." },
         "keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "facets": { "$ref": "package.schema.json#/$defs/facetSet", "description": "Controlled labels copied from the latest record; not guarantees." },
+        "customFacets": { "$ref": "package.schema.json#/$defs/customFacetSet", "description": "User-defined labels copied from the latest record; not verified." },
+        "updatedAt": { "$ref": "package.schema.json#/$defs/timestamp", "description": "Latest record timestamp for catalog ordering." },
         "searchText": { "type": "string", "description": "Generated search text; does not change package type or compatibility." },
         "subtype": { "type": ["string", "null"], "minLength": 1, "description": "Administrator-defined subtype copied into this projection; null means no subtype." }
       }

@@ -22,8 +22,10 @@ from typing import Any, Iterable
 
 try:
     from tools.identity import encoded_component, identity_errors
+    from tools.media import media_summary
 except ModuleNotFoundError:
     from identity import encoded_component, identity_errors
+    from media import media_summary
 
 ROOT = Path(__file__).resolve().parents[1]
 TYPES = ("mcp", "plugin", "skill", "general", "bundle")
@@ -244,11 +246,20 @@ def build_projection(
             elif str(version) > str(entry["latest"]):
                 entry["latest"] = version
             if version == entry["latest"]:
+                entry.pop("media", None)
+                summary_media = media_summary(record)
+                if summary_media:
+                    entry["media"] = summary_media
+                entry.pop("updatedAt", None)
+                if record.get("updatedAt") or record.get("publishedAt") or record.get("createdAt"):
+                    entry["updatedAt"] = record.get("updatedAt") or record.get("publishedAt") or record.get("createdAt")
                 entry.update(
                     path=rel_path,
                     id=record["id"],
                     summary=record["description"],
                     keywords=record.get("keywords", []),
+                    facets=record.get("facets", {}),
+                    customFacets=record.get("customFacets", {}),
                     subtype=record.get("subtype"),
                     searchText=" ".join(str(record.get(field, "")) for field in (
                         "name", "displayName", "description", "keywords", "facets", "customFacets", "generalDetails"
