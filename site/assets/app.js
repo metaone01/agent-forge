@@ -85,7 +85,7 @@
       return {
         key: `${index.agentId || record.agentId || "unknown"}:${index.type || record.type || "general"}:${name}`,
         id: record.packageId || record.id || "", packageId: record.packageId || record.id || "", routeName: name,
-        name: record.name || name, agentId: index.agentId || record.agentId || "unknown", type: index.type || record.type || "general",
+        name: record.name || name, displayName: record.displayName || "", agentId: index.agentId || record.agentId || "unknown", type: index.type || record.type || "general",
         subtype: record.subtype || null, latest: record.latest || record.version || "unknown", versions: record.versions || [],
         path: pathFor(path.startsWith("http") ? path : sourceBase + path), recordRevision: record.recordRevision || index.revision,
         summary: record.summary || record.description || "", keywords: record.keywords || [], facets: record.facets || {}, customFacets: record.customFacets || {}, indexPath,
@@ -188,10 +188,6 @@
     });
   }
 
-  function packageSubtitle(record) {
-    const id = record.packageId || record.id;
-    return id ? '<p class="package-id">' + escapeHTML(id) + '</p>' : '';
-  }
   function renderResults() {
     const results = document.getElementById("results");
     if (!results) return;
@@ -207,10 +203,10 @@
       const media = record.media || {};
       const icon = imageSlot(media.icon, "icon", entry.type.toUpperCase().slice(0, 1));
       const preview = entry.subtype === "skin" && Array.isArray(media.previews) && media.previews[0] ? imageSlot(media.previews[0], "thumbnail", t("media.preview")) : '';
-      const title = '<div class="result-title">' + icon + '<strong>' + escapeHTML(record.name || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
+      const title = '<div class="result-title">' + icon + '<strong>' + escapeHTML(record.displayName || record.name || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
       const summary = record.description || record.summary || t("暂无描述，打开详情查看来源与安装候选。");
       const versions = entry.versions.length ? t("catalog.versions", { count: number(entry.versions.length) }) : t("catalog.version", { version: entry.latest });
-      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + preview + title + packageSubtitle(record) + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(record, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
+      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + preview + title + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(record, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
     }).join("");
     bindMedia(results);
     document.getElementById("empty-state").hidden = state.filtered.length > 0;
@@ -292,7 +288,7 @@
     const tags = renderPackageTags(record);
     const sources = distributions.map((item) => '<a class="distribution" href="' + escapeHTML(safeHref(item.url || item.href)) + '" target="_blank" rel="noreferrer"><strong>' + escapeHTML(item.name || item.type || t("发行来源")) + '</strong><span>' + escapeHTML(item.url || item.href || t("未提供地址")) + '</span></a>').join("") || '<p class="muted">' + escapeHTML(t("暂无发行来源。Agent Forge 不托管插件文件。")) + '</p>';
     const links = Object.entries(record.links || {}).filter(([, value]) => value).map(([key, value]) => '<a class="external-link" href="' + escapeHTML(safeHref(value)) + '" target="_blank" rel="noreferrer">' + escapeHTML(key) + ' ↗</a>').join("") || '<p class="muted">' + escapeHTML(t("暂无链接")) + '</p>';
-    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><section class="detail-heading"><div><p class="eyebrow">' + escapeHTML(type.toUpperCase()) + ' · ' + escapeHTML(agent) + '</p><h1>' + escapeHTML(record.name || name) + '</h1>' + packageSubtitle(record) + '<p class="lede">' + escapeHTML(record.description || record.summary || t("暂无描述")) + '</p></div><span class="pill">' + escapeHTML(t(record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录")) + '</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>' + escapeHTML(t("包信息")) + '</h2><dl class="facts">' + fact("Package ID", record.packageId || t("未提供")) + fact("Agent", agent) + fact("最新版本", record.version || entry.latest) + fact("Subtype", record.subtype || t("未指定")) + fact("Agent 版本范围", record.agentVersionRange || t("未提供")) + '</dl></div>' + (tags ? '<div class="detail-section"><h2>' + escapeHTML(t("标签")) + '</h2>' + tags + '</div>' : '') + renderGallery(record) + '<div class="detail-section"><h2>' + escapeHTML(t("类型详情")) + '</h2><pre class="code-block">' + escapeHTML(JSON.stringify(details, null, 2)) + '</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>' + escapeHTML(t("安装候选")) + '</h2>' + sources + '</div><div class="detail-section"><h2>' + escapeHTML(t("文档链接")) + '</h2>' + links + '</div></aside></div>';
+    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><section class="detail-heading"><div><p class="eyebrow">' + escapeHTML(type.toUpperCase()) + ' · ' + escapeHTML(agent) + '</p><h1>' + escapeHTML(record.displayName || record.name || name) + '</h1><p class="lede">' + escapeHTML(record.description || record.summary || t("暂无描述")) + '</p></div><span class="pill">' + escapeHTML(t(record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录")) + '</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>' + escapeHTML(t("包信息")) + '</h2><dl class="facts">' + fact("Package ID", record.packageId || t("未提供")) + fact("Agent", agent) + fact("最新版本", record.version || entry.latest) + fact("Subtype", record.subtype || t("未指定")) + fact("Agent 版本范围", record.agentVersionRange || t("未提供")) + '</dl></div>' + (tags ? '<div class="detail-section"><h2>' + escapeHTML(t("标签")) + '</h2>' + tags + '</div>' : '') + renderGallery(record) + '<div class="detail-section"><h2>' + escapeHTML(t("类型详情")) + '</h2><pre class="code-block">' + escapeHTML(JSON.stringify(details, null, 2)) + '</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>' + escapeHTML(t("安装候选")) + '</h2>' + sources + '</div><div class="detail-section"><h2>' + escapeHTML(t("文档链接")) + '</h2>' + links + '</div></aside></div>';
     bindMedia(main);
     if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -414,7 +410,7 @@
     const facetValues = agent.facets || agent.facetCounts || {};
     document.getElementById("agent-facet-chart").innerHTML = Object.keys(facetValues).length ? barRows(facetValues, 10) : `<p class="muted">${escapeHTML(t("暂无 facet 统计"))}</p>`;
     const recent = agent.recentPackages || agent.recent || [];
-    document.getElementById("recent-packages").innerHTML = recent.length ? recent.map((item) => `<article class="result-card"><div><div class="result-title"><strong>${escapeHTML(item.name || item.packageId || item.id)}</strong><span class="pill">${escapeHTML(item.type || "package")}</span></div>${packageSubtitle(item)}<p class="result-summary">${escapeHTML(item.description || t("暂无描述"))}</p>${renderPackageTags(item, 8)}</div><div class="result-version"><strong>${escapeHTML(item.version || item.latest || "unknown")}</strong><span>${escapeHTML(formatDate(item.updatedAt))}</span></div></article>`).join("") : `<p class="muted">${escapeHTML(t("暂无最近更新记录"))}</p>`;
+    document.getElementById("recent-packages").innerHTML = recent.length ? recent.map((item) => `<article class="result-card"><div><div class="result-title"><strong>${escapeHTML(item.displayName || item.name || item.packageId || item.id)}</strong><span class="pill">${escapeHTML(item.type || "package")}</span></div><p class="result-summary">${escapeHTML(item.description || t("暂无描述"))}</p>${renderPackageTags(item, 8)}</div><div class="result-version"><strong>${escapeHTML(item.version || item.latest || "unknown")}</strong><span>${escapeHTML(formatDate(item.updatedAt))}</span></div></article>`).join("") : `<p class="muted">${escapeHTML(t("暂无最近更新记录"))}</p>`;
   }
   window.addEventListener("forge:localechange", () => {
     if (!state.ready) return;

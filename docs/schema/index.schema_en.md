@@ -52,3 +52,7 @@ Optional entry fields `facets` and `customFacets` copy controlled and user-defin
 ## Display media summary
 
 Optional `packageEntry.media` copies the icon and at most the first preview from the selected package version. Each image requires a credential-free absolute HTTPS `url` and nonblank `alt`; a preview may have `theme`. The full ordered gallery belongs to the record at `path`. Omit the summary when that version has no media, even if an older version has images. Strict old index validators must be upgraded before producers emit this optional v2 field. References are unverified and do not change package identity, classification or compatibility.
+
+## Package titles
+
+Optional `packageEntry.displayName` copies the selected latest version's display name. Pages titles prefer `displayName`, falling back to the source-local package name. Canonical `id` is not a title or subtitle; it remains in detail technical information. Display names do not change identity, index keys or routes. Omit this field when the selected version has no display name; never inherit an older version's title.

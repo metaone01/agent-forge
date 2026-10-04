@@ -12,7 +12,7 @@
 3. 上传采用“站内可视化填写 → 自动生成 Schema v2 JSON → GitHub 预填 Issue → 用户最终确认提交”。当前没有后端，本期不增加后台代提交、OAuth 服务或浏览器写权限 token。
 4. 保留独立 Agent JSON 入口，允许直接提供完整 JSON；人类入口不要求用户手写 JSON。
 5. `Submission Notes` 为可选项，缺失或为空均不阻止提交和自动化处理。
-6. 包的 `name` 为主标题，canonical `id` 为副标题；不改变包身份、索引键或路由语义。
+6. 包标题优先使用 `displayName`，缺失时使用 `name`；不展示 canonical `id` 副标题，不改变包身份、索引键或路由语义。
 7. 全站支持简体中文与 English，以及亮色、暗色、跟随系统三种主题模式。
 
 ## 2. 范围与边界
@@ -89,8 +89,8 @@
 
 #### 名称与身份
 
-- `name` 作为主标题，canonical `id` 作为副标题，ID 可复制。
-- `displayName` 不覆盖已确认的主标题规则；如需展示，仅作为补充信息。
+- 标题恢复为 `displayName` → `name`，canonical `id` 仅保留在详情的技术信息中。
+- 索引携带最新版本的 `displayName`，保证列表、详情和最近更新展示规则一致；显示名不参与身份和路由。
 - 同步目录卡片、详情及 Dashboard 中的包条目；缺失字段明确回退，不把内部组合键误当 canonical ID。
 - 不修改路由、索引键、身份、去重或版本选择逻辑；长名称、Unicode 与长 ID 在窄屏可读。
 

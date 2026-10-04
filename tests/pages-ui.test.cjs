@@ -43,7 +43,7 @@ function environment({ stored = {}, storageThrows = false, dark = false, legacyM
 }
 function appEnvironment(options) {
   const env = environment(options);
-  const exposed = appSource.replace('  if (page === "dashboard") startDashboard(); else if (page === "agent-dashboard") startAgentDashboard(); else startCatalog();', '  globalThis.app = { state, normalizeIndex, dataPathFor, safeHref, safeImageURL, imageSlot, renderGallery, renderPackageTags, hydrate, renderResults, renderDetail, normalizeDashboard, renderDashboard, startAgentDashboard };');
+  const exposed = appSource.replace('  if (page === "dashboard") startDashboard(); else if (page === "agent-dashboard") startAgentDashboard(); else startCatalog();', '  globalThis.app = { state, normalizeIndex, dataPathFor, safeHref, safeImageURL, imageSlot, renderGallery, renderPackageTags, hydrate, renderResults, renderDetail, normalizeDashboard, renderDashboard, renderAgentDashboard, startAgentDashboard };');
   vm.runInContext(exposed, env.context);
   env.app = env.context.app;
   return env;
@@ -132,7 +132,7 @@ test('defaults ignore browser language, resolve system theme synchronously, and 
 });
  test('normalizeIndex separates canonical id, internal key, name and legacy name-key routes', () => {
   const env = appEnvironment();
-  const [entry] = env.app.normalizeIndex({ agentId: 'dsh', type: 'mcp', packages: { 'route/工具': { id: 'canonical.tool', name: '真实 name', displayName: 'Wrong title', path: 'p.json', customFacets: { team: ['core'] } } } }, 'https://example.test/project/data/dsh/mcp/index.json');
+  const [entry] = env.app.normalizeIndex({ agentId: 'dsh', type: 'mcp', packages: { 'route/工具': { id: 'canonical.tool', name: '真实 name', displayName: '展示标题', path: 'p.json', customFacets: { team: ['core'] } } } }, 'https://example.test/project/data/dsh/mcp/index.json');
   assert.equal(entry.id, 'canonical.tool'); assert.equal(entry.packageId, 'canonical.tool'); assert.equal(entry.key, 'dsh:mcp:route/工具');
   assert.equal(entry.name, '真实 name'); assert.equal(entry.routeName, 'route/工具'); assert.equal(entry.customFacets.team[0], 'core');
   assert.equal(entry.path, 'https://example.test/project/data/dsh/mcp/p.json');
@@ -152,22 +152,40 @@ test('defaults ignore browser language, resolve system theme synchronously, and 
   assert.match(full, /&lt;script&gt;/); assert.doesNotMatch(full, /empty:|null/); assert.equal((full.match(/class="tag tag-/g) || []).length, 5);
   ui.setLocale('en'); const card = app.renderPackageTags(record, 3); assert.match(card, /2 more tags/); assert.doesNotMatch(card, />fast</); assert.equal(app.renderPackageTags({ facets: { empty: [] }, keywords: [''] }), '');
 });
- test('cards use name then canonical id, preserve page and filter inputs on re-render', () => {
+ test('cards prefer displayName, fall back to name, hide canonical IDs and preserve pagination', () => {
   const env = appEnvironment(); addNodes(env, ['results', 'empty-state', 'result-count', 'catalog-status', 'revision-stamp', 'pagination', 'page-number', 'page-total', 'page-range', 'previous-page', 'next-page', 'query']);
-  const entries = env.app.normalizeIndex({ agentId: 'dsh', type: 'mcp', packages: Object.fromEntries(Array.from({ length: 80 }, (_, i) => ['name-' + i, { id: 'canonical-' + i, displayName: 'DO NOT TITLE', keywords: ['test'] }])) }, 'https://example.test/project/data/dsh/mcp/index.json');
+  const entries = env.app.normalizeIndex({ agentId: 'dsh', type: 'mcp', packages: Object.fromEntries(Array.from({ length: 80 }, (_, i) => ['name-' + i, { id: 'canonical-' + i, displayName: i === 50 ? '展示 <包名>' : i === 51 ? '' : undefined, keywords: ['test'] }])) }, 'https://example.test/project/data/dsh/mcp/index.json');
   env.app.state.entries = entries; env.app.state.filtered = entries; env.app.state.resultPage = 1; env.nodes.get('query').value = 'unchanged';
   env.app.renderResults(); env.ui.setLocale('en'); env.app.renderResults();
   assert.equal(env.app.state.resultPage, 1); assert.equal(env.nodes.get('query').value, 'unchanged'); assert.equal(env.nodes.get('page-number').value, 2);
-  assert.match(env.nodes.get('results').innerHTML, /<strong>name-50<\/strong>/); assert.match(env.nodes.get('results').innerHTML, /class="package-id">canonical-50/); assert.doesNotMatch(env.nodes.get('results').innerHTML, /DO NOT TITLE/);
+  assert.match(env.nodes.get('results').innerHTML, /<strong>展示 &lt;包名&gt;<\/strong>/); assert.match(env.nodes.get('results').innerHTML, /<strong>name-51<\/strong>/); assert.match(env.nodes.get('results').innerHTML, /<strong>name-52<\/strong>/); assert.doesNotMatch(env.nodes.get('results').innerHTML, /package-id|canonical-/); assert.match(env.nodes.get('results').innerHTML, /#\/package\/dsh\/mcp\/name-50/);
   assert.match(env.nodes.get('page-total').textContent, /pages/);
 });
- test('hydrate shares concurrent requests, keeps canonical ID and ignores displayName', async () => {
+ test('hydrate shares concurrent requests and preserves canonical ID, name and displayName', async () => {
   let calls = 0;
-  const env = appEnvironment({ fetch: async () => { calls++; return { ok: true, json: async () => ({ id: 'canonical.hydrated', name: 'package name', displayName: 'Wrong' }) }; } });
+  const env = appEnvironment({ fetch: async () => { calls++; return { ok: true, json: async () => ({ id: 'canonical.hydrated', name: 'package name', displayName: '展示标题' }) }; } });
   const entry = { key: 'dsh:mcp:route', packageId: 'canonical.index', name: 'route', path: 'https://example.test/p.json' };
   const [first, second] = await Promise.all([env.app.hydrate(entry), env.app.hydrate(entry)]);
-  assert.equal(calls, 1); assert.equal(first, second); assert.equal(first.packageId, 'canonical.hydrated'); assert.equal(first.name, 'package name');
+  assert.equal(calls, 1); assert.equal(first, second); assert.equal(first.packageId, 'canonical.hydrated'); assert.equal(first.name, 'package name'); assert.equal(first.displayName, '展示标题');
   await env.app.hydrate(entry); assert.equal(calls, 1);
+});
+ test('detail and recent cards restore display names while keeping canonical identity separate', async () => {
+  const record = { id: 'plugin.hash', name: 'owner/repo', displayName: '<真实包名>', version: '1.0.0', pluginDetails: {} };
+  const env = appEnvironment({ fetch: async () => ({ ok: true, json: async () => record }) });
+  addNodes(env, ['main', 'agent-title', 'agent-description', 'global-metrics', 'agent-type-chart', 'agent-facet-chart', 'recent-packages']);
+  const [entry] = env.app.normalizeIndex({ agentId: 'dsh', type: 'plugin', packages: { 'owner/repo': { ...record, path: 'p.json' } } }, 'https://example.test/project/data/dsh/plugin/index.json');
+  env.app.state.entries = [entry];
+  await env.app.renderDetail('dsh', 'plugin', 'owner/repo');
+  assert.match(env.nodes.get('main').innerHTML, /<h1>&lt;真实包名&gt;<\/h1>/);
+  assert.doesNotMatch(env.nodes.get('main').innerHTML, /class="package-id"/);
+  assert.match(env.nodes.get('main').innerHTML, /plugin.hash/);
+  assert.equal(env.app.state.detailCache.get(entry.key).id, 'plugin.hash');
+  assert.equal(entry.routeName, 'owner/repo');
+  env.app.renderAgentDashboard({ id: 'dsh', global: {}, agent: { counts: {}, byType: {}, facets: {}, recentPackages: [record, { ...record, displayName: '' }] } });
+  const recent = env.nodes.get('recent-packages').innerHTML;
+  assert.match(recent, /<strong>&lt;真实包名&gt;<\/strong>/);
+  assert.match(recent, /<strong>owner\/repo<\/strong>/);
+  assert.doesNotMatch(recent, /plugin.hash|package-id/);
 });
  test('stale detail responses cannot replace a newer route', async () => {
   let resolve;
@@ -198,10 +216,10 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
   const mediaRequests = [], unexpectedImageRequests = [], sourceRequests = [], sourceGenerations = {};
   const packages = Object.fromEntries(Array.from({ length: 123 }, (_, i) => {
     const name = 'tool/工具-' + String(i).padStart(3, '0');
-    return [name, { id: 'canonical.tool-' + i, name, displayName: 'DO NOT TITLE', latest: '1.0.0', versions: ['1.0.0'], path: 'p/' + i + '.json', summary: 'Searchable package', ...recordTags, subtype: 'skin', media: [0, 50].includes(i) ? mediaIndex : i === 1 ? { icon: { url: 'javascript:alert(1)', alt: 'Invalid' } } : undefined }];
+    return [name, { id: 'canonical.tool-' + i, name, displayName: i % 2 === 0 ? '展示工具-' + String(i).padStart(3, '0') : undefined, latest: '1.0.0', versions: ['1.0.0'], path: 'p/' + i + '.json', summary: 'Searchable package', ...recordTags, subtype: 'skin', media: [0, 50].includes(i) ? mediaIndex : i === 1 ? { icon: { url: 'javascript:alert(1)', alt: 'Invalid' } } : undefined }];
   }));
   const requests = [];
-  const agentDashboard = { counts: { packages: 123, versions: 123 }, byType: { plugin: 123 }, facets: { node: 123 }, recentPackages: [{ id: 'canonical.recent', name: 'recent name', displayName: 'DO NOT TITLE', version: '1.0.0', ...recordTags }] };
+  const agentDashboard = { counts: { packages: 123, versions: 123 }, byType: { plugin: 123 }, facets: { node: 123 }, recentPackages: [{ id: 'canonical.recent', name: 'recent name', displayName: '最近展示包名', version: '1.0.0', ...recordTags }] };
   const server = http.createServer((req, res) => {
     const pathname = new URL(req.url, 'http://localhost').pathname;
     if (!pathname.startsWith('/project/')) { res.writeHead(404).end(); return; }
@@ -342,8 +360,8 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     await cdp('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: 'dark' }] });
     await navigate('', 'document.querySelectorAll(".result-card").length === 50');
     assert.deepEqual(await evaluate('({locale:ForgeUI.locale,theme:ForgeUI.theme,resolved:document.documentElement.dataset.theme,base:ForgeUI.siteBase.href,controls:document.querySelectorAll(".forge-preferences").length})'), { locale: 'zh-CN', theme: 'system', resolved: 'dark', base, controls: 1 });
-    assert.equal(await evaluate('document.querySelector(".result-title strong").textContent'), 'tool/工具-000');
-    assert.equal(await evaluate('document.querySelector(".package-id").textContent'), 'canonical.tool-0');
+    assert.equal(await evaluate('document.querySelector(".result-title strong").textContent'), '展示工具-000');
+    assert.equal(await evaluate('document.querySelectorAll(".package-id").length'), 0);
     assert.equal(await evaluate('document.querySelector(".result-card .tag-more").textContent'), '另有 2 个标签');
     assert.equal(await evaluate('document.querySelector(".result-card .tag-list").children.length'), 9);
     assert.equal(mediaRequests.length, 0);
@@ -378,7 +396,9 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     const route = await evaluate('document.querySelector(".result-link").getAttribute("href")');
     await evaluate('document.querySelector(".result-link").click()');
     await waitFor('!!document.querySelector(".detail-heading")');
-    assert.equal(await evaluate('document.querySelector(".detail-heading h1").textContent'), 'tool/工具-050');
+    assert.equal(await evaluate('document.querySelector(".detail-heading h1").textContent'), '展示工具-050');
+    assert.equal(await evaluate('document.querySelectorAll(".detail-heading .package-id").length'), 0);
+    assert.match(await evaluate('document.querySelector(".facts").textContent'), /canonical.tool-50/);
     assert.equal(await evaluate('document.querySelector(".detail-main .tag-list").children.length'), 10);
     assert.equal(await evaluate('document.querySelector(".external-link").getAttribute("href")'), '#');
     assert.equal(await evaluate('document.querySelectorAll(".preview-gallery figure").length'), 3);
@@ -412,8 +432,8 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     const beforeDashboardLocale = requests.length;
     await evaluate('ForgeUI.setLocale("zh-CN")'); assert.match(await evaluate('document.getElementById("global-metrics").textContent'), /元数据版本记录/); assert.equal(requests.length, beforeDashboardLocale);
     await navigate('dashboard/agent/?id=dsh', 'document.querySelectorAll("#recent-packages .result-card").length === 1');
-    assert.equal(await evaluate('ForgeUI.siteBase.href'), base); assert.equal(await evaluate('document.querySelector("#recent-packages strong").textContent'), 'recent name');
-    assert.equal(await evaluate('document.querySelector("#recent-packages .package-id").textContent'), 'canonical.recent');
+    assert.equal(await evaluate('ForgeUI.siteBase.href'), base); assert.equal(await evaluate('document.querySelector("#recent-packages strong").textContent'), '最近展示包名');
+    assert.equal(await evaluate('document.querySelectorAll("#recent-packages .package-id").length'), 0);
     await evaluate('ForgeUI.setLocale("en")'); assert.match(await evaluate('document.getElementById("agent-description").textContent'), /Agent dsh/);
     await cdp('Emulation.setDeviceMetricsOverride', { width: 360, height: 780, deviceScaleFactor: 1, mobile: false });
     assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth'), true);

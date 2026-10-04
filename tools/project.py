@@ -246,6 +246,9 @@ def build_projection(
             elif str(version) > str(entry["latest"]):
                 entry["latest"] = version
             if version == entry["latest"]:
+                entry.pop("displayName", None)
+                if record.get("displayName"):
+                    entry["displayName"] = record["displayName"]
                 entry.pop("media", None)
                 summary_media = media_summary(record)
                 if summary_media:
