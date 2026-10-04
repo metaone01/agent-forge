@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  const UI = window.ForgeUI, Core = window.ForgeSubmission;
+  const UI = window.ForgeUI, Core = window.ForgeSubmission, Source = window.ForgeSource;
   const byId = (id) => document.getElementById(id);
   const own = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key);
   UI.addMessages({
@@ -18,11 +18,93 @@
       "submit.agentHelp": "Paste or import one complete Schema v2 record. Valid advanced fields and extension data are preserved. Agents can also create an Issue labeled package-submission with their own authorized GitHub tools.", "submit.schemaLink": "Machine-readable Schema", "submit.contractLink": "Agent submission contract", "submit.exampleLink": "Complete example", "submit.import": "Import JSON file", "submit.jsonLabel": "Complete package JSON", "submit.notes": "Submission Notes (optional)", "submit.notesHelp": "Optionally explain sources or compatibility. Notes are not part of the package JSON.", "submit.preview": "Generated JSON", "submit.checkBoundary": "The browser checks field constraints from this Schema. CI performs final cross-file and Bundle semantic checks.", "submit.copy": "Copy JSON", "submit.download": "Download JSON", "submit.create": "Review on GitHub", "submit.longURL": "This record is too long for our URL handoff. Nothing is truncated. Copy JSON into the Canonical package JSON field in the GitHub form and confirm submission.", "submit.copyIssue": "Copy complete Issue body", "submit.blankIssue": "Open GitHub JSON form ↗", "submit.footer": "Drafts stay in this browser. Do not enter tokens, passwords or other secrets.", "submit.reference": "Package field reference",
       "submit.deepData": "Deep extension data is preserved. Use the Agent / JSON editor to change this section.", "submit.optional": "Add optional fields", "submit.add": "Add", "submit.remove": "Remove", "submit.item": "Item {number}", "submit.addKey": "Add extension property", "submit.keyPrompt": "Property name (_meta keys must use a namespace)", "submit.keyError": "Property name is empty or already exists.", "submit.type": "Value type", "submit.null": "Not provided (null)", "submit.valid": "Field checks passed. GitHub / CI still performs final review.", "submit.copied": "Copied.", "submit.copyFailed": "Automatic copy is unavailable. Select and copy the preview or JSON input manually.", "submit.jsonError": "Could not parse JSON: {message}", "submit.objectError": "Enter one JSON object record.", "submit.restore": "Restored the draft from this browser.", "submit.saved": "The draft stays in this browser. You must still confirm submission on GitHub.", "submit.noStorage": "Draft storage is unavailable. Copy or download JSON before leaving.", "submit.typeChanged": "Package type changed. Previous type-specific fields stay in this session; switch back to restore them.", "submit.switchError": "Fix the JSON syntax before switching to the visual form.", "submit.fileError": "Could not read the JSON file.", "submit.fileTooLarge": "File exceeds 2 MiB. Reduce the record size and try again.", "submit.popup": "If GitHub did not open, allow new windows for this site. Your draft is preserved.",
       "error.required": "Required field", "error.type": "Expected {expected}", "error.const": "Must equal {expected}", "error.enum": "Choose one of: {expected}", "error.minLength": "At least {expected} characters", "error.maxLength": "At most {expected} characters", "error.pattern": "Does not match the Schema pattern", "error.format": "Expected {expected} format", "error.minimum": "Must be at least {expected}", "error.maximum": "Must be at most {expected}", "error.minItems": "At least {expected} items", "error.maxItems": "At most {expected} items", "error.minProperties": "At least {expected} properties", "error.maxProperties": "At most {expected} properties", "error.uniqueItems": "Duplicate items", "error.additionalProperties": "Field is not allowed", "error.oneOf": "Must match exactly one allowed structure", "error.anyOf": "Does not match an allowed structure", "error.not": "This type does not allow these fields", "error.false": "Field is not allowed",
-      "field.name": "Package name", "field.id": "Package ID", "field.version": "Version", "field.type": "Package / distribution type", "field.description": "Description", "field.license": "License", "field.targets": "Agent targets", "field.distributions": "Distribution candidates", "field.agentId": "Agent ID", "field.compatibilityStatus": "Compatibility", "field.agentVersionRange": "Agent version range", "field.compatibilityNote": "Compatibility note", "field.versionScheme": "Version scheme", "field.url": "URL", "field.mcpDetails": "MCP details", "field.pluginDetails": "Plugin details", "field.skillDetails": "Skill details", "field.generalDetails": "General details", "field.bundleDetails": "Bundle details", "field.registryType": "Registry type", "field.identifier": "Upstream identifier", "field.transport": "Transport", "field.registryBaseUrl": "Registry base URL", "field.manifestPath": "Manifest path", "field.skillPath": "Skill path", "field.toolType": "Tool nature", "field.agentUse": "Agent use", "field.members": "Bundle members", "field.memberType": "Member type", "field.memberId": "Member ID", "field.links": "Project and document links", "field.repository": "Repository", "field.homepage": "Homepage", "field.readme": "README", "field.documentation": "Documentation", "field.issues": "Issues URL", "field.facets": "Controlled facets (unverified)", "field.customFacets": "Custom tags (unverified)", "field.keywords": "Keyword tags", "field.capabilities": "Capabilities", "field.effects": "Effects", "field.dataPractices": "Data practices", "field.permissions": "Permissions", "field.runtime": "Runtime", "field.integrations": "Integrations", "field.other": "Other", "field.displayName": "Additional display name", "field.subtype": "Subtype", "field._meta": "Namespaced extension data", "field.publishedAt": "Upstream publication time", "field.updatedAt": "Updated at", "field.createdAt": "Metadata record created at", "field.releaseNotes": "Release notes", "field.status": "Status", "field.priority": "Priority", "field.ref": "Upstream Git ref", "field.registry": "Registry", "field.notes": "Notes"
+      "field.media": "Display images (external, unverified)", "field.icon": "Icon", "field.previews": "Static previews", "field.alt": "Image description", "field.theme": "Preview theme", "field.name": "Package name", "field.id": "Package ID", "field.version": "Version", "field.type": "Package / distribution type", "field.description": "Description", "field.license": "License", "field.targets": "Agent targets", "field.distributions": "Distribution candidates", "field.agentId": "Agent ID", "field.compatibilityStatus": "Compatibility", "field.agentVersionRange": "Agent version range", "field.compatibilityNote": "Compatibility note", "field.versionScheme": "Version scheme", "field.url": "URL", "field.mcpDetails": "MCP details", "field.pluginDetails": "Plugin details", "field.skillDetails": "Skill details", "field.generalDetails": "General details", "field.bundleDetails": "Bundle details", "field.registryType": "Registry type", "field.identifier": "Upstream identifier", "field.transport": "Transport", "field.registryBaseUrl": "Registry base URL", "field.manifestPath": "Manifest path", "field.skillPath": "Skill path", "field.toolType": "Tool nature", "field.agentUse": "Agent use", "field.members": "Bundle members", "field.memberType": "Member type", "field.memberId": "Member ID", "field.links": "Project and document links", "field.repository": "Repository", "field.homepage": "Homepage", "field.readme": "README", "field.documentation": "Documentation", "field.issues": "Issues URL", "field.facets": "Controlled facets (unverified)", "field.customFacets": "Custom tags (unverified)", "field.keywords": "Keyword tags", "field.capabilities": "Capabilities", "field.effects": "Effects", "field.dataPractices": "Data practices", "field.permissions": "Permissions", "field.runtime": "Runtime", "field.integrations": "Integrations", "field.other": "Other", "field.displayName": "Additional display name", "field.subtype": "Subtype", "field._meta": "Namespaced extension data", "field.publishedAt": "Upstream publication time", "field.updatedAt": "Updated at", "field.createdAt": "Metadata record created at", "field.releaseNotes": "Release notes", "field.status": "Status", "field.priority": "Priority", "field.ref": "Upstream Git ref", "field.registry": "Registry", "field.notes": "Notes"
     }
   });
+  UI.addMessages({
+    "zh-CN": { "field.media": "展示图片（外链，未核验）", "field.icon": "图标", "field.previews": "静态预览图", "field.alt": "图片文字描述", "field.theme": "预览主题" }
+  });
+  UI.addMessages({
+  "zh-CN": {
+    "source.heading": "从来源自动填写",
+    "source.help": "输入公开 GitHub 仓库或 HTTPS JSON 地址。离开输入框后自动读取；先选择下方包类型。只读取元数据，不执行代码，也不加载图片。",
+    "source.url": "来源地址",
+    "source.fetch": "读取来源",
+    "source.cancel": "取消",
+    "source.options": "分支与子目录（可选）",
+    "source.ref": "分支 / tag / commit",
+    "source.path": "子目录 / manifest 路径",
+    "source.boundary": "读取会向来源站点发送无凭据请求。现有手动内容优先；自动填入且未修改的字段可随来源刷新；无法确认的 ID、版本、Agent 兼容性仍需填写。README 图片只从仓库根 README 提取；根 README 缺失时不向子目录兜底。没有图标时不会用截图补成图标。",
+    "source.loading": "正在读取公开元数据…你仍可编辑，手动修改会保留。",
+    "source.done": "已填入 {filled} 个字段，保留 {kept} 个已有或已编辑字段。请检查来源声明并补齐必填项。",
+    "source.cancelled": "已取消读取，草稿未被此次请求修改。",
+    "source.failed": "读取失败：{reason}。草稿已保留，可重试或手动填写。",
+    "source.candidates": "README 图片候选（用途未确认，不自动写入）",
+    "source.addPreview": "加入 previews",
+    "source.added": "已加入",
+    "source.limit": "预览最多 12 张，请先移除不需要的条目。",
+    "source.report": "读取文件 {count} 个；跳过徽章 {skipped} 张；待处理问题 {issues} 项。",
+    "source.conflicts": "保留字段：{paths}",
+    "source.issue": "问题：{issues}",
+    "source.reason.network": "网络或 CORS 不允许读取",
+    "source.reason.rate-limit": "GitHub 限流或拒绝访问",
+    "source.reason.not-found": "公开来源不存在或不可读取",
+    "source.reason.ambiguous-ref": "此 tree/blob 地址需明确填写分支名，或改用仓库地址",
+    "source.reason.partial-source": "部分文件读取失败，已保留上次草稿，请重试",
+    "source.reason.multiple-manifests": "发现多个 manifest，请在路径中指定所需 JSON 文件",
+    "source.reason.type-mismatch": "JSON 的包类型与当前表单不同，请切换类型后重试",
+    "source.reason.too-large": "单文件超过 1 MiB",
+    "source.reason.json": "来源不是有效 JSON",
+    "source.reason.source-url": "请使用无凭据 HTTPS 地址或 owner/repo",
+    "source.reason.source-query": "来源地址不能包含 query 或 fragment",
+    "source.reason.source-path": "路径仅用于子目录、JSON manifest 或 SKILL.md，README 始终从仓库根读取",
+    "source.reason.source-json": "非 GitHub 来源必须是 HTTPS .json 地址，且支持 CORS",
+    "source.reason.metadata-object": "JSON 必须是元数据对象",
+    "source.reason.timeout": "读取超时",
+    "source.reason.generic": "来源格式不受支持或响应不完整"
+  },
+  "en": {
+    "source.heading": "Fill from a source",
+    "source.help": "Enter a public GitHub repository or HTTPS JSON URL. Leaving the input starts reading; select the package type below first. Only metadata is read; code and images are not loaded.",
+    "source.url": "Source URL",
+    "source.fetch": "Read source",
+    "source.cancel": "Cancel",
+    "source.options": "Branch and subdirectory (optional)",
+    "source.ref": "Branch / tag / commit",
+    "source.path": "Subdirectory / manifest path",
+    "source.boundary": "Reading sends credential-free requests to the source. Existing manual content wins; untouched auto-filled fields refresh with the source. Missing IDs, versions and Agent compatibility need your input. README images come only from the repository root, with no subdirectory fallback. A screenshot never becomes a missing icon.",
+    "source.loading": "Reading public metadata… You can keep editing; your changes will be preserved.",
+    "source.done": "Filled {filled} fields and preserved {kept} existing or edited fields. Review source claims and complete required fields.",
+    "source.cancelled": "Reading cancelled; this request did not change the draft.",
+    "source.failed": "Could not read: {reason}. Your draft is preserved; retry or fill manually.",
+    "source.candidates": "README image candidates (unconfirmed, not added automatically)",
+    "source.addPreview": "Add to previews",
+    "source.added": "Added",
+    "source.limit": "At most 12 previews are allowed. Remove an unwanted entry first.",
+    "source.report": "Read {count} files; skipped {skipped} badges; {issues} issues need review.",
+    "source.conflicts": "Preserved fields: {paths}",
+    "source.issue": "Issues: {issues}",
+    "source.reason.network": "Network or CORS prevented reading",
+    "source.reason.rate-limit": "GitHub rate limit or access denied",
+    "source.reason.not-found": "Public source not found or inaccessible",
+    "source.reason.ambiguous-ref": "Specify the branch for this tree/blob URL, or use the repository URL",
+    "source.reason.partial-source": "Some files could not be read; your previous draft is preserved. Retry reading",
+    "source.reason.multiple-manifests": "Multiple manifests found; specify the intended JSON file in the path",
+    "source.reason.type-mismatch": "JSON type differs from the current form; change type and retry",
+    "source.reason.too-large": "A file exceeds 1 MiB",
+    "source.reason.json": "Source is not valid JSON",
+    "source.reason.source-url": "Use a credential-free HTTPS URL or owner/repo",
+    "source.reason.source-query": "Source URLs must not contain queries or fragments",
+    "source.reason.source-path": "Use a subdirectory, JSON manifest or SKILL.md path; README is always read from the repository root",
+    "source.reason.source-json": "Other sources must be HTTPS .json URLs with CORS support",
+    "source.reason.metadata-object": "JSON must be a metadata object",
+    "source.reason.timeout": "Reading timed out",
+    "source.reason.generic": "Unsupported source format or incomplete response"
+  }
+});
   let schema, record = Core.initialRecord(), mode = "form", jsonError = "", touched = false, saving;
-  const expandedSections = new Set();
+  const expandedSections = new Set(), sourceDirty = new Set();
+  let sourceRequest = 0, sourceController, sourceResult, sourceMerge, sourceStatus, sourceActiveKey, sourceState;
   const typeDrafts = {}, storageKey = "agent-forge.submission-draft.v1";
   const t = (key, vars) => UI.t(key, vars);
   const fieldName = (key) => { const name = t(`field.${key}`); return name === `field.${key}` ? key : `${name} · ${key}`; };
@@ -61,7 +143,7 @@
   function persist() {
     clearTimeout(saving);
     saving = setTimeout(() => {
-      try { localStorage.setItem(storageKey, JSON.stringify({ record, mode, json: byId("json-input").value, notes: byId("submission-notes").value })); }
+      try { localStorage.setItem(storageKey, JSON.stringify({ record, mode, json: byId("json-input").value, notes: byId("submission-notes").value, source: { url: byId("source-url").value, ref: byId("source-ref").value, path: byId("source-path").value }, sourceDirty: [...sourceDirty], sourceState })); }
       catch (_) { byId("submission-status").textContent = t("submit.noStorage"); }
     }, 250);
   }
@@ -182,6 +264,7 @@
   }
   function updatePreview() {
     if (!schema) return;
+    byId("source-type").value = record.type;
     byId("json-preview").textContent = mode === "json" && jsonError ? byId("json-input").value : JSON.stringify(record, null, 2);
     const errors = jsonError ? [] : Core.validate(record, schema);
     const box = byId("submission-errors"); box.replaceChildren();
@@ -209,7 +292,7 @@
   }
   function parseInput() {
     touched = true;
-    try { const value = Core.parseRecord(byId("json-input").value); if (!value || Array.isArray(value) || typeof value !== "object") throw new Error(t("submit.objectError")); record = value; jsonError = ""; }
+    try { const value = Core.parseRecord(byId("json-input").value); if (!value || Array.isArray(value) || typeof value !== "object") throw new Error(t("submit.objectError")); record = value; for (const key of Object.keys(value)) sourceDirty.add("/" + key.replace(/~/g, "~0").replace(/\//g, "~1")); jsonError = ""; }
     catch (error) { jsonError = error.message; }
     updatePreview(); persist();
   }
@@ -221,6 +304,91 @@
     else renderForm();
     updatePreview(); persist();
   }
+  function sourceMessage(key, vars) { sourceStatus = { key, vars }; byId("source-status").textContent = t(key, vars); }
+  function cancelSource(message = true) {
+    sourceRequest++; sourceController?.abort(); sourceController = null;
+    byId("cancel-source").hidden = true; byId("fetch-source").disabled = !schema;
+    if (message) sourceMessage("source.cancelled");
+  }
+  function renderSourceReport() {
+    const report = byId("source-report"), candidates = byId("source-candidates");
+    report.replaceChildren(); candidates.replaceChildren();
+    if (!sourceResult) return;
+    report.append(element("p", t("source.report", { count: sourceResult.observations.length, skipped: sourceResult.skipped, issues: sourceResult.issues.length }), "source-report muted"));
+    for (const observation of sourceResult.observations) report.append(element("p", observation.url || observation.repository + " @ " + observation.revision + " / " + observation.path, "source-report muted"));
+    if (sourceMerge?.conflicts.length) report.append(element("p", t("source.conflicts", { paths: sourceMerge.conflicts.join(", ") }), "source-report muted"));
+    if (sourceResult.issues.length) report.append(element("p", t("source.issue", { issues: [...new Set(sourceResult.issues)].join(", ") }), "source-report muted"));
+    if (sourceResult.candidates.length) candidates.append(element("h3", t("source.candidates")));
+    for (const candidate of sourceResult.candidates) {
+      const row = element("div", undefined, "source-candidate"), text = element("span");
+      text.append(element("strong", candidate.alt), element("p", candidate.url, "muted"));
+      const exists = record.media?.previews?.some(image => image.url === candidate.url);
+      const add = button(t(exists ? "source.added" : "source.addPreview"), () => {
+        if (jsonError) { sourceMessage("submit.switchError"); return; }
+        const previews = record.media?.previews || [];
+        if (previews.length >= Source.MAX_PREVIEWS) { sourceMessage("source.limit"); return; }
+        if (previews.some(image => image.url === candidate.url)) return;
+        record.media = { ...(record.media || {}), previews: [...previews, { url: candidate.url, alt: candidate.alt }] };
+        sourceDirty.add("/media/previews"); expandedSections.add("/media");
+        if (mode === "json") byId("json-input").value = JSON.stringify(record, null, 2);
+        changed(true); renderSourceReport();
+      });
+      add.disabled = !!exists; row.append(text, add); candidates.append(row);
+    }
+  }
+  async function fetchSource() {
+    if (!schema || !Source) return;
+    if (jsonError) { sourceMessage("submit.switchError"); return; }
+    const input = byId("source-url").value.trim(), ref = byId("source-ref").value.trim(), path = byId("source-path").value.trim(), type = record.type;
+    const key = JSON.stringify([type, input, ref, path]);
+    if (sourceController && !sourceController.signal.aborted && key === sourceActiveKey) return;
+    cancelSource(false); const request = sourceRequest, controller = new AbortController(); sourceController = controller; sourceActiveKey = key;
+    const baseline = Core.initialRecord(type, record.createdAt), timeout = setTimeout(() => controller.abort("timeout"), 25000);
+    sourceResult = null; sourceMerge = null; renderSourceReport();
+    byId("cancel-source").hidden = false; sourceMessage("source.loading"); persist();
+    try {
+      const result = await Source.acquire(input, { schema, type, ref, path, signal: controller.signal });
+      if (request !== sourceRequest || controller.signal.aborted) return;
+      if (record.type !== type || jsonError) { sourceMessage("source.cancelled"); return; }
+      if (sourceState && result.issues.some(issue => /^(?:readme-(?:unavailable|invalid)|manifest-invalid)/.test(issue))) { sourceResult = result; renderSourceReport(); throw Error("partial-source"); }
+      sourceMerge = Source.mergeAcquired(record, result.fields, { baseline, dirty: [...sourceDirty], previous: sourceState?.managed });
+      record = sourceMerge.record; sourceResult = result;
+      const sourceMeta = record._meta?.["org.agentforge/source-acquisition"];
+      const metaPath = "/_meta/org.agentforge~1source-acquisition";
+      const protectedMeta = [...sourceDirty].some(path => path === metaPath || metaPath.startsWith(path + "/") || path.startsWith(metaPath + "/"));
+      const ownedMeta = sourceMeta === undefined || sourceState?.provenance && JSON.stringify(sourceMeta) === JSON.stringify(sourceState.provenance);
+      sourceState = { managed: sourceMerge.managed };
+      if (!protectedMeta && ownedMeta && (record._meta === undefined || record._meta && typeof record._meta === "object" && !Array.isArray(record._meta))) {
+        record._meta ||= {};
+        sourceState.provenance = { observations: result.observations, fields: Object.keys(sourceMerge.managed) };
+        record._meta["org.agentforge/source-acquisition"] = Core.clone(sourceState.provenance);
+      } else sourceMerge.conflicts.push(metaPath);
+      expandedSections.add("/media");
+      if (mode === "json") byId("json-input").value = JSON.stringify(record, null, 2);
+      changed(true); renderSourceReport(); sourceMessage("source.done", { filled: sourceMerge.filled.length, kept: sourceMerge.conflicts.length });
+    } catch (error) {
+      if (request !== sourceRequest) return;
+      const key = "source.reason." + (controller.signal.reason === "timeout" ? "timeout" : error.message);
+      sourceMessage("source.failed", { reason: t(key) === key ? t("source.reason.generic") : t(key) });
+    } finally {
+      clearTimeout(timeout);
+      if (request === sourceRequest) { sourceController = null; byId("cancel-source").hidden = true; }
+    }
+  }
+  byId("source-type").addEventListener("change", () => { if (jsonError) { sourceMessage("submit.switchError"); byId("source-type").value = record.type; return; } cancelSource(false); sourceDirty.add("/type"); changeType(byId("source-type").value); if (mode === "json") byId("json-input").value = JSON.stringify(record, null, 2); });
+  byId("fetch-source").addEventListener("click", fetchSource);
+  byId("cancel-source").addEventListener("click", () => cancelSource());
+  for (const id of ["source-url", "source-ref", "source-path"]) {
+    byId(id).addEventListener("input", () => { if (sourceController) cancelSource(); sourceResult = null; renderSourceReport(); persist(); });
+    byId(id).addEventListener("change", () => { if (byId("source-url").value.trim()) fetchSource(); });
+    byId(id).addEventListener("keydown", event => { if (event.key === "Enter") { event.preventDefault(); fetchSource(); } });
+  }
+  for (const event of ["input", "change", "click"]) byId("package-form").addEventListener(event, action => {
+    if (event === "click" && action.target.tagName !== "BUTTON") return;
+    const path = action.target.dataset.path || action.target.closest("[data-path]")?.dataset.path;
+    if (path) sourceDirty.add(path);
+    if (path === "/type") cancelSource(false);
+  }, true);
   async function copy(text) {
     try { if (!navigator.clipboard) throw new Error("Clipboard unavailable"); await navigator.clipboard.writeText(text); byId("submission-status").textContent = t("submit.copied"); }
     catch (_) { byId("submission-status").textContent = t("submit.copyFailed"); }
@@ -249,7 +417,7 @@
     if (issue.tooLong) { byId("submission-fallback").hidden = false; byId("submission-fallback").scrollIntoView({ block: "center", behavior: "smooth" }); return; }
     window.open(issue.href, "_blank", "noopener,noreferrer"); byId("submission-status").textContent = t("submit.popup");
   });
-  window.addEventListener("forge:localechange", () => { document.title = t("submit.title"); UI.apply(); updateReference(); renderForm(); updatePreview(); byId("schema-status").textContent = t(schema ? "submit.ready" : "submit.loadError"); byId("submission-status").textContent = ""; });
+  window.addEventListener("forge:localechange", () => { if (sourceStatus) byId("source-status").textContent = t(sourceStatus.key, sourceStatus.vars); renderSourceReport(); document.title = t("submit.title"); UI.apply(); updateReference(); renderForm(); updatePreview(); byId("schema-status").textContent = t(schema ? "submit.ready" : "submit.loadError"); byId("submission-status").textContent = ""; });
   function updateReference() {
     document.querySelector(".footer a").href = new URL(`docs/schema/package.schema${UI.locale === "en" ? "_en" : ""}.html`, UI.siteBase).href;
   }
@@ -258,10 +426,11 @@
     Core.assertSupported(value); schema = value;
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey) || "null");
-      if (saved && saved.record && typeof saved.record === "object" && !Array.isArray(saved.record)) { record = saved.record; byId("submission-notes").value = typeof saved.notes === "string" ? saved.notes : ""; mode = saved.mode === "json" ? "json" : "form"; byId("json-input").value = typeof saved.json === "string" ? saved.json : JSON.stringify(record, null, 2); if (mode === "json") parseInput(); byId("submission-status").textContent = t("submit.restore"); }
+      if (saved && saved.record && typeof saved.record === "object" && !Array.isArray(saved.record)) { sourceState = saved.sourceState; record = saved.record; byId("submission-notes").value = typeof saved.notes === "string" ? saved.notes : ""; mode = saved.mode === "json" ? "json" : "form"; byId("json-input").value = typeof saved.json === "string" ? saved.json : JSON.stringify(record, null, 2); if (mode === "json") parseInput(); byId("submission-status").textContent = t("submit.restore"); for (const path of saved.sourceDirty || Object.keys(record).map(key => "/" + key.replace(/~/g,"~0").replace(/\//g,"~1"))) sourceDirty.add(path); for (const key of ["url", "ref", "path"]) if (typeof saved.source?.[key] === "string") byId("source-" + key).value = saved.source[key]; }
     } catch (_) { /* Storage is optional; the form remains usable. */ }
     byId("schema-status").removeAttribute("data-i18n");
     byId("schema-status").textContent = t("submit.ready");
+    byId("fetch-source").disabled = false;
     renderForm();
     if (mode === "json" && jsonError) { byId("form-panel").hidden = true; byId("json-panel").hidden = false; byId("form-tab").setAttribute("aria-selected", "false"); byId("json-tab").setAttribute("aria-selected", "true"); }
     else switchMode(mode);

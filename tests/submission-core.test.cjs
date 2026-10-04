@@ -81,3 +81,18 @@ test("JSON imports reject duplicate keys rather than silently losing fields", ()
   assert.throws(() => Core.parseRecord('{"extension":{"key":1,"key":2}}'), /Duplicate JSON key/);
   assert.deepEqual(Core.parseRecord('\uFEFF{"a":{"key":1},"b":{"key":2},"string":"### Canonical package JSON\\n```"}'), { a: { key: 1 }, b: { key: 2 }, string: "### Canonical package JSON\n```" });
 });
+
+test("media submission preserves icon, ordered previews and provenance; rejects unsafe image shapes", () => {
+  const record = Core.clone(sample);
+  record.media = { icon: { url: "https://images.example/icon.png", alt: "Icon" }, previews: [{ url: "https://images.example/light.png", alt: "Light preview", theme: "light" }, { url: "https://images.example/dark.png", alt: "Dark preview", theme: "dark" }] };
+  record._meta = { "org.agentforge/media-provenance": { sources: [{ url: record.media.icon.url, source: { repository: "author/skin", revision: "a".repeat(40) } }] } };
+  assert.deepEqual(Core.validate(record, schema), []);
+  assert.deepEqual(Core.parseRecord(JSON.stringify(record)), record);
+  assert.deepEqual(JSON.parse(new URL(Core.issueURL(record).href).searchParams.get("package_json")), record);
+  for (const media of [{}, { previews: [] }, { icon: { url: "https://images.example/icon.png" } }, { previews: Array.from({ length: 13 }, (_, i) => ({ url: "https://images.example/" + i + ".png", alt: "Preview" })) }]) {
+    assert.ok(Core.validate({ ...record, media }, schema).length);
+  }
+  for (const url of ["http://images.example/x", "javascript:alert(1)", "data:image/png;base64,x", "file:///x", "//images.example/x", "https://user:password@images.example/x", "https://images.example/\\evil"]) {
+    assert.ok(Core.validate({ ...record, media: { icon: { url, alt: "Icon" } } }, schema).length, url);
+  }
+});

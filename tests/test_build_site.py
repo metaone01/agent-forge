@@ -542,10 +542,12 @@ let browser, socket;
   await cdp('Browser.grantPermissions',{origin:new URL(base).origin,permissions:['clipboardReadWrite','clipboardSanitizedWrite']});
   await evaluate('window.scrollTo(0, document.querySelector(".code-block").getBoundingClientRect().top + scrollY - document.querySelector(".topbar").offsetHeight - 16)');
   if (screenshots) fs.writeFileSync(path.join(screenshots,'docs-mobile-code.png'),Buffer.from((await cdp('Page.captureScreenshot',{format:'png'})).data,'base64'));
+  await cdp('Page.bringToFront');
   const copyResult = await cdp('Runtime.evaluate', {expression:'document.querySelector("[data-copy]").click()', userGesture:true});
   assert.ok(!copyResult.exceptionDetails);
   await waitFor('document.querySelector("[data-copy]").textContent === "Copied"');
   // Windows clipboard is CRLF; DOM code text is LF. Content must otherwise match exactly.
+  await waitFor("(async()=> (await navigator.clipboard.readText()).replace(/\\r\\n/g, \"\\n\") === document.querySelector(\"pre code\").textContent)()");
   assert.equal((await evaluate('navigator.clipboard.readText()')).replace(/\r\n/g, "\n"), await evaluate('document.querySelector("pre code").textContent'));
   await evaluate('ForgeUI.setLocale("zh-CN")');
   await waitFor('location.pathname.endsWith("/docs/schema/package.schema.html") && document.readyState === "complete" && document.body.dataset.docLocale === "zh-CN"');

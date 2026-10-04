@@ -46,3 +46,13 @@ Visit `/`, `/docs/` and `/submit/`. Opening HTML directly or serving only `site/
 The additive builder never recursively deletes directories and rejects unsafe source/output overlaps and linked destinations. Data input and staging output must be separate. Supported Markdown is documented in `--help`; Mermaid stays as copyable code, and raw HTML is not executed.
 
 Main-only workflow changes are delivered separately in `docs/pages-control-plane.patch`; see `docs/PAGES-CONTROL-PLANE-HANDOFF.zh-CN.md`. No control workflow is added to the data branch. Live Issue/PR creation and deployment require separate approval and acceptance.
+
+## Optional display media
+
+Catalog indexes retain optional `media` summaries; skin cards show the first preview, and records provide the complete static gallery. External HTTPS images are blocked until the user explicitly enables them for the current page session. Images use lazy loading, no-referrer and fixed fallback slots. There is no image proxy or interactive plugin execution. The schema-driven submission form supports `media.icon` and `media.previews` and preserves them through JSON import and Issue handoff. Upgrade strict v2 validators before media-bearing data is released; see `docs/MEDIA-MIGRATION.zh-CN.md` in the repository.
+
+## Source-assisted entry
+
+The upload page reads public GitHub repositories (optional ref/subdirectory) and CORS-enabled HTTPS JSON. Finishing input starts a read; retry and cancel are available. GitHub relative image paths are pinned to the resolved commit. Explicit manifest icons or README images labelled icon/logo are independent of screenshots; previews never fill a missing icon. README images are extracted only from the repository root README. Subdirectory / manifest paths locate metadata only; a missing root README never falls back to a child README. README screenshots are added to previews, badges are excluded, and other image candidates require manual selection.
+
+Existing content and manually edited or cleared fields win, including edits during a read. Results and issues remain visible. Restoring a draft never re-fetches sources. Missing identities, versions and Agent compatibility are not invented. No code is run, no images are downloaded and no token is accepted. Limits, CORS failures and timeouts are shown explicitly. The read-only `tools/acquire_source.cjs` shares the Pages extractor and can emit reviewed backfill observations.

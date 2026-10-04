@@ -51,3 +51,15 @@ uv run python -m http.server 8000 --bind 127.0.0.1 --directory pages-staging
 `build_site.py` 增量装配，不递归删除目录，拒绝源/输出重叠及链接路径。数据输入必须与输出分离。Markdown 支持范围见其 `--help`；Mermaid 等未执行语言保留为代码，Raw HTML 不执行。
 
 控制流程调整仅作为针对 `main` 的补丁交付，见 `docs/PAGES-CONTROL-PLANE-HANDOFF.zh-CN.md`。当前数据分支不增加控制工作流；真实 Issue/PR 和 Pages 发布需单独授权及验收。
+
+## 可选展示媒体
+
+索引可携带 `media` 摘要；skin 卡片显示首张预览，完整静态画廊读取版本记录。外链 HTTPS 图片默认不加载，用户在当前页面会话明确允许后才请求；使用懒加载、no-referrer 和固定失败占位，不代理图片、不执行插件。Schema 驱动的提交表单支持 `media.icon`、`media.previews`，JSON 导入与 Issue 交接保留原字段。发布媒体数据前先升级严格 v2 验证器；部署与回填说明见仓库中的 `docs/MEDIA-MIGRATION.zh-CN.md`。
+
+## 来源自动填写
+
+上传页支持公开 GitHub 仓库（可指定分支和子目录）和允许 CORS 的 HTTPS JSON。输入结束后读取，也可手动重试／取消。GitHub 图片相对路径固定到实际 commit；manifest 与明确标注 icon/logo 的 README 图片独立提供图标，截图不会补成图标。README 图片始终只从仓库根 README 提取；子目录 / manifest 路径仅定位元数据，根 README 缺失时不向子目录兜底。README 截图自动加入 previews，徽章过滤，其他图片候选需手动选择。
+
+既有手动字段、已清空或正在手动编辑的字段优先；未修改的自动字段支持刷新和换源清理，来源记录同步更新。多 manifest 要求明确路径，部分读取失败保留已有采集草稿；读取结果与问题列在面板中。草稿恢复不会重新发送外部请求。没有声明的 ID、版本和 Agent 兼容性不猜测。只读取 JSON／README，不执行代码，不下载图片，不接收 token。限流、CORS 和超时会明确提示。
+
+采集工具 `tools/acquire_source.cjs` 复用页面模块，默认输出只读 JSON 报告；使用 `--record-path` 可生成供 `tools/backfill_media.py --observations` 审阅的 JSONL，不直接写 canonical 数据。详细边界见 `docs/SOURCE-ACQUISITION.zh-CN.md`。

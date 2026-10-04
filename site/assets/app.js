@@ -4,6 +4,10 @@
 
   const page = document.body.dataset.page || "catalog";
   const ui = window.ForgeUI;
+  ui.addMessages({
+    "zh-CN": { "media.load": "加载外链图片", "media.hide": "隐藏外链图片", "media.notice": "图片来自第三方，未核验。加载后会向图片站点发送请求；本页不发送 Referer。", "media.preview": "静态预览", "media.blocked": "尚未加载", "media.failed": "图片加载失败" },
+    en: { "media.load": "Load external images", "media.hide": "Hide external images", "media.notice": "Unverified third-party images. Loading sends requests to image hosts, without a Referer from this page.", "media.preview": "Static previews", "media.blocked": "Not loaded", "media.failed": "Image unavailable" }
+  });
   const t = ui.t;
   const base = ui.siteBase;
   const dataBase = new URL("data/", base);
@@ -11,7 +15,7 @@
   const types = ["mcp", "plugin", "skill", "general", "bundle"];
   const colors = { mcp: "#0e766e", plugin: "#4876a7", skill: "#c87927", general: "#8667a9", bundle: "#53656a" };
   const pageSize = 50;
-  const state = { manifest: null, entries: [], detailCache: new Map(), detailPending: new Map(), filtered: [], resultPage: 0, sort: "", ready: false, catalogNodes: null, detailRoute: 0, dashboard: null, agentDashboard: null };
+  const state = { manifest: null, entries: [], detailCache: new Map(), detailPending: new Map(), filtered: [], resultPage: 0, sort: "", ready: false, catalogNodes: null, detailRoute: 0, mediaEnabled: false, dashboard: null, agentDashboard: null };
 
   async function getJSON(url, optional) {
     try {
@@ -85,6 +89,7 @@
         subtype: record.subtype || null, latest: record.latest || record.version || "unknown", versions: record.versions || [],
         path: pathFor(path.startsWith("http") ? path : sourceBase + path), recordRevision: record.recordRevision || index.revision,
         summary: record.summary || record.description || "", keywords: record.keywords || [], facets: record.facets || {}, customFacets: record.customFacets || {}, indexPath,
+        media: record.media || null,
         updatedAt: record.updatedAt || index.updatedAt || index.generatedAt,
         searchText: (record.searchText || [name, record.name, record.id, record.packageId, record.displayName, record.summary, record.description, valueText(record.keywords), valueText(record.facets), valueText(record.customFacets), record.subtype].join(" ")).toLowerCase()
       };
@@ -148,6 +153,41 @@
     node.removeAttribute("data-i18n");
     node.textContent = value;
   }
+  function safeImageURL(value) {
+    if (typeof value !== "string" || value.length > 4096 || !value.startsWith("https://") || /[\s<>"{}|\\^`\x00-\x1f\x7f]/.test(value)) return "";
+    try {
+      const url = new URL(value);
+      return url.protocol === "https:" && url.hostname && !url.username && !url.password ? url.href : "";
+    } catch (_) { return ""; }
+  }
+  function imageSlot(asset, kind, fallback) {
+    const url = asset && safeImageURL(asset.url);
+    const alt = asset && typeof asset.alt === "string" ? asset.alt : fallback;
+    const placeholder = '<span class="media-placeholder">' + escapeHTML(fallback) + '</span>';
+    const image = url && state.mediaEnabled ? '<img src="' + escapeHTML(url) + '" alt="' + escapeHTML(alt) + '" loading="lazy" decoding="async" referrerpolicy="no-referrer">' : '';
+    return '<span class="media-slot media-' + kind + '"' + (url && !state.mediaEnabled ? ' title="' + escapeHTML(t("media.blocked")) + '"' : '') + '>' + placeholder + image + '</span>';
+  }
+  function mediaControls() {
+    return '<div class="media-controls"><button type="button" data-media-consent aria-pressed="' + state.mediaEnabled + '">' + escapeHTML(t(state.mediaEnabled ? "media.hide" : "media.load")) + '</button><p>' + escapeHTML(t("media.notice")) + '</p></div>';
+  }
+  function renderGallery(record) {
+    const media = record.media || {};
+    const previews = Array.isArray(media.previews) ? media.previews.slice(0, 12).filter((asset) => asset && safeImageURL(asset.url)) : [];
+    if (!previews.length && !(media.icon && safeImageURL(media.icon.url))) return '';
+    return '<section class="detail-section media-section"><h2>' + escapeHTML(t("media.preview")) + '</h2>' + mediaControls() + (media.icon ? imageSlot(media.icon, "icon", record.type.toUpperCase()) : '') + '<div class="preview-gallery">' + previews.map((asset) => '<figure>' + imageSlot(asset, "preview", t("media.preview")) + '<figcaption>' + escapeHTML(asset.alt || '') + (asset.theme ? ' · ' + escapeHTML(asset.theme) : '') + '</figcaption></figure>').join('') + '</div></section>';
+  }
+  function bindMedia(root) {
+    root.querySelectorAll('[data-media-consent]').forEach((button) => button.addEventListener('click', () => {
+      state.mediaEnabled = !state.mediaEnabled;
+      renderRoute(false);
+    }));
+    root.querySelectorAll('.media-slot img').forEach((image) => {
+      const failed = () => { image.hidden = true; image.removeAttribute('src'); image.parentElement.querySelector('.media-placeholder').textContent = t('media.failed'); };
+      image.addEventListener('error', failed, { once: true });
+      if (image.complete && image.naturalWidth === 0) failed();
+    });
+  }
+
   function packageSubtitle(record) {
     const id = record.packageId || record.id;
     return id ? '<p class="package-id">' + escapeHTML(id) + '</p>' : '';
@@ -159,14 +199,20 @@
     setText("catalog-status", state.entries.length ? t("catalog.records", { count: number(state.entries.length) }) : t("catalog.empty"));
     if (state.manifest) setText("revision-stamp", (state.manifest.revision || t("未发布 revision")) + " · " + formatDate(state.manifest.generatedAt));
     const start = state.resultPage * pageSize;
-    results.innerHTML = state.filtered.slice(start, start + pageSize).map((entry) => {
+    const visible = state.filtered.slice(start, start + pageSize);
+    const hasMedia = visible.some((entry) => { const media = (state.detailCache.get(entry.key) || entry).media; return media && (media.icon || (Array.isArray(media.previews) && media.previews.length)); });
+    results.innerHTML = (hasMedia ? mediaControls() : '') + visible.map((entry) => {
       const record = state.detailCache.get(entry.key) || entry;
       const href = "#/package/" + [entry.agentId, entry.type, entry.routeName].map(encodeURIComponent).join("/");
-      const title = '<div class="result-title"><strong>' + escapeHTML(record.name || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
+      const media = record.media || {};
+      const icon = imageSlot(media.icon, "icon", entry.type.toUpperCase().slice(0, 1));
+      const preview = entry.subtype === "skin" && Array.isArray(media.previews) && media.previews[0] ? imageSlot(media.previews[0], "thumbnail", t("media.preview")) : '';
+      const title = '<div class="result-title">' + icon + '<strong>' + escapeHTML(record.name || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
       const summary = record.description || record.summary || t("暂无描述，打开详情查看来源与安装候选。");
       const versions = entry.versions.length ? t("catalog.versions", { count: number(entry.versions.length) }) : t("catalog.version", { version: entry.latest });
-      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + title + packageSubtitle(record) + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(record, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
+      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + preview + title + packageSubtitle(record) + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(record, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
     }).join("");
+    bindMedia(results);
     document.getElementById("empty-state").hidden = state.filtered.length > 0;
     const pages = Math.max(1, Math.ceil(state.filtered.length / pageSize));
     document.getElementById("pagination").hidden = pages <= 1;
@@ -246,7 +292,8 @@
     const tags = renderPackageTags(record);
     const sources = distributions.map((item) => '<a class="distribution" href="' + escapeHTML(safeHref(item.url || item.href)) + '" target="_blank" rel="noreferrer"><strong>' + escapeHTML(item.name || item.type || t("发行来源")) + '</strong><span>' + escapeHTML(item.url || item.href || t("未提供地址")) + '</span></a>').join("") || '<p class="muted">' + escapeHTML(t("暂无发行来源。Agent Forge 不托管插件文件。")) + '</p>';
     const links = Object.entries(record.links || {}).filter(([, value]) => value).map(([key, value]) => '<a class="external-link" href="' + escapeHTML(safeHref(value)) + '" target="_blank" rel="noreferrer">' + escapeHTML(key) + ' ↗</a>').join("") || '<p class="muted">' + escapeHTML(t("暂无链接")) + '</p>';
-    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><section class="detail-heading"><div><p class="eyebrow">' + escapeHTML(type.toUpperCase()) + ' · ' + escapeHTML(agent) + '</p><h1>' + escapeHTML(record.name || name) + '</h1>' + packageSubtitle(record) + '<p class="lede">' + escapeHTML(record.description || record.summary || t("暂无描述")) + '</p></div><span class="pill">' + escapeHTML(t(record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录")) + '</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>' + escapeHTML(t("包信息")) + '</h2><dl class="facts">' + fact("Package ID", record.packageId || t("未提供")) + fact("Agent", agent) + fact("最新版本", record.version || entry.latest) + fact("Subtype", record.subtype || t("未指定")) + fact("Agent 版本范围", record.agentVersionRange || t("未提供")) + '</dl></div>' + (tags ? '<div class="detail-section"><h2>' + escapeHTML(t("标签")) + '</h2>' + tags + '</div>' : '') + '<div class="detail-section"><h2>' + escapeHTML(t("类型详情")) + '</h2><pre class="code-block">' + escapeHTML(JSON.stringify(details, null, 2)) + '</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>' + escapeHTML(t("安装候选")) + '</h2>' + sources + '</div><div class="detail-section"><h2>' + escapeHTML(t("文档链接")) + '</h2>' + links + '</div></aside></div>';
+    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><section class="detail-heading"><div><p class="eyebrow">' + escapeHTML(type.toUpperCase()) + ' · ' + escapeHTML(agent) + '</p><h1>' + escapeHTML(record.name || name) + '</h1>' + packageSubtitle(record) + '<p class="lede">' + escapeHTML(record.description || record.summary || t("暂无描述")) + '</p></div><span class="pill">' + escapeHTML(t(record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录")) + '</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>' + escapeHTML(t("包信息")) + '</h2><dl class="facts">' + fact("Package ID", record.packageId || t("未提供")) + fact("Agent", agent) + fact("最新版本", record.version || entry.latest) + fact("Subtype", record.subtype || t("未指定")) + fact("Agent 版本范围", record.agentVersionRange || t("未提供")) + '</dl></div>' + (tags ? '<div class="detail-section"><h2>' + escapeHTML(t("标签")) + '</h2>' + tags + '</div>' : '') + renderGallery(record) + '<div class="detail-section"><h2>' + escapeHTML(t("类型详情")) + '</h2><pre class="code-block">' + escapeHTML(JSON.stringify(details, null, 2)) + '</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>' + escapeHTML(t("安装候选")) + '</h2>' + sources + '</div><div class="detail-section"><h2>' + escapeHTML(t("文档链接")) + '</h2>' + links + '</div></aside></div>';
+    bindMedia(main);
     if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
   }
   function renderRoute(scroll = true) {

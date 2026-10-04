@@ -17,6 +17,7 @@
 | `description` | string | 包描述。 |
 | `releaseNotes` | string | 该版本发布说明。 |
 | `license` | string 或 string[] | 上游提供的许可证声明。 |
+| `media` | object | 可选图标和有序静态预览图，仅保存未核验的图片引用。 |
 | `links` | object | repository、homepage、readme、license、documentation、changelog、issues 链接。只索引链接，不复制正文。 |
 | `keywords` | string[] | 自由文本搜索词。 |
 | `maintainers` | object[] | 维护者姓名、URL、email 和角色。 |
@@ -52,7 +53,7 @@
 
 其它具体来源包括 `pypi-pkg`、`nuget-pkg`、`crates-pkg`、`ghcr-image`、`dockerhub-image`、`quay-image`、`gcp-artifact-image`、`oci-image`、`github-mcpb`、`gitlab-mcpb`、`mcpb-pkg` 和 `mcp-endpoint`。远程端点仅表示 MCP 服务地址，不是文件下载；MCPB 是文件格式，不是一级 `bundle` 分类。
 
-包 `name` 和 index 的包名键允许 Unicode，控制字符禁止。`id` 允许 Unicode 和 UTF-8 百分号编码；新增采集记录将原始身份可逆编码为 ID，例如 `plugin.author/project/%E4%B8%AD%E6%96%87`。已有 ID 保持稳定。JSON 中的 `\u4e2d\u6587` 是“中文”的序列化写法，解码后不是另一个身份。文件路径的编码与包名分离，见[中文名称处理](https://github.com/metaone01/agent-forge/blob/packages/docs/unicode-package-names-2026-10-02.md)。
+包 `name` 和 index 的包名键允许 Unicode，控制字符禁止。`id` 允许 Unicode 和 UTF-8 百分号编码；新增采集记录将原始身份可逆编码为 ID，例如 `plugin.author/project/%E4%B8%AD%E6%96%87`。已有 ID 保持稳定。JSON 中的 `\u4e2d\u6587` 是“中文”的序列化写法，解码后不是另一个身份。文件路径的编码与包名分离，见[中文名称处理](../unicode-package-names-2026-10-02.md)。
 
 `bundleMember` 使用 `memberType`（`package` 或 `bundle`）和 `memberId`，可带版本范围、Agent 和 Bundle-local `override`。`effectiveTarget` 保存交集计算结果；`facetUnion` 和 `customFacetUnion` 分别保存核心与用户 facet 并集。禁止循环引用。
 
@@ -191,3 +192,11 @@ const record = {
 ```
 
 `mcpDetails`、`skillDetails`、`generalDetails` 和 `bundleDetails` 的字段见上面的定义说明；它们必须与顶层 `type` 匹配。`generalDetails.toolType` 是 General 工具的具体性质，不是新的一级分类。Bundle 的成员 `memberType` 只能是 `package` 或 `bundle`，其有效 Agent 集合取成员交集，facet 取成员并集。
+
+## 展示媒体
+
+可选 `media.icon` 要求绝对、无用户名/密码的 HTTPS `url`（最多 4096 字符）和非空白 `alt`（1–500 字符）。`media.previews` 为有序的 1–12 张静态图片，每项要求相同字段，可选 `theme=light|dark|system`；首张为默认预览。`media` 至少有图标或预览，不允许额外字段。skin 仍用 `plugin + subtype=skin`。图片引用未经核验，不代表兼容性；目录工具不下载、缓存或代理图片，不运行皮肤代码。
+
+索引 `packageEntry.media` 只复制图标与至多首张预览，完整画廊以所选记录为准。Pages 默认不加载外链图片，用户在本次页面会话中允许后才懒加载，并设置 no-referrer 和固定失败占位。导入来源保存在 `_meta["org.agentforge/media-provenance"].sources`。
+
+此扩展保持 v2，但旧的封闭式验证器会拒绝新字段；必须先升级 package/index 验证器和严格消费者，再发布带媒体的记录。回填审阅与部署顺序见仓库中的 `docs/MEDIA-MIGRATION.zh-CN.md`。

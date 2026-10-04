@@ -18,6 +18,12 @@ from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
 
+try:
+    from tools.media import normalize_media, merge_media
+except ModuleNotFoundError:
+    from media import normalize_media, merge_media
+
+
 
 TYPE_MAP = {"mcp": "mcp", "plugin": "plugin", "skill": "skill", "other": "general"}
 VERSION_SCHEME = {"semver": "semver", "npm": "npm", "pep440": "pep440", "calver": "calver", "date": "date"}
@@ -177,6 +183,10 @@ def migrate_record(record: dict[str, Any], source_type: str, relative_path: str)
             "org.agentforge/migration": {"sourceSchemaVersion": 1, "collectedAt": COLLECTED_AT, "legacyPath": relative_path},
         },
     }
+    media, media_issues = normalize_media(record)
+    media_issues.extend(merge_media(migrated, media, {"legacyPath": relative_path, "sourceSchemaVersion": 1}))
+    if media_issues:
+        migrated["_meta"]["org.agentforge/migration"]["mediaIssues"] = media_issues
     return migrated
 
 

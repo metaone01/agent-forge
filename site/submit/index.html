@@ -6,7 +6,8 @@
   <title>上传包 · Agent Forge</title>
   <script src="../assets/preferences.js"></script>
   <link rel="stylesheet" href="../assets/styles.css"><link rel="stylesheet" href="../assets/submit.css">
-  <script defer src="../assets/submission-core.js"></script><script defer src="../assets/submit.js"></script>
+  <script defer src="../assets/submission-core.js"></script>
+  <script defer src="../assets/source-metadata.js"></script><script defer src="../assets/submit.js"></script>
 </head>
 <body data-page="submit">
 <header class="topbar"><a class="brand" href="../">Agent Forge <span>METADATA CATALOG</span></a><nav class="topnav" aria-label="主导航" data-i18n-aria-label="nav.label"><a href="../" data-i18n="nav.catalog">目录</a><a href="../dashboard/" data-i18n="nav.dashboard">Dashboard</a><a href="../docs/" data-doc-entry data-i18n="nav.docs">文档</a><a href="./" aria-current="page" data-i18n="nav.submit">上传包</a></nav></header>
@@ -15,6 +16,14 @@
   <div class="submission-tabs" role="tablist" aria-label="提交方式" data-i18n-aria-label="submit.modeLabel"><button id="form-tab" type="button" role="tab" aria-selected="true" aria-controls="form-panel" data-i18n="submit.formTab">可视化填写</button><button id="json-tab" type="button" role="tab" aria-selected="false" aria-controls="json-panel" tabindex="-1" data-i18n="submit.jsonTab">Agent / JSON</button></div>
   <p class="muted" data-i18n="submit.boundary">这里只整合元数据。来源、兼容性、发行地址和标签均不是安全保证。</p>
   <div id="schema-status" role="status" data-i18n="submit.loading">正在加载 Schema…</div>
+  <section class="source-import" aria-labelledby="source-heading">
+    <h2 id="source-heading" data-i18n="source.heading">从来源自动填写</h2>
+    <p class="muted" data-i18n="source.help">输入公开 GitHub 仓库或 HTTPS JSON 地址。离开输入框后自动读取；先选择下方包类型。只读取元数据，不执行代码，也不加载图片。</p>
+    <div class="source-controls"><label class="source-type" for="source-type"><span data-i18n="field.type">包类型 / 发行类型</span><select id="source-type"><option value="mcp">mcp</option><option value="plugin">plugin</option><option value="skill">skill</option><option value="general">general</option><option value="bundle">bundle</option></select></label><label for="source-url"><span data-i18n="source.url">来源地址</span><input id="source-url" type="text" placeholder="https://github.com/author/plugin" autocomplete="off" spellcheck="false" maxlength="4096"></label><button id="fetch-source" type="button" class="button" disabled data-i18n="source.fetch">读取来源</button><button id="cancel-source" type="button" class="button button-quiet" hidden data-i18n="source.cancel">取消</button></div>
+    <details><summary data-i18n="source.options">分支与子目录（可选）</summary><div class="source-options"><label for="source-ref"><span data-i18n="source.ref">分支 / tag / commit</span><input id="source-ref" type="text" maxlength="200" autocomplete="off" spellcheck="false"></label><label for="source-path"><span data-i18n="source.path">子目录 / manifest 路径</span><input id="source-path" type="text" maxlength="1000" autocomplete="off" spellcheck="false"></label></div></details>
+    <p class="muted" data-i18n="source.boundary">读取会向来源站点发送无凭据请求。现有手动内容优先；自动填入且未修改的字段可随来源刷新；无法确认的 ID、版本、Agent 兼容性仍需填写。README 图片只从仓库根 README 提取；根 README 缺失时不向子目录兜底。没有图标时不会用截图补成图标。</p>
+    <p id="source-status" role="status" aria-live="polite"></p><div id="source-report"></div><div id="source-candidates"></div>
+  </section>
   <div class="submit-layout">
     <div>
       <section id="form-panel" role="tabpanel" aria-labelledby="form-tab"><form id="package-form" novalidate><div id="schema-fields"></div></form></section>

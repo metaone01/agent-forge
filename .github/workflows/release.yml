@@ -47,7 +47,7 @@ jobs:
           for schema in package index source advisory; do
             cp "control/${schema}.schema.json" "${schema}.schema.json"
           done
-          cp control/tools/build_site.py control/tools/project.py control/tools/validate.py control/tools/identity.py tools/
+          cp control/tools/build_site.py control/tools/project.py control/tools/validate.py control/tools/identity.py control/tools/media.py tools/
           echo "sha=$(git -C control rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Install uv

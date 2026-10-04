@@ -55,3 +55,7 @@ const index = {
   _meta: { "org.example/index": { shard: "dsh-plugin-00" } }, // 扩展。
 } as const;
 ```
+
+## 展示媒体摘要
+
+可选 `packageEntry.media` 复制所选版本的图标与至多首张预览。每张图片要求无用户名/密码的绝对 HTTPS `url` 和非空白 `alt`；预览可选 `theme`。完整有序画廊以 `path` 指向的记录为准。如果所选版本没有媒体，不能沿用旧版本的图片。生产端输出此 v2 可选字段前必须先升级旧的严格索引验证器。图片引用未经核验，不改变身份、分类或兼容性。

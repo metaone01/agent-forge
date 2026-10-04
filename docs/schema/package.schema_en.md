@@ -17,6 +17,7 @@ This Schema describes one version of one package. It stores metadata only: no bi
 | `description` | string | Package description. |
 | `releaseNotes` | string | Notes for this version. |
 | `license` | string or string[] | Upstream license declaration. |
+| `media` | object | Optional icon and ordered static previews; unverified image references. |
 | `links` | object | repository, homepage, readme, license, documentation, changelog, issues URLs. |
 | `keywords` | string[] | Free-text search terms. |
 | `maintainers` | object[] | Maintainer identity and role. |
@@ -94,3 +95,11 @@ const record = {
 ```
 
 Use `mcpDetails`, `skillDetails`, `generalDetails`, or `bundleDetails` only when the corresponding top-level `type` is selected. `generalDetails.toolType` describes a General tool without introducing another first-class category. Bundle members use `memberType`, expose the intersection of member Agent sets, and keep core `facetUnion` separate from `customFacetUnion`.
+
+## Display media
+
+Optional `media.icon` requires an absolute credential-free HTTPS `url` (at most 4096 characters) and nonblank `alt` (1–500 characters). Optional `media.previews` is an ordered array of 1–12 images with the same required fields and optional `theme=light|dark|system`. The first image is the default preview. A media object must contain at least one of these fields; unknown fields are rejected. These are static references, not interactive skin code, verified assets, or compatibility claims. No image is fetched, cached or proxied by catalog tools. Skins remain `plugin + subtype=skin`.
+
+Indexes carry only the icon and at most the first preview in `packageEntry.media`; fetch the selected record for the gallery. Pages requests external images only after session-local consent, using no-referrer, lazy loading and fixed failure placeholders. Accepted imported references retain source/revision evidence in `_meta["org.agentforge/media-provenance"].sources`.
+
+This is a v2 optional extension, not forward compatibility with old closed validators: upgrade package/index validators and strict consumers before publishing media-bearing records. Backfill planning, hash guards and the release gate are described in the repository's `docs/MEDIA-MIGRATION.zh-CN.md`.

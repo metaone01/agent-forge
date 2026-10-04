@@ -40,6 +40,7 @@
         "checksum": { "$ref": "package.schema.json#/$defs/checksum" },
         "recordRevision": { "$ref": "#/$defs/revision", "description": "Optional revision of the package record." },
         "id": { "$ref": "package.schema.json#/$defs/identifier", "description": "Global package identity, distinct from the source-local name." },
+        "media": { "$ref": "package.schema.json#/$defs/mediaSummary", "description": "Optional icon and first preview from the selected package record; unverified image references." },
         "summary": { "type": "string", "maxLength": 4000, "description": "Description copied from the latest package record for search." },
         "keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
         "facets": { "$ref": "package.schema.json#/$defs/facetSet", "description": "Controlled labels copied from the latest record; not guarantees." },
