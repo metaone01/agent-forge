@@ -95,6 +95,21 @@ body[data-page="docs"] :focus-visible { outline: 2px solid var(--accent); outlin
   .docs-toc ol { columns: 2; }
   .doc-content { grid-column: 2; }
 }
+/* ---- 奶油 MC 覆盖：方角 + 粗边 ---- */
+body[data-page="docs"] .docs-sidebar nav > a { border-radius: 0; }
+body[data-page="docs"] .docs-sidebar a[aria-current="page"] { border: 2px solid rgba(138, 115, 88, .5); }
+body[data-page="docs"] .doc-language { border-top-width: 3px; }
+body[data-page="docs"] .skip-link { border: 3px solid var(--brown); border-radius: 0; }
+body[data-page="docs"] .doc-content code { border-radius: 0; border: 1px solid rgba(138, 115, 88, .45); }
+body[data-page="docs"] .doc-content .code-block { border: 3px solid var(--brown); border-radius: 0; }
+body[data-page="docs"] .table-scroll { border: 3px solid var(--brown); border-radius: 0; }
+body[data-page="docs"] .doc-content th { border-bottom: 2px solid var(--line); }
+body[data-page="docs"] .doc-content td { border-bottom: 1px solid rgba(138, 115, 88, .35); }
+body[data-page="docs"] .doc-content blockquote { border-left-width: 5px; border-radius: 0; }
+body[data-page="docs"] .doc-content details { border: 3px solid var(--brown); border-radius: 0; }
+body[data-page="docs"] .code-toolbar button { border: 3px solid #6b5539; border-radius: 0; background: var(--wood); color: #fff; font-weight: 700; padding: 4px 12px; }
+body[data-page="docs"] .doc-content h2 { border-bottom-width: 3px; }
+
 @media (max-width: 700px) {
   .docs-shell { display: flex; flex-direction: column; padding-top: 22px; gap: 22px; }
   .docs-sidebar, .docs-toc { position: static; max-height: none; width: 100%; }

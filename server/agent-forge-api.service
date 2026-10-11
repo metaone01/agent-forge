@@ -1,0 +1,15 @@
+[Unit]
+Description=Agent Forge catalog query API
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/agent-forge
+ExecStart=/usr/bin/python3 /opt/agent-forge/api.py --db /opt/agent-forge/catalog.sqlite --host 127.0.0.1 --port 8791
+Environment=PYTHONUNBUFFERED=1
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

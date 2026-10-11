@@ -1,35 +1,32 @@
-/* The Pages app reads generated JSON only. No write token or runtime service is used. */
+/* Pages app. Reads the read-only query API (/api/) served next to the static
+   shell. No write token, no runtime service beyond that API is used. */
 (function () {
   "use strict";
 
   const page = document.body.dataset.page || "catalog";
-  if (page === "catalog-hidden") {
-    window.location.replace(new URL("dashboard/", document.baseURI).href);
-    return;
-  }
   const ui = window.ForgeUI;
   ui.addMessages({
-    "zh-CN": { "media.load": "加载外链图片", "media.hide": "隐藏外链图片", "media.notice": "图片来自第三方，未核验。加载后会向图片站点发送请求；本页不发送 Referer。", "media.preview": "静态预览", "media.blocked": "尚未加载", "media.failed": "图片加载失败" },
-    en: { "media.load": "Load external images", "media.hide": "Hide external images", "media.notice": "Unverified third-party images. Loading sends requests to image hosts, without a Referer from this page.", "media.preview": "Static previews", "media.blocked": "Not loaded", "media.failed": "Image unavailable" }
+    "zh-CN": { "media.load": "加载外链图片", "media.hide": "隐藏外链图片", "media.notice": "图片来自第三方，未核验。加载后会向图片站点发送请求；本页不发送 Referer。", "media.preview": "静态预览", "media.blocked": "尚未加载", "media.failed": "图片加载失败", "catalog.loading": "正在检索…", "catalog.error": "数据服务暂不可用，请稍后重试。", "detail.loading": "正在读取包详情…" },
+    en: { "media.load": "Load external images", "media.hide": "Hide external images", "media.notice": "Unverified third-party images. Loading sends requests to image hosts, without a Referer from this page.", "media.preview": "Static previews", "media.blocked": "Not loaded", "media.failed": "Image unavailable", "catalog.loading": "Searching…", "catalog.error": "The data service is unavailable. Try again later.", "detail.loading": "Loading package detail…" }
   });
   const t = ui.t;
   const base = ui.siteBase;
-  const dataBase = new URL("data/", base);
-  const dataUrl = (path) => new URL(`data/${path}`.replace(/^data\/data\//, "data/"), base).href;
+  const apiBase = new URL("/api/", base);
   const types = ["mcp", "plugin", "skill", "general", "bundle"];
-  const colors = { mcp: "#0e766e", plugin: "#4876a7", skill: "#c87927", general: "#8667a9", bundle: "#53656a" };
+  const colors = { mcp: "#5f9d33", plugin: "#4876a7", skill: "#c87927", general: "#8667a9", bundle: "#8a7358" };
   const pageSize = 50;
-  const state = { manifest: null, entries: [], detailCache: new Map(), detailPending: new Map(), filtered: [], resultPage: 0, sort: "", ready: false, catalogNodes: null, detailRoute: 0, mediaEnabled: false, dashboard: null, agentDashboard: null };
+  const state = {
+    manifest: null, filtered: [], total: 0, page: 0, sort: "relevance",
+    ready: false, catalogNodes: null, detailRoute: 0, mediaEnabled: false,
+    dashboard: null, agentDashboard: null, requestId: 0,
+  };
 
-  async function getJSON(url, optional) {
-    try {
-      const response = await fetch(url, { headers: { Accept: "application/json" } });
-      if (!response.ok) throw new Error(`${response.status} ${url}`);
-      return await response.json();
-    } catch (error) {
-      if (!optional) console.warn("Agent Forge data unavailable", error);
-      return null;
-    }
+  async function apiJSON(path, params) {
+    const url = new URL(path.replace(/^\//, ""), apiBase);
+    if (params) for (const [key, value] of Object.entries(params)) { if (value !== "" && value != null) url.searchParams.set(key, value); }
+    const response = await fetch(url.href, { headers: { Accept: "application/json" } });
+    if (!response.ok) throw new Error(`${response.status} ${url.pathname}`);
+    return await response.json();
   }
 
   function escapeHTML(value) {
@@ -41,12 +38,11 @@
     return Number.isNaN(date.getTime()) ? String(value) : new Intl.DateTimeFormat(ui.locale, { dateStyle: "medium", timeStyle: "short" }).format(date);
   }
   function number(value) { return Number(value || 0).toLocaleString(ui.locale); }
-  function pathFor(path) { return /^https?:\/\//i.test(path) ? path : new URL(path.replace(/^\//, ""), base).href; }
-  // Manifest source paths are relative to the generated data directory, not the page root.
-  function dataPathFor(path) {
-    if (/^https?:\/\//i.test(path)) return path;
-    const normalized = String(path).replace(/^\/+/, "");
-    return new URL(normalized, normalized.startsWith("data/") ? base : dataBase).href;
+  function setText(id, value) {
+    const node = document.getElementById(id);
+    if (!node) return;
+    node.removeAttribute("data-i18n");
+    node.textContent = value;
   }
   function safeHref(value) {
     try {
@@ -55,108 +51,7 @@
     } catch (_) { return "#"; }
   }
 
-  async function loadManifest() {
-    state.manifest = await getJSON(dataUrl("manifest.json"), true);
-    if (!state.manifest) state.manifest = await getJSON(dataUrl("latest.json"), true);
-    return state.manifest || {};
-  }
-
-  function indexCandidates(manifest) {
-    if (Array.isArray(manifest.indexes)) return manifest.indexes.map((item) => typeof item === "string" ? item : item.url || item.path).filter(Boolean);
-    if (Array.isArray(manifest.sources) && manifest.sources.length) return manifest.sources.map((item) => typeof item === "string" ? item : item.url || item.path).filter(Boolean);
-    const candidates = [];
-    const agents = Array.isArray(manifest.agents) && manifest.agents.length ? manifest.agents : [{ id: "dsh" }];
-    for (const agent of agents) {
-      const agentId = typeof agent === "string" ? agent : agent.id;
-      const agentTypes = typeof agent === "object" && Array.isArray(agent.types) ? agent.types : types;
-      for (const type of agentTypes) {
-        const typePath = typeof type === "string" ? type : type.type;
-        const explicit = typeof type === "object" && (type.index || type.url);
-        candidates.push(explicit || `data/${agentId}/${typePath}/index.json`);
-      }
-    }
-    // Keep compatibility with the repository's pre-projection source layout.
-    if (!manifest.agents && !manifest.indexes) types.forEach((type) => candidates.push(`../sources/${type}/index.json`));
-    return [...new Set(candidates)];
-  }
-
-  function normalizeIndex(index, indexPath) {
-    if (!index || typeof index !== "object") return [];
-    const items = Array.isArray(index.packages) ? index.packages.map((record) => [record.name || record.packageId || record.id, record]) : Object.entries(index.packages || {});
-    return items.filter(([name]) => name).map(([name, record]) => {
-      const sourceBase = indexPath.replace(/index\.json(?:\?.*)?$/, "");
-      const path = record.path || `${name}.json`;
-      return {
-        key: `${index.agentId || record.agentId || "unknown"}:${index.type || record.type || "general"}:${name}`,
-        id: record.packageId || record.id || "", packageId: record.packageId || record.id || "", routeName: name,
-        name: record.name || name, displayName: record.displayName || "", agentId: index.agentId || record.agentId || "unknown", type: index.type || record.type || "general",
-        subtype: record.subtype || null, latest: record.latest || record.version || "unknown", versions: record.versions || [],
-        path: pathFor(path.startsWith("http") ? path : sourceBase + path), recordRevision: record.recordRevision || index.revision,
-        summary: record.summary || record.description || "", keywords: record.keywords || [], facets: record.facets || {}, customFacets: record.customFacets || {}, indexPath,
-        media: record.media || null,
-        updatedAt: record.updatedAt || index.updatedAt || index.generatedAt,
-        searchText: (record.searchText || [name, record.name, record.id, record.packageId, record.displayName, record.summary, record.description, valueText(record.keywords), valueText(record.facets), valueText(record.customFacets), record.subtype].join(" ")).toLowerCase()
-      };
-    });
-  }
-
-  async function loadEntries() {
-    const manifest = await loadManifest();
-    const paths = indexCandidates(manifest);
-    const loaded = await Promise.all(paths.map(async (path) => {
-      const absolute = dataPathFor(path);
-      return normalizeIndex(await getJSON(absolute, true), absolute);
-    }));
-    state.entries = loaded.flat();
-    // A stale or empty manifest should not leave the page looking broken: it is a valid empty catalog.
-    const stamp = document.getElementById("revision-stamp");
-    if (stamp) setText("revision-stamp", `${manifest.revision || t("未发布 revision")} · ${formatDate(manifest.generatedAt)}`);
-    return state.entries;
-  }
-
-  function valueText(value) {
-    if (Array.isArray(value)) return value.join(" ");
-    if (value && typeof value === "object") return Object.values(value).flatMap(valueText).join(" ");
-    return value == null ? "" : String(value);
-  }
-  async function hydrate(entry) {
-    if (state.detailCache.has(entry.key)) return state.detailCache.get(entry.key);
-    if (state.detailPending.has(entry.key)) return state.detailPending.get(entry.key);
-    const pending = (async () => {
-      const record = await getJSON(entry.path, true);
-      const full = record && typeof record === "object" ? { ...entry, ...record } : { ...entry };
-      full.name = record && record.name || entry.name;
-      full.packageId = record && (record.packageId || record.id) || entry.packageId;
-      state.detailCache.set(entry.key, full);
-      if (state.detailCache.size > 20) state.detailCache.delete(state.detailCache.keys().next().value);
-      return full;
-    })();
-    state.detailPending.set(entry.key, pending);
-    try { return await pending; } finally { state.detailPending.delete(entry.key); }
-  }
-
-  function filterEntries() {
-    if (!document.getElementById("query")) return;
-    const query = document.getElementById("query").value.trim().toLowerCase();
-    const agent = document.getElementById("agent-filter").value;
-    const type = document.getElementById("type-filter").value;
-    const subtype = document.getElementById("subtype-filter").value;
-    const sort = document.getElementById("sort-select").value;
-    if (sort !== state.sort) {
-      state.entries.sort((a, b) => sort === "updated" ? String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")) : a.name.localeCompare(b.name));
-      state.sort = sort;
-    }
-    state.filtered = state.entries.filter((entry) => (!agent || entry.agentId === agent) && (!type || entry.type === type) && (!subtype || entry.subtype === subtype) && (!query || entry.searchText.includes(query)));
-    state.resultPage = 0;
-    renderResults();
-  }
-
-  function setText(id, value) {
-    const node = document.getElementById(id);
-    if (!node) return;
-    node.removeAttribute("data-i18n");
-    node.textContent = value;
-  }
+  /* ---------- media ---------- */
   function safeImageURL(value) {
     if (typeof value !== "string" || value.length > 4096 || !value.startsWith("https://") || /[\s<>"{}|\\^`\x00-\x1f\x7f]/.test(value)) return "";
     try {
@@ -192,60 +87,7 @@
     });
   }
 
-  function renderResults() {
-    const results = document.getElementById("results");
-    if (!results) return;
-    setText("result-count", number(state.filtered.length));
-    setText("catalog-status", state.entries.length ? t("catalog.records", { count: number(state.entries.length) }) : t("catalog.empty"));
-    if (state.manifest) setText("revision-stamp", (state.manifest.revision || t("未发布 revision")) + " · " + formatDate(state.manifest.generatedAt));
-    const start = state.resultPage * pageSize;
-    const visible = state.filtered.slice(start, start + pageSize);
-    const hasMedia = visible.some((entry) => { const media = (state.detailCache.get(entry.key) || entry).media; return media && (media.icon || (Array.isArray(media.previews) && media.previews.length)); });
-    results.innerHTML = (hasMedia ? mediaControls() : '') + visible.map((entry) => {
-      const record = state.detailCache.get(entry.key) || entry;
-      const href = "#/package/" + [entry.agentId, entry.type, entry.routeName].map(encodeURIComponent).join("/");
-      const media = record.media || {};
-      const icon = imageSlot(media.icon, "icon", entry.type.toUpperCase().slice(0, 1));
-      const preview = entry.subtype === "skin" && Array.isArray(media.previews) && media.previews[0] ? imageSlot(media.previews[0], "thumbnail", t("media.preview")) : '';
-      const title = '<div class="result-title">' + icon + '<strong>' + escapeHTML(record.displayName || record.name || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
-      const summary = record.description || record.summary || t("暂无描述，打开详情查看来源与安装候选。");
-      const versions = entry.versions.length ? t("catalog.versions", { count: number(entry.versions.length) }) : t("catalog.version", { version: entry.latest });
-      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + preview + title + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(record, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
-    }).join("");
-    bindMedia(results);
-    document.getElementById("empty-state").hidden = state.filtered.length > 0;
-    const pages = Math.max(1, Math.ceil(state.filtered.length / pageSize));
-    document.getElementById("pagination").hidden = pages <= 1;
-    document.getElementById("page-number").max = pages;
-    document.getElementById("page-number").value = state.resultPage + 1;
-    setText("page-total", t("catalog.pages", { count: number(pages) }));
-    setText("page-range", state.filtered.length ? number(start + 1) + "–" + number(Math.min(start + pageSize, state.filtered.length)) + " / " + number(state.filtered.length) : "");
-    document.getElementById("previous-page").disabled = state.resultPage === 0;
-    document.getElementById("next-page").disabled = state.resultPage + 1 >= pages;
-  }
-
-  function setupFilters() {
-    const agents = [...new Set(state.entries.map((entry) => entry.agentId).filter(Boolean))].sort();
-    const subtypes = [...new Set(state.entries.map((entry) => entry.subtype).filter(Boolean))].sort();
-    document.getElementById("agent-filter").insertAdjacentHTML("beforeend", agents.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
-    document.getElementById("subtype-filter").insertAdjacentHTML("beforeend", subtypes.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
-    let searchTimer;
-    const applyFilters = () => { clearTimeout(searchTimer); filterEntries(); };
-    document.getElementById("query").addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(filterEntries, 150); });
-    ["agent-filter", "type-filter", "subtype-filter", "sort-select"].forEach((id) => document.getElementById(id).addEventListener("change", applyFilters));
-    document.getElementById("clear-filters").addEventListener("click", () => { ["query", "agent-filter", "type-filter", "subtype-filter"].forEach((id) => { document.getElementById(id).value = ""; }); applyFilters(); });
-    const changePage = (pageNumber) => {
-      if (!Number.isFinite(pageNumber)) pageNumber = 0;
-      state.resultPage = Math.max(0, Math.min(Math.ceil(state.filtered.length / pageSize) - 1, Math.floor(pageNumber)));
-      renderResults();
-      document.querySelector(".catalog-toolbar").scrollIntoView({ block: "start" });
-    };
-    document.getElementById("previous-page").addEventListener("click", () => changePage(state.resultPage - 1));
-    document.getElementById("next-page").addEventListener("click", () => changePage(state.resultPage + 1));
-    document.getElementById("page-number").addEventListener("change", (event) => changePage(Number(event.target.value) - 1));
-    window.addEventListener("keydown", (event) => { if (event.key === "/" && !event.ctrlKey && !event.altKey && !event.metaKey && !["INPUT", "TEXTAREA", "SELECT", "BUTTON"].includes(document.activeElement.tagName) && !document.activeElement.isContentEditable) { event.preventDefault(); document.getElementById("query").focus(); } });
-  }
-
+  /* ---------- tags ---------- */
   function tagItems(record) {
     const items = [];
     for (const [kind, facets] of [["controlled", record.facets], ["custom", record.customFacets]]) {
@@ -274,36 +116,108 @@
     for (const char of group) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
     return hash % 5;
   }
-  async function renderDetail(agent, type, name, scroll = true) {
+
+  /* ---------- catalog ---------- */
+  function currentFilters() {
+    return {
+      q: (document.getElementById("query") || {}).value?.trim() || "",
+      agent: (document.getElementById("agent-filter") || {}).value || "",
+      type: (document.getElementById("type-filter") || {}).value || "",
+      subtype: (document.getElementById("subtype-filter") || {}).value || "",
+      sort: (document.getElementById("sort-select") || {}).value || "relevance",
+    };
+  }
+  async function runSearch(pageIndex) {
+    if (!document.getElementById("results")) return;
+    const requestId = ++state.requestId;
+    const filters = currentFilters();
+    state.page = Math.max(0, pageIndex || 0);
+    state.sort = filters.sort;
+    setText("catalog-status", t("catalog.loading"));
+    const results = document.getElementById("results");
+    results.setAttribute("aria-busy", "true");
+    let payload;
+    try {
+      payload = await apiJSON("search", { ...filters, page: state.page, pageSize });
+    } catch (error) {
+      if (requestId !== state.requestId) return;
+      results.setAttribute("aria-busy", "false");
+      results.innerHTML = '<p class="muted">' + escapeHTML(t("catalog.error")) + '</p>';
+      setText("catalog-status", "");
+      return;
+    }
+    if (requestId !== state.requestId) return;
+    results.setAttribute("aria-busy", "false");
+    state.filtered = payload.entries || [];
+    state.total = payload.total || 0;
+    renderResults();
+  }
+  function renderResults() {
+    const results = document.getElementById("results");
+    if (!results) return;
+    const total = state.total;
+    const start = state.page * pageSize;
+    setText("result-count", number(total));
+    setText("catalog-status", total ? t("catalog.records", { count: number(total) }) : t("catalog.empty"));
+    if (state.manifest) setText("revision-stamp", (state.manifest.revision || t("未发布 revision")) + " · " + formatDate(state.manifest.generatedAt));
+    const hasMedia = state.filtered.some((entry) => entry.media && (entry.media.icon || (Array.isArray(entry.media.previews) && entry.media.previews.length)));
+    results.innerHTML = (hasMedia ? mediaControls() : '') + state.filtered.map((entry) => {
+      const href = "#/package/" + [entry.agentId, entry.type, entry.routeName].map(encodeURIComponent).join("/");
+      const media = entry.media || {};
+      const icon = imageSlot(media.icon, "icon", entry.type.toUpperCase().slice(0, 1));
+      const preview = entry.subtype === "skin" && Array.isArray(media.previews) && media.previews[0] ? imageSlot(media.previews[0], "thumbnail", t("media.preview")) : '';
+      const title = '<div class="result-title">' + icon + '<strong>' + escapeHTML(entry.displayName || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
+      const summary = entry.description || entry.summary || t("暂无描述，打开详情查看来源与安装候选。");
+      const versions = entry.versions.length ? t("catalog.versions", { count: number(entry.versions.length) }) : t("catalog.version", { version: entry.latest });
+      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + preview + title + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(entry, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
+    }).join("");
+    bindMedia(results);
+    document.getElementById("empty-state").hidden = total > 0;
+    const pages = Math.max(1, Math.ceil(total / pageSize));
+    document.getElementById("pagination").hidden = pages <= 1;
+    document.getElementById("page-number").max = pages;
+    document.getElementById("page-number").value = state.page + 1;
+    setText("page-total", t("catalog.pages", { count: number(pages) }));
+    setText("page-range", total ? number(start + 1) + "–" + number(Math.min(start + pageSize, total)) + " / " + number(total) : "");
+    document.getElementById("previous-page").disabled = state.page === 0;
+    document.getElementById("next-page").disabled = state.page + 1 >= pages;
+  }
+
+  /* ---------- detail ---------- */
+  async function renderDetail(agent, type, name) {
     const route = ++state.detailRoute;
-    const entry = state.entries.find((item) => item.agentId === agent && item.type === type && item.routeName === name);
     const main = document.querySelector("main");
     if (!main) return;
-    if (!entry) {
+    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><p role="status">' + escapeHTML(t("detail.loading")) + '</p>';
+    let record;
+    try {
+      record = await apiJSON("package", { agent, type, name });
+    } catch (error) {
+      record = null;
+    }
+    if (route !== state.detailRoute) return;
+    if (!record || record.error) {
       main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><p role="status">' + escapeHTML(t("detail.missing")) + '</p>';
       return;
     }
-    const record = await hydrate(entry);
-    // A late fetch must not replace the catalog or a more recently selected detail.
-    if (route !== state.detailRoute) return;
     const details = record.details || record[type + "Details"] || {};
     const distributions = Array.isArray(record.distributions) ? record.distributions : [];
     const fact = (label, value) => '<div><dt>' + escapeHTML(t(label)) + '</dt><dd>' + escapeHTML(value) + '</dd></div>';
     const tags = renderPackageTags(record);
     const sources = distributions.map((item) => '<a class="distribution" href="' + escapeHTML(safeHref(item.url || item.href)) + '" target="_blank" rel="noreferrer"><strong>' + escapeHTML(item.name || item.type || t("发行来源")) + '</strong><span>' + escapeHTML(item.url || item.href || t("未提供地址")) + '</span></a>').join("") || '<p class="muted">' + escapeHTML(t("暂无发行来源。Agent Forge 不托管插件文件。")) + '</p>';
     const links = Object.entries(record.links || {}).filter(([, value]) => value).map(([key, value]) => '<a class="external-link" href="' + escapeHTML(safeHref(value)) + '" target="_blank" rel="noreferrer">' + escapeHTML(key) + ' ↗</a>').join("") || '<p class="muted">' + escapeHTML(t("暂无链接")) + '</p>';
-    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><section class="detail-heading"><div><p class="eyebrow">' + escapeHTML(type.toUpperCase()) + ' · ' + escapeHTML(agent) + '</p><h1>' + escapeHTML(record.displayName || record.name || name) + '</h1><p class="lede">' + escapeHTML(record.description || record.summary || t("暂无描述")) + '</p></div><span class="pill">' + escapeHTML(t(record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录")) + '</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>' + escapeHTML(t("包信息")) + '</h2><dl class="facts">' + fact("包名", record.name || name) + fact("Agent", agent) + fact("最新版本", record.version || entry.latest) + fact("Subtype", record.subtype || t("未指定")) + fact("Agent 版本范围", record.agentVersionRange || t("未提供")) + '</dl></div>' + (tags ? '<div class="detail-section"><h2>' + escapeHTML(t("标签")) + '</h2>' + tags + '</div>' : '') + renderGallery(record) + '<div class="detail-section"><h2>' + escapeHTML(t("类型详情")) + '</h2><pre class="code-block">' + escapeHTML(JSON.stringify(details, null, 2)) + '</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>' + escapeHTML(t("安装候选")) + '</h2>' + sources + '</div><div class="detail-section"><h2>' + escapeHTML(t("文档链接")) + '</h2>' + links + '</div></aside></div>';
+    main.innerHTML = '<a class="back-link" href="#">' + escapeHTML(t("← 返回目录")) + '</a><section class="detail-heading"><div><p class="eyebrow">' + escapeHTML(type.toUpperCase()) + ' · ' + escapeHTML(agent) + '</p><h1>' + escapeHTML(record.displayName || record.name || name) + '</h1><p class="lede">' + escapeHTML(record.description || record.summary || t("暂无描述")) + '</p></div><span class="pill">' + escapeHTML(t(record.compatibilityStatus === "unknown" ? "兼容范围未知" : "元数据记录")) + '</span></section><div class="detail-layout"><article class="panel detail-main"><div class="detail-section"><h2>' + escapeHTML(t("包信息")) + '</h2><dl class="facts">' + fact("包名", record.name || name) + fact("Agent", agent) + fact("最新版本", record.version || record.latest) + fact("Subtype", record.subtype || t("未指定")) + fact("Agent 版本范围", record.agentVersionRange || t("未提供")) + '</dl></div>' + (tags ? '<div class="detail-section"><h2>' + escapeHTML(t("标签")) + '</h2>' + tags + '</div>' : '') + renderGallery(record) + '<div class="detail-section"><h2>' + escapeHTML(t("类型详情")) + '</h2><pre class="code-block">' + escapeHTML(JSON.stringify(details, null, 2)) + '</pre></div></article><aside class="panel detail-side"><div class="detail-section"><h2>' + escapeHTML(t("安装候选")) + '</h2>' + sources + '</div><div class="detail-section"><h2>' + escapeHTML(t("文档链接")) + '</h2>' + links + '</div></aside></div>';
     bindMedia(main);
-    if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
-  function renderRoute(scroll = true) {
+  function renderRoute() {
     const main = document.querySelector("main");
     if (location.hash.startsWith("#/package/")) {
       try {
         const parts = location.hash.slice("#/package/".length).split("/");
-        return renderDetail(decodeURIComponent(parts[0]), decodeURIComponent(parts[1]), decodeURIComponent(parts.slice(2).join("/")), scroll);
+        return renderDetail(decodeURIComponent(parts[0]), decodeURIComponent(parts[1]), decodeURIComponent(parts.slice(2).join("/")));
       } catch (_) {
-        return renderDetail("", "", "", scroll);
+        return renderDetail("", "", "");
       }
     }
     ++state.detailRoute;
@@ -311,32 +225,56 @@
     ui.apply(main);
     renderResults();
   }
+
+  function setupFilters() {
+    const agents = (state.manifest && state.manifest.agents) || [];
+    const subtypes = (state.manifest && state.manifest.subtypes) || [];
+    const agentSelect = document.getElementById("agent-filter");
+    const subtypeSelect = document.getElementById("subtype-filter");
+    if (agentSelect && agentSelect.options.length <= 1) agentSelect.insertAdjacentHTML("beforeend", agents.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
+    if (subtypeSelect && subtypeSelect.options.length <= 1) subtypeSelect.insertAdjacentHTML("beforeend", subtypes.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
+    let searchTimer;
+    const applyFilters = () => { clearTimeout(searchTimer); runSearch(0); };
+    document.getElementById("query").addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => runSearch(0), 180); });
+    ["agent-filter", "type-filter", "subtype-filter", "sort-select"].forEach((id) => document.getElementById(id).addEventListener("change", applyFilters));
+    document.getElementById("clear-filters").addEventListener("click", () => { ["query", "agent-filter", "type-filter", "subtype-filter"].forEach((id) => { document.getElementById(id).value = ""; }); applyFilters(); });
+    const changePage = (pageNumber) => {
+      if (!Number.isFinite(pageNumber)) pageNumber = 0;
+      const pages = Math.max(1, Math.ceil(state.total / pageSize));
+      state.page = Math.max(0, Math.min(pages - 1, Math.floor(pageNumber)));
+      runSearch(state.page);
+      document.querySelector(".catalog-toolbar").scrollIntoView({ block: "start" });
+    };
+    document.getElementById("previous-page").addEventListener("click", () => changePage(state.page - 1));
+    document.getElementById("next-page").addEventListener("click", () => changePage(state.page + 1));
+    document.getElementById("page-number").addEventListener("change", (event) => changePage(Number(event.target.value) - 1));
+    window.addEventListener("keydown", (event) => { if (event.key === "/" && !event.ctrlKey && !event.altKey && !event.metaKey && !["INPUT", "TEXTAREA", "SELECT", "BUTTON"].includes(document.activeElement.tagName) && !document.activeElement.isContentEditable) { event.preventDefault(); document.getElementById("query").focus(); } });
+  }
+
   async function startCatalog() {
-    await loadEntries();
+    try {
+      state.manifest = await apiJSON("manifest");
+    } catch (_) {
+      state.manifest = {};
+    }
     setupFilters();
     const initialAgent = new URLSearchParams(location.search).get("agent");
     if (initialAgent) document.getElementById("agent-filter").value = initialAgent;
-    filterEntries();
+    setupDone();
     state.catalogNodes = Array.from(document.querySelector("main").childNodes);
     state.ready = true;
     window.addEventListener("hashchange", () => renderRoute());
-    await renderRoute();
+    await runSearch(0);
+  }
+  function setupDone() {
+    if (state.manifest && state.manifest.revision) setText("revision-stamp", state.manifest.revision + " · " + formatDate(state.manifest.generatedAt));
   }
 
+  /* ---------- dashboard ---------- */
   function metric(label, value, detail) { return `<div class="metric"><div class="metric-label">${escapeHTML(label)}</div><div class="metric-value">${escapeHTML(number(value))}</div>${detail ? `<div class="metric-detail">${escapeHTML(detail)}</div>` : ""}</div>`; }
-  function listCount(map, key) { return map && typeof map === "object" ? Number(map[key] || 0) : 0; }
   function getTypes(agent) { return agent.types || agent.typeCounts || {}; }
-
-  function aggregateFromEntries() {
-    const agents = {};
-    const facets = {};
-    const typesCount = Object.fromEntries(types.map((type) => [type, 0]));
-    state.entries.forEach((entry) => { const agent = agents[entry.agentId] ||= { id: entry.agentId, name: entry.agentId, packageCount: 0, versionCount: 0, types: {}, facets: {} }; agent.packageCount++; agent.versionCount += (entry.versions || []).length || 1; agent.types[entry.type] = (agent.types[entry.type] || 0) + 1; typesCount[entry.type]++; (entry.subtype ? (agent.subtypes ||= {})[entry.subtype] = ((agent.subtypes || {})[entry.subtype] || 0) + 1 : null); });
-    return { revision: state.manifest && state.manifest.revision, generatedAt: state.manifest && state.manifest.generatedAt, totals: { agents: Object.keys(agents).length, packages: state.entries.length, versions: state.entries.reduce((sum, item) => sum + ((item.versions || []).length || 1), 0), bundles: typesCount.bundle }, agents: Object.values(agents), types: typesCount, facets, compatibility: { known: 0, unknown: 0 } };
-  }
-
   function normalizeDashboard(raw) {
-    if (!raw || typeof raw !== "object") return aggregateFromEntries();
+    if (!raw || typeof raw !== "object") return { totals: {}, agents: [], types: {}, facets: {}, compatibility: { known: 0, unknown: 0 } };
     const result = { ...raw };
     const counts = raw.counts || {};
     result.totals = { ...(raw.totals || raw.summary || {}), agents: (raw.totals || {}).agents || raw.agentCount, packages: (raw.totals || {}).packages || counts.packages || counts.records, versions: (raw.totals || {}).versions || counts.versions, bundles: (raw.totals || {}).bundles || counts.bundles };
@@ -380,26 +318,22 @@
       return '<a class="agent-card" href="' + escapeHTML(href) + '"><div class="agent-card-title"><span>' + escapeHTML(agent.name || id) + '</span><span class="pill">' + escapeHTML(id) + '</span></div><div class="agent-card-stats"><span>' + escapeHTML(t("agent.packages", { count: number(count) })) + '</span><span>' + escapeHTML(t("agent.types", { count: number(Object.keys(getTypes(agent)).length) })) + '</span></div></a>';
     }).join("") : '<p class="muted">' + escapeHTML(t("暂无 Agent 统计")) + '</p>';
   }
-
   async function startDashboard() {
-    const raw = await getJSON(dataUrl("dashboard.json"), true);
-    if (!raw || !Array.isArray(raw.agents) || !raw.agents.length) await loadEntries();
+    let raw = null;
+    try { raw = await apiJSON("dashboard"); } catch (_) { raw = null; }
     const dashboard = normalizeDashboard(raw);
-    if (!dashboard.agents.length && state.entries.length) {
-      const fallback = aggregateFromEntries();
-      dashboard.agents = fallback.agents;
-      dashboard.totals.agents = fallback.totals.agents;
-    }
     state.dashboard = dashboard;
     state.ready = true;
     renderDashboard(dashboard);
   }
   async function startAgentDashboard() {
     const id = new URLSearchParams(location.search).get("id") || "dsh";
-    const global = normalizeDashboard(await getJSON(dataUrl("dashboard.json"), true));
-    const raw = await getJSON(dataUrl(`agents/${encodeURIComponent(id)}/dashboard.json`), true);
-    const agent = raw ? normalizeDashboard(raw) : global.agents.find((item) => (item.id || item.name) === id) || { id, name: id, types: {}, facets: {}, packages: 0, versions: 0 };
-    state.agentDashboard = { agent, global, id };
+    let global = {}, raw = null;
+    try { global = await apiJSON("dashboard"); } catch (_) { global = {}; }
+    try { raw = await apiJSON("agent-dashboard", { id }); } catch (_) { raw = null; }
+    const globalDashboard = normalizeDashboard(global);
+    const agent = raw ? normalizeDashboard(raw) : globalDashboard.agents.find((item) => (item.id || item.name) === id) || { id, name: id, types: {}, facets: {}, packages: 0, versions: 0 };
+    state.agentDashboard = { agent, global: globalDashboard, id };
     state.ready = true;
     renderAgentDashboard(state.agentDashboard);
   }
@@ -416,12 +350,16 @@
     const recent = agent.recentPackages || agent.recent || [];
     document.getElementById("recent-packages").innerHTML = recent.length ? recent.map((item) => `<article class="result-card"><div><div class="result-title"><strong>${escapeHTML(item.displayName || item.name || item.packageId || item.id)}</strong><span class="pill">${escapeHTML(item.type || "package")}</span></div><p class="result-summary">${escapeHTML(item.description || t("暂无描述"))}</p>${renderPackageTags(item, 8)}</div><div class="result-version"><strong>${escapeHTML(item.version || item.latest || "unknown")}</strong><span>${escapeHTML(formatDate(item.updatedAt))}</span></div></article>`).join("") : `<p class="muted">${escapeHTML(t("暂无最近更新记录"))}</p>`;
   }
+
   window.addEventListener("forge:localechange", () => {
     if (!state.ready) return;
     if (state.dashboard) renderDashboard(state.dashboard);
     else if (state.agentDashboard) renderAgentDashboard(state.agentDashboard);
-    else renderRoute(false);
+    else if (document.getElementById("results")) runSearch(state.page);
+    else renderRoute();
   });
   ui.apply();
-  if (page === "dashboard") startDashboard(); else if (page === "agent-dashboard") startAgentDashboard(); else startCatalog();
+  if (page === "dashboard") startDashboard();
+  else if (page === "agent-dashboard") startAgentDashboard();
+  else startCatalog();
 }());

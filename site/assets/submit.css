@@ -1,3 +1,23 @@
+/* ---- 奶油 MC 覆盖：方角 + 粗边 ---- */
+.submission-tabs button { border: 3px solid var(--brown); border-radius: 0; background: var(--cream); font-weight: 700; }
+.submission-tabs [aria-selected="true"] { background: var(--green); border-color: var(--green-lo); color: #fff; text-shadow: 1px 1px 0 rgba(0,0,0,.22); }
+.schema-field input, .schema-field select, .schema-field textarea,
+#json-input, #submission-notes,
+.source-import input, .source-import select {
+  border: 3px solid var(--brown); border-radius: 0; background: #fffdf8;
+}
+.schema-group, .submit-preview, .source-import, #submission-fallback,
+.submission-error-list, .schema-deep-preview { border-radius: 0; }
+.schema-group { border: 3px solid var(--brown); background: var(--cream); }
+.submit-preview, .source-import { border: 3px solid var(--brown); background: var(--cream); box-shadow: var(--mc-bevel, none), 0 4px 0 rgba(110,88,60,.16); }
+.submit-preview pre { background: var(--code-bg); border: 2px solid rgba(138,115,88,.5); border-radius: 0; }
+.schema-add, .schema-remove { border: 3px solid #6b5539; border-radius: 0; background: var(--wood); color: #fff; font-weight: 700; }
+.schema-remove { background: #a99a83; }
+.submission-error-list { border: 3px solid var(--error, #c44135); }
+.schema-group[aria-invalid="true"] { border-color: var(--error, #c44135); }
+.schema-field [aria-invalid="true"] { border-color: var(--error, #c44135); }
+.submit-actions .button { font-weight: 700; }
+
 .submit-shell { max-width: 1440px; }
 .submission-tabs { display: flex; gap: .5rem; margin-bottom: 1rem; }
 .submission-tabs button { border: 1px solid var(--line); border-radius: 999px; padding: .65rem 1rem; background: var(--panel); color: var(--ink); cursor: pointer; font: inherit; }
