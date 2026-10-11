@@ -107,7 +107,9 @@ body[data-page="docs"] .doc-content th { border-bottom: 2px solid var(--line); }
 body[data-page="docs"] .doc-content td { border-bottom: 1px solid rgba(138, 115, 88, .35); }
 body[data-page="docs"] .doc-content blockquote { border-left-width: 5px; border-radius: 0; }
 body[data-page="docs"] .doc-content details { border: 3px solid var(--brown); border-radius: 0; }
-body[data-page="docs"] .code-toolbar button { border: 3px solid #6b5539; border-radius: 0; background: var(--wood); color: #fff; font-weight: 700; padding: 4px 12px; }
+body[data-page="docs"] .code-toolbar button { border: 3px solid var(--btn-border); border-radius: 0; background: var(--wood); color: #fff; font-weight: 700; padding: 4px 12px; }
+:root[data-theme="dark"] body[data-page="docs"] .code-toolbar button { color: #12210a; }
+body[data-page="docs"] .doc-content .code-block { color: var(--doc-code-ink); }
 body[data-page="docs"] .doc-content h2 { border-bottom-width: 3px; }
 
 @media (max-width: 700px) {

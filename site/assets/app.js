@@ -12,6 +12,7 @@
   const t = ui.t;
   const base = ui.siteBase;
   const apiBase = new URL("/api/", base);
+  const DEFAULT_MEDIA = new URL("assets/img/mc2_crate.png", base).href;
   const types = ["mcp", "plugin", "skill", "general", "bundle"];
   const colors = { mcp: "#5f9d33", plugin: "#4876a7", skill: "#c87927", general: "#8667a9", bundle: "#8a7358" };
   const pageSize = 50;
@@ -62,9 +63,11 @@
   function imageSlot(asset, kind, fallback) {
     const url = asset && safeImageURL(asset.url);
     const alt = asset && typeof asset.alt === "string" ? asset.alt : fallback;
-    const placeholder = '<span class="media-placeholder">' + escapeHTML(fallback) + '</span>';
-    const image = url && state.mediaEnabled ? '<img src="' + escapeHTML(url) + '" alt="' + escapeHTML(alt) + '" loading="lazy" decoding="async" referrerpolicy="no-referrer">' : '';
-    return '<span class="media-slot media-' + kind + '"' + (url && !state.mediaEnabled ? ' title="' + escapeHTML(t("media.blocked")) + '"' : '') + '>' + placeholder + image + '</span>';
+    const useReal = Boolean(url && state.mediaEnabled);
+    const src = useReal ? url : DEFAULT_MEDIA;
+    const cls = useReal ? "" : "media-default";
+    const title = url && !state.mediaEnabled ? ' title="' + escapeHTML(t("media.blocked")) + '"' : '';
+    return '<span class="media-slot media-' + kind + '"' + title + '><img class="' + cls + '" src="' + escapeHTML(src) + '" alt="' + escapeHTML(alt) + '" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span>';
   }
   function mediaControls() {
     return '<div class="media-controls"><button type="button" data-media-consent aria-pressed="' + state.mediaEnabled + '">' + escapeHTML(t(state.mediaEnabled ? "media.hide" : "media.load")) + '</button><p>' + escapeHTML(t("media.notice")) + '</p></div>';
@@ -81,8 +84,13 @@
       renderRoute(false);
     }));
     root.querySelectorAll('.media-slot img').forEach((image) => {
-      const failed = () => { image.hidden = true; image.removeAttribute('src'); image.parentElement.querySelector('.media-placeholder').textContent = t('media.failed'); };
-      image.addEventListener('error', failed, { once: true });
+      const failed = () => {
+        if (image.dataset.failed) return;
+        image.dataset.failed = "1";
+        image.src = DEFAULT_MEDIA;
+        image.classList.add("media-default");
+      };
+      image.addEventListener('error', failed);
       if (image.complete && image.naturalWidth === 0) failed();
     });
   }
@@ -169,12 +177,14 @@
     results.innerHTML = (hasMedia ? mediaControls() : '') + state.filtered.map((entry) => {
       const href = "#/package/" + [entry.agentId, entry.type, entry.routeName].map(encodeURIComponent).join("/");
       const media = entry.media || {};
-      const icon = imageSlot(media.icon, "icon", entry.type.toUpperCase().slice(0, 1));
-      const preview = entry.subtype === "skin" && Array.isArray(media.previews) && media.previews[0] ? imageSlot(media.previews[0], "thumbnail", t("media.preview")) : '';
+      const firstPreview = Array.isArray(media.previews) && media.previews[0] && safeImageURL(media.previews[0].url) ? media.previews[0] : null;
+      // Use the first preview as the card cover; otherwise the MC crate default.
+      const cover = firstPreview ? imageSlot(firstPreview, "thumbnail", t("media.preview")) : '';
+      const icon = firstPreview ? '' : imageSlot(media.icon, "icon", entry.type.toUpperCase().slice(0, 1));
       const title = '<div class="result-title">' + icon + '<strong>' + escapeHTML(entry.displayName || entry.name) + '</strong><span class="pill">' + escapeHTML(entry.type.toUpperCase()) + '</span>' + (entry.subtype ? '<span class="pill pill-neutral">' + escapeHTML(entry.subtype) + '</span>' : '') + '</div>';
       const summary = entry.description || entry.summary || t("暂无描述，打开详情查看来源与安装候选。");
       const versions = entry.versions.length ? t("catalog.versions", { count: number(entry.versions.length) }) : t("catalog.version", { version: entry.latest });
-      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + preview + title + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(entry, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
+      return '<article class="result-card"><div><a class="result-link" href="' + escapeHTML(href) + '">' + cover + title + '<p class="result-summary">' + escapeHTML(summary) + '</p></a><div class="result-meta"><span>' + escapeHTML(entry.agentId) + '</span><span>' + escapeHTML(versions) + '</span></div>' + renderPackageTags(entry, 8) + '</div><div class="result-version"><strong>' + escapeHTML(entry.latest) + '</strong><span>' + escapeHTML(formatDate(entry.updatedAt)) + '</span></div></article>';
     }).join("");
     bindMedia(results);
     document.getElementById("empty-state").hidden = total > 0;
@@ -271,8 +281,9 @@
       state.manifest = {};
     }
     setupFilters();
-    const initialAgent = new URLSearchParams(location.search).get("agent");
-    if (initialAgent) document.getElementById("agent-filter").value = initialAgent;
+    const params = new URLSearchParams(location.search);
+    [["query", "q"], ["agent-filter", "agent"], ["type-filter", "type"], ["subtype-filter", "subtype"], ["sort-select", "sort"]]
+      .forEach(([id, key]) => { const value = params.get(key); const el = document.getElementById(id); if (value != null && el) el.value = value; });
     setupDone();
     state.catalogNodes = Array.from(document.querySelector("main").childNodes);
     state.ready = true;
