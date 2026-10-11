@@ -17,7 +17,7 @@
   const pageSize = 50;
   const state = {
     manifest: null, filtered: [], total: 0, page: 0, sort: "relevance",
-    ready: false, catalogNodes: null, detailRoute: 0, mediaEnabled: false,
+    ready: false, catalogNodes: null, detailRoute: 0, mediaEnabled: true,
     dashboard: null, agentDashboard: null, abort: null, searchSig: "",
   };
 
