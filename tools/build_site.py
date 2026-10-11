@@ -31,6 +31,8 @@ REPOSITORY = "https://github.com/metaone01/agent-forge"
 PUBLISHED = "https://metaone01.github.io/agent-forge/"
 SCHEMAS = ("package", "source", "index", "advisory")
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
+# Bump when site assets change so CDN/browser caches pick up new files.
+ASSET_VERSION = "20261011b"
 
 
 @dataclass(frozen=True)
@@ -481,10 +483,10 @@ def render_document(root: Path, doc: Document, data_files: set[str]) -> str:
 <title>{escape(title)} · Agent Forge</title>
 <link rel="alternate" hreflang="{doc.locale}" href="{escape(PUBLISHED + doc.target)}">
 <link rel="alternate" hreflang="{'zh-CN' if english else 'en'}" href="{escape(PUBLISHED + doc.peer)}">
-<script src="{asset}/preferences.js"></script>
-<link rel="stylesheet" href="{asset}/styles.css">
-<link rel="stylesheet" href="{asset}/docs.css">
-<script src="{asset}/docs.js" defer></script>
+<script src="{asset}/preferences.js?v={ASSET_VERSION}"></script>
+<link rel="stylesheet" href="{asset}/styles.css?v={ASSET_VERSION}">
+<link rel="stylesheet" href="{asset}/docs.css?v={ASSET_VERSION}">
+<script src="{asset}/docs.js?v={ASSET_VERSION}" defer></script>
 </head>
 <body data-page="docs" data-doc-locale="{doc.locale}" data-doc-peer="{peer}" data-doc-anchors="{anchor_json}">
 <a class="skip-link" href="#doc-content" data-i18n="docs.skip">{words['skip']}</a>
