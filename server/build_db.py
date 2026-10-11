@@ -77,13 +77,12 @@ CREATE TABLE dashboards (
     PRIMARY KEY (scope, id)
 );
 
+-- Trigram FTS5 gives substring ("contains") matching that still uses the
+-- index, instead of a full-table LIKE scan. Queries shorter than 3 chars fall
+-- back to LIKE in the API.
 CREATE VIRTUAL TABLE packages_fts USING fts5 (
-    name,
-    summary,
-    keywords,
-    facets,
-    search_text UNINDEXED,
-    tokenize = 'unicode61 remove_diacritics 2'
+    search_text,
+    tokenize = 'trigram'
 );
 """
 
@@ -154,7 +153,6 @@ def build(data_root: Path, output: Path) -> dict:
             stats["sources"] += 1
 
         package_rows = []
-        fts_rows = []
         detail_rows = []
 
         for agent_id, package_type, index_path in source_pairs:
@@ -216,10 +214,6 @@ def build(data_root: Path, output: Path) -> dict:
                     json.dumps(media, ensure_ascii=False) if media else None,
                     search_text.lower(),
                 ))
-                fts_rows.append((
-                    text(name), summary, " ".join(text(k) for k in keywords),
-                    flatten(facets) + " " + flatten(custom_facets), search_text.lower(),
-                ))
                 stats["packages"] += 1
 
                 if detail_path and not str(detail_path).startswith("http"):
@@ -240,9 +234,9 @@ def build(data_root: Path, output: Path) -> dict:
             "INSERT OR REPLACE INTO packages VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             package_rows,
         )
-        connection.executemany(
-            "INSERT INTO packages_fts(name, summary, keywords, facets, search_text) VALUES (?,?,?,?,?)",
-            fts_rows,
+        # Build the FTS index from the packages table so rowids stay aligned.
+        connection.execute(
+            "INSERT INTO packages_fts(rowid, search_text) SELECT rowid, search_text FROM packages"
         )
         connection.executemany(
             "INSERT OR REPLACE INTO details(agent_id, type, name, version, json) VALUES (?,?,?,?,?)",

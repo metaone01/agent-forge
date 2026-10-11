@@ -18,13 +18,13 @@
   const state = {
     manifest: null, filtered: [], total: 0, page: 0, sort: "relevance",
     ready: false, catalogNodes: null, detailRoute: 0, mediaEnabled: false,
-    dashboard: null, agentDashboard: null, requestId: 0,
+    dashboard: null, agentDashboard: null, abort: null, searchSig: "",
   };
 
-  async function apiJSON(path, params) {
+  async function apiJSON(path, params, signal) {
     const url = new URL(path.replace(/^\//, ""), apiBase);
     if (params) for (const [key, value] of Object.entries(params)) { if (value !== "" && value != null) url.searchParams.set(key, value); }
-    const response = await fetch(url.href, { headers: { Accept: "application/json" } });
+    const response = await fetch(url.href, { headers: { Accept: "application/json" }, signal });
     if (!response.ok) throw new Error(`${response.status} ${url.pathname}`);
     return await response.json();
   }
@@ -128,25 +128,30 @@
     };
   }
   async function runSearch(pageIndex) {
-    if (!document.getElementById("results")) return;
-    const requestId = ++state.requestId;
+    const results = document.getElementById("results");
+    if (!results) return;
+    // Cancel any in-flight query so a slow earlier response cannot overwrite a
+    // newer one (and so fast typing does not pile up requests).
+    if (state.abort) state.abort.abort();
+    const controller = new AbortController();
+    state.abort = controller;
     const filters = currentFilters();
     state.page = Math.max(0, pageIndex || 0);
     state.sort = filters.sort;
-    setText("catalog-status", t("catalog.loading"));
-    const results = document.getElementById("results");
     results.setAttribute("aria-busy", "true");
+    setText("catalog-status", t("catalog.loading"));
     let payload;
     try {
-      payload = await apiJSON("search", { ...filters, page: state.page, pageSize });
+      payload = await apiJSON("search", { ...filters, page: state.page, pageSize }, controller.signal);
     } catch (error) {
-      if (requestId !== state.requestId) return;
+      if (error && error.name === "AbortError") return;
+      if (controller !== state.abort) return;
       results.setAttribute("aria-busy", "false");
       results.innerHTML = '<p class="muted">' + escapeHTML(t("catalog.error")) + '</p>';
       setText("catalog-status", "");
       return;
     }
-    if (requestId !== state.requestId) return;
+    if (controller !== state.abort) return;
     results.setAttribute("aria-busy", "false");
     state.filtered = payload.entries || [];
     state.total = payload.total || 0;
@@ -234,10 +239,18 @@
     if (agentSelect && agentSelect.options.length <= 1) agentSelect.insertAdjacentHTML("beforeend", agents.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
     if (subtypeSelect && subtypeSelect.options.length <= 1) subtypeSelect.insertAdjacentHTML("beforeend", subtypes.map((item) => `<option value="${escapeHTML(item)}">${escapeHTML(item)}</option>`).join(""));
     let searchTimer;
-    const applyFilters = () => { clearTimeout(searchTimer); runSearch(0); };
-    document.getElementById("query").addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => runSearch(0), 180); });
-    ["agent-filter", "type-filter", "subtype-filter", "sort-select"].forEach((id) => document.getElementById(id).addEventListener("change", applyFilters));
-    document.getElementById("clear-filters").addEventListener("click", () => { ["query", "agent-filter", "type-filter", "subtype-filter"].forEach((id) => { document.getElementById(id).value = ""; }); applyFilters(); });
+    const scheduleSearch = (delay) => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        const signature = JSON.stringify(currentFilters());
+        if (signature === state.searchSig) return;
+        state.searchSig = signature;
+        runSearch(0);
+      }, delay);
+    };
+    document.getElementById("query").addEventListener("input", () => scheduleSearch(300));
+    ["agent-filter", "type-filter", "subtype-filter", "sort-select"].forEach((id) => document.getElementById(id).addEventListener("change", () => scheduleSearch(0)));
+    document.getElementById("clear-filters").addEventListener("click", () => { ["query", "agent-filter", "type-filter", "subtype-filter"].forEach((id) => { document.getElementById(id).value = ""; }); scheduleSearch(0); });
     const changePage = (pageNumber) => {
       if (!Number.isFinite(pageNumber)) pageNumber = 0;
       const pages = Math.max(1, Math.ceil(state.total / pageSize));
