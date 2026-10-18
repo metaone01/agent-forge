@@ -20,7 +20,7 @@
 - **维护记录**：通过 Git 和 Pull Request 管理 JSON，使用 JSON Schema 与跨文件校验约束数据。
 - **构建离线索引**：从生成数据构建按 Agent/type 拆分的 SQLite FTS5 快照。
 
-在线读取以静态 JSON 为公共契约，无需数据库或动态 API。当前浏览页面不依赖运行时 CDN 或后端服务，不保存 GitHub token，也不提供写入接口。
+静态模式继续以 JSON 为公共契约，无需数据库或动态 API。另提供可选的 SQLite 查询服务与周期采集 Worker，支持搜索、排序和快照更新，使用入口见[查询服务启动说明](README-DEPLOYMENT.md)。当前实现已通过本机验收，未执行外部部署。前端不保存 GitHub token，公开 API 只读。
 
 > [!NOTE]
 > README 介绍项目定位、数据契约与使用入口，不维护实时包数量、Agent 清单或最新 revision。元数据由独立的 `packages` 分支维护，README 不同步到该分支；最新已发布内容以站点及其 manifest 为准。

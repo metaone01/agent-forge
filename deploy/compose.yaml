@@ -1,0 +1,24 @@
+services:
+  query:
+    image: ${AGENT_FORGE_QUERY_IMAGE:?Set a reviewed query image by immutable digest}
+    user: "10001:10001"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    ports: ["127.0.0.1:8791:8791"]
+    volumes:
+      - type: bind
+        source: ${AGENT_FORGE_PUBLIC_RUNTIME:?Set the prepared public runtime absolute path}
+        target: /runtime
+        read_only: true
+        bind:
+          create_host_path: false
+    tmpfs: ["/tmp:rw,nosuid,noexec,size=16m"]
+    logging:
+      driver: local
+      options:
+        max-size: "1m"
+        max-file: "4"
+    restart: unless-stopped
+    stop_grace_period: 15s

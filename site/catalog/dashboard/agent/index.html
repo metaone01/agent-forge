@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="agent-forge-api-base" content="../../../api/v1/">
+  <meta name="description" content="同一公开 SQLite 快照的目录统计">
+  <title>Agent Forge · Dashboard</title>
+  <script src="../../../assets/preferences.js"></script>
+  <link rel="stylesheet" href="../../../assets/styles.css"><link rel="stylesheet" href="../../../assets/api-catalog.css">
+</head>
+<body data-page="api-agent-dashboard">
+  <header class="topbar"><a class="brand" href="../../../catalog/">Agent Forge <span data-i18n="METADATA CATALOG">元数据目录</span></a><nav class="topnav" aria-label="主导航" data-i18n-aria-label="nav.label"><a href="../../../catalog/" data-i18n="dash.catalog">查询目录</a><a href="../../../catalog/dashboard/" data-i18n="nav.dashboard" aria-current="page">数据总览</a><a href="../../../docs/" data-doc-entry data-i18n="nav.docs">文档</a><a class="button button-small" href="../../../submit/" data-i18n="nav.submit">上传包</a></nav></header>
+  <main class="shell dashboard-shell">
+    <a id="dashboard-back" class="back-link" href="../" data-i18n="← 返回总览">← 返回总览</a>
+    <section class="dashboard-heading"><div><p class="eyebrow">CATALOG OBSERVATORY</p><h1 id="agent-title" data-i18n="Agent 数据">Agent 数据</h1><p class="lede" id="agent-description" data-i18n="dash.description">统计与目录查询使用同一公开快照。</p></div><div class="dashboard-updated" id="dashboard-updated"></div></section>
+    <p class="disclaimer" data-i18n="dash.notice">全站按包 ID 去重；各 Agent 的声明关联可以重叠，不能直接相加。</p>
+    <div class="panel-heading"><a id="dashboard-catalog" class="button button-quiet" href="../../../catalog/" data-i18n="dash.catalog">查询目录</a><button id="dashboard-refresh" class="button" type="button" data-i18n="dash.refresh">读取最新统计</button></div>
+    <p id="dashboard-status" class="muted" role="status"></p><p id="dashboard-coverage" class="muted"></p>
+    <div id="dashboard-error" class="api-error" role="alert" hidden><p id="dashboard-error-message"></p><button id="dashboard-retry" class="button" type="button" data-i18n="dash.retry">重试</button></div>
+    <section id="global-metrics" class="metric-grid" aria-label="目录统计"></section>
+    <section class="dashboard-grid">
+
+      <article class="panel chart-panel"><div class="panel-heading"><h2 data-i18n="类型分布">类型分布</h2></div><div id="agent-type-chart" class="bar-chart"></div></article>
+      <article class="panel chart-panel"><div class="panel-heading"><h2 data-i18n="dash.facets">dash.facets</h2></div><div id="agent-facet-chart" class="bar-chart"></div><p class="chart-note" data-i18n="dash.facetNote">dash.facetNote</p></article>
+      <article class="panel chart-panel"><div class="panel-heading"><h2 data-i18n="dash.custom">dash.custom</h2></div><div id="custom-facet-chart" class="bar-chart"></div><p class="chart-note" data-i18n="dash.facetNote">dash.facetNote</p></article>
+      <article class="panel chart-panel"><div class="panel-heading"><h2 data-i18n="兼容性声明">兼容性声明</h2></div><div id="compat-chart" class="bar-chart"></div><p class="chart-note" data-i18n="dash.compat">dash.compat</p></article>
+    </section>
+
+    <section class="panel"><div class="panel-heading"><h2 data-i18n="dash.recent">最近规范更新</h2></div><p class="chart-note" data-i18n="dash.recentNote">仅按规范更新时间排列；不是上游创建或发行时间。</p><div id="recent-packages" class="result-list"></div></section>
+    <p class="disclaimer" data-i18n="数据已整合但未核验。Agent Forge 不提供安全、可信度或兼容性保证。">数据已整合但未核验。Agent Forge 不提供安全、可信度或兼容性保证。</p>
+  </main>
+  <footer class="footer"><span data-i18n="dash.footer">Agent Forge · 公开快照统计</span><a href="https://github.com/metaone01/agent-forge" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+  <script src="../../../assets/query-client.js" defer></script><script src="../../../assets/api-dashboard.js" defer></script><script src="../../../assets/api-presentation.js" defer></script>
+</body>
+</html>

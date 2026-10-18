@@ -1,0 +1,837 @@
+{
+  "provenance": "Actual SQLite and HTTP query DTOs for synthetic Git discovery and local metadata triage; no real HTTP",
+  "list": {
+    "revision": "review-one",
+    "generatedAt": "2026-10-11T08:00:14.000000Z",
+    "snapshotAgeSeconds": 189269.392148,
+    "downloadFreshnessSummary": {
+      "stale": true,
+      "reason": "upstream_not_collected",
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "partialCoverage": true,
+      "coverage": {
+        "ambiguousPackages": 0,
+        "countsWindowDays": 30,
+        "eligiblePackages": 0,
+        "mappedPackages": 0,
+        "maximumCheckAgeHours": 26,
+        "oldestCheckedAt": null,
+        "oldestWindowEnd": null,
+        "pendingPackages": 0,
+        "policy": {
+          "maximum_age_hours": 50,
+          "minimum_hours": 24,
+          "policy_id": "npm-daily-download-rate",
+          "target_hours": 24,
+          "tolerance_hours": 0,
+          "version": "pilot-24h-v1"
+        },
+        "rateWindowHours": 24,
+        "sharedNpmPackages": 0,
+        "sourceId": "npmjs.org",
+        "unmappedPackages": 1
+      }
+    },
+    "freshnessSummary": {
+      "stale": true,
+      "reason": "discovery_stale",
+      "coverage": {
+        "adoption": "review_required",
+        "asOf": "2026-10-11T08:00:14.000000Z",
+        "coverage": "not_guaranteed",
+        "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+        "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+        "manifests": 0,
+        "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+        "policyVersion": "discovery-evidence-v1",
+        "repositories": 2,
+        "sources": 1,
+        "staleAfterSeconds": 86400
+      },
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "complete": false
+    },
+    "scope": "discovery",
+    "sort": "first_seen",
+    "discoveryReviewCoverage": {
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "authority": "local-worker-metadata-triage",
+      "candidatesWithRecordedHistory": 1,
+      "events": 1,
+      "meaning": "metadata-scope-triage-not-canonical-adoption-or-safety-approval",
+      "policyVersion": "candidate-metadata-review-v1",
+      "visibleDispositions": {
+        "not_recorded": 1,
+        "rejected": 1
+      }
+    },
+    "reviewDisposition": null,
+    "sortPolicyVersion": "discovery-evidence-v1",
+    "sortScope": "discovery_evidence",
+    "sortAsOf": "2026-10-11T08:00:14.000000Z",
+    "discoveryCoverage": {
+      "adoption": "review_required",
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "coverage": "not_guaranteed",
+      "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+      "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+      "manifests": 0,
+      "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+      "policyVersion": "discovery-evidence-v1",
+      "repositories": 2,
+      "sources": 1,
+      "staleAfterSeconds": 86400
+    },
+    "items": [
+      {
+        "agents": [],
+        "classification": "discovered",
+        "customFacets": {},
+        "declaredMetadata": null,
+        "displayName": null,
+        "evidenceTruncated": false,
+        "facets": {},
+        "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+        "id": "github-repository:1",
+        "issues": [],
+        "keywords": [
+          "mcp-server"
+        ],
+        "kind": "repository",
+        "lastSeenAt": "2026-10-11T08:00:07.000000Z",
+        "lifecycle": [
+          {
+            "observedAt": "2026-10-11T08:00:07.000000Z",
+            "state": "discovered"
+          }
+        ],
+        "manifestEvidence": null,
+        "metadataReview": {
+          "authority": "local-worker-metadata-triage",
+          "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+          "evidenceMatches": true,
+          "history": [
+            {
+              "action": "reject",
+              "authority": "local-worker-metadata-triage",
+              "candidateId": "github-repository:1",
+              "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+              "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+              "policyVersion": "candidate-metadata-review-v1",
+              "previousId": null,
+              "reasonCode": "outside_catalog_scope",
+              "reviewedAt": "2026-10-11T08:00:14.000000Z",
+              "sequence": 1
+            }
+          ],
+          "historyCount": 1,
+          "historyTruncated": false,
+          "latestDecision": {
+            "action": "reject",
+            "authority": "local-worker-metadata-triage",
+            "candidateId": "github-repository:1",
+            "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+            "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+            "policyVersion": "candidate-metadata-review-v1",
+            "previousId": null,
+            "reasonCode": "outside_catalog_scope",
+            "reviewedAt": "2026-10-11T08:00:14.000000Z",
+            "sequence": 1
+          },
+          "policyVersion": "candidate-metadata-review-v1",
+          "status": "rejected"
+        },
+        "name": "owner/repo-1",
+        "repository": {
+          "archived": null,
+          "createdAt": null,
+          "defaultBranch": null,
+          "disabled": null,
+          "forks": null,
+          "fullName": "owner/repo-1",
+          "githubRepoId": 1,
+          "pushedAt": null,
+          "stars": 10,
+          "topics": [
+            "mcp-server"
+          ],
+          "updatedAt": null,
+          "url": "https://github.com/owner/repo-1"
+        },
+        "reviewStatus": "unreviewed",
+        "scope": "discovery",
+        "sourceCount": 1,
+        "sourceEvidence": [
+          {
+            "checkedAt": "2026-10-11T08:00:07.000000Z",
+            "evidenceHash": "74109ade9d1e91de4b0fb7545b068b70aa765ef9dfa75915fc9cc520325ac067",
+            "incomplete": false,
+            "kind": "github_search",
+            "observedAt": "2026-10-11T08:00:07.000000Z",
+            "page": 1,
+            "resultCount": 2,
+            "sourceId": "github-search:59854ad99c4948303f52dc779866e2db0fe4f6bb325792cc3b96dd12c3765e42",
+            "timeField": "created",
+            "topic": "mcp-server",
+            "totalCount": 2,
+            "url": "https://api.github.com/search/repositories?order=asc&page=1&per_page=100&q=topic%3Amcp-server+is%3Apublic+created%3A2026-10-11T00%3A00%3A07Z..2026-10-11T08%3A00%3A07Z&sort=updated",
+            "windowEnd": "2026-10-11T08:00:07.000000Z",
+            "windowStart": "2026-10-11T00:00:07.000000Z"
+          }
+        ],
+        "subtype": null,
+        "summary": "",
+        "type": null,
+        "freshness": {
+          "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+          "stale": true,
+          "reason": "discovery_stale",
+          "staleAfterSeconds": 86400
+        }
+      },
+      {
+        "agents": [],
+        "classification": "discovered",
+        "customFacets": {},
+        "declaredMetadata": null,
+        "displayName": null,
+        "evidenceTruncated": false,
+        "facets": {},
+        "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+        "id": "github-repository:2",
+        "issues": [],
+        "keywords": [
+          "mcp-server"
+        ],
+        "kind": "repository",
+        "lastSeenAt": "2026-10-11T08:00:07.000000Z",
+        "lifecycle": [
+          {
+            "observedAt": "2026-10-11T08:00:07.000000Z",
+            "state": "discovered"
+          }
+        ],
+        "manifestEvidence": null,
+        "metadataReview": {
+          "authority": "local-worker-metadata-triage",
+          "evidenceFingerprint": "1f421282b06fb834ab5695b6f42d75a7285e81314d67de4ae0345b3c5a06087f",
+          "evidenceMatches": false,
+          "history": [],
+          "historyCount": 0,
+          "historyTruncated": false,
+          "latestDecision": null,
+          "policyVersion": "candidate-metadata-review-v1",
+          "status": "not_recorded"
+        },
+        "name": "owner/repo-2",
+        "repository": {
+          "archived": null,
+          "createdAt": null,
+          "defaultBranch": null,
+          "disabled": null,
+          "forks": null,
+          "fullName": "owner/repo-2",
+          "githubRepoId": 2,
+          "pushedAt": null,
+          "stars": null,
+          "topics": [
+            "mcp-server"
+          ],
+          "updatedAt": null,
+          "url": "https://github.com/owner/repo-2"
+        },
+        "reviewStatus": "unreviewed",
+        "scope": "discovery",
+        "sourceCount": 1,
+        "sourceEvidence": [
+          {
+            "checkedAt": "2026-10-11T08:00:07.000000Z",
+            "evidenceHash": "74109ade9d1e91de4b0fb7545b068b70aa765ef9dfa75915fc9cc520325ac067",
+            "incomplete": false,
+            "kind": "github_search",
+            "observedAt": "2026-10-11T08:00:07.000000Z",
+            "page": 1,
+            "resultCount": 2,
+            "sourceId": "github-search:59854ad99c4948303f52dc779866e2db0fe4f6bb325792cc3b96dd12c3765e42",
+            "timeField": "created",
+            "topic": "mcp-server",
+            "totalCount": 2,
+            "url": "https://api.github.com/search/repositories?order=asc&page=1&per_page=100&q=topic%3Amcp-server+is%3Apublic+created%3A2026-10-11T00%3A00%3A07Z..2026-10-11T08%3A00%3A07Z&sort=updated",
+            "windowEnd": "2026-10-11T08:00:07.000000Z",
+            "windowStart": "2026-10-11T00:00:07.000000Z"
+          }
+        ],
+        "subtype": null,
+        "summary": "",
+        "type": null,
+        "freshness": {
+          "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+          "stale": true,
+          "reason": "discovery_stale",
+          "staleAfterSeconds": 86400
+        }
+      }
+    ],
+    "nextCursor": null
+  },
+  "filtered": {
+    "revision": "review-one",
+    "generatedAt": "2026-10-11T08:00:14.000000Z",
+    "snapshotAgeSeconds": 189269.401267,
+    "downloadFreshnessSummary": {
+      "stale": true,
+      "reason": "upstream_not_collected",
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "partialCoverage": true,
+      "coverage": {
+        "ambiguousPackages": 0,
+        "countsWindowDays": 30,
+        "eligiblePackages": 0,
+        "mappedPackages": 0,
+        "maximumCheckAgeHours": 26,
+        "oldestCheckedAt": null,
+        "oldestWindowEnd": null,
+        "pendingPackages": 0,
+        "policy": {
+          "maximum_age_hours": 50,
+          "minimum_hours": 24,
+          "policy_id": "npm-daily-download-rate",
+          "target_hours": 24,
+          "tolerance_hours": 0,
+          "version": "pilot-24h-v1"
+        },
+        "rateWindowHours": 24,
+        "sharedNpmPackages": 0,
+        "sourceId": "npmjs.org",
+        "unmappedPackages": 1
+      }
+    },
+    "freshnessSummary": {
+      "stale": true,
+      "reason": "discovery_stale",
+      "coverage": {
+        "adoption": "review_required",
+        "asOf": "2026-10-11T08:00:14.000000Z",
+        "coverage": "not_guaranteed",
+        "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+        "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+        "manifests": 0,
+        "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+        "policyVersion": "discovery-evidence-v1",
+        "repositories": 2,
+        "sources": 1,
+        "staleAfterSeconds": 86400
+      },
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "complete": false
+    },
+    "scope": "discovery",
+    "sort": "first_seen",
+    "discoveryReviewCoverage": {
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "authority": "local-worker-metadata-triage",
+      "candidatesWithRecordedHistory": 1,
+      "events": 1,
+      "meaning": "metadata-scope-triage-not-canonical-adoption-or-safety-approval",
+      "policyVersion": "candidate-metadata-review-v1",
+      "visibleDispositions": {
+        "not_recorded": 1,
+        "rejected": 1
+      }
+    },
+    "reviewDisposition": "rejected",
+    "sortPolicyVersion": "discovery-evidence-v1",
+    "sortScope": "discovery_evidence",
+    "sortAsOf": "2026-10-11T08:00:14.000000Z",
+    "discoveryCoverage": {
+      "adoption": "review_required",
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "coverage": "not_guaranteed",
+      "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+      "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+      "manifests": 0,
+      "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+      "policyVersion": "discovery-evidence-v1",
+      "repositories": 2,
+      "sources": 1,
+      "staleAfterSeconds": 86400
+    },
+    "items": [
+      {
+        "agents": [],
+        "classification": "discovered",
+        "customFacets": {},
+        "declaredMetadata": null,
+        "displayName": null,
+        "evidenceTruncated": false,
+        "facets": {},
+        "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+        "id": "github-repository:1",
+        "issues": [],
+        "keywords": [
+          "mcp-server"
+        ],
+        "kind": "repository",
+        "lastSeenAt": "2026-10-11T08:00:07.000000Z",
+        "lifecycle": [
+          {
+            "observedAt": "2026-10-11T08:00:07.000000Z",
+            "state": "discovered"
+          }
+        ],
+        "manifestEvidence": null,
+        "metadataReview": {
+          "authority": "local-worker-metadata-triage",
+          "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+          "evidenceMatches": true,
+          "history": [
+            {
+              "action": "reject",
+              "authority": "local-worker-metadata-triage",
+              "candidateId": "github-repository:1",
+              "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+              "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+              "policyVersion": "candidate-metadata-review-v1",
+              "previousId": null,
+              "reasonCode": "outside_catalog_scope",
+              "reviewedAt": "2026-10-11T08:00:14.000000Z",
+              "sequence": 1
+            }
+          ],
+          "historyCount": 1,
+          "historyTruncated": false,
+          "latestDecision": {
+            "action": "reject",
+            "authority": "local-worker-metadata-triage",
+            "candidateId": "github-repository:1",
+            "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+            "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+            "policyVersion": "candidate-metadata-review-v1",
+            "previousId": null,
+            "reasonCode": "outside_catalog_scope",
+            "reviewedAt": "2026-10-11T08:00:14.000000Z",
+            "sequence": 1
+          },
+          "policyVersion": "candidate-metadata-review-v1",
+          "status": "rejected"
+        },
+        "name": "owner/repo-1",
+        "repository": {
+          "archived": null,
+          "createdAt": null,
+          "defaultBranch": null,
+          "disabled": null,
+          "forks": null,
+          "fullName": "owner/repo-1",
+          "githubRepoId": 1,
+          "pushedAt": null,
+          "stars": 10,
+          "topics": [
+            "mcp-server"
+          ],
+          "updatedAt": null,
+          "url": "https://github.com/owner/repo-1"
+        },
+        "reviewStatus": "unreviewed",
+        "scope": "discovery",
+        "sourceCount": 1,
+        "sourceEvidence": [
+          {
+            "checkedAt": "2026-10-11T08:00:07.000000Z",
+            "evidenceHash": "74109ade9d1e91de4b0fb7545b068b70aa765ef9dfa75915fc9cc520325ac067",
+            "incomplete": false,
+            "kind": "github_search",
+            "observedAt": "2026-10-11T08:00:07.000000Z",
+            "page": 1,
+            "resultCount": 2,
+            "sourceId": "github-search:59854ad99c4948303f52dc779866e2db0fe4f6bb325792cc3b96dd12c3765e42",
+            "timeField": "created",
+            "topic": "mcp-server",
+            "totalCount": 2,
+            "url": "https://api.github.com/search/repositories?order=asc&page=1&per_page=100&q=topic%3Amcp-server+is%3Apublic+created%3A2026-10-11T00%3A00%3A07Z..2026-10-11T08%3A00%3A07Z&sort=updated",
+            "windowEnd": "2026-10-11T08:00:07.000000Z",
+            "windowStart": "2026-10-11T00:00:07.000000Z"
+          }
+        ],
+        "subtype": null,
+        "summary": "",
+        "type": null,
+        "freshness": {
+          "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+          "stale": true,
+          "reason": "discovery_stale",
+          "staleAfterSeconds": 86400
+        }
+      }
+    ],
+    "nextCursor": null
+  },
+  "detail": {
+    "revision": "review-one",
+    "generatedAt": "2026-10-11T08:00:14.000000Z",
+    "snapshotAgeSeconds": 189269.407333,
+    "downloadFreshnessSummary": {
+      "stale": true,
+      "reason": "upstream_not_collected",
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "partialCoverage": true,
+      "coverage": {
+        "ambiguousPackages": 0,
+        "countsWindowDays": 30,
+        "eligiblePackages": 0,
+        "mappedPackages": 0,
+        "maximumCheckAgeHours": 26,
+        "oldestCheckedAt": null,
+        "oldestWindowEnd": null,
+        "pendingPackages": 0,
+        "policy": {
+          "maximum_age_hours": 50,
+          "minimum_hours": 24,
+          "policy_id": "npm-daily-download-rate",
+          "target_hours": 24,
+          "tolerance_hours": 0,
+          "version": "pilot-24h-v1"
+        },
+        "rateWindowHours": 24,
+        "sharedNpmPackages": 0,
+        "sourceId": "npmjs.org",
+        "unmappedPackages": 1
+      }
+    },
+    "freshnessSummary": {
+      "stale": true,
+      "reason": "discovery_stale",
+      "coverage": {
+        "adoption": "review_required",
+        "asOf": "2026-10-11T08:00:14.000000Z",
+        "coverage": "not_guaranteed",
+        "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+        "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+        "manifests": 0,
+        "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+        "policyVersion": "discovery-evidence-v1",
+        "repositories": 2,
+        "sources": 1,
+        "staleAfterSeconds": 86400
+      },
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "complete": false
+    },
+    "scope": "discovery",
+    "item": {
+      "agents": [],
+      "classification": "discovered",
+      "customFacets": {},
+      "declaredMetadata": null,
+      "displayName": null,
+      "evidenceTruncated": false,
+      "facets": {},
+      "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+      "id": "github-repository:1",
+      "issues": [],
+      "keywords": [
+        "mcp-server"
+      ],
+      "kind": "repository",
+      "lastSeenAt": "2026-10-11T08:00:07.000000Z",
+      "lifecycle": [
+        {
+          "observedAt": "2026-10-11T08:00:07.000000Z",
+          "state": "discovered"
+        }
+      ],
+      "manifestEvidence": null,
+      "metadataReview": {
+        "authority": "local-worker-metadata-triage",
+        "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+        "evidenceMatches": true,
+        "history": [
+          {
+            "action": "reject",
+            "authority": "local-worker-metadata-triage",
+            "candidateId": "github-repository:1",
+            "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+            "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+            "policyVersion": "candidate-metadata-review-v1",
+            "previousId": null,
+            "reasonCode": "outside_catalog_scope",
+            "reviewedAt": "2026-10-11T08:00:14.000000Z",
+            "sequence": 1
+          }
+        ],
+        "historyCount": 1,
+        "historyTruncated": false,
+        "latestDecision": {
+          "action": "reject",
+          "authority": "local-worker-metadata-triage",
+          "candidateId": "github-repository:1",
+          "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+          "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+          "policyVersion": "candidate-metadata-review-v1",
+          "previousId": null,
+          "reasonCode": "outside_catalog_scope",
+          "reviewedAt": "2026-10-11T08:00:14.000000Z",
+          "sequence": 1
+        },
+        "policyVersion": "candidate-metadata-review-v1",
+        "status": "rejected"
+      },
+      "name": "owner/repo-1",
+      "repository": {
+        "archived": null,
+        "createdAt": null,
+        "defaultBranch": null,
+        "disabled": null,
+        "forks": null,
+        "fullName": "owner/repo-1",
+        "githubRepoId": 1,
+        "pushedAt": null,
+        "stars": 10,
+        "topics": [
+          "mcp-server"
+        ],
+        "updatedAt": null,
+        "url": "https://github.com/owner/repo-1"
+      },
+      "reviewStatus": "unreviewed",
+      "scope": "discovery",
+      "sourceCount": 1,
+      "sourceEvidence": [
+        {
+          "checkedAt": "2026-10-11T08:00:07.000000Z",
+          "evidenceHash": "74109ade9d1e91de4b0fb7545b068b70aa765ef9dfa75915fc9cc520325ac067",
+          "incomplete": false,
+          "kind": "github_search",
+          "observedAt": "2026-10-11T08:00:07.000000Z",
+          "page": 1,
+          "resultCount": 2,
+          "sourceId": "github-search:59854ad99c4948303f52dc779866e2db0fe4f6bb325792cc3b96dd12c3765e42",
+          "timeField": "created",
+          "topic": "mcp-server",
+          "totalCount": 2,
+          "url": "https://api.github.com/search/repositories?order=asc&page=1&per_page=100&q=topic%3Amcp-server+is%3Apublic+created%3A2026-10-11T00%3A00%3A07Z..2026-10-11T08%3A00%3A07Z&sort=updated",
+          "windowEnd": "2026-10-11T08:00:07.000000Z",
+          "windowStart": "2026-10-11T00:00:07.000000Z"
+        }
+      ],
+      "subtype": null,
+      "summary": "",
+      "type": null,
+      "freshness": {
+        "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+        "stale": true,
+        "reason": "discovery_stale",
+        "staleAfterSeconds": 86400
+      }
+    },
+    "discoveryReviewCoverage": {
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "authority": "local-worker-metadata-triage",
+      "candidatesWithRecordedHistory": 1,
+      "events": 1,
+      "meaning": "metadata-scope-triage-not-canonical-adoption-or-safety-approval",
+      "policyVersion": "candidate-metadata-review-v1",
+      "visibleDispositions": {
+        "not_recorded": 1,
+        "rejected": 1
+      }
+    },
+    "discoveryCoverage": {
+      "adoption": "review_required",
+      "asOf": "2026-10-11T08:00:14.000000Z",
+      "coverage": "not_guaranteed",
+      "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+      "lastObservationAt": "2026-10-11T08:00:07.000000Z",
+      "manifests": 0,
+      "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+      "policyVersion": "discovery-evidence-v1",
+      "repositories": 2,
+      "sources": 1,
+      "staleAfterSeconds": 86400
+    }
+  },
+  "superseded": {
+    "revision": "review-two",
+    "generatedAt": "2026-10-11T08:00:28.000000Z",
+    "snapshotAgeSeconds": 189257.258842,
+    "downloadFreshnessSummary": {
+      "stale": true,
+      "reason": "upstream_not_collected",
+      "asOf": "2026-10-11T08:00:28.000000Z",
+      "partialCoverage": true,
+      "coverage": {
+        "ambiguousPackages": 0,
+        "countsWindowDays": 30,
+        "eligiblePackages": 0,
+        "mappedPackages": 0,
+        "maximumCheckAgeHours": 26,
+        "oldestCheckedAt": null,
+        "oldestWindowEnd": null,
+        "pendingPackages": 0,
+        "policy": {
+          "maximum_age_hours": 50,
+          "minimum_hours": 24,
+          "policy_id": "npm-daily-download-rate",
+          "target_hours": 24,
+          "tolerance_hours": 0,
+          "version": "pilot-24h-v1"
+        },
+        "rateWindowHours": 24,
+        "sharedNpmPackages": 0,
+        "sourceId": "npmjs.org",
+        "unmappedPackages": 1
+      }
+    },
+    "freshnessSummary": {
+      "stale": true,
+      "reason": "discovery_stale",
+      "coverage": {
+        "adoption": "review_required",
+        "asOf": "2026-10-11T08:00:28.000000Z",
+        "coverage": "not_guaranteed",
+        "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+        "lastObservationAt": "2026-10-11T08:00:21.000000Z",
+        "manifests": 0,
+        "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+        "policyVersion": "discovery-evidence-v1",
+        "repositories": 2,
+        "sources": 1,
+        "staleAfterSeconds": 86400
+      },
+      "asOf": "2026-10-11T08:00:28.000000Z",
+      "complete": false
+    },
+    "scope": "discovery",
+    "item": {
+      "agents": [],
+      "classification": "discovered",
+      "customFacets": {},
+      "declaredMetadata": null,
+      "displayName": null,
+      "evidenceTruncated": false,
+      "facets": {},
+      "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+      "id": "github-repository:1",
+      "issues": [],
+      "keywords": [
+        "changed"
+      ],
+      "kind": "repository",
+      "lastSeenAt": "2026-10-11T08:00:21.000000Z",
+      "lifecycle": [
+        {
+          "observedAt": "2026-10-11T08:00:07.000000Z",
+          "state": "discovered"
+        }
+      ],
+      "manifestEvidence": null,
+      "metadataReview": {
+        "authority": "local-worker-metadata-triage",
+        "evidenceFingerprint": "90b7b2da2ac9e96029cf70dc92f06919d6504d66e71e198340eace99bf965ff5",
+        "evidenceMatches": false,
+        "history": [
+          {
+            "action": "reject",
+            "authority": "local-worker-metadata-triage",
+            "candidateId": "github-repository:1",
+            "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+            "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+            "policyVersion": "candidate-metadata-review-v1",
+            "previousId": null,
+            "reasonCode": "outside_catalog_scope",
+            "reviewedAt": "2026-10-11T08:00:14.000000Z",
+            "sequence": 1
+          }
+        ],
+        "historyCount": 1,
+        "historyTruncated": false,
+        "latestDecision": {
+          "action": "reject",
+          "authority": "local-worker-metadata-triage",
+          "candidateId": "github-repository:1",
+          "evidenceFingerprint": "4bea84eb99f11bd834d1a39e71f5cb793cc311ee0f978994e7c53ea17c2841b1",
+          "id": "694350d698dc31befe4d50a6fa14c7f9b0c8f24e8a9955e1866347eb57725544",
+          "policyVersion": "candidate-metadata-review-v1",
+          "previousId": null,
+          "reasonCode": "outside_catalog_scope",
+          "reviewedAt": "2026-10-11T08:00:14.000000Z",
+          "sequence": 1
+        },
+        "policyVersion": "candidate-metadata-review-v1",
+        "status": "superseded"
+      },
+      "name": "owner/repo-1",
+      "repository": {
+        "archived": null,
+        "createdAt": null,
+        "defaultBranch": null,
+        "disabled": null,
+        "forks": null,
+        "fullName": "owner/repo-1",
+        "githubRepoId": 1,
+        "pushedAt": null,
+        "stars": null,
+        "topics": [
+          "changed"
+        ],
+        "updatedAt": null,
+        "url": "https://github.com/owner/repo-1"
+      },
+      "reviewStatus": "unreviewed",
+      "scope": "discovery",
+      "sourceCount": 1,
+      "sourceEvidence": [
+        {
+          "checkedAt": "2026-10-11T08:00:21.000000Z",
+          "evidenceHash": "1085c70778c8fc6b2a7a7b616cfe0e6dd52db17cff14a504db24846dff0591d3",
+          "incomplete": false,
+          "kind": "github_search",
+          "observedAt": "2026-10-11T08:00:21.000000Z",
+          "page": 1,
+          "resultCount": 1,
+          "sourceId": "github-search:59854ad99c4948303f52dc779866e2db0fe4f6bb325792cc3b96dd12c3765e42",
+          "timeField": "created",
+          "topic": "mcp-server",
+          "totalCount": 1,
+          "url": "https://api.github.com/search/repositories?order=asc&page=1&per_page=100&q=topic%3Amcp-server+is%3Apublic+created%3A2026-10-11T00%3A00%3A21Z..2026-10-11T08%3A00%3A21Z&sort=updated",
+          "windowEnd": "2026-10-11T08:00:21.000000Z",
+          "windowStart": "2026-10-11T00:00:21.000000Z"
+        }
+      ],
+      "subtype": null,
+      "summary": "",
+      "type": null,
+      "freshness": {
+        "lastObservationAt": "2026-10-11T08:00:21.000000Z",
+        "stale": true,
+        "reason": "discovery_stale",
+        "staleAfterSeconds": 86400
+      }
+    },
+    "discoveryReviewCoverage": {
+      "asOf": "2026-10-11T08:00:28.000000Z",
+      "authority": "local-worker-metadata-triage",
+      "candidatesWithRecordedHistory": 1,
+      "events": 1,
+      "meaning": "metadata-scope-triage-not-canonical-adoption-or-safety-approval",
+      "policyVersion": "candidate-metadata-review-v1",
+      "visibleDispositions": {
+        "not_recorded": 1,
+        "superseded": 1
+      }
+    },
+    "discoveryCoverage": {
+      "adoption": "review_required",
+      "asOf": "2026-10-11T08:00:28.000000Z",
+      "coverage": "not_guaranteed",
+      "firstSeenAt": "2026-10-11T08:00:07.000000Z",
+      "lastObservationAt": "2026-10-11T08:00:21.000000Z",
+      "manifests": 0,
+      "oldestObservationAt": "2026-10-11T08:00:07.000000Z",
+      "policyVersion": "discovery-evidence-v1",
+      "repositories": 2,
+      "sources": 1,
+      "staleAfterSeconds": 86400
+    }
+  }
+}

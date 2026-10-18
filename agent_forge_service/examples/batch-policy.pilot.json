@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "policyId": "github-pilot-8h-v1",
+  "slotHours": 8,
+  "refresh": {
+    "topN": 100,
+    "protectionHours": 168,
+    "fastHours": 8,
+    "ordinaryHours": 24,
+    "longtailFraction": 0.25
+  },
+  "budgets": {
+    "refresh": 20,
+    "bootstrap": 5,
+    "discovery": 4,
+    "history": 1
+  },
+  "discovery": {
+    "topics": [
+      "mcp-server"
+    ],
+    "start": "2026-10-10T00:00:00Z",
+    "overlapHours": 24,
+    "historyStart": "2026-01-01T00:00:00Z",
+    "historyLagHours": 24,
+    "historyChunkHours": 720,
+    "minShardSeconds": 60,
+    "maxShards": 255
+  }
+}

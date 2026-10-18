@@ -9,5 +9,15 @@ dependencies = [
     "PyYAML>=6,<7",
 ]
 
+[project.optional-dependencies]
+http = [
+    "fastapi==0.143.0",
+    "uvicorn==0.54.0",
+]
+
+[dependency-groups]
+http-test = ["httpx==0.28.1"]
+
 [tool.uv]
 package = false
+exclude-newer = "2026-10-14T10:45:00Z"

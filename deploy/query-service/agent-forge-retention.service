@@ -1,0 +1,21 @@
+[Unit]
+Description=Agent Forge bounded public snapshot retention (explicit opt-in)
+After=local-fs.target
+RequiresMountsFor=/srv/agent-forge/public
+
+[Service]
+Type=oneshot
+User=agent-forge-publisher
+Group=agent-forge-query
+WorkingDirectory=/opt/agent-forge
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/agent-forge/.venv/bin/python -m agent_forge_service.worker retention-run --runtime /srv/agent-forge/public --keep-last 3 --max-remove 3 --apply
+TimeoutStartSec=180
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ReadWritePaths=/srv/agent-forge/public
+RestrictSUIDSGID=true
+UMask=0027

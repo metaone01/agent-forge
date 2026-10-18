@@ -83,11 +83,50 @@ class BuildSiteTests(unittest.TestCase):
     def build(self, **kwargs):
         return build_site(self.root, self.output, **kwargs)
 
-    def test_catalog_pause_survives_build_and_document_navigation(self):
+    def test_api_summary_mode_omits_full_indexes_and_package_records(self):
+        (self.root / "data/dashboard.json").write_text('{"counts":{"packages":1}}', encoding="utf-8")
+        packages = self.root / "data/dsh/plugin/packages"
+        packages.mkdir(parents=True)
+        (packages / "alpha.json").write_text('{"id":"private-full-projection"}', encoding="utf-8")
+        (packages.parent / "index.json").write_text('{"packages":[]}', encoding="utf-8")
+        summaries = self.root / "data/agents/dsh"
+        summaries.mkdir(parents=True)
+        (summaries / "dashboard.json").write_text('{"id":"dsh"}', encoding="utf-8")
+        self.build(data_mode="summary")
+        self.assertTrue((self.output / "data/dashboard.json").is_file())
+        self.assertTrue((self.output / "data/agents/dsh/dashboard.json").is_file())
+        self.assertFalse((self.output / "data/dsh").exists())
+        self.assertIn('<body data-page="catalog">', (self.output / "index.html").read_text(encoding="utf-8"))
+
+    def test_api_summary_mode_rejects_existing_output_without_removing_files(self):
+        self.output.mkdir()
+        marker = self.output / "data/old-index.json"
+        marker.parent.mkdir()
+        marker.write_text('previous-data', encoding="utf-8")
+        before = digest_tree(self.output)
+        with self.assertRaisesRegex(ValueError, "empty output"):
+            self.build(data_mode="summary")
+        self.assertEqual(before, digest_tree(self.output))
+
+    def test_api_summary_mode_requires_global_dashboard_and_valid_json(self):
+        with self.assertRaisesRegex(ValueError, "Missing dashboard"):
+            self.build(data_mode="summary")
+        self.assertFalse(self.output.exists())
+        (self.root / "data/dashboard.json").write_text('[]', encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "Invalid dashboard"):
+            self.build(data_mode="summary")
+        self.assertFalse(self.output.exists())
+
+    def test_unknown_data_mode_is_explicitly_rejected(self):
+        with self.assertRaisesRegex(ValueError, "data_mode"):
+            self.build(data_mode="other")
+        self.assertFalse(self.output.exists())
+
+    def test_existing_catalog_survives_build_and_document_navigation(self):
         self.build()
         landing = (self.output / "index.html").read_text(encoding="utf-8")
-        self.assertIn('<meta http-equiv="refresh" content="0; url=dashboard/">', landing)
-        self.assertIn('<body data-page="catalog-hidden" hidden>', landing)
+        self.assertIn('<body data-page="catalog">', landing)
+        self.assertNotIn('http-equiv="refresh"', landing)
         for doc in DOCUMENTS:
             page = Page((self.output / doc.target).read_text(encoding="utf-8"))
             self.assertFalse(any(attrs.get("data-i18n") == "docs.catalog" for _, attrs in page.attributes))
@@ -277,7 +316,7 @@ class BuildSiteTests(unittest.TestCase):
         text = (self.output / "docs/index.html").read_text(encoding='utf-8')
         page = Page(text)
         scripts = [attrs['src'] for tag, attrs in page.attributes if tag == 'script']
-        self.assertEqual(scripts, ['../assets/preferences.js', '../assets/docs.js'])
+        self.assertEqual([urlsplit(src).path for src in scripts], ['../assets/preferences.js', '../assets/docs.js'])
         self.assertNotIn('img', page.tags)
         self.assertFalse(any(key.startswith('on') for _, attrs in page.attributes for key in attrs))
         self.assertIn('<title>&lt;script&gt;alert(1)&lt;/script&gt;', text)
@@ -445,6 +484,34 @@ Paragraph <script>inert</script>
         self.assertNotIn('<svg', text)
         self.assertIn('language-mermaid', text)
         self.assertEqual(highlight('<script>x</script>', 'unrecognized'), '&lt;script&gt;x&lt;/script&gt;')
+
+    def test_asset_versions_follow_content_and_refresh_nested_images(self):
+        assets = self.root / "site/assets"
+        (assets / "img").mkdir()
+        image = assets / "img/pixel.png"
+        image.write_bytes(b"first fixture image")
+        (assets / "extra.css").write_text('body { background: url("img/pixel.png"); }', encoding="utf-8")
+        index = self.root / "site/index.html"
+        index.write_text('<link href="assets/extra.css?v=old&amp;mode=one#theme" rel="stylesheet"><script src="https://example.test/external.js"></script>', encoding="utf-8")
+        self.build()
+        initial = (self.output / "index.html").read_text(encoding="utf-8")
+        initial_css = (self.output / "assets/extra.css").read_text(encoding="utf-8")
+        version = urlsplit(Page(initial).refs[0][2]).query.split("v=")[1]
+        self.assertRegex(version, r"^[0-9a-f]{16}$")
+        self.assertIn(f'img/pixel.png?v={version}', initial_css)
+        self.assertIn("mode=one&amp;v=", initial)
+        self.assertIn('#theme', initial)
+        self.assertIn('src="https://example.test/external.js"', initial)
+        self.build()
+        self.assertEqual(initial, (self.output / "index.html").read_text(encoding="utf-8"))
+        (self.root / "data/manifest.json").write_text('{"sources": [], "revision": "next"}', encoding="utf-8")
+        self.build()
+        self.assertEqual(initial, (self.output / "index.html").read_text(encoding="utf-8"))
+        image.write_bytes(b"second fixture image")
+        self.build()
+        self.assertNotEqual(initial, (self.output / "index.html").read_text(encoding="utf-8"))
+        self.assertNotIn(f'v={version}', (self.output / "assets/extra.css").read_text(encoding="utf-8"))
+        self.assertEqual(image.read_bytes(), (self.output / "assets/img/pixel.png").read_bytes())
 
     @unittest.skipUnless(os.environ.get('FORGE_DOCS_BROWSER') == '1', 'Set FORGE_DOCS_BROWSER=1 for existing Edge live acceptance')
     def test_live_browser_subpath_language_theme_copy_and_narrow_layout(self):

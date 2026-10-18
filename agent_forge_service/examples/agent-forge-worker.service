@@ -1,0 +1,29 @@
+# Example only: configure paths, user and read-only gh access before installation.
+[Unit]
+Description=Agent Forge metadata collection and snapshot publication
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=simple
+LogsDirectory=agent-forge-worker
+LogsDirectoryMode=0700
+User=agent-forge
+WorkingDirectory=/opt/agent-forge
+StateDirectory=agent-forge
+ExecStart=/opt/agent-forge/.venv/bin/python -m agent_forge_service.worker schedule-run --catalog /opt/agent-forge --runtime /var/lib/agent-forge/runtime --policy /opt/agent-forge/agent_forge_service/examples/scheduler-pilot.json --identity production-readonly-gh --max-requests 10 --max-batch-seconds 1800 --poll-seconds 60 --log-directory /var/log/agent-forge-worker
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=60
+TimeoutStopSec=600
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/lib/agent-forge
+
+[Install]
+WantedBy=multi-user.target
