@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "policyId": "pilot-20261014-8h-public-scans-v1",
+  "slotHours": 8,
+  "refresh": {
+    "topN": 20,
+    "protectionHours": 168,
+    "fastHours": 8,
+    "ordinaryHours": 24,
+    "longtailFraction": 0.25
+  },
+  "budgets": {
+    "refresh": 100,
+    "bootstrap": 20,
+    "discovery": 20,
+    "history": 10
+  },
+  "discovery": {
+    "topics": [
+      "dsh-plugin",
+      "deepseek-harness-plugin",
+      "mcp-server"
+    ],
+    "start": "2026-10-13T00:00:00Z",
+    "overlapHours": 24,
+    "historyStart": "2026-10-01T00:00:00Z",
+    "historyLagHours": 24,
+    "historyChunkHours": 24,
+    "minShardSeconds": 60,
+    "maxShards": 255
+  },
+  "downloads": {
+    "budget": 20,
+    "topN": 20,
+    "protectionHours": 168,
+    "longtailFraction": 0.25
+  },
+  "recommendations": null,
+  "manifests": {
+    "budget": 12,
+    "maxScans": 2,
+    "intervalHours": 24,
+    "retryHours": 8,
+    "profiles": [
+      {
+        "path": ".claude-plugin/plugin.json",
+        "kind": "claude_plugin",
+        "agent": "claude-code"
+      }
+    ]
+  },
+  "releases": {
+    "budget": 6,
+    "maxScans": 2,
+    "intervalHours": 24,
+    "retryHours": 8,
+    "maxPages": 3
+  }
+}
