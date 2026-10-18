@@ -69,3 +69,5 @@ API就绪入口为`/health/ready`，查询为`/api/v1/packages`。站点需单�
 | 日志隐私与轮换 | [运行日志](OPERATIONAL-LOGGING.zh-CN.md) |
 
 运行`python -m agent_forge_service.worker <command> --help`查看各命令参数。来源覆盖取决于批准配置和实际请求结果；partial/stale不表示没有资源或已经全目录刷新。
+
+批次策略示例位于 `examples/batch-policy.pilot.json` 与 `examples/batch-policy.sources-pilot.json`（相对于本目录），由 `load_policy` 校验；仓库根目录 `examples/` 仅放规范元数据 Schema 示例。运行这些策略前仍须明确来源、预算与执行环境。

@@ -385,7 +385,7 @@ class BatchTests(unittest.TestCase):
         self.assertEqual(0,self.db.execute('SELECT count(*) FROM batch_attempts').fetchone()[0])
 
     def test_policy_file_rejects_duplicate_unknown_and_malformed_values(self):
-        source=Path('examples/batch-policy.pilot.json');original=json.loads(source.read_text(encoding='utf-8'))
+        source=Path('agent_forge_service/examples/batch-policy.pilot.json');original=json.loads(source.read_text(encoding='utf-8'))
         path=self.root/'policy.json';path.write_text(source.read_text(encoding='utf-8'),encoding='utf-8')
         self.assertEqual(8,load_policy(path).slot_hours)
         for change in ('unknown','topic','start','budget'):
@@ -407,7 +407,7 @@ class BatchTests(unittest.TestCase):
         finally:db.close()
 
     def test_cli_planning_and_status_are_local_idempotent_commands(self):
-        source=Path('examples/batch-policy.pilot.json').resolve()
+        source=Path('agent_forge_service/examples/batch-policy.pilot.json').resolve()
         def cli(*args):
             call=subprocess.run([sys.executable,'-m','agent_forge_service.worker',*args,'--runtime',str(self.root/'cli-runtime')],capture_output=True,text=True,encoding='utf-8')
             self.assertEqual(0,call.returncode,call.stderr);return json.loads(call.stdout)

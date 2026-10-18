@@ -233,7 +233,7 @@ class DownloadBatchTests(unittest.TestCase):
 
 
     def test_initial_download_policy_parsing_and_invalid_budgets(self):
-        value = json.loads(Path("examples/batch-policy.pilot.json").read_text(encoding="utf-8"))
+        value = json.loads(Path("agent_forge_service/examples/batch-policy.pilot.json").read_text(encoding="utf-8"))
         value.update(schemaVersion=1, policyId="npm-v2", downloads={"budget": 10, "topN": 2, "protectionHours": 168, "longtailFraction": .25})
         path = self.root / "policy.json"; path.write_text(json.dumps(value), encoding="utf-8")
         self.assertEqual(10, load_policy(path).downloads.budget)
