@@ -9,7 +9,7 @@ const vm = require('node:vm');
 const { test } = require('node:test');
 const root = path.resolve(__dirname, '..');
 const preferences = fs.readFileSync(path.join(root, 'site/assets/preferences.js'), 'utf8');
-const appSource = fs.readFileSync(path.join(root, 'site/assets/app.js'), 'utf8');
+const appSource = fs.readFileSync(path.join(root, 'site/assets/api-presentation.js'), 'utf8');
 
 class NodeStub {
   constructor(attrs = {}) { this.attrs = { ...attrs }; this.dataset = {}; this.style = {}; this.children = []; this.value = ''; this.textContent = ''; this.innerHTML = ''; this.listeners = {}; }
@@ -62,12 +62,12 @@ test('paused catalog redirects without starting search or requesting any data', 
     assert.deepEqual(env.events, []);
   }
 });
-test('catalog is statically hidden with a no-JavaScript redirect and no navigation entry', () => {
+test('main catalog remains visible with its existing navigation', () => {
   const html = fs.readFileSync(path.join(root, 'site/index.html'), 'utf8');
-  assert.match(html, /<meta http-equiv="refresh" content="0; url=dashboard\/">/);
-  assert.match(html, /<body data-page="catalog-hidden" hidden>/);
+  assert.match(html, /<body data-page="catalog">/);
+  assert.doesNotMatch(html, /http-equiv="refresh"/);
   for (const page of ['index.html', 'dashboard/index.html', 'dashboard/agent/index.html', 'submit/index.html']) {
-    assert.doesNotMatch(fs.readFileSync(path.join(root, 'site', page), 'utf8'), /data-i18n="nav\.catalog"/);
+    assert.match(fs.readFileSync(path.join(root, 'site', page), 'utf8'), /data-i18n="nav\.catalog"/);
   }
 });
 
@@ -135,10 +135,10 @@ test('defaults ignore browser language, resolve system theme synchronously, and 
   assert.equal(group.getAttribute('aria-label'), 'Theme'); assert.equal(options[1].getAttribute('aria-label'), 'Dark');
   assert.deepEqual(options.map((node) => node.getAttribute('aria-checked')), ['false', 'true', 'false']);
 });
- test('all three HTML pages load ordinary preferences before CSS, and expose local docs/submit navigation', () => {
-  for (const page of ['site/index.html', 'site/dashboard/index.html', 'site/dashboard/agent/index.html']) {
+ test('API pages load ordinary preferences before CSS, and expose local docs/submit navigation', () => {
+  for (const page of ['site/catalog/index.html', 'site/catalog/dashboard/index.html', 'site/catalog/dashboard/agent/index.html']) {
     const html = fs.readFileSync(path.join(root, page), 'utf8');
-    const script = html.match(/<script src="([^"]*preferences\.js)"([^>]*)><\/script>/);
+    const script = html.match(/<script src="([^"]*preferences\.js(?:\?[^"]*)?)"([^>]*)><\/script>/);
     assert.ok(script); assert.equal(script[2], ''); assert.ok(html.indexOf(script[0]) < html.indexOf('<link rel="stylesheet"'));
     const pageUrl = new URL(page.replace(/^site\//, ''), 'https://example.test/project/');
     assert.equal(new URL('../', new URL(script[1], pageUrl)).href, 'https://example.test/project/');
@@ -366,6 +366,8 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     const { sessionId } = await send('Target.attachToTarget', { targetId, flatten: true });
     const cdp = (method, params) => send(method, params, sessionId);
     await cdp('Runtime.enable'); await cdp('Page.enable');
+    await cdp('Network.enable');
+    await cdp('Network.setBlockedURLs', { urls: ['*://me.kis.v2.scr.kaspersky-labs.com/*'] });
     await cdp('Emulation.setDeviceMetricsOverride', { width: 1365, height: 1000, deviceScaleFactor: 1, mobile: false });
     await cdp('Fetch.enable', { patterns: [{ urlPattern: 'https://*', requestStage: 'Request' }] });
     const evaluate = async (expression) => {
@@ -375,7 +377,7 @@ test('live Chromium acceptance: controls, routing, persistence, themes, nested p
     };
     const waitFor = async (expression) => {
       for (let i = 0; i < 200; i++) { if (await evaluate(expression)) return; await timers.setTimeout(50); }
-      assert.fail('Timed out: ' + expression + ' | source status: ' + await evaluate('document.getElementById("source-status")?.textContent'));
+      assert.fail('Timed out: ' + expression + ' | page state: ' + await evaluate('JSON.stringify({url:location.href,ready:document.readyState,body:document.body?.dataset.page,source:document.getElementById("source-status")?.textContent,scripts:[...document.scripts].map(node=>node.src)})'));
     };
     const screenshot = async (name) => {
       if (!process.env.FORGE_MEDIA_SCREENSHOTS) return;

@@ -15,6 +15,7 @@ Relative --output/--data paths are resolved against --root, not the caller's cwd
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -25,14 +26,12 @@ import stat
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
-from urllib.parse import quote, unquote, urlsplit, urlunsplit
+from urllib.parse import parse_qsl, quote, unquote, urlencode, urlsplit, urlunsplit
 
 REPOSITORY = "https://github.com/metaone01/agent-forge"
 PUBLISHED = "https://metaone01.github.io/agent-forge/"
 SCHEMAS = ("package", "source", "index", "advisory")
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
-# Bump when site assets change so CDN/browser caches pick up new files.
-ASSET_VERSION = "20261011b"
 
 
 @dataclass(frozen=True)
@@ -483,10 +482,10 @@ def render_document(root: Path, doc: Document, data_files: set[str]) -> str:
 <title>{escape(title)} · Agent Forge</title>
 <link rel="alternate" hreflang="{doc.locale}" href="{escape(PUBLISHED + doc.target)}">
 <link rel="alternate" hreflang="{'zh-CN' if english else 'en'}" href="{escape(PUBLISHED + doc.peer)}">
-<script src="{asset}/preferences.js?v={ASSET_VERSION}"></script>
-<link rel="stylesheet" href="{asset}/styles.css?v={ASSET_VERSION}">
-<link rel="stylesheet" href="{asset}/docs.css?v={ASSET_VERSION}">
-<script src="{asset}/docs.js?v={ASSET_VERSION}" defer></script>
+<script src="{asset}/preferences.js"></script>
+<link rel="stylesheet" href="{asset}/styles.css">
+<link rel="stylesheet" href="{asset}/docs.css">
+<script src="{asset}/docs.js" defer></script>
 </head>
 <body data-page="docs" data-doc-locale="{doc.locale}" data-doc-peer="{peer}" data-doc-anchors="{anchor_json}">
 <a class="skip-link" href="#doc-content" data-i18n="docs.skip">{words['skip']}</a>
@@ -539,7 +538,78 @@ def source_files(directory: Path) -> list[Path]:
     return sorted(result)
 
 
-def build_site(root: Path = DEFAULT_ROOT, output: Path = Path("pages-staging"), data: Path = Path("data")) -> Path:
+def summary_files(data: Path) -> list[Path]:
+    """Read only explicitly named dashboard summaries, never walk package projections."""
+    result = []
+    def selected(path: Path, required=False):
+        try:
+            metadata = path.lstat()
+        except FileNotFoundError:
+            if required:
+                raise ValueError(f"Missing dashboard summary: {path}")
+            return
+        if is_reparse(metadata) or not stat.S_ISREG(metadata.st_mode):
+            raise ValueError(f"Unsafe dashboard summary: {path}")
+        value = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(value, dict):
+            raise ValueError(f"Invalid dashboard summary: {path}")
+        result.append(path)
+    selected(data / "manifest.json", required=True)
+    selected(data / "dashboard.json", required=True)
+    agents = data / "agents"
+    if agents.exists() or agents.is_symlink():
+        metadata = agents.lstat()
+        if is_reparse(metadata) or not stat.S_ISDIR(metadata.st_mode):
+            raise ValueError(f"Unsafe Agent summaries: {agents}")
+        for child in sorted(agents.iterdir()):
+            metadata = child.lstat()
+            if is_reparse(metadata):
+                raise ValueError(f"Unsafe Agent summary: {child}")
+            if stat.S_ISDIR(metadata.st_mode):
+                selected(child / "dashboard.json")
+    return result
+
+
+def version_assets(copies: dict[str, Path], generated: dict[str, bytes]) -> None:
+    assets = sorted(key for key in copies if key.startswith("assets/"))
+    fingerprint = hashlib.sha256(b"agent-forge-static-assets-v1\0")
+    for key in assets:
+        fingerprint.update(key.encode("utf-8") + b"\0")
+        fingerprint.update(hashlib.sha256(copies[key].read_bytes()).digest())
+    version = fingerprint.hexdigest()[:16]
+    asset_keys = set(assets)
+
+    def version_url(value: str, source: str) -> str:
+        parsed = urlsplit(html.unescape(value))
+        if parsed.scheme or parsed.netloc or not parsed.path or parsed.path.startswith("/"):
+            return value
+        target = posixpath.normpath(posixpath.join(posixpath.dirname(source), unquote(parsed.path)))
+        if target not in asset_keys:
+            return value
+        query = [(key, item) for key, item in parse_qsl(parsed.query, keep_blank_values=True) if key != "v"]
+        query.append(("v", version))
+        return urlunsplit(("", "", parsed.path, urlencode(query), parsed.fragment))
+
+    for key in sorted(set(copies) | set(generated)):
+        if not key.endswith((".html", ".css")) or (key.endswith(".css") and key not in asset_keys):
+            continue
+        text = (copies[key].read_bytes() if key in copies else generated[key]).decode("utf-8")
+        if key.endswith(".html"):
+            def html_ref(match):
+                value = version_url(match[3], key)
+                return match[1] + match[2] + (escape(value) if value != match[3] else value) + match[2]
+            text = re.sub(r"(?<![\w-])((?:src|href)\s*=\s*)([\"'])([^\"']*)\2", html_ref, text)
+        else:
+            def css_ref(match):
+                return 'url("' + version_url(match[2].strip(), key) + '")'
+            text = re.sub(r"url\(\s*([\"']?)([^)\"']+)\1\s*\)", css_ref, text)
+        copies.pop(key, None)
+        generated[key] = text.encode("utf-8")
+
+
+def build_site(root: Path = DEFAULT_ROOT, output: Path = Path("pages-staging"), data: Path = Path("data"), *, data_mode: str = "full") -> Path:
+    if data_mode not in ("full", "summary"):
+        raise ValueError("data_mode must be full or summary")
     root = Path(root).resolve(strict=True)
     output_arg = Path(output)
     output = output_arg if output_arg.is_absolute() else root / output_arg
@@ -556,6 +626,8 @@ def build_site(root: Path = DEFAULT_ROOT, output: Path = Path("pages-staging"), 
     protected += [root / "README.md", root / "README_en.md"]
     if any(overlaps(output, path.resolve()) for path in protected):
         raise ValueError("Output overlaps a protected source/data/canonical path")
+    if data_mode == "summary" and output.exists() and any(output.iterdir()):
+        raise ValueError("Summary-only API builds require a new or empty output directory; existing data is never deleted")
     copies: dict[str, Path] = {}
     for required in ("index.html", "assets/styles.css", "assets/preferences.js", "assets/docs.css", "assets/docs.js"):
         if not (root / "site" / required).is_file():
@@ -571,10 +643,12 @@ def build_site(root: Path = DEFAULT_ROOT, output: Path = Path("pages-staging"), 
     if data.exists():
         if not data.is_dir():
             raise ValueError("Data must be a directory when present")
-        for path in source_files(data):
+        for path in summary_files(data) if data_mode == "summary" else source_files(data):
             key = "data/" + path.relative_to(data).as_posix()
             copies[key] = path
             data_files.add(key)
+    elif data_mode == "summary":
+        raise ValueError("Summary-only API builds require generated dashboard data")
     generated: dict[str, bytes] = {}
     for doc in DOCUMENTS:
         source = root / doc.source
@@ -587,6 +661,8 @@ def build_site(root: Path = DEFAULT_ROOT, output: Path = Path("pages-staging"), 
     collision = copies.keys() & generated.keys()
     if collision:
         raise ValueError(f"Static/generated path collision: {sorted(collision)}")
+    # Content-derived URLs refresh nested images as well as scripts/styles; data updates keep the version.
+    version_assets(copies, generated)
     # Validate existing destinations without resolving 100k individual data files.
     # The output root is already resolved; each distinct ancestor is checked once.
     existing_output = output.exists()
@@ -639,9 +715,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT, help="Repository root (default: script's repository)")
     parser.add_argument("--output", type=Path, default=Path("pages-staging"), help="Dedicated additive staging directory")
     parser.add_argument("--data", type=Path, default=Path("data"), help="Optional generated data directory")
+    parser.add_argument("--data-mode", choices=("full", "summary"), default="full", help="Full Pages projections, or dashboard summaries for API deployments (requires empty output)")
     args = parser.parse_args(argv)
     try:
-        output = build_site(args.root, args.output, args.data)
+        output = build_site(args.root, args.output, args.data, data_mode=args.data_mode)
     except (OSError, ValueError) as error:
         parser.exit(2, f"build_site: {error}\n")
     print(f"Built static site and {len(DOCUMENTS)} documents: {output}")
