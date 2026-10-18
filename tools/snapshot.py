@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import sqlite3
+import sys
 from pathlib import Path
 
 
@@ -55,13 +56,30 @@ def build_snapshot(data_root: Path, output_root: Path) -> int:
     return count
 
 
-def main() -> int:
+def main(argv=None) -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data", type=Path, default=Path("data"))
-    parser.add_argument("--output", type=Path, default=Path("snapshots"))
-    args = parser.parse_args()
-    count = build_snapshot(args.data, args.output)
-    print(json.dumps({"snapshots": count}))
+    parser.add_argument("--data", type=Path)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--query-runtime", type=Path)
+    parser.add_argument("--agent")
+    parser.add_argument("--type", choices=("mcp", "plugin", "skill", "general", "bundle"))
+    parser.add_argument("--revision")
+    args = parser.parse_args(argv)
+    if args.query_runtime is not None:
+        if args.data is not None or args.output is None or args.agent is None or args.type is None:
+            parser.error("--query-runtime requires --output, --agent and --type, without --data")
+        if __package__ in (None, ""):
+            sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from agent_forge_service.offline import export_offline
+        from agent_forge_service.settings import Settings
+        result = export_offline(Settings(Path.cwd(), args.query_runtime), args.output,
+                                agent=args.agent, package_type=args.type, revision=args.revision)
+        print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
+    else:
+        if any(value is not None for value in (args.agent, args.type, args.revision)):
+            parser.error("--agent, --type and --revision require --query-runtime")
+        count = build_snapshot(args.data or Path("data"), args.output or Path("snapshots"))
+        print(json.dumps({"snapshots": count}))
     return 0
 
 

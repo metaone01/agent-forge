@@ -1,0 +1,11 @@
+[Unit]
+Description=Hourly Agent Forge public snapshot retention (disabled until enabled)
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=3m
+Unit=agent-forge-retention.service
+
+[Install]
+WantedBy=timers.target

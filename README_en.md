@@ -4,6 +4,8 @@
 
 [中文](README.md) | [English](README_en.md)
 
+An optional SQLite query API and scheduled metadata worker are available; see the [service startup guide](README-DEPLOYMENT.md) (Chinese). The implementation has been validated locally; no external deployment has been performed.
+
 [![Validate metadata contracts](https://github.com/metaone01/agent-forge/actions/workflows/validate.yml/badge.svg)](https://github.com/metaone01/agent-forge/actions/workflows/validate.yml)
 [![Build metadata projections](https://github.com/metaone01/agent-forge/actions/workflows/project.yml/badge.svg)](https://github.com/metaone01/agent-forge/actions/workflows/project.yml)
 [![Publish catalog revision](https://github.com/metaone01/agent-forge/actions/workflows/release.yml/badge.svg)](https://github.com/metaone01/agent-forge/actions/workflows/release.yml)

@@ -40,7 +40,7 @@ runtime/
 
 一个Worker是state唯一写入者。查询API只读公开快照；独立查询机器可仅导入公开bundle，不持有state、canonical或个人gh配置。不要覆盖运行中的catalog.db。runtime应与代码、canonical和公开静态根目录分开。
 
-API就绪入口为`/health/ready`，查询为`/api/v1/packages`。站点需单独托管，静态根目录指向构建后的`site/`，同域`/api/`反代到API；页面为`/catalog/`。API不会自动托管HTML。部署配置见[查询服务部署目录](../deploy/query-service/README.zh-CN.md)。
+API就绪入口为`/health/ready`，查询为`/api/v1/packages`。站点需单独托管，静态根目录指向构建后的`site/`，同域`/api/v1/`反代到API；页面为`/catalog/`。API不会自动托管HTML。部署配置见[查询服务部署目录](../deploy/query-service/README.zh-CN.md)。
 
 ## 查询与事实边界
 

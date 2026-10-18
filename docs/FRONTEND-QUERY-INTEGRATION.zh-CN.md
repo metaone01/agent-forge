@@ -5,7 +5,7 @@
 ## 接线
 
 - 页面`agent-forge-api-base` meta配置API地址，默认相对`../api/v1/`。
-- 同域部署将构建后的site作为静态根，并将`/api/`转发给查询服务。
+- 同域部署将构建后的site作为静态根，并将`/api/v1/`转发给查询服务。
 - 跨域时同时设置页面地址及服务明确的`--allow-origin`；不发送用户token或Cookie。
 - HTML需通过HTTP托管，不能以file协议直接打开；API本身不托管静态HTML。
 

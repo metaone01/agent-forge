@@ -1,0 +1,31 @@
+[Unit]
+Description=Agent Forge public metadata query API
+After=network.target
+
+[Service]
+Type=simple
+LogsDirectory=agent-forge-query
+LogsDirectoryMode=0700
+User=agent-forge-query
+Group=agent-forge-query
+WorkingDirectory=/opt/agent-forge
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=/opt/agent-forge/.venv/bin/python -m agent_forge_service.preflight --catalog /opt/agent-forge --runtime /srv/agent-forge/public
+ExecStart=/opt/agent-forge/.venv/bin/python -m agent_forge_service.app --catalog /opt/agent-forge --runtime /srv/agent-forge/public --host 127.0.0.1 --port 8791 --max-in-flight 4 --log-directory /var/log/agent-forge-query
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=15
+KillSignal=SIGTERM
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ReadOnlyPaths=/srv/agent-forge/public
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
