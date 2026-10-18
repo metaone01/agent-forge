@@ -57,6 +57,35 @@ class ProjectionTests(unittest.TestCase):
             self.assertIn("current description", entry["searchText"])
             self.assertEqual("dsh.tool", entry["id"])
 
+    def test_display_name_comes_only_from_selected_version(self):
+        from tools.validate import build_validator
+
+        for title in ("当前 <显示名>", None):
+            with self.subTest(title=title), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                source = root / "sources/plugin"
+                (source / "packages").mkdir(parents=True)
+                for version in ("1.0.0", "2.0.0"):
+                    value = record("tool", "plugin", "2026-10-01T00:00:00Z")
+                    value["version"] = version
+                    if version == "1.0.0":
+                        value["displayName"] = "旧显示名"
+                    elif title is not None:
+                        value["displayName"] = title
+                    (source / "packages" / (version + ".json")).write_text(json.dumps(value), encoding="utf-8")
+                (source / "index.json").write_text(json.dumps({"packages": {"tool": {"latest": "2.0.0"}}}), encoding="utf-8")
+                now = datetime(2026, 10, 2, tzinfo=timezone.utc)
+                build_projection(root, root / "data", "test", now, now, "https://example.test/data", False)
+                index = json.loads((root / "data/dsh/plugin/index.json").read_text())
+                entry = index["packages"]["tool"]
+                self.assertEqual("dsh.tool", entry["id"])
+                self.assertEqual("tool", json.loads((root / "data/dsh/plugin" / entry["path"]).read_text())["name"])
+                if title is None:
+                    self.assertNotIn("displayName", entry)
+                else:
+                    self.assertEqual(title, entry["displayName"])
+                self.assertEqual([], list(build_validator("index.schema.json").iter_errors(index)))
+
     def test_cutoff_projection_and_snapshot(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
