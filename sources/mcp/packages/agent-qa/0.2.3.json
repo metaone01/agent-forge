@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "mcp.vostride.agent-qa",
+  "name": "agent-qa",
+  "displayName": "agent-qa",
+  "version": "0.2.3",
+  "versionScheme": "semver",
+  "description": "Natural-language QA for web, Android and iOS, with persistent memidex memory and validated self-improvement. A local MCP server lets coding agents author tests, run them and inspect evidence.",
+  "license": "FSL-1.1-ALv2",
+  "links": {
+    "repository": "https://github.com/vostride/agent-qa",
+    "homepage": "https://vostride.com",
+    "readme": "https://github.com/vostride/agent-qa/blob/v0.2.3/README.md",
+    "license": "https://github.com/vostride/agent-qa/blob/v0.2.3/LICENSE.md",
+    "documentation": "https://vostride.com/docs/agent-qa/mcp",
+    "changelog": "https://github.com/vostride/agent-qa/releases/tag/v0.2.3",
+    "issues": "https://github.com/vostride/agent-qa/issues"
+  },
+  "keywords": [
+    "qa",
+    "testing",
+    "mcp",
+    "browser",
+    "android",
+    "ios",
+    "memory",
+    "self-improvement"
+  ],
+  "type": "mcp",
+  "subtype": "local",
+  "mcpDetails": {
+    "registryType": "npm",
+    "registryBaseUrl": "https://registry.npmjs.org/",
+    "identifier": "agent-qa",
+    "transport": "stdio"
+  },
+  "targets": [
+    {
+      "agentId": "claude-code",
+      "agentVersionRange": null,
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Upstream documents Claude Code integration but does not specify a supported client version range."
+    },
+    {
+      "agentId": "codex",
+      "agentVersionRange": null,
+      "compatibilityStatus": "unknown",
+      "compatibilityNote": "Upstream documents Codex integration but does not specify a supported client version range."
+    }
+  ],
+  "distributions": [
+    {
+      "id": "npm",
+      "name": "agent-qa npm package",
+      "type": "npm-pkg",
+      "url": "https://www.npmjs.com/package/agent-qa",
+      "registry": "npm",
+      "version": "0.2.3",
+      "priority": 10,
+      "notes": "Requires Node.js 24 or newer. Start stdio MCP with npx agent-qa@0.2.3 mcp; local HTTP is also available with --http. Test execution requires configured model access; provider charges may apply."
+    },
+    {
+      "id": "github",
+      "name": "agent-qa source repository",
+      "type": "github-repo",
+      "url": "https://github.com/vostride/agent-qa",
+      "ref": "v0.2.3",
+      "priority": 20
+    }
+  ],
+  "lifecycle": {
+    "status": "active"
+  },
+  "_meta": {
+    "com.vostride/provenance": {
+      "observedAt": "2026-10-25T22:39:24Z",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/vostride/agent-qa/v0.2.3/README.md",
+          "sha256": "c7bb88b0cf90592c5bd4ff2a24ec8c55a8c5aed52092beb1832a6accd4d86dcd"
+        },
+        {
+          "url": "https://vostride.com/docs/agent-qa/mcp"
+        }
+      ]
+    }
+  }
+}
